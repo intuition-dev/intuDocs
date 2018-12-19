@@ -128,6 +128,8 @@ I did nothing at my first 'Black Swan'
 
 ## Productivity could be used for story telling!
 
+![40%](sol/hierarchy.jpg)
+
 for slides, video, 'paper' 
 www.Metabake.net
 or vic@metabake.org 
