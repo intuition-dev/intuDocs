@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Agenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="/_sass/main.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/topseed/topseed-turbo/master/vendor/loadjs.min.js"></script>
+    <script src="https://cdn.rawgit.com/topseed/topseed-turbo/master/setup/setup-2.7.js"></script>
+    <script src="/_js/main.js" async=""></script>
+  </head>
+  <body>
+    <div id="appbar">
+      <div id="appbar--brand" onclick="openDrawer()">&nbsp; ☰ &nbsp;<span class="mui--hidden-xs">Topseed&trade; Tutorial</span></div>
+      <ul id="appbar--menu">
+        <li><a href="/0-agenda/">Agenda</a></li>
+      </ul>
+    </div>
+    <div id="sidedrawer" onclick="closeDrawer()">
+      <div id="sidedrawer--brand">&nbsp; ☰ Topseed&trade; Tutorials</div>
+      <div class="mui-divider"></div>
+      <ul id="sidedrawer--menu">
+        <li><a href="/0-agenda/">Agenda</a></li>
+        <li><a href="/2-theBasics/">Two: The Basics</a></li>
+        <li><a href="/3-goLive/">Three: Golive</a></li>
+        <li><a href="/4-appShell/">Four: AppShell</a></li>
+        <li><a href="/5-amp/">Five: AMP and Node.js</a></li>
+      </ul>
+    </div>
+    <script>
+      function openDrawer(px, e) {
+      	$('#sidedrawer').css('transform', 'translateX(201px)')
+      }
+      function closeDrawer(e) {
+      	$('#sidedrawer').css('transform', 'translateX(0px)')
+      }			
+    </script>
+    <div id="content-wrapper">
+      <style>
+        .section {
+        	background-size: cover;
+        	background-attachment: fixed;
+        	background-image: url(res/beach768.jpg);
+        }
+        
+        .section1 {
+        	background-image: url(res/beach768.jpg);
+        }
+        .section2 {
+        	background-image: url(res/city768.jpg);
+        }
+        .section3{
+        	background-image: url(res/light768.jpg);
+        }
+        .section4{
+        	background-image: url(res/road768.jpg);
+        }
+        
+      </style>
+      <div id="fullpage">
+        <div class="section1 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <H3>Authenthication Flow and Sample App</H3>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class="section2 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <H3>Basic and Token Auth.</H3>
+              <p>
+                There are several types of auth. Basic is just sending username and password.
+                Token is sending a token, that the server holds instead of username/password. Token can be via query string, header, cookie, etc. Token can comee to any of the distributed servers, so server use a distributed hashmap, such as Redis to store valid tokens. If a Token fails, the user is required to send username/password to the server to get a new token. In general, to be able to do token, you must be comfortable w/ basic, since token auth is just an 'upgrade' and reprsents the already sent username/password.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section3 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <p>On the server:</p><code>
+                <pre>if('vic'== token.user && '123' == token.password)
+	return true
+return false
+</pre></code>
+            </div>
+          </div>
+        </div>
+        <div class="section4 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel"><code>
+                <pre>if( !MyAuth.auth(jt))
+	res.status(403).send(JSON.stringify('Auth required, IP Logged')).end()
+</pre></code></div>
+          </div>
+        </div>
+        <div class="section3 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <p>On the client:</p><code>
+                <pre>fetch(ROOT + url , {
+	method: 'post'
+	, headers: {
+		'Content-Type': 'application/json'
+		,'X-JToken' : JSON.stringify(jtoken)
+		,'Accept':'application/json'
+	}
+	, body: JSON.stringify(data)
+}).then(function(response)
+</pre></code>
+            </div>
+          </div>
+        </div>
+        <div class="section2 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <H3>Example Flow:</H3>
+              <ol>
+                <li>User goes to 'secured page''</li>
+                <li>'Secured page' reads localy stored cookies</li>
+                <li>Cookies sent to server/service. </li>
+                <li>If OK, proceed with 'update', etc.</li>
+                <li>If not: Go to login page</li>
+                <li>After login submit, locally store cookie of username/password</li>
+                <li>Load 'Secured page' / Go to top</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="section1 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <H3>Example app</H3>
+              <ul>
+                <li>Show list of links</li>
+                <li>If user goes to 'add links' page: redirect to Auth/Login</li>
+                <li>If user is IE, not Edge, SSR of list</li>
+                <li>If admin user is IE, not Edge: show list of modern browsers</li>
+                <li>Use data binding and web components</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section1 section">
+          <div class="mui-container-fluid">
+            <div class="mui-panel">
+              <H3>THE END. Review:</H3>
+              <p>SPA, SEO, AMP, App shell, Mobile, Web Components, Sass, Express, Services, etc.</p>
+              <p>Optional Lab: deploy link blog app to your site and release a mobile app. Start w/  topseed-example.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        TS.onAppReady(UIinit)
+        function UIinit() {
+        	console.log('x')
+        	$('#fullpage').fullpage({
+        		//verticalCentered: false,
+        		css3:false
+        	})//config
+        }
+        
+      </script>
+    </div>
+    <div id="footer">
+      <div id="footer_div"><a href="https://gitter.im/topseed/Lobby" target="_blank">Forum </a>
+        <div id="footer_div--right"><a href="https://github.com/topseed/topseed" target="_blank">Kitchen Sink</a></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+extends  ../../../_part/_baseShell
+
+block head
+	title Agenda
+	include ../../../_part/_header
+
+block main
+	style.
+		.section {
+			background-size: cover;
+			background-attachment: fixed;
+			background-image: url(res/beach768.jpg);
+		}
+
+		.section1 {
+			background-image: url(res/beach768.jpg);
+		}
+		.section2 {
+			background-image: url(res/city768.jpg);
+		}
+		.section3{
+			background-image: url(res/light768.jpg);
+		}
+		.section4{
+			background-image: url(res/road768.jpg);
+		}
+
+	#fullpage
+		.section1.section
+			.mui-container-fluid
+				.mui-panel
+					H3 Authenthication Flow and Sample App
+					p 
+
+		.section2.section
+			.mui-container-fluid
+				.mui-panel
+					H3 Basic and Token Auth.
+					p. 
+						There are several types of auth. Basic is just sending username and password.
+						Token is sending a token, that the server holds instead of username/password. Token can be via query string, header, cookie, etc. Token can comee to any of the distributed servers, so server use a distributed hashmap, such as Redis to store valid tokens. If a Token fails, the user is required to send username/password to the server to get a new token. In general, to be able to do token, you must be comfortable w/ basic, since token auth is just an 'upgrade' and reprsents the already sent username/password.
+
+		.section3.section
+			.mui-container-fluid
+				.mui-panel
+					p On the server:
+					code
+						pre.
+							if('vic'== token.user && '123' == token.password)
+								return true
+							return false
+
+		.section4.section
+			.mui-container-fluid
+				.mui-panel
+					code
+						pre.
+							if( !MyAuth.auth(jt))
+								res.status(403).send(JSON.stringify('Auth required, IP Logged')).end()
+
+		.section3.section
+			.mui-container-fluid
+				.mui-panel
+					p On the client:
+					code
+						pre.
+							fetch(ROOT + url , {
+								method: 'post'
+								, headers: {
+									'Content-Type': 'application/json'
+									,'X-JToken' : JSON.stringify(jtoken)
+									,'Accept':'application/json'
+								}
+								, body: JSON.stringify(data)
+							}).then(function(response)
+
+		.section2.section
+			.mui-container-fluid
+				.mui-panel
+					H3 Example Flow:
+					ol
+						li User goes to 'secured page''
+						li 'Secured page' reads localy stored cookies
+						li Cookies sent to server/service. 
+						li If OK, proceed with 'update', etc.
+						li If not: Go to login page
+						li After login submit, locally store cookie of username/password
+						li Load 'Secured page' / Go to top
+
+		.section1.section
+			.mui-container-fluid
+				.mui-panel
+					H3 Example app
+					ul
+						li Show list of links
+						li If user goes to 'add links' page: redirect to Auth/Login
+						li If user is IE, not Edge, SSR of list
+						li If admin user is IE, not Edge: show list of modern browsers
+						li Use data binding and web components
+
+		.section1.section
+			.mui-container-fluid
+				.mui-panel
+					H3 THE END. Review:
+					p.
+						SPA, SEO, AMP, App shell, Mobile, Web Components, Sass, Express, Services, etc.
+					p Optional Lab: deploy link blog app to your site and release a mobile app. Start w/  topseed-example.
+
+
+	script.
+		TS.onAppReady(UIinit)
+		function UIinit() {
+			console.log('x')
+			$('#fullpage').fullpage({
+				//verticalCentered: false,
+				css3:false
+			})//config
+		}
+
+block footer
+	include ../../../_part/_footer
