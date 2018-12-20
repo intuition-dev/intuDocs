@@ -3,7 +3,7 @@
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
 <!-- footer: Metabake.net -->
-# Primates uses a box to reach
+# Primates use a box to reach
 
 ![200%](pro/211logo.jpg)
 
@@ -19,7 +19,7 @@ Pillar 1: A specific remote centric Agile management (SFT)
 - Can someone read the time scale on top?
 ---
 
-Management, take a screen shot every few minutes
+Management: take a screen shot every few minutes
 |![100%](sol/scr2.png)|![90%](sol/scr1.png)|
 |:-:|:-:|
 ---
@@ -34,7 +34,10 @@ Management, take a screen shot every few minutes
 
 ---
 
-## Pillar 3: Admin/auto gen app
+# Pillar 3: Admin/auto gen app
+## Meta!!
+- Leverage automatic programing AND
+- write an app for the admin 'persona'. (eg: editor)
 
 ---
 
