@@ -46,7 +46,7 @@
 ## Fullstack frameworks
 |![](pro/19breac.png)|![120%](pro/19aairb.png)
 |:-:|:-:|
-
+Q: What is good? A: Productivity.
 ---
 
 ### CS 101 prediction:
