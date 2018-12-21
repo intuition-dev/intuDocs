@@ -4,21 +4,21 @@
 
 Foundation
 ==========
-- Hello World
+- * Hello World
 
-- AWS S3 w/ Mountain Duck
+- * AWS S3 w/ Mountain Duck
 
-- Pug Markup
+- * Pug Markup
 
 - Website
 
-- RIOT Tags in Pug
+- * RIOT Tags in Pug
 
-- Google FireStore v2
+- * Google FireStore v2
 
 Intermediate
 ============
-- CRUD in FireStore, Client side field changes
+- * CRUD in FireStore, Client side field changes
 
 - Advanced Pug Tags (FlipCard)
 
@@ -30,19 +30,19 @@ Intermediate
 
 - Other Examples
 
-- AWS S3 w/ Goofys 
+- * AWS S3 w/ Goofys 
 
 - CodeAnywhere
 
 Advanced
 ========
-- Admin & Meta
+- * Admin & Meta
 
 - Auth
 
 - SPA
 
-- Electron
+- * Electron
 
 - SEO, social, og
 
