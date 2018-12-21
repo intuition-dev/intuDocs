@@ -1,13 +1,12 @@
 
+- Goal: Low-code + Static Gen, Pug
 
-
-- Hello World
 
 Foundation
 ==========
-- AWS S3 
+- Hello World
 
-- Examples
+- AWS S3 w/ Mountain Duck
 
 - Pug Markup
 
@@ -15,35 +14,43 @@ Foundation
 
 - RIOT Tags in Pug
 
-- FireStore v2
+- Google FireStore v2
 
 Intermediate
 ============
-- CRUD
+- CRUD in FireStore, Client side field changes
 
-- Advanced Pug Tags
+- Advanced Pug Tags (FlipCard)
 
-- AMP
+- AMP, m.pug
+
+- Blog, -i
 
 - Slides
 
-- Blog
-
 - Other Examples
+
+- AWS S3 w/ Goofys 
 
 - CodeAnywhere
 
 Advanced
 ========
+- Admin & Meta
 
 - Auth
-
-- Admin
 
 - SPA
 
 - Electron
 
+- SEO, social, og
+
 - UX 
 
+- GSAP, Ad
+
+Appendix
+========
+- Phonegap
 
