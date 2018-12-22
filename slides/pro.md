@@ -93,7 +93,7 @@ Q: What is good? A: Productivity.
 
 # Part I - Low-code status by 2019/2020:
 - # Within 18 months 90% of developers will lose their job, due to automation of software development. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet.
-- ## Including VPE. 
+- ## Including VPE. CTO. No more. 
 - Citizen developers using GUI for cross platform apps. No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
 - Low-code is 10X cheaper and 10x faster.
 - Cuts are first for expensive developers or working on complex tasks. History shows people are hard to manage after a pay cut

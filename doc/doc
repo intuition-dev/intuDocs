@@ -1,8 +1,8 @@
 
-- Goal: Low-code + Static Gen, Pug
+- Learn in 48 hours: Low-code + Static Gen, Pug 
+ 'Some developers implement applications faster'
 
-
-Foundation
+Foundation 2H
 ==========
 - * Hello World
 
@@ -16,7 +16,7 @@ Foundation
 
 - * Google FireStore v2
 
-Intermediate
+Intermediate 1D
 ============
 - * CRUD in FireStore, Client side field changes
 
@@ -24,7 +24,7 @@ Intermediate
 
 - AMP, m.pug
 
-- Blog, -i
+- * Blog, -i
 
 - Slides
 
@@ -32,13 +32,13 @@ Intermediate
 
 - * AWS S3 w/ Goofys 
 
-- CodeAnywhere
+- * CodeAnywhere
 
-Advanced
+Advanced 2H
 ========
-- * Admin & Meta
-
 - Auth
+
+- * Admin & Meta
 
 - SPA
 
