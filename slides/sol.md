@@ -3,6 +3,12 @@
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
 <!-- footer: Metabake.net -->
+## HW costs are down, but also development costs need to go down
+
+![](pro/storage.gif)
+
+---
+
 # Primates use a box to reach
 
 ![200%](pro/211logo.jpg)
