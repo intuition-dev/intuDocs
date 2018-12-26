@@ -1,5 +1,5 @@
-## Simple. Creative. Clean.
+## Embrace Digital Transformation with Metabake!
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+Metabake is the extensible low-code productivity tool that simplifies the process for building great software.
 
-[Read more](#){.btn-custom}{.btn-primary}{.invert}
+[Download the 10 Pillars of Low-Code](#){.btn-custom}{.btn-primary}

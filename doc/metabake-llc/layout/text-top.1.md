@@ -1,5 +1,5 @@
-## Incredible Metabake, nonpareil
+## Embrace Digital Transformation with Metabake!
 
-The premier source for everything you need. It's the solution you've always dreamed of
+Metabake is the extensible low-code productivity tool that simplifies the process for building great software.
 
-[Read more](#){.btn-custom}{.btn-primary}{.invert}
+[Download the 10 Pillars of Low-Code](#){.btn-custom}{.btn-primary}
