@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+    <link rel="amphtml" href="m.html">
+    <script>ROOT = '/' //- sets global pug and .js from dat.yaml
+      let _start = Date.now()
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/riot@3.13.2/riot.min.js"></script>
+    <script src="https://unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js"></script>
+    <script src="/assets/js/setup.js"></script>
+    <style>
+      .delayShowing { opacity: 0; }
+      
+    </style>
+    <title>Metabake - Why Metabake</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod">
+    <!-- Schema.org markup for Google+-->
+    <meta itemprop="name" content="This product is great for CEO">
+    <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod">
+    <meta itemprop="image" content="https://scontent-frx5-1.cdninstagram.com/vp/854e9db2929fe6bc50974f29a1682e9b/5C43A90C/t51.2885-15/e35/42115761_1624273044414819_8394293278859251262_n.jpg">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <!-- Twitter Card data-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="This product is great for CEO">
+    <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod">
+    <!-- Twitter summary card with large image must be at least 280x150px-->
+    <meta name="twitter:image" content="https://scontent-frx5-1.cdninstagram.com/vp/854e9db2929fe6bc50974f29a1682e9b/5C43A90C/t51.2885-15/e35/42115761_1624273044414819_8394293278859251262_n.jpg">
+    <!-- Open Graph data-->
+    <meta property="og:title" content="This product is great for CEO">
+    <meta property="og:type" content="article">
+    <!-- meta(property='og:url', content='#')-->
+    <meta property="og:image" content="https://scontent-frx5-1.cdninstagram.com/vp/854e9db2929fe6bc50974f29a1682e9b/5C43A90C/t51.2885-15/e35/42115761_1624273044414819_8394293278859251262_n.jpg">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="google-site-verification" content="Zu5ZnMt3FILJtC7eu_MhsNzb5tHdGXAfReJspT3RwNg">
+  </head>
+  <body>
+    <div class="pageBack">
+      <script src="/layout/navJBar.js"></script>
+      <script type="text/javascript" async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+      <header class="delayShowing">
+        <div class="logo-wrap"><a href="/" id="logo"><span>Meta</span>bake</a>
+          <div class="site-title">Metabake is the extensible low-code productivity tool that simplifies the process for building great software.</div>
+        </div>
+        <div class="right">
+          <ul class="hide-lg navJBar" id="navJBar" data-function="navJBar">
+            <li><a class="why-metabake" href="#">Why Metabake</a>
+              <ul>
+                <li><a href="/why-metabake/why-metabake">Why Metabake</a></li>
+                <li><a href="/why-metabake/metabake-vs-other-low-code">Metabake vs. Other Low Code</a></li>
+                <li><a href="/why-metabake/metabake-vs-hugo">Metabake vs. Hugo</a></li>
+                <li><a href="/why-metabake/metabake-vs-gulp-and-grunt">Metabake vs. Gulp and Grunt</a></li>
+              </ul>
+            </li>
+            <li><a class="who-benefits" href="/who-benefits">Who Benefits</a></li>
+            <li><a class="get-started" href="/get-started">Get Started</a></li>
+            <li><a class="about" href="#">about</a>
+              <ul>
+                <li><a href="/about/about/">About Us</a></li>
+                <li><a href="/about/vic-cekvenich/">Victor Cekvenich</a></li>
+                <li><a href="/about/contact/">contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="show-lg" id="navBarCont">
+            <svg class="feather" viewBox="0 0 24 24">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <div class="show-lg" id="navOpen"></div>
+      <script>
+        console.log('navJBar')
+        new Navbar('.navJBar') // top
+        //toggle
+        $( "#navBarCont" ).click(function() { //side
+           console.log(isOpen)
+           if(isOpen)
+              navClose()
+           else
+              navOpen()
+        })
+        
+        isOpen = false
+        function navOpen() {
+           let $clone= $("#navJBar").clone(true)
+           $clone.removeClass('hide-lg')
+           $('#navOpen').html($clone)
+           new Navbar('#navOpen')
+           $('.navFirst').addClass('open')
+           $('.navFirst').addClass('open-position')
+           isOpen = true
+        }
+        function navClose() {
+           $('#navOpen').empty()
+           $('.navFirst').removeClass('open')
+           $('.navFirst').removeClass('open-position')
+           isOpen = false
+        }
+        
+        setup();
+      </script>
+      <div class="slider-wrap">
+        <div class="top-slider">
+          <div class="slide-1">
+            <div class="img-top">
+              <div class="pad">
+                <div><h2>Incredible Metabake, nonpareil</h2>
+<p>The premier source for everything you need. It’s the solution you’ve always dreamed of</p>
+<p><a href="#" class="btn-custom btn-primary invert">Read more</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-2">
+            <div class="img-top">
+              <div class="pad">
+                <div><h2>Simple. Creative. Clean.</h2>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+<p><a href="#" class="btn-custom btn-primary invert">Read more</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-3">
+            <div class="img-top">
+              <div class="pad">
+                <div><h2>Nulla facilisi. Proin quis turpis</h2>
+<p>Nulla facilisi. Proin quis turpis vel dolor iaculis tristique a ut urna.</p>
+<p><a href="#" class="btn-custom btn-primary invert">Read more</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper"><h1>Metabake versus Other Low-Code Platforms</h1>
+<p>Metabake is a low-code programming for static generation such as Markdown, Pugs, etc. with an inclusion of dynamic data binding.</p>
+<p>Metabake, or mBake, as some prefer to call it, is specifically built and customized for developers; it is not a gui. We give the chance to let you use a text editor to build your content and code in a more customized build that is suitable for your usability. It enhances front-end software app development.</p>
+<h2 class="tag-line">Metabake is the extensible low-code productivity tool that simplifies the process for building great software</h2>
+<p>A distinct characteristic of low-code programming, Metabake has the unique ability of going with the development of a front-end before the backend. That way, it is easier to work on a backend while we keep the consciousness of a friendly user interface in mind.</p>
+<p>It also allows a developer to create a user-guided development; not the other way around… making you feel more comfortable and in charge of your development.</p>
+<p>It is easily applicable to the development of a business process, database and for web application.<br>
+The Metabake low-code platform allows you to build six to ten times faster than traditional development, and this is because we’re not creating code. Metabake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.</p>
+
+      <div class="d-hide" data-js-menu-highlight="why-mbake"></div>
+      <footer>
+        <div class="footer-1">
+          <div class="logo-footer"><a href="/"><span>Meta</span>bake</a>
+            <div class="site-title">Metabake is the extensible low-code productivity tool that simplifies the process for building great software.</div>
+          </div>
+          <div class="menu-wrap">
+            <ul>
+              <li class="header"><a class="adjustFootList text-bold" href="/terms/">Terms of Use</a></li>
+            </ul>
+            <ul>
+              <li class="header"><a class="text-bold" href="/privacy/">Privacy</a></li>
+            </ul>
+            <ul>
+              <li class="header"><a class="text-bold" href="/about/contact/">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="copyright">
+             copyright <span>&copy; </span>2019 Metabake</div>
+          <div class="social-icons"><a href="#"><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="90px" height="90px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+<g>
+	<path d="M90,26.958C90,19.525,83.979,13.5,76.55,13.5h-63.1C6.021,13.5,0,19.525,0,26.958v36.084
+		C0,70.475,6.021,76.5,13.45,76.5h63.1C83.979,76.5,90,70.475,90,63.042V26.958z M36,60.225V26.33l25.702,16.947L36,60.225z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</a></div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function userSzSc() {
+         console.log('resize|scroll')
+      }
+    </script>
+  <!-- mB v4.14.7 on 2018-12-26T16:54:43.660Z --></body>
+</html>

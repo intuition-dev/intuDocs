@@ -1,0 +1,27 @@
+[
+  {
+    "About us b": "/home-b/about"
+  },
+  {
+    "About": [
+      {
+        "About us a": "/home-a/about"
+      },
+      {
+        "Careers": "/home-a/careers"
+      },
+      {
+        "Strategy": "/home-a/strategy"
+      }
+    ]
+  },
+  {
+    "Team": "/team"
+  },
+  {
+    "News": "/news"
+  },
+  {
+    "Contact us": "/contact"
+  }
+]

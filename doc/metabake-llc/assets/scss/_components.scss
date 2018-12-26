@@ -1,0 +1,12 @@
+.modal:target, .modal.active {
+    z-index: 9999;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.d-hide {
+   display: none;
+}

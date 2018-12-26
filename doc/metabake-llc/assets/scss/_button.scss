@@ -1,0 +1,81 @@
+.btn {
+   &-custom {
+      text-transform: uppercase;
+      border: 0;
+      font-size: 15px;
+      min-width: 100px;
+      padding: 9px 31px;
+      transition: all .2s ease-in-out;
+      display: table;
+
+      &:hover, &:active, &:focus {
+         outline: none;
+         text-decoration: none;
+         box-shadow: none;
+      }
+      .icon {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         svg {
+               margin-left: 1rem;
+               width: 30px;
+               flex-shrink: 0;
+         }
+      }
+      &[disabled='disabled'] {
+         background: grey;
+      }
+   }
+
+   &-center {
+      margin-right: auto;
+      margin-left: auto;
+   }
+
+   &-primary {
+      background: linear-gradient(to right, $color-primary-0 50%, $color-orange 50%) no-repeat scroll right bottom / 210% 100% $color-orange;
+      &, &:hover, &:active, &:focus {
+         &, svg {
+            color: white;
+            fill: white;
+         }
+      }
+   }
+
+   &-secondary {
+      // background: linear-gradient(to right, $button-secondary-theme1-hover 50%,$button-secondary-theme1 50%) no-repeat scroll right bottom / 210% 100% $button-secondary-theme1;
+
+      &, &:hover, &:active, &:focus {
+         &, svg {
+            // color: $button-secondary-theme1-color;
+            // fill: $button-secondary-theme1-color;
+         }
+      }
+
+   }
+   &-primary, &-secondary {
+      -webkit-transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0 linear 0.3s; 
+      -ms-transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0 linear 0.3s; 
+      transition: color 0.3s ease, border-color 0.3s ease, background-position 0.3s ease, background-color 0 linear 0.3s; 
+      &:hover, &:active, &:focus {
+         background-position: left bottom;
+      }
+   }
+}
+
+.social-icons {
+   &, a {
+      display: flex;
+      align-items: center;
+   }
+   svg {
+      width: 25px;
+      height: 25px;
+      fill: #111;
+      flex-shrink: 0;
+   }
+   a {
+      margin-left: 15px;
+   }
+}
