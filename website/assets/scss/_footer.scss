@@ -1,6 +1,6 @@
 footer {
-   background: #F4F4F3;
-   color: #5a5a5a;
+   background: $color-bg-light;
+   color: $color-dark;
    padding-top: 40px;
    .footer-1 {
       ul {
@@ -28,10 +28,10 @@ footer {
          }
          a {
             &, li {
-               color: #5a5a5a;
+               color: $color-dark;
             }
             &:hover {
-               color: #5a5a5a;
+               color: $color-dark;
                text-decoration: underline;
             }
          }

@@ -12,7 +12,7 @@ body {
       }
    }
    .img-top.inner {
-      background: url(../img/slide-3.jpg) top center / cover, no-repeat, #222;
+      background: url(../img/slide-3.jpg) top center / cover, no-repeat, $color-bg-dark;
       height: 150px;
       p:first-of-type {
          display: none;
@@ -160,7 +160,7 @@ body {
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
-   background-color: #222;
+   background-color: $color-bg-dark;
    height: 480px;
    overflow: hidden;
    display: flex;
@@ -171,14 +171,14 @@ body {
       max-width: 100%;
       display: table;
       margin: 0 auto;
-      color: #222;
+      color: $color-bg-dark;
       text-align: center;
    }
    h2 {
       margin-bottom: 25px;
       font-size: 46px;
       font-weight: 600;
-      color: #222;
+      color: $color-bg-dark;
       cursor: pointer;
    }
    .btn-custom {

@@ -32,7 +32,7 @@ h6 {
 }
 
 a {
-   color: #222;
+   color: $color-bg-dark;
    transition: all .2s ease-in-out;
 
    &,
@@ -83,7 +83,7 @@ p, ul li {
 }
 
 .tag-line {
-   background: #F4F4F3;
+   background: $color-bg-light;
    padding: 2rem;
    margin: 1.2rem 0;
    text-align: center;
