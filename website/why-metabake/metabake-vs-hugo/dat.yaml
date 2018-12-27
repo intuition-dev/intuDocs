@@ -1,6 +1,7 @@
 basedir: ../../
 ROOT: '/'
 pretty: true
+home: 'home'
 
 pageTitle: Metabake - Metabake versus Hugo
 title: Metabake versus Hugo

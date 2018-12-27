@@ -1,6 +1,7 @@
 basedir: ../../
 ROOT: '/'
 pretty: true
+home: 'home'
 
 pageTitle: Metabake - Metabake versus Gulp and Grunt
 title: Metabake versus Gulp and Grunt

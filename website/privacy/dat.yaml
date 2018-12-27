@@ -1,6 +1,7 @@
 basedir: ../
 ROOT: '/'
 pretty: true
+home: ''
 
 pageTitle: Metabake - Privacy
 title: Privacy Policy

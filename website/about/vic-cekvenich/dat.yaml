@@ -1,6 +1,7 @@
 basedir: ../../
 ROOT: '/'
 pretty: true
+home: ''
 
 pageTitle: Metabake - Victor Cekvenich
 title: Who is Victor Cekvenich?

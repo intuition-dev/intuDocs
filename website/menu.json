@@ -1,27 +1,49 @@
 [
   {
-    "About us b": "/home-b/about"
-  },
-  {
-    "About": [
+    "Why Metabake": [
       {
-        "About us a": "/home-a/about"
+        "Why Metabake": "/why-metabake/why-metabake"
       },
       {
-        "Careers": "/home-a/careers"
+        "Metabake vs. Other Low Code": "/why-metabake/metabake-vs-other-low-code"
       },
       {
-        "Strategy": "/home-a/strategy"
+        "Metabake vs. Hugo": "/why-metabake/metabake-vs-hugo"
+      },
+      {
+        "Metabake vs. Gulp and Grunt": "/why-metabake/metabake-vs-gulp-and-grunt"
       }
     ]
   },
   {
-    "Team": "/team"
+    "Who Benefits": "/who-benefits"
   },
   {
-    "News": "/news"
+    "Get Started": "/get-started"
   },
   {
-    "Contact us": "/contact"
+    "About": [
+      {
+        "About us": "/about/about"
+      },
+      {
+        "Victor Cekvenich": "/about/vic-cekvenich"
+      },
+      {
+        "support": "/about/support"
+      },
+      {
+        "contact us": "/about/contact"
+      }
+    ]
+  },
+  {
+    "Terms of Use": "/terms"
+  },
+  {
+    "Privacy": "/privacy"
+  },
+  {
+    "Contact us": "/about/contact"
   }
 ]

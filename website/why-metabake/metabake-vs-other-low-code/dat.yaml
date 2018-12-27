@@ -1,6 +1,7 @@
 basedir: ../../
 ROOT: '/'
 pretty: true
+home: 'home'
 
 pageTitle: Metabake - Metabake versus Other Low-Code Platforms
 title: Metabake versus Other Low-Code Platforms

@@ -48,7 +48,7 @@ html(lang='en_US')
 
       block head2
 
-   body
+   body(class=home)
 
       block top
          .pageBack
@@ -70,6 +70,10 @@ html(lang='en_US')
                         .pad
                            div
                               include:metaMD text-top.md
+            .img-top.inner
+               .pad
+                  include:metaMD text-top.md
+
 
       .content-wrapper
          block main

@@ -1,6 +1,7 @@
 basedir: ../../
 ROOT: '/'
 pretty: true
+home: ''
 
 pageTitle: Metabake - Contact Us
 title: Lorem Ipsum

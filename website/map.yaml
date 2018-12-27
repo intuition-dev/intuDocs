@@ -3,13 +3,20 @@ host: 'https://www.metabake.net'
 changefreq: monthly
 
 menu:
-   - About us b: /home-b/about
+   - Why Metabake:
+      - Why Metabake: /why-metabake/why-metabake
+      - Metabake vs. Other Low Code: /why-metabake/metabake-vs-other-low-code
+      - Metabake vs. Hugo: /why-metabake/metabake-vs-hugo
+      - Metabake vs. Gulp and Grunt: /why-metabake/metabake-vs-gulp-and-grunt
+   - Who Benefits: /who-benefits
+   - Get Started: /get-started
    - About:
-      - About us a: /home-a/about
-      - Careers: /home-a/careers
-      - Strategy: /home-a/strategy
-   - Team: /team
-   - News: /news
-   - Contact us: /contact
+      - About us: /about/about
+      - Victor Cekvenich: /about/vic-cekvenich
+      - support: /about/support
+      - contact us: /about/contact
+   - Terms of Use: /terms
+   - Privacy: /privacy
+   - Contact us: /about/contact
 
-itemsRoot: /news
+itemsRoot: /why-metabake/why-metabake
