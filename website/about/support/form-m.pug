@@ -1,0 +1,16 @@
+#mailFrm.grid-form
+   fieldset
+      legend Please, complete the form below and a Metabake representative will be in touch with you.
+      div(data-row-span='2')
+         div(data-field-span='1')
+            label Full Name
+            input#name(type='text', required)
+         div(data-field-span='1')
+            label Email address
+            input#email(type='email', required)
+      div(data-row-span='1')
+         div(data-field-span='1')
+            label Type your message
+            textarea(name='msg', required)
+.notification.d-hide
+button#sendBut.btn-custom.btn-primary(type='submit') Send Message

@@ -1,3 +1,5 @@
+# Get started
+
 Metabake is the extensible low-code productivity tool that simplifies the process for building great software.
 
 Metabake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high development productivity.
@@ -11,7 +13,7 @@ $ yarn global add mbake
 $ mbake
 ```
 
-# First Page
+## First Page
 
 Create file index.pug
 
@@ -27,7 +29,7 @@ and create file dat.yaml
 key1: World
 ```
 
-### Now make with mbake
+now make with mbake
 
 ```sh
 $ mbake .
@@ -55,6 +57,12 @@ $ mbakeW
 ```
 
 This will output available commands for downloading starter applications.
+
+For example, this command will download the website template:
+
+```sh
+$ mbake -s
+```
 
 Examples include an admin module, a watcher module, SPA, Blog, Website, Slides, Dashboard, CRUD, PWA, Electron, Hybrid mobile apps, Cloud v2.0 via AWS|FireStore, RIOTjs and more.
 

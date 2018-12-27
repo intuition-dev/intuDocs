@@ -175,7 +175,70 @@
             </fieldset>
           </div>
           <div class="notification d-hide"></div>
-          <button class="btn-custom btn-primary" id="sendBut" type="submit">Send Message</button><p>The Metabake low-code platform allows you to build six to ten times faster than traditional development, and this is because we’re not creating code. Metabake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.</p>
+          <button class="btn-custom btn-primary" id="sendBut" type="submit">Send Message</button>
+          <script>
+            depp.require(['pre'], setupEmail);
+            
+            /**
+               return error message if validation fails or OK 
+            */
+            function val() { 
+               let nameInput = $('#name').val();
+               let emailInput = $('#email').val();
+               let msgTextarea = $('textarea[name="msg"]').val();
+               if (validator.isEmpty(nameInput, { ignore_whitespace: true }) ) {
+                  return 'Name is blank';
+               }
+               if (validator.isEmpty(emailInput, { ignore_whitespace: true }) ) {
+                  return 'Email is blank';
+               }
+               if (validator.isEmail(emailInput) === false) {
+                  return 'Email is invalid';
+               }
+               if (validator.isEmpty(msgTextarea, { ignore_whitespace: true }) ) {
+                  return 'Message is blank';
+               }
+               return 'OK';
+            }
+            
+            function setupEmail() {
+               emailjs.init("user_Pc9qJia9LYfibI953zcJY"); // user_Ml0VMHTbgatOE8QpYmnmb
+               $('#mailFrm').disableAutoFill();
+            
+               $('#sendBut').click(function() {
+                  
+                  $('.notification').removeClass('.error-msg').addClass('d-hide').text('');
+            
+                  let msg = val();
+                  if(msg=='OK') {
+                     console.log('send');
+                     let dat = {
+                        name: $("#name").val()
+                        ,email: $("#email").val()
+                        ,msg: $("textarea[name='msg']").val()
+                     }
+                     console.log(dat);
+                     $(this).attr("disabled", "disabled");
+                     emailjs
+                        .send('gmail', 'support', dat )
+                        .then(() => {
+                           $(this).removeAttr("disabled");
+                           $('.notification').removeClass('d-hide error-msg').text('The email has been sent');
+                        });
+                     $("#name, #email, textarea[name='msg']").val('');
+                  }
+                  else  {
+                     swal({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: msg
+                     });
+                  }
+            
+               });
+            
+            }
+          </script><p>The Metabake low-code platform allows you to build six to ten times faster than traditional development, and this is because we’re not creating code. Metabake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.</p>
 
         </div>
       </div>
@@ -247,5 +310,5 @@
          console.log('resize|scroll')
       }
     </script>
-  <!-- mB v4.14.7 on 2018-12-27T05:55:08.575Z --></body>
+  <!-- mB v4.14.7 on 2018-12-27T07:24:12.650Z --></body>
 </html>

@@ -175,8 +175,73 @@
               </div>
             </fieldset>
           </div>
-          <div class="notification d-hide"></div>
-          <button class="btn-custom btn-primary" id="sendBut" type="submit">Download</button>
+          <div class="notification d-hide"></div><a id="sendBut" href="#">
+            <button class="btn-custom btn-primary" type="submit">Download</button></a>
+          <script>
+            depp.require(['pre'], setupEmail);
+            
+            /**
+               return error message if validation fails or OK 
+            */
+            function val() { 
+               let fNameInput = $('#f-name').val();
+               let lNameInput = $('#l-name').val();
+               let emailInput = $('#email').val();
+               if (validator.isEmpty(fNameInput, { ignore_whitespace: true }) ) {
+                  return 'First Name is blank';
+               }
+               if (validator.isEmpty(lNameInput, { ignore_whitespace: true }) ) {
+                  return 'Last Name is blank';
+               }
+               if (validator.isEmpty(emailInput, { ignore_whitespace: true }) ) {
+                  return 'Email is blank';
+               }
+               if (validator.isEmail(emailInput) === false) {
+                  return 'Email is invalid';
+               }
+               return 'OK';
+            }
+            
+            function setupEmail() {
+               emailjs.init("user_Pc9qJia9LYfibI953zcJY"); // user_Ml0VMHTbgatOE8QpYmnmb
+               $('#mailFrm').disableAutoFill();
+            
+               $('#sendBut').click(function(e) {
+            
+                  e.preventDefault();
+                  $('.notification').removeClass('.error-msg').addClass('d-hide').text('');
+            
+                  let msg = val();
+                  if(msg=='OK') {
+                     console.log('send');
+                     let dat = {
+                        firstName: $("#f-name").val()
+                        ,lastName: $("#l-name").val()
+                        ,msg: $("#email").val()
+                     }
+                     console.log(dat);
+                     $(this).attr("disabled", "disabled");
+                     emailjs
+                        .send('gmail', 'download', dat )
+                        .then(() => {
+                           $(this).removeAttr("disabled");
+                           $('.notification').removeClass('d-hide error-msg').text('The email has been sent');
+                        });
+                     $("#f-name, #l-name, #email").val('');
+                     $(this).attr({target: '_blank', href  : '/10-Pillars-Related-to-Low-Code_Final.pdf'});
+                  }
+                  else  {
+                     swal({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: msg
+                     });
+                  }
+            
+               });
+            
+            }
+          </script>
         </div>
       </div>
       <footer>
@@ -247,5 +312,5 @@
          console.log('resize|scroll')
       }
     </script>
-  <!-- mB v4.14.7 on 2018-12-27T05:55:08.763Z --></body>
+  <!-- mB v4.14.7 on 2018-12-27T07:24:12.845Z --></body>
 </html>
