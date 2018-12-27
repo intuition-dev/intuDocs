@@ -2,4 +2,4 @@
 
 Metabake is the extensible low-code productivity tool that simplifies the process for building great software.
 
-[Download the 10 Pillars of Low-Code](#){.btn-custom}{.btn-primary}
+[Download the 10 Pillars of Low-Code](/download){.btn-custom}{.btn-primary}

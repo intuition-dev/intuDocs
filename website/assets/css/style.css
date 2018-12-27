@@ -399,6 +399,7 @@ button { cursor: pointer; }
 .notification { color: green; font-size: 12px; margin: 1rem 0; }
 .support #sendBut { margin-bottom: 40px; }
 .grid-form fieldset legend { font-size: 15px; }
+.download-form { width: 695px; max-width: 100%; }
 footer { background: #f2f2f2; color: #5a5a5a; padding-top: 40px; }
 footer ul { margin: 0 3rem 0 0; padding: 0; }
 footer ul:last-of-type { margin: 0; }
@@ -437,4 +438,4 @@ footer ul li a:hover { color: #5a5a5a; text-decoration: underline; }
 .slide-1 .img-top { background-image: url(../img/slide-1.jpg); }
 .slide-2 .img-top { background-image: url(../img/slide-4.jpg); }
 .slide-3 .img-top { background-image: url(../img/slide-3.jpg); }
-.markdown .highlight { background-color: #f0f0f0; color: #000; margin-bottom: 16px; border-radius: 6px; } /* mB v4.14.7 on 2018-12-26T20:21:00.308Z */
+.markdown .highlight { background-color: #f0f0f0; color: #000; margin-bottom: 16px; border-radius: 6px; } /* mB v4.14.7 on 2018-12-27T05:55:06.476Z */
