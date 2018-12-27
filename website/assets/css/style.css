@@ -439,4 +439,5 @@ footer ul li a:hover { color: #5a5a5a; text-decoration: underline; }
 .slide-1 .img-top { background-image: url(../img/slide-1.jpg); }
 .slide-2 .img-top { background-image: url(../img/slide-4.jpg); }
 .slide-3 .img-top { background-image: url(../img/slide-3.jpg); }
-.markdown .highlight { background-color: #f0f0f0; color: #000; margin-bottom: 16px; border-radius: 6px; } /* mB v4.14.7 on 2018-12-27T06:02:26.587Z */
+.code pre { font-family: monospace,monospace; background-color: #f7f7f7; border-radius: 2px; color: #000; font-size: 1em; padding: 13px 15px; margin-top: 0; margin-bottom: 24px; overflow-x: auto; }
+.code p { margin-bottom: 16px; } /* mB v4.14.7 on 2018-12-27T07:51:08.094Z */
