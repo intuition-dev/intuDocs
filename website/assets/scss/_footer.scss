@@ -2,9 +2,13 @@ footer {
    background: #F4F4F3;
    color: #5a5a5a;
    padding-top: 40px;
+   .footer-1 {
+      ul {
+         padding: 0;
+      }
+   }
    ul {
       margin: 0 3rem 0 0;
-      padding: 0;
       &:last-of-type {
          margin: 0;
       }
@@ -81,6 +85,29 @@ footer {
 
    footer ul li, .logo-footer a {
       font-size: 14px;
+   }
+
+}
+
+@media (max-width: 840px) {
+
+   footer ul li, .logo-footer a {
+      font-size: 12px;
+   }
+
+   footer {
+      padding-top: 1rem;
+      ul {
+         margin: 0 1rem 0 0;
+      }
+   }
+
+   .footer-1 {
+      padding: 0;
+   }
+
+   .logo-footer {
+      padding-bottom: 1rem;
    }
 
 }

@@ -157,3 +157,15 @@ header {
       font-size: 10px;
    }
 }
+
+@media (max-width: 960px) {
+   #logo {
+      margin: 0;
+   }
+}
+
+@media (max-width: 480px) {
+   .logo-wrap .site-title {
+      display: none;
+   }
+}
