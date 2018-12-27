@@ -1,19 +1,19 @@
 
-$(document).ready(function () {
-    // are we running in native app or in a browser?
-    window.isphone = false
-    if (document.URL.indexOf("http://") === -1
-        && document.URL.indexOf("https://") === -1) {
-        window.isphone = true
-    }
+// $(document).ready(function () {
+//     // are we running in native app or in a browser?
+//     window.isphone = false
+//     if (document.URL.indexOf("http://") === -1
+//         && document.URL.indexOf("https://") === -1) {
+//         window.isphone = true
+//     }
 
-    console.log('phonegap?', window.isphone)
-    if (window.isphone) { // //file is a browser
-        document.addEventListener("deviceready", onDeviceReady, false)
-    } else {
-        onDeviceReady()
-    }
-})
+//     console.log('phonegap?', window.isphone)
+//     if (window.isphone) { // //file is a browser
+//         document.addEventListener("deviceready", onDeviceReady, false)
+//     } else {
+//         onDeviceReady()
+//     }
+// })
 
 depp.define({
 'pre': [
