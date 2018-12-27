@@ -2,7 +2,7 @@
 
 Metabake is a smart way of creating user-effective front-end web and application development, using low-code programming. Instead of creating a web application from scratch that can be strenuous, and time-consuming, people decide to use Metabake as the perfect developer’s choice that has been built only to be edited and customized for special use according to a client’s demand.
 
-## Metabake's goal is high development productivity, efficiency and effectiveness{.tag-line}
+## Metabake's goal is high development productivity, efficiency and effectiveness
 
 Metabake's low-code platform simplifies the building of great software. It is generally preferred because of its smartness and the fact that it is easy to use, navigate, and edit. With drags and slides from the available options, extension and expansion are easier to handle.
 

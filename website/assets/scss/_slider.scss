@@ -213,3 +213,12 @@ body {
    }
  
 }
+
+@media (max-width: 960px) {
+   .img-top {
+      height: 400;
+      h2 {
+         font-size: 32px;
+      }
+   }
+}

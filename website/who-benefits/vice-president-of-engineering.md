@@ -4,8 +4,6 @@ As the vice president of engineering, Metabake is scalable for governing multipl
 
 If you have a big IT project looming, but don't have the number of engineers you need to tackle the work in the time frame that's been set. The best solution for this scenario is the Metabake low-code development platform.
 
-### Metabake is the extensible low-code productivity tool that simplifies the process for building great software{.tag-line}
-
 There are some significant benefits to employing the Metabake platform. First, you can speed up your application development and delivery. Metabake development requires little to no coding, so it goes faster than traditional application development. Second, you don't necessarily need programmers to perform the work. There also isn't a need to staff up with programmers for this big project. You may be able to use the business expert who has the best understanding of the project's goals to create the application.
 
 * Compliance

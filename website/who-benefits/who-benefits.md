@@ -13,5 +13,3 @@ It offers exclusive benefit of interest to new web or software developers, techn
 * Inexpensive
 
 The Metabake low-code platform allows you to build six to ten times faster than traditional development, and this is because we're not creating code. Metabake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.
-
-### Metabake is the extensible low-code productivity tool that simplifies the process for building great software{.tag-line}

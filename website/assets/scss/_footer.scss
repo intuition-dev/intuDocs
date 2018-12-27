@@ -1,5 +1,5 @@
 footer {
-   background:#f2f2f2;
+   background: #F4F4F3;
    color: #5a5a5a;
    padding-top: 40px;
    ul {
@@ -75,4 +75,12 @@ footer {
       margin: 0 0 7px 0;
       font-weight: 600;
    }
+}
+
+@media (max-width: 960px) {
+
+   footer ul li, .logo-footer a {
+      font-size: 14px;
+   }
+
 }

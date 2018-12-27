@@ -17,7 +17,6 @@ h6 {
 
 h2 {
    font-size: 26px;
-   line-height: 1.2;
    margin: .8rem 0;
 }
 h3 {
@@ -80,4 +79,53 @@ p, ul li {
    font-size: 16px;
    line-height: 24px;
    font-weight: 400;
+}
+
+.content-wrapper {
+   ul {
+      margin-bottom: 1.2rem;
+      li {
+         line-height: 1.6em;
+         margin: 0;
+      }
+   }
+}
+
+.tag-line {
+   background: #F4F4F3;
+   padding: 2rem;
+   margin: 1.2rem 0;
+   text-align: center;
+   line-height: 1.4;
+   font-size: 24px;
+}
+
+@media (max-width: 960px) {
+
+   .content-wrapper h1 {
+      font-size: 32px;
+   }
+
+   h2 {
+      font-size: 20px;
+   }
+
+   h3 {
+      font-size: 17px;
+   }
+
+   h2, h3 {
+      line-height: 1.4;
+   }
+
+   p, ul li {
+      font-size: 14px;
+      line-height: 1.45;
+   }
+
+   
+   p {
+      margin-bottom: .5rem;
+   }
+
 }
