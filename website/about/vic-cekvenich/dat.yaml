@@ -1,15 +1,11 @@
 basedir: ../../
-
 ROOT: '/'
-
-pageTitleTop: Lorem ipsum dolor sit amet
-
 pretty: true
 
-pageTitle: Metabake - About Us
-title: This is great for tech lead and researchers
+pageTitle: Metabake - Victor Cekvenich
+title: Who is Victor Cekvenich?
 image: >-
-  https://scontent-frx5-1.cdninstagram.com/vp/854e9db2929fe6bc50974f29a1682e9b/5C43A90C/t51.2885-15/e35/42115761_1624273044414819_8394293278859251262_n.jpg
-content_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-comment: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-keywords: HTML5,CSS3
+  http://www.metabake.net/assets/img/slide-3.jpg
+content_text: Software engineer and visionary...
+comment: Victor is the founder of Metabake and a seasoned technology executive with experience with large-scale software development, team building, low-code development, network programming, practical approach to architecture, agile, CMS, distributed/network computing HTML5, CSS, node, mobile, Java, API, product, and a sought-after speaker.
+keywords: Victor Cekvenich, low-code development, founder of Metabake
