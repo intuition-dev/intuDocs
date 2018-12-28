@@ -2,54 +2,56 @@
 - In 48 hours learn a stack: Low-code + Static Gen, Pug 
  'Some developers implement applications faster'
 
-Foundation 2H
+Foundation .5D
 ==========
-- * Hello World
+- * Hello World .5H
 
-- * AWS S3 w/ Mountain Duck
+- * AWS S3 w/ Mountain Duck .5H
 
-- * Pug Markup
+- * Pug Markup .5H
 
-- Website
+- Website 1H
 
-- * RIOT Tags in Pug
+- * RIOT Tags in Pug 1H
 
-- * Google FireStore v2
+- * Google FireStore v2 1H
 
-Intermediate 1D
-============
-- * CRUD in FireStore, Client side field changes
+Bread and Butter 1D
+==================
+- * CRUD in FireStore, Client side field changes 4H
 
-- Advanced Pug Tags (FlipCard)
+- Advanced Pug Tags (FlipCard) 
 
-- AMP, m.pug
+- AMP, m.pug 
 
-- * Blog, -i
+- * Blog, -i .5H
 
 - Slides
 
 - Other Examples
 
-- * AWS S3 w/ Goofys 
+- * AWS S3 w/ Goofys  1H
 
-- * CodeAnywhere
+- * CodeAnywhere 
 
-Advanced 2H
+- Theme: Spectre 
+
+Advanced .5D
 ========
 - Auth
 
-- * Admin & Meta
+- * Admin & Meta 2H
 
 - SPA
 
-- * Electron
+- * Electron 1H
 
 - SEO, social, og
 
 - GSAP, Ad
 
-Perspectives
-========
+Perspectives .2H
+============
 - Phonegap
 
 - How to extend
