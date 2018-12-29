@@ -55,12 +55,12 @@ screen recordings.
 **Pillar 2: UX and User-Oriented Teams**
 
 Developers love to build, and that includes building useless things. The
-world's highest tech leaders must be using 'Intercept/Observe'
+tech leaders must be using 'Intercept/Observe'
 techniques - e.g. screen recordings of users using the Web App to share
 with the tech team. If one fails to do this, the team will be talking
 about bits and bytes and not the things that truly matter in the market.
 Further, some teams spend a considerable amount of time playing, giving
-in to every temptation available.
+in to every temptation available. Also, UI first, then DB.
 
 **Pillar 3: Admin**
 
@@ -84,7 +84,7 @@ and by designer, it should go without saying that I am referring to a
 designer that knows CSS. In any event, an individual contributor must
 know how to work with designers, while possessing polyglot skills in
 more than one SASS framework. NIH is poor productivity; it is better to
-leverage a documented framework or two.
+leverage a documented CSS framework. 
 
 **Pillar 5: Learn Quickly**
 
