@@ -14,11 +14,11 @@ Foundation .5D
 
 - * RIOT Tags in Pug 1H
 
-- * Google FireStore v2 1H
+- * Google FireStore Model + Event v2 1H
 
 Bread and Butter 1D
 ==================
-- * CRUD in FireStore, Client side field changes 4H
+- * CRUD in FireStore, Client side DOM-only field changes .5D
 
 - Advanced Pug Tags (FlipCard) 
 
@@ -36,11 +36,13 @@ Bread and Butter 1D
 
 - Theme: Spectre 
 
+- Video/Images
+
 Advanced .5D
 ========
 - Auth
 
-- * Admin & Meta 2H
+- * CMS & Meta 2H
 
 - SPA
 
