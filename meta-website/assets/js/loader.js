@@ -15,8 +15,6 @@ depp.define({
    , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
 
    , '/assets/3rd/gridform.css'
-   , '/assets/3rd/navJBar.js'
-
 ]
 })//define
 

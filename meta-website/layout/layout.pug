@@ -44,7 +44,6 @@ html(lang='en_US')
 
       //- top css layout
       link(href='/assets/3rd/spectreTop.css', rel='stylesheet', type='text/css') 
-      link(href='/assets/3rd/navJBar.css', rel='stylesheet', type='text/css') 
       style.
          .delayShowing { opacity: 0; }
       //- in case a page needs it:
@@ -52,35 +51,10 @@ html(lang='en_US')
 
    body
 
-      block top
-         .pageBack
-            include /layout/nav
-            .slider-wrap
-               .top-slider
-                  .slide-1
-                     .img-top
-                        .pad
-                           div
-                              include:metaMD text-top.1.md
-                  .slide-2
-                     .img-top
-                        .pad
-                           div
-                              include:metaMD text-top.2.md
-                  .slide-3
-                     .img-top
-                        .pad
-                           div
-                              include:metaMD text-top.md
-            .img-top.inner
-               .pad
-                  include:metaMD text-top.md
-
+      include navJBar
 
       .content-wrapper
          block main
-
-         include foot
 
       script.
          function userSzSc() {
