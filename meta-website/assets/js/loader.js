@@ -12,8 +12,10 @@ depp.define({
    , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.min.js'
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.css'
+   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
 
    , '/assets/css/gridform.css'
+   , '/assets/3rd/navJBar.js'
 
 ]
 })//define
@@ -21,7 +23,6 @@ depp.define({
 depp.define({ '2nd': ['#pre'
    , 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js'
    , '/assets/3rd/jquery.disableAutoFill.js' 
-   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
    , 'https://cdn.jsdelivr.net/npm/validator@10.9.0/validator.min.js'
    , 'https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.css'
    , 'https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.min.js'
@@ -31,6 +32,7 @@ depp.define({ '2nd': ['#pre'
 
 depp.define({ 'css': ['#2nd'
    ,'/assets/css/spectre.css'
+   ,'/assets/css/gridform.css'
 
    , 'css!https://fonts.googleapis.com/css?family=Open+Sans'
    , 'css!https://fonts.googleapis.com/css?family=Oswald'//headings

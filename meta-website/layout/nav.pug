@@ -1,5 +1,3 @@
-script(src='/layout/navJBar.js')
-script(type='text/javascript', async defer, src='https://assets.pinterest.com/js/pinit.js')
 
 header.delayShowing
    .logo-wrap
@@ -42,34 +40,3 @@ header.delayShowing
             line(x1='3', y1='18', x2='21', y2='18')
 
 #navOpen.show-lg
-
-script.
-   console.log('navJBar')
-   new Navbar('.navJBar') // top
-   //toggle
-   $( "#navBarCont" ).click(function() { //side
-      console.log(isOpen)
-      if(isOpen)
-         navClose()
-      else
-         navOpen()
-   })
-
-   isOpen = false
-   function navOpen() {
-      let $clone= $("#navJBar").clone(true)
-      $clone.removeClass('hide-lg')
-      $('#navOpen').html($clone)
-      new Navbar('#navOpen')
-      $('.navFirst').addClass('open')
-      $('.navFirst').addClass('open-position')
-      isOpen = true
-   }
-   function navClose() {
-      $('#navOpen').empty()
-      $('.navFirst').removeClass('open')
-      $('.navFirst').removeClass('open-position')
-      isOpen = false
-   }
-
-   setup();

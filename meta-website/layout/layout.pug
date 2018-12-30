@@ -12,23 +12,23 @@ html(lang='en_US')
       title #{pageTitle}
       meta(name='description', content=content_text)
 
-      // Schema.org markup for Google+
+      //- Schema.org markup for Google+
       meta(itemprop='name', content=title)
       meta(itemprop='description', content=content_text)
       meta(itemprop='image', content=image)
       meta(name='keywords', content=keywords)
 
-      // Twitter Card data
+      //- Twitter Card data
       meta(name='twitter:card', content='summary_large_image')
       meta(name='twitter:title', content=title)
       meta(name='twitter:description', content=content_text)
-      // Twitter summary card with large image must be at least 280x150px
+      //- Twitter summary card with large image must be at least 280x150px
       meta(name='twitter:image', content=image)
 
-      // Open Graph data
+      //- Open Graph data
       meta(property='og:title', content=title)
       meta(property='og:type', content='article')
-      // meta(property='og:url', content='#')
+      //- meta(property='og:url', content='#')
       meta(property='og:image', content=image)
       meta(property='og:description', content=comment)
 
@@ -38,7 +38,7 @@ html(lang='en_US')
       script(src='https://unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js')
       script(src='https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js')
 
-      // get the images
+      //- get the images
       script(src='https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js')
       script(src= '/assets/js/loader.js')
 
@@ -46,7 +46,7 @@ html(lang='en_US')
       link(href='/assets/css/spectreTop.css', rel='stylesheet', type='text/css') 
       style.
          .delayShowing { opacity: 0; }
-      // in case a page needs it:
+      //- in case a page needs it:
       block head2
 
    body
