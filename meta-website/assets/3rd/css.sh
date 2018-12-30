@@ -1,3 +1,4 @@
 mbakeW -c ../spectre/spectre.scss
 mbakeW -c ../spectre/spectreTop.scss
-mbakeW -c ../3rd/gridform.sass
+mbakeW -c gridform.sass
+mbakeW -c navJBar.scss
