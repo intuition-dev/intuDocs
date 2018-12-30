@@ -1,5 +1,4 @@
 
-
 depp.define({
 'pre': [
 
@@ -23,7 +22,9 @@ depp.define({
 })//define
 
 depp.define({ 'css': [
-   , ROOT + 'assets/css/style.css'
+
+   //,  '/assets/css/style.css'
+
    , 'css!https://fonts.googleapis.com/css?family=Open+Sans'
    ]
 })//define
