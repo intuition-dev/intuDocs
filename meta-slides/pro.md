@@ -2,7 +2,7 @@
 <!-- prerender: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-<!-- footer: Metabake.net -->
+<!-- footer: MetaBake.org -->
 
 ## "Second largest computer company"
 

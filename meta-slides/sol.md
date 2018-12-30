@@ -2,7 +2,7 @@
 <!-- prerender: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-<!-- footer: Metabake.net -->
+<!-- footer: MetaBake.org -->
 ## HW costs are down, but also development costs need to go down
 
 ![](pro/storage.gif)
@@ -140,7 +140,7 @@ I did nothing at my first 'Black Swan'
 ![40%](sol/hierarchy.jpg)
 
 for slides, video, 'paper' 
-www.Metabake.net
+www.MetaBake.org
 or vic@metabake.org 
 
 - else github, npmjs, staticgen.com

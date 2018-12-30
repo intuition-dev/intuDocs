@@ -1,6 +1,6 @@
 # API Reference
 
-- [API Reference](http://doc.Metabake.net/api)
+- [API Reference](http://doc.MetaBake.org/api)
 
 ### admin.yaml
 

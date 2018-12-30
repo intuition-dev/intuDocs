@@ -12,12 +12,12 @@ To get an overview of Metabake pillars:
 
 - [Metabake Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- [Metabake Full Slides](http://prez.metabake.net/p)
+- [Metabake Full Slides](http://prez.MetaBake.org/p)
 - [Metabake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
 
 Directory of related projects is in Resources on left, and source code is here:
-- <a href='http://git.metabake.net' target='_blank'>git.metabake.net</a>
+- <a href='http://git.MetaBake.org' target='_blank'>git.MetaBake.org</a>
 
 
 
@@ -81,7 +81,7 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 # Support
 
 &nbsp;
-- <a href='http://chat.metabake.net' target='_blank'>Forum/Chat</a>, to support this project, please join!
+- <a href='http://chat.MetaBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
 ### Message from creators of Metabake:

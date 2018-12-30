@@ -1,6 +1,6 @@
 site_name: mbake Docs
-site_url: http://metabake.net
-repo_url: http://metabake.net
+site_url: http://MetaBake.org
+repo_url: http://MetaBake.org
 nav:
    - Home: index.md
 
