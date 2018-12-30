@@ -1,38 +1,28 @@
 
-// $(document).ready(function () {
-//     // are we running in native app or in a browser?
-//     window.isphone = false
-//     if (document.URL.indexOf("http://") === -1
-//         && document.URL.indexOf("https://") === -1) {
-//         window.isphone = true
-//     }
-
-//     console.log('phonegap?', window.isphone)
-//     if (window.isphone) { // //file is a browser
-//         document.addEventListener("deviceready", onDeviceReady, false)
-//     } else {
-//         onDeviceReady()
-//     }
-// })
 
 depp.define({
 'pre': [
 
-   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
    , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
+   , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.min.js'
+   , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.css'
+
+   ]
+})//define
+
+depp.define({
+   '2nd': [
    , 'https://cdn.emailjs.com/sdk/2.2.4/email.min.js'
-   , 'https://cdn.rawgit.com/terrylinooo/jquery.disableAutoFill/92cb6f86/src/jquery.disableAutoFill.js'
-   , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.6.0/slick/slick.min.js'
-   , 'https://cdn.jsdelivr.net/gsap/1.19.0/TweenMax.min.js'
+   , '/assets/3rd/jquery.disableAutoFill.js' 
+   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
    , 'https://cdn.jsdelivr.net/npm/validator@10.9.0/validator.min.js'
    , 'https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.css'
    , 'https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.min.js'
-   , ROOT + 'assets/js/ui.js'
+
    ]
 })//define
 
 depp.define({ 'css': [
-   , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.6.0/slick/slick.css'
    , ROOT + 'assets/css/style.css'
    , 'css!https://fonts.googleapis.com/css?family=Open+Sans'
    ]

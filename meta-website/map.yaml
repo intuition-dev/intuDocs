@@ -1,4 +1,4 @@
-host: 'https://www.metabake.net'
+host: 'https://www.metabake.org'
 
 changefreq: monthly
 
@@ -19,4 +19,4 @@ menu:
    - Privacy: /privacy
    - Contact us: /about/contact
 
-itemsRoot: /why-metabake/why-metabake
+itemsRoot: /landing
