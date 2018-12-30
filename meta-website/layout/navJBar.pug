@@ -1,30 +1,43 @@
 
-link(href= 'navJBar.css', rel='stylesheet')
-link(href= 'nav.css',  rel='stylesheet')
+link(href= '/assets/3rd/navJBar.css', rel='stylesheet')
+link(href= '/assets/css/nav.css',  rel='stylesheet')
 
-script(src='navJBar.js')
+script(src='/assets/3rd/navJBar.js')
 
 header.flex.edge
+
    #navbar-brand.left.white
       .navbar-brand.mr-2.padL
          h1 MetaBake.org
    .right.white
+
       ul#navJBar.hide-lg.navJBar(data-function='navJBar')
-         li.navFirst
-            a(href='#') ABOUT
+
+         li.navFirst            
+            a(href='#') Why Metabake
             ul
                li
-                  a(href='#') About Us
+                  a(href='/landing/why-metabake') Why Metabake
                li
-                  a(href='#') Services
+                  a(href='/landing/metabake-vs-other-low-code') Metabake vs. Other Low Code
                li
-                  a(href='#') Career
+                  a(href='/landing/metabake-vs-hugo') Metabake vs. Hugo
+               li
+                  a(href='/landing/metabake-vs-gulp-and-grunt') Metabake vs. Gulp and Grunt
          li
-            a(href='#') TEAM
+            a.who-benefits(href='/who-benefits') Who Benefits
          li
-            a(href='#') BLOG
+            a.get-started(href='/get-started') Get Started
+
          li
-            a(href='#') CONTACT US
+            a.about(href='#') About
+            ul
+               li
+                  a(href='/about/about/') About Us
+               li
+                  a(href='/about/support/') Support
+               li
+                  a(href='/about/contact/') Contact us
 
       div &nbsp;
 
@@ -39,7 +52,7 @@ header.flex.edge
 script.
    depp.require(['pre','deviceready'], setupNav) 
 
-   function setupNav()
+   function setupNav() {
       console.log('navJBar')
       new Navbar('.navJBar') // top
 
@@ -51,7 +64,7 @@ script.
          else
             navOpen()
       })
-   })//ready
+   }//ready
 
    isOpen = false
    function navOpen() {
