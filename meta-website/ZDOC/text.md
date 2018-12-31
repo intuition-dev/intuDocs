@@ -1,7 +1,5 @@
-# About Us
+# About Us{.title}
 
 Metabake is a low-code platform that simplifies the process for building of great software. It is easy to use, navigate, and edit. Metabake allows you to reduce your overall cost of development. Metabake allows different levels and types of developers within your organization to be able to build applications. So you don't need to have only expensive developers building your applications. The Metabake low-code platform allows you to build six to ten times faster than traditional development, and this is because we're not creating code. Metabake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.
 
 Metabake is a smart way of creating user-effective front-end web and application development, using low-code programming. Instead of creating a web application from scratch that can be strenuous, and time-consuming, people decide to use Metabake as the perfect developer’s choice that has been built only to be edited and customized for special use according to a client’s demand.
-
-## Metabake is the extensible low-code productivity tool that simplifies the process for building great software{.tag-line}

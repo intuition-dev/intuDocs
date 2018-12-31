@@ -36,7 +36,6 @@ depp.define({ 'css': ['#2nd'
    , 'css!https://fonts.googleapis.com/css?family=Open+Sans'
    , 'css!https://fonts.googleapis.com/css?family=Oswald'//headings
 
-   , 'css!https://fonts.googleapis.com/css?family=Raleway'//section, eg photo sub
 
    ]
 })//define

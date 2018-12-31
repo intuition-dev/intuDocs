@@ -21,7 +21,17 @@ block main
       .padL.white oh hi 1
 
    br
+   .padL
+      h1.title Yes
    .padL oh hi 2
 
-   include:metaMD text.md      
+   .pad 
+      .title #{title}
+      p #{content_text}
+      img(src=image, height='160', width='160')
 
+
+   .pad
+      include:metaMD text.md
+
+   p 

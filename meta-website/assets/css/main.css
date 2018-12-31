@@ -1,0 +1,64 @@
+
+.title {
+   font-family: "Oswald";
+   font-size: 30px;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+
+/* Move to main this top section  */
+
+header {
+   background:rgba(1,1,1,0.1);
+   padding-left: 15px;
+   height: 65px;
+   line-height: 65px;
+   box-shadow: -1px 3px 10px #888888;
+   z-index: 10;
+}
+
+
+.flex, .center, .top, .right, .bottom, .left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.flex {
+   align-content: flex-start;
+}
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+/* override */
+.edge  { justify-content: space-between;
+   flex-wrap: nowrap;
+}
+
+.white, .white * { color: white !important; }
+
+.padL {
+   padding-left: 15px;
+}
+.pad {
+   padding: 15px;
+}
+
+.bord { /* icons & bars */
+   outline-style: solid;
+   outline-offset: 7px;
+   outline-width: thin;
+   margin-right: 25px;
+   margin-left: 25px ;
+}
+.featherSVG {
+   width: 24px;
+   height: 24px;
+   stroke: currentColor;
+   stroke-width: 2;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   fill: none;
+ }
+
