@@ -1,16 +1,30 @@
 
+* {
+   font-kerning: normal !important;
+}
+
 .title {
    font-family: "Oswald";
    font-size: 30px;
-   font-weight: bold;
-   font-variant: small-caps;
+   letter-spacing: -.5px !important;
+
 }
 
+.text, p {
+   letter-spacing: .125px !important;
+}
 
-/* Move to main this top section  */
+p::first-letter, text::first-letter {
+   font-size: 115%;
+ }
+
+.navbar-brand {
+   font-weight: bold;
+   letter-spacing: -1px !important;
+}
 
 header {
-   background:rgba(1,1,1,0.1);
+   background: #0F3557;
    padding-left: 15px;
    height: 65px;
    line-height: 65px;

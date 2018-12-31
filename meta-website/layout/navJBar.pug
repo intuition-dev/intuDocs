@@ -4,7 +4,7 @@ link(href= '/assets/css/nav.css',  rel='stylesheet')
 
 script(src='/assets/3rd/navJBar.js')
 
-header.flex.edge
+header.flex.edge.delayShowing
 
    #navbar-brand.left.white
       .navbar-brand.mr-2.padL
@@ -29,15 +29,16 @@ header.flex.edge
          li
             a.get-started(href='/get-started') Get Started
 
-         li
+         //- li
             a.about(href='#') About
             ul
                li
                   a(href='/about/about/') About Us
                li
                   a(href='/about/support/') Support
-               li
-                  a(href='/about/contact/') Contact us
+
+         li
+            a(href='/about/contact/') Contact us
 
       div &nbsp;
 

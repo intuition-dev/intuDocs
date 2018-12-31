@@ -33,7 +33,7 @@ ul.navJBar li {
    list-style-type: none;
 }
 ul.navJBar a:hover {
-   background: #0F3557;
+   background: #035B87;
    color: white;
 }
 /* level 2 */
@@ -43,7 +43,7 @@ ul.navJBar a:hover {
    font-size: 16px;
 }
 .navJBar li li a:hover {
-   background: #0F3557;
+   background: #035B87;
    color: white !important;
 }
 ul {
