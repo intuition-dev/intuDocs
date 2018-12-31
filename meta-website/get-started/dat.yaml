@@ -3,10 +3,10 @@ basedir: ../
 pretty: false
 home: ''
 
-pageTitle: MetaBake - Get Started
+pageTitle: Get Started
 title: MetaBake is the extensible low-code productivity tool that simplifies the process for building great software.
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
 content_text: MetaBake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high development productivity.
-comment: Install, First Page
+content_text: Install, First Page
 keywords: MetaBake install, MetaBake get started

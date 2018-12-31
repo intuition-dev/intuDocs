@@ -3,10 +3,10 @@ basedir: ../../
 pretty: false
 home: ''
 
-pageTitle: MetaBake - Contact Us
+pageTitle: Contact Us
 title: Lorem Ipsum
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
 content_text: Contact us
-comment: Contact us
+content_text: Contact us
 keywords: contact us, form, contact MetaBake
