@@ -3,8 +3,7 @@ MetaBake is the extensible low-code productivity tool for application developers
 
 MetaBake, or mBake, as some prefer to call it, is specifically built and customized for developers; it is not a gui. We give the chance to let you use a text editor to build your content and code in a more customized build that is suitable for your usability. It enhances front-end software app development.
 
-
-####  MetaBake is the open source extensible low-code productivity tool for programmers.
+#### MetaBake is the open source extensible low-code productivity tool for programmers.
 
 A distinct characteristic of low-code programming, MetaBake has the unique ability of going with the development of a front-end before the back-end. That way, it is easier to work on a back-end while we keep the consciousness of a friendly user interface in mind.
 

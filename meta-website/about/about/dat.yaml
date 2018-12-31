@@ -3,7 +3,7 @@ basedir: ../../
 pretty: false
 home: ''
 
-pageTitle: About Us
+title: About Us
 title: MetaBake is the extensible low-code productivity tool that simplifies the process for building great software
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg

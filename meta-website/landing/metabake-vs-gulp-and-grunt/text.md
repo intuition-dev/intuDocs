@@ -2,8 +2,6 @@
 
 Easy-Go-Start: MetaBake is very easy to get started with; there are no hassles involved, trying to get going…not so easy with Gulp and Grunt
 
-Rich interface: MetaBake offers a great compatibility for a browser, with the enhanced drag and drop components…not so easy with Gulp and Grunt
-
 Versatility: For a front-end build, MetaBake is versatile, as it can work with node.js servers. It allows you to bootstrap node.js with Express while using a convenient database like mongodb…not so easy with Gulp and Grunt.
 
 Improved Functionality: It supports third-party add-ons, which enable developers to write and execute web pages for an extended functionality…not so easy with Gulp and Grunt.
