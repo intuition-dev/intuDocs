@@ -1,17 +1,17 @@
 [
   {
-    "Why Metabake": [
+    "Why MetaBake": [
       {
-        "Why Metabake": "/why-metabake/why-metabake"
+        "Why MetaBake": "/why-MetaBake/why-MetaBake"
       },
       {
-        "Metabake vs. Other Low Code": "/why-metabake/metabake-vs-other-low-code"
+        "MetaBake vs. Other Low Code": "/why-MetaBake/MetaBake-vs-other-low-code"
       },
       {
-        "Metabake vs. Hugo": "/why-metabake/metabake-vs-hugo"
+        "MetaBake vs. Hugo": "/why-MetaBake/MetaBake-vs-hugo"
       },
       {
-        "Metabake vs. Gulp and Grunt": "/why-metabake/metabake-vs-gulp-and-grunt"
+        "MetaBake vs. Gulp and Grunt": "/why-MetaBake/MetaBake-vs-gulp-and-grunt"
       }
     ]
   },

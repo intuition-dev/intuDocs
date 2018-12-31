@@ -1,8 +1,8 @@
 # Get started
 
-Metabake is the extensible low-code productivity tool that simplifies the process for building great software.
+MetaBake is the extensible low-code productivity tool that simplifies the process for building great software.
 
-Metabake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high development productivity.
+MetaBake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high development productivity.
 
 ## Install
 
@@ -37,7 +37,7 @@ $ mbake .
 
 This will create index.html.
 
-Of course you can use regular Pug syntax to include other Pug files; or Markdown. Metabake Markdown flavor includes CSS support:
+Of course you can use regular Pug syntax to include other Pug files; or Markdown. MetaBake Markdown flavor includes CSS support:
 
 ```html
 include:metaMD comment.md
@@ -66,4 +66,4 @@ $ mbake -s
 
 Examples include an admin module, a watcher module, SPA, Blog, Website, Slides, Dashboard, CRUD, PWA, Electron, Hybrid mobile apps, Cloud v2.0 via AWS|FireStore, RIOTjs and more.
 
-Primary focus is high development productivity (via "low-code") and being easy to learn. But it is also fully flexible to build any WebApp in any directory tree structure you like and use any CSS/SASS framework you like. Metabake supports CSS classes in Markdown, plus, because it uses Pug - it can also do any HTML layout. But Metabake is not static only - it fully supports and has examples and docs for dynamic applications.
+Primary focus is high development productivity (via "low-code") and being easy to learn. But it is also fully flexible to build any WebApp in any directory tree structure you like and use any CSS/SASS framework you like. MetaBake supports CSS classes in Markdown, plus, because it uses Pug - it can also do any HTML layout. But MetaBake is not static only - it fully supports and has examples and docs for dynamic applications.

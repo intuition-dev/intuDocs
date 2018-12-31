@@ -192,18 +192,18 @@ customized for special use according to a client's demand.
 
 You can see a low-code CRUD example here:
 
--   https://github.com/metabake/Metabake-examples/tree/master/examples/crud
+-   https://github.com/MetaBake/MetaBake-examples/tree/master/examples/crud
 
 Or, you can run it by installing a low-code static generator mbake from
 here:
 
--   https://www.staticgen.com/metabakeorg 
+-   https://www.staticgen.com/MetaBakeorg 
 
 **Self-Promo**
 
 If your organization would like to try one or more of the low-code
 pillars, please [contact
-me](mailto:vic@metabake.org?subject=10%20Pillars%20of%20Low%20Code%20Inquiry).
+me](mailto:vic@MetaBake.org?subject=10%20Pillars%20of%20Low%20Code%20Inquiry).
 We can teach your team on-site!
 
 Or, if you have a project that you want to do in 1/10th of the time at

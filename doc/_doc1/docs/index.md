@@ -6,13 +6,13 @@ If you don't have time, see [tl;dr](#tldr) at the bottom of this page.
 
 mbake compares to other static generators and grunt/gulp; but it does a lot more with a lot less coding.
 
-mbake is part of the Metabake&trade; approach but can be used by itself.
+mbake is part of the MetaBake&trade; approach but can be used by itself.
 
-## What is Metabake?
+## What is MetaBake?
 
-Metabake&trade; is a modern development approach that helps you deliver web apps 10X faster with less coding. Metabake&trade; has 10 pillars.
+MetaBake&trade; is a modern development approach that helps you deliver web apps 10X faster with less coding. MetaBake&trade; has 10 pillars.
 
-Find out more about Metabake:
+Find out more about MetaBake:
 
 - [Quick Demo](https://youtu.be/WyCdSFTUIvM)
 
@@ -22,9 +22,9 @@ Find out more about Metabake:
 
 - [Summary for Managers](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
-Metabake allows for gradual adoption. You can start by adopting just one or a few of its pillars. mbake is a good start.
+MetaBake allows for gradual adoption. You can start by adopting just one or a few of its pillars. mbake is a good start.
 
-Metabake and mbake are open source. The source code is available at [github.com/metabake](https://github.com/metabake)
+MetaBake and mbake are open source. The source code is available at [github.com/MetaBake](https://github.com/MetaBake)
 
 See [Resources](/res/) for related projects.
 
@@ -54,7 +54,7 @@ That's it! If you don't have Yarn installed, first go [here](https://yarnpkg.com
    or: mbake subfoldername
 ```
 
-Auto-build/generate: if you are using a Metabake META build server (see META doc), you don't even have to do the 'mbake .'. META has a watcher that triggers 'mbake' when you save a file. 
+Auto-build/generate: if you are using a MetaBake META build server (see META doc), you don't even have to do the 'mbake .'. META has a watcher that triggers 'mbake' when you save a file. 
 
 ## How to run an mbake app (such as Hello World)
 
@@ -105,7 +105,7 @@ To go extreme serverless, we show how to use mbake with
 
 When done, you should see [this](https://youtu.be/-KkPfAnEXyk).
 
-Serverless/Cloud V2, Mount and Pug are some of the pillars of Metabake.
+Serverless/Cloud V2, Mount and Pug are some of the pillars of MetaBake.
 
 ## tl;dr
 

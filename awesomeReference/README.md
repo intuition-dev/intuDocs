@@ -1,19 +1,19 @@
 
-## Awesome Less code list of Metabake resources
+## Awesome Less code list of MetaBake resources
 
 
 ## Less code = 10X faster web app development.
-### With Metabake's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
+### With MetaBake's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
 
 
 ## Meta overview
 
-To get an overview of Metabake pillars:
+To get an overview of MetaBake pillars:
 
-- [Metabake Quick Demo](https://youtu.be/WyCdSFTUIvM)
+- [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- [Metabake Full Slides](http://prez.MetaBake.org/p)
-- [Metabake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
+- [MetaBake Full Slides](http://prez.MetaBake.org/p)
+- [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
 
 Directory of related projects is in Resources on left, and source code is here:
@@ -24,12 +24,12 @@ Directory of related projects is in Resources on left, and source code is here:
 # Additional examples and plugins:
 In addition to the examples in mbake CLI:
 
-- [SCSS theme Framework Examples](https://github.com/metabake/theme-scss-frameworks)
+- [SCSS theme Framework Examples](https://github.com/MetaBake/theme-scss-frameworks)
 
 
 ## Features
 
-One feature of Metabake is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
+One feature of MetaBake is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
 Also, you should avoid prototyping in GUI tools - text prototyping is just as fast an fully interactive.
 
 -i # from i_dat.yaml creates items json, reading all the dat.yaml - for dynamic binding!
@@ -43,9 +43,9 @@ Also, you should avoid prototyping in GUI tools - text prototyping is just as fa
 
 These are projects, that together leverage the 10 pillars:
 
-- [mbake](http://doc.metabake.org/mbake); CLI, and foundation. Please give it stars: '*'
-- [SPA](http://doc.metabake.org/SPA); eg. Brick and Mortar, examples, eg: PhoneGap v8
-- [Meta](http://doc.metabake.org/meta); Vista, Bespoke starter for Admin/Build automatic Services and WebIDE
+- [mbake](http://doc.MetaBake.org/mbake); CLI, and foundation. Please give it stars: '*'
+- [SPA](http://doc.MetaBake.org/SPA); eg. Brick and Mortar, examples, eg: PhoneGap v8
+- [Meta](http://doc.MetaBake.org/meta); Vista, Bespoke starter for Admin/Build automatic Services and WebIDE
 
 'Train-the-Trainer' is scheduled about monthly, and it is announced in the forum. Feel free to post questions there.
 
@@ -71,7 +71,7 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 
 
 ## Advanced Reference
--(https://github.com/metabake/Metabake-Admin/tree/master/advancedReference)[github.com/metabake/Metabake-Admin/advancedReference]
+-(https://github.com/MetaBake/MetaBake-Admin/tree/master/advancedReference)[github.com/MetaBake/MetaBake-Admin/advancedReference]
 
 
 ## Benchmarks and Automatic programing
@@ -84,7 +84,7 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 - <a href='http://chat.MetaBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
-### Message from creators of Metabake:
+### Message from creators of MetaBake:
 
-We were involved with Struts and SilverStream. We plan to make Metabake more popular than both.
+We were involved with Struts and SilverStream. We plan to make MetaBake more popular than both.
 

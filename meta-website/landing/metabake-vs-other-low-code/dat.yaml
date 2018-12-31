@@ -3,10 +3,10 @@ basedir: ../../
 pretty: false
 home: 'home'
 
-pageTitle: Metabake - Metabake versus Other Low-Code Platforms
-title: Metabake versus Other Low-Code Platforms
+pageTitle: MetaBake - MetaBake versus Other Low-Code Platforms
+title: MetaBake versus Other Low-Code Platforms
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
-content_text: Metabake is a low-code programming for static generation such as Markdown, Pugs, etc. with an inclusion of dynamic data binding.
-comment: Metabake, or mBake, as some prefer to call it, is specifically built and customized for developers; it is not a gui. We give the chance to let you use a text editor to build your content and code in a more customized build that is suitable for your usability. It enhances front-end software app development.
-keywords: Metabake versus, Low-Code Platforms
+content_text: MetaBake is a low-code programming for static generation such as Markdown, Pugs, etc. with an inclusion of dynamic data binding.
+comment: MetaBake, or mBake, as some prefer to call it, is specifically built and customized for developers; it is not a gui. We give the chance to let you use a text editor to build your content and code in a more customized build that is suitable for your usability. It enhances front-end software app development.
+keywords: MetaBake versus, Low-Code Platforms

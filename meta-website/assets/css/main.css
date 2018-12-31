@@ -3,11 +3,9 @@
    font-kerning: normal !important;
 }
 
-.title {
+h1, h2, h3, h4 {
    font-family: "Oswald";
-   font-size: 30px;
    letter-spacing: -.5px !important;
-
 }
 
 .text, p {
@@ -18,9 +16,14 @@ p::first-letter, text::first-letter {
    font-size: 115%;
  }
 
-.navbar-brand {
+.logo {
+   font-family: 'Open Sans';
    font-weight: bold;
    letter-spacing: -1px !important;
+}
+
+.splash {
+   font-size: 60px;
 }
 
 header {
@@ -30,6 +33,14 @@ header {
    line-height: 65px;
    box-shadow: -1px 3px 10px #888888;
    z-index: 10;
+}
+
+.pageBack {
+   background-attachment: scroll;
+   min-height: 45vh;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 

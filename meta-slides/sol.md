@@ -141,7 +141,7 @@ I did nothing at my first 'Black Swan'
 
 for slides, video, 'paper' 
 www.MetaBake.org
-or vic@metabake.org 
+or vic@MetaBake.org 
 
 - else github, npmjs, staticgen.com
 

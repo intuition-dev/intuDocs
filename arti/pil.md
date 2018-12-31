@@ -61,9 +61,9 @@ There is some evidence out there on the web. And here is the most important part
 ## Review
 
 So next wave of development productivity is coming and we can see that it will be low-code. Next wave is here and applied, you can see a hello world low-code CRUD example here:
-- https://github.com/metabake/Metabake-examples/tree/master/examples/crud
+- https://github.com/MetaBake/MetaBake-examples/tree/master/examples/crud
 or you can run it by installing a low-code static generator mbake from here:
-- https://www.staticgen.com/metabakeorg
+- https://www.staticgen.com/MetaBakeorg
 and then 
    mbake -c
 

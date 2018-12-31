@@ -26,7 +26,7 @@
 
 # Agenda
 - Part I: Low-code status
-- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of Metabake.org )
+- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of MetaBake.org )
 - Demo of automatic programming
 
 ## Not covered:
@@ -109,7 +109,7 @@ Q: What is good? A: Productivity.
 # Here is what I'll do to be in 10% of IT survivors: "my team and me will code faster than citizen developers". 
 ---
 
-# Metabake:
+# MetaBake:
 - ### Automatic programming
 - ### Grunt, Gulp, but 10X
 - ### Static generation
@@ -120,7 +120,7 @@ Q: What is good? A: Productivity.
 vs: I know how to use a spreadsheet
 
 ---
-## Metabake is non-gui:
+## MetaBake is non-gui:
 |![40%](pro/gui.png)|![90%](pro/309key.png)
 |:-:|:-:|
 

@@ -3,10 +3,10 @@ basedir: ../../
 pretty: false
 home: 'home'
 
-pageTitle: Metabake - Metabake versus Hugo
-title: Metabake versus Hugo
+pageTitle: MetaBake - MetaBake versus Hugo
+title: MetaBake versus Hugo
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
-content_text: Metabake offers a convenient build with easy features to use, more than Hugo supports.
-comment: Metabake manages dynamism well, with a growing website content
-keywords: Metabake versus Hugo, hugo
+content_text: MetaBake offers a convenient build with easy features to use, more than Hugo supports.
+comment: MetaBake manages dynamism well, with a growing website content
+keywords: MetaBake versus Hugo, hugo
