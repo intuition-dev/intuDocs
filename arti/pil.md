@@ -3,7 +3,7 @@
 
 ## Background and Part I
 
-Low code is akin to O.O, or F.P.. Low-code's goal is high development productivity, efficiency and effectiveness.
+Low-code is akin to O.O, or F.P.. Low-code's goal is high development productivity, efficiency and effectiveness.
 
 I discovered low-code when I went looking for the next wave of software development effectiveness. We go trough many waves, eg: mainframes, mini's like DEC, or data centers: now we use cloud computing. Worth mentioning that when we had data center budgets were $10MM and now with cloud, less than $1MM. Or more academic, if you have a CS degree, you know about 1GL machine, 2GL assembly, 3GL .js and.... what is 4GL? 
 Computers get much more powerful every 10 years or so: and result in 10X improved effectiveness of software development! But, we have not had a productivity jump in ~10-15 years. And if you have less experience than 15 years - you may not expect a new wave to change everything. So this article maybe not for you.

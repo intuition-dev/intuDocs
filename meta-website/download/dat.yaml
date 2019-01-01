@@ -1,12 +1,9 @@
 basedir: ../
 
 pretty: false
-home: ''
 
-title: Download
 title: Download 10 Pillars Related to Low-Code
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
-content_text: 10 Pillars Related to Low-Code
 content_text: 10 Pillars Related to Low-Code
 keywords: 10 Pillars Related to Low-Code, 10 Pillars MetaBake
