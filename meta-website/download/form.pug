@@ -14,10 +14,11 @@
             label Email address
             input#email(type='email', required)
 .notification.d-hide
-button#sendBut.btn-custom.btn-primary(type='submit') Download
+br
+button#sendBut.btn.btn-custom.btn-primary(type='submit') Download
 
 script.
-   depp.require(['pre'], setupEmail);
+   depp.require(['email'], setupEmail);
 
    /**
       return error message if validation fails or OK 

@@ -43,6 +43,10 @@ header {
    background-size: cover;
 }
 
+ul {
+   margin-left: 1rem;
+}
+
 
 .flex, .center, .top, .right, .bottom, .left{
    display: flex;
