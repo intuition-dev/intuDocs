@@ -16,13 +16,14 @@
                label Message
                textarea(name='msg', required)
    .notification.d-hide
+
    button#sendBut.btn-custom.btn-primary(type='submit') Send Message
 
 
 br
 
 script.
-   depp.require(['pre'], setupEmail);
+   depp.require(['css'], setupEmail);
 
    /**
       return error message if validation fails or OK 

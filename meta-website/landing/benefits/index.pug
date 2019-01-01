@@ -3,9 +3,18 @@ extends /layout/layout
 block main
    .d-hide(data-js-menu-highlight="who-benefits")
 
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
 
-   include:metaMD who.md
-   include:metaMD tech-leads.md
-   include:metaMD cto.md
-   include:metaMD vpe.md
-   include:metaMD new.md
+   .pageBack
+      br
+      h1.white.splash.text-center  #{title}
+   
+   .pad
+      include:metaMD who.md
+      include:metaMD tech-leads.md
+      include:metaMD cto.md
+      include:metaMD vpe.md
+      include:metaMD new.md
