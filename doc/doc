@@ -1,10 +1,12 @@
 
-- In 48 hours learn a stack: Low-code + Static Gen, Pug 
+- Learn MetaBake in 2 days: Low-code + Static Gen, Pug 
  'Some developers implement applications faster'
+
+Agenda:
 
 Foundation .5D
 ==========
-- * Hello World .5H
+-^ * Hello World .5H
 
 - * AWS S3 w/ Mountain Duck .5H
 
@@ -14,17 +16,13 @@ Foundation .5D
 
 - Website 1H
 
-- * RIOT Tags in Pug 1H
+- RIOT Tags in Pug 1H
 
 - * Google FireStore Model + Event v2 1H
 
 Bread and Butter 1D
 ==================
-- * CRUD in FireStore, Client side DOM-only field changes .5D
-
-- Advanced Pug Tags (FlipCard) 
-
-- AMP, m.pug 
+-^ * CRUD in FireStore, Client side DOM-only field changes .6D
 
 - * Blog, -i .5H
 
@@ -44,7 +42,9 @@ Advanced .5D
 ========
 - Auth
 
-- * CMS & Meta 2H
+-^ * CMS & Meta 3H
+
+- AMP, m.pug 
 
 - SPA
 
@@ -54,15 +54,15 @@ Advanced .5D
 
 - GSAP, Ad
 
-Perspectives .2H
+Perspectives 1H
 ============
-- Phonegap
+-^ Phonegap (*) deploy sample app to build.adobe
 
-- How to extend
-
-- Meta of tag: declarative
+- Meta of tag: declarative, advanced Pug Tags (FlipCard) 
 
 - Meta of webapp: admin app by admin
 
-- UX
+- How to extend
+
+- UI|Design can't be rushed. You are telling a story, but graphics help with engagement. 
 
