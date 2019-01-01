@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+    <link rel="amphtml" href="m.html">
+    <script>let _start = Date.now()</script>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why MetaBake?</title>
+    <meta name="description" content="MetaBake is the open source extensible low-code productivity tool for programmers.">
+    <meta itemprop="name" content="Why MetaBake?">
+    <meta itemprop="description" content="MetaBake is the open source extensible low-code productivity tool for programmers.">
+    <meta itemprop="image" content="http://www.MetaBake.org/assets/img/slide-3.jpg">
+    <meta name="keywords" content="low-code, building, software">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why MetaBake?">
+    <meta name="twitter:description" content="MetaBake is the open source extensible low-code productivity tool for programmers.">
+    <meta name="twitter:image" content="http://www.MetaBake.org/assets/img/slide-3.jpg">
+    <meta property="og:title" content="Why MetaBake?">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://www.MetaBake.org/assets/img/slide-3.jpg">
+    <meta property="og:description">
+    <meta name="google-site-verification" content="Zu5ZnMt3FILJtC7eu_MhsNzb5tHdGXAfReJspT3RwNg">
+    <script src="https://unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js"></script>
+    <script src="/assets/js/loader.js"></script>
+    <link href="/assets/3rd/spectreTop.css" rel="stylesheet" type="text/css">
+    <style>.delayShowing { opacity: 0; }</style>
+  </head>
+  <body>
+    <link href="/assets/3rd/navJBar.css" rel="stylesheet">
+    <link href="/assets/css/nav.css" rel="stylesheet">
+    <script src="/assets/3rd/navJBar.js"></script>
+    <header class="flex edge delayShowing">
+      <div class="left white" id="navbar-brand">
+        <div class="navbar-brand mr-2 padL">
+          <h1 class="logo">MetaBake.org</h1>
+        </div>
+      </div>
+      <div class="right white">
+        <ul class="hide-lg navJBar" id="navJBar" data-function="navJBar">
+          <li class="navFirst">           <a href="#">Why MetaBake</a>
+            <ul>
+              <li><a href="/landing/why">Why MetaBake</a></li>
+              <li><a href="/landing/low-code">MetaBake vs. Other Low Code</a></li>
+              <li><a href="/landing/hugo">MetaBake vs. Hugo</a></li>
+              <li><a href="/landing/gulp-grunt">MetaBake vs. Gulp and Grunt</a></li>
+            </ul>
+          </li>
+          <li><a class="who-benefits" href="/who-benefits">Who Benefits</a></li>
+          <li><a class="get-started" href="/get-started">Get Started</a></li>
+          <li><a href="/about/contact/">Contact us</a></li>
+        </ul>
+        <div>&nbsp;</div>
+        <div class="white show-lg" id="navBarCont">
+          <svg class="bord featherSVG" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="show-lg" id="navOpen"></div>
+    <script>
+      depp.require(['pre','deviceready'], setupNav) 
+      
+      function setupNav() {
+         console.log('navJBar')
+         new Navbar('.navJBar') // top
+      
+         //toggle
+         $( "#navBarCont" ).click(function() { //side
+            console.log(isOpen)
+            if(isOpen)
+               navClose()
+            else
+               navOpen()
+         })
+      }//ready
+      
+      isOpen = false
+      function navOpen() {
+         let $clone= $("#navJBar").clone(true)
+         $clone.removeClass('hide-lg')
+         $('#navOpen').html($clone)
+         new Navbar('#navOpen')
+         $('.navFirst').addClass('open')
+         $('.navFirst').addClass('open-position')
+         isOpen = true
+      }
+      function navClose() {
+         $('#navOpen').empty()
+         $('.navFirst').removeClass('open')
+         $('.navFirst').removeClass('open-position')
+         isOpen = false
+      }
+      
+    </script>
+    <!--link(href= 'debug.css', rel='stylesheet')-->
+    <div class="content-wrapper">
+      <style>
+        .pageBack {
+           background-image: url(img.jpg);
+        }
+        
+      </style>
+      <div class="pageBack"><br>
+        <h1 class="white splash text-center"> Why MetaBake?</h1>
+      </div>
+      <!--.pad .title Why MetaBake?
+      .space MetaBake is the open source extensible low-code productivity tool for programmers.
+      img(src=image, height='160', width='160')
+      
+      -->
+      <div class="pad"><h2>Why MetaBake?</h2>
+<h4>MetaBake’s goal is: <strong>high development productivity</strong></h4>
+<p>MetaBake is a smart way of creating user-effective front-end web and application development, using low-code programming. Instead of creating a web application from scratch that can be strenuous, and time-consuming, people decide to use MetaBake as the perfect developer’s choice that has been built only to be edited and customized.</p>
+<h4>MetaBake is the open source extensible low-code productivity tool for programmers.</h4>
+<p>MetaBake helps software developers and tech operatives to excel at what they do; easier, cheaper, faster, and be more productive.</p>
+<p>MetaBake allows you to reduce your overall cost of development. MetaBake allows different levels and types of developers within your organization to be able to build applications. So you don’t need to have only expensive developers building your applications. The MetaBake low-code platform allows you to build six to ten times faster than traditional development, and this is because we’re not creating code. MetaBake allows for visually modeling an application and encompassing the full application life cycle. Everything from designing, development, and deployment is all handled within the platform.</p>
+<p>MetaBake is the extensible low-code productivity tool for application developers via static generation; with Pug, Markdown and more; including dynamic data binding. <em>Some developers implement applications faster than others.</em></p>
+
+      </div>
+      <p> </p>
+    </div>
+    <script>
+      function userSzSc() {
+         console.log('resize|scroll')
+      }
+    </script>
+  <!-- mB v4.14.11 on 2018-12-31T19:56:20.790Z --></body>
+</html>

@@ -13,8 +13,8 @@ h1, h2, h3, h4 {
 }
 
 p::first-letter, text::first-letter {
-   font-size: 115%;
- }
+   font-size: 135%;
+}
 
 .logo {
    font-family: 'Open Sans';
