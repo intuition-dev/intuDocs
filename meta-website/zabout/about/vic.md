@@ -8,6 +8,6 @@ Victor is the founder of MetaBake and a seasoned technology executive with exper
 
 At the beginning of his career, he worked on performance optimization and many startups. Some highlights over 25 years include working at NASA, publishing an early book on Java, before switching to front-end and node/javascript, and won trainer of the year by JDJ.
 
-That experience helps with perspective. Victor prides himself with being a trailblazer and a web expert. Active on github and in development community, Victor loves coding and this is a big influence on the team.
+That experience helps with perspective. Victor prides himself with being a trailblazer and a web expert. Active on github and in development community.
 
 When Victor isn't coding, he maintains the open source project META and actively trains and participates in Olympic-style triathlons.

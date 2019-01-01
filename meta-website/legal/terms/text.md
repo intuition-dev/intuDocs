@@ -1,5 +1,4 @@
 # Terms of Use
-(Last Updated January 1, 2019)
 
 MetaBake (“MetaBake” “we” “us” or “our”) operates a website located at www.MetaBake.org (the “website”) from which users can gather information concerning news and services provided by MetaBake.
 

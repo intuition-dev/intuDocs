@@ -1,5 +1,9 @@
 extends /layout/layout
 
 block main
-   include:metaMD text.md      
-   .d-hide(data-js-menu-highlight="about")
+   pad
+
+      include:metaMD about.md      
+      include:metaMD vic.md      
+
+      .d-hide(data-js-menu-highlight="about")
