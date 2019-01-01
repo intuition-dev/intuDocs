@@ -7,6 +7,15 @@ block main
       .pageBack {
          background-image: url(img.jpg);
       }
+      .benefitsImg {
+         max-width:90%;
+         max-height:100%;
+      }
+      .flip {
+         -moz-transform: scaleX(-1);
+         -webkit-transform: scaleX(-1);
+         transform: scaleX(-1);
+      }
 
    .pageBack
       br
@@ -14,7 +23,25 @@ block main
    
    .pad
       include:metaMD who.md
-      include:metaMD tech-leads.md
-      include:metaMD cto.md
-      include:metaMD vpe.md
-      include:metaMD new.md
+      .pad
+         .columns
+            .column.col-6 
+               include:metaMD tech-leads.md
+            .column.col-6
+               img.flip.benefitsImg(src='cloud.png')
+         .columns
+            .column.col-6 
+               img.benefitsImg(src='ui.png')
+            .column.col-6 
+               include:metaMD cto.md
+
+         .columns
+            .column.col-6 
+               include:metaMD vpe.md
+            .column.col-6 
+               img.benefitsImg(src='cloud.png')
+         .columns
+            .column.col-6 
+               img.benefitsImg.flip(src='ui.png')
+            .column.col-6 
+               include:metaMD new.md
