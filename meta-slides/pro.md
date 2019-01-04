@@ -49,6 +49,14 @@
 Q: What is good? A: Productivity.
 ---
 
+
+### Linus (creator of Linux) on overbuilding
+"even if 
+the choice of C were to do *nothing* but keep the C++ programmers out, 
+that in itself would be a huge reason to use C."
+
+---
+
 ### CS 101 prediction:
 ![80%](pro/30lowcode.png)
 

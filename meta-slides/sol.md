@@ -20,6 +20,11 @@
 |:-:|:-:|
 ---
 
+True Story: A developer in USA hired a remote developer in India, and gave them assigned tasks.
+Good or bad?
+
+---
+
 Pillar 1: A specific remote centric Agile management (SFT)
 ![](sol/20agile.png)
 - Can someone read the time scale on top?
