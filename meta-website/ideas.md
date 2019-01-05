@@ -13,3 +13,6 @@ https://www.wpengine.com
 
 https://code83.com
 
+http://kickass.partners/studies.html
+
+https://www.kony.com/solutions/mbaas/

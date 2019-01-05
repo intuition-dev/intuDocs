@@ -53,11 +53,12 @@ html(lang='en_US')
 
       include navJBar
 
-      .content-wrapper
+      .route
          block main
-
+         include foot
 
       script.
          function userSzSc() {
             console.log('resize|scroll')
          }
+      
