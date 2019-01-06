@@ -3,7 +3,7 @@
 
 ## Background and Part I
 
-Low-code is akin to O.O, or F.P.. Low-code's goal is high development productivity, efficiency and effectiveness.
+low-code is akin to O.O, or F.P.. low-code's goal is high development productivity, efficiency and effectiveness.
 
 I discovered low-code when I went looking for the next wave of software development effectiveness. We go trough many waves, eg: mainframes, mini's like DEC, or data centers: now we use cloud computing. Worth mentioning that when we had data center budgets were $10MM and now with cloud, less than $1MM. Or more academic, if you have a CS degree, you know about 1GL machine, 2GL assembly, 3GL .js and.... what is 4GL? 
 Computers get much more powerful every 10 years or so: and result in 10X improved effectiveness of software development! But, we have not had a productivity jump in ~10-15 years. And if you have less experience than 15 years - you may not expect a new wave to change everything. So this article maybe not for you.
@@ -36,7 +36,7 @@ In any case, your individual contributors must know how to work with designers. 
 ### 5. Learn quickly
 Regardless of how you feel about it, in our vocation - you have to be able to master things quickly, and 'forget' older things. Just a fact.
 So if OO and FP are over, you have to learn the coming (4GL?) declarative|low-code. One example of declarative|low-code is already known by a large percent of NodeJS developers that use NodeJS 'express' library: It uses Pug instead of HTML. Pug is similar to how eBay developes software using it's less popular 'Marko'. If you have never used Pug - it is a bit like a more powerful version of something called 'Markdown'. You can use Pug with PHP, Python, etc. Most common is to use declarative|low-code with static generators mentioned above. And yes, you do write dynamic apps and dynamic data binding via static generators. A static generator takes the developer friendly declarative|low-code and generates less friendly html|.js. Like how designers uses SASS to generate CSS.
-So, be ready to retrain again for coming declarative|low-code. It is coming un-stoppable because it is more productive. So, be ready to learn the next thing. It allows managers to do more with a smaller team. (I'll say like adding an accounting system lets you do more accounting with less book keepers). Low-code also allows those that are less technical to do web|app development. Development is becoming more white collar as computing power is increasing. 
+So, be ready to retrain again for coming declarative|low-code. It is coming un-stoppable because it is more productive. So, be ready to learn the next thing. It allows managers to do more with a smaller team. (I'll say like adding an accounting system lets you do more accounting with less book keepers). low-code also allows those that are less technical to do web|app development. Development is becoming more white collar as computing power is increasing. 
 
 ### 6. SEO
 There are many orgs competing for consumers - an no one will try your web|app unless they can discover it. So SEO. SEO includes AMP, like it or not. So your generators should be able to write both a web|app page and an AMP version of it. There is more to SEO, but just one point.
