@@ -2,8 +2,8 @@
 
 **Background**
 
-Low-code is the smart way of creating user-effective front-end web and
-application development, using low-code programming. Instead of creating
+Low-code is the most productive way of creating user-effective front-end web and
+application development. Instead of creating
 a web application from scratch that can be strenuous, and
 time-consuming, people decide to use low-code as the perfect developer's
 choice that has been built only to be edited and customized for special
@@ -13,10 +13,10 @@ I discovered low-code when I went looking for the next wave of software
 development effectiveness. We have gone through many waves, such as
 mainframes, mini's (like DEC), and data centers. Now, we use cloud
 computing. Worth mentioning, is that when we had data centers, budgets
-were \$10MM+. Now with the cloud, the same company's budget has dropped
-to below \$1MM. Academically speaking, if you have a computer science
+were $10MM+. Now with the cloud, the same company's budget has dropped
+to below $1MM. Academically speaking, if you have a computer science
 degree, you know about 1st generation language (1GL) machine, 2GL
-assembly, and 3GL; however, it begs the question as to what will 4GL be?
+assembly, and 3GL; and it begs the question as to what will 4GL be?
 Computers have become much more powerful with every decade that passes,
 and as a result, has improved in effectiveness almost ten-fold in the
 software development category! Nevertheless, we have not had a
@@ -25,16 +25,16 @@ have been developing software for less than 15 years, you may not expect
 a new wave to change everything. If you do expect a new wave of tech in
 software development, please continue to read!
 
-We can use LAMP/MEAN as the representative 'gold standard' of the
-current generation and as a baseline of software productivity. For
+We can use LAMP|MEAN as the representative 'current standard' of the
+prior generation and as a baseline of software productivity. For
 instance, WordPress represents roughly 40% of WWW.
 
 I set out to look for the next step forward in software productivity. I
 have documented the 10 core pillars that will lead software development
 for the next 10-15 years. For this article's purposes, I will look at it
 from a manager's point of view. For example, let's say a company has
-been able to get by without a CTO, but now, they need to take their
-product to the next level. You, the reader, is hired to be the new CTO.
+been able to get by without a CTO, but now, they need one to take their
+productivity to the next level. You, the reader, is hired to be the new CTO.
 How do you lead a team of intelligent VPs, Directors, and managers of
 software development to the next level?
 
@@ -138,7 +138,7 @@ long-term future; open-source wins' hands down. For commercial apps, a
 side benefit is that it makes it easier to keep a higher percentage of
 revenue.
 
-**Pillar 8: Solve Software Apocalypse of Cloud V1**
+**Pillar 8: Bypass Software Apocalypse of Cloud v1.0**
 
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
@@ -157,6 +157,9 @@ back-end programmers will progress towards 0. The cost savings are akin
 to going from Data Center to Cloud v1.0. With that being said, going
 from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
+
+An example of a good step would be to create a 'ViewModel' layer in you web-apps client side, so that 
+that you app is agonistic to the back end.
 
 **Pillar 9: Security**
 
@@ -180,26 +183,22 @@ productivity; how many pages or screens, per day per developer are they
 doing? Ideally one compares this number before low-code and after
 low-code pillars, as well as to their operating costs.
 
-**Next Steps**
+**Get Started**
 
 The next wave of development productivity is coming, and we can see that
-it will be low-code. Low-code is a smart way of creating user-effective
-front-end web and application development, using low-code programming.
-Instead of creating a web application from scratch that can be
-strenuous, and time-consuming, people decide to use low-code as the
-perfect developer's choice that has been built only to be edited and
-customized for special use according to a client's demand.
+it will be low-code. Low-code is the way to create
+front-end web and application development.
 
 You can see a low-code CRUD example here:
 
--   https://github.com/MetaBake/MetaBake-examples/tree/master/examples/crud
+-   https://github.com/MetaBake
 
-Or, you can run it by installing a low-code static generator mbake from
+You can run it by installing MetaBake from
 here:
 
--   https://www.staticgen.com/MetaBakeorg 
+-   https://www.staticgen.com/MetaBake
 
-**Self-Promo**
+**MetaBake.org**
 
 If your organization would like to try one or more of the low-code
 pillars, please [contact
@@ -207,5 +206,4 @@ me](mailto:vic@MetaBake.org?subject=10%20Pillars%20of%20Low%20Code%20Inquiry).
 We can teach your team on-site!
 
 Or, if you have a project that you want to do in 1/10th of the time at
-1/10th of the cost, we will build it for you. If you have a project that
-you have a \$600K budget, we will deliver it at 1/10th of the cost/time!
+1/10th of the cost, we will build it for you. 
