@@ -2,12 +2,18 @@
 
 ## Background
 
-low-code is the most productive way of creating user-effective front-end web and
-application development. Instead of creating
-a web application from scratch that can be strenuous, and
-time-consuming, people decide to use low-code as the perfect developer's
-choice that has been built only to be edited and customized for special
-use according to your specific needs.
+The view for most people in leadership/management roles today is that the process of software development is far too slow. Website, web app, and native mobile app development takes too long to put into production and is too expensive. Historically, software development makes huge productivity leaps roughly every 10 years. You can see this as we moved from mainframes to data centers, data centers to cloud servers, and moving from 1st to 2nd to 3rd generation programming languages (e.g. 1GL machine, 2GL assembly, 3GL: javascript). We haven’t made a large leap forward in productivity in ~15 years and we’re overdue for the next phase.
+
+
+I set out to look for the next step forward in software productivity. I
+have documented the 10 core pillars that will lead software development
+for the next 10-15 years. For this article's purposes, I will look at it
+from a manager's point of view. For example, let's say a company has
+been able to get by without a CTO, but now, they need one to take their
+productivity to the next level. You, the reader, is hired to be the new CTO.
+How do you lead a team of intelligent VPs, Directors, and managers of
+software development to the next level?
+
 
 I discovered low-code when I went looking for the next wave of software
 development effectiveness. We have gone through many waves, such as
@@ -22,21 +28,9 @@ and as a result, has improved in effectiveness almost ten-fold in the
 software development category! Nevertheless, we have not had a
 productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
-a new wave to change everything. If you do expect a new wave of tech in
-software development, please continue to read!
+a new wave to change everything.
 
-We can use LAMP|MEAN as the representative 'current standard' of the
-prior generation and as a baseline of software productivity. For
-instance, WordPress represents roughly 40% of WWW.
 
-I set out to look for the next step forward in software productivity. I
-have documented the 10 core pillars that will lead software development
-for the next 10-15 years. For this article's purposes, I will look at it
-from a manager's point of view. For example, let's say a company has
-been able to get by without a CTO, but now, they need one to take their
-productivity to the next level. You, the reader, is hired to be the new CTO.
-How do you lead a team of intelligent VPs, Directors, and managers of
-software development to the next level?
 
 # Solution
 
