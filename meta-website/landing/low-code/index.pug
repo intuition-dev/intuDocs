@@ -3,14 +3,13 @@ extends /layout/layout
 block main
 
    style.
-      .pageBack {
+      .pageBack.delayShowing {
          background-image: url(img.jpg);
       }
 
-   .pageBack
+   .pageBack.delayShowing
       br
       h1.white.splash.text-center #{title}
-
 
    //.pad 
       .title #{title}
@@ -18,6 +17,7 @@ block main
       img(src=image, height='160', width='160')
 
    .pad
+      h1 #{title}
       include:metaMD text.md
 
    p 

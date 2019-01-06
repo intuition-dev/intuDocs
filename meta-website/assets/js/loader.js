@@ -71,7 +71,10 @@ function inView(el) { // is element in viewport
 // usage: ////////////////////////////////////////////////////////////////////
 function onLoaded() {// 'show' page, ex: unhide
     setupUserSzSc()
-    depp.require(['css'])
+    depp.require(['css'], function() {
+       console.log('css')
+      $('.delayShowing').removeClass('delayShowing') // show
+    })
 
     if (!is.desktop()) { // mobile browser bar resize
         const viewportHeight = $('.section').outerHeight()
@@ -82,7 +85,6 @@ function onLoaded() {// 'show' page, ex: unhide
     console.log('setup zen')
     zenscroll.setup(null, 0)
 
-    $('.delayShowing').removeClass('delayShowing') // show
 
     setInterval(function () {
         if (_scSz) {

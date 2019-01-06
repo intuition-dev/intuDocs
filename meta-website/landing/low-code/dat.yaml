@@ -2,8 +2,8 @@ basedir: ../../
 
 pretty: false
 
-title: MetaBake versus Other Low-Code Platforms
+title: MetaBake versus other Low-Code tools
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
 content_text: MetaBake is the open source extensible low-code productivity tool for programmers.
-keywords: MetaBake versus, Low-Code Platforms
+keywords: low-code, Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble, MBaaS.
