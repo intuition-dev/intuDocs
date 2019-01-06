@@ -2,8 +2,8 @@ basedir: ../../
 
 pretty: false
 
-title: MetaBake versus Hugo
+title: MetaBake versus Static Gen
 image: >-
   http://www.MetaBake.org/assets/img/slide-3.jpg
 content_text: MetaBake offers a convenient build with easy features to use, more than Hugo supports.
-keywords: MetaBake versus Hugo, hugo
+keywords: Static Gen, Hugo, Pelican, Jekyll

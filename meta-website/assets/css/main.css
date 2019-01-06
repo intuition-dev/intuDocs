@@ -47,6 +47,15 @@ ul {
    margin-left: 1rem;
 }
 
+/* resize images */
+.monkeyContainer {
+   width: 120px;
+   height: 120px;
+}
+.monkeyContainer img {
+   width: 100%;
+   height: auto;
+}
 
 .flex, .center, .top, .right, .bottom, .left{
    display: flex;
