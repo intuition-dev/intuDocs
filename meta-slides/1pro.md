@@ -47,13 +47,13 @@
 |![](pro/19breac.png)|![120%](pro/19aairb.png)
 |:-:|:-:|
 Q: What is good? A: Productivity.
+
 ---
 
-
 ### Linus (creator of Linux) on overbuilding
-"even if 
-the choice of C were to do *nothing* but keep the C++ programmers out, 
-that in itself would be a huge reason to use C."
+"even if the choice of C were to do *nothing* 
+but keep the C++ programmers out, 
+ that in itself would be a huge reason to use C."
 
 ---
 
@@ -90,7 +90,7 @@ that in itself would be a huge reason to use C."
 ---
 
 ### Salesforce:
-![70%](pro/it.png)
+![50%](pro/it.png)
 
 ---
 
@@ -100,11 +100,10 @@ that in itself would be a huge reason to use C."
 ---
 
 # Part I - low-code status by 2019/2020:
-- # Within 18 months 90% of developers will lose their job, due to automation of software development. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet.
-- ## Including VPE. CTO. No more. 
-- Citizen developers using GUI for cross platform apps. No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
+- # Within 18 months 90% of developers will lose their job. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet. 
+- Citizen developers: No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
 - low-code is 10X cheaper and 10x faster.
-- Cuts are first for expensive developers or working on complex tasks. History shows people are hard to manage after a pay cut
+- Cuts are first for expensive developers or working on complex tech.
 - EG: From Data Center to Cloud we had **90% budget cuts**. Or Mainframes, Minis. 
 **Black swan**, if you graduated after 2003. eg. Always had LAMP (Wordpress is 40% of www)
 

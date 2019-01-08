@@ -3,9 +3,9 @@
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
 <!-- footer: MetaBake.org -->
-## HW costs are down, but also development costs need to go down
+## HW costs are down; but also development costs need to go down
 
-![](pro/storage.gif)
+![200%](sol/storage.gif)
 
 ---
 
@@ -20,8 +20,9 @@
 |:-:|:-:|
 ---
 
-True Story: A developer in USA hired a remote developer in India, and gave them assigned tasks.
-Good or bad?
+### True Story: A developer in USA hired a remote developer in India to do their work.  
+
+## Q: Good or bad - from Managers POV?
 
 ---
 
@@ -140,15 +141,15 @@ I did nothing at my first 'Black Swan'
 
 ----
 
-## Productivity could be used for story telling!
+## Productivity could be used for higher level tasks.
 
-![40%](sol/hierarchy.jpg)
+![110%](sol/hierarchy.png)
 
 for slides, video, 'paper' 
 www.MetaBake.org
 or vic@MetaBake.org 
 
-* Written in Marp
+
 
 
 
