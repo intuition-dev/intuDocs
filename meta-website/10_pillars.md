@@ -174,6 +174,8 @@ productivity; how many pages or screens, per day per developer are they
 doing? Ideally one compares this number before low-code and after
 low-code pillars, as well as to their operating costs.
 
+(And if you have to use PHP to be productive, than do it)
+
 # Get Started
 
 The next wave of development productivity is coming, and we can see that
