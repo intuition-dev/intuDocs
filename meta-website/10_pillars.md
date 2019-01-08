@@ -149,7 +149,7 @@ to going from Data Center to Cloud v1.0. With that being said, going
 from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
 
-An example of a good step would be to create a 'ViewModel' layer in you web-apps client side, so that 
+An example of a good early step would be to create a 'ViewModel' layer in you web-apps client side; so that 
 that you app is agonistic to the back end.
 
 ## Pillar 9: Security
