@@ -1,6 +1,6 @@
 
 
-There are many good low-code tools: Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble or you can even consider MBaaS tools. 
+There are many good low-code tools: Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble or you can even consider MBaaS tools as well. 
 
 - MetaBake is open source, under MIT license, below is link to GitHub.
 - MetaBake (mBake) is UI first, the first iteration is a hard-coded data prototype, to make sure UI is right. mBake treats back end as second step.

@@ -30,6 +30,7 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
+There are many good low-code tools: Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble or you can even consider MBaaS tools as well; and even Form builders
 
 
 # Solution
@@ -129,7 +130,7 @@ IOS, Android, PWA, with one single code base! Of course, there are
 people that want to use Swift | Java, but that is not a part of the
 long-term future. 
 
-## Pillar 8: Bypass Software Apocalypse of Cloud v1.0
+## Pillar 8: Solve Software Apocalypse of Cloud v1.0
 
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
@@ -150,7 +151,7 @@ from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
 
 An example of a good early step would be to create a 'ViewModel' layer in you web-apps client side; so that 
-that you app is agonistic to the back end.
+that you app is agonistic to the back end. And embrace server-less. 
 
 ## Pillar 9: Security
 
