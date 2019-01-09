@@ -53,13 +53,13 @@ script.
 
          let msg = val();
          if(msg=='OK') {
-            console.log('send');
+            console.info('send');
             let dat = {
                firstName: $("#f-name").val()
                ,lastName: $("#l-name").val()
                ,msg: $("#email").val()
             }
-            console.log(dat);
+            console.info(dat);
             $(this).attr("disabled", "disabled");
             emailjs
                .send('gmail', 'download', dat )

@@ -57,13 +57,13 @@ script.
 
          let msg = val();
          if(msg=='OK') {
-            console.log('send');
+            console.info('send');
             let dat = {
                name: $("#name").val()
                ,email: $("#email").val()
                ,msg: $("textarea[name='msg']").val()
             }
-            console.log(dat);
+            console.info(dat);
             $(this).attr("disabled", "disabled");
             emailjs
                .send('gmail', 'template_ZiJDZalK', dat )

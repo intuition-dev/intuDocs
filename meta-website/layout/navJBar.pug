@@ -59,12 +59,12 @@ script.
    depp.require(['pre','deviceready'], setupNav) 
 
    function setupNav() {
-      console.log('navJBar')
+      console.info('navJBar')
       new Navbar('.navJBar') // top
 
       //toggle
       $( "#navBarCont" ).click(function() { //side
-         console.log(isOpen)
+         console.info(isOpen)
          if(isOpen)
             navClose()
          else

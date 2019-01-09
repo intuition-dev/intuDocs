@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded",  onDeviceReady, false)
 function onDeviceReady() {
-   console.log('deviceready')
+   console.info('deviceready')
    depp.done('deviceready')
 }
 
@@ -72,17 +72,17 @@ function inView(el) { // is element in viewport
 function onLoaded() {// 'show' page, ex: unhide
     setupUserSzSc()
     depp.require(['css'], function() {
-       console.log('css')
+       console.info('css')
       $('.delayShowing').removeClass('delayShowing') // show
     })
 
     if (!is.desktop()) { // mobile browser bar resize
         const viewportHeight = $('.section').outerHeight()
-        console.log(viewportHeight)
+        console.info(viewportHeight)
         $('.section').css({ 'min-height': viewportHeight })
     }
 
-    console.log('setup zen')
+    console.info('setup zen')
     zenscroll.setup(null, 0)
 
 
@@ -94,7 +94,7 @@ function onLoaded() {// 'show' page, ex: unhide
     }, 150)
    //loadjs(ROOT + 'assets/router/spa-router.js')
    depp.done('onLoaded')
-   console.log('onLoaded done', Date.now() - _start)
+   console.info('onLoaded done', Date.now() - _start)
 
 }//onLoaded
 
