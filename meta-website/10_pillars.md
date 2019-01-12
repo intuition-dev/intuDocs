@@ -151,7 +151,7 @@ from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
 
 An example of a good early step would be to create a 'ViewModel' layer in you web-apps client side; so that 
-that you app is agonistic to the back end. And embrace server-less. 
+that you app is agonistic to the back end. And embrace server-less, go heavy into AWS S3, Google Firestore and similar.
 
 ## Pillar 9: Security
 

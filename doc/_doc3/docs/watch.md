@@ -43,7 +43,7 @@ This line:  const baseURL = 'http://localhost:9083' // EDIT this and mbake
 
 Instead of localhost, it need to be: the host IP.
 
-3. ts-node index.ts
+3. node index*.js
 
 That will start the watcher. Also, this will have 3 ports/sockets:
 1. Service, for API calls by the admin app
