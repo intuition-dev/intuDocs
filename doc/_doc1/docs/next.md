@@ -1,3 +1,3 @@
 # Next.
 
-Next steps would be the 'BM-SPA' or 'Meta' project, both are at git.MetaBake.org.
+Next steps would be the 'BM-SPA' or 'Meta' project, both are at git.mBake.org.

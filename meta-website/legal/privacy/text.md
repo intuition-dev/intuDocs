@@ -28,7 +28,7 @@ MetaBake may amend this Privacy Policy from time to time. If we make any substan
 
 ### Questions or Suggestions
 
-If you have questions or suggestions, send an email to info@MetaBake.org.
+If you have questions or suggestions, send an email to info@mBake.org.
 
 ### IP Addresses
 

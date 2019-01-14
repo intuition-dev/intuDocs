@@ -2,7 +2,7 @@
 <!-- prerender: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-<!-- footer: MetaBake.org -->
+<!-- footer: mBake.org -->
 
 ## "Second largest computer company"
 
@@ -26,7 +26,7 @@
 
 # Agenda
 - Part I: low-code status
-- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of MetaBake.org )
+- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of mBake.org )
 - Demo of automatic programming
 
 ## Not covered:

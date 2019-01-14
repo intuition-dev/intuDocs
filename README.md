@@ -1,5 +1,5 @@
 
-#### MetaBake.org is the extensible low-code productivity tool for application developers via static generation; with Pug, Markdown and more; including dynamic data binding. *Some developers implement applications faster than others.*
+#### mBake.org is the extensible low-code productivity tool for application developers via static generation; with Pug, Markdown and more; including dynamic data binding. *Some developers implement applications faster than others.*
 
 MetaBake mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high development productivity.
 
@@ -44,5 +44,5 @@ Examples include an admin module, a watcher module, SPA, Blog, Website, Slides, 
 Primary focus is high development productivity (via "low-code") and being easy to learn. But it is also fully flexible to build any WebApp in any directory tree structure you like an use any CSS/SASS framework you like.
 MetaBake supports CSS classes in Markdown, plus, because it uses Pug - it can also do any HTML layout. But MetaBake is not static only - it fully supports and has examples and docs for dynamic apps.
 
-[MetaBake.org](http://www.mBake.org)
+[mBake.org](http://www.mBake.org)
 
