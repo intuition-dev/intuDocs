@@ -4,6 +4,6 @@ pretty: false
 
 title: MetaBake versus StaticGen
 image: >-
-  http://www.mBake.org/assets/img/slide-3.jpg
+  http://mBake.org/assets/img/slide-3.jpg
 content_text: MetaBake offers a convenient build with easy features to use, more than Hugo supports.
 keywords: Static Gen, Hugo, Pelican, Jekyll
