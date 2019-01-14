@@ -146,7 +146,7 @@ I did nothing at my first 'Black Swan'
 ![110%](sol/hierarchy.png)
 
 for slides, video, 'paper' 
-www.MetaBake.org
+www.mBake.org
 or vic@MetaBake.org 
 
 

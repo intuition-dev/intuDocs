@@ -1,6 +1,6 @@
 # Terms of Use
 
-MetaBake (“MetaBake” “we” “us” or “our”) operates a website located at www.MetaBake.org (the “website”) from which users can gather information concerning news and services provided by MetaBake.
+MetaBake (“MetaBake” “we” “us” or “our”) operates a website located at www.mBake.org (the “website”) from which users can gather information concerning news and services provided by MetaBake.
 
 MetaBake maintains this site (the “website”) for your personal entertainment, information, education, and communication. Please feel free to browse the website. You may download material displayed on the website for non-commercial, personal use only provided you also retain all copyright and other proprietary notices contained on the materials. You may not, however, distribute, modify, transmit, reuse, re-post, or use the content of the website for public or commercial purposes, including the text, images, audio, and video without MetaBake’ written permission. Your access to and use of the website is also subject to the following Terms of Use (“Terms of Use”) and all applicable laws. By accessing and browsing the website, you accept, without limitation or qualification, the Terms of Use and acknowledge that any other agreements between you and MetaBake are superseded and of no force or effect.
 
