@@ -81,7 +81,7 @@ and by designer, it should go without saying that I am referring to a
 designer that knows CSS. In any event, an individual contributor must
 know how to work with designers, while possessing polyglot skills in
 more than one SASS framework. NIH is poor productivity; it is better to
-leverage a documented CSS framework. 
+leverage a documented CSS framework.  Also development is iterative. 
 
 ## Pillar 5: Learn Quickly
 
