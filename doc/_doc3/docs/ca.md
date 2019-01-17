@@ -50,6 +50,9 @@
 1. Mount your S3 bucket into it, use your BUCKET-NAME and folder_name
 	```js
 	~/goofys --profile default -o allow_other --use-content-type BUCKET-NAME ~/folder_name
+   
+   # ~/goofys --endpoint ams3.digitaloceanspaces.com --profile default -o allow_other --use-content-type web1 ~/bucket1 
+   # -h will get you help
 
 	// check to see your S3 webapp files
 	ls -la
