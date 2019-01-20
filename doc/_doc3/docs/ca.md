@@ -50,9 +50,7 @@
 1. Mount your S3 bucket into it, use your BUCKET-NAME and folder_name
 	```js
    
-   ~/goofys --endpoint s3.wasabisys.com --profile default -o allow_other --use-content-type BUCKET-NAME ~/folder_name
-
-   #~/goofys --profile default -o allow_other --use-content-type BUCKET-NAME ~/folder_name
+   ~/goofys --profile default -o allow_other --use-content-type BUCKET-NAME ~/folder_name
 
    # -h will get you help
 
