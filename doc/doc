@@ -8,20 +8,23 @@ Foundation .5D
 ==========
 -^ * Hello World .5H
 
-- * AWS S3 w/ Mountain Duck .5H
-Serverless
+- Caddy
 
 - * Pug Markup .5H
 
 - CSS Selectors, Sass
 
-- Navbar .5H (Navbar first, other FX at end)
-
 - Website 1H
+
+- Navbar .5H (Navbar first, other FX at end)
 
 - RIOT Tags in Pug 1H
 
-- * Google FireStore Model + Event v2 1H
+- * Digital Ocean S3 w/ Mountain Duck .5H Sharing
+
+- * Google FireStore,  Model 1H
+
+- Theme: Spectre 
 
 Bread and Butter 1D
 ==================
@@ -33,11 +36,9 @@ Bread and Butter 1D
 
 - Other Examples, eg Slides
 
-- * AWS S3 w/ Goofys  1H
+- * S3 w/ Goofys  1H
 
 - * CodeAnywhere 
-
-- Theme: Spectre 
 
 - Video/Images
 
@@ -62,6 +63,8 @@ Perspectives 1H
 -^ Phonegap (*) deploy sample app to build.adobe
 
 - Meta of tag: declarative, advanced Pug Tags (FlipCard) 
+
+- Cake DSL
 
 - Meta of webapp: admin app by admin
 
