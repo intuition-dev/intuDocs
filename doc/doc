@@ -20,7 +20,7 @@ Foundation 1D
 
 - RIOT Tags in Pug 1H
 
-- * Digital Ocean S3 w/ Mountain Duck .5H Sharing
+- Create account in DO * Digital Ocean S3 w/ Mountain Duck .5H Sharing
 Make a DO spaces. Add a key.
 
 - * Google FireStore,  Model 1H
@@ -45,13 +45,13 @@ https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md
 
 - * Blog, -i .5H
 
-- Slides
-
 - Other Examples, eg Slides
 
 - * S3 w/ Goofys  1H
 
 - * CodeAnywhere SSH
+
+- mBake on linux
 
 
 Advanced .5D
