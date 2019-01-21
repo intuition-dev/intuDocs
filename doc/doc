@@ -4,15 +4,15 @@
 
 Agenda:
 
-Foundation .5D
+Foundation 1D
 ==========
--^ * Hello World .5H
+- * Hello World .5H
 
 - Caddy
 
 - * Pug Markup .5H
 
-- CSS Selectors, Sass
+- Spectre, Sass, assets.yaml
 
 - Website 1H
 
@@ -21,14 +21,27 @@ Foundation .5D
 - RIOT Tags in Pug 1H
 
 - * Digital Ocean S3 w/ Mountain Duck .5H Sharing
+Make a DO spaces. Add a key.
 
 - * Google FireStore,  Model 1H
 
-- Theme: Spectre 
+For forms we'd use:
+https://github.com/kumailht/gridforms
 
-Bread and Butter 1D
+For tables we'd use:
+http://www.tabulator.info
+
+For loading we'd use
+https://github.com/muicss/johnnydepp
+
+Other:
+- https://tympanus.net/codrops/author/crnacura
+Not in pug, in HTML, but you get idea that it has to look nice.
+
+Bread and Butter .5D
 ==================
 -^ * CRUD in Google FireStore, Client side DOM-only field changes .6D
+https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md 
 
 - * Blog, -i .5H
 
@@ -38,9 +51,8 @@ Bread and Butter 1D
 
 - * S3 w/ Goofys  1H
 
-- * CodeAnywhere 
+- * CodeAnywhere SSH
 
-- Video/Images
 
 Advanced .5D
 ========
@@ -51,6 +63,8 @@ Advanced .5D
 - AMP, m.pug 
 
 - SPA and Router
+
+- Video/Images
 
 - * Electron 1H
 
@@ -70,5 +84,5 @@ Perspectives 1H
 
 - How to extend
 
-- UI|Design can't be rushed. You are telling a story, but graphics help with engagement. 
+- UI|Design takes time. You are telling a story, but UI help with engagement. 
 
