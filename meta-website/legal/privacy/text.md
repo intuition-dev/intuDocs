@@ -1,6 +1,6 @@
 # Privacy Policy
 
-MetaBake (“MetaBake” “we” “us” or “our”) operates a website located at www.mBake.org (the “website”) from which users can gather information concerning news and services provided by MetaBake. This MetaBake Privacy Policy (“Privacy Policy”) covers our treatment of personally identifiable information that we collect when you access the website.
+MetaBake (“MetaBake” “we” “us” or “our”) operates a website located at mBake.org (the “website”) from which users can gather information concerning news and services provided by MetaBake. This MetaBake Privacy Policy (“Privacy Policy”) covers our treatment of personally identifiable information that we collect when you access the website.
 
 #### Information Collection and Use 
 
