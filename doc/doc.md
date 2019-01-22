@@ -6,46 +6,44 @@ Agenda:
 
 Foundation 1D
 ==========
-- * Hello World .5H
+- Hello World .5H
 
-- Caddy
+- Caddy 1H
 
 - * Pug Markup .5H
-
-- Spectre, Sass, assets.yaml
 
 - Website 1H
 
 - Navbar .5H (Navbar first, other FX at end)
 
-- RIOT Tags in Pug 1H
+- RIOT Tags-Components in Pug 1H
 
 - Create account in DO * Digital Ocean S3 w/ Mountain Duck .5H Sharing
 Make a DO spaces. Add a key.
 
-- * Google FireStore,  Model 1H
+- *  FireStore DF,  Model .2D
 
 For forms we'd use:
 https://github.com/kumailht/gridforms
 
-For tables we'd use:
+For tables we use:
 http://www.tabulator.info
 
-For loading we'd use
+For loading we use
 https://github.com/muicss/johnnydepp
 
 Other:
 - https://tympanus.net/codrops/author/crnacura
 Not in pug, in HTML, but you get idea that it has to look nice.
 
-Bread and Butter .5D
-==================
--^ * CRUD in Google FireStore, Client side DOM-only field changes .6D
+- * CRUD in  FireStore DF, Client side DOM-only field changes .6D
 https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md 
 
-- * Blog, -i .5H
 
-- Other Examples, eg Slides
+Bread and Butter .5D
+==================
+
+- Spectre, Sass, assets.yaml
 
 - * S3 w/ Goofys  1H
 
@@ -53,12 +51,16 @@ https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md
 
 - mBake on linux
 
+- Other Examples, eg Slides
+
+- * Blog, -i .5H
 
 Advanced .5D
 ========
+
 - Auth
 
--^ * CMS & Meta 3H
+- (*) CMS & Meta 3H
 
 - AMP, m.pug 
 
@@ -66,7 +68,7 @@ Advanced .5D
 
 - Video/Images
 
-- * Electron 1H
+- Electron 3H
 
 - SEO, social, og
 
@@ -74,7 +76,7 @@ Advanced .5D
 
 Perspectives 1H
 ============
--^ Phonegap (*) deploy sample app to build.adobe
+- (*) Phonegap deploy sample app to build.adobe
 
 - Meta of tag: declarative, advanced Pug Tags (FlipCard) 
 
