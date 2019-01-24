@@ -8,8 +8,6 @@ Foundation 1D
 ==========
 - Hello World .5H
 
-- Caddy 1H
-
 - * Pug Markup .5H
 
 - Website 1H
@@ -21,7 +19,7 @@ Foundation 1D
 - Create account in DO * Digital Ocean S3 w/ Mountain Duck .5H Sharing
 Make a DO spaces. Add a key.
 
-- *  FireStore DF,  Model .2D
+- *  FireStore ,  Model .2D
 
 For forms we'd use:
 https://github.com/kumailht/gridforms
@@ -36,7 +34,7 @@ Other:
 - https://tympanus.net/codrops/author/crnacura
 Not in pug, in HTML, but you get idea that it has to look nice.
 
-- * CRUD in  FireStore DF, Client side DOM-only field changes .6D
+- * CRUD in  FireStore , Client side DOM-only field changes .6D
 https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md 
 
 
@@ -73,6 +71,8 @@ Advanced .5D
 - SEO, social, og
 
 - GSAP, Ad
+
+- Caddy 1H
 
 Perspectives 1H
 ============
