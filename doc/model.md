@@ -1,4 +1,4 @@
-## Simple CRUD example app and ModelView+Bind
+## Simple CRUD example app and ViewModel+Bind
 **CRUD** stands for create-read-update-delete. These are the basic operations that a simple web app would be designed to achieve.
 
 After you will create simple CRUD app you will create your own Firestore database, insert data and add authentication to the app. 
@@ -45,12 +45,18 @@ From the tags folder run:
 8. You will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users. 
 9. Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Save data' on the 'ViewModel CRUD' screen should now succeed, and you should see the added data in the Firestore database console.
 
-## ModelView+Bind 
+## ViewModel+Bind 
 **Separate the UI from data** 
- ModelView is a great way of organizing your code, so each section of your code has a purpose, and those purposes are different.
+ ViewModel is a great way of organizing your code, so each section of your code has a purpose, and those purposes are different.
  
 * There is a 'models' folder inside assets, where we describe each class/model without UI, its typescript. The models do the heavy lifting, eg: call the service and prepare data in a way that is needed for the View and Pug. To compile the changes in the typescript file: tsc
     ```sh
     tsc
     ```
 * Each page will have its own binding class eg: TableBind where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.
+
+
+## ViewModel
+
+A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array. If there is a form, the ViewModel would have a public property of an object that has the fieldsnames that map forminputnames. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. 
+The CRUD and Fetch() that ViewModel is just plumbing. 
