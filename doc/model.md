@@ -58,5 +58,6 @@ From the tags folder run:
 
 ## ViewModel
 
-A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array. If there is a form, the ViewModel would have a public property of an object that has the fieldsnames that map forminputnames. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. 
+A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array or such. If there is a form, the ViewModel would have a public property of an object that has the fields_names that map form_input_names. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. So binding is easy. And each ViewModel should be discreet. 
+
 The CRUD and Fetch() that ViewModel is just plumbing. 
