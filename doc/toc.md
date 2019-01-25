@@ -6,33 +6,15 @@ Agenda:
 
 Foundation 1D
 ==========
-- Hello World .5H
 
-- * Pug Markup .5H
-
-- Website 1H
 
 - Navbar .5H (Navbar first, other FX at end)
 
 - RIOT Tags-Components in Pug 1H
 
-- Create account in DO * Digital Ocean S3 w/ Mountain Duck .5H Sharing
-Make a DO spaces. Add a key.
 
 - *  FireStore ,  Model .2D
 
-For forms we'd use:
-https://github.com/kumailht/gridforms
-
-For tables we use:
-http://www.tabulator.info
-
-For loading we use
-https://github.com/muicss/johnnydepp
-
-Other:
-- https://tympanus.net/codrops/author/crnacura
-Not in pug, in HTML, but you get idea that it has to look nice.
 
 - * CRUD in  FireStore , Client side DOM-only field changes .6D
 https://github.com/metabake/MetaBake-Docs/blob/master/doc/model.md 

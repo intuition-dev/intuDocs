@@ -1,8 +1,8 @@
 
-## Awesome Less code list of MetaBake resources
+## Awesome Low-code list of MetaBake resources
 
 
-## Less code = 10X faster web app development.
+## Low-code = 10X faster web app development.
 ### With MetaBake's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
 
 
@@ -44,8 +44,6 @@ Also, you should avoid prototyping in GUI tools - text prototyping is just as fa
 These are projects, that together leverage the 10 pillars:
 
 - [mbake](http://doc.mBake.org/mbake); CLI, and foundation. Please give it stars: '*'
-- [SPA](http://doc.mBake.org/SPA); eg. Brick and Mortar, examples, eg: PhoneGap v8
-- [Meta](http://doc.mBake.org/meta); Vista, Bespoke starter for Admin/Build automatic Services and WebIDE
 
 'Train-the-Trainer' is scheduled about monthly, and it is announced in the forum. Feel free to post questions there.
 
@@ -63,28 +61,68 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 
 
 ### Meta Definitions:
-- Pug : A templating language, position as Less code Declarative 4GL. Custom 'tags' in Pug via RIOTjs (and obfuscated as well as Andorid's ProGuard)
+- Pug : A templating language, position as Low-code Declarative 4GL. Custom 'tags' in Pug via RIOTjs (and obfuscated as well as Andorid's ProGuard)
 - Cloud v2: No known end point. E.g.: CDN, AWS Cognito. AWS Lambda does have a server end point, so it is not Cloud v2
 - Team Player: Benefits group via Cloud Dev Environment, ex: CodeAnywhere+Meta. Selfish: Local dev. environment.
 - SCSS theme framework: Google/search for 'Front End Framework' yields Bootstrap, Bulma, Spectre, etc. We have examples with a few in Github project of same name.
 - Meta: Building software that builds software. Has more than one level of meaning.
 
 
-## Advanced Reference
--(https://github.com/MetaBake/MetaBake-Admin/tree/master/advancedReference)[github.com/MetaBake/MetaBake-Admin/advancedReference]
+
+## Videos:
+S = sales, I = Foundation, II = B&M, III = Vista
+- S <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
+- S [MetaBake Full Slides](http://prez.mBake.org/p)
+- S [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
+
+- I [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
+- I [mbake CLI](https://youtu.be/-KkPfAnEXyk)
+- I [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
+- I [Mount S3 to local drive](http://wgehnerlab1.mBake.org.s3-website-us-east-1.amazonaws.com/lab1v0.html)
+
+- II [Blog search](https://www.youtube.com/watch?v=-4i9_SYyTOo)
+- II [SPA](https://youtu.be/LHFjjDPlU3A)
+- III [Meta Automatic Programing Eg 1 ](http://youtube.com/watch?v=c4mWhefhOoQ)
+
 
 
 ## Benchmarks and Automatic programing
 - [Job Board in days](https://medium.com/@mattia_asti/creating-a-job-board-in-a-few-days-contentful-riot-js-bulma-io-293276516301)
 
 
+For forms we'd use:
+https://github.com/kumailht/gridforms
+
+For tables we use:
+http://www.tabulator.info
+
+For loading we use
+https://github.com/muicss/johnnydepp
+
+Other:
+- https://tympanus.net/codrops/author/crnacura
+Not in pug, in HTML, but you get idea that it has to look nice.
+
+
+- [pagination.js](http://pagination.js.org)
+
+- [JS-offcanvas](https://github.com/vmitsaras/js-offcanvas)
+
+- [CSS Selectors](https://adam-marsden.co.uk/css-cheat-sheet)
+- [CSS reference](https://tympanus.net/codrops/css_reference/)
+
+- [Navbar](https://github.com/thednp/navbar.js/)
+- [Simple Navbar](https://www.w3schools.com/css/css_navbar.asp)
+
+
+- [Haroopad MD editor](http://pad.haroopress.com/user)
+
+
+- [Automatic programing](https://en.wikipedia.org/wiki/Automatic_programming)
+
 # Support
 
 &nbsp;
 - <a href='http://chat.mBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
-
-### Message from creators of MetaBake:
-
-We were involved with Struts and SilverStream. We plan to make MetaBake more popular than both.
 
