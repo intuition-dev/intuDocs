@@ -1,6 +1,5 @@
 site_name: mbake Docs
-site_url: http://mBake.org
-repo_url: http://mBake.org
+
 nav:
    - Home: index.md
 
@@ -14,3 +13,4 @@ nav:
    - About: about.md
 
 theme: readthedocs
+docs_dir: src
