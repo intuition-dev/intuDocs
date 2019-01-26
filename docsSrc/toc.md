@@ -1,4 +1,7 @@
 
+
+mkdocs build
+
 Agenda:
 
 Foundation 1D

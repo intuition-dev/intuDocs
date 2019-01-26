@@ -9,8 +9,8 @@ nav:
    - Tutorial 4 - Generate a CRUD webapp: t4.md
 
    - Resources: res.md
-   - Next Steps: next.md
    - About: about.md
 
 theme: readthedocs
 docs_dir: src
+site_dir: ../docs
