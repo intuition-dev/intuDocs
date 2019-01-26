@@ -1,4 +1,13 @@
 ## Simple CRUD example app and ViewModel+Bind
+
+
+## ViewModel
+
+A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array or such. If there is a form, the ViewModel would have a public property of an object that has the fields_names that map form_input_names. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. So binding is easy. And each ViewModel should be discreet. 
+
+The CRUD and Fetch() that ViewModel is just plumbing. 
+### 98% of VideModel is mapping it to a view(pug) page|screen.
+
 **CRUD** stands for create-read-update-delete. These are the basic operations that a simple web app would be designed to achieve.
 
 After you will create simple CRUD app you will create your own Firestore database, insert data and add authentication to the app. 
@@ -55,9 +64,3 @@ From the tags folder run:
     ```
 * Each page will have its own binding class eg: TableBind where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.
 
-
-## ViewModel
-
-A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array or such. If there is a form, the ViewModel would have a public property of an object that has the fields_names that map form_input_names. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. So binding is easy. And each ViewModel should be discreet. 
-
-The CRUD and Fetch() that ViewModel is just plumbing. 
