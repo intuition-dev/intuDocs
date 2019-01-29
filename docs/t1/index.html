@@ -140,17 +140,18 @@
 <li>
 <p><a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
 Replace 'wgehner-website' with your bucket name.</p>
-<p>{
+<pre><code>{
     "Version":"2012-10-17",
     "Statement": [{
         "Sid":"PublicReadGetObject",
             "Effect":"Allow",
-        "Principal": "<em>",
+        "Principal": "*",
             "Action":["s3:GetObject"],
-            "Resource":["arn:aws:s3:::wgehner-website/</em>"
+            "Resource":["arn:aws:s3:::wgehner-website/*"
             ]
         }]
-}</p>
+}
+</code></pre>
 </li>
 <li>
 <p>Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to <code>false</code>, unchecked (if no, the bucket url can not be accessed)</p>
