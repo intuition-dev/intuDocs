@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial 4 - Generate a CRUD webapp - mbake Docs</title>
+  <title>Tutorial 4 - Generate a CRUD webapp - mBake Guide (edited)</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mbake Docs</a>
+        <a href=".." class="icon icon-home"> mBake Guide (edited)</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -92,11 +92,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../next/">Next Steps</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../about/">About</a>
 	    </li>
           
@@ -110,7 +105,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mbake Docs</a>
+        <a href="..">mBake Guide (edited)</a>
       </nav>
 
       
@@ -134,21 +129,21 @@
               
                 <h1 id="tutorial-4-generate-a-serverless-crud-webapp">Tutorial 4: Generate a serverless CRUD webapp.</h1>
 <p>CRUD stands for create-read-update-delete. </p>
-<p>In this tutorial, you will learn how to create your own Firestore database, insert data and add authentication to the app.  Alongside, you will learn to render lists using <a href='https://dataTables.net/' target='_blank'>https://dataTables.net/</a> with advanced grid sorting, searching and paging.</p>
+<p>In this tutorial, you will learn how to create your own Firestore database, insert data and add authentication to the app. Alongside, you will learn to render lists using <a href='https://dataTables.net/' target='_blank'>https://dataTables.net/</a> with advanced grid sorting, searching and paging.</p>
 <p>Firestore database is part of the Google Firestore offering. Similar to AWS Cognito, Firestore includes pure client-side user authentication. Firestore can be used from the browser via JavaScript; no custom serverside code is needed. This is key to be able to develop faster.</p>
-<p>Firestore is free for up to 50,000 reads and 20,000 writes per day. See more details <a href="https://firebase.google.com/docs/Firestore/quotas">here</a>. At the time of writing, Firestore  is a beta version, but Gmail also was beta for a very long time, without major issues. Firestore  has a clean and mature API that is much improved from a previous version of Firebase. </p>
+<p>Firestore is free for up to 50,000 reads and 20,000 writes per day. See more details <a href="https://firebase.google.com/docs/Firestore/quotas">here</a>. At the time of writing, Firestore is a beta version, but Gmail also was beta for a very long time, without major issues. Firestore has a clean and mature API that is much improved from a previous version of Firebase. </p>
 <h2 id="steps">Steps</h2>
 <p>We assume you have completed <a href="/t1/">Tutorial 1</a>, <a href="/t2/">Tutorial 2</a> and <a href="/t3/">Tutorial 3</a>.</p>
 <ol>
 <li>
-<p>Using the AWS S3 browser, create a bucket <em>in the same region</em> as you used in <a href="/t1/">Tutorial 1</a>. Name the bucket <code>'wgehner-crud'</code> (replace <code>'wgehner'</code> with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project (<a href="/t1/#configure">Step 3</a> in Tutorial 1). Copy the Endpoint URL. The new bucket should appear as a new <em>project root</em> folder in your mapped drive (e.g. as <code>W:\wgehner-crud</code>). Extract the CRUD sample project to your computer with <code>'mbake -c'</code> and copy the project files (inside of <code>/crud</code>) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. </p>
+<p>Using the AWS S3 browser, create a bucket <em>in the same region</em> as you used in <a href="/t1/">Tutorial 1</a>. Name the bucket <code>'wgehner-crud'</code> (replace <code>'wgehner'</code> with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project (<a href="/t1/#configure">Step 3</a> in Tutorial 1). Copy the Endpoint URL. The new bucket should appear as a new <em>project root</em> folder in your mapped drive (e.g. as <code>W:\wgehner-crud</code>). Extract the CRUD sample project to your computer with <code>'$ mbake -c'</code> and copy the project files (inside of <code>/crud</code>) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. </p>
 </li>
 <li>
 <p>Navigate to the 'DataTable' menu item. Inspect the fragment <code>/datatable/list.pug</code>. Note the <code>table#list1</code> tag, an empty table with ID <code>list1</code>, and the <code>setupTable()</code> function that converts the table into a datatable with headers, data and the default features of sorting, in-memory searching and paging. As a next step, navigate to the 'Live CRUD' menu item, and inspect the fragment <code>/live/table.pug</code>. This time, the function <code>read(onData, onErr)</code> in <code>/assets/js/rw.js</code> is responsible for loading the (live) data from a preconfigured Firestore. More about <code>rw.js</code> below. The <code>onData</code> handler in <code>table.pug</code> populates the datatable. </p>
 </li>
 <li>
 <p>To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into <a href="https://console.firebase.google.com">https://console.firebase.google.com</a>. Create a project named <code>test-crud</code>. Under the left menu 'Develop - Database', create a Firestore  app in test mode.
-On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an app to get started' to open a popup. In your mapped project <code>/layout/tags/preRW-tag.pug</code>, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run <code>'mbake -t .'</code> from the <code>tags</code> folder. (<code>/layout/layout.pug</code> will use the updated <code>script(src='/layout/tags/preRW-tag.min.js')</code>.) In a browser, refresh the Live CRUD page. </p>
+On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an app to get started' to open a popup. In your mapped project <code>/layout/tags/preRW-tag.pug</code>, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run <code>'$ mbake -t .'</code> from the <code>tags</code> folder. (<code>/layout/layout.pug</code> will use the updated <code>script(src='/layout/tags/preRW-tag.min.js')</code>.) In a browser, refresh the Live CRUD page. </p>
 </li>
 <li>
 <p>Inspect <code>/screen/live/form.pug</code> and see how the function <code>setupForm()</code> maps button click events to actions in our helper library <code>/assets/js/rw.js</code>. Back in the browser, enter some data in the form fields and click 'Add data'. Back in the Firestore Console, in 'Develop - Database', you should see the inserted data as first item in 'table_one'. Repeat to insert a second item. This form is styled with <a href="http://kumailht.com/gridforms/">gridforms</a>.</p>
@@ -158,16 +153,18 @@ On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an ap
 </li>
 <li>
 <p>Next inspect <code>/assets/js/rw.js</code>. Look for the function <code>add(row, resolve, reject)</code> that inserts data on button click. You will see something like this:</p>
-<pre><code>let newPK = db1.collection(window.tablename).doc() // make PK
-newPK.set(newRow) // insert
-</code></pre>
-<p>The JavaScript API of Firestore  is intuitive and easy to use.</p>
+<p><code>js
+let newPK = db1.collection(window.tablename).doc() // make PK
+newPK.set(newRow) // insert</code></p>
+<p>The JavaScript API of Firestore is intuitive and easy to use.</p>
 </li>
 <li>
-<p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace<br />
-<code>allow: read, write;</code><br />
+<p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace 
+    <code>sh
+    allow: read, write;</code><br />
     with<br />
-<code>allow read, write: if request.auth.token.email_verified == true ;</code><br />
+<code>sh
+    allow read, write: if request.auth.token.email_verified == true ;</code><br />
     Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.</p>
 </li>
 <li>
@@ -177,9 +174,9 @@ newPK.set(newRow) // insert
 <p>Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Add data' on the 'Live CRUD' screen should now succeed, and you should see the added data in the Firestore database console.</p>
 </li>
 </ol>
-<p><strong>Summary:</strong> You learnt how to create your own Firestore  database, insert data and add authentication to the app, along with using datatables.
-Firestore  replaces MongoDB, but also ORM, REST, DevOps, Security, Failover, etc. Instead of learning all of these, now you only need to learn how to use Firestore . That should create a huge savings in your development and operations budget.</p>
-<p><strong>NEXT STEPS:</strong> You can try out more Template projects (type <code>mbake</code>). You can also setup a META build server. META has a watcher that triggers 'mbake' when you save a file to a mapped drive. You can become 10X more productive by adopting the Metabase approach. </p>
+<p><strong>Summary:</strong> You learnt how to create your own Firestore database, insert data and add authentication to the app, along with using datatables.
+Firestore replaces MongoDB, but also ORM, REST, DevOps, Security, Failover, etc. Instead of learning all of these, now you only need to learn how to use Firestore. That should create a huge savings in your development and operations budget.</p>
+<p><strong>NEXT STEPS:</strong> You can try out more Template projects (type <code>$ mbake</code>). You can also setup a META build server. META has a watcher that triggers 'mbake' when you save a file to a mapped drive. You can become 10X more productive by adopting the Metabase approach. </p>
 <p>Definitely look at:</p>
 <ul>
 <li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial 1 - Setup S3 and mount - mbake Docs</title>
+  <title>Tutorial 1 - Setup S3 and mount - mBake Guide (edited)</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mbake Docs</a>
+        <a href=".." class="icon icon-home"> mBake Guide (edited)</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -89,11 +89,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../next/">Next Steps</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../about/">About</a>
 	    </li>
           
@@ -107,7 +102,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mbake Docs</a>
+        <a href="..">mBake Guide (edited)</a>
       </nav>
 
       
@@ -132,7 +127,6 @@
                 <h2 id="tutorial-1-setup-s3-as-your-http-server-and-mount-it">Tutorial 1: Setup S3 as your HTTP server and mount it</h2>
 <p>mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.</p>
 <h2 id="steps">Steps</h2>
-<p>[A detailed video of the following steps is available <a href="http://wgehnerlab1.mBake.org.s3-website-us-east-1.amazonaws.com/lab1v0.html">here</a>.]</p>
 <ol>
 <li>
 <p>Create an AWS account if you don't already have one.</p>
@@ -144,8 +138,10 @@
 <p>Create an AWS S3 <em>'bucket'</em> in the "US East (N Virginia)" region. (Advanced users can select any region). Name the bucket 'wgehner-website' (replace wgehner with your name or something else unique).</p>
 </li>
 <li>
-<p><a name="configure"></a>On the bucket Properties tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. Replace 'wgehner-website' with your bucket name.</p>
-<pre><code>{
+<p><a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
+Replace 'wgehner-website' with your bucket name.</p>
+<p><code>sh
+{
     "Version":"2012-10-17",
     "Statement": [{
         "Sid":"PublicReadGetObject",
@@ -155,8 +151,10 @@
             "Resource":["arn:aws:s3:::wgehner-website/*"
             ]
         }]
-}
-</code></pre>
+}</code> </p>
+</li>
+<li>
+<p>Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to <code>false</code>, unchecked (if no, the bucket url can not be accessed)</p>
 </li>
 <li>
 <p>Install <a href="https://webdrive.com">Web Drive</a> for Windows or on Mac <a href="https://mountainduck.io">Mountain Duck</a> users may choose a different <em>mount</em> software. There are more than a dozen <a href="https://tinyurl.com/y9rlmr4t">other choices</a>). Mount replaces FTP.</p>
