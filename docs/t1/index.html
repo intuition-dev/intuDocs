@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial 1 - Setup S3 and mount - mBake Guide (edited)</title>
+  <title>Tutorial 1 - Setup S3 and mount - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mBake Guide (edited)</a>
+        <a href=".." class="icon icon-home"> mBake Guide</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -102,7 +102,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mBake Guide (edited)</a>
+        <a href="..">mBake Guide</a>
       </nav>
 
       
@@ -140,18 +140,17 @@
 <li>
 <p><a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
 Replace 'wgehner-website' with your bucket name.</p>
-<p><code>sh
-{
+<p>{
     "Version":"2012-10-17",
     "Statement": [{
         "Sid":"PublicReadGetObject",
             "Effect":"Allow",
-        "Principal": "*",
+        "Principal": "<em>",
             "Action":["s3:GetObject"],
-            "Resource":["arn:aws:s3:::wgehner-website/*"
+            "Resource":["arn:aws:s3:::wgehner-website/</em>"
             ]
         }]
-}</code> </p>
+}</p>
 </li>
 <li>
 <p>Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to <code>false</code>, unchecked (if no, the bucket url can not be accessed)</p>

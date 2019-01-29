@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial 4 - Generate a CRUD webapp - mBake Guide (edited)</title>
+  <title>Tutorial 4 - Generate a CRUD webapp - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mBake Guide (edited)</a>
+        <a href=".." class="icon icon-home"> mBake Guide</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -105,7 +105,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mBake Guide (edited)</a>
+        <a href="..">mBake Guide</a>
       </nav>
 
       
@@ -153,18 +153,16 @@ On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an ap
 </li>
 <li>
 <p>Next inspect <code>/assets/js/rw.js</code>. Look for the function <code>add(row, resolve, reject)</code> that inserts data on button click. You will see something like this:</p>
-<p><code>js
-let newPK = db1.collection(window.tablename).doc() // make PK
-newPK.set(newRow) // insert</code></p>
+<pre><code>let newPK = db1.collection(window.tablename).doc() // make PK
+newPK.set(newRow) // insert
+</code></pre>
 <p>The JavaScript API of Firestore is intuitive and easy to use.</p>
 </li>
 <li>
 <p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace 
-    <code>sh
-    allow: read, write;</code><br />
+        allow: read, write;
     with<br />
-<code>sh
-    allow read, write: if request.auth.token.email_verified == true ;</code><br />
+        allow read, write: if request.auth.token.email_verified == true ;
     Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.</p>
 </li>
 <li>
