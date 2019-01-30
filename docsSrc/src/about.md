@@ -1,6 +1,6 @@
 
 
-- [Click for 'THE' mbake Docs](http://doc.mBake.org/mbake/)
+- [Click for 'THE' mbake Docs](http://docs.mBake.org)
 
 
 ## Low-code = 10X faster web app development.

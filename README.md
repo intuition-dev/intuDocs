@@ -2,7 +2,7 @@
 Docs, examples and more at:
 
 [mBake.org](http://mBake.org)
-[Click for 'THE' mbake Docs](http://doc.mBake.org/mbake/)
+[Click for 'THE' mbake Docs](http://docs.mBake.org)
 
 
 ## MetaBake is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding.
