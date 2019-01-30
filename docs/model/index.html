@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Model - mBake Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Model";
+    var mkdocs_page_input_path = "model.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> mBake Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../t1/">Tutorial 1 - Setup S3 and mount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ca/">Tutorial 2 - Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ca_install/">Tutorial 3 - Install the tools for developing to linux box via CA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../t2/">Tutorial 4 - Learn Templating/Pug</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../t3/">Tutorial 5 - Generate a website</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../t4/">Tutorial 6 - Generate a CRUD webapp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../res/">Resources</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">mBake Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Model</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="simple-crud-example-app-and-viewmodelbind">Simple CRUD example app and ViewModel+Bind</h2>
+<h2 id="viewmodel">ViewModel</h2>
+<p>A ViewModel maps to a page/screen. A ViewModel should be named after a page and each page should have a ViewModel. (Rarely a page has 2 ViewModels, for example if there is a Tag/Component that is on more than one page/screen that has it's own ViewModel) So if there is a table in the screen/page, the ViewModel would have a public property of an array or such. If there is a form, the ViewModel would have a public property of an object that has the fields_names that map form_input_names. And if there are 2 tables and two form, then the ViewModel has 2 public arrays and 2 public objects. So binding is easy. And each ViewModel should be discreet. </p>
+<p>The CRUD and Fetch() that ViewModel is just plumbing. </p>
+<h3 id="98-of-videmodel-is-mapping-it-to-a-viewpug-pagescreen">98% of VideModel is mapping it to a view(pug) page|screen.</h3>
+<p><strong>CRUD</strong> stands for create-read-update-delete. These are the basic operations that a simple web app would be designed to achieve.</p>
+<p>After you will create simple CRUD app you will create your own Firestore database, insert data and add authentication to the app. </p>
+<p>Firestore is Firebase’s new database. It’s designed to store and sync app data at global scale easily. It’s a managed NoSQL document-oriented database for mobile and web development. Firestore includes pure client-side user authentication and can be used from the browser via JavaScript. No custom serverside code is needed. This is key to be able to develop faster.</p>
+<p>You will need to learn about http://tabulator.info/ which allows you to create interactive tables in seconds from any HTML Table, JavaScript Array, AJAX data source or JSON formatted data.</p>
+<h2 id="steps-for-creating-simple-crud-app">Steps for creating simple CRUD app</h2>
+<ol>
+<li>
+<p>For an example dynamic web app CRUD in console type: 
+    <code>sh
+    mbake -c</code>
+     This command will extract the CRUD sample project to your computer. </p>
+<p><em>If you are using S3 buckets you can copy the project files (inside of /crud) into the project root, so in a browser you should see the CRUD App served by S3 with your endpoint URL</em></p>
+</li>
+<li>
+<p>Navigate to the 'Tabu' menu item and inspect the fragment /tabu/list.pug. 
+ Note the #example-table tag and the new Tabulator() function that converts the table into a datatable with headers and data.</p>
+</li>
+<li>
+<p>Now, navigate to the 'ViewModel CRUD' and 'ViewModel CRUD 2' menu items. First inspect the fragment models/OneModel.ts, and its methods (read, add, update, delete and valid), and after that inspect the fragments viewmodel/TableBind.js and view-model-2/bind.js. </p>
+</li>
+<li>
+<p>To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into https://console.firebase.google.com. Create a project named test-crud. Under the left menu 'Develop - Database', create a Firestore app in test mode. On the Project Overview, click the </> button near 'Add an app to get started' to open a popup. In your mapped project /assets/tags/preRW-tag.pug, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. 
+From the tags folder run: 
+    <code>sh
+    mbake -t .</code>
+     /layout/layout.pug will use the updated script(src='/assets/tags/preRW-tag.min.js').) 
+     In a browser, refresh the Live CRUD page.</p>
+</li>
+<li>
+<p>Inspect /viewmodel/form/FormBind.js and  /viewmodel/form/index.pug. Back in the browser enter some data in the form fields and click 'Save data'. Back in the Firestore Console, in 'Develop - Database', you should see the inserted data as first item in 'table_one'. Repeat to insert a second item. </p>
+</li>
+<li>
+<p>You will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace
+    <code>sh
+    allow: read, write;</code>
+    with
+    <code>sh
+    allow read, write: if request.auth.token.email_verified == true ;</code>
+    Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.</p>
+</li>
+<li>
+<p>You will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users. </p>
+</li>
+<li>Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Save data' on the 'ViewModel CRUD' screen should now succeed, and you should see the added data in the Firestore database console.</li>
+</ol>
+<h2 id="viewmodelbind">ViewModel+Bind</h2>
+<p><strong>Separate the UI from data</strong> 
+ ViewModel is a great way of organizing your code, so each section of your code has a purpose, and those purposes are different.</p>
+<ul>
+<li>There is a 'models' folder inside assets, where we describe each class/model without UI, its typescript. The models do the heavy lifting, eg: call the service and prepare data in a way that is needed for the View and Pug. To compile the changes in the typescript file: tsc
+    <code>sh
+    tsc</code></li>
+<li>Each page will have its own binding class eg: TableBind where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
