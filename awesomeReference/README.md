@@ -126,3 +126,41 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 - <a href='http://chat.mBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
+# commands
+
+**Install node:**
+
+        $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+        //restart terminal next is one line command):
+
+        $ export NVM_DIR="$HOME/.nvm" 
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+        $ nvm --version
+
+        //(must be 0.33)
+
+        $ nvm install 10
+
+        $ nvm use 10.15
+
+        (the current version of mbake requires node version > than 10.15, but less than v11)
+
+**Install yarn:**
+
+        $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+        $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+        $ sudo apt install --no-install-recommends yarn
+        $ yarn --version
+    
+**Install mbake CLI:**
+
+        $ yarn global add mbake 
+
+**Change the root password for DO linux box.**
+
+Connect by ssh in terminal. It will ask to enter existing password and then new password:
+
+        $ ssh root@[IP-Address]

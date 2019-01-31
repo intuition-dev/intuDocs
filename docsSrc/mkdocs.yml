@@ -3,12 +3,14 @@ site_name: mBake Guide
 nav:
    - Home: index.md
 
-   - Tutorial 1 - Setup S3 and mount: t1.md
-   - Tutorial 2 - Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box: ca.md
-   - Tutorial 3 - Install the tools for developing to linux box via CA: ca_install.md
-   - Tutorial 4 - Learn Templating/Pug: t2.md
-   - Tutorial 5 - Generate a website: t3.md
-   - Tutorial 6 - Generate a CRUD webapp: t4.md
+   - Setup S3 and webdrive mount: s3_n_webdrive_mount.md
+   - Mount S3 to linux box via goofys and CA: ca.md
+   - Learn Templating/Pug: pug_static_data.md
+   - Spectre SCSS Theme Framework and SCSS: spectre_n_scss.md
+   - dynamic databinding: dynamic_data_binding.md
+   - Generate a serverless CRUD webapp: crud.md
+   - Simple CRUD example app and ViewModel+Bind: model.md
+   - Design, UI: design.md
 
    - Resources: res.md
    - About: about.md

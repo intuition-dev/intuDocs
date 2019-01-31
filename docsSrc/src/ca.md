@@ -1,15 +1,19 @@
-## Tutorial 2: Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box
+# Mount S3 to linux box via goofys using CodeAnywhere editor
 
 ## Setup cloud dev.
 
 1. Setup up a Linux box in the cloud, e.g. [Digital Ocean](www.digitalocean.com).
 
+1. Change the root password for DO linux box. Connect by ssh in terminal. It will ask to enter existing password and then new password:
+
+        $ ssh root@[IP-Address]
+
 1. Setup a Web IDE account, e.g. [CodeAnywhere](https://codeanywhere.com) online text editor (hereafter CA)
 
+1. In CA, connect to the Linux box.
 
-1. In CA, connect to the Linux box (created on DO).
+1. In CA, open SSH to the Linux box.
 
-1. In CA, open SSH to the Linux box (right click on the root folder --> 'SSH Terminal').
 
 
 ### Cloud Mount S3
@@ -53,8 +57,12 @@
 
 		// if errors, check /var/log/syslog for direction
 
-Now you can edit your mounted bucket files from CodeAnywhere ssh.
+1. Install node, yarn and mbake
+1. Via git, pull the latest version of some project from the git repository.
+1. Change some file, pug or .ts or readme - `mbake .` it and `git push` to the git repository.
 
-In the [next tutorial ](/ca_install/) you will learn about developing a project using CA.
+Now you've learned how to develop and operate in the cloud and you can edit your mounted bucket files from CodeAnywhere ssh.
 
-NEXT: Go to [Tutorial 3: Install the tools for developing to linux box via CA](/ca_install/).
+In the [next tutorial ](/pug_static_data/) you will learn about Pug and static data binding.
+
+NEXT: Go to [Templating/Pug and static binding](/pug_static_data/).

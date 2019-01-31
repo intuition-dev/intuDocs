@@ -1,4 +1,4 @@
-## Tutorial 1: Setup S3 as your HTTP server and mount it
+## Setup S3 as your HTTP server and mount it
 
 mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.
 
@@ -34,10 +34,10 @@ Replace 'wgehner-website' with your bucket name.
 
 1. In WebDrive, create a new Amazon S3 connection. Choose a drive letter (e.g. `W:\`). Paste Access Key ID and Secret Access Key created in Step 1 above. If your bucket region is __not__ "US East (N Virginia)", edit the S3 Account URL/Address to match the "Endpoint URL' in [this list](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Example: change https://s3.amazonaws.com to https://s3.us-west-1.amazonaws.com if your region is US West (N. California). Do __not__ select a specific bucket. This way all buckets for the region will show up as top level folders in the mounted drive, and your mounted drive letter effectively represents an S3 region in your AWS account. 
 
-1. To verify that the mount is working, you can put an index.html into the mounted bucket _project root_ (e.g. `W:\wgehner-website`) on your file system. You might just copy-paste the `index.html` you generated [here](../mbake/#how-to-create-a-hello-world-app-with-mbake). Then view it in the browser via the Endpoint URL copied in Step 3 above.
+1. To verify that the mount is working, you can put an index.html into the mounted bucket _project root_ (e.g. `W:\wgehner-website`) on your file system. You might just copy-paste the `index.html` you generated [here](/#how-to-install-mbake). Then view it in the browser via the Endpoint URL copied in Step 3 above.
 
 __Summary__: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.
 
-In the [next tutorial ](/ca/) you will learn how install the tools for developing in Linux box.
+In the [next tutorial](/ca/) you will learn how to mount s3 bucket to Linux box on CodeAnywhere.
 
-NEXT: Go to [Tutorial 2: Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box](/ca/).
+NEXT: Go to [Mount S3 to linux box via goofys using CodeAnywhere editor](/ca/).

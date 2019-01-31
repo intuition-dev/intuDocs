@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial 1 - Setup S3 and mount - mBake Guide</title>
+  <title>Setup S3 and webdrive mount - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Tutorial 1 - Setup S3 and mount";
-    var mkdocs_page_input_path = "t1.md";
+    var mkdocs_page_name = "Setup S3 and webdrive mount";
+    var mkdocs_page_input_path = "s3_n_webdrive_mount.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -55,10 +55,10 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Tutorial 1 - Setup S3 and mount</a>
+    <a class="current" href="./">Setup S3 and webdrive mount</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#tutorial-1-setup-s3-as-your-http-server-and-mount-it">Tutorial 1: Setup S3 as your HTTP server and mount it</a></li>
+    <li class="toctree-l2"><a href="#setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</a></li>
     
 
     <li class="toctree-l2"><a href="#steps">Steps</a></li>
@@ -69,27 +69,37 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca/">Tutorial 2 - Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box</a>
+    <a class="" href="../ca/">Mount S3 to linux box via goofys and CA</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca_install/">Tutorial 3 - Install the tools for developing to linux box via CA</a>
+    <a class="" href="../ca_install/">Install the tools for developing to linux box via CA</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../t2/">Tutorial 4 - Learn Templating/Pug</a>
+    <a class="" href="../pug_static_data/">Learn Templating/Pug</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../t3/">Tutorial 5 - Generate a website</a>
+    <a class="" href="../spectre_n_scss/">Spectre SCSS Theme Framework and SCSS</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../t4/">Tutorial 6 - Generate a CRUD webapp</a>
+    <a class="" href="../dynamic_data_binding/">dynamic databinding</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../crud/">Generate a serverless CRUD webapp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../model/">Simple CRUD example app and ViewModel+Bind</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -124,7 +134,7 @@
     
       
     
-    <li>Tutorial 1 - Setup S3 and mount</li>
+    <li>Setup S3 and webdrive mount</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -134,7 +144,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="tutorial-1-setup-s3-as-your-http-server-and-mount-it">Tutorial 1: Setup S3 as your HTTP server and mount it</h2>
+                <h2 id="setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</h2>
 <p>mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.</p>
 <h2 id="steps">Steps</h2>
 <ol>
@@ -172,12 +182,12 @@ Replace 'wgehner-website' with your bucket name.
 <p>In WebDrive, create a new Amazon S3 connection. Choose a drive letter (e.g. <code>W:\</code>). Paste Access Key ID and Secret Access Key created in Step 1 above. If your bucket region is <strong>not</strong> "US East (N Virginia)", edit the S3 Account URL/Address to match the "Endpoint URL' in <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">this list</a>. Example: change https://s3.amazonaws.com to https://s3.us-west-1.amazonaws.com if your region is US West (N. California). Do <strong>not</strong> select a specific bucket. This way all buckets for the region will show up as top level folders in the mounted drive, and your mounted drive letter effectively represents an S3 region in your AWS account. </p>
 </li>
 <li>
-<p>To verify that the mount is working, you can put an index.html into the mounted bucket <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="../mbake/#how-to-create-a-hello-world-app-with-mbake">here</a>. Then view it in the browser via the Endpoint URL copied in Step 3 above.</p>
+<p>To verify that the mount is working, you can put an index.html into the mounted bucket <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="/#how-to-install-mbake">here</a>. Then view it in the browser via the Endpoint URL copied in Step 3 above.</p>
 </li>
 </ol>
 <p><strong>Summary</strong>: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.</p>
-<p>In the <a href="/ca/">next tutorial </a> you will learn how install the tools for developing in Linux box.</p>
-<p>NEXT: Go to <a href="/ca/">Tutorial 2: Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box</a>.</p>
+<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount s3 bucket to Linux box on CodeAnywhere.</p>
+<p>NEXT: Go to <a href="/ca/">Mount S3 to linux box via goofys using CodeAnywhere editor</a>.</p>
               
             </div>
           </div>
@@ -185,7 +195,7 @@ Replace 'wgehner-website' with your bucket name.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ca/" class="btn btn-neutral float-right" title="Tutorial 2 - Mount S3 bucket via goofys using CodeAnywhere editor and Digital Ocean Linux box">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ca/" class="btn btn-neutral float-right" title="Mount S3 to linux box via goofys and CA">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>

@@ -33,7 +33,7 @@ See [Resources](/res/) for related projects.
 From a command line such as PowerShell, type:
 
 ```
-   yarn global add mbake
+   $ yarn global add mbake
 ```
 That's it! If you don't have Yarn installed, first go [here](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
 
@@ -62,7 +62,7 @@ mbake apps run on any static web server. This includes low-cost cloud hosting su
 
 When you develop locally, you could use 'Web Server for Chrome' to run mbake apps. To install it, open your Google Chrome web browser and install the 'Web Server for Chrome' app from [here](https://chrome.google.com/webstore/search/Web%20Server?_category=apps). Launch the app, click the 'Choose Folder' button and select the root folder of your app (e.g. where index.html of your Hello World app is). Also ensure 'Options' has 'Automatically show index.html' checked. Ensure the Web Server is STARTED, then navigate to the proposed URL (e.g. http://127.0.0.1:8887).
 
-Even though mbake apps are installed on a static server, they are dynamic because they allow user authentication and work with JSON for dynamic rendering and and database APIs for dynamic databinding.
+Even though mbake apps are installed on a static server, they are dynamic because they allow user authentication and work with JSON for dynamic rendering and database APIs for dynamic databinding.
 
 ## How to generate a sample app with mbake
 
@@ -85,7 +85,7 @@ Even though mbake apps are installed on a static server, they are dynamic becaus
 ## How to see all mbake options
 
 ```
-   mbake
+   $ mbake
 ```
 
 ## How to make mbake apps serverless
@@ -96,12 +96,17 @@ To go extreme serverless, we show how to use mbake with
 - Mounting software so you can mount AWS S3 as a drive
 - Google Firebase/Firestore 
 
-### Go extreme serverless in four steps (Tutorials):
+### Go extreme serverless following the steps (Tutorials):
 
-- [Tutorial 1](/t1/): Setup S3 as your cloud server and mount it.
-- [Tutorial 2](/t2/): Learn Pug and static binding; view via S3 HTTP server.
-- [Tutorial 3](t3/): Learn serverless websites with dynamic data binding.
-- [Tutorial 4](/t4/): Generate a serverless CRUD webapp.
+- [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/)
+- [Mount S3 to linux box via goofys using CodeAnywhere editor](/ca/)
+- [Learn Pug and static binding; view via S3 HTTP server](/pug_static_data/)
+- [Spectre SCSS Theme Framework and SCSS](/spectre_n_scss/)
+- [dynamic databinding](/dynamic_data_binding/)
+- [Generate a serverless CRUD webapp](/crud/)
+- [Simple CRUD example app and ViewModel+Bind](/model/)
+- [Design, UI](/design/)
+
 
 When done, you should see [this](https://youtu.be/-KkPfAnEXyk).
 
@@ -110,14 +115,14 @@ Serverless/Cloud V2, Mount and Pug are some of the pillars of MetaBake.
 ## tl;dr
 
 ```
-   yarn global add mbake
-   mbake
-   mbake -c
-   cd crud
-   mbake .
+   $ yarn global add mbake
+   $ mbake
+   $ mbake -c
+   $ cd crud
+   $ mbake .
 ```
 
-NEXT: Go to [Tutorial 1](/t1/).
+NEXT: Go to [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/).
 
 
 

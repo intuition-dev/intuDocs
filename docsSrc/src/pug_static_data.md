@@ -1,11 +1,12 @@
 
-## Tutorial 4: Learn Templating/Pug and static binding; view via S3 HTTP server.
+## Learn Templating/Pug and static binding; view via S3 HTTP server.
 
 Simply said, _Pug_ is HTML without closing tags. Pug is a templating language, more powerful than [Markdown](https://en.wikipedia.org/wiki/Markdown). If you know Node/Express, you know Pug already.
 
 If you know HTML, you also mostly know Pug: just don't close the tags. Pug also has variables (e.g. `#{key1}`) and imports (e.g. `include fragment.pug`).
 
 This Pug:
+
     header
     body
         p Hello #{key1}
@@ -31,19 +32,19 @@ We assume that you have already installed mbake with `$ yarn global add mbake` a
 
 2. Generate a sample website with
 
-    $ mbake -s
+        $ mbake -s
 
-    and copy the contents of the generated `website` folder to the bucket you mapped in [Tutorial 1](/t1/), e.g. `W:\wgehner-website`. Open this as a project in your favorite code editor (we like VS Code).
+    and copy the contents of the generated `website` folder to the bucket you mapped in [Tutorial 1](/s3_n_webdrive_mount/), e.g. `W:\wgehner-website`. Open this as a project in your favorite code editor (we like VS Code).
 
 3. In the Amazon S3 browser, go to the `/assets/css` folder, check all CSS files, select 'More - change metadata', and set 'Content-type' to `text/css`.
 
-4. View the app in a browser. Use the S3 URL from [Tutorial 1](/t1/), e.g. <http://wgehner-website.s3-website-us-west-1.amazonaws.com>. For production, you can mask the URL with a proper domain with HTTPS by using a CDN. You can find more detailed instructions [here](/cdn/).
+4. View the app in a browser. Use the S3 URL from [Tutorial 1](/s3_n_webdrive_mount/). For production, you can mask the URL with a proper domain with HTTPS by using a CDN.
 
 5. On the website, navigate to the 'About Us' page. In your code editor, go to the /about/about folder, edit `dat.yaml` and change `'About Us'` to `'About Me'`, save, then `'$ mbake .'` and refresh the browser. Of course you could also change something in `index.pug`.
 
-6. You can also use mbake live reload/watcher/compiler from the root folder of your project (where the homepage is placed), this command will automatically compile `.pug` to `.html` and `*-tag.pug` to `*-tag.js`, and also scss/sass to css:
+6. You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile `.pug` to `.html` and `*-tag.pug` to `*-tag.js`, and also scss/sass to css:
 
-    $ mbakeW -w .
+        $ mbakeW -w .
 
 ## About dat.yaml
 mbake looks for `dat.yaml` in each folder and uses it for static binding. If you have `'bla: Oh hi'` in `dat.yaml`, you can use the value inside a `.pug` file at compile time via:
@@ -52,10 +53,6 @@ mbake looks for `dat.yaml` in each folder and uses it for static binding. If you
 
 That will put`'Oh hi'`, the value of `bla` at compile time, into the HTML. This is especially useful for any SEO items that can be repetitive in the HTML source.
 
-__Summary__: In this tutorial, you learnt about Pug and static data binding. In the [next tutorial](/t3/), we cover _websites with dynamic data binding_.
+__Summary__: In this tutorial, you learnt about Pug and static data binding. In the [next tutorial](/spectre_n_scss/), we cover _spectre css framework and scss_.
 
-## Default SCSS Theme Framework
-
-The default SCSS theme framework used in most examples is [Spectre CSS](https://picturepan2.github.io/spectre/getting-started.html#introduction), but you can use any CSS framework you like. Spectre is small (~10KB) but fully featured and easy to use. Spectre does not use JavaScript, which makes it [AMP-compatible](https://www.ampproject.org/learn/overview/) - a big plus for content-driven sites and apps.
-
-NEXT: Go to [Tutorial 5](/t3/).
+NEXT: Go to [Tutorial 5](/spectre_n_scss/).

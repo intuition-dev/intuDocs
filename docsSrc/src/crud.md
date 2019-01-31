@@ -1,5 +1,5 @@
 
-# Tutorial 6: Generate a serverless CRUD webapp.
+# Generate a serverless CRUD webapp.
 
 CRUD stands for create-read-update-delete. 
 
@@ -11,9 +11,9 @@ Firestore is free for up to 50,000 reads and 20,000 writes per day. See more det
 
 ## Steps
 
-We assume you have completed [Tutorial 1](/t1/), [Tutorial 2](/t2/) and [Tutorial 3](/t3/).
+We assume you have completed [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/), [Templating/Pug and static binding](/pug_static_data/) and [Spectre SCSS Theme Framework and SCSS](/spectre_n_scss/).
 
-1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Tutorial 1](/t1/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 3](/t1/#configure) in Tutorial 1). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -c'` and copy the project files (inside of `/crud`) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. 
+1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) in Tutorial 1). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -c'` and copy the project files (inside of `/crud`) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. 
 
 2. Navigate to the 'DataTable' menu item. Inspect the fragment `/datatable/list.pug`. Note the `table#list1` tag, an empty table with ID `list1`, and the `setupTable()` function that converts the table into a datatable with headers, data and the default features of sorting, in-memory searching and paging. As a next step, navigate to the 'Live CRUD' menu item, and inspect the fragment `/live/table.pug`. This time, the function `read(onData, onErr)` in `/assets/js/rw.js` is responsible for loading the (live) data from a preconfigured Firestore. More about `rw.js` below. The `onData` handler in `table.pug` populates the datatable. 
 
@@ -53,4 +53,6 @@ Definitely look at:
 - <https://git.mBake.org>.
 
 
+In the [next tutorial](/model/), we cover a _view-model pattern_.
 
+NEXT: Go to [Simple CRUD example app and ViewModel+Bind](/model/).

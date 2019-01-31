@@ -64,3 +64,6 @@ From the tags folder run:
     ```
 * Each page will have its own binding class eg: TableBind where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.
 
+In the [next tutorial](/design/), we cover a _Design and UI_.
+
+NEXT: Go to [Design and UI](/design/).

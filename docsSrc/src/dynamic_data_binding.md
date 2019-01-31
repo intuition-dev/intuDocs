@@ -1,4 +1,4 @@
-## Tutorial 5: Learn serverless websites with dynamic databinding.
+## Learn serverless websites with dynamic databinding.
 
 A webapp is just a dynamic website. This tutorial helps you understand an example of a serverless website. Whether you plan to build a webapp or not, this tutorial is a good foundation. 
 
@@ -60,7 +60,7 @@ We assume that you have already installed the example `website` project as descr
 
 Another feature of mbake allows you to generate an _AMP_ version of a website that has no custom JavaScript. More about this in another upcoming tutorial.
 
-__Summary__: in this tutorial, you've learned about appshell, includes, routes, custom tags, link lists, content lists and serverless email, along with dynamic data binding. In the [next tutorial](/t4/), we cover a _serverless CRUD webapp_.
+__Summary__: in this tutorial, you've learned about appshell, includes, routes, custom tags, link lists, content lists and serverless email, along with dynamic data binding. In the [next tutorial](/crud/), we cover a _serverless CRUD webapp_.
 
-NEXT: Go to [Tutorial 6](/t4/).
+NEXT: Go to [Generate a serverless CRUD webapp](/crud/).
 
