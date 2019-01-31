@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Design - mBake Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Design";
+    var mkdocs_page_input_path = "design.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> mBake Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../s3_n_webdrive_mount/">Setup S3 and webdrive mount</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ca/">Mount S3 to linux box via goofys and CA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pug_static_data/">Learn Templating/Pug</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../spectre_n_scss/">Spectre SCSS Theme Framework and SCSS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dynamic_data_binding/">dynamic databinding</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../crud/">Generate a serverless CRUD webapp</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../model/">Simple CRUD example app and ViewModel+Bind</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Design</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#6-fundamental-elements-of-design">6 fundamental elements of design</a></li>
+    
+
+    <li class="toctree-l2"><a href="#principles-of-design">Principles of design</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#unityharmony">Unity/harmony</a></li>
+        
+            <li><a class="toctree-l3" href="#balance">Balance</a></li>
+        
+            <li><a class="toctree-l3" href="#hierarchy">Hierarchy</a></li>
+        
+            <li><a class="toctree-l3" href="#scaleproportion">Scale/proportion</a></li>
+        
+            <li><a class="toctree-l3" href="#space">Space</a></li>
+        
+            <li><a class="toctree-l3" href="#dominanceemphasis">Dominance/emphasis</a></li>
+        
+            <li><a class="toctree-l3" href="#similarity-and-contrast">Similarity and contrast</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../res/">Resources</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">mBake Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Design</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="6-fundamental-elements-of-design">6 fundamental elements of design</h1>
+<ol>
+<li>Balance</li>
+<li>Hierarchy</li>
+<li>Dominance/Emphasis</li>
+<li>Contrast</li>
+<li>Space</li>
+<li>Unity/Harmony</li>
+</ol>
+<h1 id="principles-of-design">Principles of design</h1>
+<h2 id="unityharmony">Unity/harmony</h2>
+<p>When all elements are in agreement. A good balance between unity and variety.</p>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><strong>Perspective:</strong> sense of distance between elements.</li>
+<li><strong>Similarity:</strong> ability to seem repeatable with other elements.</li>
+<li><strong>Continuation:</strong> the sense of having a line or pattern extend.</li>
+<li><strong>Repetition:</strong> elements being copied or mimicked numerous times.</li>
+<li><strong>Rhythm:</strong> is achieved when recurring position, size, color, and use of a graphic element has a focal point interruption.</li>
+<li><strong>Altering</strong> the basic theme achieves unity and helps keep interest.</li>
+</ul>
+<h2 id="balance">Balance</h2>
+<p>It is a state of equalized tension and equilibrium, which may not always be calm.</p>
+<h3 id="types-of-balance-in-visual-design">Types of balance in visual design</h3>
+<ul>
+<li>Symmetry</li>
+<li>Asymmetrical balance produces an informal balance that is attention attracting and dynamic.</li>
+<li>Radial balance is arranged around a central element.</li>
+<li>Overall is a mosaic form of balance which normally arises from too many elements being put on a page. Due to the lack of hierarchy and contrast, this form of balance can look noisy but sometimes quiet.</li>
+</ul>
+<h2 id="hierarchy">Hierarchy</h2>
+<p>A good design contains elements that lead the reader through each element in order of its significance. The type and images should be expressed starting from most important to the least important.</p>
+<h2 id="scaleproportion">Scale/proportion</h2>
+<p>Using the relative size of elements against each other can attract attention to a focal point.</p>
+<h2 id="space">Space</h2>
+<p>Space, or "negative space". The principle of space allows viewers to have the freedom to move through a design and discover each element. If you don't leave enough "breathing room" in your design, your positive elements can become visually overwhelming, appearing messy and cluttered. Space can also convey attributes such as simplicity, cleanliness and openness. Space should be thought out and considered – you don't want to waste space by overfilling the composition with positive elements. Overfilling will not allow a connection between all the spaces in the design.</p>
+<h2 id="dominanceemphasis">Dominance/emphasis</h2>
+<p>Dominance is created by contrasting size, positioning, color, style, or shape.</p>
+<h2 id="similarity-and-contrast">Similarity and contrast</h2>
+<p>Planning a consistent and similar design is an important aspect of a designer's work to make their focal point visible. Too much similarity is boring but without similarity important elements will not exist and an image without contrast is uneventful so the key is to find the balance between similarity and contrast.</p>
+<h3 id="similar-environment">Similar environment</h3>
+<p>There are several ways to develop a similar environment:</p>
+<ul>
+<li>Build a unique internal organization structure.</li>
+<li>Manipulate shapes of images and text to correlate together.</li>
+<li>Express continuity from page to page in publications (headers, themes, borders, and spaces).</li>
+<li>Develop a style manual and adhere to it.</li>
+</ul>
+<h3 id="contrasts">Contrasts</h3>
+<ul>
+<li>
+<p>Space</p>
+<ul>
+<li>Filled / Empty</li>
+<li>Near / Far</li>
+<li>2-D / 3-D</li>
+</ul>
+</li>
+<li>
+<p>Position</p>
+<ul>
+<li>Left / Right</li>
+<li>Isolated / Grouped</li>
+<li>Centered / Off-Center</li>
+<li>Top / Bottom</li>
+</ul>
+</li>
+<li>
+<p>Form</p>
+<ul>
+<li>Simple / Complex</li>
+<li>Beauty / Ugly</li>
+<li>Whole / Broken</li>
+</ul>
+</li>
+<li>
+<p>Direction</p>
+<ul>
+<li>Stability / Movement</li>
+</ul>
+</li>
+<li>
+<p>Structure</p>
+<ul>
+<li>Organized / Chaotic</li>
+<li>Mechanical / Hand-Drawn</li>
+</ul>
+</li>
+<li>
+<p>Size</p>
+<ul>
+<li>Large / Small</li>
+<li>Deep / Shallow</li>
+<li>Fat / Thin</li>
+</ul>
+</li>
+<li>
+<p>Color</p>
+<ul>
+<li>Grey scale / Color</li>
+<li>Black &amp; White / Color</li>
+<li>Light / Dark</li>
+</ul>
+</li>
+<li>
+<p>Texture</p>
+<ul>
+<li>Fine / Coarse</li>
+<li>Smooth / Rough</li>
+<li>Sharp / Dull</li>
+</ul>
+</li>
+<li>
+<p>Density</p>
+<ul>
+<li>Transparent / Opaque</li>
+<li>Thick / Thin</li>
+<li>Liquid / Solid</li>
+</ul>
+</li>
+<li>
+<p>Gravity</p>
+<ul>
+<li>Light / Heavy</li>
+<li>Stable / Unstable</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../res/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../model/" class="btn btn-neutral" title="Simple CRUD example app and ViewModel+Bind"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../model/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../res/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

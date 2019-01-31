@@ -31,10 +31,14 @@ On the Project Overview, click the `</>` button near 'Add an app to get started'
 
 	The JavaScript API of Firestore is intuitive and easy to use.
 
-7. We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace 
+7. We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace:
+
 		allow: read, write;
+
 	with  
-		allow read, write: if request.auth.token.email_verified == true ;
+
+		allow read, write: if request.auth.token.email_verified == true;
+
 	Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.
 
 8. We will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users.

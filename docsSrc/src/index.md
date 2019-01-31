@@ -105,7 +105,7 @@ To go extreme serverless, we show how to use mbake with
 - [dynamic databinding](/dynamic_data_binding/)
 - [Generate a serverless CRUD webapp](/crud/)
 - [Simple CRUD example app and ViewModel+Bind](/model/)
-- [Design, UI](/design/)
+- [Design](/design/)
 
 
 When done, you should see [this](https://youtu.be/-KkPfAnEXyk).

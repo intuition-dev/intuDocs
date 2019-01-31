@@ -55,4 +55,4 @@ That will put`'Oh hi'`, the value of `bla` at compile time, into the HTML. This 
 
 __Summary__: In this tutorial, you learnt about Pug and static data binding. In the [next tutorial](/spectre_n_scss/), we cover _spectre css framework and scss_.
 
-NEXT: Go to [Tutorial 5](/spectre_n_scss/).
+NEXT: Go to [Spectre SCSS Theme Framework and SCSS](/spectre_n_scss/).

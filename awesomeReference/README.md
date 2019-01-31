@@ -164,3 +164,26 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 Connect by ssh in terminal. It will ask to enter existing password and then new password:
 
         $ ssh root@[IP-Address]
+
+**More information on design**
+
+[Design Principles: 6 Design Fundamentals to Guide Your Work](https://blog.designcrowd.com/article/620/design-principles-6-design-fundamentals-to-guide-your-work
+https://en.wikipedia.org/wiki/Visual_design_elements_and_principles#Principles_of_design)
+
+[Understanding Typographic Hierarchy](https://webdesign.tutsplus.com/articles/understanding-typographic-hierarchy--webdesign-11636)
+
+JFI:
+
+[Web Layout Best Practices: 12 Timeless UI Patterns Analyzed](https://www.uxpin.com/studio/blog/web-layout-best-practices-12-timeless-ui-patterns-explained/)
+[Personality in Design](https://alistapart.com/article/personality-in-design)
+
+Design examples:
+
+[dribbble.com](https://dribbble.com)
+[behance.net](https://www.behance.net)
+
+Tools:
+
+[matching colors generator](http://paletton.com)
+[What’s Trending in Type](https://www.typewolf.com/)
+[Featured Font Pairs](https://fontpair.co/)

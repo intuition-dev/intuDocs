@@ -10,7 +10,7 @@ nav:
    - dynamic databinding: dynamic_data_binding.md
    - Generate a serverless CRUD webapp: crud.md
    - Simple CRUD example app and ViewModel+Bind: model.md
-   - Design, UI: design.md
+   - Design: design.md
 
    - Resources: res.md
    - About: about.md

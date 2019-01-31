@@ -65,11 +65,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca_install/">Install the tools for developing to linux box via CA</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../pug_static_data/">Learn Templating/Pug</a>
 	    </li>
           
@@ -103,6 +98,11 @@
             <li class="toctree-l1">
 		
     <a class="" href="../model/">Simple CRUD example app and ViewModel+Bind</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../design/">Design</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -179,11 +179,13 @@ newPK.set(newRow) // insert
 <p>The JavaScript API of Firestore is intuitive and easy to use.</p>
 </li>
 <li>
-<p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace 
-        allow: read, write;
-    with<br />
-        allow read, write: if request.auth.token.email_verified == true ;
-    Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.</p>
+<p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace:</p>
+<pre><code>allow: read, write;
+</code></pre>
+<p>with  </p>
+<pre><code>allow read, write: if request.auth.token.email_verified == true;
+</code></pre>
+<p>Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.</p>
 </li>
 <li>
 <p>We will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users.</p>
@@ -199,9 +201,6 @@ Firestore replaces MongoDB, but also ORM, REST, DevOps, Security, Failover, etc.
 <ul>
 <li>
 <p><a href='https://github.com/MetaBake/_mBake/tree/master/awesomeReference' target='_blank'>Awesome list of MetaBake resources</a></p>
-</li>
-<li>
-<p><a href="https://github.com/MetaBake/Meta/tree/master/advancedReference">Advanced reference and examples</a></p>
 </li>
 <li>
 <p><a href="https://git.mBake.org">https://git.mBake.org</a>.</p>
