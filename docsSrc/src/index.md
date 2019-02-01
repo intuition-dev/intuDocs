@@ -106,6 +106,7 @@ To go extreme serverless, we show how to use mbake with
 - [Generate a serverless CRUD webapp](/crud/)
 - [Simple CRUD example app and ViewModel+Bind](/model/)
 - [Design](/design/)
+- [Blog](/blog/)
 
 
 When done, you should see [this](https://youtu.be/-KkPfAnEXyk).

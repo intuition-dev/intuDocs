@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Setup S3 and webdrive mount - mBake Guide</title>
+  <title>Blog - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup S3 and webdrive mount";
-    var mkdocs_page_input_path = "s3_n_webdrive_mount.md";
+    var mkdocs_page_name = "Blog";
+    var mkdocs_page_input_path = "blog.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -53,18 +53,9 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">Setup S3 and webdrive mount</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</a></li>
-    
-
-    <li class="toctree-l2"><a href="#steps">Steps</a></li>
-    
-
-    </ul>
+    <a class="" href="../s3_n_webdrive_mount/">Setup S3 and webdrive mount</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -102,9 +93,15 @@
     <a class="" href="../design/">Design</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../blog/">Blog</a>
+    <a class="current" href="./">Blog</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#blog-website">Blog website</a></li>
+    
+
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -139,7 +136,7 @@
     
       
     
-    <li>Setup S3 and webdrive mount</li>
+    <li>Blog</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -149,50 +146,36 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</h2>
-<p>mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.</p>
-<h2 id="steps">Steps</h2>
+                <h1 id="blog-website">Blog website</h1>
 <ol>
-<li>
-<p>Create an AWS account if you don't already have one.</p>
-</li>
-<li>
-<p>In AWS Menu 'Account - My Security Credentials', create a new <em>Access Key</em>, click 'Show Access Key', and copy it (to a file) for use below. (Advanced users can later use IAM instead.)</p>
-</li>
-<li>
-<p>Create an AWS S3 <em>'bucket'</em> in the "US East (N Virginia)" region. (Advanced users can select any region). Name the bucket 'wgehner-website' (replace wgehner with your name or something else unique).</p>
-</li>
-<li>
-<p><a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
-Replace 'wgehner-website' with your bucket name.
-    <code>{
-            "Version":"2012-10-17",
-            "Statement": [{
-                "Sid":"PublicReadGetObject",
-                    "Effect":"Allow",
-                "Principal": "*",
-                    "Action":["s3:GetObject"],
-                    "Resource":["arn:aws:s3:::wgehner-website/*"
-                    ]
-                }]
-        }</code></p>
-</li>
-<li>
-<p>Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to <code>false</code>, unchecked (if no, the bucket url can not be accessed)</p>
-</li>
-<li>
-<p>Install <a href="https://webdrive.com">Web Drive</a> for Windows or on Mac <a href="https://mountainduck.io">Mountain Duck</a> users may choose a different <em>mount</em> software. There are more than a dozen <a href="https://tinyurl.com/y9rlmr4t">other choices</a>). Mount replaces FTP.</p>
-</li>
-<li>
-<p>In WebDrive, create a new Amazon S3 connection. Choose a drive letter (e.g. <code>W:\</code>). Paste Access Key ID and Secret Access Key created in Step 1 above. If your bucket region is <strong>not</strong> "US East (N Virginia)", edit the S3 Account URL/Address to match the "Endpoint URL' in <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">this list</a>. Example: change https://s3.amazonaws.com to https://s3.us-west-1.amazonaws.com if your region is US West (N. California). Do <strong>not</strong> select a specific bucket. This way all buckets for the region will show up as top level folders in the mounted drive, and your mounted drive letter effectively represents an S3 region in your AWS account. </p>
-</li>
-<li>
-<p>To verify that the mount is working, you can put an index.html into the mounted bucket <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="/#how-to-install-mbake">here</a>. Then view it in the browser via the Endpoint URL copied in Step 3 above.</p>
+<li>With the command you can download a blog website example:<pre><code>$ mbake -b
+</code></pre>
 </li>
 </ol>
-<p><strong>Summary</strong>: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.</p>
-<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount s3 bucket to Linux box on CodeAnywhere.</p>
-<p>NEXT: Go to <a href="/ca/">Mount S3 to linux box via goofys using CodeAnywhere editor</a>.</p>
+<p><code>-b</code> is blog. It also works for any items, not just articles.</p>
+<ol>
+<li>
+<p>In blog, copy folder /blog/post-1 to /blog/blog, rename it to <code>post-1n</code>. Edit some of the content, like the .md file so it's different.</p>
+</li>
+<li>
+<p>Then in /blog run
+        $ mbake -i .</p>
+</li>
+</ol>
+<p>That creates a new items.json file.</p>
+<ol>
+<li>
+<p>Now view the home page in browser: the new item shows up! The home page does a ajax fetch of the json and shows it. Via a pagination library. Check out the tag in /blog/blog/tags that is the items loop.</p>
+</li>
+<li>
+<p>You should know now how to add any items and show the list of items. When someone adds a new item (via a new folder) it shows up after
+        $ mbake -i .</p>
+</li>
+<li>
+<p>Notice how everything in <code>/blog/blog/post-*/dat.yaml</code> ends up in <code>/blog</code> <code>items.json</code>.</p>
+</li>
+</ol>
+<p>That is used in the list. So dat.yaml can show on page, as you learnt from previous tutorials. And can show in list - as above described how to make items.json. That list can then be used by a tag 'iterator'.</p>
               
             </div>
           </div>
@@ -200,10 +183,10 @@ Replace 'wgehner-website' with your bucket name.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ca/" class="btn btn-neutral float-right" title="Mount S3 to linux box via goofys and CA">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../res/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../design/" class="btn btn-neutral" title="Design"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -229,10 +212,10 @@ Replace 'wgehner-website' with your bucket name.
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../design/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../ca/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../res/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
