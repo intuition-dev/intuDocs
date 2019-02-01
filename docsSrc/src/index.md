@@ -71,7 +71,7 @@ Even though mbake apps are installed on a static server, they are dynamic becaus
    mbake
 
 ## Generate sample app, e.g.
-   mbake -c
+   mbake -v
 
 ## Navigate to it, e.g.
    cd crud
@@ -118,7 +118,7 @@ Serverless/Cloud V2, Mount and Pug are some of the pillars of MetaBake.
 ```
    $ yarn global add mbake
    $ mbake
-   $ mbake -c
+   $ mbake -v
    $ cd crud
    $ mbake .
 ```

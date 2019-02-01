@@ -20,7 +20,7 @@ You will need to learn about http://tabulator.info/ which allows you to create i
 
 1. For an example dynamic web app CRUD in console type: 
 
-        $ mbake -c
+        $ mbake -v
 
     This command will extract the CRUD sample project to your computer. 
      
@@ -28,31 +28,6 @@ You will need to learn about http://tabulator.info/ which allows you to create i
  
  2. Navigate to the 'Tabu' menu item and inspect the fragment /tabu/list.pug. 
  Note the #example-table tag and the new Tabulator() function that converts the table into a datatable with headers and data.
-
-3. Now, navigate to the 'ViewModel CRUD' and 'ViewModel CRUD 2' menu items. First inspect the fragment models/OneModel.ts, and its methods (read, add, update, delete and valid), and after that inspect the fragments viewmodel/TableBind.js and view-model-2/bind.js. 
-
-4. To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into https://console.firebase.google.com. Create a project named test-crud. Under the left menu 'Develop - Database', create a Firestore app in test mode. On the Project Overview, click the </> button near 'Add an app to get started' to open a popup. In your mapped project /assets/tags/preRW-tag.pug, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. 
-From the tags folder run: 
-
-        $ mbake -t .
-
-    /layout/layout.pug will use the updated script(src='/assets/tags/preRW-tag.min.js'). 
-    In a browser, refresh the Live CRUD page.
- 
- 5. Inspect /viewmodel/form/FormBind.js and  /viewmodel/form/index.pug. Back in the browser enter some data in the form fields and click 'Save data'. Back in the Firestore Console, in 'Develop - Database', you should see the inserted data as first item in 'table_one'. Repeat to insert a second item. 
- 
-6. You will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace
-
-        allow: read, write;
-
-    with
-
-        allow read, write: if request.auth.token.email_verified == true;
-
-    Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.
-
-8. You will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users. 
-9. Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Save data' on the 'ViewModel CRUD' screen should now succeed, and you should see the added data in the Firestore database console.
 
 ## ViewModel+Bind 
 **Separate the UI from data** 
@@ -62,7 +37,7 @@ ViewModel is a great way of organizing your code, so each section of your code h
     
         $ tsc
     
-* Each page will have its own binding class eg: TableBind where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.
+* Each page will have its own binding class eg: `screen/example1/Example1Bind.js` where we do data binding there is no calls to Model classes from the pages. If you want to get any data, you need to create Binding class in the same folder, and from there make a call to the Model class.
 
 In the [next tutorial](/design/), we cover _6 fundamental elements of design_.
 

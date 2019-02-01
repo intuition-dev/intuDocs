@@ -3,7 +3,7 @@
 
 CRUD stands for create-read-update-delete. 
 
-In this tutorial, you will learn how to create your own Firestore database, insert data and add authentication to the app. Alongside, you will learn to render lists using <a href='https://dataTables.net/' target='_blank'>https://dataTables.net/</a> with advanced grid sorting, searching and paging.
+In this tutorial, you will learn how to create your own Firestore database.
 
 Firestore database is part of the Google Firestore offering. Similar to AWS Cognito, Firestore includes pure client-side user authentication. Firestore can be used from the browser via JavaScript; no custom serverside code is needed. This is key to be able to develop faster.
 
@@ -11,25 +11,120 @@ Firestore is free for up to 50,000 reads and 20,000 writes per day. See more det
 
 ## Steps
 
-We assume you have completed [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/), [Templating/Pug and static binding](/pug_static_data/) and [Spectre SCSS Theme Framework and SCSS](/spectre_n_scss/).
+1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) ). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -v'` and copy the project files (inside of `/crud`) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. 
 
-1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) in Tutorial 1). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -c'` and copy the project files (inside of `/crud`) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. 
+2. Navigate to the 'ViewModel CRUD' menu item. Inspect the fragment `/screen/example1/index.pug`. Note the `table#table1` and `table#table2` tags, an empty tables with ID `#table1` and `#table2` which fills with data using tabulator.js library.
+Next is how table is getting filled with data. `getViewList('table1', 'table2')` function is called from the bind file `Example1Bind.js`:
 
-2. Navigate to the 'DataTable' menu item. Inspect the fragment `/datatable/list.pug`. Note the `table#list1` tag, an empty table with ID `list1`, and the `setupTable()` function that converts the table into a datatable with headers, data and the default features of sorting, in-memory searching and paging. As a next step, navigate to the 'Live CRUD' menu item, and inspect the fragment `/live/table.pug`. This time, the function `read(onData, onErr)` in `/assets/js/rw.js` is responsible for loading the (live) data from a preconfigured Firestore. More about `rw.js` below. The `onData` handler in `table.pug` populates the datatable. 
+		getViewList(tableID, tableID2){
+			let _this = this
+			let columns1 = [ //Define Table Columns
+				{title:"Col1", field:"col1", align:"left", width:150},
+				{title:"Col2", field:"col2", align:"left", width:'70%'},
+			];
+			let columns2 = [ //Define Table Columns
+				{title:"Col45", field:"col45", align:"left", width:'70%'},
+				{title:"Col55", field:"col55", align:"left", width:'70%'},
+			];
+			Promise.all([this.viewModel.read()])
+				.then(function(){
+					let data1 = _this.viewModel.getViewList(tableID)
+					let data2 = _this.viewModel.getViewList(tableID2)
+					_this.setTable(tableID, columns1, data1)
+					_this.setTable(tableID2, columns2, data2)
+				})
+		}
 
-3. To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into <https://console.firebase.google.com>. Create a project named `test-crud`. Under the left menu 'Develop - Database', create a Firestore  app in test mode.
-On the Project Overview, click the `</>` button near 'Add an app to get started' to open a popup. In your mapped project `/layout/tags/preRW-tag.pug`, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run `'$ mbake -t .'` from the `tags` folder. (`/layout/layout.pug` will use the updated `script(src='/layout/tags/preRW-tag.min.js')`.) In a browser, refresh the Live CRUD page. 
+then function `this.viewModel.read()` is called from the 'view-model' file `assets/models/Example1ViewModel.js`:
 
-4. Inspect `/screen/live/form.pug` and see how the function `setupForm()` maps button click events to actions in our helper library `/assets/js/rw.js`. Back in the browser, enter some data in the form fields and click 'Add data'. Back in the Firestore Console, in 'Develop - Database', you should see the inserted data as first item in 'table_one'. Repeat to insert a second item. This form is styled with [gridforms](http://kumailht.com/gridforms/).
+		read(){
+			let _this = this
+			return Promise.all([this.exampleModel.read()])
+				.then(function(data){
+					_this._data = [].concat(data[0])
+				})
+			//maybe other read methods from a diffrent entity
+		}
 
-5. This example uses [js-signals](http://millermedeiros.github.io/js-signals/) to dispatch a row click event and fill the form with the row data. Look for `dtSig.dispatch(row)` in `/screen/live/table.pug`. 
+and then `this.exampleModel.read()` function is called from `assets/models/service/Example1Service.js`:
 
-6. Next inspect `/assets/js/rw.js`. Look for the function `add(row, resolve, reject)` that inserts data on button click. You will see something like this:
+		read(id?:string){
+			let _this = this
+			console.info('--reading...', Date.now() - _start)
 
-		let newPK = db1.collection(window.tablename).doc() // make PK
-		newPK.set(newRow) // insert
+			let ref = db1.collection(this.entityName)
 
-	The JavaScript API of Firestore is intuitive and easy to use.
+			if(id){
+				return db1.collection(this.entityName).doc(id)
+				.get()
+				.then(function(docSnap) {
+					let temp = docSnap.data()
+					temp['id'] = docSnap.id
+					// Object.assign(_this._dataObj, temp)
+					return temp
+				})
+			.catch(function(error) {
+				console.info("Error getting documents: ", error)
+			})
+			}
+
+			return ref
+				.get()
+				.then(function(querySnapshot) {
+					let rows = []
+					querySnapshot.forEach(function(doc) {
+					let row = doc.data()
+					row['id'] = doc.id
+					rows.push(row)
+					})
+					return rows
+				})
+			.catch(function(error) {
+				console.info("Error getting documents: ", error)
+			})
+		}//()
+
+it reads the data from the Firestore database and fills the table with the content. This is an example of a 'View-model' pattern.
+
+In View-model pattern each page should have a bind file and a ViewModel file. In bind file, eg `Example1Bind.js`, there is all that сoncerns UI functionallity. In ViewModel file, eg: `assets/models/Example1ViewModel.js` there are the data samples 'real' or 'fake' which are then mapped with the data from the database in file `assets/models/service/Example1Service.js` in which create/read/update/delete functionallity directly occurs.
+
+4. Inspect `/screen/auth/modA.pug` the form that used here is styled with [gridforms](http://kumailht.com/gridforms/). If you will open `screen/auth/modA.pug` you can see this form. Here is the example of Firebase authentication. You can try to create user, reset password, sign-in and log out in browser on `screen/auth` page. 
+The Firestore function to login with email and password:
+
+		auth.signInWithEmailAndPassword(email,pswd)
+            .then(function(user) {
+               console.info(user)
+               alert('Signed in successfully') //replace with pretty popup
+            })
+            .catch(function(error){
+               console.info(error)
+               alert(error) // replace with pretty popup
+            })
+
+the function to sign up a new user with email and password:
+
+		auth.createUserWithEmailAndPassword(email,pswd)
+            .then(function(user) {
+               bAuth.sendEmailVerification()
+            })
+            .catch(function(error){
+               console.info(error) //show error in .message
+               alert(error) // replace with pretty popup
+            })
+
+the function that will sent reset password link to the user email:
+
+		auth.sendPasswordResetEmail(email)
+
+and the function to log out:
+
+		auth.signOut()
+
+all of them triggers on appropriate buttons click.
+
+
+3. To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into <https://console.firebase.google.com>. Create a project named `test-crud`. Under the left menu 'Develop - Database', create a Firestore app in test mode.
+On the Project Overview, click the `</>` button near 'Add an app to get started' to open a popup. In your mapped project `/assets/tags/preRW-tag.pug`, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run `'$ mbake -t .'` from the `tags` folder. (`/layout/layout.pug` will use the updated `script(src='/assets/tags/preRW-tag.min.js')`.)
 
 7. We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace:
 
@@ -39,13 +134,13 @@ On the Project Overview, click the `</>` button near 'Add an app to get started'
 
 		allow read, write: if request.auth.token.email_verified == true;
 
-	Publish the change. Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.
+	Only logged in users who have been verified by email can now read from or write to the database. Since you are currently not logged in, 'Add data' on the 'CRUD' screen should now fail.
 
 8. We will now configure and test a sign-in method. In the Firestore Console, in 'Develop - Authentication', click on 'Set up sign-in method'. Enable Email/Password sign-up and save. In the CRUD App, navigate to the multi-purpose 'Auth' screen (/screen/auth/). Enter your email and a password and click the 'Sign Up' button. The new user should appear in the Firestore Authentication list of Users.
 
-9. Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Add data' on the 'Live CRUD' screen should now succeed, and you should see the added data in the Firestore database console.
+9. Check your email and click on the link you received (The email can be customized on the Firestore Authentication Templates tab). Return to the Auth screen (/screen/auth/) and click the 'Sign In' button. If the login succeeded, 'Add row' on the 'View-Model CRUD' screen should now succeed, and you should see the added data in the Firestore database console.
 
-__Summary:__ You learnt how to create your own Firestore database, insert data and add authentication to the app, along with using datatables.
+__Summary:__ You learnt how to create your own Firestore database, insert data and add authentication to the app.
 Firestore replaces MongoDB, but also ORM, REST, DevOps, Security, Failover, etc. Instead of learning all of these, now you only need to learn how to use Firestore. That should create a huge savings in your development and operations budget.
 
 __NEXT STEPS:__ You can try out more Template projects (type `$ mbake`). You can also setup a META build server. META has a watcher that triggers 'mbake' when you save a file to a mapped drive. You can become 10X more productive by adopting the Metabase approach. 

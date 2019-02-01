@@ -12,7 +12,6 @@ To get an overview of MetaBake pillars:
 
 - [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- [MetaBake Full Slides](http://prez.mBake.org/p)
 - [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
 
@@ -34,19 +33,12 @@ Also, you should avoid prototyping in GUI tools - text prototyping is just as fa
 
 -i # from i_dat.yaml creates items json, reading all the dat.yaml - for dynamic binding!
 
--f # Will take a map.yaml and create sitemap.xml, menu.json and FTS.idx. You can use FTS in browser after a fetch in loading here [lunrjs.com/guides](https://lunrjs.com/guides/index_prebuilding.html#loading)
+-m # Will take a map.yaml and create sitemap.xml, menu.json and FTS.idx. You can use FTS in browser after a fetch in loading here [lunrjs.com/guides](https://lunrjs.com/guides/index_prebuilding.html#loading)
 
 -j # list.csv to list.json
 
 
 ## Documentation TOC:
-
-These are projects, that together leverage the 10 pillars:
-
-- [mbake](http://doc.mBake.org/mbake); CLI, and foundation. Please give it stars: '*'
-
-'Train-the-Trainer' is scheduled about monthly, and it is announced in the forum. Feel free to post questions there.
-
 
 Prerequisites: you should know HTML and CSS. If you need to catch up, we recommend 'Design and Build Websites' by Jon Duckett. You will also learn Pug, to get started on Pug, watch [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
 
@@ -72,13 +64,11 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 ## Videos:
 S = sales, I = Foundation, II = B&M, III = Vista
 - S <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- S [MetaBake Full Slides](http://prez.mBake.org/p)
 - S [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
 - I [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - I [mbake CLI](https://youtu.be/-KkPfAnEXyk)
 - I [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
-- I [Mount S3 to local drive](http://wgehnerlab1.mBake.org.s3-website-us-east-1.amazonaws.com/lab1v0.html)
 
 - II [Blog search](https://www.youtube.com/watch?v=-4i9_SYyTOo)
 - II [SPA](https://youtu.be/LHFjjDPlU3A)
@@ -126,7 +116,7 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 - <a href='http://chat.mBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
-# commands
+# Commands
 
 **Install node:**
 
