@@ -119,7 +119,7 @@ Serverless/Cloud V2, Mount and Pug are some of the pillars of MetaBake.
    $ yarn global add mbake
    $ mbake
    $ mbake -v
-   $ cd crud
+   $ cd ModelView
    $ mbake .
 ```
 
