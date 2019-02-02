@@ -1,3 +1,6 @@
+<img src="https://metabake.github.io/MetaBake-Docs/logo.jpg" width="100">
+
+
 # What is mbake?
 
 mbake is a modern CLI static app generation tool. Apps and sites you generate with mbake are extreme serverless, allow user authentication and work with JSON and database APIs for dynamic databinding. You can use mbake for simple blogs or sites to the most complex web and mobile app projects.
