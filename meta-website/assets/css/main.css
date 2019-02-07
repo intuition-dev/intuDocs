@@ -35,14 +35,19 @@ header {
    z-index: 10;
 }
 
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
 .pageBack {
-   background-attachment: scroll;
-   min-height: 45vh;
+   background-attachment: fixed;
+   height: 500px;
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
 }
 
+.pageBack  * {
+   top: 100px;
+   position: sticky; /* sticky */
+}
 ul {
    margin-left: 1rem;
 }
@@ -74,7 +79,7 @@ ul {
    flex-wrap: nowrap;
 }
 
-.white, .white * { color: white !important; }
+.white, .white * { color: white; }
 
 .padL {
    padding-left: 15px;
