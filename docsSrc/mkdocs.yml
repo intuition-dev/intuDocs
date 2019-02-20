@@ -3,8 +3,8 @@ site_name: mBake Guide
 nav:
    - Home: index.md
 
-   - Setup S3 and webdrive mount: s3_n_webdrive_mount.md
-   - Mount S3 to linux box via goofys and CA: ca.md
+   - Setup CDN Storage and mount it via Mountain Duck: s3_n_webdrive_mount.md
+   - Mount SFTP to linux box via sshfs and CA: ca.md
    - Learn Templating/Pug: pug_static_data.md
    - Spectre SCSS Theme Framework and SCSS: spectre_n_scss.md
    - Dynamic databinding: dynamic_data_binding.md

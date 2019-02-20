@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Mount S3 to linux box via goofys and CA - mBake Guide</title>
+  <title>Mount SFTP to linux box via sshfs and CA - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Mount S3 to linux box via goofys and CA";
+    var mkdocs_page_name = "Mount SFTP to linux box via sshfs and CA";
     var mkdocs_page_input_path = "ca.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,12 +55,12 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../s3_n_webdrive_mount/">Setup S3 and webdrive mount</a>
+    <a class="" href="../s3_n_webdrive_mount/">Setup CDN Storage and mount it via Mountain Duck</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Mount S3 to linux box via goofys and CA</a>
+    <a class="current" href="./">Mount SFTP to linux box via sshfs and CA</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#mount-sftp-to-linux-box-via-sshfs-tool-using-codeanywhere-editor">Mount SFTP to linux box via sshfs tool using CodeAnywhere editor</a></li>
@@ -142,7 +142,7 @@
     
       
     
-    <li>Mount S3 to linux box via goofys and CA</li>
+    <li>Mount SFTP to linux box via sshfs and CA</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -175,23 +175,7 @@
 </ol>
 <h3 id="mount-sftp-through-sshfs">Mount SFTP through sshfs</h3>
 <ol>
-<li>
-<p>First create a storage for the app, eg: <a href="https://www.cdn77.com">cdn77</a></p>
-<p>How to use CDN 77 sftp / edge https server:</p>
-<ol>
-<li>Click CDN link on the top menu</li>
-<li>Scroll to the bottom of page -&gt; click <code>add new SDN storage</code> </li>
-</ol>
-<p>To enable a web end point (server):</p>
-<ol>
-<li>Click CDN link on the top menu again</li>
-<li>Click <code>Add new CDN Resource</code></li>
-<li>On the radio button click <code>storage</code></li>
-</ol>
-</li>
-<li>
-<p>Than login to CA and create a <code>new connection</code> to connect to your recently created Linux box in Digital Ocean.</p>
-</li>
+<li>Login to CA and create a <code>new connection</code> to connect to your recently created Linux box in Digital Ocean.</li>
 <li>
 <p>Open terminal in CA in this linux box and install <code>sshfs</code> for mount:</p>
 <pre><code>$ apt install aptitude
@@ -223,7 +207,7 @@ For more information on installing sshfs on linux check <a href="https://www.lin
         <a href="../pug_static_data/" class="btn btn-neutral float-right" title="Learn Templating/Pug">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../s3_n_webdrive_mount/" class="btn btn-neutral" title="Setup S3 and webdrive mount"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../s3_n_webdrive_mount/" class="btn btn-neutral" title="Setup CDN Storage and mount it via Mountain Duck"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

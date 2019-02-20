@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Setup S3 and webdrive mount - mBake Guide</title>
+  <title>Setup CDN Storage and mount it via Mountain Duck - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup S3 and webdrive mount";
+    var mkdocs_page_name = "Setup CDN Storage and mount it via Mountain Duck";
     var mkdocs_page_input_path = "s3_n_webdrive_mount.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,10 +55,10 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Setup S3 and webdrive mount</a>
+    <a class="current" href="./">Setup CDN Storage and mount it via Mountain Duck</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</a></li>
+    <li class="toctree-l2"><a href="#setup-cdn-storage-as-your-http-server-and-mount-it">Setup CDN storage as your HTTP server and mount it</a></li>
     
 
     <li class="toctree-l2"><a href="#steps">Steps</a></li>
@@ -69,7 +69,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca/">Mount S3 to linux box via goofys and CA</a>
+    <a class="" href="../ca/">Mount SFTP to linux box via sshfs and CA</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -139,7 +139,7 @@
     
       
     
-    <li>Setup S3 and webdrive mount</li>
+    <li>Setup CDN Storage and mount it via Mountain Duck</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -149,50 +149,38 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="setup-s3-as-your-http-server-and-mount-it">Setup S3 as your HTTP server and mount it</h2>
+                <h2 id="setup-cdn-storage-as-your-http-server-and-mount-it">Setup CDN storage as your HTTP server and mount it</h2>
 <p>mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.</p>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>
-<p>Create an AWS account if you don't already have one.</p>
+<p>Create an account on <a href="https://www.cdn77.com/">CDN77</a> if you don't already have one.</p>
 </li>
 <li>
-<p>In AWS Menu 'Account - My Security Credentials', create a new <em>Access Key</em>, click 'Show Access Key', and copy it (to a file) for use below. (Advanced users can later use IAM instead.)</p>
+<p>First create a storage for the app, eg: <a href="https://www.cdn77.com">cdn77</a></p>
 </li>
 <li>
-<p>Create an AWS S3 <em>'bucket'</em> in the "US East (N Virginia)" region. (Advanced users can select any region). Name the bucket 'wgehner-website' (replace wgehner with your name or something else unique).</p>
+<p>Then click CDN link on the top menu.</p>
+</li>
+<li>Scroll to the bottom of page -&gt; click <code>add new SDN storage</code> </li>
+<li>To enable a web end point (server), click CDN link on the top menu again.</li>
+<li>Click <code>Add new CDN Resource</code>.</li>
+<li>
+<p>On the radio button click <code>storage</code>.</p>
 </li>
 <li>
-<p><a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the <em>'Endpoint URL'</em> for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
-Replace 'wgehner-website' with your bucket name.
-    <code>{
-            "Version":"2012-10-17",
-            "Statement": [{
-                "Sid":"PublicReadGetObject",
-                    "Effect":"Allow",
-                "Principal": "*",
-                    "Action":["s3:GetObject"],
-                    "Resource":["arn:aws:s3:::wgehner-website/*"
-                    ]
-                }]
-        }</code></p>
+<p>Install on Mac <a href="https://mountainduck.io">Mountain Duck</a> you may choose a different <em>sftp mount</em> software. There are more than a dozen <a href="http://tinyurl.com/y62extth">other choices</a>. Mount replaces FTP.</p>
 </li>
 <li>
-<p>Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to <code>false</code>, unchecked (if no, the bucket url can not be accessed)</p>
+<p>In Mountain Duck, create a new sftp connection. Fill the fields for <code>server</code>, <code>username</code> with the credentails from your recently created CDN Storage and click by the <code>url</code> field value, the mounted folder will open in Finder.</p>
 </li>
 <li>
-<p>Install <a href="https://webdrive.com">Web Drive</a> for Windows or on Mac <a href="https://mountainduck.io">Mountain Duck</a> users may choose a different <em>mount</em> software. There are more than a dozen <a href="https://tinyurl.com/y9rlmr4t">other choices</a>). Mount replaces FTP.</p>
-</li>
-<li>
-<p>In WebDrive, create a new Amazon S3 connection. Choose a drive letter (e.g. <code>W:\</code>). Paste Access Key ID and Secret Access Key created in Step 1 above. If your bucket region is <strong>not</strong> "US East (N Virginia)", edit the S3 Account URL/Address to match the "Endpoint URL' in <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">this list</a>. Example: change https://s3.amazonaws.com to https://s3.us-west-1.amazonaws.com if your region is US West (N. California). Do <strong>not</strong> select a specific bucket. This way all buckets for the region will show up as top level folders in the mounted drive, and your mounted drive letter effectively represents an S3 region in your AWS account. </p>
-</li>
-<li>
-<p>To verify that the mount is working, you can put an index.html into the mounted bucket <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="/#how-to-install-mbake">here</a>. Then view it in the browser via the Endpoint URL copied in Step 3 above.</p>
+<p>To verify that the mount is working, you can put an index.html into the mounted folder <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="/#how-to-install-mbake">here</a>. Then view it in the browser via the Endpoint URL from your recently created CDN Resource.</p>
 </li>
 </ol>
 <p><strong>Summary</strong>: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.</p>
-<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount s3 bucket to Linux box on CodeAnywhere.</p>
-<p>NEXT: Go to <a href="/ca/">Mount S3 to linux box via goofys using CodeAnywhere editor</a>.</p>
+<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount SFTP to Linux box on CodeAnywhere.</p>
+<p>NEXT: Go to <a href="/ca/">Mount SFTP to linux box via sshfs using CodeAnywhere editor</a>.</p>
               
             </div>
           </div>
@@ -200,7 +188,7 @@ Replace 'wgehner-website' with your bucket name.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ca/" class="btn btn-neutral float-right" title="Mount S3 to linux box via goofys and CA">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ca/" class="btn btn-neutral float-right" title="Mount SFTP to linux box via sshfs and CA">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>

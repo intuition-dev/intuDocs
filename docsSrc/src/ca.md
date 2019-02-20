@@ -18,20 +18,7 @@
 
 ###  Mount SFTP through sshfs
 
-1. First create a storage for the app, eg: [cdn77](https://www.cdn77.com)
-	
-	How to use CDN 77 sftp / edge https server:
-
-	1. Click CDN link on the top menu
-	2. Scroll to the bottom of page -> click `add new SDN storage` 
-
-	To enable a web end point (server):
-
-	3. Click CDN link on the top menu again
-	4. Click `Add new CDN Resource`
-	5. On the radio button click `storage`
-	
-2. Than login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
+2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
 3. Open terminal in CA in this linux box and install `sshfs` for mount:
 
 		$ apt install aptitude

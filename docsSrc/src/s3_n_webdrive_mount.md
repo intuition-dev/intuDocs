@@ -1,43 +1,27 @@
-## Setup S3 as your HTTP server and mount it
+## Setup CDN storage as your HTTP server and mount it
 
 mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.
 
 ## Steps
 
-[comment]: <> ([A detailed video of the following steps is available <a href="http://wgehnerlab1.mBake.org.s3-website-us-east-1.amazonaws.com/lab1v0.html">here</a>.])
+0. Create an account on [CDN77](https://www.cdn77.com/) if you don't already have one.
 
-0. Create an AWS account if you don't already have one.
+1. First create a storage for the app, eg: [cdn77](https://www.cdn77.com)
+	
+1. Then click CDN link on the top menu.
+2. Scroll to the bottom of page -> click `add new SDN storage` 
+3. To enable a web end point (server), click CDN link on the top menu again.
+4. Click `Add new CDN Resource`.
+5. On the radio button click `storage`.
 
-1. In AWS Menu 'Account - My Security Credentials', create a new _Access Key_, click 'Show Access Key', and copy it (to a file) for use below. (Advanced users can later use IAM instead.)
+1. Install on Mac [Mountain Duck](https://mountainduck.io) you may choose a different _sftp mount_ software. There are more than a dozen [other choices](http://tinyurl.com/y62extth). Mount replaces FTP.
 
-1. Create an AWS S3 _'bucket'_ in the "US East (N Virginia)" region. (Advanced users can select any region). Name the bucket 'wgehner-website' (replace wgehner with your name or something else unique).
+1. In Mountain Duck, create a new sftp connection. Fill the fields for `server`, `username` with the credentails from your recently created CDN Storage and click by the `url` field value, the mounted folder will open in Finder.
 
-1. <a name="configure"></a>On the bucket 'Properties' tab, select 'Static website hosting' and 'Use this bucket to host a website'. Copy the _'Endpoint URL'_ for use below. Once created, on the Detail Permissions tab, configure the access policy so that the bucket can be accessed via HTTP. 
-Replace 'wgehner-website' with your bucket name.
-	```
-		{
-			"Version":"2012-10-17",
-			"Statement": [{
-				"Sid":"PublicReadGetObject",
-					"Effect":"Allow",
-				"Principal": "*",
-					"Action":["s3:GetObject"],
-					"Resource":["arn:aws:s3:::wgehner-website/*"
-					]
-				}]
-		}
-	```
-
-1. Under 'Permissions' tab in 'Public access settings' subtab make sure that all blocking public access checkboxes are set to `false`, unchecked (if no, the bucket url can not be accessed)
-
-1. Install [Web Drive](https://webdrive.com) for Windows or on Mac [Mountain Duck](https://mountainduck.io) users may choose a different _mount_ software. There are more than a dozen [other choices](https://tinyurl.com/y9rlmr4t)). Mount replaces FTP.
-
-1. In WebDrive, create a new Amazon S3 connection. Choose a drive letter (e.g. `W:\`). Paste Access Key ID and Secret Access Key created in Step 1 above. If your bucket region is __not__ "US East (N Virginia)", edit the S3 Account URL/Address to match the "Endpoint URL' in [this list](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Example: change https://s3.amazonaws.com to https://s3.us-west-1.amazonaws.com if your region is US West (N. California). Do __not__ select a specific bucket. This way all buckets for the region will show up as top level folders in the mounted drive, and your mounted drive letter effectively represents an S3 region in your AWS account. 
-
-1. To verify that the mount is working, you can put an index.html into the mounted bucket _project root_ (e.g. `W:\wgehner-website`) on your file system. You might just copy-paste the `index.html` you generated [here](/#how-to-install-mbake). Then view it in the browser via the Endpoint URL copied in Step 3 above.
+1. To verify that the mount is working, you can put an index.html into the mounted folder _project root_ (e.g. `W:\wgehner-website`) on your file system. You might just copy-paste the `index.html` you generated [here](/#how-to-install-mbake). Then view it in the browser via the Endpoint URL from your recently created CDN Resource.
 
 __Summary__: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.
 
-In the [next tutorial](/ca/) you will learn how to mount s3 bucket to Linux box on CodeAnywhere.
+In the [next tutorial](/ca/) you will learn how to mount SFTP to Linux box on CodeAnywhere.
 
-NEXT: Go to [Mount S3 to linux box via goofys using CodeAnywhere editor](/ca/).
+NEXT: Go to [Mount SFTP to linux box via sshfs using CodeAnywhere editor](/ca/).
