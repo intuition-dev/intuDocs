@@ -63,7 +63,7 @@
     <a class="current" href="./">Mount S3 to linux box via goofys and CA</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#mount-s3-to-linux-box-via-goofys-using-codeanywhere-editor">Mount S3 to linux box via goofys using CodeAnywhere editor</a></li>
+    <li class="toctree-l2"><a href="#mount-sftp-to-linux-box-via-sshfs-tool-using-codeanywhere-editor">Mount SFTP to linux box via sshfs tool using CodeAnywhere editor</a></li>
     
         <ul>
         
@@ -152,7 +152,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mount-s3-to-linux-box-via-goofys-using-codeanywhere-editor">Mount S3 to linux box via goofys using CodeAnywhere editor</h1>
+                <h1 id="mount-sftp-to-linux-box-via-sshfs-tool-using-codeanywhere-editor">Mount SFTP to linux box via sshfs tool using CodeAnywhere editor</h1>
 <h2 id="setup-cloud-dev">Setup cloud dev.</h2>
 <ol>
 <li>
@@ -173,59 +173,44 @@
 <p>In CA, open SSH to the Linux box.</p>
 </li>
 </ol>
-<h3 id="cloud-mount-s3">Cloud Mount S3</h3>
+<h3 id="mount-sftp-through-sshfs">Mount SFTP through sshfs</h3>
 <ol>
 <li>
-<p>Setup S3 mounting software.</p>
-<pre><code>$ cd ~
-$ sudo wget http://bit.ly/goofys-latest
-$ mv goofys-latest goofys
-$ sudo chmod +x goofys
-
-//just in case you need logs
-$ ln -s /var/log ~
-</code></pre>
-</li>
-<li>
-<p>In mbake, you should be comfortable mounting to the local PC. Now we mount in the cloud using CA.</p>
-<pre><code>//edit your credentials, [other2] part is very optional, if you need 2 mounts.
-$ mkdir ~/.aws
-</code></pre>
-</li>
-<li>
-<p>In CA edit ~/.aws/credentials</p>
-<pre><code>[default]
-aws_access_key_id = KEY
-aws_secret_access_key = SECRET
-[other2]
-aws_access_key_id = KEY2
-aws_secret_access_key = SECRET2
-</code></pre>
-</li>
-<li>
-<p>Make a directory in which you'll mount s3 bucket</p>
-<pre><code>$ mkdir folder_name
-// check if folder was created
-$ ls -la
-</code></pre>
-</li>
-<li>
-<p>Mount your S3 bucket into it, use your BUCKET-NAME and folder_name</p>
-<pre><code>~/goofys --profile default -o allow_other --use-content-type BUCKET-NAME ~/folder_name
-
-// check to see your S3 webapp files
-ls -la
-
-// if errors, check /var/log/syslog for direction
-</code></pre>
-</li>
-<li>
-<p>Install node, yarn and mbake</p>
-</li>
-<li>Via git, pull the latest version of some project from the git repository.</li>
-<li>Change some file, pug or .ts or readme - <code>mbake .</code> it and <code>git push</code> to the git repository.</li>
+<p>First create a storage for the app, eg: <a href="https://www.cdn77.com">cdn77</a></p>
+<p>How to use CDN 77 sftp / edge https server:</p>
+<ol>
+<li>Click CDN link on the top menu</li>
+<li>Scroll to the bottom of page -&gt; click <code>add new SDN storage</code> </li>
 </ol>
-<p>Now you've learned how to develop and operate in the cloud and you can edit your mounted bucket files from CodeAnywhere ssh.</p>
+<p>To enable a web end point (server):</p>
+<ol>
+<li>Click CDN link on the top menu again</li>
+<li>Click <code>Add new CDN Resource</code></li>
+<li>On the radio button click <code>storage</code></li>
+</ol>
+</li>
+<li>
+<p>Than login to CA and create a <code>new connection</code> to connect to your recently created Linux box in Digital Ocean.</p>
+</li>
+<li>
+<p>Open terminal in CA in this linux box and install <code>sshfs</code> for mount:</p>
+<pre><code>$ apt install aptitude
+$ apt-add-repository universe
+$ sudo apt-get install sshfs
+$ mkdir mount // change [mount] with any name you like
+$ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
+// ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in])
+</code></pre>
+<p>now you will have a mount directory in your linux box that has mounted CDN Storage inside.
+For more information on installing sshfs on linux check <a href="https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/">Using SSHFS To Mount Remote Directories</a></p>
+</li>
+<li>
+<p>Then on linux box install node, yarn and mbake.</p>
+</li>
+<li>Via git, pull the latest version of some project from the git repository in your <code>mount/www</code> folder.</li>
+<li>Change some file, .pug or .ts or readme - <code>$ mbake .</code> it and push to the git repository.</li>
+</ol>
+<p>Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh.</p>
 <p>In the <a href="/pug_static_data/">next tutorial </a> you will learn about Pug and static data binding.</p>
 <p>NEXT: Go to <a href="/pug_static_data/">Templating/Pug and static binding</a>.</p>
               
