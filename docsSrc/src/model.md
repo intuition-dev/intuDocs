@@ -27,7 +27,7 @@ You will need to learn about http://tabulator.info/ which allows you to create i
     *If you are using S3 buckets you can copy the project files (inside of /crud) into the project root, so in a browser you should see the CRUD App served by S3 with your endpoint URL*
  
  2. Navigate to the 'Tabu' menu item and inspect the fragment /tabu/list.pug. 
- Note the #example-table tag and the new Tabulator() function that converts the table into a datatable with headers and data.
+ Note the #example-table component and the new Tabulator() function that converts the table into a datatable with headers and data.
 
 ## ViewModel+Bind 
 **Separate the UI from data** 
