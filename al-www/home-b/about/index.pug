@@ -1,0 +1,23 @@
+extends /layout/layout
+//- App Shell
+
+block top
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
+
+   .pageBack.delayShowing(data-js-menu-highlight="about")
+      include /layout/nav
+      br
+      h1.flex.white.fLarge.fBod #{title}
+
+block main
+   .pad
+      H1.line.fBod #{title}
+      h2 This is great for tech lead and researchers
+      h5.copy
+         include:metaMD text.md
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')
+

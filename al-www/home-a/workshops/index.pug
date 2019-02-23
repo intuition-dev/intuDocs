@@ -1,0 +1,51 @@
+extends /layout/layout
+//- App Shell
+
+block top
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
+
+
+   .pageBack.delayShowing(data-js-menu-highlight="about")
+      include /layout/nav
+      br
+      H1.flex.white.fLarge.fBod.text-bold Workshops
+
+
+block main
+   .pad
+      H1.cAccent.line.fBod Workshops
+      
+      include:metaMD text.md
+      .columns
+         .column.col-xs-12
+            .pad
+               img(src="workshop1.jpg", width="640")
+         .column.col-xs-12
+            .pad
+               include:metaMD workshop1.md
+      include:metaMD text1.md
+      .columns
+         .column.col-xs-12
+            .pad
+               include:metaMD workshop2.md
+         .column.col-xs-12
+            .pad
+               include:metaMD workshop3.md
+      .columns
+         .column.col-xs-12
+            .pad
+               img(src="dan-tweet.png", width="420")
+         .column.col-xs-12
+            .pad
+               img(src="elvin-tweet.png", width="420")
+         .column.col-xs-12
+            .pad
+               img(src="sabrina-tweet.png", width="429")
+               img(src="mark-tweet.png", width="429")
+      include:metaMD text2.md
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')
+

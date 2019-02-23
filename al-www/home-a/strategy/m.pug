@@ -1,0 +1,61 @@
+extends /layout/layout-m
+//- App Shell
+
+block top
+
+   .pageBack(data-js-menu-highlight="about")
+      include /layout/nav-m
+      br
+      H1.flex.white.fLarge.fBod Our Strategy
+
+
+block main
+   .pad2.container
+      H2.cAccent.line.fBod Our Strategy
+
+      include:metaMD services.md
+      .columns
+         .column.col-xs-12
+            .pad
+               include:metaMD services1-m.md
+            .pad
+               amp-img(src="img1.png", width=500, height=143)
+            .pad
+               include:metaMD services1-m-Copy.md
+         .column.col-xs-12
+            .pad
+               include:metaMD services2-m.md
+            .pad
+               amp-img(src="img6.jpg", width=400, height=253)
+            .pad
+               include:metaMD services2-m-Copy.md
+            .pad
+               amp-img(src="img7.jpg", width=400, height=217)
+            .pad
+               include:metaMD services2-m-Copy2.md
+      H1.fBod How does it work?
+      .columns
+         .column.col-xs-12
+            .pad
+               amp-img(src="img2.png", width=300, height=174)
+            .pad
+               include:metaMD presprint-m.md
+         .column.col-xs-12
+            .pad
+               amp-img(src="img3.png", width=300, height=174)
+            .pad
+               include:metaMD fivedayssprint-m.md
+         .column.col-xs-12
+            .pad
+               amp-img(src="img4.png", width=300, height=174)
+            .pad
+               include:metaMD postsprint-m.md
+      .columns
+          .column.col-xs-12
+            .pad
+               include:metaMD services4-m-Copy.md
+            .pad
+               amp-img(src="img5.jpg", width=800, height=215)
+
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')

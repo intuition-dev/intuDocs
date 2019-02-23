@@ -1,0 +1,2 @@
+- A low risk way to introduce Jobs to be Done thinking to themselves or their organization
+- Wanting to spark a culture change towards thinking differently about demand

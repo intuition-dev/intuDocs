@@ -1,0 +1,1 @@
+*“Alan and Eric helped us become market leaders by arming us with new methods that help us build a research culture.”* — Brian Ashbaugh, Head of Research

@@ -1,0 +1,1 @@
+*“Idealized Innovation helped us get 12 product teams ‘sniffing the same glue’, so we could operate under one strategic vision.”* — Martin Henk, Co-Founder and Head of Product

@@ -1,0 +1,33 @@
+extends /layout/layout
+//- App Shell
+
+block top
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+         max-height: 150px;
+      }
+
+
+   .pageBack.delayShowing(data-js-menu-highlight="team")
+      include /layout/nav
+
+block main
+   .container
+      .pad
+         .columns
+
+            .column.col-1
+            .column.col-2
+               img.img-responsive(src='who.jpg')
+
+            .column.col-8
+               H3.cAccent.line.fBod #{name}
+               H5 #{position}
+               .copy
+                  include:metaMD text.md
+            .column.col-1
+
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')
+

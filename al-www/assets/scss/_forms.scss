@@ -1,0 +1,26 @@
+.grid-form {
+    fieldset legend {
+        margin-bottom: 0;
+        border-color: $text-color-dark-2-theme1;
+    }
+    div {
+        border-color: $text-color-dark-2-theme1;
+        background: rgba(white,.3);
+    }
+    label {
+        color: $text-color-dark-2-theme1;
+    }
+    .error {
+        display: none;
+    }
+    .error_show {
+        color: #5ea41f;
+    }
+}
+
+textarea {
+    resize: none;
+}
+button {
+    cursor: pointer;
+}

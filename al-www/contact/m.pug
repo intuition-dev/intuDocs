@@ -1,0 +1,21 @@
+extends /layout/layout-m
+//- App Shell
+
+block top
+
+   .pageBack(data-js-menu-highlight="contact")
+      include /layout/nav-m
+      br
+      H1.flex.white.fLarge.fBod Contact
+
+
+block main
+   .backImg
+      br
+      .pad
+         .columns
+            .column.col-6.col-xs-12
+               .pad
+                  include:metaMD contact.md
+               include email-m
+            .column.col-12.col-xs-12

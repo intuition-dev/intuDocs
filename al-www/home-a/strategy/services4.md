@@ -1,0 +1,3 @@
+## Sample Schedule
+Every sprint generally follows the same schedule. We will adapt the schedule depending on the progress our client is looking to make. For example, if our purpose is insight gathering only, then fewer interviews are conducted and more time is spent on developing the insights and planning next steps. If the the sprint is more about training, then more time is spent interviewing consumers, modeling their data, and co-creating Job Specs.
+![Insight sprints](img5.jpg){width=800px}

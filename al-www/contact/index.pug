@@ -1,0 +1,17 @@
+extends /layout/layout
+//- App Shell
+
+block top
+   .pageBack.delayShowing(data-js-menu-highlight="contact")
+      include /layout/nav
+
+block main
+   .pad
+      .columns
+         .column.col-6.col-xs-12
+            .pad
+               include:metaMD contact.md
+            include email
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')
+

@@ -1,0 +1,15 @@
+host: 'https://www.MetaBake.org'
+
+changefreq: monthly
+
+menu:
+   - About:
+      - About us: /home-a/about
+      - Workshops: /home-a/workshops
+      - Strategy: /home-a/strategy
+      - Product: /home-a/product
+   - Team: /team
+   - Blog: /blog
+   - Contact: /contact
+
+itemsRoot: /news

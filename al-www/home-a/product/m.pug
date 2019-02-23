@@ -1,0 +1,25 @@
+extends /layout/layout-m
+//- App Shell
+
+block top
+
+   .pageBack(data-js-menu-highlight="about")
+      include /layout/nav-m
+      br
+      H1.flex.white.fLarge.fBod.text-bold Our Product
+
+
+block main
+   .trans
+      ul.pad
+         li
+            a(href='/') Home
+         li Product
+   br
+   .pad
+      H1.cAccent.line.fBod Product
+      h5.copy
+         include:metaMD text.md
+
+   //-link(href= ROOT + 'assets/css/debug.css', rel='stylesheet')
+

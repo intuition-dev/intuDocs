@@ -1,0 +1,81 @@
+
+
+.pad
+   p For inquiries, please use the below submission form:
+   #mailFrm.grid-form
+      fieldset
+         legend &nbsp;
+         div(data-row-span='2')
+            div(data-field-span='1')
+               label Name
+               input#name(type='text' )
+            div(data-field-span='1')
+               label E-mail
+               input#email(type='text')
+         div(data-row-span='1')
+            div(data-field-span='1')
+               label Message
+               textarea(name='msg' )
+   br
+   .errors.d-hide
+   button#sendBut.btn-custom.btn-primary(type='submit') Send Message
+
+
+br
+
+script.
+   //loadjs.ready(['cssJs', 'device'], setupEmail )
+   depp.require(['pre'], setupEmail);
+   
+   function val() { 
+      let nameVal = $('#name').val();
+      let emailVal = $('#email').val();
+      let msgVal = $('textarea[name="msg"]').val();
+      if (validator.isEmpty(nameVal, { ignore_whitespace: true }) ) {
+         return 'Please enter your name';
+      }
+      if (validator.isEmpty(emailVal, { ignore_whitespace: true }) ) {
+         return 'Please enter a valid email';
+      }
+      if (validator.isEmail(emailVal) === false) {
+         return 'Email is invalid';
+      }
+      if (validator.isEmpty(msgVal, { ignore_whitespace: true }) ) {
+         return 'Please enter your message';
+      }
+      return 'OK';
+   }
+
+   function setupEmail() {
+      emailjs.init("user_Pc9qJia9LYfibI953zcJY");
+      $('#mailFrm').disableAutoFill();
+
+      $('#sendBut').click(function(e) {
+         $('.errors').addClass('d-hide').text('');
+         let msg = val();
+         if(msg=='OK') {
+            console.info('send');
+            let dat = {
+               name: $("#name").val()
+               ,email: $("#email").val()
+               ,msg: $("textarea[name='msg']").val()
+            }
+            console.info(dat);
+            $(this).attr("disabled", "disabled");
+            emailjs
+               .send('gmail', 'template_ZiJDZalK', dat )
+               .then(()=> {
+                  $(this).removeAttr("disabled");
+                  $('.errors').removeClass('d-hide').text('The email has been sent');
+               });
+            $("#name, #email, textarea[name='msg']").val('');
+         }
+         else {
+            swal({
+               type: 'error',
+               title: 'Oops...',
+               text: msg
+            });
+         }
+      });
+   }

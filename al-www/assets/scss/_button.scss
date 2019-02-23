@@ -1,0 +1,75 @@
+.btn {
+    &-custom {
+        text-transform: uppercase;
+        border-radius: $border-radius-theme1;
+        border: 0;
+        font-size: 12px;
+        min-width: 100px;
+        padding: 10px;
+        transition: all .2s ease-in-out;
+
+        &:hover, &:active, &:focus {
+            outline: none;
+            text-decoration: none;
+            box-shadow: none;
+        }
+    }
+
+    &-center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &-primary {
+        background-color: $button-primary-theme1;
+        color: $button-primary-theme1-color;
+
+        &:hover, &:active, &:focus {
+            background-color: $color-primary-theme1;
+        }
+    }
+
+    &-secondary {
+        color: $button-secondary-theme1-color;
+        background-color: $button-secondary-theme1;
+
+        &:hover, &:active, &:focus {
+            background-color: $button-secondary-theme1-hover;
+            color: $button-secondary-theme1-color-hover;
+        }
+
+        &.dark {
+            background-color: $button-secondary-theme1-dark;
+
+            &:hover, &:active, &:focus {
+                background-color: $button-primary-theme1;
+                color: white;
+
+                svg {
+                    fill: $background-light-theme1;
+                }
+            }
+
+            svg {
+                fill: $color-theme1;
+            }
+        }
+    }
+}
+
+.btn.btn-clear {
+    background: transparent;
+    border: 0;
+    color: currentColor;
+    height: 1rem;
+    line-height: .8rem;
+    margin-left: .2rem;
+    margin-right: -2px;
+    opacity: 1;
+    padding: .1rem;
+    text-decoration: none;
+    width: 1rem;
+    &::before {
+        content: "\2715";
+    }
+}
