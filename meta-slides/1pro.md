@@ -25,7 +25,7 @@
 ---
 
 # Agenda
-- Part I: low-code status
+- Part I: LOW-CODE status
 - Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of mBake.org )
 - Demo of automatic programming
 
@@ -99,10 +99,10 @@ but keep the C++ programmers out,
 
 ---
 
-# Part I - low-code status by 2019/2020:
+# Part I - LOW-CODE status by 2019/2020:
 - # Within 18 months 90% of developers will lose their job. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet. 
 - Citizen developers: No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
-- low-code is 10X cheaper and 10x faster.
+- LOW-CODE is 10X cheaper and 10x faster.
 - Cuts are first for expensive developers or working on complex tech.
 - EG: From Data Center to Cloud we had **90% budget cuts**. Or Mainframes, Minis. 
 **Black swan**, if you graduated after 2003. eg. Always had LAMP (Wordpress is 40% of www)
