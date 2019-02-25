@@ -5,7 +5,7 @@
 
 low-code is akin to O.O, or F.P.. low-code's goal is high development productivity, efficiency and effectiveness.
 
-I discovered LOW-CODE when I went looking for the next wave of software development effectiveness. We go trough many waves, eg: mainframes, mini's like DEC, or data centers: now we use cloud computing. Worth mentioning that when we had data center budgets were $10MM and now with cloud, less than $1MM. Or more academic, if you have a CS degree, you know about 1GL machine, 2GL assembly, 3GL .js and.... what is 4GL? 
+I discovered low-code when I went looking for the next wave of software development effectiveness. We go trough many waves, eg: mainframes, mini's like DEC, or data centers: now we use cloud computing. Worth mentioning that when we had data center budgets were $10MM and now with cloud, less than $1MM. Or more academic, if you have a CS degree, you know about 1GL machine, 2GL assembly, 3GL .js and.... what is 4GL? 
 Computers get much more powerful every 10 years or so: and result in 10X improved effectiveness of software development! But, we have not had a productivity jump in ~10-15 years. And if you have less experience than 15 years - you may not expect a new wave to change everything. So this article maybe not for you.
 But if you do expect a new wave of tech in software development, read on. 
 
@@ -36,7 +36,7 @@ In any case, your individual contributors must know how to work with designers. 
 ### 5. Learn quickly
 Regardless of how you feel about it, in our vocation - you have to be able to master things quickly, and 'forget' older things. Just a fact.
 So if OO and FP are over, you have to learn the coming (4GL?) declarative|low-code. One example of declarative|low-code is already known by a large percent of NodeJS developers that use NodeJS 'express' library: It uses Pug instead of HTML. Pug is similar to how eBay developes software using it's less popular 'Marko'. If you have never used Pug - it is a bit like a more powerful version of something called 'Markdown'. You can use Pug with PHP, Python, etc. Most common is to use declarative|low-code with static generators mentioned above. And yes, you do write dynamic apps and dynamic data binding via static generators. A static generator takes the developer friendly declarative|low-code and generates less friendly html|.js. Like how designers uses SASS to generate CSS.
-So, be ready to retrain again for coming declarative|low-code. It is coming un-stoppable because it is more productive. So, be ready to learn the next thing. It allows managers to do more with a smaller team. (I'll say like adding an accounting system lets you do more accounting with less book keepers). LOW-CODE also allows those that are less technical to do web|app development. Development is becoming more white collar as computing power is increasing. 
+So, be ready to retrain again for coming declarative|low-code. It is coming un-stoppable because it is more productive. So, be ready to learn the next thing. It allows managers to do more with a smaller team. (I'll say like adding an accounting system lets you do more accounting with less book keepers). low-code also allows those that are less technical to do web|app development. Development is becoming more white collar as computing power is increasing. 
 
 ### 6. SEO
 There are many orgs competing for consumers - an no one will try your web|app unless they can discover it. So SEO. SEO includes AMP, like it or not. So your generators should be able to write both a web|app page and an AMP version of it. There is more to SEO, but just one point.
@@ -56,19 +56,19 @@ In any case we find ourself developing in the cloud often. We use tools like Vi.
 
 ### 10. Benchmarking
 You should be able to benchmark your org vs another org in your industry. How quickly can an org in your industry segment developer software, how many pages|screens per day per developer?
-There is some evidence out there on the web. And here is the most important part: you should know your productivity. How many pages|screens per day per developer are you doing? Ideally you compare this number before LOW-CODE and after LOW-CODE pillars. As well as operating costs.
+There is some evidence out there on the web. And here is the most important part: you should know your productivity. How many pages|screens per day per developer are you doing? Ideally you compare this number before low-code and after low-code pillars. As well as operating costs.
 
 ## Review
 
-So next wave of development productivity is coming and we can see that it will be low-code. Next wave is here and applied, you can see a hello world LOW-CODE CRUD example here:
+So next wave of development productivity is coming and we can see that it will be low-code. Next wave is here and applied, you can see a hello world low-code CRUD example here:
 - https://github.com/MetaBake/MetaBake-examples/tree/master/examples/crud
-or you can run it by installing a LOW-CODE static generator mbake from here:
+or you can run it by installing a low-code static generator mbake from here:
 - https://www.staticgen.com/MetaBakeorg
 and then 
    mbake -c
 
 ### Self promo
-If your org would like to try one or more of the LOW-CODE pillars here please contact vic@mBake.org or wgeher@metabka.org. We can teach your team on site.
+If your org would like to try one or more of the low-code pillars here please contact vic@mBake.org or wgeher@metabka.org. We can teach your team on site.
 
 Or if you have a project that you want to do in 1/10th of the time at 1/10th of the cost, we'll build it for you. If you have a project that you have a $600K budget, we'll show it deliver at 1/10th of the cost/time! (but if you have a $60K budget and want it done for $6K, we are not the best fit). 
 
