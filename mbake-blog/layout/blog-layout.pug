@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(content='width=device-width,initial-scale=1', name='viewport')
+    title Blog Website
+    //- link(href='/assets/css/style.css', rel='stylesheet')
+
+    //- spectre
+    link(href='https://unpkg.com/spectre.css/dist/spectre.min.css', rel='stylesheet')
+    link(href='https://unpkg.com/spectre.css/dist/spectre-exp.min.css', rel='stylesheet')
+    link(href='https://unpkg.com/spectre.css/dist/spectre-icons.min.css', rel='stylesheet')
+    
+    script(src='https://cdn.jsdelivr.net/npm/riot@3.10.3/riot.min.js')
+    //- script(src='/assets/tags/first-tag.min.js')
+  body
+    .home-wrapper
+      include /blog-website/header
+      h1 Sandra
+    block main
+      
+    include /blog-website/footer

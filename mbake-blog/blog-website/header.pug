@@ -1,0 +1,21 @@
+- var navItems = ['Home', 'Github', 'About', 'Contact']
+
+.off-canvas
+  a.off-canvas-toggle.btn.btn-primary.btn-action.show-md(href='#sidebar-id')
+    i.icon.icon-menu
+      
+  #sidebar-id.off-canvas-sidebar
+    // off-screen sidebar
+    h1 Alvarez
+    
+  a.off-canvas-overlay(href='#close')
+  
+  .off-canvas-content
+
+      header.navbar
+        section.navbar-section
+          a.mr-2.navbar-brand(href='/')
+            img(src=rootPath + 'logo.png')
+        section.navbar-section
+          each item in navItems
+            a.btn.btn-link(href='#')= item
