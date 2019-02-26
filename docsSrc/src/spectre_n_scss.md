@@ -36,7 +36,7 @@ There is list of sass files in assets.yaml and it will compile to /assets/css fo
 
 or any path in assets or any sub folder under assets and it will compile scss/sass to css. It won't work for folders other than /assets, or if there is no assets.yaml properly configured in assets.
 
-You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile scss/sass to css as well as `.pug` to `.html`, and `*-tag.pug` to `*-tag.js`. The command is:
+You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile scss/sass to css as well as `.pug` to `.html`, and `*-tag.pug` to `*-comp.js`. The command is:
 
         $ mbakeW -w .
 

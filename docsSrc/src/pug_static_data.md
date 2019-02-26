@@ -42,7 +42,7 @@ We assume that you have already installed mbake with `$ yarn global add mbake` a
 
 5. On the website, navigate to the `/zabout/about/` page. In your code editor, go to the `/zabout/about/` folder, edit `dat.yaml` and change `'About Us'` to `'About Me'`, save, then `$ mbake .` and refresh the browser. Of course you could also change something in `index.pug`.
 
-6. You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile `.pug` to `.html` and `*-tag.pug` to `*-tag.js`, and also scss/sass to css:
+6. You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile `.pug` to `.html` and `*-tag.pug` to `*-comp.js`, and also scss/sass to css:
 
         $ mbakeW -w .
 
