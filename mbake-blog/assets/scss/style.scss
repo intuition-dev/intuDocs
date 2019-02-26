@@ -36,6 +36,29 @@ header {
 	}
 }
 
+.card {
+	position: relative;
+	border: 20px solid #fff;
+	&-top, &-bottom {
+		position: absolute;
+		padding: 25px;
+		left: 0;
+	}
+
+	&-top {
+		top: 0;
+	}
+
+	&-bottom {
+		bottom: 0;
+	}
+}
+
+footer {
+	padding: 20px 0;
+	border-top: 1px solid #d4deeb;
+}
+
 
 @media (max-width: 840px) {
   header a {

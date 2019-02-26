@@ -907,26 +907,16 @@ a.text-error:visited{color:#ff6003;}
 .icon-emoji{border:0.1rem solid currentColor;border-radius:50%;}
 .icon-emoji::before{border-radius:50%;box-shadow:-.17em -.1em,.17em -.1em;height:.15em;width:.15em;}
 .icon-emoji::after{border:0.1rem solid currentColor;border-bottom-color:transparent;border-radius:50%;border-right-color:transparent;height:.5em;transform:translate(-50%,-40%) rotate(-135deg);width:.5em;}
-.btn.btn-link{background:transparent;border-color:transparent;color:#222222;}
-.btn.btn-link:focus,.btn.btn-link:hover,.btn.btn-link:active,.btn.btn-link.active{color:#302ecd;}
-.btn-custom{text-transform:uppercase;border-radius:0;border:0;font-size:12px;min-width:100px;padding:12px 20px;transition:all .2s ease-in-out;display:table;}
+.btn.btn-link{color:#222222;}
+.btn-custom{text-transform:uppercase;border:0;font-size:12px;min-width:100px;padding:12px 20px;transition:all .2s ease-in-out;display:table;}
 .btn-custom:hover,.btn-custom:active,.btn-custom:focus{outline:none;text-decoration:none;box-shadow:none;}
 .btn-custom .icon{display:flex;align-items:center;justify-content:center;}
 .btn-custom .icon svg{margin-left:1rem;width:30px;flex-shrink:0;}
-.btn-secondary{background:linear-gradient(to right,#e65740 50%,#1ab7ea 50%) no-repeat scroll right bottom/210% 100% #1ab7ea;}
-.btn-secondary,.btn-secondary svg,.btn-secondary:hover,.btn-secondary:hover svg,.btn-secondary:active,.btn-secondary:active svg,.btn-secondary:focus,.btn-secondary:focus svg{color:#fff;fill:#fff;}
-.btn-secondary.dark{background:linear-gradient(to right,#e65740 50%,rgba(26,183,234,0.3) 50%) no-repeat scroll right bottom/210% 100% rgba(26,183,234,0.3);}
 .btn-secondary.dark,.btn-secondary.dark:hover,.btn-secondary.dark:active,.btn-secondary.dark:focus{color:white;}
-.btn-secondary.dark svg,.btn-secondary.dark:hover svg,.btn-secondary.dark:active svg,.btn-secondary.dark:focus svg{fill:#F3F4F4;}
-.btn-secondary.invert{background:linear-gradient(to right,#1ab7ea 50%,#e65740 50%) no-repeat scroll right bottom/210% 100% #e65740;}
 .btn-primary,.btn-secondary{transition:color 0.3s ease,border-color 0.3s ease,background-position 0.3s ease,background-color 0 linear 0.3s;}
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus,.btn-secondary:hover,.btn-secondary:active,.btn-secondary:focus{background-position:left bottom;}
-.link-primary{color:#e65740;}
-.link-primary:hover,.link-primary:active,.link-primary:focus{color:#3AAFA9;}
-.link-secondary{color:#3AAFA9;}
-.link-secondary:hover,.link-secondary:active,.link-secondary:focus{color:#e65740;}
-.social-icons svg{width:14px;height:14px;fill:#3AAFA9;flex-shrink:0;}
-.social-icons .btn-custom{width:40px;min-width:initial;height:40px;border-radius:0;margin:0 10px 0 0;display:flex;align-items:center;justify-content:center;flex-shrink:0;transform:rotate(30deg);transition:transform .2s linear,background .2s linear;}
+.social-icons svg{width:14px;height:14px;flex-shrink:0;}
+.social-icons .btn-custom{width:40px;min-width:initial;height:40px;border-radius:0;margin:0 10px 0 0;display:flex;align-items:center;justify-content:center;flex-shrink:0;transform:rotate(30deg);}
 .social-icons .btn-custom.btn-secondary{background:linear-gradient(to right,#151f2b 50%,#fff 50%) no-repeat scroll right bottom/210% 100% #fff;}
 .social-icons .btn-custom.btn-secondary,.social-icons .btn-custom.btn-secondary svg{color:#384752;fill:#384752;}
 .social-icons .btn-custom:hover,.social-icons .btn-custom:active,.social-icons .btn-custom:focus{background-position:left bottom;transform:none;}
@@ -937,4 +927,9 @@ a.text-error:visited{color:#ff6003;}
 body{font-family:"Poppins",sans-serif;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("../img/blog/background.png") repeat 100% 100%;background-color:#ccd7e4;background-size:cover;}
 header img{width:100px;}
 header .social-icon{text-align:center;width:30px;height:30px;line-height:30px;margin-right:4px;border-radius:2px;background-color:#fff;box-shadow:1px 1px 3px 0 #c1cddb;opacity:0.60;transition:all 400ms ease;}
-@media (max-width:840px){header a{margin-left:auto;}} /* mB v4.16.19 on 2019-02-26T17:33:08.168Z */
+.card{position:relative;border:20px solid #fff;}
+.card-top,.card-bottom{position:absolute;padding:25px;left:0;}
+.card-top{top:0;}
+.card-bottom{bottom:0;}
+footer{padding:20px 0;border-top:1px solid #d4deeb;}
+@media (max-width:840px){header a{margin-left:auto;}} /* mB v4.16.19 on 2019-02-26T20:09:50.936Z */

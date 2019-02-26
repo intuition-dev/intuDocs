@@ -13,7 +13,7 @@
 .btn {
     &-custom {
         text-transform: uppercase;
-        border-radius: $border-radius-theme1;
+        // border-radius: $border-radius-theme1;
         border: 0;
         font-size: 12px;
         min-width: 100px;
@@ -39,26 +39,26 @@
     }
 
     &-secondary {
-        background: linear-gradient(to right, $button-secondary-theme1-hover 50%,$button-secondary-theme1 50%) no-repeat scroll right bottom / 210% 100% $button-secondary-theme1;
+        // background: linear-gradient(to right, $button-secondary-theme1-hover 50%,$button-secondary-theme1 50%) no-repeat scroll right bottom / 210% 100% $button-secondary-theme1;
 
         &, &:hover, &:active, &:focus {
             &, svg {
-                color: $button-secondary-theme1-color;
-                fill: $button-secondary-theme1-color;
+                // color: $button-secondary-theme1-color;
+                // fill: $button-secondary-theme1-color;
             }
         }
 
         &.dark {
-            background: linear-gradient(to right, $button-secondary-theme1-hover 50%,rgba($button-secondary-theme1,.3) 50%) no-repeat scroll right bottom / 210% 100% rgba($button-secondary-theme1,.3);
+            // background: linear-gradient(to right, $button-secondary-theme1-hover 50%,rgba($button-secondary-theme1,.3) 50%) no-repeat scroll right bottom / 210% 100% rgba($button-secondary-theme1,.3);
             &, &:hover, &:active, &:focus {
                 color: white;
                 svg {
-                    fill: $background-light-theme1;
+                    // fill: $background-light-theme1;
                 }
             }
         }
         &.invert {
-            background: linear-gradient(to right, $button-secondary-theme1 50%,$button-secondary-theme1-hover 50%) no-repeat scroll right bottom / 210% 100% $button-secondary-theme1-hover;
+            // background: linear-gradient(to right, $button-secondary-theme1 50%,$button-secondary-theme1-hover 50%) no-repeat scroll right bottom / 210% 100% $button-secondary-theme1-hover;
         }
     }
     &-primary, &-secondary {
@@ -73,15 +73,15 @@
 
 .link {
     &-primary {
-        color: $color-secondary-theme1;
+        // color: $color-secondary-theme1;
         &:hover, &:active, &:focus {
-            color: $color-theme1;
+            // color: $color-theme1;
         }
     }
     &-secondary {
-        color: $color-theme1;
+        // color: $color-theme1;
         &:hover, &:active, &:focus {
-            color: $color-secondary-theme1;
+            // color: $color-secondary-theme1;
         }
     }
 }
@@ -90,7 +90,7 @@
     svg {
         width: 14px;
         height: 14px;
-        fill: $color-theme1;
+        // fill: $color-theme1;
         flex-shrink: 0;
     }
 
@@ -105,7 +105,7 @@
         justify-content: center;
         flex-shrink: 0;
         transform: rotate(30deg);
-        transition: transform .2s linear, background .2s linear;
+        // transition: transform .2s linear, background .2s linear;
         &.btn-secondary {
             background: linear-gradient(to right, #151f2b 50%,#fff 50%) no-repeat scroll right bottom / 210% 100% #fff;
             & {

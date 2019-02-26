@@ -16,18 +16,8 @@ html(lang='en')
     //- script(src='/assets/tags/first-tag.min.js')
   body
     .container.grid-lg
-      .columns
-        include /blog-website/header
-        p From websites to marketing tools and analytics, 
-        h1 
-          | Our blogging functionality is complete with 
-          br 
-          | images, galleries, videos, and audio.
-        .input-group
-          input.form-input(type='email', placeholder='Enter your email')
-          button.btn.btn-primary.input-group-btn Subscribe
-
-        
-        block main
+      include /blog-website/header
       
-        include /blog-website/footer
+      block main
+      
+      include /blog-website/footer

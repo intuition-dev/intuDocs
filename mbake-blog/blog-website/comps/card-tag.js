@@ -1,0 +1,3 @@
+
+riot.tag2('card-tag', '<div class="columns"> <div class="column col-6 col-sm-12"> <div class="card"> <div class="card-image"><img class="img-responsive" src="undefinedassets/img/blog/item-1.jpg"></div> <div class="card-top"> <button class="btn btn-primary">button</button> <h3>7 Must Have Tools For Web Designers</h3> <div>August 6, 2018 | Eldred Braun</div> </div> <div class="card-bottom"> <button class="btn btn-primary">Read More</button> </div> </div> </div> </div>', '', '', function(opts) {
+});
