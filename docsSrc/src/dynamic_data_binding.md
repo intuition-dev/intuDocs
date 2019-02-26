@@ -14,9 +14,9 @@ We assume that you have already installed the example `website` project as descr
 
 3. Application routes are defined with `a href` tags. Inspect `/layout/navJBar.pug` for examples. When a user clicks on a link, the URL in the browser changes and the respective content, such as `/landing/why/index.html` is returned. Users can bookmark individual URLs. The browser maintains a navigation history so that using its 'Back' button yields the expected result.
 
-4. We use [Riot.js](https://riot.js.org/) for custom tags. We use it when we need a new component or want to hide functions and vars. To learn how Riot components are written and used in Pug, inspect `/riotFirst/comps/first-tag.pug`. It looks something like this:
+4. We use [Riot.js](https://riot.js.org/) for custom tags. We use it when we need a new component or want to hide functions and vars. To learn how Riot components are written and used in Pug, inspect `/riotFirst/comps/first-comp.pug`. It looks something like this:
 
-        first-tag
+        first-comp
             p Dynamic Data:
             p { num }
 
@@ -29,7 +29,7 @@ We assume that you have already installed the example `website` project as descr
 
     When `'doSomething()'` gets called, it updates the `{num}`.
 
-    You would run `'$ mbake -t .'` to generate a `first-comp.js` file to include in your page. mbake looks for files that end in `'-tag.pug'`.
+    You would run `'$ mbake -t .'` to generate a `first-comp.js` file to include in your page. mbake looks for files that end in `'-comp.pug'`.
 
     `/riotFirst/index.pug` uses this component and looks like this:
 
@@ -39,18 +39,18 @@ We assume that you have already installed the example `website` project as descr
             //- include Riot
             script(src='//cdn.jsdelivr.net/npm/riot@3.11.2/riot.min.js')
             //- include the component script
-            script(src='tags/first-tag.min.js')
+            script(src='tags/first-comp.min.js')
             p
             div
                 //- use the tag
-                first-tag
+                first-comp
             script.
-                var firstcomponent = riot.mount('first-tag')[0] // get the tag
+                var firstcomponent = riot.mount('first-comp')[0] // get the tag
                 firstTag.doSomething(42) // call the logic
 
     You can see it working by going to `/riotFirst/` in the browser.
 
-5. We can render a list of links from a `list.json`. Navigate to the 'News' menu item. Inspect `/news/index.pug`. We use _Axios_ to load the JSON and our custom riot component `table-tag` to dynamically render the list of links in the browser. Note that we begin loading the JSON as early as possible, in parallel with the UI, so users have to wait less. Now inspect `/news/tag/table-tag.pug` and note the use of Pug `each={items}` with JavaScript to iterate through the items in `list.json`. You use `'$ mbake -t .'` to generate `table-comp.js`. It is incorporated in `/news/index.pug`. There's no need to write JSON by hand, as you can process a `list.csv` to `list.json` with `'$ mbakeW -j .'`. This is a great way to build lists that change over time.
+5. We can render a list of links from a `list.json`. Navigate to the 'News' menu item. Inspect `/news/index.pug`. We use _Axios_ to load the JSON and our custom riot component `table-comp` to dynamically render the list of links in the browser. Note that we begin loading the JSON as early as possible, in parallel with the UI, so users have to wait less. Now inspect `/news/tag/table-comp.pug` and note the use of Pug `each={items}` with JavaScript to iterate through the items in `list.json`. You use `'$ mbake -t .'` to generate `table-comp.js`. It is incorporated in `/news/index.pug`. There's no need to write JSON by hand, as you can process a `list.csv` to `list.json` with `'$ mbakeW -j .'`. This is a great way to build lists that change over time.
 
 7. Inspect `/assets/js/loader.js`. We use a tiny [dependency manager](https://github.com/muicss/johnnydepp) (862 bytes) to facilitate the loading of required libraries in parallel with the UI. Take another look at `/zabout/contect/email.pug` and the use of `depp.require(['css'], setupEmail)`. We use it to signal when an inline dependency has been met (a process is 'done' and code is 'ready' for execution).
 
