@@ -4,20 +4,30 @@ html(lang='en')
     meta(charset='utf-8')
     meta(content='width=device-width,initial-scale=1', name='viewport')
     title Blog Website
-
-    //- spectre
-    link(href='https://unpkg.com/spectre.css/dist/spectre.min.css', rel='stylesheet')
-    link(href='https://unpkg.com/spectre.css/dist/spectre-exp.min.css', rel='stylesheet')
-    link(href='https://unpkg.com/spectre.css/dist/spectre-icons.min.css', rel='stylesheet')
-    
-    link(href='/assets/css/blog-style.css', rel='stylesheet')
+      
+    //- icons
+    link(href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', rel='stylesheet', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+    link(href='/assets/css/style.css', rel='stylesheet')
+      
+    //- Fonts
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet')
       
     script(src='https://cdn.jsdelivr.net/npm/riot@3.10.3/riot.min.js')
     //- script(src='/assets/tags/first-tag.min.js')
   body
-    .home-wrapper
-      include /blog-website/header
-      h1 Sandra
-    block main
+    .container.grid-lg
+      .columns
+        include /blog-website/header
+        p From websites to marketing tools and analytics, 
+        h1 
+          | Our blogging functionality is complete with 
+          br 
+          | images, galleries, videos, and audio.
+        .input-group
+          input.form-input(type='email', placeholder='Enter your email')
+          button.btn.btn-primary.input-group-btn Subscribe
+
+        
+        block main
       
-    include /blog-website/footer
+        include /blog-website/footer

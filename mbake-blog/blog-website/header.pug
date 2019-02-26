@@ -1,6 +1,9 @@
 mixin link(path, name)
   a.btn.btn-link(href=path)= name
 
+mixin social()
+  a.social-icon(href='#')
+    i(class!=attributes.class)
 
 .off-canvas
   a.off-canvas-toggle.btn.btn-primary.btn-action.show-md(href='#sidebar-id')
@@ -16,8 +19,12 @@ mixin link(path, name)
         section.navbar-section
           a.mr-2.navbar-brand(href=ROOT + 'blog-website')
             img.img-responsive(src=ROOT + 'assets/img/blog/logo.png')
-        section.navbar-section
+        section.navbar-section.hide-md
           +link(ROOT + 'blog-website', 'home')
           +link(ROOT + '#', 'contact')
           +link(ROOT + '#', 'about')
+          +social(class="fab fa-facebook-f")
+          +social(class="fab fa-instagram")
+          +social(class="fab fa-twitter")
+          +social(class="fab fa-google-plus-g")
             
