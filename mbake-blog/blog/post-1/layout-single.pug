@@ -9,14 +9,13 @@ block main
          .column.col-3.col-lg-12.post-title
             .post-body
                block blog-title
-                  h6.title #{title}
             .post-footer.d-flex
                time.date #{date}
       .columns.post-content
          .column.col-9.col-lg-12.col-post-content
             .post-content__inside
                block blog-content
-                  include:metaMD text.md
+                  //- include:metaMD text.md
          .column.col-3.col-lg-12.col-post-author
             .author
                a.avatar(href='#')
