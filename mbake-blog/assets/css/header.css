@@ -41,4 +41,4 @@ header h1:before{content:'';display:block;height:2px;width:200px;max-width:100%;
  .navJBar li a{font-size:12px;line-height:1.7;}
  .navJBar li li a{font-size:10px;}}
 @media (max-width:480px){header a.logo{font-size:18px;letter-spacing:5px;}
- header h1{font-size:20px;padding-bottom:.7rem;}} /* mB v4.15.25 on 2019-02-15T12:54:23.925Z */
+ header h1{font-size:20px;padding-bottom:.7rem;}} /* mB v4.16.19 on 2019-02-26T14:28:03.662Z */
