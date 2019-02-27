@@ -11,7 +11,8 @@ card-tag
             h3 { title }
             div { date } | Eldred Braun
           .card-bottom
-            button.btn.btn-primary Read More
+            a(href='{url}')
+              button.btn.btn-primary Read More
             
 
   script.
@@ -33,6 +34,14 @@ card-tag
         // clone
         let cloned = JSON.parse(JSON.stringify(data));
         thiz.items = cloned;
+        
+        let sz = thiz.items.length;
+        for(i = 0; i < sz; i++) {
+              var item = thiz.items[i];
+
+              item.url = '/posts/' + item.url;
+              console.info(item.url);
+          }
 
         thiz.update();
 
