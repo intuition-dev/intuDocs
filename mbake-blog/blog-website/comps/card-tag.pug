@@ -1,16 +1,39 @@
 card-tag 
   .columns
-    .column.col-6.col-sm-12
-      .card
-        .card-image
-          img.img-responsive(src=ROOT + 'assets/img/blog/item-1.jpg')
-      
-        .card-top
-          button.btn.btn-primary button
-          h3 7 Must Have Tools For Web Designers
-          div August 6, 2018 | Eldred Braun
-        .card-bottom
-          button.btn.btn-primary Read More
+    virtual(each='{items}')
+      .column.col-6.col-sm-12
+        .card
+          .card-image
+            img.img-responsive(src='{img_url}')
+        
+          .card-top
+            button.btn.btn-primary button
+            h3 7 Must Have Tools For Web Designers
+            div August 6, 2018 | Eldred Braun
+          .card-bottom
+            button.btn.btn-primary Read More
+            
 
   script.
-    
+    console.info('oh hi tag');
+    this.on('*', function(evt) {
+        console.info('riot', evt);
+    });
+    this.items = [];
+    thiz = this;
+
+    render(data) {
+        console.info(data);
+        if(!data ) {
+            thiz.items = [];
+            thiz.update();
+            return;
+        }
+        console.info(Object.keys(data[0]));
+        // clone
+        let cloned = JSON.parse(JSON.stringify(data));
+        thiz.items = cloned;
+
+        thiz.update();
+
+    }
