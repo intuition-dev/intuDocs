@@ -14,7 +14,7 @@ block main
             input.form-input.input-lg(type='email', placeholder='Enter your email')
             button.btn.btn-primary.input-group-btn.btn-lg Subscribe
     
-  card-tag  
+  card-comp  
   
   script.
     axios.get('../posts/items.json').then(function(resp) {
@@ -22,7 +22,7 @@ block main
        posts = resp.data;
        console.info('resp.data --------->', posts);
     
-       const tag = riot.mount('card-tag')[0]; 
+       const tag = riot.mount('card-comp')[0]; 
        console.info('posts.items ------------>', posts.items);
        tag.render(posts.items);
      });
