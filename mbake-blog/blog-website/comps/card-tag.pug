@@ -1,18 +1,19 @@
 card-tag 
-  .columns
-    virtual(each='{items}')
-      .column.col-6.col-sm-12
-        .card
-          .card-image
-            img.img-responsive(src='{img_url}')
-        
-          .card-top
-            button.btn.btn-primary button
-            h3 { title }
-            div { date } | Eldred Braun
-          .card-bottom
-            a(href='{url}')
-              button.btn.btn-primary Read More
+  .cards-container
+    .columns
+      virtual(each='{items}')
+        .column.col-6.col-sm-12
+          .card
+            .card-image
+              img.img-responsive(src='{img_url}')
+          
+            .card-top
+              button.btn.btn-primary button
+              h3 { title }
+              div { date } | Eldred Braun
+            .card-bottom
+              a(href='{url}')
+                button.btn.btn-primary Read More
             
 
   script.
