@@ -17,10 +17,10 @@ mixin social()
   .off-canvas-content.px-2
       header.navbar
         section.navbar-section
-          a.mr-2.navbar-brand(href=ROOT + 'blog-website')
+          a.mr-2.navbar-brand(href=ROOT + 'home')
             img.img-responsive(src=ROOT + 'assets/img/blog/logo.png')
         section.navbar-section.hide-md
-          +link(ROOT + 'blog-website', 'home')
+          +link(ROOT + 'home', 'home')
           +link(ROOT + '#', 'contact')
           +link(ROOT + '#', 'about')
           +social(class="fab fa-facebook-f")
