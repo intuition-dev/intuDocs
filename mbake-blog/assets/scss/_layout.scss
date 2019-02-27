@@ -1,27 +1,39 @@
 body {
 	font-family: $font-family;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/blog/background.png') repeat 100% 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/blog/background.png') repeat 70% 60%;
   background-color: #ccd7e4;
   background-size: cover;
-	color: #333;
+	color: $acadia;
 }
 
-h1, h2 {
-  font-family: 'Bitter', serif;
+header {
+	padding: 20px 0;
+	img {
+	  width: 100px;
+	}
+
+	.social-icon {
+	  text-align: center;
+	  width: 30px;
+	  height: 30px;
+	  line-height: 30px;
+	  margin-right: 4px;
+	  border-radius: 2px;
+	  background-color: $white;
+	  box-shadow: 1px 1px 3px 0 #c1cddb;
+	  opacity: 0.60;
+	  -webkit-transition: all 400ms ease;
+	  transition: all 400ms ease;
+	}
+
+	a {
+		@media (max-width: 840px) { margin-left: auto; }
+	}
 }
 
-h1 {
-  font-size: 55px;
-  line-height: 60px;
-  font-weight: 500;
-}
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  color: #7c8499;
-  line-height: 25px;
-}
-
-a {
-  color: #333;
+footer {
+	padding: 20px 0;
+	margin: 50px 0;
+	border-top: 1px solid #d4deeb;
 }

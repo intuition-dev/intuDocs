@@ -3,12 +3,10 @@
 @import '../spectre/spectre-exp.scss';
 @import '../spectre/spectre-icons.scss';
 @import '_variables.sass';
+@import '_layout.scss';
+@import '_typography.scss';
 @import '_button.scss';
-// @import '_typography.scss';
-// @import '_layout.scss';
-// @import '_components.scss';
-// @import '_footer.scss';
-
+@import '_components.scss';
 
 .banner, .banner-home {
 	display: flex;
@@ -16,88 +14,24 @@
 	height: 300px;
 }
 
-.banner {
-	.date {
-		color: #7c8499;
-	}
-}
-.content {
-	padding: 50px 0;
-}
-
-header {
-	padding: 20px 0;
-	img {
-	  width: 100px;
-	}
-
-	.social-icon {
-	  text-align: center;
-	  width: 30px;
-	  height: 30px;
-	  line-height: 30px;
-	  margin-right: 4px;
-	  border-radius: 2px;
-	  background-color: #fff;
-	  box-shadow: 1px 1px 3px 0 #c1cddb;
-	  opacity: 0.60;
-	  -webkit-transition: all 400ms ease;
-	  transition: all 400ms ease;
-	}
-}
-
+//- HOME PAGE
 .banner-home {
 	height: 500px;
 	p {
-		color: #7c8499;
+		color: $waterloo;
 	}
 	input, button {
 		border-radius: 50px;
 	}
 }
 
-.cards-container {
-
-}
-
-.column {
-	padding: .4rem;
-}
-
-
-.card {
-	position: relative;
-	border: 20px solid #fff;
-	color: #fff;
-	width: auto;
-	height: 400px;
-	background-size: cover;
-	background-position: center;
-	&-top, &-bottom {
-		position: absolute;
-		padding: 25px;
-		left: 0;
-	}
-
-	&-top {
-		top: 0;
-		background-image: linear-gradient(180deg, rgba(0, 0, 0, .72), hsla(0, 0%, 100%, 0));
-	}
-
-	&-bottom {
-		bottom: 0;
+//- POST PAGE
+.banner {
+	.date {
+		color: $waterloo;
 	}
 }
 
-footer {
-	padding: 20px 0;
-	margin: 50px 0;
-	border-top: 1px solid #d4deeb;
-}
-
-
-@media (max-width: 840px) {
-  header a {
-    margin-left: auto;
-  }
+.content-post {
+	padding: 50px 0;
 }
