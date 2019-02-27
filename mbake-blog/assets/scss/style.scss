@@ -88,10 +88,15 @@ header {
 	padding: .4rem;
 }
 
+
 .card {
 	position: relative;
 	border: 20px solid #fff;
 	color: #fff;
+	width: auto;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
 	&-top, &-bottom {
 		position: absolute;
 		padding: 25px;

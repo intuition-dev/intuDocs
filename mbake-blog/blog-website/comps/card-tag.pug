@@ -3,10 +3,7 @@ card-tag
     .columns
       virtual(each='{items}')
         .column.col-6.col-sm-12
-          .card
-            .card-image
-              img.img-responsive.img-fit-cover(src='{img_url}')
-          
+          .card(style="background-image: url('{img_url}')") 
             .card-top
               button.btn.btn-primary button
               h3 { title }

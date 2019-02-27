@@ -939,9 +939,9 @@ header .social-icon{text-align:center;width:30px;height:30px;line-height:30px;ma
 .banner-home p{color:#7c8499;}
 .banner-home input,.banner-home button{border-radius:50px;}
 .column{padding:.4rem;}
-.card{position:relative;border:20px solid #fff;color:#fff;}
+.card{position:relative;border:20px solid #fff;color:#fff;width:auto;height:400px;background-size:cover;background-position:center;}
 .card-top,.card-bottom{position:absolute;padding:25px;left:0;}
 .card-top{top:0;background-image:linear-gradient(180deg,rgba(0,0,0,0.72),rgba(255,255,255,0));}
 .card-bottom{bottom:0;}
 footer{padding:20px 0;margin:50px 0;border-top:1px solid #d4deeb;}
-@media (max-width:840px){header a{margin-left:auto;}} /* mB v4.16.19 on 2019-02-27T17:20:47.486Z */
+@media (max-width:840px){header a{margin-left:auto;}} /* mB v4.16.19 on 2019-02-27T18:21:41.439Z */
