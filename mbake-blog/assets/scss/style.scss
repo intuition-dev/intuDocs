@@ -15,6 +15,38 @@ body {
   background-color: #ccd7e4;
   background-size: cover;
 	color: #333;
+
+	h1, h2 {
+		font-family: 'Bitter', serif;
+	}
+	p {
+		font-family: 'Open Sans', sans-serif;
+		color: #7c8499;
+    line-height: 25px;
+	}
+	a {
+    color: #333;
+	}
+	h1 {
+		font-size: 55px;
+    line-height: 60px;
+    font-weight: 500;
+	}
+}
+
+.banner, .banner-home {
+	display: flex;
+	align-items: center;
+	height: 300px;
+}
+
+.banner {
+	.date {
+		color: #7c8499;
+	}
+}
+.content {
+	padding: 50px 0;
 }
 
 header {
@@ -38,19 +70,10 @@ header {
 	}
 }
 
-.banner {
-	display: flex;
-	align-items: center;
+.banner-home {
 	height: 500px;
 	p {
 		color: #7c8499;
-	}
-
-	h1 {
-		font-family: 'Bitter', serif;
-		font-size: 55px;
-    line-height: 60px;
-    font-weight: 500;
 	}
 	input, button {
 		border-radius: 50px;
