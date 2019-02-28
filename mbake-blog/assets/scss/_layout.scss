@@ -33,7 +33,15 @@ header {
 
 
 footer {
+	display: flex;
+	justify-content: space-between;
+	color: #7c8499;
+	font-size: 13px;
 	padding: 20px 0;
-	margin: 50px 0;
+	margin: 50px;
 	border-top: 1px solid #d4deeb;
+	@media (max-width: 600px) {
+		flex-direction: column;
+		text-align: center;
+	}
 }

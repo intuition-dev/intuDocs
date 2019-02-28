@@ -2,4 +2,7 @@
     &.btn-link {
     color: $mine-shaft;
   }
+  &.btn-card {
+    @include button-variant($white);
+  }
 }
