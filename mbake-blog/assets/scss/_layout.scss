@@ -6,6 +6,12 @@ body {
 	color: $acadia;
 }
 
+//- Navbar
+
+.off-canvas .off-canvas-toggle {
+	top: auto;
+}
+
 header {
 	padding: 20px 0;
 	img {
@@ -35,12 +41,13 @@ header {
 footer {
 	display: flex;
 	justify-content: space-between;
-	color: #7c8499;
+	color: $waterloo;
 	font-size: 13px;
 	padding: 20px 0;
 	margin: 50px;
 	border-top: 1px solid #d4deeb;
 	@media (max-width: 600px) {
+		margin: 50px 20px;
 		flex-direction: column;
 		text-align: center;
 	}

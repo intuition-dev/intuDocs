@@ -5,7 +5,7 @@ mixin social()
   a.social-icon(href='#')
     i(class!=attributes.class)
 
-.off-canvas
+.off-canvas.flex-centered
   a.off-canvas-toggle.btn.btn-primary.btn-action.show-md(href='#sidebar-id')
     i.icon.icon-menu
       
@@ -21,7 +21,6 @@ mixin social()
             img.img-responsive(src=ROOT + 'assets/img/blog/logo.png')
         section.navbar-section.hide-md
           +link(ROOT + 'home', 'home')
-          +link(ROOT + '#', 'contact')
           +link(ROOT + 'view-model', 'View Model')
           +social(class="fab fa-facebook-f")
           +social(class="fab fa-instagram")

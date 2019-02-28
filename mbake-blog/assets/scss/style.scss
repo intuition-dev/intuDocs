@@ -4,8 +4,8 @@
 @import '../spectre/spectre-icons.scss';
 @import '_variables.sass';
 @import '_layout.scss';
-@import '_typography.scss';
 @import '_button.scss';
+@import '_typography.scss';
 @import '_components.scss';
 
 .banner, .banner-home {
@@ -22,6 +22,9 @@
 	}
 	input, button {
 		border-radius: 50px;
+	}
+	input.input-lg, button.btn-lg {
+		font-size: 14px;
 	}
 }
 

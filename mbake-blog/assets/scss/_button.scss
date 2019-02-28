@@ -2,7 +2,9 @@
     &.btn-link {
     color: $mine-shaft;
   }
-  &.btn-card {
-    @include button-variant($white);
-  }
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
