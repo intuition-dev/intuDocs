@@ -1,51 +1,58 @@
-html {
-   font-family: $font-family-theme1;
-    * {
-        font-family: inherit;
-    }
-}
 body {
-    background: $background-light-theme2;
+	font-family: $font-family;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/blog/background.png') repeat 70% 60%;
+  background-color: #ccd7e4;
+  background-size: cover;
+	color: $acadia;
 }
 
 .container {
-    padding: 0 25px;
+	@media (max-width: 960px) { padding: 0 15px;}
 }
 
-#router .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+//- Navbar
+
+.off-canvas .off-canvas-toggle {
+	top: auto;
 }
 
-@mixin diagonal-gradient($color-theme1-from, $color-theme1-to){
-	background: $color-theme1-from;
-    background: -moz-linear-gradient(-45deg,$color-theme1-from 0%,$color-theme1-from 20%,$color-theme1-to 82%,$color-theme1-to 100%);
-    background: -webkit-gradient(left top,right bottom,color-stop(0%,$color-theme1-from),color-stop(20%,$color-theme1-from),color-stop(82%,$color-theme1-to),color-stop(100%,$color-theme1-to));
-    background: -webkit-linear-gradient(-45deg,$color-theme1-from 0%,$color-theme1-from 20%,$color-theme1-to 82%,$color-theme1-to 100%);
-    background: -o-linear-gradient(-45deg,$color-theme1-from 0%,$color-theme1-from 20%,$color-theme1-to 82%,$color-theme1-to 100%);
-    background: -ms-linear-gradient(-45deg,$color-theme1-from 0%,$color-theme1-from 20%,$color-theme1-to 82%,$color-theme1-to 100%);
-    background: linear-gradient(135deg,$color-theme1-from 0%,$color-theme1-from 20%,$color-theme1-to 82%,$color-theme1-to 100%);
+.social-icon {
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 4px;
+	border-radius: 2px;
+	background-color: $white;
+	box-shadow: 1px 1px 3px 0 #c1cddb;
+	opacity: 0.60;
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
 }
 
-.line:after {
-    @include diagonal-gradient($color-secondary-theme1, $color-theme1);
-    content: "";
-    display: block;
-    height: 4px;
-    margin-top: 20px;
-    width: 70px;
+header {
+	padding: 20px 0;
+	img {
+	  width: 100px;
+	}
+	a {
+		@media (max-width: 840px) { margin-left: auto; }
+	}
 }
 
-.d-flex {
-    display: flex;
-}
+//- Footer
 
-.img-responsive {
-    max-width: 100%;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 0 15px;
-    }
+footer {
+	display: flex;
+	justify-content: space-between;
+	color: $waterloo;
+	font-size: 13px;
+	padding: 20px 0;
+	margin: 50px;
+	border-top: 1px solid #d4deeb;
+	@media (max-width: 960px) {margin: 50px 15px;}
+	@media (max-width: 600px) {
+		flex-direction: column;
+		text-align: center;
+	}
 }
