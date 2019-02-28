@@ -1,2 +1,0 @@
-- Getting hands on practice with new research and design methods
-- Becoming better at research, design, product management, marketing, or strategy

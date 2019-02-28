@@ -1,1 +1,0 @@
-# We offer different products, depending on the progress you're looking for

@@ -1,1 +1,0 @@
-*“The insights we discovered [with Idealized Innovation] have become the foundation for our sales, marketing, and new product development work.”* — Maggie Waples, SVP Yearbook Division 

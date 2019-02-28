@@ -1,1 +1,0 @@
-## Building successful products begins with knowing what consumers are *really* buying
