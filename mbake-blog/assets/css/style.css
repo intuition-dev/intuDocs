@@ -908,17 +908,21 @@ a.text-error:visited{color:#ff6003;}
 .icon-emoji::before{border-radius:50%;box-shadow:-.17em -.1em,.17em -.1em;height:.15em;width:.15em;}
 .icon-emoji::after{border:0.1rem solid currentColor;border-bottom-color:transparent;border-radius:50%;border-right-color:transparent;height:.5em;transform:translate(-50%,-40%) rotate(-135deg);width:.5em;}
 body{font-family:"Poppins",sans-serif;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("../img/blog/background.png") repeat 70% 60%;background-color:#ccd7e4;background-size:cover;color:#333;}
+@media (max-width:960px){.container{padding:0 15px;}}
 .off-canvas .off-canvas-toggle{top:auto;}
+.social-icon{text-align:center;width:30px;height:30px;line-height:30px;margin:0 4px;border-radius:2px;background-color:#fff;box-shadow:1px 1px 3px 0 #c1cddb;opacity:0.60;transition:all 400ms ease;}
 header{padding:20px 0;}
 header img{width:100px;}
-header .social-icon{text-align:center;width:30px;height:30px;line-height:30px;margin-right:4px;border-radius:2px;background-color:#fff;box-shadow:1px 1px 3px 0 #c1cddb;opacity:0.60;transition:all 400ms ease;}
 @media (max-width:840px){header a{margin-left:auto;}}
 footer{display:flex;justify-content:space-between;color:#7c8499;font-size:13px;padding:20px 0;margin:50px;border-top:1px solid #d4deeb;}
-@media (max-width:600px){footer{margin:50px 20px;flex-direction:column;text-align:center;}}
+@media (max-width:960px){footer{margin:50px 15px;}}
+@media (max-width:600px){footer{flex-direction:column;text-align:center;}}
 .btn.btn-link{color:#222222;}
 button{text-transform:uppercase;letter-spacing:1px;}
 h1,h2{font-family:'Bitter',serif;}
 h1{font-size:55px;line-height:60px;font-weight:500;}
+@media (max-width:840px){h1{font-size:45px;line-height:55px;}}
+@media (max-width:480px){h1{font-size:32px;line-height:42px;}}
 p{font-family:'Open Sans',sans-serif;color:#7c8499;line-height:25px;}
 a{color:#333;}
 .cards-container .column{padding:.4rem;}
@@ -936,4 +940,4 @@ a{color:#333;}
 .banner-home input,.banner-home button{border-radius:50px;}
 .banner-home input.input-lg,.banner-home button.btn-lg{font-size:14px;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-02-28T15:02:01.909Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-02-28T15:58:27.178Z */

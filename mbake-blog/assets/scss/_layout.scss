@@ -6,10 +6,28 @@ body {
 	color: $acadia;
 }
 
+.container {
+	@media (max-width: 960px) { padding: 0 15px;}
+}
+
 //- Navbar
 
 .off-canvas .off-canvas-toggle {
 	top: auto;
+}
+
+.social-icon {
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 4px;
+	border-radius: 2px;
+	background-color: $white;
+	box-shadow: 1px 1px 3px 0 #c1cddb;
+	opacity: 0.60;
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
 }
 
 header {
@@ -17,26 +35,12 @@ header {
 	img {
 	  width: 100px;
 	}
-
-	.social-icon {
-	  text-align: center;
-	  width: 30px;
-	  height: 30px;
-	  line-height: 30px;
-	  margin-right: 4px;
-	  border-radius: 2px;
-	  background-color: $white;
-	  box-shadow: 1px 1px 3px 0 #c1cddb;
-	  opacity: 0.60;
-	  -webkit-transition: all 400ms ease;
-	  transition: all 400ms ease;
-	}
-
 	a {
 		@media (max-width: 840px) { margin-left: auto; }
 	}
 }
 
+//- Footer
 
 footer {
 	display: flex;
@@ -46,8 +50,8 @@ footer {
 	padding: 20px 0;
 	margin: 50px;
 	border-top: 1px solid #d4deeb;
+	@media (max-width: 960px) {margin: 50px 15px;}
 	@media (max-width: 600px) {
-		margin: 50px 20px;
 		flex-direction: column;
 		text-align: center;
 	}

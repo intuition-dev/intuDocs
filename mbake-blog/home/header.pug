@@ -10,7 +10,16 @@ mixin social()
     i.icon.icon-menu
       
   #sidebar-id.off-canvas-sidebar
-    
+    ul.nav
+      li.nav-item.active
+        +link(ROOT + 'home', 'home')
+      li.nav-item
+        +link(ROOT + 'view-model', 'view model')
+      li.nav-item
+        +social(class="fab fa-facebook-f")
+        +social(class="fab fa-instagram")
+        +social(class="fab fa-twitter")
+        +social(class="fab fa-google-plus-g")
     
   a.off-canvas-overlay(href='#close')
   
@@ -21,7 +30,7 @@ mixin social()
             img.img-responsive(src=ROOT + 'assets/img/blog/logo.png')
         section.navbar-section.hide-md
           +link(ROOT + 'home', 'home')
-          +link(ROOT + 'view-model', 'View Model')
+          +link(ROOT + 'view-model', 'view model')
           +social(class="fab fa-facebook-f")
           +social(class="fab fa-instagram")
           +social(class="fab fa-twitter")

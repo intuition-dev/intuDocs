@@ -11,6 +11,7 @@
       "paragraph_1": "The rich text element allows you to create and format headings, paragraphs, block-quotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
       "paragraph_2": "For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Headings, paragraphs, block-quotes, figures, images, and figure captions can all be styled.",
       "color": "#35c52f",
+      "topic": "art work",
       "publish1": true,
       "url": "post-1",
       "index": 0
@@ -23,6 +24,7 @@
       "paragraph_1": "The rich text element allows you to create and format headings, paragraphs, block-quotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
       "paragraph_2": "For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Headings, paragraphs, block-quotes, figures, images, and figure captions can all be styled.",
       "color": "#2281e9",
+      "topic": "branding",
       "publish1": true,
       "url": "post-2",
       "index": 1
@@ -35,6 +37,7 @@
       "paragraph_1": "The rich text element allows you to create and format headings, paragraphs, block-quotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
       "paragraph_2": "For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Headings, paragraphs, block-quotes, figures, images, and figure captions can all be styled.",
       "color": "#F44336",
+      "topic": "design",
       "publish1": true,
       "url": "post-3",
       "index": 2
@@ -47,6 +50,7 @@
       "paragraph_1": "The rich text element allows you to create and format headings, paragraphs, block-quotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
       "paragraph_2": "For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Headings, paragraphs, block-quotes, figures, images, and figure captions can all be styled.",
       "color": "#8f00ff",
+      "topic": "photography",
       "publish1": true,
       "url": "post-4",
       "index": 3
@@ -59,6 +63,7 @@
       "paragraph_1": "The rich text element allows you to create and format headings, paragraphs, block-quotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.",
       "paragraph_2": "For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Headings, paragraphs, block-quotes, figures, images, and figure captions can all be styled.",
       "color": "#35c52f",
+      "topic": "art work",
       "publish1": true,
       "url": "post-5",
       "index": 4
