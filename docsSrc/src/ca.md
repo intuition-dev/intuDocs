@@ -33,7 +33,7 @@
 
 1. Then on linux box install node, yarn and mbake.
 1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
-1. Change some file, .pug or .ts or readme - `$ mbake .` it and push to the git repository.
+1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
 
 Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh.
 
