@@ -1,4 +1,0 @@
-body{background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url("../img/blog/background.png") repeat 100% 100%;background-color:#ccd7e4;background-size:cover;}
-header img{width:100px;}
-header .social-icon{text-align:center;width:30px;height:30px;line-height:30px;margin-right:4px;border-radius:2px;background-color:#fff;box-shadow:1px 1px 3px 0 #c1cddb;opacity:0.60;transition:all 400ms ease;}
-@media (max-width:840px){header a{margin-left:auto;}} /* mB v4.16.19 on 2019-02-26T16:29:24.795Z */

@@ -14,8 +14,6 @@ mixin social()
       li.nav-item.active
         +link(ROOT + 'home', 'home')
       li.nav-item
-        +link(ROOT + 'view-model', 'view model')
-      li.nav-item
         +social(class="fab fa-facebook-f")
         +social(class="fab fa-instagram")
         +social(class="fab fa-twitter")
@@ -30,7 +28,6 @@ mixin social()
             img.img-responsive(src=ROOT + 'assets/img/blog/logo.png')
         section.navbar-section.hide-md
           +link(ROOT + 'home', 'home')
-          +link(ROOT + 'view-model', 'view model')
           +social(class="fab fa-facebook-f")
           +social(class="fab fa-instagram")
           +social(class="fab fa-twitter")
