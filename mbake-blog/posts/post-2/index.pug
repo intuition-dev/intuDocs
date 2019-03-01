@@ -3,10 +3,8 @@ extends /layout/layout
 block main
   .banner
     div
-      h1= title
+      include:metaMD title.md
       div.date= date
   img.img-responsive(src=img_url)
   .content-post
-    h2= subtitle
-    p= paragraph_1
-    p= paragraph_2
+    include:metaMD text.md
