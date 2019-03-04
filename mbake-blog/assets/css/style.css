@@ -907,6 +907,12 @@ a.text-error:visited{color:#ff6003;}
 .icon-emoji{border:0.1rem solid currentColor;border-radius:50%;}
 .icon-emoji::before{border-radius:50%;box-shadow:-.17em -.1em,.17em -.1em;height:.15em;width:.15em;}
 .icon-emoji::after{border:0.1rem solid currentColor;border-bottom-color:transparent;border-radius:50%;border-right-color:transparent;height:.5em;transform:translate(-50%,-40%) rotate(-135deg);width:.5em;}
+h1,h2{font-family:'Bitter',serif;}
+h1{font-size:55px;line-height:60px;font-weight:500;}
+@media (max-width:840px){h1{font-size:45px;line-height:55px;}}
+@media (max-width:480px){h1{font-size:32px;line-height:42px;}}
+p{font-family:'Open Sans',sans-serif;color:#7c8499;line-height:25px;}
+.social-icon{color:#333 !important;}
 .home-wrapper{background:linear-gradient(rgba(34,147,215,0.8),rgba(34,147,215,0.8)),url("../img/home-bg.jpg") no-repeat center center;background-size:cover;color:#fff;text-align:center;position:relative;}
 .home-wrapper .shape{position:absolute;bottom:0;right:0;left:0;top:80%;fill:currentColor;}
 body{font-family:"Poppins",sans-serif;}
@@ -923,12 +929,6 @@ footer{display:flex;justify-content:space-between;color:#7c8499;font-size:13px;p
 @media (max-width:600px){footer{flex-direction:column;text-align:center;}}
 .btn.btn-link{color:#fff;}
 button{text-transform:uppercase;letter-spacing:1px;}
-h1,h2{font-family:'Bitter',serif;}
-h1{font-size:55px;line-height:60px;font-weight:500;}
-@media (max-width:840px){h1{font-size:45px;line-height:55px;}}
-@media (max-width:480px){h1{font-size:32px;line-height:42px;}}
-p{font-family:'Open Sans',sans-serif;color:#7c8499;line-height:25px;}
-a{color:#333;}
 .cards-container .column{padding:.4rem;}
 .cards-container .card{box-shadow:0 0.25rem 1rem rgba(48,55,66,0.15);border:0;}
 .cards-container .card button{font-size:10px;padding:5px 15px;border-radius:5px;background-color:#5dbcd2;border-color:#5dbcd2;color:#fff;margin-bottom:12px;}
@@ -937,4 +937,4 @@ a{color:#333;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T21:27:58.832Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T22:51:20.934Z */
