@@ -918,7 +918,7 @@ p{font-family:'Open Sans',sans-serif;color:#7c8499;line-height:25px;}
 body{font-family:"Poppins",sans-serif;}
 @media (max-width:960px){.container{padding:0 15px;}}
 .off-canvas .off-canvas-toggle{top:auto;background:#fff;border-color:#fff;color:#000;}
-.off-canvas .off-canvas-toggle:hover{background-color:#3F3FA0;border-color:#3F3FA0;}
+.off-canvas .off-canvas-toggle:hover{background-color:#222222;border-color:#222222;}
 .social-icon i{text-align:center;width:30px;height:30px;line-height:30px;margin:0 5px;border-radius:2px;background-color:#fff;box-shadow:1px 1px 3px 0 #c1cddb;opacity:0.60;transition:all 400ms ease;}
 header{padding:20px 0;}
 header .navbar-brand{color:#fff;}
@@ -938,4 +938,4 @@ button{text-transform:uppercase;letter-spacing:1px;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T23:50:32.799Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T23:56:16.568Z */
