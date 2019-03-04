@@ -16,19 +16,19 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Bitter', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
-      
-    script(src='https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js')
+    
     script(src='https://cdn.jsdelivr.net/npm/riot@3.13.2/riot.min.js')
     script(src='https://unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js') 
-    script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js')
     script(src=ROOT+ 'home/comps/card-comp.min.js') 
+      
+    script(src='https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js')
     script(src= ROOT + 'assets/js/setup.js')
-    
   body
     
     include /home/header
     
-    .container.grid-lg  
+    .container.grid-xl  
       block main
       
     include /home/footer

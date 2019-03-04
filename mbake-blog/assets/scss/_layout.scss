@@ -27,6 +27,13 @@ body {
 
 .off-canvas .off-canvas-toggle {
 	top: auto;
+	background: $white;
+	border-color: $white;
+	color: $black;
+	&:hover {
+		background-color: #3F3FA0;
+		border-color: #3F3FA0;
+	}
 }
 
 .social-icon i {
@@ -58,6 +65,11 @@ header {
 	a {
 		@media (max-width: 840px) { margin-left: auto; }
 	}
+}
+
+.custom-pagination {
+	margin: 1rem auto;
+	display: table;
 }
 
 //- Footer
