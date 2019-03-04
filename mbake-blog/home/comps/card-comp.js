@@ -1,5 +1,5 @@
 
-riot.tag2('card-comp', '<div class="cards-container"> <div class="columns"> <virtual each="{items}"> <div class="column col-6 col-sm-12"> <div class="card" riot-style="background-image: url(\'{img_url}\')"> <div class="card-top"> <button class="btn btn-primary" riot-style="--color: {color}">{topic}</button> <h3>{title}</h3> <div>{date} | Eldred Braun</div> </div> <div class="card-bottom"><a href="{url}"> <button class="btn btn-primary">read More</button></a></div> </div> </div> </virtual> </div> </div>', '', '', function(opts) {
+riot.tag2('card-comp', '<div class="cards-container"> <div class="columns"> <virtual each="{items}"> <div class="column col-6 col-sm-12"> <div class="card"> <div class="card-image"><a href="{url}"><img class="img-responsive" riot-src="{img_url}"></a></div> <div class="card-header"> <div class="card-title h5">{title}</div> <div class="card-subtitle text-gray"> <i class="far fa-clock"> </i> {date}</div> </div> <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> <div class="card-footer"> <button class="btn btn-primary">{topic}</button> </div> </div> </div> </virtual> </div> </div>', '', '', function(opts) {
     console.info('oh hi tag');
     this.on('*', function(evt) {
         console.info('riot', evt);

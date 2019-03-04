@@ -11,12 +11,12 @@
 .banner, .banner-home {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	height: 300px;
 }
 
 //- HOME PAGE
 .banner-home {
+	justify-content: center;
 	height: 500px;
 	p {
 		color: $white;

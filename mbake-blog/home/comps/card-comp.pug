@@ -3,15 +3,18 @@ card-comp
     .columns
       virtual(each='{items}')
         .column.col-6.col-sm-12
-          .card(style="background-image: url('{img_url}')") 
-            .card-top
-              button.btn.btn-primary(style="--color: {color}") { topic }
-              h3 { title }
-              div { date } | Eldred Braun
-            .card-bottom
+          .card
+            .card-image
               a(href='{url}')
-                button.btn.btn-primary read More
-            
+                img.img-responsive(src='{img_url}')
+            .card-header
+              .card-title.h5 { title }
+              .card-subtitle.text-gray 
+                i.far.fa-clock 
+                |  { date }
+            .card-body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .card-footer
+              button.btn.btn-primary { topic }
 
   script.
     console.info('oh hi tag');
