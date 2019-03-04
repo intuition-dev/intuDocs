@@ -907,7 +907,8 @@ a.text-error:visited{color:#ff6003;}
 .icon-emoji{border:0.1rem solid currentColor;border-radius:50%;}
 .icon-emoji::before{border-radius:50%;box-shadow:-.17em -.1em,.17em -.1em;height:.15em;width:.15em;}
 .icon-emoji::after{border:0.1rem solid currentColor;border-bottom-color:transparent;border-radius:50%;border-right-color:transparent;height:.5em;transform:translate(-50%,-40%) rotate(-135deg);width:.5em;}
-.home-wrapper{background-image:url("../img/home-bg.jpg") no-repeat center center;background-color:rgba(34,147,215,0.8);background-size:cover;color:#fff;text-align:center;}
+.home-wrapper{background:linear-gradient(rgba(34,147,215,0.8),rgba(34,147,215,0.8)),url("../img/home-bg.jpg") no-repeat center center;background-size:cover;color:#fff;text-align:center;position:relative;}
+.home-wrapper .shape{position:absolute;bottom:0;right:0;left:0;top:80%;fill:currentColor;}
 body{font-family:"Poppins",sans-serif;}
 @media (max-width:960px){.container{padding:0 15px;}}
 .off-canvas .off-canvas-toggle{top:auto;}
@@ -934,4 +935,4 @@ a{color:#333;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T19:50:23.653Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-04T21:07:57.690Z */
