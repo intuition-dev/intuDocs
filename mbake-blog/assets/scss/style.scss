@@ -11,6 +11,7 @@
 .banner, .banner-home {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 300px;
 }
 
@@ -18,13 +19,7 @@
 .banner-home {
 	height: 500px;
 	p {
-		color: $waterloo;
-	}
-	input, button {
-		border-radius: 50px;
-	}
-	input.input-lg, button.btn-lg {
-		font-size: 14px;
+		color: $white;
 	}
 }
 
