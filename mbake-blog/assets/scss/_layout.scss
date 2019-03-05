@@ -5,6 +5,23 @@
 	color: $white;
 	text-align: center;
 	position: relative;
+	.topbar-wrapper {
+		background: rgba(0,0,0,0.2);
+		border-color: rgba(0,0,0,0);
+		padding: 5px 0px;
+		.topbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 .4rem;
+			@media (max-width: 600px) {
+				flex-direction: column;
+			}
+			.social-icon {
+				color: $white !important;
+			}
+		}
+	}
 	.shape {
 		position: absolute;
 		bottom: 0;
@@ -43,11 +60,6 @@ body {
 	line-height: 30px;
 	margin: 0 5px;
 	border-radius: 2px;
-	background-color: $white;
-	box-shadow: 1px 1px 3px 0 #c1cddb;
-	opacity: 0.60;
-	-webkit-transition: all 400ms ease;
-	transition: all 400ms ease;
 }
 
 

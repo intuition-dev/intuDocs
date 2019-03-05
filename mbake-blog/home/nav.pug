@@ -7,10 +7,8 @@ mixin link(path, name)
       
   #sidebar-id.off-canvas-sidebar
     ul.nav
-      li.nav-item.active
-        +link(ROOT + 'home', 'home')
       li.nav-item
-        include social.pug
+        +link(ROOT + 'home', 'home')
     
   a.off-canvas-overlay(href='#close')
   
@@ -21,4 +19,3 @@ mixin link(path, name)
             h2 mBake
         section.navbar-section.hide-md
           +link(ROOT + 'home', 'home')
-          include social.pug
