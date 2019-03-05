@@ -171,28 +171,27 @@
 </li>
 </ol>
 <h3 id="mount-folder-from-linux-machine-on-another-linux-machine">Mount folder from Linux machine on another Linux machine</h3>
-<p>&lt;!---
-2. Login to CA and create a <code>new connection</code> to connect to your recently created Linux box in Digital Ocean.
-3. Open terminal in CA in this linux box and install <code>sshfs</code> for mount:</p>
-<pre><code>    $ apt install aptitude
-    $ apt-add-repository universe
-    $ sudo apt-get install sshfs
-    $ mkdir mount // change [mount] with any name you like
-    $ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
-    // ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in])
+<!-- 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
+3. Open terminal in CA in this linux box and install `sshfs` for mount:
 
-now you will have a mount directory in your linux box that has mounted CDN Storage inside.
-For more information on installing sshfs on linux check [Using SSHFS To Mount Remote Directories](https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/)
-</code></pre>
-<ol>
-<li>Then on linux box install node, yarn and mbake.</li>
-<li>Via git, pull the latest version of some project from the git repository in your <code>mount/www</code> folder.</li>
-<li>Change some file, .pug or .js or readme - <code>$ mbake .</code> it and push to the git repository.</li>
-</ol>
-<p>Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh.</p>
+        $ apt install aptitude
+        $ apt-add-repository universe
+        $ sudo apt-get install sshfs
+        $ mkdir mount // change [mount] with any name you like
+        $ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
+        // ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in]) 
+
+    now you will have a mount directory in your linux box that has mounted CDN Storage inside.
+    For more information on installing sshfs on linux check [Using SSHFS To Mount Remote Directories](https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/)
+
+1. Then on linux box install node, yarn and mbake.
+1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
+1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
+
+Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh. -->
+
 <p>In the <a href="/pug_static_data/">next tutorial </a> you will learn about Pug and static data binding.</p>
-<p>NEXT: Go to <a href="/pug_static_data/">Templating/Pug and static binding</a>.
---&gt;</p>
+<p>NEXT: Go to <a href="/pug_static_data/">Templating/Pug and static binding</a>.</p>
               
             </div>
           </div>

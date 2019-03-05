@@ -14,8 +14,8 @@
 
 
 ###  Mount folder from Linux machine on another Linux machine
-<!---
-2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
+
+<!-- 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
 3. Open terminal in CA in this linux box and install `sshfs` for mount:
 
 		$ apt install aptitude
@@ -32,9 +32,8 @@
 1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
 1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
 
-Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh.
+Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh. -->
 
 In the [next tutorial ](/pug_static_data/) you will learn about Pug and static data binding.
 
 NEXT: Go to [Templating/Pug and static binding](/pug_static_data/).
--->
