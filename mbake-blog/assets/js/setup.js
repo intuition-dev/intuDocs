@@ -19,7 +19,6 @@ loadjs([
    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
 
    , 'https://cdn.jsdelivr.net/npm/fuse.js@3.3.0/dist/fuse.min.js'
-   // , ROOT + 'assets/css/gridform.css'
    , ROOT + 'assets/css/style.css'
    , ROOT + 'assets/js/ui.js'
 
