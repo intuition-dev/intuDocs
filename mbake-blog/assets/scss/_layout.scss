@@ -89,9 +89,9 @@ footer {
 	color: $waterloo;
 	font-size: 13px;
 	padding: 20px 0;
-	margin: 50px;
+	margin: 50px 15px;
 	border-top: 1px solid #d4deeb;
-	@media (max-width: 1370px) {margin: 50px 15px;}
+	@media (min-width: 1500px) {margin: 50px;}
 	@media (max-width: 600px) {
 		flex-direction: column;
 		text-align: center;
