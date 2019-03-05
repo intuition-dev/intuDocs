@@ -3,10 +3,10 @@ basedir: ../../
 ROOT: '/'
 
 title: Lorem ipsum dolor sit amet
-date: August 6, 2018
-img_url: /assets/img/item-6.jpg
+date: August 7, 2018
+img_url: /assets/img/item-7.jpg
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 paragraph_1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 paragraph_2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-topic: robots
+topic: VR
 publish1: true
