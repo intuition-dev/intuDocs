@@ -930,7 +930,7 @@ header .navbar-brand:visited{color:#fff;}
 @media (max-width:840px){header a{margin-left:auto;}}
 .custom-pagination{margin:1rem auto;display:table;}
 footer{display:flex;justify-content:space-between;color:#7c8499;font-size:13px;padding:20px 0;margin:50px;border-top:1px solid #d4deeb;}
-@media (max-width:960px){footer{margin:50px 15px;}}
+@media (max-width:1280px){footer{margin:50px 15px;}}
 @media (max-width:600px){footer{flex-direction:column;text-align:center;}}
 .btn.btn-link{color:#fff;}
 button{text-transform:uppercase;letter-spacing:1px;}
@@ -942,4 +942,4 @@ button{text-transform:uppercase;letter-spacing:1px;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T12:45:00.709Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T12:56:51.895Z */
