@@ -15,8 +15,6 @@ $(document).ready(function () {
 })
 
 loadjs([
-    //'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
-
    'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
 
@@ -24,13 +22,10 @@ loadjs([
    // , ROOT + 'assets/css/gridform.css'
    , ROOT + 'assets/css/style.css'
    , ROOT + 'assets/js/ui.js'
-//, ROOT + 'assets/js/lorem.js'
 
-   //, 'https://cdn.jsdelivr.net/npm/handlebars@4.0.11/dist/handlebars.min.js'
    , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.min.js'
    , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.css'
 
-   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
    , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
    , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
    , '/assets/js/jquery.disableAutoFill.js'

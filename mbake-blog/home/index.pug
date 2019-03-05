@@ -19,12 +19,6 @@ block main
     
        const tag = riot.mount('card-comp')[0]; 
        
-       /* depp.require(['cssJs'], function() {
-            pgContainer =[];
-            pgContCount=-1;
-            setupPg(guessShow(), posts);
-         }); */
-       
        loadjs.ready(['cssJs','posts'], function () {
           const srchOptions = {
              shouldSort: true,
