@@ -1,0 +1,13 @@
+extends /layout/layout
+
+block main
+  .banner
+    div
+      include:metaMD title.md
+      .date
+        i.far.fa-clock
+        |  
+        span=date   
+  img.img-responsive(src=img_url)
+  .content-post
+    include:metaMD text.md
