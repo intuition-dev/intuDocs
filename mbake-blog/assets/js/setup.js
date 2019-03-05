@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     // are we running in native app or in a browser?
     window.isphone = false
@@ -7,7 +6,7 @@ $(document).ready(function () {
         window.isphone = true
     }
 
-    console.info('phonegap?', window.isphone)
+    console.log('phonegap?', window.isphone)
     if (window.isphone) { // //file is a browser
         document.addEventListener("deviceready", onDeviceReady, false)
     } else {
@@ -15,33 +14,42 @@ $(document).ready(function () {
     }
 })
 
-depp.define({
-    'fonts': [
-        'css!https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Lora:400,400i,700,700i'
-    ],
-    'cssJs': [
-        '#fonts'
-        , ROOT + 'assets/css/style.css'
+loadjs([
+    //'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
 
-        , 'https://cdn.jsdelivr.net/npm/fuse.js@3.3.0/dist/fuse.min.js'
+   'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
+   , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
 
-        , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.min.js'
-        , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.css'
-        , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
-        , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
-        , '/assets/js/jquery.disableAutoFill.js'
-        , ROOT + 'assets/js/ui.js'
+   , 'https://cdn.jsdelivr.net/npm/fuse.js@3.3.0/dist/fuse.min.js'
+   // , ROOT + 'assets/css/gridform.css'
+   , ROOT + 'assets/css/style.css'
+   , ROOT + 'assets/js/ui.js'
+//, ROOT + 'assets/js/lorem.js'
 
-   ]
-})//define
+   //, 'https://cdn.jsdelivr.net/npm/handlebars@4.0.11/dist/handlebars.min.js'
+   , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.min.js'
+   , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.css'
 
+   , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
+   , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
+   , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
+   , '/assets/js/jquery.disableAutoFill.js'
+
+
+], 'cssJs')
 
 function onDeviceReady() { // nothing will work before this
-    console.info('deviceready!')
+    console.log('deviceready!')
+    loadjs.done('device')
 }
 
 function cssLoaded() {// called by the style sheet in layout
+    loadjs.done('css')
 }
+
+loadjs.ready(['css', 'device', 'cssJs'], function () {
+    loadjs.done('style')
+})
 
 let _scSz = true
 function setupUserSzSc() {
@@ -54,20 +62,20 @@ function setupUserSzSc() {
 }//()
 
 // usage: ////////////////////////////////////////////////////////////////////
-depp.require(['cssJs'], function() {
-    setupUserSzSc();
+loadjs.ready(['style'], function () {// 'show' page, ex: unhide
+    setupUserSzSc()
 
-    $('.delayShowing').removeClass('delayShowing'); // show
+    $('.delayShowing').removeClass('delayShowing') // show
 
     setInterval(function () {
         if (_scSz) {
-            _scSz = false;
-            if (typeof userSzSc !== "undefined") userSzSc();
+            _scSz = false
+            if (typeof userSzSc !== "undefined") userSzSc()
         }
-    }, 150);
+    }, 150)
 
-    console.info('style done', Date.now() - _start);
-});
+    console.log('style done', Date.now() - _start)
+})//ready
 
 // util: /////////////////////////////////////////////////////////////////////
 function getUrlVars() {
@@ -94,11 +102,3 @@ function inView(el) { // is element in viewport
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     )
 }
-
-function disE(evtName, msg) {
-   dispatchEvent(new CustomEvent(evtName, { detail: msg }))
-}
-// eg
-addEventListener('bla', function(evt) {
-   console.info(evt.detail)
-})
