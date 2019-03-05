@@ -49,15 +49,6 @@
 	}
 }
 
-.social-icon i {
-	text-align: center;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	margin: 0 5px;
-	border-radius: 2px;
-}
-
 header {
 	padding: 20px 0;
 	.navbar-brand {
@@ -70,6 +61,21 @@ header {
 		@media (max-width: 840px) { margin-left: auto; }
 	}
 }
+
+//- social
+
+.social-icon {
+  color: $acadia !important;
+	i {
+		text-align: center;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		margin: 0 5px;
+		border-radius: 2px;
+	}
+}
+
 
 //- Pagination
 

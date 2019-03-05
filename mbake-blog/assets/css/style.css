@@ -911,7 +911,6 @@ h1{font-size:55px;line-height:60px;font-weight:500;}
 @media (max-width:840px){h1{font-size:45px;line-height:55px;}}
 @media (max-width:480px){h1{font-size:32px;line-height:42px;}}
 p{color:#7c8499;line-height:25px;}
-.social-icon{color:#333 !important;}
 @media (max-width:960px){.container{padding:0 15px;}}
 .home-wrapper{background:linear-gradient(rgba(34,147,215,0.8),rgba(34,147,215,0.8)),url("../img/home-bg.jpg") no-repeat center center;background-size:cover;color:#fff;text-align:center;position:relative;}
 .home-wrapper .topbar-wrapper{background:rgba(0,0,0,0.2);border-color:rgba(0,0,0,0);padding:5px 0px;}
@@ -921,16 +920,18 @@ p{color:#7c8499;line-height:25px;}
 .home-wrapper .shape{position:absolute;bottom:0;right:0;left:0;top:80%;fill:currentColor;}
 .off-canvas .off-canvas-toggle{top:auto;background:#fff;border-color:#fff;color:#000;}
 .off-canvas .off-canvas-toggle:hover{background-color:#222222;border-color:#222222;}
-.social-icon i{text-align:center;width:30px;height:30px;line-height:30px;margin:0 5px;border-radius:2px;}
 header{padding:20px 0;}
 header .navbar-brand{color:#fff;}
 header .navbar-brand:visited{color:#fff;}
 @media (max-width:840px){header a{margin-left:auto;}}
+.social-icon{color:#333 !important;}
+.social-icon i{text-align:center;width:30px;height:30px;line-height:30px;margin:0 5px;border-radius:2px;}
 .custom-pagination{margin:1rem auto;display:table;}
 footer{display:flex;justify-content:space-between;color:#7c8499;font-size:13px;padding:20px 0;margin:50px 15px;border-top:1px solid #d4deeb;}
 @media (min-width:1500px){footer{margin:50px;}}
 @media (max-width:600px){footer{flex-direction:column;text-align:center;}}
 .btn.btn-link{color:#fff;}
+.btn.btn-link:hover{border-bottom:2px solid #fff;color:#fff;}
 button{text-transform:uppercase;letter-spacing:1px;}
 .section-cards{display:flex;justify-content:flex-start;margin:1rem 0;}
 .section-cards input,.section-cards button{border-radius:50px;}
@@ -946,4 +947,4 @@ button{text-transform:uppercase;letter-spacing:1px;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T22:38:50.850Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T22:51:46.204Z */

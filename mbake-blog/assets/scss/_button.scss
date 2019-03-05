@@ -1,6 +1,10 @@
 .btn {
     &.btn-link {
     color: $white;
+    &:hover {
+      border-bottom: 2px solid $white;
+      color: $white;
+    }
   }
 }
 
