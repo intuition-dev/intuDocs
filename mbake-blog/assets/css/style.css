@@ -907,20 +907,18 @@ a.text-error:visited{color:#ff6003;}
 .icon-emoji{border:0.1rem solid currentColor;border-radius:50%;}
 .icon-emoji::before{border-radius:50%;box-shadow:-.17em -.1em,.17em -.1em;height:.15em;width:.15em;}
 .icon-emoji::after{border:0.1rem solid currentColor;border-bottom-color:transparent;border-radius:50%;border-right-color:transparent;height:.5em;transform:translate(-50%,-40%) rotate(-135deg);width:.5em;}
-h1,h2{font-family:'Bitter',serif;}
 h1{font-size:55px;line-height:60px;font-weight:500;}
 @media (max-width:840px){h1{font-size:45px;line-height:55px;}}
 @media (max-width:480px){h1{font-size:32px;line-height:42px;}}
-p{font-family:'Open Sans',sans-serif;color:#7c8499;line-height:25px;}
+p{color:#7c8499;line-height:25px;}
 .social-icon{color:#333 !important;}
+@media (max-width:960px){.container{padding:0 15px;}}
 .home-wrapper{background:linear-gradient(rgba(34,147,215,0.8),rgba(34,147,215,0.8)),url("../img/home-bg.jpg") no-repeat center center;background-size:cover;color:#fff;text-align:center;position:relative;}
 .home-wrapper .topbar-wrapper{background:rgba(0,0,0,0.2);border-color:rgba(0,0,0,0);padding:5px 0px;}
 .home-wrapper .topbar-wrapper .topbar{display:flex;justify-content:space-between;align-items:center;padding:0 .4rem;}
 @media (max-width:600px){.home-wrapper .topbar-wrapper .topbar{flex-direction:column;}}
 .home-wrapper .topbar-wrapper .topbar .social-icon{color:#fff !important;}
 .home-wrapper .shape{position:absolute;bottom:0;right:0;left:0;top:80%;fill:currentColor;}
-body{font-family:"Poppins",sans-serif;}
-@media (max-width:960px){.container{padding:0 15px;}}
 .off-canvas .off-canvas-toggle{top:auto;background:#fff;border-color:#fff;color:#000;}
 .off-canvas .off-canvas-toggle:hover{background-color:#222222;border-color:#222222;}
 .social-icon i{text-align:center;width:30px;height:30px;line-height:30px;margin:0 5px;border-radius:2px;}
@@ -942,4 +940,4 @@ button{text-transform:uppercase;letter-spacing:1px;}
 .banner-home{justify-content:center;height:500px;}
 .banner-home p{color:#fff;}
 .banner .date{color:#7c8499;}
-.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T13:37:22.877Z */
+.content-post{padding:50px 0;} /* mB v4.16.23 on 2019-03-05T17:24:25.140Z */

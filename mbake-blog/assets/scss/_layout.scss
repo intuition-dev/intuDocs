@@ -1,3 +1,7 @@
+.container {
+	@media (max-width: 960px) { padding: 0 15px;}
+}
+
 // HOME
 .home-wrapper {
 	background: linear-gradient(rgba(34,147,215, 0.8), rgba(34,147,215, 0.8)), url('../img/home-bg.jpg') no-repeat center center;
@@ -32,14 +36,6 @@
 	}
 }
 
-body {
-	font-family: $font-family;
-}
-
-.container {
-	@media (max-width: 960px) { padding: 0 15px;}
-}
-
 //- Navbar
 
 .off-canvas .off-canvas-toggle {
@@ -62,7 +58,6 @@ body {
 	border-radius: 2px;
 }
 
-
 header {
 	padding: 20px 0;
 	.navbar-brand {
@@ -75,6 +70,8 @@ header {
 		@media (max-width: 840px) { margin-left: auto; }
 	}
 }
+
+//- Pagination
 
 .custom-pagination {
 	margin: 1rem auto;
