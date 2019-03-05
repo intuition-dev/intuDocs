@@ -57,7 +57,7 @@ mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any 
         // or 
         $ caddy 
         // or (to leave caddy server running after you'll quit the terminal or close the CA tab)
-        & nohup caddy &
+        $ nohup caddy &
 
 1. In browser open:
         http://157.230.189.157:8080/webdav
@@ -73,9 +73,11 @@ mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any 
 
 1. Create an account on [CDN77](https://www.cdn77.com/) if you don't already have one.
 
-1. Go to [CDN 77](https://client.cdn77.com) and create a resource for your linux machine: select `My Origin` and in the `domain` field type in the ip address of your linux machine
+1. Go to [CDN 77](https://client.cdn77.com) and create a resource for your linux machine: select `My Origin`, select `http://` and in the `domain` field type in the ip address of your linux machine and specify the port (8080 in our case)
 
-1. To verify that the mount is working, you can edit some file and check if changes applied in the browser via the Endpoint URL from your recently created CDN Resource.
+1. Go to tab `other settings` and select `cache expiry` -- `10 minutes`, then go to `Purge` tab and `purge all files`. This action is needed to reduce the time of files caching.
+
+1. To verify that the mount is working, you can edit some file and check if changes applied in the browser via the Endpoint URL from your recently created CDN Resource. For the url check tab `Overview` --> `CDN Resource URL` (note that it might pass some time, eg: 5 minutes for changes to apply).
 
 __Summary__: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.
 
