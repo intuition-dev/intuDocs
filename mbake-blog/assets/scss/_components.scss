@@ -16,7 +16,7 @@
 			border-color: #289de9;
 			color: $white;
 			margin-bottom: 12px;
-			&:hover {
+			&:hover, &:focus {
 				background-color: #289de9;
 				border-color: #289de9;
 			}
