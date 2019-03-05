@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Setup CDN Storage and mount it via Mountain Duck - mBake Guide</title>
+  <title>Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup CDN Storage and mount it via Mountain Duck";
+    var mkdocs_page_name = "Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck";
     var mkdocs_page_input_path = "s3_n_webdrive_mount.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,13 +55,16 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Setup CDN Storage and mount it via Mountain Duck</a>
+    <a class="current" href="./">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#setup-cdn-storage-as-your-http-server-and-mount-it">Setup CDN storage as your HTTP server and mount it</a></li>
+    <li class="toctree-l2"><a href="#create-linux-machine-install-caddy-with-webdav-and-mount-folder-from-linux-machine-to-your-pc-via-mountain-duck">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a></li>
     
-
-    <li class="toctree-l2"><a href="#steps">Steps</a></li>
+        <ul>
+        
+            <li><a class="toctree-l3" href="#steps">Steps</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -69,7 +72,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca/">Mount SFTP to linux box via sshfs and CA</a>
+    <a class="" href="../ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -139,7 +142,7 @@
     
       
     
-    <li>Setup CDN Storage and mount it via Mountain Duck</li>
+    <li>Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -149,38 +152,103 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="setup-cdn-storage-as-your-http-server-and-mount-it">Setup CDN storage as your HTTP server and mount it</h2>
+                <h1 id="create-linux-machine-install-caddy-with-webdav-and-mount-folder-from-linux-machine-to-your-pc-via-mountain-duck">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</h1>
 <p>mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any other server.</p>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>
+<p>Setup up a Linux box in the cloud, e.g. <a href="www.digitalocean.com">Digital Ocean</a>.</p>
+</li>
+<li>
+<p>Change the root password for DO linux box. Connect by ssh in terminal. It will ask to enter existing password and then new password:</p>
+<pre><code>$ ssh root@[IP-Address]
+</code></pre>
+</li>
+<li>
+<p>Setup a Web IDE account, e.g. <a href="https://codeanywhere.com">CodeAnywhere</a> online text editor (hereafter CA)</p>
+</li>
+<li>
+<p>In CA, connect to the Linux box.</p>
+</li>
+<li>
+<p>In CA, open SSH to the Linux box.</p>
+</li>
+<li>
+<p>Install yarn, mbake, typescript</p>
+</li>
+<li>
+<p>On Linux machine, install Caddy with webDAV plugin, eg:</p>
+<pre><code>$ curl https://getcaddy.com | bash -s personal http.webdav
+</code></pre>
+</li>
+<li>
+<p>Add <code>Caddyfile</code> to the root folder and config it, eg:</p>
+<pre><code>:8080 {  #cdn would go to this 
+    root /root/www
+    gzip
+    mime .css text/css
+    # set user for the /webdav path
+    basicauth /webdav admin 123123 
+    webdav /webdav
+
+    log ../log1
+    errors ../err1
+}
+</code></pre>
+</li>
+<li>
+<p>Create folder <code>www</code> and in this folder download blog source:</p>
+<pre><code>$ mkdir www
+$ cd www 
+$ mbake -b
+
+compile files:
+
+$ mbake -c .
+$ cd assets
+$ mbakeW -s .
+$ cd ..
+$ cd blog
+$ mbake -i .
+</code></pre>
+</li>
+<li>
+<p>Run Caddy server, from the root folder where Caddyfile is:</p>
+<pre><code>$ caddy -conf Caddyfile 
+// or 
+$ caddy 
+// or (to leave caddy server running after you'll quit the terminal or close the CA tab)
+&amp; nohup caddy &amp;
+</code></pre>
+</li>
+<li>
+<p>In browser open:
+        http://157.230.189.157:8080/webdav</p>
+<pre><code>login with login and password from Caddyfile and go to url, it should show your site from www folder:
+
+http://157.230.189.157:8080/
+</code></pre>
+</li>
+<li>
+<p>Install on Mac <a href="https://mountainduck.io">Mountain Duck</a> you may choose a different <em>webDAV mount</em> software. Mount replaces FTP.</p>
+</li>
+<li>
+<p>In Mountain Duck, create a new <code>webDAV (HTTP)</code> connection. Fill the fields for <code>server</code> and <code>username</code>, <code>path</code> -- <code>/webdav/www</code> then click <code>connect</code>, it will ask for username and password enter the username and password from Caddyfile. The mounted folder will open in Finder. 
+    Now you have mounted folder of your site from linux machine on your local PC and you can edit it.</p>
+</li>
+<li>
 <p>Create an account on <a href="https://www.cdn77.com/">CDN77</a> if you don't already have one.</p>
 </li>
 <li>
-<p>First create a storage for the app, eg: <a href="https://www.cdn77.com">cdn77</a></p>
+<p>Go to <a href="https://client.cdn77.com">CDN 77</a> and create a resource for your linux machine: select <code>My Origin</code> and in the <code>domain</code> field type in the ip address of your linux machine</p>
 </li>
 <li>
-<p>Then click CDN link on the top menu.</p>
-</li>
-<li>Scroll to the bottom of page -&gt; click <code>add new SDN storage</code> </li>
-<li>To enable a web end point (server), click CDN link on the top menu again.</li>
-<li>Click <code>Add new CDN Resource</code>.</li>
-<li>
-<p>On the radio button click <code>storage</code>.</p>
-</li>
-<li>
-<p>Install on Mac <a href="https://mountainduck.io">Mountain Duck</a> you may choose a different <em>sftp mount</em> software. There are more than a dozen <a href="http://tinyurl.com/y62extth">other choices</a>. Mount replaces FTP.</p>
-</li>
-<li>
-<p>In Mountain Duck, create a new sftp connection. Fill the fields for <code>server</code>, <code>username</code> with the credentails from your recently created CDN Storage and click by the <code>url</code> field value, the mounted folder will open in Finder.</p>
-</li>
-<li>
-<p>To verify that the mount is working, you can put an index.html into the mounted folder <em>project root</em> (e.g. <code>W:\wgehner-website</code>) on your file system. You might just copy-paste the <code>index.html</code> you generated <a href="/#how-to-install-mbake">here</a>. Then view it in the browser via the Endpoint URL from your recently created CDN Resource.</p>
+<p>To verify that the mount is working, you can edit some file and check if changes applied in the browser via the Endpoint URL from your recently created CDN Resource.</p>
 </li>
 </ol>
 <p><strong>Summary</strong>: With Cloud hosting and mount, you can edit apps from your filesystem and see the edits reflected on the web without extra deployment work.</p>
-<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount SFTP to Linux box on CodeAnywhere.</p>
-<p>NEXT: Go to <a href="/ca/">Mount SFTP to linux box via sshfs using CodeAnywhere editor</a>.</p>
+<p>In the <a href="/ca/">next tutorial</a> you will learn how to mount folder from Linux box to another linux box via CodeAnywhere.</p>
+<p>NEXT: Go to <a href="/ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>.</p>
               
             </div>
           </div>
@@ -188,7 +256,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ca/" class="btn btn-neutral float-right" title="Mount SFTP to linux box via sshfs and CA">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ca/" class="btn btn-neutral float-right" title="Mount linux box folder to another linux box using CodeAnywhere editor">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>

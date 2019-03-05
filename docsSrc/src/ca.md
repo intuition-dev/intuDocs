@@ -1,4 +1,4 @@
-# Mount SFTP to linux box via sshfs tool using CodeAnywhere editor
+# Mount linux box folder to another linux box using CodeAnywhere editor
 
 ## Setup cloud dev.
 
@@ -8,16 +8,13 @@
 
         $ ssh root@[IP-Address]
 
-1. Setup a Web IDE account, e.g. [CodeAnywhere](https://codeanywhere.com) online text editor (hereafter CA)
-
-1. In CA, connect to the Linux box.
+1. In CA (assuming that you have an account in CA, done in previous tutorial), connect to the Linux box.
 
 1. In CA, open SSH to the Linux box.
 
 
-
-###  Mount SFTP through sshfs
-
+###  Mount folder from Linux machine on another Linux machine
+<!---
 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
 3. Open terminal in CA in this linux box and install `sshfs` for mount:
 
@@ -40,3 +37,4 @@ Now you've learned how to develop and operate in the cloud and you can edit your
 In the [next tutorial ](/pug_static_data/) you will learn about Pug and static data binding.
 
 NEXT: Go to [Templating/Pug and static binding](/pug_static_data/).
+-->
