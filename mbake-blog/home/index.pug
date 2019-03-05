@@ -1,15 +1,15 @@
 extends /layout/layout
 
 block main
-  #pagination-container.custom-pagination
-    
-  form#srch-form.grid-form
-    fieldset
-      div(data-row-span='1')
-        div(data-field-span='1')
-          input#srchFld(type='text')
-  button#srchBut.btn Search  
+  .section-cards
+    .input-group#srch-form
+      input#srchFld.form-input.input-lg(type='text')
+      button#srchBut.btn.btn-primary.input-group-btn.btn-lg
+        i.fas.fa-search
+          
   card-comp  
+  
+  #pagination-container.custom-pagination
   
   script.
     
