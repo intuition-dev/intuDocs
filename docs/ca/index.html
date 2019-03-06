@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Mount SFTP to linux box via sshfs and CA - mBake Guide</title>
+  <title>Mount linux box folder to another linux box using CodeAnywhere editor - mBake Guide</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Mount SFTP to linux box via sshfs and CA";
+    var mkdocs_page_name = "Mount linux box folder to another linux box using CodeAnywhere editor";
     var mkdocs_page_input_path = "ca.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,15 +55,15 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../s3_n_webdrive_mount/">Setup CDN Storage and mount it via Mountain Duck</a>
+    <a class="" href="../s3_n_webdrive_mount/">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Mount SFTP to linux box via sshfs and CA</a>
+    <a class="current" href="./">Mount linux box folder to another linux box using CodeAnywhere editor</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#mount-sftp-to-linux-box-via-sshfs-tool-using-codeanywhere-editor">Mount SFTP to linux box via sshfs tool using CodeAnywhere editor</a></li>
+    <li class="toctree-l2"><a href="#mount-linux-box-folder-to-another-linux-box-using-codeanywhere-editor">Mount linux box folder to another linux box using CodeAnywhere editor</a></li>
     
         <ul>
         
@@ -142,7 +142,7 @@
     
       
     
-    <li>Mount SFTP to linux box via sshfs and CA</li>
+    <li>Mount linux box folder to another linux box using CodeAnywhere editor</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -152,7 +152,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mount-sftp-to-linux-box-via-sshfs-tool-using-codeanywhere-editor">Mount SFTP to linux box via sshfs tool using CodeAnywhere editor</h1>
+                <h1 id="mount-linux-box-folder-to-another-linux-box-using-codeanywhere-editor">Mount linux box folder to another linux box using CodeAnywhere editor</h1>
 <h2 id="setup-cloud-dev">Setup cloud dev.</h2>
 <ol>
 <li>
@@ -164,37 +164,32 @@
 </code></pre>
 </li>
 <li>
-<p>Setup a Web IDE account, e.g. <a href="https://codeanywhere.com">CodeAnywhere</a> online text editor (hereafter CA)</p>
-</li>
-<li>
-<p>In CA, connect to the Linux box.</p>
+<p>In CA (assuming that you have an account in CA, done in previous tutorial), connect to the Linux box.</p>
 </li>
 <li>
 <p>In CA, open SSH to the Linux box.</p>
 </li>
 </ol>
-<h3 id="mount-sftp-through-sshfs">Mount SFTP through sshfs</h3>
-<ol>
-<li>Login to CA and create a <code>new connection</code> to connect to your recently created Linux box in Digital Ocean.</li>
-<li>
-<p>Open terminal in CA in this linux box and install <code>sshfs</code> for mount:</p>
-<pre><code>$ apt install aptitude
-$ apt-add-repository universe
-$ sudo apt-get install sshfs
-$ mkdir mount // change [mount] with any name you like
-$ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
-// ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in])
-</code></pre>
-<p>now you will have a mount directory in your linux box that has mounted CDN Storage inside.
-For more information on installing sshfs on linux check <a href="https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/">Using SSHFS To Mount Remote Directories</a></p>
-</li>
-<li>
-<p>Then on linux box install node, yarn and mbake.</p>
-</li>
-<li>Via git, pull the latest version of some project from the git repository in your <code>mount/www</code> folder.</li>
-<li>Change some file, .pug or .ts or readme - <code>$ mbake .</code> it and push to the git repository.</li>
-</ol>
-<p>Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh.</p>
+<h3 id="mount-folder-from-linux-machine-on-another-linux-machine">Mount folder from Linux machine on another Linux machine</h3>
+<!-- 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
+3. Open terminal in CA in this linux box and install `sshfs` for mount:
+
+        $ apt install aptitude
+        $ apt-add-repository universe
+        $ sudo apt-get install sshfs
+        $ mkdir mount // change [mount] with any name you like
+        $ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
+        // ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in]) 
+
+    now you will have a mount directory in your linux box that has mounted CDN Storage inside.
+    For more information on installing sshfs on linux check [Using SSHFS To Mount Remote Directories](https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/)
+
+1. Then on linux box install node, yarn and mbake.
+1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
+1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
+
+Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh. -->
+
 <p>In the <a href="/pug_static_data/">next tutorial </a> you will learn about Pug and static data binding.</p>
 <p>NEXT: Go to <a href="/pug_static_data/">Templating/Pug and static binding</a>.</p>
               
@@ -207,7 +202,7 @@ For more information on installing sshfs on linux check <a href="https://www.lin
         <a href="../pug_static_data/" class="btn btn-neutral float-right" title="Learn Templating/Pug">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../s3_n_webdrive_mount/" class="btn btn-neutral" title="Setup CDN Storage and mount it via Mountain Duck"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../s3_n_webdrive_mount/" class="btn btn-neutral" title="Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

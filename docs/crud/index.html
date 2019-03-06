@@ -55,12 +55,12 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../s3_n_webdrive_mount/">Setup CDN Storage and mount it via Mountain Duck</a>
+    <a class="" href="../s3_n_webdrive_mount/">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../ca/">Mount SFTP to linux box via sshfs and CA</a>
+    <a class="" href="../ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -269,7 +269,7 @@ The Firestore function to login with email and password:<pre><code>auth.signInWi
 <ol>
 <li>
 <p>To learn Firebase, you will now remap the Firestore connection to your own Firestore. Create a Google account if you don't already have one. Log into <a href="https://console.firebase.google.com">https://console.firebase.google.com</a>. Create a project named <code>test-crud</code>. Under the left menu 'Develop - Database', create a Firestore app in test mode.
-On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an app to get started' to open a popup. In your mapped project <code>/assets/tags/preRW-tag.pug</code>, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run <code>'$ mbake -t .'</code> from the <code>tags</code> folder. (<code>/layout/layout.pug</code> will use the updated <code>script(src='/assets/tags/preRW-tag.min.js')</code>.)</p>
+On the Project Overview, click the <code>&lt;/&gt;</code> button near 'Add an app to get started' to open a popup. In your mapped project <code>/assets/comps/preRW-comp.pug</code>, overwrite the values for apiKey, authDomain and projectId with the values shown in the Firestore popup and save. Run <code>'$ mbake -t .'</code> from the <code>tags</code> folder. (<code>/layout/layout.pug</code> will use the updated <code>script(src='/assets/comps/preRW-comp.min.js')</code>.)</p>
 </li>
 <li>
 <p>We will now secure the database. In the Firestore Console, on the Rules tab in 'Develop - Database', replace:</p>
