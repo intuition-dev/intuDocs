@@ -4,8 +4,8 @@ ROOT: '/'
 
 title: Lorem ipsum dolor sit amet
 date: August 5, 2018
-img_url: /assets/img/item-5.jpg
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit
-paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-topic: art work
+image:  /assets/img/item-5.jpg
+summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+content_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+tags: art work
 publish: true
