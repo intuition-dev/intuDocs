@@ -6,15 +6,15 @@ card-comp
           .card
             .card-image
               a(href='{url}')
-                img.img-responsive(src='{img_url}')
+                img.img-responsive(src='{image}')
             .card-header
               .card-title.h5 { title }
               .card-subtitle.text-gray 
                 i.far.fa-clock 
                 |  { date }
-            .card-body Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .card-body { content_text }
             .card-footer
-              button.btn.btn-primary { topic }
+              button.btn.btn-primary { tags }
 
   script.
     console.info('oh hi tag');

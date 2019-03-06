@@ -6,7 +6,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 2, 2018",
-      "image": "/assets/img/item-2.jpg",
+      "image": "/assets/img/item-1.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "branding",
@@ -17,7 +17,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 3, 2018",
-      "image": "/assets/img/item-3.jpg",
+      "image": "/assets/img/item-2.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "design",
@@ -28,7 +28,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 4, 2018",
-      "image": "/assets/img/item-4.jpg",
+      "image": "/assets/img/item-3.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "photography",
@@ -39,7 +39,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 5, 2018",
-      "image": "/assets/img/item-5.jpg",
+      "image": "/assets/img/item-4.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "art work",
@@ -50,7 +50,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 6, 2018",
-      "image": "/assets/img/item-6.jpg",
+      "image": "/assets/img/item-5.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "robots",
@@ -61,7 +61,7 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 7, 2018",
-      "image": "/assets/img/item-7.jpg",
+      "image": "/assets/img/item-6.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "VR",
