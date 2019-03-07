@@ -195,20 +195,16 @@ $ sudo apt install -y davfs2
 <pre><code>$ vim ~/.davfs2/davfs2.conf
 </code></pre>
 <p>with contents:</p>
-<pre><code>```
-secrets /root/.davfs2/secret
-```
-// press `a` keyboard button to run edit mode --&gt; edit file --&gt; `esc` --&gt; `:w`(for saving) --&gt; `enter` --&gt; `:q` (to quit the file) --&gt; `enter`
+<pre><code>`secrets /root/.davfs2/secret`
 </code></pre>
+<p>// press <code>a</code> keyboard button to run edit mode --&gt; edit file --&gt; <code>esc</code> --&gt; <code>:w</code>(for saving) --&gt; <code>enter</code> --&gt; <code>:q</code> (to quit the file) --&gt; <code>enter</code> </p>
 </li>
 <li>
 <p>Edit <code>~/.davfs2/secrets</code> file to add credentials to remote WebDav diectory:</p>
 <pre><code>$ vim ~/.davfs2/secrets
 </code></pre>
 <p>Add a line to the end of file in following style:</p>
-<pre><code>```
-https://&lt;WebDav URI&gt;   &lt;username&gt; &lt;password&gt;
-```
+<pre><code>`https://&lt;WebDav URI&gt;   &lt;username&gt; &lt;password&gt;`
 </code></pre>
 <p>eg: 
     <code>http://157.230.189.157:8080/webdav/www   admin 123123</code></p>
@@ -223,10 +219,8 @@ https://&lt;WebDav URI&gt;   &lt;username&gt; &lt;password&gt;
 <p>Add a line to <code>/etc/fstab</code> about the remote WebDav directory</p>
 <pre><code>$ vim /etc/fstab
 
-```
-https://&lt;WebDav URI&gt; &lt;mount point&gt;
-davfs user,noauto,file_mode=600,dir_mode=700 0 1
-```
+`https://&lt;WebDav URI&gt; &lt;mount point&gt;
+davfs user,noauto,file_mode=600,dir_mode=700 0 1`
 </code></pre>
 <p>eg:
     <code>http://157.230.189.157:8080/webdav/www /root/mount davfs user,noauto,file_mode=600,dir_mode=700 0 1</code></p>
@@ -238,14 +232,10 @@ $ whoami
 $ sudo vim /etc/group
 </code></pre>
 <p>Add your username as follows:</p>
-<pre><code>```
-davfs2:x:134:&lt;username&gt;
-```
+<pre><code>`davfs2:x:134:&lt;username&gt;`
 </code></pre>
-<p>eg:</p>
-<pre><code>```
-davfs2:x:134:root
-```
+<p>eg if the command <code>$ whoami</code> says the user is <code>root</code>:</p>
+<pre><code>`davfs2:x:134:root`
 </code></pre>
 </li>
 <li>

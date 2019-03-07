@@ -39,10 +39,9 @@ We'll be mounting using `davfs2` — a Linux file system driver that allows to m
 
     with contents:
 
-		```
-		secrets /root/.davfs2/secret
-		```
-    	// press `a` keyboard button to run edit mode --> edit file --> `esc` --> `:w`(for saving) --> `enter` --> `:q` (to quit the file) --> `enter` 
+		`secrets /root/.davfs2/secret`
+
+    // press `a` keyboard button to run edit mode --> edit file --> `esc` --> `:w`(for saving) --> `enter` --> `:q` (to quit the file) --> `enter` 
 
 1. Edit `~/.davfs2/secrets` file to add credentials to remote WebDav diectory:
 
@@ -50,14 +49,10 @@ We'll be mounting using `davfs2` — a Linux file system driver that allows to m
 
     Add a line to the end of file in following style:
 
-		```
-		https://<WebDav URI>   <username> <password>
-		```
+		`https://<WebDav URI>   <username> <password>`
 
     eg: 
-		```
-		http://157.230.189.157:8080/webdav/www   admin 123123
-		```
+		`http://157.230.189.157:8080/webdav/www   admin 123123`
 
     Set the permission: 
 
@@ -71,15 +66,11 @@ We'll be mounting using `davfs2` — a Linux file system driver that allows to m
 
     	$ vim /etc/fstab
 
-		```
-		https://<WebDav URI> <mount point>
-		davfs user,noauto,file_mode=600,dir_mode=700 0 1
-		```
+		`https://<WebDav URI> <mount point>
+		davfs user,noauto,file_mode=600,dir_mode=700 0 1`
 
     eg:
-		```
-		http://157.230.189.157:8080/webdav/www /root/mount davfs user,noauto,file_mode=600,dir_mode=700 0 1
-		```
+		`http://157.230.189.157:8080/webdav/www /root/mount davfs user,noauto,file_mode=600,dir_mode=700 0 1`
 
 1. Add your user to the davfs2 group
 
@@ -89,15 +80,11 @@ We'll be mounting using `davfs2` — a Linux file system driver that allows to m
 
     Add your username as follows:
 
-		```
-		davfs2:x:134:<username>
-		```
+		`davfs2:x:134:<username>`
 
-    eg:
+    eg if the command `$ whoami` says the user is `root`:
 
-		```
-		davfs2:x:134:root
-    	```
+		`davfs2:x:134:root`
 
 1. That's it. You can use following commands without being a root user to mount/umount
 
