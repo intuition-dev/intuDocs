@@ -13,26 +13,101 @@
 1. In CA, open SSH to the Linux box.
 
 
-###  Mount folder from Linux machine on another Linux machine
+### Mount webDAV from linux box on another linux box via CA:
 
-<!-- 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
-3. Open terminal in CA in this linux box and install `sshfs` for mount:
+We'll be mounting using `davfs2` — a Linux file system driver that allows to mount a WebDAV resource.
 
-		$ apt install aptitude
-		$ apt-add-repository universe
-		$ sudo apt-get install sshfs
-		$ mkdir mount // change [mount] with any name you like
-		$ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
-		// ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in]) 
+1. Install `davfs2`
 
-	now you will have a mount directory in your linux box that has mounted CDN Storage inside.
-	For more information on installing sshfs on linux check [Using SSHFS To Mount Remote Directories](https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/)
+		$ cat <<EOF | sudo debconf-set-selections
+		davfs2 davfs2/suid_file boolean false
+		EOF
+		$ sudo apt-get update
+		$ sudo apt install -y davfs2
 
-1. Then on linux box install node, yarn and mbake.
-1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
-1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
+1. Reconfigure `davfs2` to enable to use `davfs` under unprivileged users
 
-Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh. -->
+    	$ sudo dpkg-reconfigure davfs2
+
+1.  Create a directory: 
+
+		$ mkdir ~/.davfs2
+
+    create file:
+
+    	$ vim ~/.davfs2/davfs2.conf
+
+    with contents:
+
+		```
+		secrets /root/.davfs2/secret
+		```
+    	// press `a` keyboard button to run edit mode --> edit file --> `esc` --> `:w`(for saving) --> `enter` --> `:q` (to quit the file) --> `enter` 
+
+1. Edit `~/.davfs2/secrets` file to add credentials to remote WebDav diectory:
+
+    	$ vim ~/.davfs2/secrets
+
+    Add a line to the end of file in following style:
+
+		```
+		https://<WebDav URI>   <username> <password>
+		```
+
+    eg: 
+		```
+		http://157.230.189.157:8080/webdav/www   admin 123123
+		```
+
+    Set the permission: 
+
+		$ chmod 600 ~/.davfs2/secrets
+
+1. Make a directory in which you'll mount
+
+    	$ mkdir mount
+
+    Add a line to `/etc/fstab` about the remote WebDav directory
+
+    	$ vim /etc/fstab
+
+		```
+		https://<WebDav URI> <mount point>
+		davfs user,noauto,file_mode=600,dir_mode=700 0 1
+		```
+
+    eg:
+		```
+		http://157.230.189.157:8080/webdav/www /root/mount davfs user,noauto,file_mode=600,dir_mode=700 0 1
+		```
+
+1. Add your user to the davfs2 group
+
+		// check user:
+		$ whoami
+		$ sudo vim /etc/group
+
+    Add your username as follows:
+
+		```
+		davfs2:x:134:<username>
+		```
+
+    eg:
+
+		```
+		davfs2:x:134:root
+    	```
+
+1. That's it. You can use following commands without being a root user to mount/umount
+
+		$ mount <mount point>
+		$ umount <mount point>
+
+    eg:
+
+		$ mount /root/mount
+		$ umount /root/mount
 
 In the [next tutorial ](/pug_static_data/) you will learn about Pug and static data binding.
 

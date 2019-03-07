@@ -59,10 +59,11 @@ mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any 
         // or (to leave caddy server running after you'll quit the terminal or close the CA tab)
         $ nohup caddy &
 
-1. In browser open:
+1. In browser open the url, change ip address to your linux box ip address:
+
         http://157.230.189.157:8080/webdav
 
-        login with login and password from Caddyfile and go to url, it should show your site from www folder:
+        login with login and password which you've set in Caddyfile and go to url (with your linux box ip address), it should show your site from www folder:
 
         http://157.230.189.157:8080/
 

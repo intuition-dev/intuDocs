@@ -170,26 +170,95 @@
 <p>In CA, open SSH to the Linux box.</p>
 </li>
 </ol>
-<h3 id="mount-folder-from-linux-machine-on-another-linux-machine">Mount folder from Linux machine on another Linux machine</h3>
-<!-- 2. Login to CA and create a `new connection` to connect to your recently created Linux box in Digital Ocean.
-3. Open terminal in CA in this linux box and install `sshfs` for mount:
+<h3 id="mount-webdav-from-linux-box-on-another-linux-box-via-ca">Mount webDAV from linux box on another linux box via CA:</h3>
+<p>We'll be mounting using <code>davfs2</code> — a Linux file system driver that allows to mount a WebDAV resource.</p>
+<ol>
+<li>
+<p>Install <code>davfs2</code></p>
+<pre><code>$ cat &lt;&lt;EOF | sudo debconf-set-selections
+davfs2 davfs2/suid_file boolean false
+EOF
+$ sudo apt-get update
+$ sudo apt install -y davfs2
+</code></pre>
+</li>
+<li>
+<p>Reconfigure <code>davfs2</code> to enable to use <code>davfs</code> under unprivileged users</p>
+<pre><code>$ sudo dpkg-reconfigure davfs2
+</code></pre>
+</li>
+<li>
+<p>Create a directory: </p>
+<pre><code>$ mkdir ~/.davfs2
+</code></pre>
+<p>create file:</p>
+<pre><code>$ vim ~/.davfs2/davfs2.conf
+</code></pre>
+<p>with contents:</p>
+<pre><code>```
+secrets /root/.davfs2/secret
+```
+// press `a` keyboard button to run edit mode --&gt; edit file --&gt; `esc` --&gt; `:w`(for saving) --&gt; `enter` --&gt; `:q` (to quit the file) --&gt; `enter`
+</code></pre>
+</li>
+<li>
+<p>Edit <code>~/.davfs2/secrets</code> file to add credentials to remote WebDav diectory:</p>
+<pre><code>$ vim ~/.davfs2/secrets
+</code></pre>
+<p>Add a line to the end of file in following style:</p>
+<pre><code>```
+https://&lt;WebDav URI&gt;   &lt;username&gt; &lt;password&gt;
+```
+</code></pre>
+<p>eg: 
+    <code>http://157.230.189.157:8080/webdav/www   admin 123123</code></p>
+<p>Set the permission: </p>
+<pre><code>$ chmod 600 ~/.davfs2/secrets
+</code></pre>
+</li>
+<li>
+<p>Make a directory in which you'll mount</p>
+<pre><code>$ mkdir mount
+</code></pre>
+<p>Add a line to <code>/etc/fstab</code> about the remote WebDav directory</p>
+<pre><code>$ vim /etc/fstab
 
-        $ apt install aptitude
-        $ apt-add-repository universe
-        $ sudo apt-get install sshfs
-        $ mkdir mount // change [mount] with any name you like
-        $ sshfs user_kpq3rmpl@push-33.cdn77.com:/ mount
-        // ($ sshfs [user]@[host]:/ [name-of-folder-to-mount-in]) 
-
-    now you will have a mount directory in your linux box that has mounted CDN Storage inside.
-    For more information on installing sshfs on linux check [Using SSHFS To Mount Remote Directories](https://www.linode.com/docs/networking/ssh/using-sshfs-on-linux/)
-
-1. Then on linux box install node, yarn and mbake.
-1. Via git, pull the latest version of some project from the git repository in your `mount/www` folder.
-1. Change some file, .pug or .js or readme - `$ mbake .` it and push to the git repository.
-
-Now you've learned how to develop and operate in the cloud and you can edit your mounted CDN storage files from CodeAnywhere ssh. -->
-
+```
+https://&lt;WebDav URI&gt; &lt;mount point&gt;
+davfs user,noauto,file_mode=600,dir_mode=700 0 1
+```
+</code></pre>
+<p>eg:
+    <code>http://157.230.189.157:8080/webdav/www /root/mount davfs user,noauto,file_mode=600,dir_mode=700 0 1</code></p>
+</li>
+<li>
+<p>Add your user to the davfs2 group</p>
+<pre><code>// check user:
+$ whoami
+$ sudo vim /etc/group
+</code></pre>
+<p>Add your username as follows:</p>
+<pre><code>```
+davfs2:x:134:&lt;username&gt;
+```
+</code></pre>
+<p>eg:</p>
+<pre><code>```
+davfs2:x:134:root
+```
+</code></pre>
+</li>
+<li>
+<p>That's it. You can use following commands without being a root user to mount/umount</p>
+<pre><code>$ mount &lt;mount point&gt;
+$ umount &lt;mount point&gt;
+</code></pre>
+<p>eg:</p>
+<pre><code>$ mount /root/mount
+$ umount /root/mount
+</code></pre>
+</li>
+</ol>
 <p>In the <a href="/pug_static_data/">next tutorial </a> you will learn about Pug and static data binding.</p>
 <p>NEXT: Go to <a href="/pug_static_data/">Templating/Pug and static binding</a>.</p>
               
