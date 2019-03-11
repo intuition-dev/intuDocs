@@ -160,7 +160,15 @@
 <h2 id="steps">Steps</h2>
 <ol>
 <li>
-<p>Using the AWS S3 browser, create a bucket <em>in the same region</em> as you used in <a href="/s3_n_webdrive_mount/">Setup S3 as your HTTP server and mount it</a>. Name the bucket <code>'wgehner-crud'</code> (replace <code>'wgehner'</code> with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project (<a href="/s3_n_webdrive_mount/">Step 4</a> ). Copy the Endpoint URL. The new bucket should appear as a new <em>project root</em> folder in your mapped drive (e.g. as <code>W:\wgehner-crud</code>). Extract the CRUD sample project to your computer with <code>'$ mbake -v'</code> and copy the project files (inside of <code>/crud</code>) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. </p>
+<p>Using the AWS S3 browser, create a bucket <em>in the same region</em> as you used in <a href="/s3_n_webdrive_mount/">Setup S3 as your HTTP server and mount it</a>. Name the bucket <code>'wgehner-crud'</code> (replace <code>'wgehner'</code> with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project (<a href="/s3_n_webdrive_mount/">Step 4</a> ). Copy the Endpoint URL. The new bucket should appear as a new <em>project root</em> folder in your mapped drive (e.g. as <code>W:\wgehner-crud</code>). Extract the CRUD sample project to your computer with <code>'$ mbake -v'</code> and copy the project files (inside of <code>/crud</code>) into the project root. Compile the project from the folder <code>/screen</code>:</p>
+<pre><code>$ mbake -c .
+// from assets
+$ mbakeW -s .
+$ mbakeW -n .
+</code></pre>
+<p>In a browser, open the Endpoint-URL. You should see the CRUD App served by Caddy &amp; webDav server OR if you're running locally on your PC use the mbake watcher to run the app (eg: 0.0.0.0:8080):</p>
+<pre><code>$ mbakeW -w .
+</code></pre>
 </li>
 <li>
 <p>Navigate to the 'ViewModel CRUD' menu item. Inspect the fragment <code>/screen/example1/index.pug</code>. Note the <code>table#table1</code> and <code>table#table2</code> tags, an empty tables with ID <code>#table1</code> and <code>#table2</code> which fills with data using tabulator.js library.

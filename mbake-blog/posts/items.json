@@ -1,72 +1,66 @@
 {
   "prefix": "/posts/",
-  "nbVer": "v5.02.06",
+  "nbVer": "v5.02.03",
   "note": "This is statically served and visible publicly.",
   "items": [
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 2, 2018",
-      "image": "/assets/img/item-1.jpg",
+      "image": "/assets/img/item-2.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "branding",
       "url": "post-2",
-      "id": "post-2",
       "index": 0
     },
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 3, 2018",
-      "image": "/assets/img/item-2.jpg",
+      "image": "/assets/img/item-3.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "design",
       "url": "post-3",
-      "id": "post-3",
       "index": 1
     },
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 4, 2018",
-      "image": "/assets/img/item-3.jpg",
+      "image": "/assets/img/item-4.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "photography",
       "url": "post-4",
-      "id": "post-4",
       "index": 2
     },
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 5, 2018",
-      "image": "/assets/img/item-4.jpg",
+      "image": "/assets/img/item-5.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "art work",
       "url": "post-5",
-      "id": "post-5",
       "index": 3
     },
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 6, 2018",
-      "image": "/assets/img/item-5.jpg",
+      "image": "/assets/img/item-6.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "robots",
       "url": "post-6",
-      "id": "post-6",
       "index": 4
     },
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "August 7, 2018",
-      "image": "/assets/img/item-6.jpg",
+      "image": "/assets/img/item-7.jpg",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "VR",
       "url": "post-7",
-      "id": "post-7",
       "index": 5
     }
   ],

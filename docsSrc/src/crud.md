@@ -11,7 +11,16 @@ Firestore is free for up to 50,000 reads and 20,000 writes per day. See more det
 
 ## Steps
 
-1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) ). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -v'` and copy the project files (inside of `/crud`) into the project root. In a browser, open the Endpoint URL. You should see the CRUD App served by S3. 
+1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) ). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -v'` and copy the project files (inside of `/crud`) into the project root. Compile the project from the folder `/screen`:
+
+		$ mbake -c .
+		// from assets
+		$ mbakeW -s .
+		$ mbakeW -n .
+
+	In a browser, open the Endpoint-URL. You should see the CRUD App served by Caddy & webDav server OR if you're running locally on your PC use the mbake watcher to run the app (eg: 0.0.0.0:8080):
+
+		$ mbakeW -w .
 
 2. Navigate to the 'ViewModel CRUD' menu item. Inspect the fragment `/screen/example1/index.pug`. Note the `table#table1` and `table#table2` tags, an empty tables with ID `#table1` and `#table2` which fills with data using tabulator.js library.
 Next is how table is getting filled with data. `getViewList('table1', 'table2')` function is called from the bind file `Example1Bind.js`:

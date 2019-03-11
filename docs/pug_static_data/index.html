@@ -179,16 +179,33 @@ becomes this HTML:</p>
 <p>Watch <a href="http://youtube.com/watch?v=wzAWI9h3q18">Do you even Jade bro</a> as an intro about Pug (it used to be called Jade).</p>
 </li>
 <li>
-<p>Generate a sample website with</p>
+<p>In your <code>/www</code> mounted from DO linux box to your local PC or to another Linux machine in CA created in this tutorial: <a href="/s3_n_webdrive_mount/">Tutorial 1</a> generate a sample website with the command (it will download and extract the source code of a sample website app):</p>
 <pre><code>$ mbake -s
 </code></pre>
-<p>and copy the contents of the generated <code>website</code> folder to the bucket you mapped in <a href="/s3_n_webdrive_mount/">Tutorial 1</a>, e.g. <code>W:\wgehner-website</code>. Open this as a project in your favorite code editor (we like VS Code).</p>
+<p>Open this as a project in your favorite code editor (we like VS Code).</p>
 </li>
 <li>
-<p>In the Amazon S3 browser, go to the <code>/assets/css</code> folder, check all CSS files, select 'More - change metadata', and set 'Content-type' to <code>text/css</code>.</p>
+<p><code>-s</code> command will download <code>/website</code> folder to <code>/www</code>. Copy all files from <code>/www/website</code> folder to the <code>/www</code> folder and remove <code>/www/website</code> folder.</p>
 </li>
 <li>
-<p>View the app in a browser. Use the S3 URL from <a href="/s3_n_webdrive_mount/">Tutorial 1</a>. For production, you can mask the URL with a proper domain with HTTPS by using a CDN.</p>
+<p>Compile the project:</p>
+<pre><code>// from the root of project to compile `.pug` to `.html`
+$ mbake -c .
+
+// from `/assets` folder to compile sass/scss to css
+$ mbakeW -s .
+
+// from `/news` folder and any other folder (if they exist) in which there is `dat_i.yaml` to process Pug and dat_i items to items.json:
+
+$ mbake -i .
+
+The last `mbake -i .` command will create `.json` file in the folder where `dat_i.yaml` is placed.
+The `.json` file will be generated from `dat.yaml` file's fields.
+In the `dat_i.yaml` file you can check from which folder mbake will look for `dat.yaml` files' fields from which the object in `itmes.json` will be generated:
+</code></pre>
+</li>
+<li>
+<p>View the app in a browser. Use the linux machine ip with port as browser app URL from <a href="/s3_n_webdrive_mount/">Tutorial 1</a>, eg: http://104.248.180.143:8080. For production, we use CDN URL configured on the linux machine ip (that you've done in the first tutorial).</p>
 </li>
 <li>
 <p>On the website, navigate to the <code>/zabout/about/</code> page. In your code editor, go to the <code>/zabout/about/</code> folder, edit <code>dat.yaml</code> and change <code>'About Us'</code> to <code>'About Me'</code>, save, then <code>$ mbake .</code> and refresh the browser. Of course you could also change something in <code>index.pug</code>.</p>
