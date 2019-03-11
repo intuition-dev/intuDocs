@@ -11,7 +11,11 @@ Firestore is free for up to 50,000 reads and 20,000 writes per day. See more det
 
 ## Steps
 
-1. Using the AWS S3 browser, create a bucket _in the same region_ as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Name the bucket `'wgehner-crud'` (replace `'wgehner'` with your name or something else unique). Configure the bucket for static website hosting and apply the access policy analog to the 'website' project ([Step 4](/s3_n_webdrive_mount/) ). Copy the Endpoint URL. The new bucket should appear as a new _project root_ folder in your mapped drive (e.g. as `W:\wgehner-crud`). Extract the CRUD sample project to your computer with `'$ mbake -v'` and copy the project files (inside of `/crud`) into the project root. Compile the project from the folder `/screen`:
+1. Using the DO, create new linux machine, or use existing one as you used in [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/). Extract the CRUD sample project with the command:
+
+		$ mbake -v
+
+	and copy the project files (inside of `/crud`) into the project root (eg: `/www` folder). Compile the project:
 
 		$ mbake -c .
 		// from assets
