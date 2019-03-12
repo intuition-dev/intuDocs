@@ -82,7 +82,7 @@ Even though mbake apps are installed on a static server, they are dynamic becaus
 
 ## Other popular mbake commands
 
-* `mbake -t .` - Convert Pug/Riot files to useable tag/js, e.g.: data binding.
+* `mbake -c .` - Convert Pug/Riot files to useable comp/js, e.g.: data binding.
 * `mbake -i .` - Convert dat.yaml static files to JSON, for dynamic binding. More about this in B-M-SPA docs.
 
 ## How to see all mbake options
