@@ -10,6 +10,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "branding",
+      "publishDate": 1552577185,
+      "publishOrder": 2,
       "url": "post-2",
       "index": 0
     },
@@ -20,6 +22,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "design",
+      "publishDate": 1552577185,
+      "publishOrder": 3,
       "url": "post-3",
       "index": 1
     },
@@ -30,6 +34,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "photography",
+      "publishDate": 1552577185,
+      "publishOrder": 4,
       "url": "post-4",
       "index": 2
     },
@@ -40,6 +46,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "art work",
+      "publishDate": 1552577185,
+      "publishOrder": 5,
       "url": "post-5",
       "index": 3
     },
@@ -50,6 +58,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "robots",
+      "publishDate": 1552577185,
+      "publishOrder": 6,
       "url": "post-6",
       "index": 4
     },
@@ -60,6 +70,8 @@
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
       "content_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       "tags": "VR",
+      "publishDate": 1552577185,
+      "publishOrder": 7,
       "url": "post-7",
       "index": 5
     }

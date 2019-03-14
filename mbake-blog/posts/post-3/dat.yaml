@@ -8,4 +8,7 @@ image:  /assets/img/item-3.jpg
 summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 content_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 tags: design
+
+publishDate: 1552577185
+publishOrder: 3
 publish: true
