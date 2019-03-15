@@ -1,49 +1,75 @@
 $(document).ready(function () {
     // are we running in native app or in a browser?
-    window.isphone = false
+    window.isphone = false;
     if (document.URL.indexOf("http://") === -1
         && document.URL.indexOf("https://") === -1) {
-        window.isphone = true
+        window.isphone = true;
     }
 
-    console.log('phonegap?', window.isphone)
-    if (window.isphone) { // //file is a browser
-        document.addEventListener("deviceready", onDeviceReady, false)
+    console.log('phonegap?', window.isphone);
+    if (window.isphone) { // file is a browser
+        document.addEventListener("deviceready", onDeviceReady, false);
     } else {
-        onDeviceReady()
+        onDeviceReady();
     }
-})
+});
 
-loadjs([
-   'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
-   , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
+// check if promises supports in browser
+if (!window.Promise) {
+    depp.define({
+        'hasPromise': [
+            'https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js',
+            'https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js'
+        ]
+    });
+} else  {
+    depp.define({
+        'hasPromise': ''
+    });
+    depp.done('hasPromise');
+}
 
-   , 'https://cdn.jsdelivr.net/npm/fuse.js@3.3.0/dist/fuse.min.js'
-   , ROOT + 'assets/css/style.css'
-   , ROOT + 'assets/js/ui.js'
+depp.define({
+    'axios': [
+        '#hasPromise'
+        , 'https://unpkg.com/axios@0.18.0/dist/axios.min.js'
+        , ROOT + 'assets/3rd/collections.js'
+    ],
+    'fonts': [
+        '#axios'
+        , 'css!https://use.fontawesome.com/releases/v5.7.2/css/all.css'
+        , 'css!https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Lora:400,400i,700,700i'
+    ],
+    'cssJs': [
+        '#fonts'
+        , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
+        , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
 
-   , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.min.js'
-   , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.css'
+        , 'https://cdn.jsdelivr.net/npm/fuse.js@3.3.0/dist/fuse.min.js'
+        , ROOT + 'assets/css/style.css'
+        , ROOT + 'assets/js/ui.js'
 
-   , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
-   , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
-   , '/assets/js/jquery.disableAutoFill.js'
+        , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.min.js'
+        , 'https://cdn.jsdelivr.net/npm/paginationjs@2.1.4/dist/pagination.css'
 
-
-], 'cssJs')
+        , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
+        , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
+        , '/assets/3rd/jquery.disableAutoFill.js'
+    ]
+});
 
 function onDeviceReady() { // nothing will work before this
-    console.log('deviceready!')
-    loadjs.done('device')
+    console.log('deviceready!');
+    // depp.done('device');
 }
 
-function cssLoaded() {// called by the style sheet in layout
-    loadjs.done('css')
-}
+// function cssLoaded() {// called by the style sheet in layout
+//     depp.done('css');
+// }
 
-loadjs.ready(['css', 'device', 'cssJs'], function () {
-    loadjs.done('style')
-})
+// depp.require(['css', 'device', 'cssJs'], function () {
+//     depp.done('style');
+// })
 
 let _scSz = true
 function setupUserSzSc() {
@@ -56,7 +82,7 @@ function setupUserSzSc() {
 }//()
 
 // usage: ////////////////////////////////////////////////////////////////////
-loadjs.ready(['style'], function () {// 'show' page, ex: unhide
+depp.require(['cssJs'], function () {// 'show' page, ex: unhide
     setupUserSzSc()
 
     $('.delayShowing').removeClass('delayShowing') // show

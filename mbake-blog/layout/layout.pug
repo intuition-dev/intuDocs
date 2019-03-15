@@ -6,16 +6,14 @@ html(lang='en')
        ROOT = '#{ROOT}' //- sets global pug and .js from dat.yaml
        let _start = Date.now()
     meta(content='width=device-width,initial-scale=1', name='viewport')
-    title Blog Website
+    title Metabake Blog
       
     //- icons
     link(href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', rel='stylesheet', crossorigin='anonymous')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
     link(href='/assets/css/style.css', rel='stylesheet')
     
-    script(src='https://cdn.jsdelivr.net/npm/loadjs@3.5.4/dist/loadjs.js')      
+    script(src='//cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js')      
     script(src='https://cdn.jsdelivr.net/npm/riot@3.13.2/riot.min.js')
-    script(src='https://unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js') 
     script(src=ROOT+ 'home/comps/card-comp.min.js') 
       
     script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js')
