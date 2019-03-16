@@ -30,7 +30,7 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
-There are many good low-code tools: Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble or you can even consider MBaaS tools as well; and even Form builders
+There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey; and even Form builders like JotForm.
 
 # Solution
 
@@ -65,27 +65,17 @@ from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
 
 Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, DigitalOcean and similar.
+FireStore, Backendless. DreamFactory, etc. 
 
 
-## Pillar 2: Iterative and Agile
-
-Current Agile treats WAH and remote development as exceptions. An agile
-flavor, called Stanford Flash Teams (SFT), is far more cost effective
-and assumes being remote is a key part of the team. Iterative, or
-incomplete iterations, while helpful, is a bit more difficult to teach.
-One can replace daily stand-ups by incorporating regular syncs with
-screen recordings.
-
-
-## Pillar 3: Learn Quickly, deeply; and focus on next
+## Pillar 2: Learn Quickly; with focus on next
 
 Regardless of how anyone feels about it, in this vocation, one must be
 able to master things quickly, and 'forget' older things. So, if O.O. and
 F.P. are over, one must learn the coming (4GL) declarative low-code. One
 example of declarative low-code is already known by a large percent of
 NodeJS developers that use NodeJS 'Express' library: It uses Pug instead
-of HTML. Markup is how eBay develops software, using its less popular
-'Marko', that is similar to Pug. If one has never used Pug, it is a bit like a more powerful
+of HTML. If one has never used Pug, it is a bit like a more powerful
 version of something called 'Markdown'; Pug is compatible with PHP,
 Python, etc. The most common way to use declarative low-code is with
 static generators, as mentioned above. With that being said, yes, one
@@ -99,11 +89,14 @@ Be prepared to retrain again, for the coming declarative low-code; the
 upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
-## Pillar 4: Markdown, generators, components
 
+## Pillar 3: Markdown, components, generators
+### 3a. Robots as coders
 
+So...
 
-## Pillar 5: SEO, AMP
+## Pillar 4: SEO, AMP
+### 4a. Content marketing
 
 There are many orgs competing for consumers, and no one will try a web
 app unless they can discover it, making SEO imperative. SEO includes
@@ -113,8 +106,18 @@ version of it. There is clearly much more to SEO than just this, but it
 is an important aspect that should not be ignored.
 
 
+## Pillar 5: Iterative and Agile
+
+Current Agile treats WAH and remote development as exceptions. An agile
+flavor, called Stanford Flash Teams (SFT), is far more cost effective
+and assumes being remote is a key part of the team. Iterative, or
+incomplete iterations, while helpful, is a bit more difficult to teach.
+One can replace daily stand-ups by incorporating regular syncs with
+screen recordings.
+
+
 ## Pillar 6: UI Design is a form of authority; and be and User-Focused 
-### Also fake design is fake
+### 6a. fake design is fake
 
 Maybe one's org develops at a slow; or fast pace. However, without art
 directors and designers, the web app, also known as digital interactive,
@@ -136,7 +139,28 @@ Further, some teams spend a considerable amount of time playing, giving
 in to every temptation available. Similarly, do UI first, then backend.
 
 
-## Pillar 7: No Negativity Towards DRY Mobile
+## Pillar 7: Security and Cloud
+
+CIO and HR are tech related. Companies that want to be safe are
+moving to PC-in-the-cloud (http://shop.shadow.tech/usen). For instance,
+one can be browser only in their org, with Chrome-book or a similar OS. They can do that
+company-wide, an employee-friendly way to lock down. 
+In any case, we
+find ourselves developing in the cloud often. We often use tools like SSH
+Vi, but also have the option to use a Web-IDE, such as CodeAnywhere;
+the point is that in the future, we will be doing more development
+on the web. Not only is the app running in the cloud: development is in the cloud as well.
+
+
+## Pillar 8: Build an Admin app, control and build
+
+One key is that CMS (Blog/Website, or similar) also requires an admin
+app, such as CMS apps have. One cause of this productivity jump is
+leveraging the technique of static generation. When building an app, also build 
+and admin app for the same - to be used by admins. 
+
+
+## Pillar 9: No Negativity Towards DRY Mobile
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
@@ -152,26 +176,6 @@ IOS, Android, PWA, with one single code base! Of course, there are
 people that want to use Swift | Java, but that is not a part of the
 long-term future. 
 
-
-## Pillar 8: Build an Admin app, control and build
-
-One key is that CMS (Blog/Website, or similar) also requires an admin
-app, such as CMS apps have. One cause of this productivity jump is
-leveraging the technique of static generation. When building an app, also build 
-and admin app for the same - to be used by admins. 
-
-
-## Pillar 9: Security and Cloud
-
-CIO and HR are tech related. Companies that want to be safe are
-moving to PC-in-the-cloud (http://shop.shadow.tech/usen). For instance,
-one can be browser only in their org, with Chrome-book or a similar OS. They can do that
-company-wide, an employee-friendly way to lock down. 
-In any case, we
-find ourselves developing in the cloud often. We often use tools like SSH
-Vi, but also have the option to use a Web-IDE, such as CodeAnywhere;
-the point is that in the future, we will be doing more development
-on the web. Not only is the app running in the cloud: development is in the cloud as well.
 
 ## Pillar 10: Benchmarking
 
