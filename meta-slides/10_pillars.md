@@ -6,7 +6,7 @@ The view for most people in leadership/management roles today is that the proces
 
 
 I set out to look for the next step forward in software productivity. I
-have documented the 10 core pillars that will lead software development
+have documented the core pillars that will lead software development
 for the next 10-15 years. For this article's purposes, I will look at it
 from a manager's point of view. For example, let's say a company has
 been able to get by without a CTO, but now, they need one to take their
@@ -32,10 +32,9 @@ a new wave to change everything.
 
 There are many good low-code tools: Airtable, BettyBlocks, Pega, ServiceNow, OutSystems, Bubble or you can even consider MBaaS tools as well; and even Form builders
 
-
 # Solution
 
-Below I have outlined the 10 pillars that will lead a company to the
+Below I have outlined the pillars that will lead a company to the
 next level in software development productivity and efficiencies.
 
 Not only does it allow managers to do
@@ -44,7 +43,31 @@ lets you do more accounting with less bookkeepers, but it also allows
 those that are less technical to partake in web app development, which
 is becoming more white collar as computing power is increasing.
 
-## Pillar 1: A Specific Agile Approach
+## Pillar 1: Digital transformation change management, and Software Apocalypse of Cloud v1.0
+### 1a: REST as a Service
+
+We moved from data centers to Cloud v1, but then used the familiar and
+dated architecture, and was only recently moved to the cloud. To be
+frank, it is a mess of an architecture diagram and fails to be
+maintainable.
+
+Cloud v2.0 is fully server-less. E.g. AWS Amplify or better Google
+FireStore. For example: user auth is client side only. A good first
+project is to move user auth Google FireBase and use FireStore for CRUD.
+Again, it is purely client side. Alternatively, one can host and mount a
+web app on S3, without the need for FTP, and additionally, use CDN for
+https certs.
+
+If one tries it, they will agree that year over year, head count for
+back-end programmers will progress towards 0. The cost savings are akin
+to going from Data Center to Cloud v1.0. With that being said, going
+from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
+amount of fear.
+
+Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, DigitalOcean and similar.
+
+
+## Pillar 2: Iterative and Agile
 
 Current Agile treats WAH and remote development as exceptions. An agile
 flavor, called Stanford Flash Teams (SFT), is far more cost effective
@@ -53,37 +76,8 @@ incomplete iterations, while helpful, is a bit more difficult to teach.
 One can replace daily stand-ups by incorporating regular syncs with
 screen recordings.
 
-## Pillar 2: UX and User-Oriented Teams
 
-Developers love to build, and that includes building useless things. The
-tech leaders could use 'Intercept/Observe'
-techniques - e.g. screen recordings of users using the Web App to share
-with the tech team. If one fails to do this, the team will be talking
-about bits and bytes and not the things that truly matter in the market.
-Further, some teams spend a considerable amount of time playing, giving
-in to every temptation available. Similarly, do UI first, then backend.
-
-## Pillar 3: Admin
-
-One key is that CMS (Blog/Website, or similar) also requires an admin
-app, such as CMS apps have. One cause of this productivity jump is
-leveraging the technique of static generation. When building an app, also build 
-and admin app for the same - to be used by admins. 
-
-## Pillar 4: Team Players
-
-Maybe one's org develops at a slow; or fast pace. However, without art
-directors and designers, the web app, also known as digital interactive,
-would look bad in the market. The ratio of designers to developers on a
-team is changing. Perhaps a team has 1 designer for 4-5 developers
-today, yet in the future, a team may have 2-3 designers per developer;
-and by designer, it should go without saying that I am referring to a
-designer that knows CSS. In any event, an individual contributor must
-know how to work with designers, while possessing polyglot skills in
-more than one SASS framework. NIH is poor productivity; it is better to
-leverage a documented CSS framework.  Also development is iterative. 
-
-## Pillar 5: Learn Quickly
+## Pillar 3: Learn Quickly, deeply; and focus on next
 
 Regardless of how anyone feels about it, in this vocation, one must be
 able to master things quickly, and 'forget' older things. So, if O.O. and
@@ -105,7 +99,11 @@ Be prepared to retrain again, for the coming declarative low-code; the
 upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
-## Pillar 6: SEO
+## Pillar 4: Markdown, generators, components
+
+
+
+## Pillar 5: SEO, AMP
 
 There are many orgs competing for consumers, and no one will try a web
 app unless they can discover it, making SEO imperative. SEO includes
@@ -114,7 +112,31 @@ generators should be able to write both a web app page and an AMP
 version of it. There is clearly much more to SEO than just this, but it
 is an important aspect that should not be ignored.
 
-## Pillar 7: No Negativity (Towards DRY)
+
+## Pillar 6: UI Design is a form of authority; and be and User-Focused 
+### Also fake design is fake
+
+Maybe one's org develops at a slow; or fast pace. However, without art
+directors and designers, the web app, also known as digital interactive,
+would look bad in the market. The ratio of designers to developers on a
+team is changing. Perhaps a team has 1 designer for 4-5 developers
+today, yet in the future, a team may have 2-3 designers per developer;
+and by designer, it should go without saying that I am referring to a
+designer that knows CSS. In any event, an individual contributor must
+know how to work with designers, while possessing polyglot skills in
+more than one SASS framework. NIH is poor productivity; it is better to
+leverage a documented CSS framework.  
+
+Developers love to build, and that includes building useless things. The
+tech leaders could use 'Intercept/Observe'
+techniques - e.g. screen recordings of users using the Web App to share
+with the tech team. If one fails to do this, the team will be talking
+about bits and bytes and not the things that truly matter in the market.
+Further, some teams spend a considerable amount of time playing, giving
+in to every temptation available. Similarly, do UI first, then backend.
+
+
+## Pillar 7: No Negativity Towards DRY Mobile
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
@@ -130,30 +152,16 @@ IOS, Android, PWA, with one single code base! Of course, there are
 people that want to use Swift | Java, but that is not a part of the
 long-term future. 
 
-## Pillar 8: Solve Software Apocalypse of Cloud v1.0
 
-We moved from data centers to Cloud v1, but then used the familiar and
-dated architecture, and was only recently moved to the cloud. To be
-frank, it is a mess of an architecture diagram and fails to be
-maintainable.
+## Pillar 8: Build an Admin app, control and build
 
-Cloud v2.0 is fully server-less. E.g. AWS Amplify or better Google
-FireStore. For example: user auth is client side only. A good first
-project is to move user auth Google FireBase and use FireStore for CRUD.
-Again, it is purely client side. Alternatively, one can host and mount a
-web app on S3, without the need for FTP, and additionally, use CDN for
-https certs.
+One key is that CMS (Blog/Website, or similar) also requires an admin
+app, such as CMS apps have. One cause of this productivity jump is
+leveraging the technique of static generation. When building an app, also build 
+and admin app for the same - to be used by admins. 
 
-If one tries it, they will agree that year over year, head count for
-back-end programmers will progress towards 0. The cost savings are akin
-to going from Data Center to Cloud v1.0. With that being said, going
-from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
-amount of fear.
 
-An example of a good early step would be to create a 'ViewModel' layer in you web-apps client side; so that 
-that you app is agonistic to the back end. And embrace server-less, go heavy into AWS S3, Google Firestore and similar.
-
-## Pillar 9: Security
+## Pillar 9: Security and Cloud
 
 CIO and HR are tech related. Companies that want to be safe are
 moving to PC-in-the-cloud (http://shop.shadow.tech/usen). For instance,
