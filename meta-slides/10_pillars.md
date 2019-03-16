@@ -44,9 +44,8 @@ those that are less technical to partake in web app development, which
 is becoming more white collar as computing power is increasing.
 
 ## Pillar 1: Digital transformation change management, and Software Apocalypse of Cloud v1.0
-### 1a: REST as a Service
-### 1b: Change Management - Low code, markdown, web centric, not desktop centric
-
+### 1a: Change Management - Low code, markdown, web centric, not desktop centric
+### 1b: REST as a Service
 
 
 We moved from data centers to Cloud v1, but then used the familiar and
