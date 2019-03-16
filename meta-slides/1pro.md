@@ -12,7 +12,7 @@
 
 ## Vic Cekvenich
 - CTO, Vendio (largest eBay partner); sold to Alibaba
-- Very first book on Struts ~ 2 years ahead of 1.6mm developers
+- Very first book on Struts MVC ~ 2 years ahead of 1.6mm developers
 
 |![90%](pro/09vic.jpg)|![90%](pro/10strutsbooks.png)|
 |:-:|:-:|

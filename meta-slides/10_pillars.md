@@ -30,7 +30,7 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
-There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey; and even Form builders like JotForm.
+There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey; and even Form builders like ZoHo Forms or JotForm.
 
 # Solution
 
@@ -45,6 +45,9 @@ is becoming more white collar as computing power is increasing.
 
 ## Pillar 1: Digital transformation change management, and Software Apocalypse of Cloud v1.0
 ### 1a: REST as a Service
+### 1b: Change Management - Low code, markdown, web centric, not desktop centric
+
+
 
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
@@ -90,10 +93,13 @@ upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
 
-## Pillar 3: Markdown, components, generators
+## Pillar 3: Generator, Code Prototype, Markdown, Mount, components
 ### 3a. Robots as coders
 
-So...
+So... nonGUI
+and keyboard
+eg: slides
+
 
 ## Pillar 4: SEO, AMP
 ### 4a. Content marketing
