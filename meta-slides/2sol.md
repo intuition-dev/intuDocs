@@ -96,7 +96,12 @@
 
 ---
 
-## Pillar 2: Learn Quickly; including computer-augmented/generators
+### Code, it's OK. It is even better.
+![100%](sol/46photoS.png)
+
+---
+
+## Reuse NIH components
 |![100%](sol/47ampC.png)|![90%](sol/48jqBar.png)|
 |:-:|:-:|
 
@@ -104,6 +109,25 @@
 
 ### Don't deploy - there is no CD. Mount, it's year 2019
 ![100%](sol/49duck.png)
+
+---
+
+## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Server-less, Markdown, Components
+- Server-less
+- Static Gen
+- Mount
+- Markdown (Easy HTML)
+- Code the prototype
+
+---
+
+## Pillar 5: Agile + Iterative
+![100%](sol/50iterative.png)
+
+---
+
+### As you retell the story you learn - and keep learning
+![100%](sol/51iter.jpg)
 
 ---
 

@@ -10,7 +10,6 @@ as we moved from mainframes to data centers, data centers to cloud servers, and 
 2nd to 3rd generation programming languages (e.g. 1GL machine, 2GL assembly, 3GL: javascript). 
 We haven’t made a large leap forward in productivity in ~15 years and we’re overdue for the next phase.
 
-
 I set out to look for the next step forward in software productivity. I
 have documented the core pillars that will lead software development
 for the next 10-15 years. For this article's purposes, I will look at it
@@ -53,7 +52,6 @@ is becoming more white collar as computing power is increasing.
 ## Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 DF
 
-
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
 frank, it is a mess of an architecture diagram and fails to be
@@ -74,7 +72,6 @@ amount of fear.
 
 Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, DigitalOcean and similar.
 FireStore, Backendless. DreamFactory, etc. 
-
 
 ## Pillar 2: Learn Quickly; including computer-augmented/generators
 PUG 
@@ -98,8 +95,8 @@ Be prepared to retrain again, for the coming declarative low-code; the
 upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
-
 ## Pillar 3: SEO, Competitive Content marketing, AMP
+AMP
 
 There are many orgs competing for consumers, and no one will try a web
 app unless they can discover it, making SEO imperative. SEO includes
@@ -110,6 +107,7 @@ is an important aspect that should not be ignored.
 
 
 ## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Server-less, Markdown, Components
+DUCK
 
 So... nonGUI
 and keyboard
@@ -118,6 +116,7 @@ No CD
 
 
 ## Pillar 5: Agile + Iterative
+ITERATIVE
 
 Current Agile treats WAH and remote development as exceptions. An agile
 flavor, called Stanford Flash Teams (SFT), is far more cost effective
@@ -172,6 +171,7 @@ and admin app for the same - to be used by admins.
 
 
 ## Pillar 9: No Negativity Towards DRY Mobile
+# From 3-4 teams to 2
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
