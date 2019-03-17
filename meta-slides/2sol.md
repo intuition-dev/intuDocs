@@ -131,3 +131,52 @@
 
 ---
 
+### And manage resources
+![100%](sol/52forbes.png)
+
+---
+
+### SFT: Stanford Flash Teams; Agile methodology the considers remote
+![100%](sol/52agile.png)
+
+---
+
+
+## Pillar 5: Agile w/ Remote; + Iterative
+- Daily video/demo status report
+- Acunote / SlimWiki
+- On-bording school
+- High productivity
+
+---
+
+## Pillar 6: UI Design is a form of authority; be User-Focused 
+![100%](sol/60SURVIVAL.jpg)
+
+---
+
+## As you advance past bits and bytes
+![100%](sol/61hierarchy.png)
+
+---
+
+## A video of a user using the app helps the team prioritize
+![100%](sol/61ux.png)
+
+---
+
+## Text editors and IDE are What-you-ask-for-is-what-you-get
+![100%](sol/67gui.png)
+
+---
+
+## Pillar 6: UI Design is a form of authority; be User-Focused 
+- fake designer is fake; if they don't leverage the medium/CSS (and CSS Frameworks)
+- UI Design is the #1 most important thing to focus projects ( and front end career )
+
+---
+
+
+
+
+

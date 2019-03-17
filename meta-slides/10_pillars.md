@@ -126,11 +126,14 @@ One can replace daily stand-ups by incorporating regular syncs with
 screen recordings.
 
 
-## Pillar 6: UI Design is a form of authority; and be and User-Focused 
-### 6a. fake design is fake
+## Pillar 6: UI Design is a form of authority; be User-Focused 
+### 6a. fake designer is fake
+SURVIVAL
+
+When a person byes a car - they decide by looking at it: then they justify their decision. That is just how a primate's brain works.
 
 Maybe one's org develops at a slow; or fast pace. However, without art
-directors and designers, the web app, also known as digital interactive,
+directors and designers, the web app
 would look bad in the market. The ratio of designers to developers on a
 team is changing. Perhaps a team has 1 designer for 4-5 developers
 today, yet in the future, a team may have 2-3 designers per developer;
@@ -149,10 +152,16 @@ Further, some teams spend a considerable amount of time playing, giving
 in to every temptation available. Similarly, do UI first, then backend.
 
 
-## Pillar 7: Security and Cloud
+Fake designers, fake style guide and fake branding don't leverage CSS, did not code css/SASS. eg auto-prefixer.
+If you mockup in water color; it won't look same in oil painting. 
+Leverage animations. Water-fall approach will be a non-dynamic, non-interactive site; more of a PDF|magazine
+
+
+## Pillar 7: Security, productivity and Cloud
+
 
 CIO and HR are tech related. Companies that want to be safe are
-moving to PC-in-the-cloud (http://shop.shadow.tech/usen). For instance,
+moving to PC-in-the-cloud. For instance,
 one can be browser only in their org, with Chrome-book or a similar OS. They can do that
 company-wide, an employee-friendly way to lock down. 
 In any case, we
