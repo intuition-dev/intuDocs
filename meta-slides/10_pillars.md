@@ -76,7 +76,8 @@ Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, Digita
 FireStore, Backendless. DreamFactory, etc. 
 
 
-## Pillar 2: Learn Quickly; with focus on next
+## Pillar 2: Learn Quickly; including computer-augmented/generators
+PUG 
 
 Regardless of how anyone feels about it, in this vocation, one must be
 able to master things quickly, and 'forget' older things. So, if O.O. and
@@ -98,16 +99,7 @@ upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
 
-## Pillar 3: Generator, Code Prototype, Markdown, Mount, components
-### 3a. Robots as coders
-
-So... nonGUI
-and keyboard
-eg: slides
-
-
-## Pillar 4: SEO, AMP
-### 4a. Content marketing
+## Pillar 3: SEO, Competitive Content marketing, AMP
 
 There are many orgs competing for consumers, and no one will try a web
 app unless they can discover it, making SEO imperative. SEO includes
@@ -115,6 +107,14 @@ AMP, whether it is favored or not, making it a requirement that
 generators should be able to write both a web app page and an AMP
 version of it. There is clearly much more to SEO than just this, but it
 is an important aspect that should not be ignored.
+
+
+## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Markdown, Components
+
+So... nonGUI
+and keyboard
+eg: slides
+No CD
 
 
 ## Pillar 5: Iterative and Agile
@@ -199,6 +199,16 @@ doing? Ideally one compares this number before low-code and after
 low-code pillars, as well as to their operating costs.
 
 (And if you have to use PHP to be productive, than do it)
+
+
+
+## Pillar 11: Hight productivity makes Webbapps disposable.
+#### Rewrite legacy apps to static + Sass as an practice
+
+Eg: LAMP. Eg WP
+
+
+
 
 # Get Started
 

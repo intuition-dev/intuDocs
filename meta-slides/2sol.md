@@ -60,10 +60,30 @@
 ---
 
 ### Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
+- Leverage SasS services as the only architecture
+- Leverage Web/HTML throughout org
+- Leverage low code by citizen developers
 
 ---
 
-###  Hosted REST SaaS 
-![100%](sol/18df.png)
+## Pillar 2: Learn Quickly; including computer-augmented/generators
+|![100%](sol/20book.png)|![90%](sol/20gen.png)|
+|:-:|:-:|
 
 ---
+
+### Learn the most popular templating language. Quickly.
+![100%](sol/21puf.png)
+
+---
+
+### Pillar 3: SEO, Competitive Content marketing, AMP
+![100%](sol/30seo.gif)
+
+---
+
+## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Markdown, Components
+![100%](sol/30seo.gif)
+
+---
+
