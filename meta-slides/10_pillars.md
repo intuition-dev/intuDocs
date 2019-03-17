@@ -21,8 +21,8 @@ software development to the next level?
 
 I discovered low-code when I went looking for the next wave of software
 development effectiveness. We have gone through many waves, such as
-mainframes, mini's (like DEC), and data centers. Now, we use cloud
-computing. Worth mentioning, is that when we had data centers, budgets
+mainframes, and data centers. Now, we use cloud
+computing. When we had data centers, budgets
 were $10MM+. Now with the cloud, the same company's budget has dropped
 to below $1MM. Academically speaking, if you have a computer science
 degree, you know about 1st generation language (1GL) machine, 2GL
@@ -40,6 +40,7 @@ and even Form builders like ZoHo Forms or JotForm.
 # Solution
 LOGO
 
+A key pillar is to be able to develop faster than rate of change or requirements, customers and market.
 Below I have outlined the pillars that will lead a company to the
 next level in software development productivity and efficiencies.
 
@@ -47,10 +48,12 @@ Not only does it allow managers to do
 more with a smaller team, (I'll say like adding an accounting system
 lets you do more accounting with less bookkeepers, but it also allows
 those that are less technical to partake in web app development, which
-is becoming more white collar as computing power is increasing.
+is becoming more white collar as computing power is increasing. Here is refer to programing as a blue collar job - taking
+requirements from a product manager and implementing it.
 
 ## Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 DF
+
 Once there is desire for a transformation, you should start with a citizen developers.
 Pick some low tools to get non-developers going. 
 One effect of this is that now professional and career developers have some competitors. 
@@ -105,7 +108,8 @@ increased productivity it offers.
 AMP
 
 There are many orgs competing for consumers, and no one will try a web
-app unless they can discover it, making SEO imperative. SEO includes
+app unless they can discover it, making SEO imperative. Content and SEO equals revenue growth.
+SEO includes
 AMP, whether it is favored or not, making it a requirement that
 generators should be able to write both a web app page and an AMP
 version of it. There is clearly much more to SEO than just this, but it
@@ -115,10 +119,10 @@ is an important aspect that should not be ignored.
 ## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Server-less, Markdown, Components
 DUCK
 
-So... nonGUI
-and keyboard
-eg: slides
-No CD
+Obviously generators are a key to productivity improvement.  And it should be combined with prototyping in code, as opposed
+to using a gui waterfall type approach.
+Without a deployment step, as everything is deployed. 
+And leverage 3rd party components when you can. 
 
 
 ## Pillar 5: Agile + Iterative
@@ -182,8 +186,9 @@ on the web. Not only is the app running in the cloud: development is in the clou
 HTML
 
 Eg: LAMP. Eg WordPress.
-The mentality that software development is expensive has to end.
-Step 1: extract the html files and assets.
+The mentality that software development is expensive has to end. Musicians and athletes practice their art,
+and so can developers. So find something that is used and port it to leverage current year's tech.
+Eg: extract the html files and assets and convert to Pug.
 
 
 ## Pillar 9: No Negativity Towards DRY/Mobile
@@ -220,32 +225,33 @@ low-code pillars, as well as to their operating costs.
 
 ## We have not see a productivity jump in ~10 years.
 
-This just means we are overdue.
+This just means we are overdue. The short history of computers is that since the 1950's every 
+10 years we had a huge leap forward in productivity.
 
 
 # Get Started
 
 The next wave of development productivity is coming, and we can see that
-it will be low-code. low-code is the way to create
+it will be low-code. Low-code is the way to create
 front-end web and application development.
-
-You can see a low-code CRUD example here:
-
--   https://github.com/MetaBake
 
 You can run it by installing MetaBake from
 here:
 
 -   https://www.staticgen.com/MetaBake
 
+Or you can see a low-code CRUD example here:
+
+-   https://github.com/MetaBake
+
+
 ## mBake.org
+LOGO
 
 If your organization would like to try one or more of the low-code
-pillars, please [contact
-me](mailto:vic@mBake.org?subject=10%20Pillars%20of%20Low%20Code%20Inquiry).
-We can teach your team on-site!
+pillars, please contact me.
 
 Or, if you have a project that you want to do in 1/10th of the time at
-1/10th of the cost, we will build it for you. 
+1/10th of the cost, we will build it for you, and offer training.
 
 ### Written in Typora
