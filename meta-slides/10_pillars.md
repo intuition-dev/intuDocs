@@ -2,7 +2,12 @@
 
 ## Background
 
-The view for most people in leadership/management roles today is that the process of software development is far too slow. Website, web app, and native mobile app development takes too long to put into production and is too expensive. Historically, software development makes huge productivity leaps roughly every 10 years. You can see this as we moved from mainframes to data centers, data centers to cloud servers, and moving from 1st to 2nd to 3rd generation programming languages (e.g. 1GL machine, 2GL assembly, 3GL: javascript). We haven’t made a large leap forward in productivity in ~15 years and we’re overdue for the next phase.
+The view for most people in leadership/management roles today is that the process of software development is far too slow.
+Website, web app, and native mobile app development takes too long to put into production and is too expensive. 
+Historically, software development makes huge productivity leaps roughly every 10 years. You can see this 
+as we moved from mainframes to data centers, data centers to cloud servers, and moving from 1st to 
+2nd to 3rd generation programming languages (e.g. 1GL machine, 2GL assembly, 3GL: javascript). 
+We haven’t made a large leap forward in productivity in ~15 years and we’re overdue for the next phase.
 
 
 I set out to look for the next step forward in software productivity. I
@@ -30,7 +35,8 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
-There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey; and even Form builders like ZoHo Forms or JotForm.
+There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey; 
+and even Form builders like ZoHo Forms or JotForm.
 
 # Solution
 
