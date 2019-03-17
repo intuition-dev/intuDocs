@@ -95,6 +95,13 @@ but keep the C++ programmers out*,
 
 --- 
 
+## Signs of shift: 
+|![90%](pro/60gart.png)|![120%](pro/60out.png)|
+|:-:|:-:|
+I provide a list of low-code in the 'Pillars' document.
+
+---
+
 # Part II: What movie has line: 
 ###  'You're already dead. Everybody dies, you know I believe it' 
 ![60%](pro/100linda.jpg)
