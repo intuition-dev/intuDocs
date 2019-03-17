@@ -5,39 +5,19 @@
 <!-- footer: mBake.org -->
 ## HW costs are down; but also development costs need to go down
 
-![200%](sol/storage.gif)
+![200%](sol/01storage.gif)
+
+---
+
+## Software development costs as well
+
+![200%](sol/02form.png)
 
 ---
 
 # Primates use a box to reach
 
-![200%](pro/211logo.jpg)
-
----
-## Automatic generation of apps examples:
-
-|![10%](sol/14hugo.png)|![90%](sol/15meta.png)|
-|:-:|:-:|
----
-
-### True Story: A developer in USA hired a remote developer in India to do their work.  
-
-## Q: Good or bad - from Managers POV?
-
----
-
-Pillar 1: A specific remote centric Agile management (SFT)
-![](sol/20agile.png)
-- Can someone read the time scale on top?
----
-
-Management: take a screen shot every few minutes
-|![100%](sol/scr2.png)|![90%](sol/scr1.png)|
-|:-:|:-:|
----
-
-## Employee cost? !!
-![200%](sol/21forbes.png)
+![200%](logo.jpg)
 
 ---
 
