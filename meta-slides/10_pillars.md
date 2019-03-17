@@ -1,6 +1,7 @@
 # 10 Pillars Related to Low-Code
 
 ## Background
+TRUCK
 
 The view for most people in leadership/management roles today is that the process of software development is far too slow.
 Website, web app, and native mobile app development takes too long to put into production and is too expensive. 
@@ -18,7 +19,6 @@ been able to get by without a CTO, but now, they need one to take their
 productivity to the next level. You, the reader, is hired to be the new CTO.
 How do you lead a team of intelligent VPs, Directors, and managers of
 software development to the next level?
-
 
 I discovered low-code when I went looking for the next wave of software
 development effectiveness. We have gone through many waves, such as
@@ -39,6 +39,7 @@ There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCo
 and even Form builders like ZoHo Forms or JotForm.
 
 # Solution
+LOGO
 
 Below I have outlined the pillars that will lead a company to the
 next level in software development productivity and efficiencies.
@@ -49,9 +50,8 @@ lets you do more accounting with less bookkeepers, but it also allows
 those that are less technical to partake in web app development, which
 is becoming more white collar as computing power is increasing.
 
-## Pillar 1: Digital transformation change management, and Software Apocalypse of Cloud v1.0
-### 1a: Change Management - Low code, markdown, web centric, not desktop centric
-### 1b: REST as a Service
+## Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
+DF
 
 
 We moved from data centers to Cloud v1, but then used the familiar and
