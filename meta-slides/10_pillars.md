@@ -109,7 +109,7 @@ version of it. There is clearly much more to SEO than just this, but it
 is an important aspect that should not be ignored.
 
 
-## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Markdown, Components
+## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Server-less, Markdown, Components
 
 So... nonGUI
 and keyboard
@@ -117,7 +117,7 @@ eg: slides
 No CD
 
 
-## Pillar 5: Iterative and Agile
+## Pillar 5: Agile + Iterative
 
 Current Agile treats WAH and remote development as exceptions. An agile
 flavor, called Stanford Flash Teams (SFT), is far more cost effective

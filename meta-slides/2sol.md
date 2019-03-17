@@ -62,7 +62,7 @@
 ### Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 - Leverage SasS services as the only architecture
 - Leverage Web/HTML throughout org
-- Leverage low code by citizen developers
+- Leverage low-code by citizen developers
 
 ---
 
@@ -82,8 +82,28 @@
 
 ---
 
-## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Markdown, Components
-![100%](sol/30seo.gif)
+## Pillar 4: Year 2019 tech: Generator, Code Prototype, Mount, Server-less, Markdown, Components
+![100%](sol/40auto.png)
+
+---
+
+![100%](sol/41lowcode.png)
+
+---
+
+### Metabake is an example of tool for static generation
+![100%](sol/43meta.png)
+
+---
+
+## Pillar 2: Learn Quickly; including computer-augmented/generators
+|![100%](sol/47ampC.png)|![90%](sol/48jqBar.png)|
+|:-:|:-:|
+
+---
+
+### Don't deploy - there is no CD. Mount, it's year 2019
+![100%](sol/49duck.png)
 
 ---
 
