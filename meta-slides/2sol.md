@@ -73,11 +73,11 @@
 ---
 
 ### Learn the most popular templating language. Quickly.
-![100%](sol/21puf.png)
-
+![100%](sol/21pug.png)
+Auto-close ta
 ---
 
-### Pillar 3: SEO, Competitive Content marketing, AMP
+### Pillar 3: SEO / Competitive Content marketing, AMP
 ![100%](sol/30seo.gif)
 
 ---
@@ -138,6 +138,7 @@
 
 ### SFT: Stanford Flash Teams; Agile methodology the considers remote
 ![100%](sol/52agile.png)
+### True Story: A developer in USA hired a remote developer in India to do their work.  
 
 ---
 
@@ -171,12 +172,62 @@
 ---
 
 ## Pillar 6: UI Design is a form of authority; be User-Focused 
-- fake designer is fake; if they don't leverage the medium/CSS (and CSS Frameworks)
+- leverage the medium/CSS (and CSS Frameworks)
 - UI Design is the #1 most important thing to focus projects ( and front end career )
 
 ---
 
+## Pillar 7: Security, productivity and Cloud
+![100%](sol/70cbook.jpg)
+Avoid desktop apps
+---
+
+## You don't need every developer to setup VS Code
+![100%](sol/71ide.png)
+
+---
+
+## Pillar 8: Rewrite legacy apps: *just for practice*
+![100%](sol/80html.png)
+
+---
+
+## eg: LAMP
+![100%](sol/81wp.png)
+
+---
+
+## Pillar 9: No Negativity Towards DRY/Mobile
+Currently some orgs have 3 teams:
+- Webapp
+- Mobile
+- Website/Blog (run by marketing)
+Instead: Front end should be combined into one.
+Second team is back end services, eg: REST
+
+---
+
+## Learn Electron
+![100%](sol/90EL.png)
+
+---
+
+## No SDK required: upload to cloud for Native Mobile app
+|![100%](sol/90f7.png)|![90%](sol/48jqBar.png)|
+|:-:|:-:|
+
+----
+
+## Pillar 10: Benchmark your productivity performance vs others
+![100%](sol/100bench.png)
+
+---
+
+## We have not see a productivity jump in ~10 years.
+
+![100%](sol/200-vt100.png)
 
 
+---
 
-
+ vic@mBake.org 

@@ -95,7 +95,7 @@ Be prepared to retrain again, for the coming declarative low-code; the
 upcoming development and prominence cannot be stopped due to the
 increased productivity it offers. 
 
-## Pillar 3: SEO, Competitive Content marketing, AMP
+## Pillar 3: SEO / Competitive Content marketing, AMP
 AMP
 
 There are many orgs competing for consumers, and no one will try a web
@@ -158,7 +158,7 @@ Leverage animations. Water-fall approach will be a non-dynamic, non-interactive 
 
 
 ## Pillar 7: Security, productivity and Cloud
-
+CBOOK
 
 CIO and HR are tech related. Companies that want to be safe are
 moving to PC-in-the-cloud. For instance,
@@ -171,16 +171,18 @@ the point is that in the future, we will be doing more development
 on the web. Not only is the app running in the cloud: development is in the cloud as well.
 
 
-## Pillar 8: Build an Admin app, control and build
+## Pillar 8: Rewrite legacy apps: *just for practice*
+### High productivity makes Webbapps disposable.
+HTML
 
-One key is that CMS (Blog/Website, or similar) also requires an admin
-app, such as CMS apps have. One cause of this productivity jump is
-leveraging the technique of static generation. When building an app, also build 
-and admin app for the same - to be used by admins. 
+Eg: LAMP. Eg WordPress.
+The mentality that software development is expensive has to end.
+Step 1: extract the html files and assets.
 
 
-## Pillar 9: No Negativity Towards DRY Mobile
-# From 3-4 teams to 2
+## Pillar 9: No Negativity Towards DRY/Mobile
+# Reorg from 3 teams to 2
+ELECTRON
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
@@ -197,7 +199,7 @@ people that want to use Swift | Java, but that is not a part of the
 long-term future. 
 
 
-## Pillar 10: Benchmarking
+## Pillar 10: Benchmark your productivity performance vs others
 
 One must be able to benchmark their org vs another org in our
 industry. Answers to questions such as how quickly an org in their industry segment
@@ -210,13 +212,9 @@ low-code pillars, as well as to their operating costs.
 (And if you have to use PHP to be productive, than do it)
 
 
+## We have not see a productivity jump in ~10 years.
 
-## Pillar 11: Hight productivity makes Webbapps disposable.
-#### Rewrite legacy apps to static + Sass as an practice
-
-Eg: LAMP. Eg WP
-
-
+This just means we are overdue.
 
 
 # Get Started
