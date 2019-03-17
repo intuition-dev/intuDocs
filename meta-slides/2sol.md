@@ -1,8 +1,11 @@
 <!-- $theme: default -->
 <!-- prerender: true -->
+<!-- paginate: true -->
+paginate: true 
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-<!-- footer: mBake.org -->
+footer: www.mBake.org
+
 ## HW costs are down; but also development costs need to go down
 
 ![200%](sol/01storage.gif)
