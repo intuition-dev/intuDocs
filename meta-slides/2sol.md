@@ -21,6 +21,11 @@
 
 ---
 
+### Start with non-developers
+![100%](sol/10cit.png)
+
+---
+
 ### Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 ![100%](sol/10cloud.png)
 
@@ -53,6 +58,11 @@
 
 ---
 
+###  Provide resources ahead of the efforts
+![100%](sol/19cm.jpg)
+
+---
+
 ###  Don't shoot at the target
 ## Lead it. 
 ![100%](sol/19aim.png)
@@ -62,7 +72,7 @@
 ### Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 - Leverage SasS services as the only architecture
 - Leverage Web/HTML throughout org
-- Leverage low-code by citizen developers
+- Leverage low-code by citizen developers and then pro-developers
 
 ---
 
@@ -229,5 +239,7 @@ Second team is back end services, eg: REST
 
 
 ---
+
+![200%](logo.jpg)
 
  vic@mBake.org 

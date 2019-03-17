@@ -51,6 +51,10 @@ is becoming more white collar as computing power is increasing.
 
 ## Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 DF
+Once there is desire for a transformation, you should start with a citizen developers.
+Pick some low tools to get non-developers going. 
+One effect of this is that now professional and career developers have some competitors. 
+Can a non-tried developer write an application faster than a professional developer.
 
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
@@ -69,6 +73,8 @@ back-end programmers will progress towards 0. The cost savings are akin
 to going from Data Center to Cloud v1.0. With that being said, going
 from Cloud v1.0 to Cloud v2.0 is a huge benefit, and produces a similar
 amount of fear.
+
+Also digital transformation is: Change Management and should be treated as such.
 
 Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, DigitalOcean and similar.
 FireStore, Backendless. DreamFactory, etc. 
