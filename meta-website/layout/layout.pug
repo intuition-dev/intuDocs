@@ -40,18 +40,17 @@ html(lang='en_US')
 
       //- get the images
       script(src='//cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js')
-      script(src= '/assets/js/loader.min.js')
 
       //- top css layout
       link(href='/assets/3rd/spectreTop.css', rel='stylesheet', type='text/css') 
       style.
          .delayShowing { opacity: 0 !important; }
 
-      script(src="//instant.page/1.2.2", type="module", integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU")
       //- in case a page needs it:
       block head2
 
    body
+      script(src= '/assets/js/loader.min.js', async='')
 
       include navJBar
 
@@ -63,4 +62,5 @@ html(lang='en_US')
          function userSzSc() {
             console.info('resize|scroll')
          }
+      script(src="//instant.page/1.2.2", type="module", defer='')
       
