@@ -14,7 +14,7 @@ depp.define({
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.css'
    , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
 
-   , '/assets/3rd/gridform.css'
+   , '/assets/css/gridform.css'
 ]
 })//define
 
@@ -29,8 +29,8 @@ depp.define({ '2nd': ['#pre'
 })//define
 
 depp.define({ 'css': ['#2nd'
-   ,'/assets/3rd/spectre.css'
-   ,'/assets/3rd/gridform.css'
+   ,'/assets/css/spectre.css'
+   ,'/assets/css/gridform.css'
    ,'/assets/css/main.css'
 
    , 'css!https://fonts.googleapis.com/css?family=Open+Sans'
@@ -76,11 +76,11 @@ function onLoaded() {// 'show' page, ex: unhide
       $('.delayShowing').removeClass('delayShowing') // show
     })
 
-    if (!is.desktop()) { // mobile browser bar resize
+    /*if (!is.desktop()) { // mobile browser bar resize
         const viewportHeight = $('.section').outerHeight()
         console.info(viewportHeight)
         $('.section').css({ 'min-height': viewportHeight })
-    }
+    }*/
 
     console.info('setup zen')
     zenscroll.setup(null, 0)

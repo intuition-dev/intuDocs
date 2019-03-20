@@ -1,7 +1,6 @@
 basedir: ../../
 
-pretty: false
-
+pretty: true
 title: Why MetaBake?
 image: >-
   http://mBake.org/assets/img/slide-3.jpg
