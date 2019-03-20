@@ -1,6 +1,12 @@
-# MetaBake versus Gulp and Grunt
+# MetaBake versus WordPress and other CMS
 
-Gulp and Grunt are nice, and how MetaBake(mBake) started. Gulp and Grunt would support older version of
-transpilers and builders, not the latest 'npm' version. So I started writing a builder based on convention, not configuration in node/.js.
+WordPress has the largest chunk of WWW - and it is ~15 years old. In dog-years, that is a lot.
+One issue a while back my team had with WP(Wordpress) is that some pages on some browsers did not render CSS properly. 
+It turns out, the problem was that someone did not close a tag.
+
+In Ruby, Jekyll is popular and in Go: Hugo.
+Plan is to have MetaBacke baseCMS be the most popular static CMS.
+
+- It is fully SEO and CDN based, including AMP.
 
 
