@@ -19,12 +19,12 @@ Firestore is free for up to 50,000 reads and 20,000 writes per day. See more det
 
 		$ mbake -c .
 		// from assets
-		$ mbakeW -s .
-		$ mbakeW -n .
+		$ mbakeX -s .
+		$ mbakeX -n .
 
 	In a browser, open the Endpoint-URL. You should see the CRUD App served by Caddy & webDav server OR if you're running locally on your PC use the mbake watcher to run the app (eg: 0.0.0.0:8080):
 
-		$ mbakeW -w .
+		$ mbakeX -w .
 
 2. Navigate to the 'ViewModel CRUD' menu item. Inspect the fragment `/screen/example1/index.pug`. Note the `table#table1` and `table#table2` tags, an empty tables with ID `#table1` and `#table2` which fills with data using tabulator.js library.
 Next is how table is getting filled with data. `getViewList('table1', 'table2')` function is called from the bind file `Example1Bind.js`:

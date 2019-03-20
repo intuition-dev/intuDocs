@@ -32,13 +32,13 @@ In our project we use mbake scss compiler, it works through assets.yaml eg:
 
 There is list of sass files in assets.yaml and it will compile to /assets/css folder. So you can just run the command from the 'assets' folder to compile scss/sass to css:
 
-        $ mbakeW -s . 
+        $ mbakeX -s . 
 
 or any path in assets or any sub folder under assets and it will compile scss/sass to css. It won't work for folders other than /assets, or if there is no assets.yaml properly configured in assets.
 
 You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile scss/sass to css as well as `.pug` to `.html`, and `*-comp.pug` to `*-comp.js`. The command is:
 
-        $ mbakeW -w .
+        $ mbakeX -w .
 
 
 In the [next tutorial](/dynamic_data_binding/), we cover _dynamic databinding_.

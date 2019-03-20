@@ -44,7 +44,7 @@ We assume that you have already installed mbake with `$ yarn global add mbake` a
         $ mbake -c .
 
         // from `/assets` folder to compile sass/scss to css
-        $ mbakeW -s .
+        $ mbakeX -s .
 
         // from `/news` folder and any other folder (if they exist) in which there is `dat_i.yaml` to process Pug and dat_i items to items.json:
 
@@ -62,7 +62,7 @@ We assume that you have already installed mbake with `$ yarn global add mbake` a
 
 6. You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile `.pug` to `.html` and `*-comp.pug` to `*-comp.js`, and also scss/sass to css:
 
-        $ mbakeW -w .
+        $ mbakeX -w .
 
 ## About dat.yaml
 mbake looks for `dat.yaml` in each folder and uses it for static binding. If you have `'bla: Oh hi'` in `dat.yaml`, you can use the value inside a `.pug` file at compile time via:

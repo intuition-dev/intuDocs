@@ -46,7 +46,7 @@ mbake is Cloud v2.0. You do not need to install or maintain any HTTP, DB or any 
 
         $ mbake -c .
         $ cd assets
-        $ mbakeW -s .
+        $ mbakeX -s .
         $ cd ..
         $ cd blog
         $ mbake -i .
