@@ -1,21 +1,24 @@
 mixin link(path, name)
-  a.btn.btn-link(href=path)= name
+    a.btn.btn-link(href=path)= name
 
 .off-canvas.flex-centered
-  a.off-canvas-toggle.btn.btn-primary.btn-action.show-md(href='#sidebar-id')
-    i.icon.icon-menu
-      
-  #sidebar-id.off-canvas-sidebar
-    ul.nav
-      li.nav-item
-        +link(ROOT + 'home', 'home')
+    a.off-canvas-toggle.btn.btn-primary.btn-action.show-md(href='#sidebar-id')
+        i.icon.icon-menu
+            
+    #sidebar-id.off-canvas-sidebar
+        ul.nav
+            li.nav-item
+                +link(ROOT + 'home', 'home')
+        
+    a.off-canvas-overlay(href='#close')
     
-  a.off-canvas-overlay(href='#close')
-  
-  .off-canvas-content.px-2
-      header.navbar
-        section.navbar-section
-          a.mr-2.navbar-brand(href=ROOT + 'home') 
-            h2 Metabake
-        section.navbar-section.hide-md
-          +link(ROOT + 'home', 'home')
+    .off-canvas-content
+        header.navbar
+            section.navbar-section
+                a.mr-2.navbar-brand(href=ROOT + 'home') 
+                    span
+                    .name-wrap
+                        .slogan high development productivity
+                        h2 Metabake
+            //- section.navbar-section.hide-md
+            //-     +link(ROOT + 'home', 'home')

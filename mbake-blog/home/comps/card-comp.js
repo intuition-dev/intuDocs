@@ -14,7 +14,6 @@ riot.tag2('card-comp', '<div class="cards-container"> <div class="columns"> <vir
                 thiz.update();
                 return;
             }
-            console.info(Object.keys(data[0]));
 
             let cloned = JSON.parse(JSON.stringify(data));
             thiz.items = cloned;

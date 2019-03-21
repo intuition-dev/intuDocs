@@ -7,30 +7,3 @@
 @import '_layout.scss';
 @import '_button.scss';
 @import '_components.scss';
-
-.banner, .banner-home {
-	display: flex;
-	align-items: center;
-	height: 300px;
-}
-
-//- HOME PAGE
-.banner-home {
-	justify-content: center;
-	height: 500px;
-	p {
-		color: $white;
-	}
-}
-
-//- POST PAGE
-.banner {
-	.date {
-		color: $waterloo;
-	}
-}
-
-
-.content-post {
-	padding: 50px 0;
-}

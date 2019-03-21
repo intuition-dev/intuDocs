@@ -48,3 +48,21 @@
 		}
 	}
 }
+
+.banner {
+	display: flex;
+	align-items: center;
+	height: 300px;
+}
+
+//- POST PAGE
+.banner {
+	.date {
+		color: $waterloo;
+	}
+}
+
+
+.content-post {
+	padding: 50px 0;
+}
