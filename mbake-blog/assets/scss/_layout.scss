@@ -9,6 +9,22 @@
     color: $white;
     text-align: center;
     position: relative;
+    &.inner {
+        header {
+            padding: 1rem 0;
+        }
+        .topbar-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            background: 0;
+            z-index: 999;
+        }
+    }
     .topbar-wrapper {
         background: rgba(0,0,0,0.2);
         border-color: rgba(0,0,0,0);
@@ -28,6 +44,7 @@
             a {
                 &, &:hover, &:active, &:focus {
                     color: white;
+                    text-decoration: none;
                 } 
             }
             .fa-envelope {
@@ -40,6 +57,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                &:hover {
+                    i, a {
+                        color: $black;
+                    }
+                }
+                i, a {
+                    transition: all .3s ease-in-out;
+                }
                 i {
                     flex-shrink: 0;
                 }
@@ -114,9 +139,18 @@ header {
             flex-direction: column;
             align-items: stretch;
             margin-bottom: -6px;
+            .slogan, h2 {
+                transition: all .5s ease-in-out;
+            }
+            &:hover {
+                .slogan, h2 {
+                    color: $black;
+                }
+            }
         }
         .slogan {
-            font-size: 10px;
+            font-size: 10.4px;
+            font-weight: 200;
             padding-left: 2px;
             text-transform: capitalize;
         }
@@ -140,6 +174,18 @@ header {
         line-height: 30px;
         margin: 0 5px;
         border-radius: 2px;
+        transition: all .3s ease-in-out;
+    }
+    &:hover i {
+        color: black;
+    }
+}
+
+footer {
+    .social-icon {
+        &:hover i {
+            color: $blue-sky;
+        }
     }
 }
 
@@ -167,11 +213,13 @@ footer {
         text-align: center;
     }
     a {
+        transition: all .3s ease-in-out;
         &, &:hover, &:active, &:focus, &:visited {
             color: $blue-sky;
+            text-decoration: none;
         }
         &:hover {
-            text-decoration: underline;
+            color: $black;
         }
     }
     .wide-letters {
