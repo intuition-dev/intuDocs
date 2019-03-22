@@ -212,7 +212,7 @@ Avoid desktop apps
 
 ## Pillar 9: No Negativity Towards DRY/Mobile
 Currently some orgs have 3 teams:
-- Webapp
+- web-app
 - Mobile
 - Website/Blog (run by marketing)
 Instead: Front end should be combined into one.
