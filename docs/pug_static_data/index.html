@@ -53,16 +53,6 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../s3_n_webdrive_mount/">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">Learn Templating/Pug</a>
@@ -193,7 +183,7 @@ becomes this HTML:</p>
 $ mbake -c .
 
 // from `/assets` folder to compile sass/scss to css
-$ mbakeW -s .
+$ mbakeX -s .
 
 // from `/news` folder and any other folder (if they exist) in which there is `dat_i.yaml` to process Pug and dat_i items to items.json:
 
@@ -212,7 +202,7 @@ In the `dat_i.yaml` file you can check from which folder mbake will look for `da
 </li>
 <li>
 <p>You can also use mbake live reload/watcher/compiler from the root folder of your project, this command will automatically compile <code>.pug</code> to <code>.html</code> and <code>*-comp.pug</code> to <code>*-comp.js</code>, and also scss/sass to css:</p>
-<pre><code>$ mbakeW -w .
+<pre><code>$ mbakeX -w .
 </code></pre>
 </li>
 </ol>
@@ -233,7 +223,7 @@ In the `dat_i.yaml` file you can check from which folder mbake will look for `da
         <a href="../spectre_n_scss/" class="btn btn-neutral float-right" title="Spectre SCSS Theme Framework and SCSS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../ca/" class="btn btn-neutral" title="Mount linux box folder to another linux box using CodeAnywhere editor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -259,7 +249,7 @@ In the `dat_i.yaml` file you can check from which folder mbake will look for `da
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../ca/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../spectre_n_scss/" style="color: #fcfcfc">Next &raquo;</a></span>

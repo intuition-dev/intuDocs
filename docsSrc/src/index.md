@@ -101,8 +101,6 @@ To go extreme serverless, we show how to use mbake with
 
 ### Go extreme serverless following the steps (Tutorials):
 
-- [Setup S3 as your HTTP server and mount it](/s3_n_webdrive_mount/)
-- [Mount S3 to linux box via goofys using CodeAnywhere editor](/ca/)
 - [Learn Pug and static binding; view via S3 HTTP server](/pug_static_data/)
 - [Spectre SCSS Theme Framework and SCSS](/spectre_n_scss/)
 - [dynamic databinding](/dynamic_data_binding/)

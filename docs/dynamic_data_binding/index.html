@@ -55,16 +55,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../s3_n_webdrive_mount/">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../pug_static_data/">Learn Templating/Pug</a>
 	    </li>
           
@@ -200,7 +190,7 @@ body
 <p>You can see it working by going to <code>/riotFirst/</code> in the browser.</p>
 </li>
 <li>
-<p>We can render a list of links from a <code>list.json</code>. Navigate to the 'News' menu item. Inspect <code>/news/index.pug</code>. We use <em>Axios</em> to load the JSON and our custom riot component <code>table-comp</code> to dynamically render the list of links in the browser. Note that we begin loading the JSON as early as possible, in parallel with the UI, so users have to wait less. Now inspect <code>/news/tag/table-comp.pug</code> and note the use of Pug <code>each={items}</code> with JavaScript to iterate through the items in <code>list.json</code>. You use <code>'$ mbake -c .'</code> to generate <code>table-comp.js</code>. It is incorporated in <code>/news/index.pug</code>. There's no need to write JSON by hand, as you can process a <code>list.csv</code> to <code>list.json</code> with <code>'$ mbakeW -j .'</code>. This is a great way to build lists that change over time.</p>
+<p>We can render a list of links from a <code>list.json</code>. Navigate to the 'News' menu item. Inspect <code>/news/index.pug</code>. We use <em>Axios</em> to load the JSON and our custom riot component <code>table-comp</code> to dynamically render the list of links in the browser. Note that we begin loading the JSON as early as possible, in parallel with the UI, so users have to wait less. Now inspect <code>/news/tag/table-comp.pug</code> and note the use of Pug <code>each={items}</code> with JavaScript to iterate through the items in <code>list.json</code>. You use <code>'$ mbake -c .'</code> to generate <code>table-comp.js</code>. It is incorporated in <code>/news/index.pug</code>. There's no need to write JSON by hand, as you can process a <code>list.csv</code> to <code>list.json</code> with <code>'$ mbakeX -j .'</code>. This is a great way to build lists that change over time.</p>
 </li>
 <li>
 <p>Inspect <code>/assets/js/loader.js</code>. We use a tiny <a href="https://github.com/muicss/johnnydepp">dependency manager</a> (862 bytes) to facilitate the loading of required libraries in parallel with the UI. Take another look at <code>/zabout/contect/email.pug</code> and the use of <code>depp.require(['css'], setupEmail)</code>. We use it to signal when an inline dependency has been met (a process is 'done' and code is 'ready' for execution).</p>

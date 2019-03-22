@@ -55,16 +55,6 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../s3_n_webdrive_mount/">Create linux machine, install Caddy with webDAV and mount folder from linux machine to your PC via Mountain Duck</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../ca/">Mount linux box folder to another linux box using CodeAnywhere editor</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <a class="" href="../pug_static_data/">Learn Templating/Pug</a>
 	    </li>
           
@@ -166,11 +156,11 @@
 <p>and copy the project files (inside of <code>/crud</code>) into the project root (eg: <code>/www</code> folder). Compile the project:</p>
 <pre><code>$ mbake -c .
 // from assets
-$ mbakeW -s .
-$ mbakeW -n .
+$ mbakeX -s .
+$ mbakeX -n .
 </code></pre>
 <p>In a browser, open the Endpoint-URL. You should see the CRUD App served by Caddy &amp; webDav server OR if you're running locally on your PC use the mbake watcher to run the app (eg: 0.0.0.0:8080):</p>
-<pre><code>$ mbakeW -w .
+<pre><code>$ mbakeX -w .
 </code></pre>
 </li>
 <li>
