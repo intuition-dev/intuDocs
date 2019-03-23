@@ -30,6 +30,7 @@ And there are online converters where you type in html and it gives you pug equi
 
 And that is all there is about Pug.
 
+
 ### To make/build
 ```sh
   mbake .
@@ -93,7 +94,11 @@ In examples you can see typically application page structure:
 Each page should have all its own assets in its folder. This avoids 'digital rot' where a page stops working as its assets are misplaced.
 The other support folders like /layouts, /includes, and /assets are used only if something is needed in more than one page.
 
+
+#### In a 'header.pug' or similar file you can include <a href> to link to other pages. There are other ways to link to pages in advanced sections.
+
 Also, the fact that we are generating this static content allows us to have the entire webapp served by a CDN. (For origin we mostly use Caddy http server)
+
 
 ## Watcher
 

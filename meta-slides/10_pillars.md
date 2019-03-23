@@ -69,7 +69,7 @@ FireStore. For example: user auth is client side only. A good first
 project is to move user auth Google FireBase and use FireStore for CRUD.
 Again, it is purely client side. Alternatively, one can host and mount a
 web app on S3, without the need for FTP, and additionally, use CDN for
-https certs.
+http certs.
 
 If one tries it, they will agree that year over year, head count for
 back-end programmers will progress towards 0. The cost savings are akin
@@ -238,11 +238,11 @@ front-end web and application development.
 You can run it by installing MetaBake&trade; from
 here:
 
--   https://www.staticgen.com/MetaBake
+-   http://www.staticgen.com/MetaBake
 
 Or you can see a low-code CRUD example here:
 
--   https://github.com/MetaBake
+-   http://github.com/MetaBake
 
 
 ### low-code = 10X faster web app development.

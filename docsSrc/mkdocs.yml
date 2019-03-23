@@ -4,11 +4,11 @@ nav:
    - Home/About: index.md
    - HTML/Pug and dat.yaml: pug.md
    
-   - SCSS|CSS: scss.md
+   - SCSS|CSS: css.md
    - TypeScript|.js: ts.md
-   - Website example: web.md
+   - Website example: web.md nav
    - SEO/Social SEO: SEO.md 
-   - Itemize/Blog example: itemize.md nav optional (CMS)
+   - Itemize/Blog example: itemize.md optional (CMS)
  
    - Dynamic data/C.R.U.D. example app, 'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
    - Review: review.md

@@ -1,7 +1,7 @@
 
 # About MetaBake&trade;
 
-<img src="https://metabake.github.io/MetaBake-Docs/logo.jpg" width="100">
+<img src="http://metabake.github.io/MetaBake-Docs/logo.jpg" width="100">
 
 ### MetaBake&trade; is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW a low-coder'
 
@@ -82,7 +82,7 @@ and run
 ```sh
 mbake -s .
 ```
-It will create a css file with auto-prefixes
+It will create a css file with auto-prefixes.
 
 
 ## TypeScript
