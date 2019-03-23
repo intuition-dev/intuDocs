@@ -113,16 +113,3 @@ I provide a list of low-code in the 'Pillars' document.
 First time it happened, I did nothing.
 
 # Here is what I'll do to be in 10% of IT survivors: "my team and me will code faster than citizen developers". 
----
-
-# MetaBake:
-- ### Automatic programming
-- ### Static generation
-- ### Low-code
-- ### Declarative 
-- ### UI First
-- ### White collar
-- ### Iterative
-- ### Services
-- ### Comps/DSL
-

@@ -243,6 +243,18 @@ Second team is back end services, eg: REST
 
 ---
 
+# MetaBake:
+- ### Automatic programming
+- ### Static generation
+- ### Low-code
+- ### Declarative 
+- ### UI First
+- ### White collar
+- ### Iterative
+- ### Services
+- ### Comps
+---
+
 ![200%](logo.jpg)
 
  vic@mbake.org 
