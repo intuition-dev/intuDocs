@@ -2,19 +2,21 @@ site_name: MetaBake&trade; Guide
 
 nav:
    - Home/About: index.md productivity for progammers, compreshsive - any webapp app, stack
-
    - HTML/Pug and dat.yaml: pug.md grunt/gulp
    - Watcher: watcher.pug
    
    - SCSS|CSS: scss.md
    - TypeScript|.js: ts.md
-   - Website example, Itemize/Blog example: itemize.md nav
-   - SEO/Social SEO: SEO.md
-
+   - Website example: web.md
+   - SEO/Social SEO: SEO.md 
+   - Itemize/Blog example: itemize.md nav optional (CMS)
+ 
    - Dynamic data/C.R.U.D. example app, 'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
-
    - Review: review.md
-   - Advanced Level: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
+ 
+   - Bonus - MetaCAKE plugins/components for designers: metaCake.md
+
+   - Advanced Level: advanced.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
    - Resources: res.md
 
 theme: readthedocs

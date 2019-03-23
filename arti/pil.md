@@ -68,7 +68,7 @@ and then
    mbake -c
 
 ### Self promo
-If your org would like to try one or more of the low-code pillars here please contact vic@mBake.org or wgeher@metabka.org. We can teach your team on site.
+If your org would like to try one or more of the low-code pillars here please contact vic@mbake.org or wgeher@metabka.org. We can teach your team on site.
 
 Or if you have a project that you want to do in 1/10th of the time at 1/10th of the cost, we'll build it for you. If you have a project that you have a $600K budget, we'll show it deliver at 1/10th of the cost/time! (but if you have a $60K budget and want it done for $6K, we are not the best fit). 
 

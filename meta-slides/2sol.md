@@ -4,7 +4,7 @@
 paginate: true 
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-footer: www.mBake.org
+footer: www.mbake.org
 
 ## HW costs are down; but also development costs need to go down
 
@@ -245,4 +245,4 @@ Second team is back end services, eg: REST
 
 ![200%](logo.jpg)
 
- vic@mBake.org 
+ vic@mbake.org 

@@ -95,7 +95,7 @@ version of something called 'Markdown'; Pug is compatible with PHP,
 Python, etc. The most common way to use declarative low-code is with
 static generators, as mentioned above. With that being said, yes, one
 does write dynamic apps and dynamic data binding by utilizing static
-generators. (* There is an article linked from mBake.org to a Medium article regarding dynamic binding.) 
+generators. (* There is an article linked from mbake.org to a Medium article regarding dynamic binding.) 
 A static generator takes the developer-friendly declarative
 low-code and generates less friendly html and js, similar to how designers
 use SASS to generate CSS.
@@ -247,7 +247,7 @@ Or you can see a low-code CRUD example here:
 
 ### low-code = 10X faster web app development.
 
- We have found that - with mBake.org; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
+ We have found that - with mbake.org; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
 
 On the client side (browser apps and mobile apps) MetaBake&trade; does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With MetaBake&trade; we show you how to build complete applications in Pug. With this low-code approach we demonstrate much faster and cheaper web app and mobile app development.
 
@@ -255,7 +255,7 @@ How does open source MetaBake&trade; deliver 10X faster and cheaper web app deve
 
 We benchmark against _LAMP_, _RAILS_, _MEAN_ and such For example, LAMP is the technology WordPress was built on. Every 10 years or so technology gets 10 times better, which *forces* everyone to upgrade. Assembly was 10 times better than machine language. C/.js is 10 times better than Assembly. We believe that we found the answer on how to have a more productive team.
 
-## mBake.org
+## mbake.org
 LOGO
 
 If your organization would like to try one or more of the low-code

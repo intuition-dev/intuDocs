@@ -4,7 +4,7 @@
 paginate: true 
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-footer: www.mBake.org
+footer: www.mbake.org
 
 ## "Second largest computer company? DEC"
 
@@ -24,7 +24,7 @@ Now gone.
 
 # Agenda
 - Part I: low-code status
-- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of mBake.org )
+- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of mbake.org )
 - Demo of automatic programming
 
 ---
