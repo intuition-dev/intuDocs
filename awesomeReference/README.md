@@ -1,5 +1,5 @@
 
-## Awesome low-code list of MetaBake resources
+## Awesome low-code list of MetaBake&trade; resources
 
 
 ## low-code = 10X faster web app development.
@@ -8,11 +8,11 @@
 
 ## Meta overview
 
-To get an overview of MetaBake pillars:
+To get an overview of MetaBake&trade; pillars:
 
-- [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
+- [MetaBake&trade; Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
+- [MetaBake&trade; Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
 
 Directory of related projects is in Resources on left, and source code is here:
@@ -28,7 +28,7 @@ In addition to the examples in mbake CLI:
 
 ## Features
 
-One feature of MetaBake is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
+One feature of MetaBake&trade; is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
 Also, you should avoid prototyping in GUI tools - text prototyping is just as fast an fully interactive.
 
 -i # from i_dat.yaml creates items json, reading all the dat.yaml - for dynamic binding!
@@ -64,9 +64,9 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 ## Videos:
 S = sales, I = Foundation, II = B&M, III = Vista
 - S <a href='https://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- S [MetaBake Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
+- S [MetaBake&trade; Sales Summary](https://www.youtube.com/watch?v=OK-cJNSkQII)
 
-- I [MetaBake Quick Demo](https://youtu.be/WyCdSFTUIvM)
+- I [MetaBake&trade; Quick Demo](https://youtu.be/WyCdSFTUIvM)
 - I [mbake CLI](https://youtu.be/-KkPfAnEXyk)
 - I [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
 

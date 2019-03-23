@@ -118,11 +118,11 @@ First time it happened, I did nothing.
 # MetaBake:
 - ### Automatic programming
 - ### Static generation
-- ### low-code
+- ### Low-code
 - ### Declarative 
 - ### UI First
 - ### White collar
 - ### Iterative
 - ### Services
-- ### DSL/comps
+- ### Comps/DSL
 

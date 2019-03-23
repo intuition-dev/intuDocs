@@ -104,7 +104,7 @@ Auto-close ta
 
 ---
 
-### Metabake is an example of tool for static generation
+### MetaBake&trade; is an example of tool for static generation
 ![100%](sol/43meta.png)
 
 ---

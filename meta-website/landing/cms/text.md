@@ -1,4 +1,4 @@
-# MetaBake versus WordPress and other CMS
+# MetaBake&trade; versus WordPress and other CMS
 
 WordPress has the largest chunk of WWW - and it is ~15 years old. In dog-years, that is a lot.
 One issue a while back my team had with WP(Wordpress) is that some pages on some browsers did not render CSS properly. 

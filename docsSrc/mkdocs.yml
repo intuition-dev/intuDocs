@@ -1,18 +1,21 @@
-site_name: mBake Guide   
+site_name: MetaBake&trade; Guide   
 
 nav:
-   - Home: index.md
+   - Home/About: index.md productivity for progammers, compreshsive - any webapp app, stack
 
-   - Learn Templating/Pug: pug_static_data.md
-   - Spectre SCSS Theme Framework and SCSS: spectre_n_scss.md
-   - Dynamic databinding: dynamic_data_binding.md
-   - Generate a serverless CRUD web-app: crud.md
-   - Simple CRUD example app and ViewModel+Bind: model.md
-   - Design: design.md
-   - Blog: blog.md
+   - HTML/Pug and dat.yaml: pug.md grunt/gulp
+   - Watcher: watcher.pug
+   
+   - SCSS|CSS: scss.md
+   - TypeScript|.js: ts.md
+   - Website example, Itemize/Blog example: itemize.md nav
+   - SEO/Social SEO: SEO.md
 
+   - Dynamic data/C.R.U.D. example app, 'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
+
+   - Review: review.md
+   - Advanced Level: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
    - Resources: res.md
-   - About: about.md
 
 theme: readthedocs
 docs_dir: src
