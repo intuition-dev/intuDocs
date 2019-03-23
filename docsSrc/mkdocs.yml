@@ -6,12 +6,11 @@ nav:
    - SCSS|CSS: css.md
    - TypeScript|.js and Services: ts.md
 
-   - Website and .js loader example: web.md nav
-
-   - SEO/Social SEO: SEO.md 
-   - Blog/Itemize example: itemize.md (CMS)
+   - Website and .loading .js libs example: webs.md
 
    - Dynamic data/CRUD example/'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
+   - SEO/Social SEO: SEO.md 
+   - Blog/Itemize example: itemize.md (CMS)
  
    - Review: review.md
 

@@ -1,7 +1,7 @@
 
 # Pug Markup
 
-In Pug we write:
+We use Pug instead of html:
 ```pug
 body
    h1 Pug - node template engine
@@ -60,7 +60,6 @@ There are some special words like: pretty. If pretty: true, it will make a nice 
 basedir keywords sets the base directory to look for includes, so in pug you can say /
 / is the base dir. If you move the page folder, you can then just change your basedir in dat.yaml.
 
-
 ## Markdown
 
 ```pug
@@ -97,8 +96,7 @@ The other support folders like /layouts, /includes, and /assets are used only if
 
 #### In a 'header.pug' or similar file you can include <a href> to link to other pages. There are other ways to link to pages in advanced sections.
 
-Also, the fact that we are generating this static content allows us to have the entire webapp served by a CDN. (For origin we mostly use Caddy http server)
-
+---
 
 ## Watcher
 
@@ -109,11 +107,16 @@ This will start a webserver and auto-refresh browser, and watch for file changes
 ```
 
 Instead of . you can specify any path.
+Also, the fact that we are generating this static content allows us to have the entire webapp served by a CDN. 
+
+---
+
+(For origin we mostly use Caddy http server)
 
 
 ## Re: Build Tools Gulp/Grunt
 
 You can also transpile Pug with other build tools like Gulp/Grunt (or even prepros.io) using their syntax. mbake CLI is written in .js.
-This allows us to use the latest features of the needed npm libraries. And allows you to extend our classes to write your custom version of mbake - explained in the advanced sections.
+This allows us to use the latest features of the needed npm libraries. And allows you to extend our classes to write your custom version of mbake CLI - explained in the advanced sections. At least MetaBake should inspire you to use generators.
 
 
