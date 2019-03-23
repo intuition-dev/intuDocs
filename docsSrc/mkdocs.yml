@@ -1,8 +1,8 @@
 site_name: MetaBake&trade; Guide   
 
 nav:
-   - Home/About: index.md productivity for progammers, compreshsive - any webapp app, stack
-   - HTML/Pug and dat.yaml: pug.md grunt/gulp
+   - Home/About: index.md
+   - HTML/Pug and dat.yaml: pug.md
    - Watcher: watcher.pug
    
    - SCSS|CSS: scss.md
@@ -16,7 +16,7 @@ nav:
  
    - Bonus - MetaCAKE plugins/components for designers: metaCake.md
 
-   - Advanced Level: advanced.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
+   - Next Steps: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
    - Resources: res.md
 
 theme: readthedocs
