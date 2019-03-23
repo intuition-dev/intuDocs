@@ -71,7 +71,7 @@ It will create a css file with auto-prefixes
 
 If you write a ts file, like foo.ts:
 ```ts
-foo(i:nubmer) {
+foo(i:number) {
     console.log('oh hi')
 }
 ```

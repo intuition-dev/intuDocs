@@ -4,7 +4,7 @@ nav:
    - Home/About: index.md
    - HTML/Pug and dat.yaml: pug.md
    - SCSS|CSS: css.md
-   - TypeScript|.js: ts.md
+   - TypeScript|.js and Services: ts.md
 
    - Website example: web.md nav
    - SEO/Social SEO: SEO.md 
