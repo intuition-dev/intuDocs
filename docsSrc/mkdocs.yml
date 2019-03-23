@@ -3,7 +3,6 @@ site_name: MetaBake&trade; Guide
 nav:
    - Home/About: index.md
    - HTML/Pug and dat.yaml: pug.md
-   - Watcher: watcher.pug
    
    - SCSS|CSS: scss.md
    - TypeScript|.js: ts.md

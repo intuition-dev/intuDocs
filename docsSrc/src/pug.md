@@ -1,5 +1,5 @@
 
-## Pug Markup
+# Pug Markup
 
 In Pug we write:
 ```pug
@@ -30,6 +30,12 @@ And there are online converters where you type in html and it gives you pug equi
 
 And that is all there is about Pug.
 
+### To make/build
+```sh
+  mbake .
+```
+where . is the current directory to build, or can be a path. If there is no index.pug and dat.yaml it will not build.
+
 ### dat.yaml
 In order to 'make' index.html from an index.pug, it needs a dat.yaml in the same folder, eg:
 
@@ -40,6 +46,7 @@ title: My page about puppies
 basedir: ../../
 pretty: false
 ```
+
 
 You can use any name/vale, and then use in Pug like 
 ```pug
@@ -55,11 +62,19 @@ basedir keywords sets the base directory to look for includes, so in pug you can
 
 ## Markdown
 
-```
+```pug
   include:metaMD comment.md
 ```
 
+And example markdown file with CSS style
+```
+  # header {.style-me}
+  I think this is good.
+```
+
 This lets you include markdown in Pug. Markdown is great for people that are not technical to generate content.  
+
+( eg: http://markdown-it.github.io, but with markdown-it-attrs )
 
 
 ## Folder Structure
@@ -80,9 +95,20 @@ The other support folders like /layouts, /includes, and /assets are used only if
 
 Also, the fact that we are generating this static content allows us to have the entire webapp served by a CDN. (For origin we mostly use Caddy http server)
 
+## Watcher
+
+This will start a webserver and auto-refresh browser, and watch for file changes to auto build:
+
+```sh
+  mbakeX -w .
+```
+
+Instead of . you can specify any path.
+
 
 ## Re: Build Tools Gulp/Grunt
 
-
+You can also transpile Pug with other build tools like Gulp/Grunt (or even prepros.io) using their syntax. mbake CLI is written in .js.
+This allows us to use the latest features of the needed npm libraries. And allows you to extend our classes to write your custom version of mbake - explained in the advanced sections.
 
 
