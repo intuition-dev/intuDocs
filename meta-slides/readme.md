@@ -1,7 +1,7 @@
 
-The slides are in 2 parts in markdown:
+The slides are in 2 parts in Markdown:
 - 1pro.md
 - 2sol.md
 
 
-You can view markdown slides via http://yhatt.github.io/marp
+You can view Markdown slides via http://yhatt.github.io/marp

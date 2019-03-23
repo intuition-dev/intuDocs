@@ -1,6 +1,6 @@
-## SASS
+# SASS
 
-Create a ex.sass file 
+CSS can be hard to work with so people use Sass/Scss. Create a ex.sass file:
 ```css
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
@@ -25,6 +25,8 @@ It will create a css file with auto-prefixes.
 
 
 ### More on Sass 
-In general you should leverage a CSS framework. We default to http://github.com/picturepan2/spectre
-since it is 
+In general you should leverage a CSS framework, there are many to chose from. We default to http://github.com/picturepan2/spectre , it looks nice, is small, has full features and can be modified for AMP. 
 
+For font, we default to Open Sans, but like a CSS framework, you can use any.
+
+Also, as mentioned before MetaBake Markdown supports css classes. 

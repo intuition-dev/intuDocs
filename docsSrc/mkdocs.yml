@@ -3,12 +3,12 @@ site_name: MetaBake&trade; Guide
 nav:
    - Home/About: index.md
    - HTML/Pug and dat.yaml: pug.md
-   
    - SCSS|CSS: css.md
    - TypeScript|.js: ts.md
+
    - Website example: web.md nav
    - SEO/Social SEO: SEO.md 
-   - Itemize/Blog example: itemize.md optional (CMS)
+   - Itemize/Blog example: itemize.md (CMS)
  
    - Dynamic data/C.R.U.D. example app, 'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
    - Review: review.md

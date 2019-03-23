@@ -33,13 +33,13 @@ mbake .
 
 This will create index.html. 
 
-Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBake&trade; markdown flavor includes CSS support):
+Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBake&trade; Markdown flavor includes CSS support):
 ```pug
     body
         div
             include:metaMD comment.md
 ```
-So if you write a markdown file comment.md; it will be included in index.html
+So if you write a Markdown file comment.md; it will be included in index.html
 
 ## SASS
 

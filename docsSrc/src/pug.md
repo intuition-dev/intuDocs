@@ -67,15 +67,15 @@ basedir keywords sets the base directory to look for includes, so in pug you can
   include:metaMD comment.md
 ```
 
-And example markdown file with CSS style
+And example Markdown file with CSS style
 ```
   # header {.style-me}
   I think this is good.
 ```
 
-This lets you include markdown in Pug. Markdown is great for people that are not technical to generate content.  
+This lets you include Markdown in Pug. Markdown is great for people that are not technical to generate content.  
 
-( eg: http://markdown-it.github.io, but with markdown-it-attrs )
+( eg: http://Markdown-it.github.io, but with Markdown-it-attrs )
 
 
 ## Folder Structure
