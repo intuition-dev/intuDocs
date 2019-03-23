@@ -6,16 +6,17 @@ nav:
    - SCSS|CSS: css.md
    - TypeScript|.js and Services: ts.md
 
-   - Website example: web.md nav
+   - Website and .js loader example: web.md nav
+
    - SEO/Social SEO: SEO.md 
-   - Itemize/Blog example: itemize.md (CMS)
+   - Blog/Itemize example: itemize.md (CMS)
+
+   - Dynamic data/CRUD example/'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
  
-   - Dynamic data/C.R.U.D. example app, 'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
    - Review: review.md
- 
-   - Bonus - MetaCAKE plugins/components for designers: metaCake.md
 
    - Next Steps: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
+   - Bonus - MetaCAKE plugins/components for designers: metaCake.md
    - Resources: res.md
 
 theme: readthedocs
