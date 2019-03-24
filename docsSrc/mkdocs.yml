@@ -5,16 +5,13 @@ nav:
    - HTML/Pug and dat.yaml: pug.md
    - SCSS|CSS: css.md
    - TypeScript|.js and Services: ts.md
+   - Website with loading .js libs example: webs.md
 
-   - Website and .loading .js libs example: webs.md
-
+   - SEO and Social tags SEO: SEO.md 
    - Dynamic data/CRUD example/'ViewModel': crud.md Table, Forms, FireStore|DreamFactory and Validation, Auth
-   - SEO/Social SEO: SEO.md 
    - Blog/Itemize example: itemize.md (CMS)
  
-   - Review: review.md
-
-   - Next Steps: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
+   - Review and next Steps: next.md CMS, AMP, Reusable Components, SPA router, Shared Cloud IDE
    - Bonus - MetaCAKE plugins/components for designers: metaCake.md
    - Resources: res.md
 

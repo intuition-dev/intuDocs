@@ -8,6 +8,8 @@ There are 12 very different examples included in the mbake CLI. One is just a we
 ```
 That will extract an example website in the current folder. ( Obviously you can create any layout with any combination of css and other libraries, but here is how we laid out an example/starter website). 
 
+---
+
 ### depp.min.js
 
 Most example web-apps, including the website, need to load external .js libraries. 
@@ -29,8 +31,6 @@ depp.require(['plugin1', 'plugin2'], function() {
 
 You'll find the real loading code in /assets/js/loader.js. Our preferred CDN host for external .js libs is: http://jsdelivr.com
 
----
-
  You should review the standard layout of folders:
  - /layouts has the main Pug layouts that each page extends.
  - /landing/* has the website pages, the index.pug and dat.yaml. To navigate to a webpage is a 'a href' to the 
@@ -46,8 +46,3 @@ And as mentioned at the start: there are 12 example of very different web-apps, 
 (Notice there is also a loader.min.js. mbake -t created the min file, even when .ts is not found it semi minimizes .js. 
 It does not do a full min so that in production we can have reasonable error messages about our code. )
 
-
-
-loading and nav
-
-https://github.com/muicss/johnnydepp
