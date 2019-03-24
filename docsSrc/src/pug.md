@@ -49,7 +49,7 @@ pretty: false
 ```
 
 
-You can use any name/vale, and then use in Pug like 
+You can use any name/vale, and then use in Pug like:
 ```pug
  p Hello #{key1}
 ```

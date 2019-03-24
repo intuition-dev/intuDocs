@@ -35,6 +35,8 @@ and create file dat.yaml
 key1: World
 ```
 
+Note: to create a new page|screen in mbake, create a new folder with an index.pug and day.yaml in each folder.
+
 ### Now make with mbake:
 
 ```sh
