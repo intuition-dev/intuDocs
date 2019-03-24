@@ -35,7 +35,7 @@ This is the class that your Pug(html really) will leverage for dynamic apps. The
 
 ```pug
 .script
-    var serv1 = new MyServices1() // this class should have your working firebase service calls or similar code.
+    var serv1 = new MyServices1() // this class should have your working FireStore service calls or similar code.
     var pro1 = serv1.getSome1()
     pro1.then(function(ret) {
         $('#someId1').val(ret.field1)

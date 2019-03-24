@@ -1,6 +1,6 @@
 # Dynamic data/CRUD/'ViewModel'
 
-This section relates to dynamic data, not static content. To extract an example CRUD web-app in the current folder:
+This section relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:
 ```sh
 mbake -u
 ```
@@ -20,7 +20,7 @@ in the ./CRUD/screen/tabulator you can see the example. You should at least glan
 
 The screen in ./CRUD/screen/tabulator, lets work with just that one screen for a bit.
 
-It has a 'databinding' (TabulatorBind.js) and it reads from a VidewModel(VM), in ./CRUD/assets/TabulatorViewModel.ts!
+It has a 'databinding' (TabulatorBind.js) and it reads from a ViewModel(VM), in ./CRUD/assets/TabulatorViewModel.ts!
 
 So lets zoom out for a second for the Table example: 
 - There is a view: index.pug (that extends a layout). The view contains the table Tabulator.js from above linked github
@@ -45,10 +45,10 @@ So a VM is a complex VM that fully maps to the View!
 If you change the View, you must change the VM and if you change the VM, you must change the View.
 One of the goals of VM is to make it easy to 'bind' to the view, so VM must represent the View as a 'model' of it.
 
-In object-oriented development you should avoid deep inheritance for the VM, just a plain class may work best. But in .ts we do
+In object-oriented(OO) development you should avoid deep inheritance for the VM, just a plain class may work best. But in .ts we do
 use interface to demonstrate that the class maps to the Pug view. When .ts is compiled to js those interfaces are dropped. 
 
-Once you understand VM, proceed to the rest of this document.
+Once you understand VM, proceed to the rest of this document. Later you'll realize that VM is main part of CRUD/Dynamic apps.
 
 
 #### Important: The VM should have 'fake' data during iterative development. 
@@ -58,17 +58,36 @@ regard how the data will be retrieved or stored! Because the challenge is to und
 derives from that screen/page. Implementing (REST or similar) services later is not the challenge for experienced developers - so focus on UI and the requirements and rapid iterations. 
 
 
-### VM - Part 2
+### VM Part 2 - Validation
+
+Now lets look our second screen in CRUD example: in ./CRUD/screen/validation
+That binds to ./CRUD/assets/ValidationViewModel.
+
+We perform the validation in the VM, returning 'OK' if OK and an error message if not OK.
+The View's binding method does the pop up screen.
 
 
+## CRUD Step 3 - CRUD 
 
-Validation
-remamping
+Once the iterations show that UI is what customers want, you can start implementing the back end, and CRUD methods.
+Take a look at ./CRUD/screen/tabulator_form and it's VM. It uses FireStore back end, and when the user clicks on a row in the table we see the Form details.  For back end we had to use something, so we used Google FireStore, so you'll have to review the docs on their site for any back end code.
+
+The service calls are under ./CRUD/assets/models/service as a separate class that calls the remote back end APIs.
+We add CRUD and similar methods to VM via OO compositions; buy adding classes/systems that perform those services for the VM class.
+
+What we do here in VM is remap how the services return the data into how the View needs the data. Maybe a service is 2 calls to 3 tables/documents - but it all goes into a single form. The VM does that re-mapping.
 
 
-QA
+## CRUD Step 4 - Testing
+
+Todo qunit
 
 
+## Auth
+
+There is also an example of doing user auth in CRUD. We just followed the FireStore docs.
+
+## Other
 
 Table, Forms, FireStore|DreamFactory and Validation, Auth
 
@@ -79,4 +98,3 @@ Additional information link: https://github.com/metabake/MetaBake/tree/master/CR
 
 UI First
 
-For back end we had to use something, so we used Google FireStore, so you'll have to review the docs on their site for any back end code.

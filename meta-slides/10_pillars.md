@@ -66,7 +66,7 @@ maintainable.
 
 Cloud v2.0 is fully server-less. E.g. AWS Amplify or better Google
 FireStore. For example: user auth is client side only. A good first
-project is to move user auth Google FireBase and use FireStore for CRUD.
+project is to move user auth Google FireStore and use FireStore for CRUD.
 Again, it is purely client side. Alternatively, one can host and mount a
 web app on S3, without the need for FTP, and additionally, use CDN for
 http certs.
