@@ -9,6 +9,7 @@ There are 12 very different examples included in the mbake CLI. One is just a we
 That will extract an example website in the current folder. ( Obviously you can create any layout with any combination of css and other libraries, but here is how we laid out an example/starter website). 
 
 ---
+It has a README.md in root of the website.
 
 ### depp.min.js
 

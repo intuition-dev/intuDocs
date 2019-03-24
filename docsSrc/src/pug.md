@@ -5,6 +5,7 @@ We use Pug instead of html:
 ```pug
 body
    h1 Pug - node template engine
+   //- a comment in Puf
    #container.col
       p You are amazing
 ```
@@ -17,7 +18,9 @@ instead of:
   </div>
 </body>
 ```
-So if you know html, you know Pug!
+So if you know html, you know Pug! 
+If you need more of an intro to Pug [Pug (aka Jade) on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
+
 
 In addition you can include html parts as needed:
 ```pug
