@@ -28,7 +28,7 @@ modern type of services help maximite developer productivity. Services are used
 to develope C.R.U.D. (CRUD: Create, Read, Update, Delete)/ dynamic web-apps.
  Google and AWS also offer nice user authentication functionality.
 
-#### Even if you won't use Google FireStore: you should learn to use it, just to expose yourself to the modern services architecture! The documentation on their website is quite good, and makes it easy to develop CURD services.
+##### Even if you won't use Google FireStore: you should learn to use it, just to expose yourself to the modern services architecture! The documentation on their website is quite good, and makes it easy to develop CURD services.
 
 When you call the services client side, you can write a .ts class that has the CRUD calls - returning promises (or leveraging browser's Custom Events).
 This is the class that your Pug(html really) will leverage for dynamic apps. There are much better ways, but just to remove they mystery, here is a (bad) example pseudo code:

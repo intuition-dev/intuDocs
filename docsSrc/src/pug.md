@@ -97,7 +97,7 @@ Each page should have all its own assets in its folder. This avoids 'digital rot
 The other support folders like /layouts, /includes, and /assets are used only if something is needed in more than one page.
 
 
-#### In a 'header.pug' or similar file you can include <a href> to link to other pages. There are other ways to link to pages in advanced sections.
+#### In a 'header.pug' or similar file you can include 'a href' to link to other pages. There are other ways to link to pages in advanced sections.
 
 ---
 
