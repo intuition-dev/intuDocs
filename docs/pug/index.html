@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>HTML/Pug and dat.yaml - MetaBake&trade; Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HTML/Pug and dat.yaml";
+    var mkdocs_page_input_path = "pug.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MetaBake&trade; Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home/About</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">HTML/Pug and dat.yaml</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#pug-markup">Pug Markup</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#to-makebuild">To make/build</a></li>
+        
+            <li><a class="toctree-l3" href="#datyaml">dat.yaml</a></li>
+        
+            <li><a class="toctree-l3" href="#markdown">Markdown</a></li>
+        
+            <li><a class="toctree-l3" href="#folder-structure">Folder Structure</a></li>
+        
+            <li><a class="toctree-l3" href="#watcher">Watcher</a></li>
+        
+            <li><a class="toctree-l3" href="#re-build-tools-gulpgrunt">Re: Build Tools Gulp/Grunt</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../css/">SCSS|CSS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ts/">TypeScript|.js and Services</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webs/">Website w/ loading .js libs example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../SEO/">SEO and social tags SEO</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../crud/">Dynamic data/CRUD/'ViewModel' example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../itemize/">Blog/Itemize example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../more/">mbake review, extras and next steps</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../res/">Resources</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MetaBake&trade; Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>HTML/Pug and dat.yaml</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="pug-markup">Pug Markup</h1>
+<p>We use Pug instead of html:</p>
+<pre><code class="pug">body
+   h1 Pug - node template engine
+   //- a comment in Puf
+   #container.col
+      p You are amazing
+</code></pre>
+
+<p>instead of:</p>
+<pre><code class="html">&lt;body&gt;
+  &lt;h1&gt;Jade - node template engine&lt;/h1&gt;
+  &lt;div class=&quot;col&quot; id=&quot;container&quot;&gt;
+    &lt;p&gt;You are amazing&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>So if you know html, you know Pug! 
+If you need more of an intro to Pug <a href="http://youtube.com/watch?v=wzAWI9h3q18">Pug (aka Jade) on Youtube</a></p>
+<p>In addition you can include html parts as needed:</p>
+<pre><code class="pug">   include includes/head
+</code></pre>
+
+<p>Also you extend a layout, you can see that in the example apps.</p>
+<p>And there are online converters where you type in html and it gives you pug equivalent. (eg: http://pug.mbake.org)</p>
+<p>And that is all there is about Pug.</p>
+<h3 id="to-makebuild">To make/build</h3>
+<pre><code class="sh">  mbake .
+</code></pre>
+
+<p>where . is the current directory to build, or can be a path. If there is no index.pug and dat.yaml it will not build.</p>
+<h3 id="datyaml">dat.yaml</h3>
+<p>In order to 'make' index.html from an index.pug, it needs a dat.yaml in the same folder, eg:</p>
+<pre><code class="yaml">key1: World
+title: My page about puppies
+#special words:
+basedir: ../../
+pretty: false
+</code></pre>
+
+<p>You can use any name/vale, and then use in Pug like:</p>
+<pre><code class="pug"> p Hello #{key1}
+</code></pre>
+
+<p>for example with page Title that may need to be a h1 as well. This is often used for SEO tags, for example Twitter and Linkedin in tags often have same keyword text.</p>
+<p>There are some special words like: pretty. If pretty: true, it will make a nice looking htlm, it won't be compressed.</p>
+<p>basedir keywords sets the base directory to look for includes, so in pug you can say /
+/ is the base dir. If you move the page folder, you can then just change your basedir in dat.yaml.</p>
+<h2 id="markdown">Markdown</h2>
+<pre><code class="pug">  include:metaMD comment.md
+</code></pre>
+
+<p>And example Markdown file with CSS style</p>
+<pre><code>  # header {.style-me}
+  I think this is good.
+</code></pre>
+
+<p>This lets you include Markdown in Pug. Markdown is great for people that are not technical to generate content.  </p>
+<p>( eg: http://Markdown-it.github.io, but with Markdown-it-attrs )</p>
+<h2 id="folder-structure">Folder Structure</h2>
+<p>In examples you can see typically application page structure:</p>
+<pre><code>/pages/page1
+/pages/page2
+/pages/page3
+/layouts
+/includes
+/assets
+</code></pre>
+
+<p>Each page should have all its own assets in its folder. This avoids 'digital rot' where a page stops working as its assets are misplaced.
+The other support folders like /layouts, /includes, and /assets are used only if something is needed in more than one page.</p>
+<h4 id="in-a-headerpug-or-similar-file-you-can-include-to-link-to-other-pages-there-are-other-ways-to-link-to-pages-in-advanced-sections">In a 'header.pug' or similar file you can include <a href> to link to other pages. There are other ways to link to pages in advanced sections.</h4>
+<hr />
+<h2 id="watcher">Watcher</h2>
+<p>This will start a webserver and auto-refresh browser, and watch for file changes to auto build:</p>
+<pre><code class="sh">  mbakeX -w .
+</code></pre>
+
+<p>Instead of . you can specify any path.
+Also, the fact that we are generating this static content allows us to have the entire webapp served by a CDN. </p>
+<hr />
+<p>(For origin we mostly use Caddy http server)</p>
+<h2 id="re-build-tools-gulpgrunt">Re: Build Tools Gulp/Grunt</h2>
+<p>You can also transpile Pug with other build tools like Gulp/Grunt (or even prepros.io) using their syntax. mbake CLI is written in .js.
+This allows us to use the latest features of the needed npm libraries. And allows you to extend our classes to write your custom version of mbake CLI - explained in the advanced sections. At least MetaBake should inspire you to use generators.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../css/" class="btn btn-neutral float-right" title="SCSS|CSS">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home/About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../css/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

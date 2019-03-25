@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Dynamic data/CRUD/'ViewModel' example - MetaBake&trade; Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Dynamic data/CRUD/'ViewModel' example";
+    var mkdocs_page_input_path = "crud.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MetaBake&trade; Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home/About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pug/">HTML/Pug and dat.yaml</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../css/">SCSS|CSS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ts/">TypeScript|.js and Services</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webs/">Website w/ loading .js libs example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../SEO/">SEO and social tags SEO</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Dynamic data/CRUD/'ViewModel' example</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#crud-step-1-table">CRUD Step 1 - Table</a></li>
+        
+            <li><a class="toctree-l3" href="#crud-step-2-viewmodel-and-ui-first">CRUD Step 2 - ViewModel! and UI-first</a></li>
+        
+            <li><a class="toctree-l3" href="#crud-step-3-crud">CRUD Step 3 - CRUD</a></li>
+        
+            <li><a class="toctree-l3" href="#crud-step-4-testing">CRUD Step 4 - Testing</a></li>
+        
+            <li><a class="toctree-l3" href="#auth">Auth</a></li>
+        
+            <li><a class="toctree-l3" href="#other">Other</a></li>
+        
+            <li><a class="toctree-l3" href="#review">Review</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../itemize/">Blog/Itemize example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../more/">mbake review, extras and next steps</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../res/">Resources</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MetaBake&trade; Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Dynamic data/CRUD/'ViewModel' example</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</h1>
+<p>This relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:</p>
+<pre><code class="sh">mbake -u
+</code></pre>
+
+<p>It has a README.md in root of the website that you can glance.</p>
+<hr />
+<p>For CRUD, we'll take it in steps. It should be easier, but there is some wider knowledge needed.</p>
+<h2 id="crud-step-1-table">CRUD Step 1 - Table</h2>
+<ul>
+<li>You should know HTML Forms, default UI style is http://github.com/kumailht/gridforms</li>
+<li>For table we use http://github.com/olifolkerd/tabulator
+in the ./CRUD/screen/tabulator you can see the example. You should at least glance it.</li>
+</ul>
+<h2 id="crud-step-2-viewmodel-and-ui-first">CRUD Step 2 - ViewModel! and UI-first</h2>
+<p>The screen in ./CRUD/screen/tabulator, lets work with just that one screen for a bit.</p>
+<p>It has a 'databinding' (TabulatorBind.js) and it reads from a ViewModel(VM), in ./CRUD/assets/TabulatorViewModel.ts!</p>
+<p>So lets zoom out for a second for the Table example: 
+- There is a view: index.pug (that extends a layout). The view contains the table Tabulator.js from above linked github
+ (and tabulator.js is loaded via depp.js)
+- The view has a databinding to get/set 'fields' in the view.
+- The databinding uses a VM: ./CRUD/assets/TabulatorViewModel.ts</p>
+<p>Briefly, a VM is a VM when it's 'public' methods 'map' to the view. And it is the VM that calls remote API services.</p>
+<h3 id="vm-the-main-part">VM - The main part</h3>
+<p>So what is VM? It is the keystone of the modern M-VM-V application architecture.
+A VM's public methods map to a view. That is 99% of a VM. It is a class where it's public methods map to the view(in our case Pug):
+- If you have 2 tables in your view, then VM needs to have 2 arrays 
+- If you have 2 forms in your view, then VM needs to have 2 objects, since objects have name-value pairs. 
+- If you have 2 charts in your view, then VM needs to have 2 objects in a way that makes it easy to bind to the chart.</p>
+<p>In the same way a server side 'ORM Model' may 'map' to the a table|document fields, the VM maps to the view. The VM does not represent server side ORM or stores in any way - it ignores it!
+The VM maps to the view, and makes it easy to map/bind to the view.
+So a VM is a complex VM that fully maps to the View!
+If you change the View, you must change the VM and if you change the VM, you must change the View.
+One of the goals of VM is to make it easy to 'bind' to the view, so VM must represent the View as a 'model' of it.</p>
+<p>In object-oriented(OO) development you should avoid deep inheritance for the VM, just a plain class may work best. But in .ts we do
+use interface to demonstrate that the class maps to the Pug view. When .ts is compiled to js those interfaces are dropped. </p>
+<p>Once you understand VM, proceed to the rest of this document. Later you'll realize that VM is main part of CRUD/Dynamic apps.</p>
+<h4 id="important-the-vm-should-have-fake-data-during-iterative-development">Important: The VM should have 'fake' data during iterative development.</h4>
+<p>This enables rapid prototyping. During the early iterations you are just making sure the view is what the customer want's - without any 
+regard how the data will be retrieved or stored! Because the challenge is to understand the requirements and what value customer
+derives from that screen/page. Implementing (REST or similar) services later is not the challenge for experienced developers - so focus on UI and the requirements and rapid iterations. </p>
+<h3 id="vm-part-2-validation">VM Part 2 - Validation</h3>
+<p>Now lets look our second screen in CRUD example: in ./CRUD/screen/validation
+That binds to ./CRUD/assets/ValidationViewModel.</p>
+<p>We perform the validation in the VM, returning 'OK' if OK and an error message if not OK.
+The View's binding method does the pop up screen.</p>
+<h2 id="crud-step-3-crud">CRUD Step 3 - CRUD</h2>
+<p>Once the iterations show that UI is what customers want, you can start implementing the back end, and CRUD methods.
+Take a look at ./CRUD/screen/tabulator_form and it's VM. It uses FireStore back end, and when the user clicks on a row in the table we see the Form details.  For back end we had to use something, so we used Google FireStore, so you'll have to review the docs on their site for any back end code.</p>
+<p>The service calls are under ./CRUD/assets/models/service as a separate class that calls the remote back end APIs.
+We add CRUD and similar methods to VM via OO compositions; buy adding classes/systems that perform those services for the VM class.</p>
+<p>What we do here in VM is remap how the services return the data into how the View needs the data. Maybe a service is 2 calls to 3 tables/documents - but it all goes into a single form. The VM does that re-mapping.</p>
+<p>For this example we used S-cVM-V application architecture. Where S is services and cVM is the complex VM that maps to the entire page/screen.</p>
+<h2 id="crud-step-4-testing">CRUD Step 4 - Testing</h2>
+<p>Todo qunit</p>
+<p>You can do an integration test by going over a user story and loading ViewModels as needed to complete the test. Doing a very detailed test tends to 
+reduce development velocity, but a light smoke test can make it easier to find out if the bug is in the view side or on the VM side.</p>
+<h2 id="auth">Auth</h2>
+<p>There is also an example of doing user auth in CRUD example app. We just followed the FireStore docs.</p>
+<h2 id="other">Other</h2>
+<p>If you are not a fan of Google FireStore, you may like the SaaS DreamFactory hosted by DreamFactory.</p>
+<h2 id="review">Review</h2>
+<p>A VM models the View by mapping to the view to make the biding easier - and VM calls back end services.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../itemize/" class="btn btn-neutral float-right" title="Blog/Itemize example">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../SEO/" class="btn btn-neutral" title="SEO and social tags SEO"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../SEO/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../itemize/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

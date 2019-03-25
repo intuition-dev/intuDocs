@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>TypeScript|.js and Services - MetaBake&trade; Guide</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "TypeScript|.js and Services";
+    var mkdocs_page_input_path = "ts.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MetaBake&trade; Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home/About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pug/">HTML/Pug and dat.yaml</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../css/">SCSS|CSS</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">TypeScript|.js and Services</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#typescript">TypeScript</a></li>
+    
+
+    <li class="toctree-l2"><a href="#services">Services</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#even-if-you-wont-use-google-firestore-you-should-learn-to-use-it-just-to-expose-yourself-to-the-modern-services-architecture-the-documentation-on-their-website-is-quite-good-and-makes-it-easy-to-develop-curd-services">Even if you won't use Google FireStore: you should learn to use it, just to expose yourself to the modern services architecture! The documentation on their website is quite good, and makes it easy to develop CURD services.</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webs/">Website w/ loading .js libs example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../SEO/">SEO and social tags SEO</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../crud/">Dynamic data/CRUD/'ViewModel' example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../itemize/">Blog/Itemize example</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../more/">mbake review, extras and next steps</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../res/">Resources</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MetaBake&trade; Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>TypeScript|.js and Services</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="typescript">TypeScript</h2>
+<p>TypeScript is supper-set of JavaScript. Write a ts file, like foo.ts:</p>
+<pre><code class="ts">foo(i:number) {
+    console.log('oh hi')
+}
+</code></pre>
+
+<p>and run</p>
+<pre><code class="sh">mbake -t .
+</code></pre>
+
+<p>It will create a .js and min.js files. It will output ES5 to support IE11, so feel free to use class { } syntax. 
+If there is no .ts, than it will simply slightly mimifify js files into min.js (but no ES5 conversion).</p>
+<hr />
+<p>(of course you have to load any polyfills like
+promises, fetch or what you need)</p>
+<p>And normally you run that command at the root of your web-app; but don't use it for server side nodejs.</p>
+<h2 id="services">Services</h2>
+<p>TypeScript is often uses to call Services|APIs via browser's fetch() (used to be Ajax).
+Modern services are now written in Google FireStore, DreamFactory(hosted) and to lesser degree AWS Amplify. These 
+modern type of services help maximite developer productivity. Services are used
+to develope C.R.U.D. (CRUD: Create, Read, Update, Delete)/ dynamic web-apps.
+ Google and AWS also offer nice user authentication functionality.</p>
+<h4 id="even-if-you-wont-use-google-firestore-you-should-learn-to-use-it-just-to-expose-yourself-to-the-modern-services-architecture-the-documentation-on-their-website-is-quite-good-and-makes-it-easy-to-develop-curd-services">Even if you won't use Google FireStore: you should learn to use it, just to expose yourself to the modern services architecture! The documentation on their website is quite good, and makes it easy to develop CURD services.</h4>
+<p>When you call the services client side, you can write a .ts class that has the CRUD calls - returning promises (or leveraging browser's Custom Events).
+This is the class that your Pug(html really) will leverage for dynamic apps. There are much better ways, but just to remove they mystery, here is a (bad) example pseudo code:</p>
+<pre><code class="pug">.script
+    var serv1 = new MyServices1() // this class should have your working FireStore service calls or similar code.
+    var pro1 = serv1.getSome1()
+    pro1.then(function(ret) {
+        $('#someId1').val(ret.field1)
+    })
+    // note that I'm not a fan of await or arrow syntax
+</code></pre>
+
+<p>There is aldo realistic example CRUD web-app example if you continue reading to the end here: including table, forms, validation, authentication, and 'master/detail' (click on a row to zoom) functionality. The CRUD example also shows how to use the modern ViewModel application architecture. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../webs/" class="btn btn-neutral float-right" title="Website w/ loading .js libs example">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../css/" class="btn btn-neutral" title="SCSS|CSS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../css/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../webs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
