@@ -1,10 +1,12 @@
 # Dynamic data/CRUD/'ViewModel'
 
-This section relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:
+This relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:
 ```sh
 mbake -u
 ```
 It has a README.md in root of the website that you can glance.
+
+---
 
 For CRUD, we'll take it in steps. It should be easier, but there is some wider knowledge needed.
 
@@ -77,24 +79,27 @@ We add CRUD and similar methods to VM via OO compositions; buy adding classes/sy
 
 What we do here in VM is remap how the services return the data into how the View needs the data. Maybe a service is 2 calls to 3 tables/documents - but it all goes into a single form. The VM does that re-mapping.
 
+For this example we used S-cVM-V application architecture. Where S is services and cVM is the complex VM that maps to the entire page/screen.
+
 
 ## CRUD Step 4 - Testing
 
 Todo qunit
 
+You can do an integration test by going over a user story and loading ViewModels as needed to complete the test. Doing a very detailed test tends to 
+reduce development velocity, but a light smoke test can make it easier to find out if the bug is in the view side or on the VM side.
+
 
 ## Auth
 
-There is also an example of doing user auth in CRUD. We just followed the FireStore docs.
+There is also an example of doing user auth in CRUD example app. We just followed the FireStore docs.
+
 
 ## Other
 
-Table, Forms, FireStore|DreamFactory and Validation, Auth
+If you are not a fan of Google FireStore, you may like the SaaS DreamFactory hosted by DreamFactory.
 
 
+## Review
 
-
-Additional information link: https://github.com/metabake/MetaBake/tree/master/CRUD
-
-UI First
-
+A VM models the View by mapping to the view to make the biding easier - and VM calls back end services.
