@@ -72,18 +72,17 @@
         
             <li><a class="toctree-l3" href="#first-page">First Page</a></li>
         
-            <li><a class="toctree-l3" href="#watcher">Watcher</a></li>
-        
             <li><a class="toctree-l3" href="#sass">SASS</a></li>
         
             <li><a class="toctree-l3" href="#typescript">TypeScript</a></li>
         
             <li><a class="toctree-l3" href="#examples-website">Examples - Website</a></li>
         
+            <li><a class="toctree-l3" href="#dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</a></li>
+        
+            <li><a class="toctree-l3" href="#blogitemize-example">Blog/Itemize example</a></li>
+        
         </ul>
-    
-
-    <li class="toctree-l2"><a href="#dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</a></li>
     
 
     <li class="toctree-l2"><a href="#mbake-review-extras-and-next-steps">mbake review, extras and next steps</a></li>
@@ -223,7 +222,7 @@ body
 
 <p>So if you write a Markdown file comment.md; it will be included in index.html</p>
 <hr />
-<h2 id="watcher">Watcher</h2>
+<h3 id="watcher">Watcher</h3>
 <p>This will start a webserver and auto-refresh browser, and watch for file changes to auto build:</p>
 <pre><code class="sh">  mbakeX -w .
 </code></pre>
@@ -273,12 +272,44 @@ If there is no .ts, than it will simply slightly mimifify js files into min.js (
 
 <p>That will extract an example website in the current folder. ( Obviously you can create any layout with any combination of css and other libraries, but here is how we laid out an example/starter website). </p>
 <hr />
-<h1 id="dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</h1>
+<h2 id="dynamic-datacrudviewmodel">Dynamic data/CRUD/'ViewModel'</h2>
 <p>This relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:</p>
 <pre><code class="sh">mbake -u
 </code></pre>
 
 <p>It has a README.md in root of the website that you can glance.</p>
+<hr />
+<h2 id="blogitemize-example">Blog/Itemize example</h2>
+<h3 id="itemize-eg-blog">Itemize (eg Blog)</h3>
+<ol>
+<li>
+<p>Lets build a folder called Items and in that folder create 
+create a blank file dat_i.yaml, with nothing there.</p>
+</li>
+<li>
+<p>In the folder called Items create folder Page1 and folder Page2.
+In each page folder create index.pug and dat.yaml.
+So you have Page1 and Page2 folder under items</p>
+</li>
+<li>
+<p>In each Page's dat.yaml add </p>
+</li>
+</ol>
+<pre><code>title: Page name
+</code></pre>
+
+<p>And add a few more key/value words in each dat.yaml, but make each pages values a bit different.</p>
+<ol>
+<li>And now, in the folder Items run</li>
+</ol>
+<pre><code class="sh">mbake -i .
+</code></pre>
+
+<p>It will create items.json.
+This allows you to fetch that json; and search for content, blog, items, etc.</p>
+<h3 id="mbake-b-will-emit-an-example-blog-with-above">mbake -b will emit an example blog with above.</h3>
+<p>The example blog will also show you how the items.json is read to display a nice searchable and paginated 
+list of items. No magic.</p>
 <hr />
 <h1 id="mbake-review-extras-and-next-steps">mbake review, extras and next steps</h1>
 <h4 id="all-my-friends-know-the-low-coder_1">'All my friends KNOW the low-coder'</h4>
@@ -357,5 +388,5 @@ Also it you you can itemize (-i dat.yaml files) to make a nice SEO friendly blog
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-03-25 00:50:15
+Build Date UTC : 2019-03-25 01:00:00
 -->

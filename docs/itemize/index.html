@@ -88,11 +88,13 @@
     <a class="current" href="./">Blog/Itemize example</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#blogitemize-example-itemizemd">Blog/Itemize example: itemize.md</a></li>
+    <li class="toctree-l2"><a href="#blogitemize-example">Blog/Itemize example</a></li>
     
         <ul>
         
             <li><a class="toctree-l3" href="#itemize-eg-blog">Itemize (eg Blog)</a></li>
+        
+            <li><a class="toctree-l3" href="#mbake-b-will-emit-an-example-blog-with-above">mbake -b will emit an example blog with above.</a></li>
         
         </ul>
     
@@ -142,27 +144,37 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="blogitemize-example-itemizemd">Blog/Itemize example: itemize.md</h1>
-<h2 id="itemize-eg-blog">Itemize (eg Blog)</h2>
-<p>So far you created all files in folder called one. Now lets create a file above folder one.
-1. So above your folder that has index.pug and dat.yaml, create a a blank file dat_i.yaml, with nothing there.</p>
+                <h1 id="blogitemize-example">Blog/Itemize example</h1>
+<h3 id="itemize-eg-blog">Itemize (eg Blog)</h3>
 <ol>
 <li>
-<p>And copy the folder one, as folder two. So you have two folders, one and two - each with dat.yaml; and above them dat_i.yaml!</p>
+<p>Lets build a folder called Items and in that folder create 
+create a blank file dat_i.yaml, with nothing there.</p>
 </li>
 <li>
-<p>Edit two/dat.yaml to say key1: World2 
-instead of key1: World</p>
+<p>In the folder called Items create folder Page1 and folder Page2.
+In each page folder create index.pug and dat.yaml.
+So you have Page1 and Page2 folder under items</p>
 </li>
 <li>
-<p>And now, in the folder above one/ and two/ run:</p>
+<p>In each Page's dat.yaml add </p>
 </li>
+</ol>
+<pre><code>title: Page name
+</code></pre>
+
+<p>And add a few more key/value words in each dat.yaml, but make each pages values a bit different.</p>
+<ol>
+<li>And now, in the folder Items run</li>
 </ol>
 <pre><code class="sh">mbake -i .
 </code></pre>
 
 <p>It will create items.json.
 This allows you to fetch that json; and search for content, blog, items, etc.</p>
+<h3 id="mbake-b-will-emit-an-example-blog-with-above">mbake -b will emit an example blog with above.</h3>
+<p>The example blog will also show you how the items.json is read to display a nice searchable and paginated 
+list of items. No magic.</p>
 <hr />
               
             </div>

@@ -1,5 +1,5 @@
 
-Install MkDocs
+mkdocs build
 
 Check https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
 
