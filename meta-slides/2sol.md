@@ -193,7 +193,7 @@ Avoid desktop apps
 
 ## You don't need every developer to setup VS Code
 ![100%](sol/71ide.png)
-
+Like game streaming
 ---
 
 ## Pillar 8: Rewrite legacy apps: *just for practice*
@@ -211,7 +211,7 @@ Currently some orgs have 3 teams:
 - web-app
 - Mobile
 - Website/Blog (run by marketing)
-Instead: Front end should be combined into one.
+Instead: Front end to be combined into one.
 Second team is back end services, eg: REST
 
 ---
