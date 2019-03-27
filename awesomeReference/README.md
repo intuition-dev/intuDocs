@@ -16,7 +16,7 @@ To get an overview of MetaBake&trade; pillars:
 
 
 Directory of related projects is in Resources on left, and source code is here:
-- <a href='http://git.mbake.org' target='_blank'>git.mbake.org</a>
+- <a href='http://git.MetaBake.org' target='_blank'>git.MetaBake.org</a>
 
 
 
@@ -113,7 +113,7 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 # Support
 
 &nbsp;
-- <a href='http://chat.mbake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
+- <a href='http://chat.MetaBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
 # Commands

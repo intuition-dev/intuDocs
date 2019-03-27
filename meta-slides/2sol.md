@@ -4,7 +4,7 @@
 paginate: true 
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-footer: www.mbake.org
+footer: www.MetaBake.org
 
 ## HW costs are down; but also development costs need to go down
 
