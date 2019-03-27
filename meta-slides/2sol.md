@@ -143,6 +143,7 @@ Auto-close tag
 ![100%](sol/52forbes.png)
 
 --->
+---
 
 ### SFT: Stanford Flash Teams; Agile methodology the considers remote
 ![100%](sol/52agile.png)
@@ -194,6 +195,7 @@ Avoid desktop apps
 ## You don't need every developer to setup VS Code
 ![100%](sol/71ide.png)
 Like game streaming
+
 ---
 
 ## Pillar 8: Rewrite legacy apps: *just for practice*
@@ -222,8 +224,8 @@ Second team is back end services, eg: REST
 ---
 
 ## No SDK required: upload to cloud for Native Mobile app
-|![100%](sol/90f7.png)|![90%](sol/48jqBar.png)|
-|:-:|:-:|
+![100%](sol/90f7.png)
+
 
 ----
 

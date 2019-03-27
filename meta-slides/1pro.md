@@ -31,12 +31,17 @@ Now gone.
 ## Automation
 ![110%](pro/11auto.png)
 
+---
+
 <!---
 
 ![](pro/12comp.png)
 - Can someone read the middle # of software engineer salary above?
 
 --->
+
+
+---
 
 ## Software Apocalypse (read article later)
 |![90%](pro/17apo.png)|![120%](pro/18hightech.png)|
@@ -71,7 +76,7 @@ Now gone.
 ---
 
 ## Examples:
-|![90%](pro/40jform.png)|![120%](pro/icode.png)|
+|![90%](pro/40jform.png)|![60%](pro/41icode.png)|
 |:-:|:-:|
 
 ---
@@ -81,12 +86,6 @@ Now gone.
 but keep the C++ programmers out*, 
  that itself is a huge reason to use C."
 - Me: Damaged goods
-
----
-
-## Examples, done in hours: 
-|![90%](pro/40jform.png)|![120%](pro/icode.png)|
-|:-:|:-:|
 
 ---
 
