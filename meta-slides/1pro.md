@@ -1,10 +1,9 @@
 <!-- $theme: default -->
 <!-- prerender: true -->
 <!-- paginate: true -->
-paginate: true 
 <!-- page_number: true -->
-<!-- $size: 16:9 -->
-footer: www.MetaBake.org
+<!-- $size: 16:9 
+<!-- footer: www.MetaBake.org -->
 
 ## "Second largest computer company? DEC"
 
@@ -32,16 +31,22 @@ Now gone.
 ## Automation
 ![110%](pro/11auto.png)
 
----
+<!---
 
 ![](pro/12comp.png)
 - Can someone read the middle # of software engineer salary above?
 
----
+--->
 
 ## Software Apocalypse (read article later)
 |![90%](pro/17apo.png)|![120%](pro/18hightech.png)|
 |:-:|:-:|
+
+---
+
+## Waterfall process 
+![](pro/19waterf.png)
+
 
 ---
 
@@ -91,7 +96,7 @@ but keep the C++ programmers out*,
 --- 
 
 # Part I - low-code status before the winter of 2020:
-- # 90% of developers will lose their job. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet. 
+- 90% of developers will lose their job. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet. 
 - Citizen developers: No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
 - low-code is 10X cheaper and 10x faster.
 - Cuts: first expensive developers, or working on complex tech.
@@ -101,15 +106,15 @@ but keep the C++ programmers out*,
 --- 
 
 ## Signs of shift: 
-|![90%](pro/60gart.png)|![120%](pro/60out.png)|
+|![90%](pro/60report.png)|![120%](pro/60out.png)|
 |:-:|:-:|
 I provide a list of low-code in the 'Pillars' document.
 
 ---
 
 # Part II: What movie has line: 
-###  'You're already dead. Everybody dies, you know I believe it' 
+##  'You're already dead. Everybody dies, you know I believe it' 
 ![60%](pro/100linda.jpg)
 First time it happened, I did nothing.
 
-# Here is what I'll do to be in 10% of IT survivors: "my team and me will code faster than citizen developers". 
+### Here is what I'll do to be in 10% of IT survivors: "my team and me will code faster than citizen developers". 

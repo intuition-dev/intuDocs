@@ -1,10 +1,9 @@
 <!-- $theme: default -->
 <!-- prerender: true -->
 <!-- paginate: true -->
-paginate: true 
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-footer: www.MetaBake.org
+<!-- footer: www.MetaBake.org -->
 
 ## HW costs are down; but also development costs need to go down
 
@@ -14,7 +13,7 @@ footer: www.MetaBake.org
 
 ## Software development costs as well
 
-![200%](sol/02form.png)
+![30%](sol/02form.png)
 
 ---
 
@@ -31,11 +30,6 @@ footer: www.MetaBake.org
 
 ### Pillar 1: Digital transformation, change management, and apocalypse of Cloud v1.0
 ![100%](sol/10cloud.png)
-
----
-
-###  The costs are not what you think they are.
-![100%](sol/11pizza.jpg)
 
 ---
 
@@ -87,7 +81,8 @@ footer: www.MetaBake.org
 
 ### Learn the most popular templating language. Quickly.
 ![100%](sol/21pug.png)
-Auto-close ta
+Auto-close tag
+
 ---
 
 ### Pillar 3: SEO / Competitive Content marketing, AMP
@@ -100,7 +95,7 @@ Auto-close ta
 
 ---
 
-![100%](sol/41lowcode.png)
+![80%](sol/41lowcode.png)
 
 ---
 
@@ -109,7 +104,7 @@ Auto-close ta
 
 ---
 
-### Code, it's OK. It is even better.
+### Keyboard markup, it's OK. It is even better.
 ![100%](sol/46photoS.png)
 
 ---
@@ -140,14 +135,14 @@ Auto-close ta
 ---
 
 ### As you retell the story you learn - and keep learning
-![100%](sol/51iter.jpg)
+![50%](sol/51iter.jpg)
 
----
+<!---
 
 ### And manage resources
 ![100%](sol/52forbes.png)
 
----
+--->
 
 ### SFT: Stanford Flash Teams; Agile methodology the considers remote
 ![100%](sol/52agile.png)
@@ -175,7 +170,7 @@ Auto-close ta
 ---
 
 ## A video of a user using the app helps the team prioritize
-![100%](sol/61ux.png)
+![100%](sol/62ux.png)
 
 ---
 
@@ -193,6 +188,7 @@ Auto-close ta
 ## Pillar 7: Security, productivity and Cloud
 ![100%](sol/70cbook.jpg)
 Avoid desktop apps
+
 ---
 
 ## You don't need every developer to setup VS Code
@@ -221,7 +217,7 @@ Second team is back end services, eg: REST
 ---
 
 ## Learn Electron
-![100%](sol/90EL.png)
+![80%](sol/90EL.png)
 
 ---
 
@@ -238,25 +234,32 @@ Second team is back end services, eg: REST
 
 ## We have not see a productivity jump in ~10 years.
 
-![100%](sol/200-vt100.png)
-
+![50%](sol/200_vt100.jpg)
 
 ---
 
 # MetaBake:
-- ### Automatic programming
-- ### Static generation
-- ### Low-code
-- ### Declarative 
+- ### Automatic programming /Static generation
+- ### Low-code /Declarative 
 - ### UI First
-- ### White collar
 - ### Iterative
 - ### Services
-- ### Comps
+- ### Comps / White collar
 - ### Keyboard IDE / non GUI
 - ### Nice UI
+
 ---
+
+## Bonus: Of course there are time consuming tasks
+
+|![100%](sol/150into.jpg)|![90%](sol/160ken.png)|
+|:-:|:-:|
+
+---
+
 
 ![200%](logo.jpg)
 
- vic@mbake.org 
+ vic@MetaBake.org 
+
+Written in Marp

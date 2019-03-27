@@ -211,6 +211,7 @@ long-term future.
 
 
 ## Pillar 10: Benchmark your productivity performance vs others
+TIME
 
 One must be able to benchmark their org vs another org in our
 industry. Answers to questions such as how quickly an org in their industry segment

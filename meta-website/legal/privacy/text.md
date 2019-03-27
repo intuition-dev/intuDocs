@@ -28,7 +28,7 @@ MetaBake&trade; may amend this Privacy Policy from time to time. If we make any 
 
 ### Questions or Suggestions
 
-If you have questions or suggestions, send an email to info@mbake.org.
+If you have questions or suggestions, send an email to info@MetaBake.org.
 
 ### IP Addresses
 
