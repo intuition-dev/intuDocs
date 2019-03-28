@@ -1,7 +1,6 @@
 
-* [Home](/)
 
-* [Home/About](index.md)
+* [Home/About](README.md)
 * [HTML/Pug and dat.yaml](pug.md)
 * [SCSS|CSS](css.md)
 * [TypeScript|.js and Services](ts.md)

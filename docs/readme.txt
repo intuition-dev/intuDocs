@@ -1,7 +1,7 @@
 
 
-https://docsify.js.org/#/plugins
+http://docsify.js.org/#/plugins
 
-index.md is also partially cut/paste from articles here into one
+index.md is also cut/paste from articles parts here into one
 
-and needs to be same as MetaBake/src/README
+and needs to be same as MetaBake/src/README.md
