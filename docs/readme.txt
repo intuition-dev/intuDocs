@@ -2,4 +2,6 @@
 
 https://docsify.js.org/#/plugins
 
-index.md is also partially in the MetaBake/src/Readme as cut/paste
+index.md is also partially  cut/paste from articles here.
+
+and it ln -s to MetaBake/src/README
