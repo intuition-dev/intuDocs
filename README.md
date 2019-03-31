@@ -1,4 +1,4 @@
-<img src="http://metabake.github.io/MetaBake-Docs/logo.jpg" width="100">
+<img src="http://metabake.github.io/mbakeDocs/logo.jpg" width="100">
 
 ### MetaBake&trade; is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW the low-coder'
 
