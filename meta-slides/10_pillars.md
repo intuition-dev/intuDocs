@@ -1,3 +1,15 @@
+
+Eploartory programing
+Fast enought ahead of rate of change
+digital transofmation: same few tools
+
+WebDev is html. so language is html and dom. at expense of .js
+It is a different padigram than 3GL and functional
+
+
+
+---
+
 # 10 Pillars Related to Low-Code
 
 ## Background
