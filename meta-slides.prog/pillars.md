@@ -1,4 +1,13 @@
 
+WebDev is html. so language is html and dom. at expense of .js
+It is a different padigram than 3GL and functional, both of which are behind us.
+
+Exploratory programing - http://arclanguage.org - so you can prototype 
+
+And use 10 fingers, Fast enough ahead of rate of change
+
+---
+
 
 # 10 Pillars Related to Low-Code
 

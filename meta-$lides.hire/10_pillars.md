@@ -1,10 +1,8 @@
 
 
-WebDev is html. so language is html and dom. at expense of .js
-It is a different padigram than 3GL and functional
+We partner with you
 
-Exploratory programing - http://arclanguage.org/
-Fast enough ahead of rate of change
+
 digital transformation: Culture where everyone has background in html and uses it
 
 
@@ -47,7 +45,7 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
-There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey, Kony; 
+There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey, Kony, Oracle Visual Builder; 
 and even Form builders like ZoHo Forms or JotForm.
 
 # Solution
