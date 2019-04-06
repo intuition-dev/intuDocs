@@ -1,6 +1,6 @@
 <img src="http://metabake.github.io/mbakeDocs/logo.jpg" width="100">
 
-### MetaBake&trade; is the extensible open source low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW the low-coder'
+### MetaBake&trade; is open source and extensible low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW the low-coder'
 
 MetaBake&trade; mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high developer productivity.
 
