@@ -99,7 +99,7 @@ Auto-close tag
 
 ---
 
-### MetaBakeis an example of tool for static generation
+### MetaBake is an example of tool for static generation
 ![100%](sol/43meta.png)
 
 ---
@@ -240,7 +240,7 @@ Second team is back end services, eg: REST
 
 ---
 
-# MetaBake:
+# MetaBake :
 - ### Automatic programming /Static generation
 - ### Low-code /Declarative 
 - ### UI First
