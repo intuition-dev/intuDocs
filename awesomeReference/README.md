@@ -23,7 +23,7 @@ Directory of related projects is in Resources on left, and source code is here:
 # Additional examples and plugins:
 In addition to the examples in mbake CLI:
 
-- [SCSS theme Framework Examples](http://github.com/MetaBake /theme-scss-frameworks)
+- [SCSS theme Framework Examples](http://github.com/MetaBake/theme-scss-frameworks)
 
 
 ## Features
