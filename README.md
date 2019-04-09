@@ -1,8 +1,8 @@
 <img src="http://metabake.github.io/mbakeDocs/logo.jpg" width="100">
 
-### MetaBake&trade; is open source and extensible low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW the low-coder'
+### MetaBakeis open source and extensible low-code productivity tool for programmers; including dynamic apps and data binding. 'All my friends KNOW the low-coder'
 
-MetaBake&trade; mbake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high developer productivity.
+MetaBakembake CLI lets you generate websites and dynamic webapps in Pug by leveraging low-code pillars for high developer productivity.
 
 ## Install
 
@@ -33,7 +33,7 @@ mbake .
 
 This will create index.html. 
 
-Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBake&trade; Markdown flavor includes CSS support):
+Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBakeMarkdown flavor includes CSS support):
 ```pug
     body
         div
@@ -103,7 +103,7 @@ This is the basics and intro to MetaBake&trade;. You can see it helps with html,
 
 There are many example apps, and shipped templates include include: an CMS module, a watcher, SPA, Blog, Website, Slides, Dashboard, CRUD, PWA, AMP, Electron, Hybrid mobile apps, server-less via AWS | GCP FireStore, RIOTjs, Ads and more. 
 
-MetaBake&trade; is not static only - it fully supports and has examples, shipped apps, and docs for dynamic and mobile apps; using single code base.
+MetaBakeis not static only - it fully supports and has examples, shipped apps, and docs for dynamic and mobile apps; using single code base.
 
 - Click for mbake Docs: [docs.MetaBake.org](http://docs.MetaBake.org)
 - [git.MetaBake.org](http://git.MetaBake.org)

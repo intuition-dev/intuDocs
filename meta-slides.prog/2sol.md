@@ -99,7 +99,7 @@ Auto-close tag
 
 ---
 
-### MetaBake&trade; is an example of tool for static generation
+### MetaBakeis an example of tool for static generation
 ![100%](sol/43meta.png)
 
 ---

@@ -4,10 +4,10 @@
 
 #### 'All my friends KNOW the low-coder'
 
-### MetaBake&trade; is open source and extensible low-code productivity tool for programmers. 
+### MetaBakeis open source and extensible low-code productivity tool for programmers. 
 
-MetaBake&trade; mbake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. MetaBake&trade; open source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible  baseCMS, components and more.
- MetaBake&trade; is a simple tool, but can build any type of an app or website, and it allows for gradual adoption. You can start by slowly adopting just a few of its approaches. 
+MetaBakembake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. MetaBakeopen source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible  baseCMS, components and more.
+ MetaBakeis a simple tool, but can build any type of an app or website, and it allows for gradual adoption. You can start by slowly adopting just a few of its approaches. 
 
 
 Prerequisites: you should know HTML, CSS an .js - that is all we use. If you need to catch up, we recommend this book: 'Design and Build Websites' by Jon Duckett.
@@ -19,7 +19,7 @@ yarn global add mbake
 mbake
 ```
 
-# MetaBake&trade; in 4 Minutes:
+# MetaBakein 4 Minutes:
 
 ## First Page
 
@@ -45,7 +45,7 @@ mbake .
 
 This will create index.html. 
 
-Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBake&trade; Markdown flavor includes CSS support):
+Of course you can use regular Pug syntax to include other Pug files; or Markdown. (MetaBakeMarkdown flavor includes CSS support):
 ```pug
     body
         div
@@ -200,6 +200,7 @@ Other examples include:
 
 # Links
 
+- MetaBake.org (https://www.metabake.org)
 - Click for mbake Docs: [docs.MetaBake.org](http://docs.MetaBake.org)
 - [git.MetaBake.org](http://git.MetaBake.org)
 - Community [forum.MetaBake.org](http://forum.MetaBake.org)

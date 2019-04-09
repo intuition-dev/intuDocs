@@ -11,9 +11,9 @@ Make sure you submit the page you are working on to 'Google Webmasters search co
 And we help with social SEO, eg: If your dat.yaml is like this:
 
 ```yaml
-title: MetaBake&trade; versus other Low-Code tools
+title: MetaBakeversus other Low-Code tools
 image: slide-3.jpg
-content_text: MetaBake&trade; is the open source extensible low-code productivity tool for programmers.
+content_text: MetaBakeis the open source extensible low-code productivity tool for programmers.
 keywords: low-code, gulp, grunt, CMS, static gen
 ```
 
