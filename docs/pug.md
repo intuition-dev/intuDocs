@@ -77,7 +77,7 @@ And example Markdown file with CSS style
 
 This lets you include Markdown in Pug. Markdown is great for people that are not technical to generate content.  
 
-( eg: https://github.com/arve0/markdown-it-attrs/blob/master/README.md, via Markdown-it )
+( eg: https://github.com/markdown-it/markdown-it-container, via Markdown-it )
 
 
 ## Folder Structure
