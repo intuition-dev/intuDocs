@@ -3,7 +3,7 @@
 <!-- paginate: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 
-<!-- footer: www.MetaBake.org -->
+<!-- footer: www.Metabake.org -->
 
 ## "Second largest computer company? DEC"
 

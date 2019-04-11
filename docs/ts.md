@@ -23,7 +23,7 @@ And normally you run that command at the root of your web-app; but don't use it 
 ## Services
 
 TypeScript is often uses to call Services|APIs via browser's fetch() (used to be Ajax).
-Modern services are now written in Google FireStore, DreamFactory(hosted) and to lesser degree AWS Amplify. These 
+Modern services are now written in Google FireStore and to lesser degree AWS Amplify. These 
 modern type of services help maximite developer productivity. Services are used
 to develope C.R.U.D. (CRUD: Create, Read, Update, Delete)/ dynamic web-apps.
  Google and AWS also offer nice user authentication functionality.

@@ -95,9 +95,6 @@ reduce development velocity, but a light smoke test can make it easier to find o
 There is also an example of doing user auth in CRUD example app. We just followed the FireStore docs.
 
 
-## Other
-
-If you are not a fan of Google FireStore, you may like the SaaS DreamFactory hosted by DreamFactory.
 
 
 ## Review

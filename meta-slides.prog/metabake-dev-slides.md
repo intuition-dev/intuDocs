@@ -1,11 +1,11 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.MetaBake.org -->
+<!-- footer: www.Metabake.org -->
 
 <!-- *template: invert -->
 
-#  [==MetaBake==](https://metabake.org)
+#  [==Metabake==](https://metabake.org)
 
 #### An open source CLI tool for meta-programming
 
@@ -103,11 +103,11 @@
 <!--- template: invert --->
 
 #  Closing the Gap between Past, Present and Future of Web Development:
-## MetaBake
+## Metabake
 <!-- img -->
 
 ---
-# Why MetaBake
+# Why Metabake
 ### Simple starter requirements:
 
 - HTML 
@@ -116,7 +116,7 @@
 - Yep, that's it. Nothing more.
 ---
 
-# MetaBake 
+# Metabake 
 ### ==Based on:==
 - Automatic and Declarative Programming
 - Static Generation
@@ -126,14 +126,14 @@
 - Iterative and Fast Development 
 ---
 
-# MetaBake
+# Metabake
 ### ==It allows you to:==
 - Gradually Adopt it
 - Leverage a single codebase and SasS as the Only architecture
 - You can onboard easily all kinds of developers. From citizen developers to junior and senior developers.
 
 ---
-# MetaBake
+# Metabake
 ### ==Aims for:==
 - SEO and Competitive Content Marketing
 -  AMP

@@ -1,14 +1,14 @@
 
-# MetaBake
+# Metabake
 
 ## 'All my friends KNOW the low-coder'
 
-### MetaBake is open source and extensible low-code productivity tool for programmers.
+### Metabake is open source and extensible low-code productivity tool for programmers.
 
 ## Overview
-MetaBake mbake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. MetaBake open source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible baseCMS, components and more.
+Metabake mbake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. Metabake open source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible baseCMS, components and more.
 
-MetaBake is a simple tool, but can build any type of an app or website, and it allows for gradual adoption. You can start by slowly adopting just a few of its approaches.
+Metabake is a simple tool, but can build any type of an app or website, and it allows for gradual adoption. You can start by slowly adopting just a few of its approaches.
 
 Prerequisites: you should know HTML, CSS an .js - that is all we use. If you need to catch up, we recommend this book: 'Design and Build Websites' by Jon Duckett.
 
@@ -22,7 +22,7 @@ mbakeX -w . /* to run the watcher/livereload */
 ```
 
 
-## MetaBake in 4 Minutes
+## Metabake in 4 Minutes
 
 Building sites take a few moments, just add `pug` and `dat.yaml` files in the folder, and compile it with `mbake .` from the root folder of your site.
 
@@ -52,7 +52,7 @@ key1: World
 mbake .
 ```
 
-This will create `index.html`. Of course you can use regular Pug syntax to include other Pug files or Markdown. (MetaBake Markdown flavor includes CSS support):
+This will create `index.html`. Of course you can use regular Pug syntax to include other Pug files or Markdown. (Metabake Markdown flavor includes CSS support):
 ```pug
 body
    div

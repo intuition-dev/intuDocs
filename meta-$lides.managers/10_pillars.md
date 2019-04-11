@@ -91,7 +91,7 @@ amount of fear.
 Also digital transformation is: Change Management and should be treated as such.
 
 Embrace server-less, go heavy into gen 2 of cloud: AWS, Google Firestore, DigitalOcean and similar.
-FireStore, Backendless. DreamFactory, etc. 
+FireStore etc. 
 
 ## Pillar 2: Learn Quickly; including computer-augmented/generators
 PUG 
@@ -247,23 +247,23 @@ The next wave of development productivity is coming, and we can see that
 it will be low-code. Low-code is the way to create
 front-end web and application development.
 
-You can run it by installing MetaBake from
+You can run it by installing Metabake from
 here:
 
--   http://www.staticgen.com/MetaBake 
+-   http://www.staticgen.com/Metabake 
 
 Or you can see a low-code CRUD example here:
 
--   http://github.com/MetaBake 
+-   http://github.com/Metabake 
 
 
 ### low-code = 10X faster web app development.
 
  We have found that - with mbake.org; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
 
-On the client side (browser apps and mobile apps) MetaBake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With MetaBake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much faster and cheaper web app and mobile app development.
+On the client side (browser apps and mobile apps) Metabake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With Metabake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much faster and cheaper web app and mobile app development.
 
-How does open source MetaBake deliver 10X faster and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** server-side and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
+How does open source Metabake deliver 10X faster and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** server-side and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
 
 We benchmark against _LAMP_, _RAILS_, _MEAN_ and such For example, LAMP is the technology WordPress was built on. Every 10 years or so technology gets 10 times better, which *forces* everyone to upgrade. Assembly was 10 times better than machine language. C/.js is 10 times better than Assembly. We believe that we found the answer on how to have a more productive team.
 

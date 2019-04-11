@@ -3,7 +3,7 @@
 <!-- paginate: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.MetaBake.org -->
+<!-- footer: www.Metabake.org -->
 
 ## HW costs are down; but also development costs need to go down
 
@@ -99,7 +99,7 @@ Auto-close tag
 
 ---
 
-### MetaBake is an example of tool for static generation
+### Metabake is an example of tool for static generation
 ![100%](sol/43meta.png)
 
 ---
@@ -240,7 +240,7 @@ Second team is back end services, eg: REST
 
 ---
 
-# MetaBake :
+# Metabake :
 - ### Automatic programming /Static generation
 - ### Low-code /Declarative 
 - ### UI First
@@ -262,6 +262,6 @@ Second team is back end services, eg: REST
 
 ![200%](logo.jpg)
 
- vic@MetaBake.org 
+ vic@Metabake.org 
 
 Written in Marp
