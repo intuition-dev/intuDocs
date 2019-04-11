@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==Metabake==](https://metabake.org)
+#  [==MetaBake==](https://metabake.org)
 
 #### An open source CLI tool for meta-programming
 
@@ -116,7 +116,7 @@
 - Yep, that's it. Nothing more.
 ---
 
-# Metabake 
+# MetaBake 
 ### ==Based on:==
 - Automatic and Declarative Programming
 - Static Generation
