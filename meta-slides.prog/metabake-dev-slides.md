@@ -16,23 +16,19 @@
 <!-- img -->
 
 ---
+# The first website, was static
+
+#### Browsers were simple document viewers
+![70% center](./images/first-website.png)
+
+---
 
 # Waves Of Technological Change
-<!-- td --->
 
----
+## Websites grows in complexity
 
-# The Web and the DOM
-<!-- td --->
-
----
-
-# The natural fluctuaction of opposites: 
----
-
-# JavaScript Fatigue
-## From Heavy JS Frameworks to Back To Basics with Static Generation
-<!-- td --->
+- Content-driven 2.0 Dynamic Web
+- LAMP / Wordpress
 
 ---
 ## The natural fluctuaction of opposites
@@ -63,7 +59,9 @@
 # The apocalypse of Backend
 
 ## CDN is cheaper and faster
-## So is Text Search 
+- It's an issue with dynamic sites due to notorious cache invalidation
+- A breeze to use with Static Generators
+## And so is Text Search 
 
 ---
 
@@ -74,6 +72,7 @@
 
 # The apocalypse of Backend
 ##  Hosted REST SaaS 
+### Deliver for both mobile and web from a single pure API
 
 ---
 <!-- *template: invert -->
@@ -81,9 +80,29 @@
 # The Current State Of Affairs
 ---
 
-# Overuse of JavaScript
+# JavaScript Fatigue
+- A new JS Framework pops out approximately every week
+- Some rampant cases of overengineering
+- Excessive focus on JS. Relegating as secondary the DOM
+- Neglecting users that opt for disabling JavaScript
+- SEO :question:
 
-<!---TO-DO: Refer back to Web and DOM --->
+---
+
+# Front-End Cornucopia
+
+## Not all is bad
+
+- Build tools and compilers -  once a rarity on Front-end - are now part of the normal workflow
+- PHP-based tools and overuse of dynamic approaches are starting to feel bloated an unnecesary in modern Front-end
+- Web Components and AMP are gaining traction
+---
+# Front-end Cornucopia
+
+## The JAM Stack
+https://jamstack.org/
+
+## The future is mobile. Every web app is a mobile app and every mobile app is a web app
 
 ---
 
@@ -92,13 +111,32 @@
 
 ---
 
+# The natural fluctuaction of opposites
+
+## Back to Basics: Static Generators
+
+- Remember the apocalypse of backend ?
+- Many of the constraints that cornered static generated websites and placed upfront dynamically generated sites have fallen away, and will continue to do so
+- In a mobile era, ==performance== is a must: Loading speed of Static Generated Sites is unparalleled
+---
+
+## Back to Basics: Static Generators
+
+### A Pro that it's a Con as well:
+- Writing directly in Markdown and working with Git it's a default workflow for developers. But it's not so for average consumers who may find it discouraging 
+- There is still a current Gap on how to bring together an easy-to-use for consumers CMS and static website generation
+
+---
+<!-- *template: gaia -->
 # What will shape Front-End in 2019: 
 
 - Server-less
+- CDN
 - Static Generators
 - Mount
 - Markdown
 - Code the prototype
+
 ---
 <!--- template: invert --->
 
@@ -131,32 +169,65 @@
 - Gradually Adopt it
 - Leverage a single codebase and SasS as the Only architecture
 - You can onboard easily all kinds of developers. From citizen developers to junior and senior developers.
+- Blog-aware Static Websites and simple custom CMS
 
 ---
 # Metabake
 ### ==Aims for:==
 - SEO and Competitive Content Marketing
 -  AMP
+-  CMS
 - UI First
 
 ---
+# MetaBake
 
+### What makes MetaBake different from other SSG like Gatsby ?
+---
+
+# MetaBake
+
+### What makes MetaBake different from other JS Frameworks like React / Angular?
+
+---
+
+# MetaBake
+
+## Web Components. 
+
+### Importance of them
+
+### Advantages
+
+---
+
+# MetaBake
+ 
+# How does Web Components related to 4GL / Declarative ?
+
+---
 # Focus on UI Design
 
 *"Design is a Form of Authority."*
 
 ## Use to your advantage the increasing automation in development.
 
-- Leverage CSS Preprocessors.
+- Leverage CSS Preprocessors
+- Build upon existing CSS Frameworks
+
+---
+# Focus on UI Design
 
 ## ==Creativity== cannot be automated.
 - Consider Design a key target, not a disposable.
+<!---img of design --->
 
 ---
 
 # Practical Example
 
 <!--- td --->
+<!--- perhaps include a video here on how a the CMS + Blog works ? -->
 
 ----
 # Get Started 
