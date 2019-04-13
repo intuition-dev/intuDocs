@@ -6,7 +6,7 @@
 ### Metabake is open source and extensible low-code productivity tool for programmers.
 
 ## Overview
-Metabake mbake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. Metabake open source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible baseCMS, components and more.
+Metabake mbake CLI tool is a modern way to generate websites and dynamic webapps via low-code to help you achieve high developer productivity, without additional effort. Metabake open source tool helps you deliver web apps 10X faster with less coding by leveraging our documented high-productivity approaches/pillars. It leverages static generation; with Pug, Markdown and more; including dynamic apps, data binding, extensible CMS, components and more.
 
 Metabake is a simple tool, but can build any type of an app or website, and it allows for gradual adoption. You can start by slowly adopting just a few of its approaches.
 
@@ -193,7 +193,7 @@ Also you can itemize `mbake -i dat.yaml` files to make a nice SEO friendly CMS.
 
 Now that you know mbake foundation, here are some choices for next things to learn in the advanced docs, pick and chose:
 
-- baseCMS: an admin panel that you can host to can use as is; or as a base to build commercial grade CMS or eCommerce site, including browser plugin.
+- CMS: an admin panel that you can host to can use as is; or as a base to build commercial grade CMS or eCommerce site, including browser plugin.
 - MetaCake: plugin components, makes it easy for designers to write real web-apps. Developed with RIOTjs, easier than Reactjs (commercial license optional)
 - AMP
 - SPA router: with page transition effects and state machine (needed for cross-platform development)
