@@ -212,7 +212,7 @@ Like game streaming
 Currently some orgs have 3 teams:
 - web-app
 - Mobile
-- Website/Blog (run by marketing)
+- Website/CMS (run by marketing)
 Instead: Front end to be combined into one.
 Second team is back end services, eg: REST
 

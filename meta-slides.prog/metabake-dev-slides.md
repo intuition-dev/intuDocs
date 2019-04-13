@@ -169,7 +169,7 @@ https://jamstack.org/
 - Gradually Adopt it
 - Leverage a single codebase and SasS as the Only architecture
 - You can onboard easily all kinds of developers. From citizen developers to junior and senior developers.
-- Blog-aware Static Websites and simple custom CMS
+- CMS-aware Static Websites and simple custom CMS
 
 ---
 # Metabake
@@ -227,7 +227,7 @@ https://jamstack.org/
 # Practical Example
 
 <!--- td --->
-<!--- perhaps include a video here on how a the CMS + Blog works ? -->
+<!--- perhaps include a video here on how a the CMS + CMS works ? -->
 
 ----
 # Get Started 

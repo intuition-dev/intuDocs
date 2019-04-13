@@ -1,7 +1,7 @@
 
-# Blog/Itemize example
+# CMS/Itemize example
 
-### Itemize (eg Blog)
+### Itemize (eg CMS)
 
 1. Lets build a folder called Items and in that folder create 
 create a blank file dat_i.yaml, with nothing there.
@@ -21,11 +21,11 @@ And add a few more key/value words in each dat.yaml, but make each pages values 
 mbake -i .
 ```
 It will create items.json.
-This allows you to fetch that json; and search for content, blog, items, etc.
+This allows you to fetch that json; and search for content, CMS, items, etc.
 
-### mbake -b will emit an example blog with above.
+### mbake -b will emit an example CMS with above.
 
-The example blog will also show you how the items.json is read to display a nice searchable and paginated 
+The example CMS will also show you how the items.json is read to display a nice searchable and paginated 
 list of items. No magic.
 
 ---

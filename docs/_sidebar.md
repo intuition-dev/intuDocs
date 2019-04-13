@@ -9,7 +9,7 @@
 * [SEO and social tags SEO](SEO.md) 
 * [Dynamic data/CRUD/'ViewModel' example](crud.md)
 
-* [Blog/Itemize example](itemize.md)
+* [CMS/Itemize example](itemize.md)
 
 * [mbake review, extras and next steps](more.md)
 * [Resources](res.md)

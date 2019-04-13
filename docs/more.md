@@ -5,7 +5,7 @@
 mbake is the open source modern tool for developers that makes you most productive: it makes Pug, SCSS and Typescript.
 It comes with example apps that include WebSite showing how to load.js, CRUD showing how to do dynamic apps. You can use any
 application architecture you like, but 
-Also it you you can itemize (-i dat.yaml files) to make a nice SEO friendly blog.
+Also it you you can itemize (-i dat.yaml files) to make a nice SEO friendly CMS.
 
 ## Extras and next steps
 

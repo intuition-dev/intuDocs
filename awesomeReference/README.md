@@ -70,7 +70,7 @@ S = sales, I = Foundation, II = B&M, III = Vista
 - I [mbake CLI](http://youtu.be/-KkPfAnEXyk)
 - I [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
 
-- II [Blog search](http://www.youtube.com/watch?v=-4i9_SYyTOo)
+- II [CMS search](http://www.youtube.com/watch?v=-4i9_SYyTOo)
 - II [SPA](http://youtu.be/LHFjjDPlU3A)
 - III [Meta Automatic Programing Eg 1 ](http://youtube.com/watch?v=c4mWhefhOoQ)
 
