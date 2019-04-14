@@ -69,10 +69,14 @@ basedir keywords sets the base directory to look for includes, so in pug you can
   include:metaMD comment.md
 ```
 
-And example Markdown file with CSS style
+And example Markdown file with CSS nested classes. Title is nested in 2 levels, .column class CSS and second level .stick CSS class
 ```
-  # header {.style-me}
-  I think this is good.
+:::: column col-2
+::: stick
+Title 
+:::
+::::
+
 ```
 
 This lets you include Markdown in Pug. Markdown is great for people that are not technical to generate content.  
