@@ -23,7 +23,7 @@ Now gone.
 
 # Agenda
 - Part I: low-code status
-- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of mbake.org )
+- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of Metabake.org )
 - Demo of automatic programming
 
 ---
