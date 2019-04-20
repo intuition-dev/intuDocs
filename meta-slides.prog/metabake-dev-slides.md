@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==Metabake==](https://metabake.org)
+#  [==Metabake==](https://Metabake.org)
 
 #### An open source CLI tool for meta-programming
 
