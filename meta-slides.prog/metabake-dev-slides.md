@@ -1,7 +1,7 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.Metabake.org -->
+<!-- footer: www.MetaBake.org -->
 
 <!-- *template: invert -->
 
@@ -59,8 +59,10 @@
 # The apocalypse of Backend
 
 ## CDN is cheaper and faster
-- It's an issue with dynamic sites due to notorious cache invalidation
+- It's problematic with dynamic sites due to notorious cache invalidation
 - A breeze to use with Static Generators
+### CDN based services like Netlify are becoming standards
+
 ## And so is Text Search 
 
 ---
@@ -136,16 +138,16 @@ https://jamstack.org/
 - Mount
 - Markdown
 - Code the prototype
-
 ---
+
 <!--- template: invert --->
 
 #  Closing the Gap between Past, Present and Future of Web Development:
-## Metabake
+## MetaBake
 <!-- img -->
 
 ---
-# Why Metabake
+# Why MetaBake
 ### Simple starter requirements:
 
 - HTML 
@@ -164,7 +166,7 @@ https://jamstack.org/
 - Iterative and Fast Development 
 ---
 
-# Metabake
+# MetaBake
 ### ==It allows you to:==
 - Gradually Adopt it
 - Leverage a single codebase and SasS as the Only architecture
@@ -172,7 +174,7 @@ https://jamstack.org/
 - CMS-aware Static Websites and simple custom CMS
 
 ---
-# Metabake
+# MetaBake
 ### ==Aims for:==
 - SEO and Competitive Content Marketing
 -  AMP
