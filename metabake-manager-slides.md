@@ -71,6 +71,18 @@
 
 ---
 
+# Scalability 
+<!--related to front-end first -->
+
+---
+
+# Better performance
+<!--Related to FRont-end first:
+- Backedn made to fit the final data needed for the app the user will be interacting with
+- Not the other way around: Result a high performant and well optimized backend with the best suite structure
+ -->
+ ---
+ 
 ### We are continously building and improving a library of highly-reusable intelligent components in the style of AMP.
 
 ---
@@ -123,6 +135,9 @@
 # Light or Commercial CMS
 
 <!-- No more wp headaches -->
+## custom user-friendly Content Management Systems that bring:
+-  Higher efficiency
+-  Easy SEO
 
 ---
 
@@ -137,6 +152,7 @@
 
 # E-commerce
 <!-- A custom CMS allows to develop E-commerce  -->
+- Easy to manage and secure E-commerce solutions based on custom CMS
 ---
 
 # SEO
@@ -154,6 +170,10 @@
 ---
 <!--*template: invert -->
 # Intelligent Components
+
+---
+
+## Components and the future of web
 
 ---
 
