@@ -7,7 +7,7 @@
 
 #  [==Metabake==](https://Metabake.org)
 
-#### An open source CLI tool for meta-programming
+#### We partner with you to build now the future of software.
 
 ---
 <!-- *template: invert -->
