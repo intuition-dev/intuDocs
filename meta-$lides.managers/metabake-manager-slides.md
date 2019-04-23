@@ -14,47 +14,50 @@
 
 # Fast, Cheap and Good
 ## Is it possible?
-<!-- img -->
-![90%](images/fast-cheap-good.png)
 
 --- 
 
-# Fast, Cheap and Quality
-## is it possible ?
-## It is though traditionally that between these 3 things you can only have 2 and need to sacrifice the other.
-### i.e: If you want a high quality app developed in a very short ammount of time, it will be expensive. Same as if you want it fast and cheap, then it would be at the cost of questionable quality.
+![70%](images/fast-cheap-good.png)
+
+- It is though traditionally that between these Fast, Cheap and Good you can only have 2 and need to sacrifice the other.
+- i.e: If you want a high quality app developed in a very short ammount of time, it will be expensive. Same as if you want it fast and cheap, then it would be at the cost of questionable quality.
 
 ---
 <!-- *template: invert -->
 # But, is this always the case?
 
 ---
-# Think about evolution of computer science in the past decades
+
+### Think about the evolution of computer science:
 <!-- show picture of cardpunched computer -->
+![60%](images/computer-punched-cards.jpg)
 
 ---
 
-# Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered a rarity confined to experimental laboratories. 
+## Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered a rarity confined to experimental laboratories. 
+
 ---
 
-# Yet little by little and with every next wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
+## Yet little by little and with every next wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
+
 ---
 
 ## So yes, to build faster and cheaper it's possible if you do it in sync with a new wave of disruptive technological innovation. 
 
 --- 
 
-##Â Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
+## Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
 
 --- 
 
-## We are reaching again a new tipping point. And here at MetaBake we proudly consider us early adopters of the technology stacks that will shape the future of software development. 
+## We are reaching again a new tipping point. 
 
-# Fast, Cheap and Quality
-## Explain how.
+#### And here at MetaBake we proudly consider us early adopters of the technology stacks that will shape the future of software development. 
+
 ---
 <!--*template: invert -->
-# Our approach
+# How ?
+## Our approach
 
 ---
 
@@ -63,9 +66,15 @@
 
 ---
 
-# Iterative prototyping
-## We believe in iterative development and continuous improvement. 
-## In a true Agile flavour, our tools allows us to reuse and build the next step of development upon a previous one.
+## Iterative Prototyping
+- We believe in iterative development and continuous improvement. 
+
+![%100](images/50iterative.png)
+
+---
+## Flash Agile
+- In a true Agile flavour, our tools allows us to reuse and build the next step of development upon a previous one.
+![%100](images/52agile.png)
 
 ---
 
@@ -85,7 +94,7 @@
 
 ---
 
-##Â Explain AMP approach
+## Explain AMP approach
 
 ---
 
