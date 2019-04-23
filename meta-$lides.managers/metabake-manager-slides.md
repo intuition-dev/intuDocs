@@ -19,7 +19,7 @@
 
 ![70%](images/fast-cheap-good.png)
 
-- It is though traditionally that between these Fast, Cheap and Good you can only have 2 and need to sacrifice the other.
+- It is though traditionally that between Fast, Cheap and Good you can only have 2 and need to sacrifice the other.
 - i.e: If you want a high quality app developed in a very short ammount of time, it will be expensive. Same as if you want it fast and cheap, then it would be at the cost of questionable quality.
 
 ---
@@ -86,7 +86,7 @@
 
 # Better performance
 <!--Related to FRont-end first:
-- Backedn made to fit the final data needed for the app the user will be interacting with
+- Backend made to fit the final data needed for the app the user will be interacting with
 - Not the other way around: Result a high performant and well optimized backend with the best suite structure
  -->
  ---
@@ -104,23 +104,42 @@
 ---
 
 # Front-End First
-<!--Explain advantages of Front-End First approach
-- We first make sure that we understand and deliver an efficient UI and UX for the client
-- Then we develop the data structure and services needed as serverless back-end
- -->
-## Costumer-centric approach
 
+### Why Front-End first
+- Front-End is currently undergoing an accelerated evolution: Front-End tech stacks become outdated easily
+- Meanwhile, Back-end structures suffer less change than Front-End Stacks
+##### Therefore, it's imperative to build first a solid, scalable and performant Front-End
 ---
 
-## Design as authority. 
+# Front-End First
+### Advantages
 
-- A Front-End First approach allows us to focus on leveraging state of the art UI
+#### Deliverable early prototypes
+- We are able to hand <!--- is this phrasal verb correct? --> working prototypes to costumers to interact with and gather better feedback for future development iterations
+#### Costumer-centric approach
+- We first make sure that we understand the client requirementes and deliver an efficient UI and UX that suits the needs
+---
 
-![100%](images/design-hierarchy.png)
+# Front-End First
+
+### Advantages
+
+#### Better performance
+- We develop the data structure and services needed as a _serverless_ back-end fully optimized and made to fit the final data required by the app/web-app or website. 
+- We don't build unnecesary payloads or overengineered and monolithic backend structures.
+---
+
+### Advantages
+
+#### Ability to focus on state of the art UI
+
+- Design as a form of authority. Decisions are often times made unconsciously and/or emotionally.
+![70%](images/design-hierarchy.png)
 
 --- 
-
-## Conversion rates of well designed websites
+### Advantages
+#### Ability to focus on state of the art UI
+- A solid and aesthetically pleasing design generates trust, increases conversion rates and reduces _customer anxiety_
 <!-- fletcher method?-->
 
 --- 
@@ -135,7 +154,8 @@
 #### Advantages:
 
  - Fast integration
- - Lower maintenace Costs. 90%+ of cost in software development, is maintenance.
+ - Lower maintenace costs. 
+	- 90%+ of cost in software development is maintenance.
  - Increased data resilience
  - Unparalleled security
  
@@ -160,6 +180,11 @@
 
 ---
 
+# E-commerce
+<!-- A custom CMS allows to develop E-commerce  -->
+- Easy to manage and secure E-commerce solutions based on custom CMS
+---
+
 # Websites
 <!--
  - high quality design website with mobile-first approach
@@ -169,27 +194,18 @@
 
 ---
 
-# E-commerce
-<!-- A custom CMS allows to develop E-commerce  -->
-- Easy to manage and secure E-commerce solutions based on custom CMS
----
-
 # SEO
 
 <!--Our tech stack is highly SEO-friendly 
- - Show example of front matter pug vs raw html headers ?
+ - Show example of front matter .yalm vs raw html headers ?
  - Client Side Rendered Apps are penalized by crawlers ?
 -->
 
 ---
-<!-- this is important: -->
-# AMP 
-<!--Explain AMP approach  -->
-
----
 <!--*template: invert -->
-# Intelligent Components
-
+# Intelligent Components 
+<!-- this is related to AMP -->
+<!-- introduce some of the AMP approaches and how our components align with this principles -->
 ---
 
 ## Components and the future of web
@@ -201,10 +217,12 @@
 ## Improved load time
 ---
 
-# Mobile
-
----
-
 # Hosting support
 
+- We provide services for setting up and maintaing CDN (Content Delivery Network) based hosting. 
+- CDN was once a rarity reserved for big tech corporations like Facebook or Google.
+- Nowadays CDN are very cost-effective and ubicuous. This makes possible to deliver to costumer _on the edge_ lowering greatly the waiting time for the user, which is one of the main reasons for a 'high bouncing rate'
+<!-- show picture relating high bouncing rate and loading speed of web/app -->
+
+- And, it also allows us to deploy instantly sucessive iterations and updates of a product
 ---
