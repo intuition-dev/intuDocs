@@ -31,22 +31,23 @@
 ### Think about the evolution of computer science:
 <!-- show picture of cardpunched computer -->
 ![60%](images/computer-punched-cards.jpg)
+<!-- img of first pc -->
+<!-- img of smartphone/wearable -->
+
+---
+## Evolution of Computer Science
+- Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered a rarity confined to experimental laboratories. 
+
+- Yet little by little and with every next wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
 
 ---
 
-## Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered a rarity confined to experimental laboratories. 
+#### So yes, to build faster and cheaper it's possible if you do it in sync with a new wave of disruptive technological innovation. 
 
----
+- Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
 
-## Yet little by little and with every next wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
-
----
-
-## So yes, to build faster and cheaper it's possible if you do it in sync with a new wave of disruptive technological innovation. 
-
---- 
-
-## Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
+<!-- show 1GL / 2GL / 3 GL / 4 GL -->
+<!--graphic showing the changes every 10 years -->
 
 --- 
 
@@ -57,12 +58,11 @@
 ---
 <!--*template: invert -->
 # How ?
-## Our approach
-
 ---
 
-## We leverage the increasing automation and low-code high-productivity tools to help us develop faster and with less error-prone approaches
-### This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product.
+## Our approach
+- We leverage the increasing automation and low-code/high-productivity tools to help us develop faster and with less error-prone approaches
+- This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All without impacting negatively the quality.
 
 ---
 
@@ -79,6 +79,7 @@
 ---
 
 # Scalability 
+- We follow a Front-End first approach
 <!--related to front-end first -->
 
 ---
@@ -111,8 +112,11 @@
 
 ---
 
-# Design as authority. 
-## Mark a difference with statement design.
+## Design as authority. 
+
+- A Front-End First approach allows us to focus on leveraging state of the art UI
+
+![100%](images/design-hierarchy.png)
 
 --- 
 
@@ -122,15 +126,23 @@
 --- 
 
 # Serverless
-<!-- explaing advantages of serverless approach
+<!-- image of serverless // cloud -->
+![80%](images/10cloud.png)
+
+---
+
+# Serverless
+#### Advantages:
+
  - Fast integration
- - Lower maintenace Costs90%+ of cost in software development, is maintenance.
+ - Lower maintenace Costs. 90%+ of cost in software development, is maintenance.
  - Increased data resilience
  - Unparalleled security
- -->
+ 
 ---
+
 <!--*template: invert -->
-# What we can build together:
+# What we can build together
 
 ---
 
