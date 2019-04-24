@@ -57,124 +57,162 @@
 
 #### Waves of Disruptive Technological Innovation
 
-<!-- show 1GL / 2GL / 3 GL / 4 GL -->
+> <small>_The growth pattern of digital disruption shows why it seems so much sudden than it is. For several years, the market share of the new business models builds slowly. During that time, the old model also grows, albeit more slowly. Suddenly, the system reaches a tipping point. Market share quickly shifts from the old model to the new, and the incumbent companies bound to the old model can no longer operate as profitably._ </small>
 
-- Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
-
-> <small>_The growth pattern of digital disruption shows why it seems so much sudden than it is. For several years, the market share of the new business models builds slowly. During that time, the old model also grows, albeit more slowly. Suddenly, the system reaches a tipping point. Market share quickly shifts from the old model to the new, and the incumbent companies bound to the old model can no longer operate as profitably._</small> --Source: PwC and Strategy&
+<small><p style='text-align: right;'>Source: PwC and Strategy& </p></small>
 
 --- 
 ### Waves of Disruptive Technological Innovation
 
-. We are reaching again a ==**new tipping point**==. 
+- Therefore, every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
+
+##### We are currently reaching again a ==**new tipping point**==. 
 
 
-#### And here at MetaBake we proudly consider us early adopters of the technology stacks that will shape the future of software development. 
+- At MetaBake we proudly consider us ==**early adopters**== of the technology stacks that will shape the future of software development. 
 
 ---
 <!--*template: invert -->
-# How ?
----
-
-## Our approach
-- We leverage the increasing automation and low-code/high-productivity tools to help us develop faster and with less error-prone approaches
-- This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All without impacting negatively the quality.
+# How?
+## Our Approach
 
 ---
+### Our Approach
+- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop faster and with less error-prone processes
 
+<!-- show 1GL / 2GL / 3 GL / 4 GL -->
+
+- This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All ==**without impacting negatively the quality**==.
+
+---
+<!--*template:gaia -->
+# Pillars Of Our Approach:
 ## Iterative Prototyping
+---
+
+### Iterative Prototyping
 - We believe in iterative development and continuous improvement. 
+- In a true _Agile_ flavour, our tools allows us to reuse and build the next step of development upon a previous one. 
 
-![%100](images/50iterative.png)
-
----
-## Flash Agile
-- In a true Agile flavour, our tools allows us to reuse and build the next step of development upon a previous one.
-![%100](images/52agile.png)
+![62% center](images/50iterative.png)
 
 ---
-
-# Scalability 
-- We follow a Front-End first approach
-<!--related to front-end first -->
+<!--*template:gaia -->
+# Pillars Of Our Approach:
+## Agile & Flash Teams
 
 ---
 
-# Better performance
-<!--Related to FRont-end first:
-- Backend made to fit the final data needed for the app the user will be interacting with
-- Not the other way around: Result a high performant and well optimized backend with the best suite structure
- -->
- ---
+### Agile Flash Teams
+
+- We leverage a worldwide and increasingly remote work culture of software development
+- We favour rapid iterations and asynchronous work. Leading to greatly decreased sprint times with timescales of hours instead of days
+
+![70% center](images/52agile.png)
+
+---
+
+<!--*template:gaia -->
+# Pillars Of Our Approach:
+## Intelligent Web Components
+
+---
+
+### Intelligent Web Components
+
+- We are continously building and improving a library of highly-reusable intelligent components in the style of AMP.
+
+<!-- show example components // graphic -->
+
+- This allows us to extend the usability life of a codebase with well tested and solid approaches.
  
-### We are continously building and improving a library of highly-reusable intelligent components in the style of AMP.
-
 ---
 
-## Explain AMP approach
-
+<!--*template:gaia -->
+# Pillars Of Our Approach:
+## Front-End First
 ---
 
-## This allows us to extend the usability life of a codebase with well tested and solid approaches.
+### Front-End First
 
----
+#### ==**Why**==
+- Front-End is currently undergoing an accelerated evolution: Front-End tech stacks become outdated easily with new frameworks and patterns appearing almost each week/month.
 
-# Front-End First
+<!-- pic related to javascript fatigue// rapid evolution of front-end vs stagnation of back-end -->
 
-### Why Front-End first
-- Front-End is currently undergoing an accelerated evolution: Front-End tech stacks become outdated easily
 - Meanwhile, Back-end structures suffer less change than Front-End Stacks
-##### Therefore, it's imperative to build first a solid, scalable and performant Front-End
+- Therefore, it's imperative to build first a ==**solid, scalable and performant Front-End**==
 ---
 
-# Front-End First
-### Advantages
+### Front-End First
+#### ==**Advantages**==
 
-#### Deliverable early prototypes
+##### Deliverable early prototypes
 - We are able to hand <!--- is this phrasal verb correct? --> working prototypes to costumers to interact with and gather better feedback for future development iterations
-#### Costumer-centric approach
-- We first make sure that we understand the client requirementes and deliver an efficient UI and UX that suits the needs
+##### Costumer-centric approach
+- We first make sure that we understand the client requirements and deliver an efficient UI and UX that suits the needs
+
 ---
 
-# Front-End First
+### Front-End First
+#### ==**Advantages**==
 
-### Advantages
-
-#### Better performance
-- We develop the data structure and services needed as a _serverless_ back-end fully optimized and made to fit the final data required by the app/web-app or website. 
-- We don't build unnecesary payloads or overengineered and monolithic backend structures.
+##### Better performance
+- We develop the data structure and services needed as a ==**Serverless Back-End**== fully optimized and made to fit the final data required by the app/web-app or website. 
+- We don't build unnecesary payloads or overengineered and monolithic Back-End structures.
 ---
 
-### Advantages
+### Front-End First
+#### ==**Advantages**==
 
-#### Ability to focus on state of the art UI
+##### Ability to focus on state of the art UI
 
 - Design as a form of authority. Decisions are often times made unconsciously and/or emotionally.
-![70%](images/design-hierarchy.png)
+
+![80% center](images/design-hierarchy.png)
 
 --- 
-### Advantages
+### Front-End First
+#### ==**Advantages**==
 #### Ability to focus on state of the art UI
 - A solid and aesthetically pleasing design generates trust, increases conversion rates and reduces _customer anxiety_
 <!-- fletcher method?-->
+<!-- show example of good design // bad design -->
 
---- 
+---
+<!--*template:gaia -->
+# Pillars Of Our Approach:
+## Serverless
 
-# Serverless
-<!-- image of serverless // cloud -->
+---
+
+### Serverless
+
+<!-- explain in two sentences serverless -->
+
 ![80%](images/10cloud.png)
 
 ---
 
-# Serverless
-#### Advantages:
+### Serverless
+#### ==**Advantages**==
 
  - Fast integration
  - Lower maintenace costs. 
-	- 90%+ of cost in software development is maintenance.
+ 	- more than 90% of the cost in software development is related to maintenance. 
  - Increased data resilience
  - Unparalleled security
  
+---
+
+<!--*template:gaia-->
+
+# In sum, the underpinning tools of our development approaches enable us to offer:
+### Quick and Easy ==**Scalability**==
+### Blazing ==**Performance**==
+### ==**Cost-effective**== Development
+### ==**Low**== Maintenance
+
 ---
 
 <!--*template: invert -->
