@@ -98,7 +98,6 @@ Auto-close tag
 ![80%](sol/41lowcode.png)
 
 ---
-
 ### Metabake is an example of tool for static generation
 ![100%](sol/43meta.png)
 

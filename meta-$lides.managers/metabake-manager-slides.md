@@ -5,22 +5,24 @@
 
 <!-- *template: invert -->
 
-#  [==Metabake==](https://Metabake.org)
-
-#### We partner with you to build now the future of software.
+#  [==MetaBake==](https://Metabake.org)
+<!-- logo -->
+## We partner with you to build now the future of software.
 
 ---
 <!-- *template: invert -->
-
-# Fast, Cheap and Good
-## Is it possible?
+## Faster, cheaper and without sacrifying quality
+#### Is it possible?
 
 --- 
+#### Faster and Cheaper Software Development
 
-![70%](images/fast-cheap-good.png)
+- It is thought traditionally that between Fast, Cheap and Good you can only have 2 and need to sacrifice the other. 
 
-- It is though traditionally that between Fast, Cheap and Good you can only have 2 and need to sacrifice the other.
-- i.e: If you want a high quality app developed in a very short ammount of time, it will be expensive. Same as if you want it fast and cheap, then it would be at the cost of questionable quality.
+![50% center](images/fast-cheap-good.png)
+
+
+- So, if you want a high quality app developed in a very short amount of time, it will be expensive. Same as if you want it fast and cheap, then it would be at the cost of questionable quality.
 
 ---
 <!-- *template: invert -->
@@ -28,30 +30,44 @@
 
 ---
 
-### Think about the evolution of computer science:
-<!-- show picture of cardpunched computer -->
-![60%](images/computer-punched-cards.jpg)
-<!-- img of first pc -->
-<!-- img of smartphone/wearable -->
+### Think About The Evolution Of Computer Science:
+![60%](images/computer-punched-cards.jpg) ![100%](images/altair-pc.jpg) ![100%](images/apple-iii.jpg) ![30%](images/smartphone.png)
 
 ---
-## Evolution of Computer Science
+#### Evolution Of Computers
 - Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered a rarity confined to experimental laboratories. 
 
+![100% center](images/colossus.jpg)
+
+---
+#### Evolution Of Computers
 - Yet little by little and with every next wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
+
+![45% center](images/smart-watch.jpg)
+
+---
+<!--*template:invert -->
+# So yes, to build quality software faster and cheaper is possible.
+---
+
+## If you do it in sync with a new wave of ==**Disruptive Technological Innovation**==.
+![60% center](images/tech-disruption.png)
 
 ---
 
-#### So yes, to build faster and cheaper it's possible if you do it in sync with a new wave of disruptive technological innovation. 
+#### Waves of Disruptive Technological Innovation
+
+<!-- show 1GL / 2GL / 3 GL / 4 GL -->
 
 - Every 10 years approximately there has been some kind of tipping point in computer science that allowed dramatic increases in development speed and disruptive cost cuts.
 
-<!-- show 1GL / 2GL / 3 GL / 4 GL -->
-<!--graphic showing the changes every 10 years -->
+> <small>_The growth pattern of digital disruption shows why it seems so much sudden than it is. For several years, the market share of the new business models builds slowly. During that time, the old model also grows, albeit more slowly. Suddenly, the system reaches a tipping point. Market share quickly shifts from the old model to the new, and the incumbent companies bound to the old model can no longer operate as profitably._</small> --Source: PwC and Strategy&
 
 --- 
+### Waves of Disruptive Technological Innovation
 
-## We are reaching again a new tipping point. 
+. We are reaching again a ==**new tipping point**==. 
+
 
 #### And here at MetaBake we proudly consider us early adopters of the technology stacks that will shape the future of software development. 
 
@@ -191,7 +207,9 @@
 
 ## E-commerce
 <!-- A custom CMS allows to develop E-commerce  -->
-- Easy to manage and secure E-commerce solutions based on custom CMS
+- We build unique and fast E-commerce sites based on custom CMS
+- Easy to manage and secure
+- Leveraging our static generator with CDN deployment for a blazing user experience
 
 ---
 
