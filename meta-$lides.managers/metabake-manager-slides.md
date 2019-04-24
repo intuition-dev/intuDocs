@@ -165,27 +165,46 @@
 # What we can build together
 
 ---
+<!-- *template: gaia -->
 
 # Custom Mobile Apps and WebApps
 <!--Talk about hybrid approach -->
 
 ---
+<!-- *template: gaia -->
 
 # Light or Commercial CMS
 
+---
+## Light or Commercial CMS
 <!-- No more wp headaches -->
-## custom user-friendly Content Management Systems that bring:
+#### Custom user-friendly Content Management Systems that bring:
 -  Higher efficiency
 -  Easy SEO
 
 ---
+<!-- *template: gaia -->
 
 # E-commerce
-<!-- A custom CMS allows to develop E-commerce  -->
-- Easy to manage and secure E-commerce solutions based on custom CMS
+
 ---
 
+## E-commerce
+<!-- A custom CMS allows to develop E-commerce  -->
+- Easy to manage and secure E-commerce solutions based on custom CMS
+
+---
+
+<!-- *template: gaia -->
+
 # Websites
+
+---
+## Websites
+
+- High Quality Design with mobile-first approach
+- Material design best practices
+
 <!--
  - high quality design website with mobile-first approach
  - Material design best practices
@@ -193,36 +212,69 @@
  -->
 
 ---
+<!-- *template: gaia -->
 
 # SEO
-
-<!--Our tech stack is highly SEO-friendly 
- - Show example of front matter .yalm vs raw html headers ?
- - Client Side Rendered Apps are penalized by crawlers ?
+---
+## SEO
+- Our tech stack is highly ==SEO-friendly==
+<!--Show example of front matter .yalm vs raw html headers ?
+ - Client Side Rendered Apps are penalized by crawlers ? 
 -->
 
 ---
-<!--*template: invert -->
-# Intelligent Components 
+<!-- *template: gaia -->
+# Intelligent Web Components
+
+---
+
+## Intelligent Web Components
+#### The future of the Web
 <!-- this is related to AMP -->
 <!-- introduce some of the AMP approaches and how our components align with this principles -->
----
-
-## Components and the future of web
 
 ---
+## Intelligent Web Components
 
-## High reusability
-## Building websites based on components is faster and easier
-## Improved load time
+==**Advantages:**==
+- User First Approach
+- High Reusability
+- Building websites based on components is faster, easier and less error-prone
+- Improved load time and higher conversion rates
+
+---
+<!-- *template: gaia -->
+
+# Hosting Support
+
+---
+## Hosting Support
+
+#### Content Delivery Network (CDN)
+
+- We provide services for setting up and maintaing CDN based hosting. 
+
+![70% center](images/single_server-vs-cdn.png)
+
 ---
 
-# Hosting support
-
-- We provide services for setting up and maintaing CDN (Content Delivery Network) based hosting. 
+## Hosting Support
+#### Content Delivery Network (CDN)
 - CDN was once a rarity reserved for big tech corporations like Facebook or Google.
-- Nowadays CDN are very cost-effective and ubicuous. This makes possible to deliver to costumer _on the edge_ lowering greatly the waiting time for the user, which is one of the main reasons for a 'high bouncing rate'
-<!-- show picture relating high bouncing rate and loading speed of web/app -->
+![50% center](images/cdn-google-trends.png)
 
-- And, it also allows us to deploy instantly sucessive iterations and updates of a product
+---
+## Hosting Support 
+#### Content Delivery Network (CDN)
+ ==**Advantages:**==
+Nowadays CDN are very cost-effective and ubicuous. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_
+
+<img src="images/slow-mobile-site.png" align="right" width>
+
+<!--![50%](images/slow-mobile-site.png "Think with Google helps you test your site performance and analize how it impacts conversion and bouncing rates for users") -->
+
+---
+
+<!-- show picture relating high bouncing rate and loading speed of web/app -->
+- CDN also allows for easy and quick scalability, better performance, decreased maintenance costs, instant deployment and updates.
 ---
