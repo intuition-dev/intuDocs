@@ -1,7 +1,7 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.MetaBake.org -->
+<!-- footer: www.MetaBake.net -->
 
 <!-- *template: invert -->
 
@@ -340,6 +340,11 @@
 - CDN also allows for easy and quick scalability, better performance, decreased maintenance costs, instant deployment and updates.
 
 ---
-<!--- Wrapping up -->
+<!-- wrap up -->
+### Software development is thriving on the verge of a major disruptive change and we want you to join us at the top of the tipping point
+<!---*template: invert-->
+### www.MetaBake.org
+# Thank you
+
 
 ---
