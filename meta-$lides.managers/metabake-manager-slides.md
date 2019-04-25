@@ -222,19 +222,39 @@
 <!-- *template: gaia -->
 
 # Custom Mobile Apps and WebApps
-<!--Talk about hybrid approach -->
+
+---
+
+### Custom Mobile Apps and Web Apps
+
+> <small>_Write once, run anywhere_</small>
+ 
+- We leverage unified codebases in Web and Mobile apps for bringing together faster development and reduced maintenance costs. While also ==**combining the best**== of both worlds.
+
+
+- This allows us to offer a ==**tailored unified experience**== and **platform-agnostic** experience for all users. 
+
+- Also, it makes a breeze to deploy and update the app for all your users.
+
+ <!-- show tendency of unified codebases for mobile and webapps -->
+
 
 ---
 <!-- *template: gaia -->
 
-# Light or Commercial CMS
+# Light or Commercial Content Management Systems
 
 ---
-## Light or Commercial CMS
-<!-- No more wp headaches -->
-#### Custom user-friendly Content Management Systems that bring:
--  Higher efficiency
--  Easy SEO
+### Light or Commercial CMS
+
+##### Say goodbye to bloated and security-flawed CMS:
+- We offer you a ==**custom, user-friendly, light, and fully-fledged commercial CMS**== to take full control of your content.
+
+##### Say hello to:
+
+-  Higher ==**efficiency**==, ==**security**== by default and  ==**easy SEO**==
+
+- You will have also the possibility to ==**customize styling**== for your content pages without compromising the stability and security of your website.
 
 ---
 <!-- *template: gaia -->
@@ -244,11 +264,11 @@
 ---
 
 ## E-commerce
-<!-- A custom CMS allows to develop E-commerce  -->
-- We build unique and fast E-commerce sites based on custom CMS
-- Easy to manage and secure
-- Leveraging our static generator with CDN deployment for a blazing user experience
+- Built on top of a custom commercial CMS
 
+<!-- e-commerce related pic -->
+
+- Create unique, easy to manage, secure and fast E-commerce sites that leverage our static generator with CDN hosting for a blazing user experience.
 ---
 
 <!-- *template: gaia -->
@@ -258,25 +278,11 @@
 ---
 ## Websites
 
-- High Quality Design with mobile-first approach
-- Material design best practices
+- High Quality Design with mobile-first approach.
+- Express your branding through **beautiful and solid UI**.
+- Remember, our tech stack is ==**highly SEO-friendly**==
 
-<!--
- - high quality design website with mobile-first approach
- - Material design best practices
- - Component based approach makes possible faster loading speed and lowers user bounce rate
- -->
-
----
-<!-- *template: gaia -->
-
-# SEO
----
-## SEO
-- Our tech stack is highly ==SEO-friendly==
-<!--Show example of front matter .yalm vs raw html headers ?
- - Client Side Rendered Apps are penalized by crawlers ? 
--->
+- Furthermore, our **Web Component based** approach makes possible faster loading speeds and an integrated mobile experience that lowers user bounce rate.
 
 ---
 <!-- *template: gaia -->
@@ -284,53 +290,56 @@
 
 ---
 
-## Intelligent Web Components
+### Intelligent Web Components
+- Wether you want to create from scratch a new site/app or update an existing one, we got you covered with reusable, solid and well-tested web components.
+<!-- pic of components -->
+
+- Our Web Components adopt the best practices for *Accelerated Mobile Pages*, also known as **AMP**. 
+---
+### Intelligent Web Components
 #### The future of the Web
-<!-- this is related to AMP -->
-<!-- introduce some of the AMP approaches and how our components align with this principles -->
+- The AMP standard is increasingly being  adopted by major companies and startups alike. Since one of its mains targets is to produce seamless interfaces where user experience and ad monetization don't collide, but intertwine.
+ 
+<!--another pic -->
 
 ---
-## Intelligent Web Components
+
+### Intelligent Web Components
 
 ==**Advantages:**==
 - User First Approach
 - High Reusability
 - Building websites based on components is faster, easier and less error-prone
 - Improved load time and higher conversion rates
-
+- Increased Maintainability
+- It saves you money
 ---
 <!-- *template: gaia -->
 
 # Hosting Support
 
 ---
-## Hosting Support
+### Hosting Support
 
 #### Content Delivery Network (CDN)
 
-- We provide services for setting up and maintaing CDN based hosting. 
+- We provide services for setting up and maintaing CDN based hosting, as our tech-stack aligns perfectly with the requirements for a seamless CDN integration
+- CDN are networks of servers and data centers spread geographically. This ensures ==**high content avaliability and performance**== across all the globe.
 
-![70% center](images/single_server-vs-cdn.png)
+![40% center](images/single_server-vs-cdn.png)
 
 ---
 
-## Hosting Support
+### Hosting Support
 #### Content Delivery Network (CDN)
 - CDN was once a rarity reserved for big tech corporations like Facebook or Google.
-![50% center](images/cdn-google-trends.png)
 
----
-## Hosting Support 
-#### Content Delivery Network (CDN)
- ==**Advantages:**==
-Nowadays CDN are very cost-effective and ubicuous. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_
-
-<img src="images/slow-mobile-site.png" align="right" width>
-
-<!--![50%](images/slow-mobile-site.png "Think with Google helps you test your site performance and analize how it impacts conversion and bouncing rates for users") -->
-
----
+- Nowadays CDN are very cost-effective and ubicuous. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_
 
 <!-- show picture relating high bouncing rate and loading speed of web/app -->
 - CDN also allows for easy and quick scalability, better performance, decreased maintenance costs, instant deployment and updates.
+
+---
+<!--- Wrapping up -->
+
 ---
