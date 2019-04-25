@@ -1,4 +1,4 @@
-<!-- $theme: gaia -->
+  <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
 <!-- footer: www.MetaBake.net -->
@@ -35,12 +35,6 @@
 
 ---
 ### Evolution Of Computers
-- Back in the days, a computer was so big and expensive and it took so many people to program it that they were considered an oddity confined to experimental laboratories. 
-
-![100% center](images/colossus.jpg)
-
----
-### Evolution Of Computers
 - Yet little by little and with every wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
 
 ![45% center](images/smart-watch.jpg)
@@ -68,7 +62,7 @@
 
 - We are currently reaching again a ==**new tipping point**==. 
 
-- And at **MetaBake** we proudly consider us ==**early adopters**== of the technology stacks that will shape the future of software development. 
+- And at **MetaBake** we proudly leverage the technology stacks that will shape the future of software development. 
 
 ---
 <!--*template: invert -->
