@@ -1,4 +1,4 @@
-  <!-- $theme: gaia -->
+<!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
 <!-- footer: www.MetaBake.net -->
@@ -85,7 +85,7 @@
 - We believe in iterative development and continuous delivery. 
 - In a true _Agile_ flavour, our tools allows us to reuse and build the next step of development upon a previous one. 
 
-![62% center](images/50iterative.png)
+![70% center](images/50iterative.png)
 
 ---
 <!--*template:gaia -->
@@ -98,8 +98,7 @@
 
 - We leverage a worldwide and increasingly remote work culture of software development.
 - We favour rapid iterations and asynchronous work. Leading to greatly decreased sprint times with timescales of hours instead of days.
-
-![70% center](images/52agile.png)
+![65% center](images/52agile.png)
 
 ---
 
