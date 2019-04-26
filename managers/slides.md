@@ -71,8 +71,7 @@
 
 ---
 ### Our Approach
-- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop faster and with less error-prone processes
-
+- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop faster and with less error-prone processes.
 
 - This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All ==**without impacting negatively the quality**==.
 
@@ -97,8 +96,8 @@
 
 ### Agile Flash Teams
 
-- We leverage a worldwide and increasingly remote work culture of software development
-- We favour rapid iterations and asynchronous work. Leading to greatly decreased sprint times with timescales of hours instead of days
+- We leverage a worldwide and increasingly remote work culture of software development.
+- We favour rapid iterations and asynchronous work. Leading to greatly decreased sprint times with timescales of hours instead of days.
 
 ![70% center](images/52agile.png)
 
@@ -112,7 +111,7 @@
 
 ### Intelligent Web Components
 
-- We are continously building and improving a library of ==**highly-reusable intelligent components**==.These components are compliant with Accelerated Mobile Pages standards and are become increasingly pervassive
+- We are continously building and improving a library of ==**highly-reusable intelligent components**==.These components are compliant with Accelerated Mobile Pages standards and are becoming increasingly pervassive.
 
 
 - A component based development allows us to **decrease costs by extending the usability** life of a codebase with well tested and solid approaches.
@@ -131,17 +130,17 @@
 
 <!-- pic related to javascript fatigue// rapid evolution of front-end vs stagnation of back-end -->
 
-- Meanwhile, Back-end structures suffer less change than Front-End Stacks
-- Therefore, it's imperative to build first a ==**solid, scalable and performant Front-End**==
+- Meanwhile, Back-end structures suffer less change than Front-End Stacks.
+- Therefore, it's imperative to build first a ==**solid, scalable and performant Front-End**==.
 ---
 
 ### Front-End First
 #### ==**Advantages**==
 
 ##### Deliverable early prototypes
-- We are able to hand <!--- is this phrasal verb correct? --> working prototypes to costumers to interact with and gather better feedback for future development iterations
+- We are able to hand <!--- is this phrasal verb correct? --> working prototypes to costumers to interact with and gather better feedback for future development iterations.
 ##### Costumer-centric approach
-- We first make sure that we understand the client requirements and deliver an efficient UI and UX that suits the needs
+- We first make sure that we understand the client requirements and deliver an efficient UI and UX that suits the needs.
 
 ---
 
@@ -165,7 +164,7 @@
 ### Front-End First
 #### ==**Advantages**==
 #### Ability to focus on state of the art UI
-- A solid and aesthetically pleasing design generates trust, increases conversion rates and reduces _customer anxiety_
+- A solid and aesthetically pleasing design generates trust, increases conversion rates and reduces _customer anxiety_.
  
  ![80% center](images/design-hierarchy.png)
 
@@ -178,7 +177,7 @@
 
 ### Serverless Architecture
 
-- A scalable and dynamically managed infrastructure for back-end needs based on _Microservices_ and _Function As A Service_
+- A scalable and dynamically managed infrastructure for back-end needs based on _Microservices_ and _Function As A Service_.
 <!-- explain in two sentences serverless -->
 
 ![80% center](images/10cloud.png)
@@ -188,11 +187,11 @@
 ### Serverless Architecture
 #### ==**Advantages**==
 
- - Fast integration
+ - Fast integration.
  - Lower maintenace costs. 
  	- more than 90% of the cost in software development is related to maintenance. 
- - Increased data resilience
- - Unparalleled security
+ - Increased data resilience.
+ - Unparalleled security.
  
 ---
 
@@ -203,10 +202,10 @@
 
 <!--the underpinning tools of our development approaches enable us to offer -->
 
-- Quick and Easy ==**Scalability**==
-- Blazing ==**Performance**==
-- ==**Cost-effective**== Development
-- ==**Low**== Maintenance
+- Quick and Easy ==**Scalability**==.
+- Blazing ==**Performance**==.
+- ==**Cost-effective**== Development.
+- ==**Low**== Maintenance.
 
 ---
 
@@ -247,7 +246,7 @@
 
 ##### Say hello to:
 
--  Higher ==**efficiency**==, ==**security**== by default and  ==**easy SEO**==
+-  Higher ==**efficiency**==, ==**security**== by default and  ==**easy SEO**==.
 
 - You will have also the possibility to ==**customize styling**== for your content pages without compromising the stability and security of your website.
 
@@ -275,8 +274,7 @@
 
 - High Quality Design with mobile-first approach.
 - Express your branding through **beautiful and solid UI**.
-- Remember, our tech stack is ==**highly SEO-friendly**==
-
+- Remember, our tech stack is ==**highly SEO-friendly**==.
 - Furthermore, our **Web Component based** approach makes possible faster loading speeds and an integrated mobile experience that lowers user bounce rate.
 
 ---
@@ -304,12 +302,12 @@
 ### Intelligent Web Components
 
 ==**Advantages:**==
-- **User First** Approach
-- High **Reusability**
-- Building websites based on components is **faster**, easier and less error-prone
-- **Improved load time** and higher conversion rates
-- Increased **Maintainability**
-- **Cost-effective**
+- **User First** Approach.
+- High **Reusability**.
+- Building websites based on components is **faster**, easier and less error-prone.
+- **Improved load time** and higher conversion rates.
+- Increased **Maintainability**.
+- **Cost-effective**.
 ---
 <!-- *template: gaia -->
 
@@ -320,7 +318,7 @@
 
 #### Content Delivery Network (CDN)
 
-- We provide services for setting up and maintaing CDN based hosting, as our tech-stack aligns perfectly with the requirements for a seamless CDN integration
+- We provide services for setting up and maintaing CDN based hosting, as our tech-stack aligns perfectly with the requirements for a seamless CDN integration.
 - CDN are networks of servers and data centers spread geographically. This ensures ==**high content avaliability and performance**== across all the globe.
 
 ![40% center](images/single_server-vs-cdn.png)
@@ -331,7 +329,7 @@
 #### Content Delivery Network (CDN)
 - CDN was once a rarity reserved for big tech corporations like Facebook or Google.
 
-- Nowadays CDN are very **cost-effective and ubicuous**. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_
+- Nowadays CDN are very **cost-effective and ubicuous**. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_.
 
 - CDN also allows for easy and **quick scalability**, better performance, decreased maintenance costs, **instant deployment** and updates.
 
