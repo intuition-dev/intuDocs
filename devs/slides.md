@@ -40,7 +40,7 @@
 ## The Current State Of Affairs
 #### JavaScript Fatigue
 
-- In the last years, we've all experienced the _javascript fatigue_ that came pouring out of a storm of frameworks. 
+- In the last years, we've all experienced the _javascript fatigue_ that came pouring out of a storm of frameworks.  
 - In many cases, there seems to be no clear goal and  often times it leads to _overengineered solutions_ that leave you more exhausted and confused instead of aiding your workflow.
 
 <!-- picture of javascript frontend hell -->
@@ -50,11 +50,12 @@
 ## The Current State Of Affairs
 #### Leaning too much on JavaScript.
 
-- There is also the case for users that opt for disabling javascript or have _modest machines_
-
 - As developers sometimes it takes time to realize that not everybody has a blazing fast machine that will deal with poorly engineered and bloated websites.
 
 - Also, let's not forget that the web is primary information/document based. That is why the Document Object Model is so important. It shouldn't be treated as secondary or a liability.
+
+- And, there is also the case of neglecting users who opt out consciously of using JavaScript in their browser, wether it be for security concerns or just because they have _modest machines_
+
 
 ---
 
@@ -63,6 +64,7 @@
 
 - Web crawlers currently implement someways for discovering content in either virtual DOM / client side rendered websites.
 - The case for SEO
+<!-- complete -->
 
 ---
 ## The Current State of Affairs
@@ -99,7 +101,7 @@ Secure by default | Needs Security |
 ## The Current State of Affairs
 ### Back to Basics: Static Generators
 
-#### Remember the apocalypse of backend:question:
+#### Remember the apocalypse of backend?
 - Many of the constraints that cornered static generated websites and placed upfront dynamically generated sites have fallen away, and will continue to do so. 
 - ==**Modular services**== and ==**CDN**== based hosting/deployment  are becoming more pervassive.
 - In a mobile era, ==**performance**== is a must: Loading speed of Static Generated Sites is unparalleled.
@@ -164,58 +166,44 @@ Secure by default | Needs Security |
 ---
 ## A Glimpse Into The Future
 ### What will shape Front-End from 2019-2020
-
+- Components
 - Markdown
 - Code the prototype
 - Increasing Automation
 - Digital transformation & rise of citizen developers
 ---
 
-<!--- template: invert --->
+<!---*template: invert --->
 #  Closing the Gap between Past, Present and Future of Web Development:
 ## MetaBake
-<!-- img -->
 
 ---
+<!---*template: invert --->
 # Why MetaBake
 
 ---
+
 ## Why MetaBake
-#### Our Goal is WebApp and Cross Platform *Productivity*
-Metabake as a tool aims for high-productivity by leveraging what we have learnt from the past years of Front-End evolution and atemporal main pillars that reside at the foundation of good development practices
+#### Goal: WebApp and Cross Platform *Productivity*
 
-In a future with increasing automation. Citizen developers have become more widespread. Nowadays almost everybody can pull out a form or a simple website presence using GUI tools and generators.
-
-Our goal as developers is to be able to both outperform competent citizen developers in speed and while also leaving room for focusing on excellent UI and UX. 
-This is possible if we use the increasing automation and trends favouring declarative approaches to our favour
-
+- Metabake as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
+- In a future with increasing automation. Citizen developers will become more widespread.
+- Our goal as developers is to be able to both outperforming competent citizen developers in speed and leaving room for focusing on excellent UI and UX.
 
 ---
+
 ## Why MetaBake
-### Simple starter requirements:
 
-- HTML 
-- CSS
-- JavaScript
-- Yep, that's it. Nothing more.
+##### Unlike other low-code tools, MetaBake it's fully Free and Open Source.
+
+##### Simple starter requirements:
+- There is almost no learning curve. JS, HTML and CSS is all you need.
+- If you are already familiar with Sass/scss and templating engines. You will ace it.
+- mbake is not even a framework as we don't favour _highy opinionated_ solutions. It's both a CLI tool that aims for meta-programming with high productivity  and a library of reusable _framework-agnostic_  web components.
 
 ---
+
 ## Why MetaBake
-- reusability and maintanability
----
-
-# Metabake 
-### ==Based on:==
-- Automatic and Declarative Programming
-- Static Generation
-- Templating Markup
-- Library of Reusable Web Components 
-- Dynamic Data Binding
-- Website Prototyping and Iterative Development
-- CLI/Keyboard, not GUI <!-- elaborate this point a bit more -->
----
-
-# MetaBake
 ### ==It allows you to:==
 - Gradually Adopt it
 - Leverage a single codebase and SasS as the Only architecture
@@ -223,72 +211,153 @@ This is possible if we use the increasing automation and trends favouring declar
 - CMS-aware Static Websites and simple custom CMS
 
 ---
-# MetaBake
+## Why MetaBake
 ### ==Aims for:==
 -  Serverless CRUD
 -  SEO and Competitive Content Marketing
--  AMP
+-  AMP & Components
 -  CMS
 -  Cross-platform (Cordova/PhoneGap)
 -  UI First
+---
+## Why MetaBake
+### ==Aims for:==
+#### ServerLess CRUD
+
+
+- You can scaffold and explore and example CRUD app with this simple command:
+```
+$: mbake -u
+```
+- And start building an app easily integrated with Firebase, FaunaDB, AWS, etc.
 
 ---
-# MetaBake
+## Why MetaBake
+### ==Aims for:==
+#### SEO and Competitive Content Marketing
 
-### What makes MetaBake different from other SSG like Gatsby ?
----
-
-# MetaBake
-
-### What makes MetaBake different from other JS Frameworks like React / Angular?
-
-- There is almost no learning curve. JavaScript, HTML and CSS is all you need to start using it.
-- Also, if you are already familiar with Sass/scss and markup generators. You will ace it.
-- We have a clear aim for high productivity
+- with dat.yalm for front matter adding meta head tags is just a breeze.
+<!-- show example from blog -->
 
 ---
-
-# MetaBake
-
-## Web Components. 
-
-### Importance of them
-
-### Advantages
-
----
-
-# MetaBake
- 
-# How does Web Components relate to 4GL / Declarative ?
-
----
+## Why MetaBake
+### ==Aims for:==
 # Focus on UI Design
 
 *"Design is a Form of Authority."*
-
-## Use to your advantage the CSS Preprocessors and Frameworks.
-
-- Leverage CSS Preprocessors
-- Build upon existing CSS Frameworks
-
----
-# Focus on UI Design
-
-## ==Creativity== cannot be automated.
+- Use to your advantage the CSS Preprocessors and Frameworks.
+- ==**Creativity**== cannot be automated.
 - Consider Design a key target, not a disposable.
 <!---img of design// hierarchy of needs in design--->
 
 ---
+<!---*template: invert --->
+# Metabake Pillars
 
-# Practical Example
+---
+
+## Metabake Pillars
+### ==Based on:==
+- Automatic and Declarative Programming
+- Static Generation & Templating Markup
+- Dynamic Data Binding
+- Library of Web Components 
+- Website Prototyping and Iterative Development
+- CLI/Keyboard, not GUI
+
+---
+
+## MetaBake Pillars
+### Declarative Programming
+
+- Declare the what instead of how.
+- Work with useful abstractions instead of repeating low level implementation. It aligns with _DRY_
+- More readability and cleaner structure.
+- Bug-surface is greatly reduced.
+- Avoid to great extent spaguetti code.
+
+---
+
+## MetaBake Pillars
+### Static Generation & Templating Markup
+- Pug is an elegant template engine. Think of it like MarkDown but better
+```
+html
+  head
+    title= pageTitle
+  body
+    h1 Header Text
+    #container
+      if someCondition
+        p This paragraph is rendered if true
+      else
+        p Otherwise, this one is rendered
+```
+
+---
+## MetaBake Pillars
+### Dynamic Data Binding
+<!-- code example -->
+==**index.pug**==
+```javascript
+header
+  body
+    p Hello #{key1}
+```
+==**dat.yaml**==
+
+```javascript
+key1: World
+```
+
+---
+
+## MetaBake Pillars
+### Library of Web Components. 
+
+##### Advantages:
+- Web Components are a framework-agnostic specification that aims for increased modularization, reusability and maintanability of code.
+- Web Components are part of an approach to fully dismantle monolithic web apps and develop a truly reusable library of solutions.
+- The DOM of the Web Component acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
+
+---
+## MetaBake Pillars
+### Library of Web Components. 
+##### Advantages:
+- You can compose a full web app just by bringing together well designed web components. You don't need a monolithic JS Framework or a whole lot of dependencies.
+- Each Component will connect with a backend microservice if needed.
+- Locally scoped CSS is possible too. Forget about CSS colliding across all the app
+
+---
+
+## MetaBake Pillars
+### Website Prototyping and Iterative Development
+- MetaBake supports all the development cycle of a product. From prototyping to completion.
+- You can star building and experimenting easily and then build on top of it, maximizing the reusability of every step.
+---
+
+## MetaBake Pillars
+### CLI/Keyboard based
+
+- We all know that keyboard based tools are much faster and customizable to your workflow than being constrained in a GUI.
+- metabake is CLI based with easy commands for building and compiling.
+- For instance:
+````
+$: mbake -t . // compile all your typescript files
+$: mbakeX -c . // compile all your components
+$: mbake -s . // compile all your .scss into .css
+`````
+---
+<!--template: gaia -->
+## MetaBake
+#### Practical Example
 
 <!--- td --->
 <!--- perhaps include a video here on how a the CMS + CMS works ? -->
 
 ----
+## MetaBake
 # Get Started 
-
 ```javascript
 $ yarn global add mbake
 $ mbake -w .
@@ -296,14 +365,14 @@ $ cd website
 $ mbakeX -w .
 ```
 #### :arrow_right:  https://MetaBake.org/
-<!--- place logo --->
+#### :arrow_right: https://github.com/metabake
 
 ---
 
 # Thank you!
 
 #### https://MetaBake.org
-
+<!--- place logo --->
 <small> Slides written with Marp</small>
 
 ---
