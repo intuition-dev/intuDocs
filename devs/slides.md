@@ -7,103 +7,29 @@
 
 #  [==Metabake==](https://Metabake.org)
 
-#### An open source CLI tool for meta-programming
-
----
-<!--*template:invert -->
-# Goal WebApp and Cross Platform *Productivity*
-Metabake as a tool aims for high-productivity by leveraging what we have learnt from the past years of Front-End evolution and atemporal main pillars that reside at the foundation of good development practices
-
-In a future with increasing automation. Citizen developers have become more widespread. Nowadays almost everybody can pull out a form or a simple website presence using GUI tools and generators.
-
-Our goal as developers is to be able to both outperform competent citizen developers in speed and while also leaving room for focusing on excellent UI and UX. 
-This is possible if we use the increasing automation and trends favouring declarative approaches to our favour
-
----
-
-<!-- problems to solve: 
-	- Losing high paying jobs
-	- increasing number of citizen developers
-	- pletora of tools / javascript fatigue
-	- Present signs of a future -> 2020/230
-# Who are competing against developers: citizen developers
-
----
-
-<!--*template:invert -->
-# How to achieve this goal:
-
----
-<!-- *template:gaia -->
-
-# Low code : Generators Markdown…
-<!-- move away from serverside/dynamic -->
-<!-- show actual code example -->
-
----
-
-# Keyboard based (not mouse like form tools used by citizen)
-
----
-
-# Website prototyping and experimenting
-
---
-
-# UI Focused 
-
---- 
-
-# Serverless
-- Back End/SQL are a liability
-        - Escape velocity ??
-- FireStore, FaunaDB, etc Serverless
-
----
-
-# CRUD 
-
----
-
-# CMS Aware
-
----
-
-# Cross-platform, AMP Mobile(Cordova/PhoneGap)
-
----
-
-# Library of Components
-
-# Maintainability and reusability
-
--- 
-
-# Iterative development
+#### A meta-programming open source CLI tool
+<!-- reword this? -->
 
 ---
 
 <!-- *template: invert -->
-
 # A Bit Of History
 <!-- img -->
 
 ---
-# The first website, was static
+## A Bit Of History
+#### The first website, was static
+- Browsers were simple document viewers, where information played a key role and minimal markup allowed to structure it.
 
-#### Browsers were simple document viewers
-![70% center](./images/first-website.png)
+![30% center](images/first-website.png)
 
 ---
+## A Bit Of History
+#### Waves Of Technological Change
 
-# Waves Of Technological Change
+- During the first decade of 00's, websites grew in complexity. Content-driven and 2.0 dynamic web reshaped again how we thought and built websites.
+- It was the time of LAMP stack and with CMS like Wordpress in consideration, we started to see many _citizens_ without development knowledge at all pull out website presences without any training or experience.
 
-## Websites grows in complexity. 
-
-### What has shaped the last 10 years of web development
-
-- Content-driven 2.0 Dynamic Web
-- LAMP / Wordpress
 ---
 <!-- *template: invert -->
 
@@ -112,37 +38,35 @@ This is possible if we use the increasing automation and trends favouring declar
 ---
 
 ## The Current State Of Affairs
-### JavaScript Fatigue
+#### JavaScript Fatigue
 
-- In the last years, we've all experienced the _javascript fatigue_ that came pouring out of a storm of frameworks. And, in many cases, there seems to be no clear goal and  often times it leads to _overengineered solutions_ that leave you more exhausted and confused instead of aiding your workflow. it just seems like overengineering without clear direction.
+- In the last years, we've all experienced the _javascript fatigue_ that came pouring out of a storm of frameworks. 
+- In many cases, there seems to be no clear goal and  often times it leads to _overengineered solutions_ that leave you more exhausted and confused instead of aiding your workflow.
 
 <!-- picture of javascript frontend hell -->
 
 --- 
+
 ## The Current State Of Affairs
-### Neglecting users that opt for disabling JavaScript.
+#### Leaning too much on JavaScript.
 
 - There is also the case for users that opt for disabling javascript or have _modest machines_
 
 - As developers sometimes it takes time to realize that not everybody has a blazing fast machine that will deal with poorly engineered and bloated websites.
 
----
-
-## The Current State Of Affairs
-# The understimated DOM
-
 - Also, let's not forget that the web is primary information/document based. That is why the Document Object Model is so important. It shouldn't be treated as secondary or a liability.
 
 ---
+
 ## The Current State of Affairs
-### What about SEO :question:
+#### What about SEO :question:
 
 - Web crawlers currently implement someways for discovering content in either virtual DOM / client side rendered websites.
 - The case for SEO
 
 ---
 ## The Current State of Affairs
-### Not all is bad: Front-End Cornucopia
+#### Not all is bad: Front-End Cornucopia
 
 - Build tools and compilers -  once a rarity on Front-end - are now part of the normal workflow.
 - PHP-based tools and overuse of dynamic approaches are starting to feel bloated an unnecesary in modern Front-end.
@@ -150,8 +74,7 @@ This is possible if we use the increasing automation and trends favouring declar
 ---
 
 ## The Current State of Affairs
-### A natural fluctuaction of opposites: 
-#### ==**From Client-side back to Server-side**==
+#### Back to Basics: From Client-side to Server-side
 
 |Client-side (Dynamic)| Server-side(Static)|
 |:--|--:|
@@ -160,14 +83,16 @@ Low Resource | Resource-intensive |
 Usable offline | Online only |
 Secure by default | Needs Security |
 
----
-## The Current State of Affairs
-### A natural fluctuaction of opposites
-### ==**From LAMP to JAM**==
+<!-- cite source -->
 
-<!-- explain characteristics of JAM stack -->
-- The JAM Stack
-https://jamstack.org/
+---
+
+## The Current State of Affairs
+#### Back to Basics: from LAMP to JAM stack
+-  ==**JavaScript**== Any dynamic programming during the request/response cycle is handled by JavaScript, running entirely on the client. This could be any frontend framework, library, or even vanilla JavaScript.
+-  ==**APIs**== All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTPS with JavaScript.
+-  ==**Markup**== Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.
+<small> source: https://jamstack.org/</small>
 
 ---
 
@@ -253,12 +178,30 @@ https://jamstack.org/
 
 ---
 # Why MetaBake
+
+---
+## Why MetaBake
+#### Our Goal is WebApp and Cross Platform *Productivity*
+Metabake as a tool aims for high-productivity by leveraging what we have learnt from the past years of Front-End evolution and atemporal main pillars that reside at the foundation of good development practices
+
+In a future with increasing automation. Citizen developers have become more widespread. Nowadays almost everybody can pull out a form or a simple website presence using GUI tools and generators.
+
+Our goal as developers is to be able to both outperform competent citizen developers in speed and while also leaving room for focusing on excellent UI and UX. 
+This is possible if we use the increasing automation and trends favouring declarative approaches to our favour
+
+
+---
+## Why MetaBake
 ### Simple starter requirements:
 
 - HTML 
 - CSS
 - JavaScript
 - Yep, that's it. Nothing more.
+
+---
+## Why MetaBake
+- reusability and maintanability
 ---
 
 # Metabake 
@@ -266,9 +209,10 @@ https://jamstack.org/
 - Automatic and Declarative Programming
 - Static Generation
 - Templating Markup
-- Reusable Web Components 
+- Library of Reusable Web Components 
 - Dynamic Data Binding
-- Iterative and Fast Development 
+- Website Prototyping and Iterative Development
+- CLI/Keyboard, not GUI <!-- elaborate this point a bit more -->
 ---
 
 # MetaBake
@@ -281,10 +225,12 @@ https://jamstack.org/
 ---
 # MetaBake
 ### ==Aims for:==
-- SEO and Competitive Content Marketing
+-  Serverless CRUD
+-  SEO and Competitive Content Marketing
 -  AMP
 -  CMS
-- UI First
+-  Cross-platform (Cordova/PhoneGap)
+-  UI First
 
 ---
 # MetaBake
@@ -321,7 +267,7 @@ https://jamstack.org/
 
 *"Design is a Form of Authority."*
 
-## Use to your advantage the increasing automation in development.
+## Use to your advantage the CSS Preprocessors and Frameworks.
 
 - Leverage CSS Preprocessors
 - Build upon existing CSS Frameworks
