@@ -23,14 +23,14 @@ We haven’t made a large leap forward in productivity in ~15 years and we’re 
 
 I set out to look for the next step forward in software productivity. I
 have documented the core pillars that will lead software development
-for the next 10-15 years. For this article's purposes, I will look at it
+for the next 10-15 years. For this article's purposes, we will look at it
 from a manager's point of view. For example, let's say a company has
 been able to get by without a CTO, but now, they need one to take their
 productivity to the next level. You, the reader, is hired to be the new CTO.
 How do you lead a team of intelligent VPs, Directors, and managers of
 software development to the next level?
 
-I discovered low-code when I went looking for the next wave of software
+I discovered low-code when we went looking for the next wave of software
 development effectiveness. We have gone through many waves, such as
 mainframes, and data centers. Now, we use cloud
 computing. When we had data centers, budgets
@@ -52,7 +52,7 @@ and even Form builders like ZoHo Forms or JotForm.
 LOGO
 
 A key pillar is to be able to develop faster than rate of change or requirements, customers and market.
-Below I have outlined the pillars that will lead a company to the
+Below we have outlined the pillars that will lead a company to the
 next level in software development productivity and efficiencies.
 
 Not only does it allow managers to do
@@ -158,7 +158,7 @@ directors and designers, the web app
 would look bad in the market. The ratio of designers to developers on a
 team is changing. Perhaps a team has 1 designer for 4-5 developers
 today, yet in the future, a team may have 2-3 designers per developer;
-and by designer, it should go without saying that I am referring to a
+and by designer, it should go without saying that we am referring to a
 designer that knows CSS. In any event, an individual contributor must
 know how to work with designers, while possessing polyglot skills in
 more than one SASS framework. NIH is poor productivity; it is better to
@@ -210,7 +210,7 @@ DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
 hybrid development is to first learn Electron. This is to not be
 confused with the current approach of React-native: that is two code
-bases, one for web and one for devices. As a tech leader, I want a
+bases, one for web and one for devices. As a tech leader, we want a
 single code base, otherwise known as a hybrid approach.
 
 Once Electron has been learned, one can then try build.phonegap.com,

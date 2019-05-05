@@ -62,13 +62,13 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 
 
 ## Videos:
-S = sales, I = Foundation, II = B&M, III = Vista
+S = sales, we = Foundation, II = B&M, III = Vista
 - S <a href='http://vimeo.com/282034037' target='_blank'>Meetup Video</a>
 - S [Metabake Sales Summary](http://www.youtube.com/watch?v=OK-cJNSkQII)
 
-- I [Metabake Quick Demo](http://youtu.be/WyCdSFTUIvM)
-- I [mbake CLI](http://youtu.be/-KkPfAnEXyk)
-- I [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
+- we [Metabake Quick Demo](http://youtu.be/WyCdSFTUIvM)
+- we [mbake CLI](http://youtu.be/-KkPfAnEXyk)
+- we [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
 
 - II [CMS search](http://www.youtube.com/watch?v=-4i9_SYyTOo)
 - II [SPA](http://youtu.be/LHFjjDPlU3A)
