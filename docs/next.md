@@ -33,3 +33,7 @@ More:
 - Consulting: audit software development productivity best practices
 - Commercial development by sponsor: www.Metabake .net - 10X cheaper and faster
 
+
+## Awesome list of low-code and Metabake resources:
+
+- https://github.com/metabake/mbakeDocs/tree/master/awesomeReference

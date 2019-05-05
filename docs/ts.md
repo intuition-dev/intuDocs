@@ -40,8 +40,7 @@ This is the class that your Pug(html really) will leverage for dynamic apps. The
     pro1.then(function(ret) {
         $('#someId1').val(ret.field1)
     })
-    // note that I'm not a fan of await or arrow syntax
 ```
 
-There is aldo realistic example CRUD web-app example if you continue reading to the end here: including table, forms, validation, authentication, and 'master/detail' (click on a row to zoom) functionality. The CRUD example also shows how to use the modern ViewModel application architecture. 
+There is also a realistic example CRUD web-app example if you continue reading to the end here: including table, forms, validation, authentication, and 'master/detail' (click on a row to zoom) functionality. The CRUD example also shows how to use the modern ViewModel application architecture. 
 

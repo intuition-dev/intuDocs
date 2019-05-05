@@ -3,13 +3,14 @@
 * [Home](README.md)
 * [HTML/Pug and dat.yaml](pug.md)
 * [SCSS|CSS](css.md)
-* [TypeScript|.js and Services](ts.md)
 * [Website w/ loading .js libs example](webs.md)
+* [TypeScript|.js and Services](ts.md)
 
 * [SEO and social tags SEO](SEO.md) 
 * [Dynamic data/CRUD/'ViewModel' example](crud.md)
 
 * [CMS/Itemize example](itemize.md)
+* [Using WebAdmin](webadmin.md)
 
-* [mbake review, extras and next steps](more.md)
-* [Resources](res.md)
+* [FW/AA - Require Depps](framework.md)
+* [Review, extras and Next steps](next.md)
