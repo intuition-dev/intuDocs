@@ -30,7 +30,9 @@ depp.require(['plugin1', 'plugin2'], function() {
 })
 ```
 
-You'll find the real loading code in /assets/js/loader.js. Our preferred CDN host for external .js libs is: http://jsdelivr.com
+For easy stuff you can deploy to 3rd party: https://surge.sh ; but in advanced you'll learn about WebAdmin.
+
+You'll find the real loading code in /assets/js/loader.js. 
 
  You should review the standard layout of folders:
  - /layouts has the main Pug layouts that each page extends.
