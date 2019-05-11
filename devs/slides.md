@@ -62,7 +62,7 @@
 ## The Current State of Affairs
 #### What about SEO :question:
 
-- Web crawlers currently implement someways for discovering content in either virtual DOM / client side rendered websites.
+- Web crawlers currently implement someways for discovering content in either virtual DOM / client-side rendered websites.
 - The case for SEO
 <!-- complete -->
 

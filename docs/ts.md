@@ -18,7 +18,7 @@ If there is no .ts, than it will simply slightly mimifify js files into min.js (
 (of course you have to load any polyfills like
 promises, fetch or what you need)
 
-And normally you run that command at the root of your web-app; but don't use it for server side nodejs.
+And normally you run that command at the root of your web-app; but don't use it for server-side nodejs.
 
 ## Services
 
@@ -30,7 +30,7 @@ to develope C.R.U.D. (CRUD: Create, Read, Update, Delete)/ dynamic web-apps.
 
 ##### Even if you won't use Google FireStore: you should learn to use it, just to expose yourself to the modern services architecture! The documentation on their website is quite good, and makes it easy to develop CURD services.
 
-When you call the services client side, you can write a .ts class that has the CRUD calls - returning promises (or leveraging browser's Custom Events).
+When you call the services client-side, you can write a .ts class that has the CRUD calls - returning promises (or leveraging browser's Custom Events).
 This is the class that your Pug(html really) will leverage for dynamic apps. There are much better ways, but just to remove they mystery, here is a (bad) example pseudo code:
 
 ```pug

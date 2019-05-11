@@ -41,7 +41,7 @@ A VM's public methods map to a view. That is 99% of a VM. It is a class where it
 - If you have 2 forms in your view, then VM needs to have 2 objects, since objects have name-value pairs. 
 - If you have 2 charts in your view, then VM needs to have 2 objects in a way that makes it easy to bind to the chart.
 
-In the same way a server side 'ORM Model' may 'map' to the a table|document fields, the VM maps to the view. The VM does not represent server side ORM or stores in any way - it ignores it!
+In the same way a server-side 'ORM Model' may 'map' to the a table|document fields, the VM maps to the view. The VM does not represent server-side ORM or stores in any way - it ignores it!
 The VM maps to the view, and makes it easy to map/bind to the view.
 So a VM is a complex VM that fully maps to the View!
 If you change the View, you must change the VM and if you change the VM, you must change the View.
