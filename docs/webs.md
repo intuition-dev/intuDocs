@@ -30,7 +30,6 @@ depp.require(['plugin1', 'plugin2'], function() {
 })
 ```
 
-For easy stuff you can deploy to 3rd party: https://surge.sh ; but in advanced you'll learn about WebAdmin.
 
 You'll find the real loading code in /assets/js/loader.js. 
 
