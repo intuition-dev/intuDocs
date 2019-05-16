@@ -1,5 +1,4 @@
 
-
 * [Home](README.md)
 * [HTML/Pug and dat.yaml](pug.md)
 * [SCSS|CSS](css.md)
@@ -12,5 +11,5 @@
 * [CMS/Itemize example](itemize.md)
 * [Using WebAdmin](webadmin.md)
 
-* [FW/AA - Require Depps](framework.md)
+* [Tool Belt (of js libs)](toolBelt.md)
 * [Review, extras and Next steps](next.md)
