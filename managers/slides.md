@@ -11,7 +11,7 @@
 
 ---
 <!-- *template: invert -->
-## Faster, cheaper and without sacrifying quality
+## Faster, cheaper and without sacrificing quality
 ### ==**Is it possible?**==
 
 --- 
@@ -197,8 +197,6 @@
 <!--*template:invert-->
 ## Our Approach
 
-### In sum:
-
 <!--the underpinning tools of our development approaches enable us to offer -->
 
 - Quick and Easy ==**Scalability**==.
@@ -339,5 +337,3 @@
 ### www.MetaBake.net
 # Thank you
 
-
----

@@ -4,7 +4,7 @@ We partner with you
 
 
 digital transformation: Culture where everyone has background in html and uses it
-
+digital transformation is how the software will eat the world - and low-code is how it will get cut up.
 
 
 ---
