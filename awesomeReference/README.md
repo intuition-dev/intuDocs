@@ -53,7 +53,7 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 
 
 ### Meta Definitions:
-- Pug : A templating language, position as low-code Declarative 4GL. Custom 'tags' in Pug via RIOTjs (and obfuscated as well as Andorid's ProGuard)
+- Pug : A language, position as low-code Declarative 4GL. Custom 'tags' in Pug via RIOTjs (and obfuscated as well as Andorid's ProGuard)
 - Cloud v2: No known end point. E.g.: CDN, AWS Cognito. AWS Lambda does have a server end point, so it is not Cloud v2
 - Team Player: Benefits group via Cloud Dev Environment, ex: CodeAnywhere+Meta. Selfish: Local dev. environment.
 - SCSS theme framework: Google/search for 'Front End Framework' yields Bootstrap, Bulma, Spectre, etc. We have examples with a few in Github project of same name.

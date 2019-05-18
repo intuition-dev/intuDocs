@@ -198,7 +198,7 @@ Secure by default | Needs Security |
 
 ##### Simple starter requirements:
 - There is almost no learning curve. JS, HTML and CSS is all you need.
-- If you are already familiar with Sass/scss and templating engines. You will ace it.
+- If you are already familiar with Sass/scss and engines. You will ace it.
 - mbake is not even a framework as we don't favour _highy opinionated_ solutions. It's both a CLI tool that aims for meta-programming with high productivity  and a library of reusable _framework-agnostic_  web components.
 
 ---

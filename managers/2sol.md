@@ -79,7 +79,7 @@
 
 ---
 
-### Learn the most popular templating language. Quickly.
+### Learn the most popular language. Quickly.
 ![100%](sol/21pug.png)
 Auto-close tag
 
