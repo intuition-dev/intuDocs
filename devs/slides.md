@@ -44,19 +44,6 @@
 - In many cases, there seems to be no clear goal and  often times it leads to _overengineered solutions_ that leave you more exhausted and confused instead of aiding your workflow.
 
 <!-- picture of javascript frontend hell -->
-
---- 
-
-## The Current State Of Affairs
-#### Leaning too much on JavaScript.
-
-- As developers sometimes it takes time to realize that not everybody has a blazing fast machine that will deal with poorly engineered and bloated websites.
-
-- Also, let's not forget that the web is primary information/document based. That is why the Document Object Model is so important. It shouldn't be treated as secondary or a liability.
-
-- And, there is also the case of neglecting users who opt out consciously of using JavaScript in their browser, wether it be for security concerns or just because they have _modest machines_
-
-
 ---
 
 ## The Current State of Affairs
@@ -66,13 +53,6 @@
 - The case for SEO
 <!-- complete -->
 
----
-## The Current State of Affairs
-#### Not all is bad: Front-End Cornucopia
-
-- Build tools and compilers -  once a rarity on Front-end - are now part of the normal workflow.
-- PHP-based tools and overuse of dynamic approaches are starting to feel bloated an unnecesary in modern Front-end.
-- Web Components and AMP are gaining traction.
 ---
 
 ## The Current State of Affairs
@@ -258,23 +238,12 @@ $: mbake -u
 
 ## MetaBake Pillars
 ### ==Based on:==
-- Automatic and Declarative Programming
+- Automatic Programming
 - Static Generation & Templating Markup
 - Dynamic Data Binding
 - Library of Web Components 
 - Website Prototyping and Iterative Development
 - CLI/Keyboard, not GUI
-
----
-
-## MetaBake Pillars
-### Declarative Programming
-
-- Declare the what instead of how.
-- Work with useful abstractions instead of repeating low level implementation. It aligns with _DRY_
-- More readability and cleaner structure.
-- Bug-surface is greatly reduced.
-- Avoid to great extent spaguetti code.
 
 ---
 
@@ -375,4 +344,3 @@ $ mbakeX -w .
 <!--- place logo --->
 <small> Slides written with Marp</small>
 
----
