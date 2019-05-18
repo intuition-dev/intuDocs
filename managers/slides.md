@@ -35,13 +35,13 @@
 
 ---
 ### Evolution Of Computers
-- Yet little by little and with every wave of innovation computers became the smaller, faster, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
+- Yet little by little and with every wave of innovation computers became the smaller, quicker, cheaper and more resilient ubicous devices that shape every corner of human technology nowadays.
 
 ![45% center](images/smart-watch.jpg)
 
 ---
 ### Evolution Of Computers
-- So **yes**, to build with quality, faster and cheaper **is possible**. If you do it in sync with a new wave of ==**Disruptive Technological Innovation**==.
+- So **yes**, to build with quality, quicker and cheaper **is possible**. If you do it in sync with a new wave of ==**Disruptive Technological Innovation**==.
 
 ![50% center](images/tech-disruption.png)
 
@@ -71,7 +71,7 @@
 
 ---
 ### Our Approach
-- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop faster and with less error-prone processes.
+- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop quicker and with less error-prone processes.
 
 - This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All ==**without impacting negatively the quality**==.
 
@@ -222,7 +222,7 @@
 
 >_Write once, run anywhere_
  
-- We leverage unified codebases in Web and Mobile apps for bringing together faster development and reduced maintenance costs. While also ==**combining the best**== of both worlds.
+- We leverage unified codebases in Web and Mobile apps for bringing together quicker development and reduced maintenance costs. While also ==**combining the best**== of both worlds.
 
 
 - This allows us to offer a ==**tailored unified experience**== and **platform-agnostic** experience for all users. 
@@ -274,7 +274,7 @@
 - High Quality Design with mobile-first approach.
 - Express your branding through **beautiful and solid UI**.
 - Remember, our tech stack is ==**highly SEO-friendly**==.
-- Furthermore, our **Web Component based** approach makes possible faster loading speeds and an integrated mobile experience that lowers user bounce rate.
+- Furthermore, our **Web Component based** approach makes possible quicker loading speeds and an integrated mobile experience that lowers user bounce rate.
 
 ---
 <!-- *template: gaia -->
@@ -303,7 +303,7 @@
 ==**Advantages:**==
 - **User First** Approach.
 - High **Reusability**.
-- Building websites based on components is **faster**, easier and less error-prone.
+- Building websites based on components is **quicker**, easier and less error-prone.
 - **Improved load time** and higher conversion rates.
 - Increased **Maintainability**.
 - **Cost-effective**.

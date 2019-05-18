@@ -132,7 +132,7 @@ Secure by default | Needs Security |
 
 ### The apocalypse of Backend
 
-- ==**CDN**== is cheaper and faster
+- ==**CDN**== is cheaper and quicker
 - However, CDN is problematic with dynamic sites due to notorious cache invalidation
 - A breeze to use with Static Generators
 
@@ -339,7 +339,7 @@ key1: World
 ## MetaBake Pillars
 ### CLI/Keyboard based
 
-- We all know that keyboard based tools are much faster and customizable to your workflow than being constrained in a GUI.
+- We all know that keyboard based tools are much quicker and customizable to your workflow than being constrained in a GUI.
 - metabake is CLI based with easy commands for building and compiling.
 - For instance:
 ````

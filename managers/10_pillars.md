@@ -51,7 +51,7 @@ and even Form builders like ZoHo Forms or JotForm.
 # Solution
 LOGO
 
-A key pillar is to be able to develop faster than rate of change or requirements, customers and market.
+A key pillar is to be able to develop quicker than rate of change or requirements, customers and market.
 Below we have outlined the pillars that will lead a company to the
 next level in software development productivity and efficiencies.
 
@@ -68,7 +68,7 @@ DF
 Once there is desire for a transformation, you should start with a citizen developers.
 Pick some low tools to get non-developers going. 
 One effect of this is that now professional and career developers have some competitors. 
-Can a non-tried developer write an application faster than a professional developer.
+Can a non-tried developer write an application quicker than a professional developer.
 
 We moved from data centers to Cloud v1, but then used the familiar and
 dated architecture, and was only recently moved to the cloud. To be
@@ -214,7 +214,7 @@ bases, one for web and one for devices. As a tech leader, we want a
 single code base, otherwise known as a hybrid approach.
 
 Once Electron has been learned, one can then try build.phonegap.com,
-version 8.0+; A faster/cheaper development with full native
+version 8.0+; A quicker/cheaper development with full native
 functionality and performance with a single code base available for Web,
 IOS, Android, PWA, with one single code base! Of course, there are
 people that want to use Swift | Java, but that is not a part of the
@@ -257,13 +257,13 @@ Or you can see a low-code CRUD example here:
 -   http://github.com/Metabake 
 
 
-### low-code = 10X faster web app development.
+### low-code = 10X quicker web app development.
 
  We have found that - with Metabake.org; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
 
-On the client-side (browser apps and mobile apps) Metabake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With Metabake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much faster and cheaper web app and mobile app development.
+On the client-side (browser apps and mobile apps) Metabake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With Metabake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much quicker and cheaper web app and mobile app development.
 
-How does open source Metabake deliver 10X faster and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** server-side and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
+How does open source Metabake deliver 10X quicker and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** server-side and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
 
 We benchmark against _LAMP_, _RAILS_, _MEAN_ and such For example, LAMP is the technology WordPress was built on. Every 10 years or so technology gets 10 times better, which *forces* everyone to upgrade. Assembly was 10 times better than machine language. C/.js is 10 times better than Assembly. We believe that we found the answer on how to have a more productive team.
 

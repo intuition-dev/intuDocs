@@ -97,7 +97,7 @@ but keep the C++ programmers out*,
 # Part we - low-code status before the winter of 2020:
 - 90% of developers will lose their job. eg: Is there a job where you develop a spreadsheet: but first someone has to tell you what kind of spreadsheet. 
 - Citizen developers: No need to know loop, hashing, normalization, failover, timeout, bla, bla. 
-- low-code is 10X cheaper and 10x faster.
+- low-code is 10X cheaper and 10x quicker.
 - Cuts: first expensive developers, or working on complex tech.
 - EG: From Data Center to Cloud we had **90% budget cuts**. Or Mainframes, Minis. 
 **Black swan**, if you graduated after 2003, you did not see this kind of a wave.
@@ -116,4 +116,4 @@ I provide a list of low-code in the 'Pillars' document.
 ![60%](pro/100linda.jpg)
 First time it happened, we did nothing.
 
-### Here is what I'll do to be in 10% of IT survivors: "my team and me will code faster than citizen developers". 
+### Here is what I'll do to be in 10% of IT survivors: "my team and me will code quicker than citizen developers". 

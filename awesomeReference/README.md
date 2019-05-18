@@ -2,7 +2,7 @@
 ## Awesome low-code list of Metabake resources
 
 
-## low-code = 10X faster web app development.
+## low-code = 10X quicker web app development.
 ### With Metabake 's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
 
 

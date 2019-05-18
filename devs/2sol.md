@@ -38,7 +38,7 @@
 
 ---
 
-### CDN is cheaper and faster; so is Text Search 
+### CDN is cheaper and quicker; so is Text Search 
 |![100%](sol/12cdn.png)|![90%](sol/13fts.png)|
 |:-:|:-:|
 
