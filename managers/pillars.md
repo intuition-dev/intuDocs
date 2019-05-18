@@ -1,6 +1,6 @@
 
-
-We partner with you
+MetaBake.net:
+- We partner with you
 
 
 digital transformation: Culture where everyone has background in html and uses it
@@ -179,7 +179,7 @@ Leverage animations. Water-fall approach will be a non-dynamic, non-interactive 
 
 
 ## Pillar 7: Security, productivity and Cloud
-CBOOK
+CHROMEBOOK
 
 CIO and HR are tech related. Companies that want to be safe are
 moving to PC-in-the-cloud. For instance,
@@ -204,7 +204,7 @@ Eg: extract the html files and assets and convert to Pug.
 
 ## Pillar 9: No Negativity Towards DRY/Mobile
 # Reorg from 3 teams to 2
-ELECTRON
+PHONEGAP
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
@@ -267,8 +267,8 @@ How does open source MetaBake deliver 10X quicker and cheaper web app developmen
 
 We benchmark against _LAMP_, _RAILS_, _MEAN_ and such For example, LAMP is the technology WordPress was built on. Every 10 years or so technology gets 10 times better, which *forces* everyone to upgrade. Assembly was 10 times better than machine language. C/.js is 10 times better than Assembly. We believe that we found the answer on how to have a more productive team.
 
-## MetaBake.org
-LOGO
+## MetaBake.net
+
 
 If your organization would like to try one or more of the low-code
 pillars, please contact me.
@@ -276,4 +276,4 @@ pillars, please contact me.
 Or, if you have a project that you want to do in 1/10th of the time at
 1/10th of the cost, we will build it for you, and offer training.
 
-### Written in Typora
+### Use Typora, Zettlr, ghostwriter from wearetutrle, Haroopad
