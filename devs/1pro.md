@@ -3,7 +3,7 @@
 <!-- paginate: true -->
 <!-- page_number: true -->
 <!-- $size: 16:9 
-<!-- footer: www.Metabake.org -->
+<!-- footer: www.MetaBake.org -->
 
 ## "Second largest computer company? DEC"
 
@@ -23,7 +23,7 @@ Now gone.
 
 # Agenda
 - Part I: low-code status
-- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of Metabake.org )
+- Part II: ( a problem for IT staff) and my productivity solution ( 10 pillars of MetaBake.org )
 - Demo of automatic programming
 
 ---

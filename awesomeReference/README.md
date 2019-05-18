@@ -1,34 +1,34 @@
 
-## Awesome low-code list of Metabake resources
+## Awesome low-code list of MetaBake resources
 
 
 ## low-code = 10X quicker web app development.
-### With Metabake 's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
+### With MetaBake 's modern development approach, it is not about replacing your tech stack with another tech stack -- it is about eliminating it!
 
 
 ## Meta overview
 
-To get an overview of Metabake pillars:
+To get an overview of MetaBake pillars:
 
-- [Metabake Quick Demo](http://youtu.be/WyCdSFTUIvM)
+- [MetaBake Quick Demo](http://youtu.be/WyCdSFTUIvM)
 - <a href='http://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- [Metabake Sales Summary](http://www.youtube.com/watch?v=OK-cJNSkQII)
+- [MetaBake Sales Summary](http://www.youtube.com/watch?v=OK-cJNSkQII)
 
 
 Directory of related projects is in Resources on left, and source code is here:
-- <a href='http://git.Metabake.org' target='_blank'>git.Metabake.org</a>
+- <a href='http://git.MetaBake.org' target='_blank'>git.MetaBake.org</a>
 
 
 
 # Additional examples and plugins:
 In addition to the examples in mbake CLI:
 
-- [SCSS theme Framework Examples](http://github.com/Metabake/theme-scss-frameworks)
+- [SCSS theme Framework Examples](http://github.com/MetaBake/theme-scss-frameworks)
 
 
 ## Features
 
-One feature of Metabake is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
+One feature of MetaBake is that it is text based, and not GUI, like Webflow for example. All the GUI tools are limited and a bit like FrontPage 2.0.
 Also, you should avoid prototyping in GUI tools - text prototyping is just as fast an fully interactive.
 
 -i # from i_dat.yaml creates items json, reading all the dat.yaml - for dynamic binding!
@@ -64,9 +64,9 @@ Prerequisites: you should know HTML and CSS. If you need to catch up, we recomme
 ## Videos:
 S = sales, we = Foundation, II = B&M, III = Vista
 - S <a href='http://vimeo.com/282034037' target='_blank'>Meetup Video</a>
-- S [Metabake Sales Summary](http://www.youtube.com/watch?v=OK-cJNSkQII)
+- S [MetaBake Sales Summary](http://www.youtube.com/watch?v=OK-cJNSkQII)
 
-- we [Metabake Quick Demo](http://youtu.be/WyCdSFTUIvM)
+- we [MetaBake Quick Demo](http://youtu.be/WyCdSFTUIvM)
 - we [mbake CLI](http://youtu.be/-KkPfAnEXyk)
 - we [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
 
@@ -113,7 +113,7 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 # Support
 
 &nbsp;
-- <a href='http://chat.Metabake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
+- <a href='http://chat.MetaBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
 

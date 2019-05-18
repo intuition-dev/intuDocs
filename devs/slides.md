@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==Metabake==](https://Metabake.org)
+#  [==MetaBake==](https://MetaBake.org)
 
 #### A meta-programming open source CLI tool
 <!-- reword this? -->
@@ -186,7 +186,7 @@ Secure by default | Needs Security |
 ## Why MetaBake
 #### Goal: WebApp and Cross Platform *Productivity*
 
-- Metabake as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
+- MetaBake as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
 - In a future with increasing automation. Citizen developers will become more widespread.
 - Our goal as developers is to be able to both outperforming competent citizen developers in speed and leaving room for focusing on excellent UI and UX.
 
@@ -252,11 +252,11 @@ $: mbake -u
 
 ---
 <!---*template: invert --->
-# Metabake Pillars
+# MetaBake Pillars
 
 ---
 
-## Metabake Pillars
+## MetaBake Pillars
 ### ==Based on:==
 - Automatic and Declarative Programming
 - Static Generation & Templating Markup

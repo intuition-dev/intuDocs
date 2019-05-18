@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==MetaBake==](https://Metabake.org)
+#  [==MetaBake==](https://MetaBake.org)
 <!-- logo -->
 ## We partner with you to build now the future of software.
 
