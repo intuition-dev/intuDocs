@@ -195,7 +195,7 @@ This emits a Pug file that you should include in your Pug's layout head section.
 In turn, the included file calls a 'setup-deffs' js file that defines and show you how to define things you can require later.
 
 
-## Extras and next steps
+## Next steps
 
 Now that you know mbake foundation, here are some choices for next things to learn in the advanced docs, pick and chose:
 

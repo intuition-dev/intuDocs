@@ -7,7 +7,7 @@ It comes with example apps that include WebSite showing how to load.js, CRUD sho
 application architecture you like, but 
 Also it you you can itemize (-i dat.yaml files) to make a nice SEO friendly CMS.
 
-## Extras and next steps
+## Next steps
 
 Now that you know mbake foundation, here are some choices for next things to learn in the advanced docs, pick and chose:
 
