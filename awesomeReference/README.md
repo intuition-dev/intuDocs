@@ -2,8 +2,8 @@
 ## Awesome low-code list of MetaBake resources
 
 ###
-- Testing IE https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
-Use Windows 7 w/ VM ware v5 and V5 extension
+- Testing IE http://developer.microsoft.com/en-us/microsoft-edge/tools/vms
+Use Windows 10 w/ VM ware and their extension
 
 
 ## Features
