@@ -3,7 +3,7 @@
 
 ###
 - Testing IE http://developer.microsoft.com/en-us/microsoft-edge/tools/vms
-Use Windows 10 w/ VM ware and their extension
+Use Windows 10 w/ virtualbox and their extension
 
 
 ## Features
