@@ -309,7 +309,7 @@ key1: World
 ### CLI/Keyboard based
 
 - We all know that keyboard based tools are much quicker and customizable to your workflow than being constrained in a GUI.
-- metabake is CLI based with easy commands for building and compiling.
+- MetaBake is CLI based with easy commands for building and compiling.
 - For instance:
 ````
 $: mbake -t . // compile all your typescript files
@@ -334,7 +334,7 @@ $ cd website
 $ mbakeX -w .
 ```
 #### :arrow_right:  https://MetaBake.org/
-#### :arrow_right: https://github.com/metabake
+#### :arrow_right: https://github.com/MetaBake
 
 ---
 
