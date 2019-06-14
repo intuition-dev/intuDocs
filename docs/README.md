@@ -26,12 +26,12 @@ Also create an email template, and note your emailJs `user_id` and `template_id`
 3. Install node, yarn
 
 4. Then install the app:
-    ```bash
+    ```sh
     $ yarn global add intu
     ```
 
 5. In terminal run command to start the app: 
-    ```
+    ```sh
     $ intu
     ```
 
@@ -51,7 +51,7 @@ Remember your admin email and password.
 
 1. Install and run the app:
 
-```
+```sh
 $ yarn global add intu
 $ intu
 ```
