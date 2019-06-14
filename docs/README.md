@@ -9,8 +9,9 @@
 
 WebAdmin is based on JavaScript and SQLite.
 It has two parts:
-    - admin screen: where all settings are set up and users are added 
-    - editor screen: the editor itself, where users can login and content of a chosen site can be managed
+
+- admin screen: where all settings are set up and users are added 
+- editor screen: the editor itself, where users can login and content of a chosen site can be managed
 
 
 # Install WebAdmin Meta 'Intuition'
