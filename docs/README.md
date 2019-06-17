@@ -5,10 +5,14 @@
 
 #### Meta Intuition is WebAdmin Screen to CMS, e-Com, et al.
 
+In WebAdmin, you can edit pages' content using markdown which won't let you page become broken, you only edit the content/text itself and all other things is done for you after you click "save". It allows you clone existing pages to write another post/page, upload images and set publish date to posts. 
+
+WebAdmin has **Admin screen** where you need to select type of site or choose the existing site to edit and **Editor screen** where you can perform operations with the content. WebAdmin also supports multiple editors users, which can be added in Admin screen and users will be notified about it via email.
+
 ## Overview
 
-WebAdmin is based on JavaScript and SQLite.
-It has two parts:
+WebAdmin is based on JavaScript and SQLite. It is using [markdown](https://daringfireball.net/projects/markdown/syntax), and is written on [pug](https://pugjs.org/api/getting-started.html).
+So it has two parts:
 
 - admin screen: where all settings are set up and users are added 
 - editor screen: the editor itself, where users can login and content of a chosen site can be managed
