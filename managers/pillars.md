@@ -45,7 +45,7 @@ productivity jump in software development for almost 10-15 years. If you
 have been developing software for less than 15 years, you may not expect
 a new wave to change everything.
 
-There are many low-code tools: Airtable, Bubble, ZoHo Creator, MS PowerApps, iCodeBetter, Mendix, Kinvey, Kony, Oracle Visual Builder, microweber; 
+There are many low-code tools: Airtable, Bubble, MS PowerApps, iCodeBetter, Mendix, Kinvey, Kony, Oracle Visual Builder, microweber; Coda, Corvid
 and even Form builders like ZoHo Forms or JotForm.
 
 # Solution
