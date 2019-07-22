@@ -3,7 +3,7 @@
 1. Install and run the app:
 
 ```sh
-$ yarn global add intu
+$ npm i -g intu
 $ intu
 ```
 

@@ -328,7 +328,7 @@ $: mbake -s . // compile all your .scss into .css
 ## MetaBake
 # Get Started 
 ```javascript
-$ yarn global add mbake
+$ npm i -gmbake
 $ mbake -w .
 $ cd website
 $ mbakeX -w .
