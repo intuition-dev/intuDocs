@@ -7,7 +7,7 @@
 #  ==Inuition.DEV==
 
 #### "10 fold productivity jump via
-#### open source low-code and maintanance iterations"
+#### open source low-code and maintenance iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -28,10 +28,10 @@ Robots will replace drivers.
 ---
 
 <!-- *template: invert -->
-#  ==Inuition.DEV==
+#  ==Intuition.DEV==
 
 #### "10 fold productivity jump via
-#### open source low-code and maintanance iterations"
+#### open source low-code and maintenance iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -49,7 +49,7 @@ Robots will replace drivers.
 Foundation:
 
 ## - Sass
-## - Pug
+## - ==Pug==
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
@@ -70,7 +70,7 @@ Step #2: SEO
 #### - links coming in, eye balls, customers. 
 #### - We need content. We need a CMS!
 ## No matter what app we build, you need a CMS.
-#### Or a website. Or e-commerece: please enter credit card :-)
+#### Or a website. Or e-commerce: please enter credit card :-)
 
 DEMO simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
 
@@ -104,31 +104,39 @@ Inuition.DEV: Low-code via generated code
 #### - Open Source
 #### - Keyboard
 #### - Standard Web Components
-#### - Low-code for preofresional programers
+#### - Low-code for professional programers
 
 ---
 Almost THE END, FAQ:
-### - Q: What about .js frameworks (eg. React, Gatsby) ? 
-## - Ans: We compare to low-code, not (.js) frameworks. The list we showed. 
-### - But if you measure performance or benchmark comperative productivity of Intution.DEV against anything, please share.
+### - What about .js frameworks (React, Vue, Ionic)? 
+### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
+### - But if you measure performance or benchmark comparative productivity of Intuition.DEV against anything, please share or ask for help
 
 ---
+How to get Started:
 
-### Offer - Take a paid($) rapid prototyping class, via Skype where:
+### Full docs are online in github, and at www.Intuition.DEV
+### For example: `npm i -g intu`
+
+## Scrape
+- Eg: Forms. 
+
+Demo Scrape: ( https://Pug.metabake.net )
+
+--- 
+
+### Offer: Take a paid($) rapid prototyping class, via Skype:
 ### We build an app/product to your spec together,
 ##  that you could maintain by yourself!
 
-Also: full docs are online in github, and at www.Inutition.DEV
-# For example: npm i -g intu
-
 ---
-Did you miss anything I showed? :
-## - CMS
+Did you miss anything shown? :
+## - CMS and 3 Steps
 ## - Standard Web Components
-## - CRUD 
-## - Custom API
-## - PhoneGap
-## - Maintanance iterations
+## - CRUD (w/ ViewModel and APIs)
+## - PhoneGap and Native
+## - Maintenance iterations
+## - Focus on Pug language
 ---
 
 # Software will eat the world.
