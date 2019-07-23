@@ -1,16 +1,15 @@
 <!-- $theme: gaia -->
 <!-- prerender: false -->
-<!-- $size: 16:9 -->
 <!-- footer: www.Intuition.DEV -->
-
 <!-- *template: invert -->
-#  ==Inuition.DEV==
+#  ==Intuition.DEV==
 
 #### "10 fold productivity jump via
 #### open source low-code and maintenance iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
+<!-- page_number: true -->
 
 ## Iterations?!
 ![180% center](iterative.png)
@@ -21,9 +20,9 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 
 <!-- *template: invert -->
 ###  Low-code?
-![70% center](truck.png)
+![60% center](truck.png)
 Robots will replace drivers.
-#### And majority of the 3GL programmers! Unless you also use a generator.
+#### And majority of the 3GL programmers! :cry: (Unless we programmers use low-code generator)
 
 ---
 
@@ -53,7 +52,7 @@ Foundation:
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-DEMO foundation
+==DEMO== foundation (mbake CLI)
 
 ---
 Simple plan in 3 steps:
@@ -66,19 +65,19 @@ Simple plan in 3 steps:
 
 ---
 <!-- *template: invert -->
-Step #2: SEO
-#### - links coming in, eye balls, customers. 
+Step #2 - SEO:
+#### - People coming in, eye balls, customers. 
 #### - We need content. We need a CMS!
 ## No matter what app we build, you need a CMS.
 #### Or a website. Or e-commerce: please enter credit card :-)
 
-DEMO simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
+==DEMO== simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
 
 ---
 
 Promised step #1: App.
 
-DEMO basic/CRUD ( View Model, Validation, SQL, Pug, VS Code, Citzen-developer!)
+==DEMO== CRUD ( ViewModel, Validation, SQL, Pug, VS Code, Citizen-developer!)
 
 ---
 <!-- *template: invert -->
@@ -89,28 +88,26 @@ Promised step #1: App.
 # OK! 
 ## But easier to teach in 2 steps.
 
-DEMO advanced/Mobile ( Native, Electron, PhoneGap )
+==DEMO== advanced/Mobile 2 steps ( Native, Electron, PhoneGap )
 
 ---
 
-# Web App and Mobile App is same code
+# Web App and Mobile App is same code base.
 
 ---
 
 THE END.
-Inuition.DEV: Low-code via generated code
- that end use can edit/maintain.
-## Main features:
-#### - Open Source
-#### - Keyboard
+## Main differentiating features of Intuition.DEV:
 #### - Standard Web Components
-#### - Low-code for professional programers
+#### - Open Source
+#### - Keyboard (arrow up WebComps)
+#### - Low-code, for professional programers (no limit as to what you build, not  a 90% solution)
 
 ---
 Almost THE END, FAQ:
-### - What about .js frameworks (React, Vue, Ionic)? 
-### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
-### - But if you measure performance or benchmark comparative productivity of Intuition.DEV against anything, please share or ask for help
+#### What about .js frameworks (React, Vue, Ionic)? 
+#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
+#### But if you measure performance or benchmark comparative productivity of Intuition.DEV against anything, please share or ask for help
 
 ---
 How to get Started:
@@ -121,34 +118,33 @@ How to get Started:
 ## Scrape
 - Eg: Forms. 
 
-Demo Scrape: ( https://Pug.metabake.net )
+==Demo== Scrape: ( https://Pug.metabake.NET )
 
 --- 
 
-### Offer: Take a paid($) rapid prototyping class, via Skype:
-### We build an app/product to your spec together,
-##  that you could maintain by yourself!
+### Offer :arrow_right:: Take a paid($) rapid prototyping class, via Skype:
+> We build an app/product to your spec together, that you could maintain by yourself!
 
 ---
-Did you miss anything shown? :
-## - CMS and 3 Steps
-## - Standard Web Components
-## - CRUD (w/ ViewModel and APIs)
-## - PhoneGap and Native
-## - Maintenance iterations
-## - Focus on Pug language
+Did you miss anything shown? 
+### - CMS and 3 Steps (SEO)
+### - Standard Web Components
+### - CRUD (w/ ViewModel and APIs)
+### - PhoneGap / Native is same
+### - Maintenance iterations reduce cost
+### - Use Pug as a language
 ---
 
-# Software will eat the world.
-#### We just need to make more of it: better and faster.
+## Software will eat the world. The digital revolution.
+### We just need to make more software: better and faster. :smile:
 
 ---
 
 <!-- *template: invert -->
-#  ==Inuition.DEV==
+#  ==Intuition.DEV==
 
 #### "10 fold productivity jump via
-#### open source low-code and maintanance iterations"
+#### open source low-code and maintenance iterations"
 ![80% center](good_cheap_fast.png)
 
 
