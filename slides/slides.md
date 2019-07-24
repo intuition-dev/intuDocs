@@ -77,7 +77,7 @@ Step #2 - SEO:
 
 Promised step #1: App.
 
-==DEMO== CRUD ( ViewModel, Validation, SQL, Pug, VS Code, Citizen-developer!)
+==DEMO== CRUD ( ViewModel, Validation, SQL, Pug, VS Code, Citizen-developer, Edit ext!)
 
 ---
 <!-- *template: invert -->
@@ -101,7 +101,7 @@ THE END.
 #### - Standard Web Components
 #### - Open Source
 #### - Keyboard (arrow up WebComps)
-#### - Low-code, for professional programers (no limit as to what you build, not  a 90% solution)
+#### - Low-code, for professional programmers (no limit as to what you build, not  a 90% solution)
 
 ---
 Almost THE END, FAQ:
