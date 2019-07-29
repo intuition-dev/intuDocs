@@ -45,6 +45,15 @@ Robots will replace drivers.
 
 ---
 
+Agenda/Demos:
+### Foundation
+### 3 step plan
+### Simple
+### CRUD
+### Advanced
+
+---
+
 Foundation:
 
 ## - Sass
@@ -52,7 +61,8 @@ Foundation:
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-==DEMO== foundation (mbake CLI)
+==DEMO== foundation (mbake CLI, css, pug, get started)
+Scrape: ( https://Pug.metabake.NET )
 
 ---
 Simple plan in 3 steps:
@@ -66,9 +76,9 @@ Simple plan in 3 steps:
 ---
 <!-- *template: invert -->
 Step #2 - SEO:
-#### - People coming in, eye balls, customers. 
-#### - We need content. We need a CMS!
-## No matter what app we build, you need a CMS.
+#### - People coming in, customers. 
+#### - We need content: We need a CMS!
+### No matter what app we build, you need a CMS.
 #### Or a website. Or e-commerce: please enter credit card :-)
 
 ==DEMO== simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
@@ -114,11 +124,6 @@ How to get Started:
 
 ### Full docs are online in github, and at www.Intuition.DEV
 ### For example: `npm i -g intu`
-
-## Scrape
-- Eg: Forms. 
-
-==Demo== Scrape: ( https://Pug.metabake.NET )
 
 --- 
 
