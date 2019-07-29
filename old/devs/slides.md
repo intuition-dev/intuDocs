@@ -1,7 +1,7 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.MetaBake.org -->
+<!-- footer: www.Intuition.DEV -->
 
 <!-- *template: invert -->
 
