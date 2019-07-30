@@ -1,7 +1,7 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.Intuition.DEV -->
+<!-- footer: www.INTUITION.DEV -->
 
 <!-- *template: invert -->
 

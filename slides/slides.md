@@ -1,8 +1,8 @@
 <!-- $theme: gaia -->
 <!-- prerender: false -->
-<!-- footer: www.Intuition.DEV -->
+<!-- footer: www.INTUITION.DEV -->
 <!-- *template: invert -->
-#  ==Intuition.DEV==
+#  ==INTUITION.DEV==
 
 #### "10 fold productivity jump via
 #### open source low-code and maintenance iterations"
@@ -27,14 +27,14 @@ Robots will replace drivers.
 ---
 
 <!-- *template: invert -->
-#  ==Intuition.DEV==
+#  ==INTUITION.DEV==
 
 #### "10 fold productivity jump via
 #### open source low-code and maintenance iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
-### Intuition.DEV alternatives, low-code, targeting citizen developers: 
+### INTUITION.DEV alternatives, low-code, targeting citizen developers: 
 - Coda_io
 - Wix Corvid
 - Airtable
@@ -107,7 +107,7 @@ Promised step #1: App.
 ---
 
 THE END.
-## Main differentiating features of Intuition.DEV:
+## Main differentiating features of INTUITION.DEV:
 #### - Standard Web Components
 #### - Open Source
 #### - Keyboard (arrow up WebComps)
@@ -117,12 +117,12 @@ THE END.
 Almost THE END, FAQ:
 #### What about .js frameworks (React, Vue, Ionic)? 
 #### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
-#### But if you measure performance or benchmark comparative productivity of Intuition.DEV against anything, please share or ask for help
+#### But if you measure performance or benchmark comparative productivity of INTUITION.DEV against anything, please share or ask for help
 
 ---
 How to get Started:
 
-### Full docs are online in github, and at www.Intuition.DEV
+### Full docs are online in github, and at www.INTUITION.DEV
 ### For example: `npm i -g intu`
 
 --- 
@@ -146,7 +146,7 @@ Did you miss anything shown?
 ---
 
 <!-- *template: invert -->
-#  ==Intuition.DEV==
+#  ==INTUITION.DEV==
 
 #### "10 fold productivity jump via
 #### open source low-code and maintenance iterations"
