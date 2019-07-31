@@ -4,8 +4,8 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code and maintenance iterations"
+#### "10 fold development productivity jump via
+#### open source low-code, with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -22,19 +22,19 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 ###  Low-code?
 ![60% center](truck.png)
 Robots will replace drivers.
-#### And majority of the 3GL programmers! :cry: (Unless we programmers use low-code generator)
+#### And majority of the 3GL programmers! : (Unless we programmers use a low-code generator)
 
 ---
 
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code and maintenance iterations"
+#### "10 fold development productivity jump via
+#### open source low-code, with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
-### INTUITION.DEV alternatives, low-code, targeting citizen developers: 
+### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
 - Coda_io
 - Wix Corvid
 - Airtable
@@ -56,8 +56,8 @@ Agenda/Demos:
 
 Foundation:
 
-## - Sass
-## - ==Pug==
+## - Sass / BootStrap default
+## - Written in: ==Pug==
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
@@ -109,9 +109,10 @@ Promised step #1: App.
 THE END.
 ## Main differentiating features of INTUITION.DEV:
 #### - Standard Web Components
-#### - Open Source
+#### - Open Source, in Pug
 #### - Keyboard (arrow up WebComps)
-#### - Low-code, for professional programmers (no limit as to what you build, not  a 90% solution)
+#### - Low-code, for *professional* programmers (no limit as to what you build, not  a 90% solution)
+#### - BootStrap as default
 
 ---
 Almost THE END, FAQ:
@@ -137,7 +138,7 @@ Did you miss anything shown?
 ### - CRUD (w/ ViewModel and APIs)
 ### - PhoneGap / Native is same
 ### - Maintenance iterations reduce cost
-### - Use Pug as a language
+### - INTUITION is built in Pug language
 ---
 
 ## Software will eat the world. The digital revolution.
@@ -148,8 +149,8 @@ Did you miss anything shown?
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code and maintenance iterations"
+#### "10 fold development productivity jump via
+#### open source low-code, with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 
