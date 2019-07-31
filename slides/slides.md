@@ -117,7 +117,7 @@ THE END.
 ---
 Almost THE END, FAQ:
 #### What about .js frameworks (React, Vue, Ionic)? 
-#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
+#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. We look at .js frameworks as 'Blue Collar'.
 #### But if you measure performance or benchmark comparative productivity of INTUITION.DEV against anything, please share or ask for help
 
 ---
