@@ -4,8 +4,8 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold development productivity jump via
-#### open source low-code, with maintenance of iterations"
+#### "10 fold productivity jump via
+#### open source low-code for pro developers; with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -29,12 +29,12 @@ Robots will replace drivers.
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold development productivity jump via
-#### open source low-code, with maintenance of iterations"
+#### "10 fold productivity jump via
+#### open source low-code for pro developers; with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 ---
-### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
+#### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
 - Coda_io
 - Wix Corvid
 - Airtable
@@ -46,11 +46,11 @@ Robots will replace drivers.
 ---
 
 Agenda/Demos:
-### Foundation
-### 3 step plan
-### Simple
-### CRUD
-### Advanced
+### 1. Foundations Demo
+### 2. A 3 step plan
+### 3. Simple Demo
+### 4. CRUD Demo
+### 5. Advanced Demo
 
 ---
 
@@ -72,14 +72,14 @@ Simple plan in 3 steps:
 
 #### We'll skip step 1 for the moment.
 #### Step 2 first. Then we'll go back to step 1 - build an app.
+#### So #2, then #1 for teaching purpose only
 
 ---
 <!-- *template: invert -->
 Step #2 - SEO:
 #### - People coming in, customers. 
 #### - We need content: We need a CMS!
-### No matter what app we build, you need a CMS.
-#### Or a website. Or e-commerce: please enter credit card :-)
+### No matter what app we build, you need a CMS. (Static is a plus)
 
 ==DEMO== simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
 
@@ -142,15 +142,15 @@ Did you miss anything shown?
 ---
 
 ## Software will eat the world. The digital revolution.
-### We just need to make more software: better and faster. :smile:
+### We just need to make more software: better and faster, and with Robots. :smile:
 
 ---
 
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold development productivity jump via
-#### open source low-code, with maintenance of iterations"
+#### "10 fold productivity jump via
+#### open source low-code for pro developers; with maintenance of iterations"
 ![80% center](good_cheap_fast.png)
 
 
