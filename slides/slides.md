@@ -4,8 +4,7 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code for pro developers; with maintenance of iterations"
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -29,8 +28,7 @@ Robots will replace drivers.
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code for pro developers; with maintenance of iterations"
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -78,8 +76,8 @@ Simple plan in 3 steps:
 <!-- *template: invert -->
 Step #2 - SEO:
 #### - People coming in, customers. 
-#### - We need content: We need a CMS!
-### No matter what app we build, you need a CMS. (Static is a plus)
+#### - We need content: We need SEO!
+### No matter what app we build, you need SEO. (Static is a plus)
 
 ==DEMO== simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
 
@@ -117,8 +115,7 @@ THE END.
 ---
 Almost THE END, FAQ:
 #### What about .js frameworks (React, Vue, Ionic)? 
-#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. We look at .js frameworks as 'Blue Collar'.
-#### But if you measure performance or benchmark comparative productivity of INTUITION.DEV against anything, please share or ask for help
+#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
 
 ---
 How to get Started:
@@ -128,29 +125,28 @@ How to get Started:
 
 --- 
 
-### Offer :arrow_right:: Take a paid($) rapid prototyping class, via Skype:
-> We build an app/product to your spec together, that you could maintain by yourself!
+### :arrow_right:: Paid($) rapid prototyping class offered, via Skype:
+> We build your projec to your spec together, that you could maintain by yourself!
 
 ---
 Did you miss anything shown? 
-### - CMS and 3 Steps (SEO)
+### - SEO and 3 Steps (Discovery)
 ### - Standard Web Components
 ### - CRUD (w/ ViewModel and APIs)
-### - PhoneGap / Native is same
+### - PhoneGap / Native is same code base
 ### - Maintenance iterations reduce cost
 ### - INTUITION is built in Pug language
 ---
 
-## Software will eat the world. The digital revolution.
-### We just need to make more software: better and faster, and with Robots. :smile:
+## Software will eat the world: The digital revolution.
+### We just need to make more software: better and faster.
 
 ---
 
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "10 fold productivity jump via
-#### open source low-code for pro developers; with maintenance of iterations"
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 
