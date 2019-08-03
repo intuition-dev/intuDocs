@@ -22,17 +22,13 @@ INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc
 In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage native custom elements/ standard web-components and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.
 
 
-
-
-
-
 #features1
 - Any css framework, or default to BootStrap
 - Any .js framework, or our own default: ViewModel
 - Iterative development: reduce app maintenance and iteration cost via our WebAdmin editor.
 - High productivity Low-Code: similar to MS PowerApps, Oracle Visual Builder, Coda.io, Wix Corvid; but for professional developers.
 - Can leverage native custom elements/ standard web-components 
-- Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits SEO friendly static content(including optional AMP) to the CDN.
+- Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits *SEO* friendly static content(including optional AMP) to the CDN.
 - Cross Platform from single code base: Web, IOS, Android (similar to Google's Flutter, but instead leveraging Adobe's free https://Build.PhoneGap.com); but with working SEO. 
 - Built-in support for I18N 
 - A path of gradually adjusting/migrating other apps to use INTUITION.DEV tool. 
@@ -52,9 +48,9 @@ In WebAdmin, you can edit screen app or content using markdown or pug - which wo
 - Built in SQL support and FTS
 - Built in file upload
 - User-admin built in.
-- Livereload of course. And browser extension to edit from www.
+- Live-reload of course. And browser extension to edit from www.
 - Lazy loading capable (via require() dependencies, including popular dependencies already defined)  
-- Keyboard centric (eg: F12 pulls up library of native custom elements)
+- keyboard driven (arrow up WebComps))
 
 
 #tutor
@@ -85,3 +81,25 @@ or
 6. URL's
    `:9081/admin` - to add users
    `:9081/editors` - to edit site
+
+
+#train
+- SEO
+- native custom elements/ standard web-components
+- CRUD | ViewModel
+- built in user auth
+- FTS and SQL
+- keyboard driven (arrow up WebComps))
+- cross platform / mobile from single code base
+- lazy loading
+
+
+#different
+
+- SEO
+- native custom elements/ standard web-components
+- CRUD | ViewModel
+- built in user auth
+- FTS and SQL
+- keyboard driven (arrow up WebComps))
+- cross platform / mobile from single code base

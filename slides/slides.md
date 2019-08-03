@@ -43,7 +43,7 @@ Robots will replace drivers.
 
 ---
 
-Agenda/Demos:
+Demos(/agenda):
 ### 1. Foundations Demo
 ####  (A 3 step plan)
 ### 2. SEO Demo
@@ -104,12 +104,14 @@ Promised step #1: App.
 ---
 
  Main features of INTUITION.DEV:
-#### - SEO
-#### - Standard Web Components
-#### - Open Source, in Pug
-#### - Keyboard (arrow up WebComps)
-#### - Low-code, for *professional* programmers (no limit as to what you build, not  a 90% solution)
-#### - BootStrap as default
+- SEO
+- native custom elements/ standard web-components
+- CRUD | ViewModel
+- built in user auth
+- FTS and SQL
+- keyboard driven (arrow up WebComps))
+- cross platform / mobile from single code base
+
 
 ---
 Almost THE END, FAQ:
@@ -127,17 +129,18 @@ How to get Started:
 Paid($) rapid prototyping class offered, via Skype:
 :arrow_right: We build your project to your spec together, that you could maintain by yourself!
 Train the trainer: 
-- SEO, CDN
-- Standard custom elements w/ binding
-- CRUD & ViewModel
-- Cross platform (Mobile)
-- Maintenance and Iterative development
-- SQL and FTS
+- SEO
+- native custom elements/ standard web-components
+- CRUD | ViewModel
+- built in user auth
+- FTS and SQL
+- keyboard driven (arrow up WebComps))
+- cross platform / mobile from single code base
 - Lazy loading
 ---
 Did you miss anything shown? 
 #### - SEO and 3 Steps (Discovery)
-#### - Standard Web Components
+#### - native custom elements/ standard web-components
 #### - CRUD (w/ ViewModel and APIs)
 #### - PhoneGap / Native is same code base
 #### - Maintenance iterations reduce cost

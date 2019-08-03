@@ -1,21 +1,98 @@
 
-# Meta Intuition
+# INTUITION.DEV
 
-## 'It will lead you IN the right direction' 
+#### 'INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users.'
 
-#### Meta Intuition is WebAdmin Screen to CMS, e-Com, et al.
+#### Please star our main project here:
+- https://github.com/intuition-dev/INTUITION
 
-In WebAdmin, you can edit content. As it is using markdown it won't let a page become broken, you only edit the content itself and all other things is done for you after "save". It allows you to clone existing pages, to write another post/page, to upload images and to set publish date to blog posts. 
+## INTUITION.DEV approach:
 
-WebAdmin generates a starter site to edit, eg: Website, CMS, Shop or you can choose your existing site. Application has **Admin screen** for all the settings and **Editor screen** where you can perform operations with the content. There is available multiple editors users support. Users can be added in Admin screen and they will be notified about it via email.
+In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost everybody can pull out a form or a web app using GUI tools.
+In contrast to tools for citizen-developers: INTUITION.DEV aims to make professional developers more productive, 10 fold productivity increase; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users.'
 
-## Overview
+INTUITION.DEV has WebAdmin Screen for any CRUD app, CMS, e-Com, Mobile, AMP, etc.  It uses [markdown](https://daringfireball.net/projects/markdown/syntax), and is written in [pug](https://pugjs.org/language/tags.html).
 
-WebAdmin is based on **JavaScript** and **SQLite**. It is using [markdown](https://daringfireball.net/projects/markdown/syntax), and is written on [pug](https://pugjs.org/api/getting-started.html).
-So it has two parts:
+### Easy
 
-- **Admin screen**: where all settings are set up and editors users are added 
-- **Editor screen**: the editor itself, where users can login and content of site can be managed
+In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage native custom elements/ standard web-components and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc. Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.
 
 
-**Get started** with an [installation](install) or **dive right in** with a [Quickstart](quickstart) of Meta Intuition.
+# INTUITION.DEV development productivity features:
+
+- Any css framework, or default to BootStrap
+- Any .js framework, or our own default: ViewModel
+- Iterative development: reduce app maintenance and iteration cost via our WebAdmin editor.
+- High productivity Low-Code: similar to MS PowerApps, Oracle Visual Builder, Coda.io, Wix Corvid; but for professional developers.
+- Can leverage native custom elements/ standard web-components 
+- Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits *SEO* friendly static content(including optional AMP) to the CDN.
+- Cross Platform from single code base: Web, IOS, Android (similar to Google's Flutter, but instead leveraging Adobe's free https://Build.PhoneGap.com); but with working SEO. 
+- Built-in support for I18N 
+- A path of gradually adjusting/migrating other apps to use INTUITION.DEV tool. 
+
+## More Features:
+- 100% of our code is Open Source! What you build with the tools is your license.
+- CRUD tutorial, and example apps.
+- Built in auth, admin and adding users.
+- Built in SQL support and FTS
+- Built in file upload
+- User-admin built in.
+- Livereload of course. And browser extension to edit from www.
+- Lazy loading capable (via require() dependencies, including popular dependencies already defined)  
+- Keyboard centric (eg: F12 pulls up library of native custom elements)
+
+# Documentation
+
+[Docs](http://docs.mbake.org)
+
+[Git Repo](http://git.mbake.org)
+
+[Pug example](https://pug.mbake.org)
+
+[INTUITION.DEV Home Page](https://www.INTU.DEV)
+
+
+## Short Installation and Tutorial
+
+1. Before you run, create free [emailJs](https://www.emailjs.com) account: so that INTUITION.DEV your local accounts can be validated via email. Also create a email template, and note your emailJs `service_id`, `user_id`,  `template_id`, needed to send validation emails. Yes, user admin is built in.
+
+2. Then install the INTUITION.DEV tool:
+    ```bash
+    npm i -g intu
+    ```
+    or you can use yarn instead of npm anytime.
+
+3. In Terminal run command to create a sample CRUD app: 
+    ```
+    intu -c
+    cd CRUD
+    npm i
+    ```
+
+4. Now you should follow the README.md file there for the full tutorial.
+or
+    ```
+    node index.js
+    ```
+
+5. Setup configurations in the browser window `:9081/setup`
+   Remember your admin email and password.
+
+6. URL's
+   `:9081/admin` - to add users
+   `:9081/editors` - to edit site
+
+
+# Links
+
+[Docs](http://docs.mbake.org)
+
+[Git Repo](http://git.mbake.org)
+
+[Pug example](https://pug.mbake.org)
+
+[INTUITION.DEV Home Page](https://www.INTU.DEV)
+
+
+## *Software will eat the world: The digital revolution!*
+### We just need to make more software: better and faster.
