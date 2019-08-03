@@ -1,0 +1,9 @@
+- Any css framework, or default to BootStrap
+- Any .js framework, or our own default: ViewModel
+- Iterative development: reduce app maintenance and iteration cost via our WebAdmin editor.
+- High productivity Low-Code: similar to MS PowerApps, Oracle Visual Builder, Coda.io, Wix Corvid; but for professional developers.
+- Can leverage native custom elements/ standard web-components 
+- Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits *SEO* friendly static content(including optional AMP) to the CDN.
+- Cross Platform from single code base: Web, IOS, Android (similar to Google's Flutter, but instead leveraging Adobe's free https://Build.PhoneGap.com); but with working SEO. 
+- Built-in support for I18N 
+- A path of gradually adjusting/migrating other apps to use INTUITION.DEV tool. 
