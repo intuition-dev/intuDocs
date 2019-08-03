@@ -1,10 +1,10 @@
 <!-- $theme: gaia -->
 <!-- prerender: false -->
-<!-- footer: www.INTUITION.DEV -->
+<!-- footer: www.INTU.DEV -->
 <!-- *template: invert -->
-#  ==INTUITION.DEV==
+#  ==INTU.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -26,9 +26,9 @@ Robots will replace drivers.
 ---
 
 <!-- *template: invert -->
-#  ==INTUITION.DEV==
+#  ==INTU.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -45,10 +45,10 @@ Robots will replace drivers.
 
 Agenda/Demos:
 ### 1. Foundations Demo
-### 2. A 3 step plan
-### 3. Simple Demo
-### 4. CRUD Demo
-### 5. Advanced Demo
+####  (A 3 step plan)
+### 2. SEO Demo
+### 3. CRUD Demo
+### 4. Advanced Demo
 
 ---
 
@@ -60,17 +60,16 @@ Foundation:
 ### - CDN (Cheaper, Faster)
 
 ==DEMO== foundation (mbake CLI, css, pug, get started)
-Scrape: ( https://pug.mbake.org )
+Scrape: ( http://pug.mbake.org )
 
 ---
-Simple plan in 3 steps:
+Life 3-step-plan:
 ## #1. Build something
 ## #2. Market it
 ## #3. Profit!
 
-#### We'll skip step 1 for the moment.
+#### We'll skip step 1 for one moment.
 #### Step 2 first. Then we'll go back to step 1 - build an app.
-#### So #2, then #1 for teaching purpose only
 
 ---
 <!-- *template: invert -->
@@ -79,7 +78,7 @@ Step #2 - SEO:
 #### - We need content: We need SEO!
 ### No matter what app we build, you need SEO. (Static is a plus)
 
-==DEMO== simple ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
+==DEMO== SEO ( intu's API, make a new static page, keyboard, standard web component, SEO, call a 3rd party API, custom server api in javascript)
 
 ---
 
@@ -100,12 +99,12 @@ Promised step #1: App.
 
 ---
 
-# Web App and Mobile App is same code base.
+# *Web App and Mobile App is same code base.*
 
 ---
 
-THE END.
-## Main differentiating features of INTUITION.DEV:
+ Main features of INTUITION.DEV:
+#### - SEO
 #### - Standard Web Components
 #### - Open Source, in Pug
 #### - Keyboard (arrow up WebComps)
@@ -120,33 +119,40 @@ Almost THE END, FAQ:
 ---
 How to get Started:
 
-### Full docs are online in github, and at www.INTUITION.DEV
+### Full docs are online in github, and at www.INTU.DEV
 ### For example: `npm i -g intu`
 
 --- 
 
-### :arrow_right:: Paid($) rapid prototyping class offered, via Skype:
-> We build your projec to your spec together, that you could maintain by yourself!
-
+Paid($) rapid prototyping class offered, via Skype:
+:arrow_right: We build your project to your spec together, that you could maintain by yourself!
+Train the trainer: 
+- SEO, CDN
+- Standard custom elements w/ binding
+- CRUD & ViewModel
+- Cross platform (Mobile)
+- Maintenance and Iterative development
+- SQL and FTS
+- Lazy loading
 ---
 Did you miss anything shown? 
-### - SEO and 3 Steps (Discovery)
-### - Standard Web Components
-### - CRUD (w/ ViewModel and APIs)
-### - PhoneGap / Native is same code base
-### - Maintenance iterations reduce cost
-### - INTUITION is built in Pug language
+#### - SEO and 3 Steps (Discovery)
+#### - Standard Web Components
+#### - CRUD (w/ ViewModel and APIs)
+#### - PhoneGap / Native is same code base
+#### - Maintenance iterations reduce cost
+#### - INTUITION.DEV is built in Pug language
 ---
 
-## Software will eat the world: The digital revolution.
-### We just need to make more software: better and faster.
+> Software will eat the world: The digital revolution!
+### We just need to make more, better and faster.
 
 ---
 
 <!-- *template: invert -->
-#  ==INTUITION.DEV==
+#  ==INTU.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via low-code application development, cross-platform static-generator, and a built-in WebAdmin editor - facilitating maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
 
 
