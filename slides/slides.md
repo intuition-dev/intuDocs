@@ -60,7 +60,7 @@ Foundation:
 ### - CDN (Cheaper, Faster)
 
 ==DEMO== foundation (mbake CLI, css, pug, get started)
-Scrape: ( https://Pug.metabake.NET )
+Scrape: ( https://pug.mbake.org )
 
 ---
 Simple plan in 3 steps:
