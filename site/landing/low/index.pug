@@ -4,15 +4,51 @@ head
     script(src='/layout/ui-loader.js')
 body
 
+
+
+
     main(role='main')
         // Main jumbotron for a primary marketing message or call to action
         .jumbotron
             .container
-            h1.display-3 INTUITION.DEV
-            include /text/motto.md
-            p
-                a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
+                h1.display-3 INTUITION.DEV
+                include /text/motto.md
+                p
+                    a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
 
+                .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
+                    .col-md-6.px-0
+                        h1.display-4.font-italic Title of a SEO featured blog post
+                        p.lead.my-3 Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+                        p.lead.mb-0
+                            a.text-white.font-weight-bold(href='#') Continue reading...
+
+                .row.mb-2
+                    .col-md-6
+                        .card.flex-md-row.mb-4.box-shadow.h-md-250
+                            .card-body.d-flex.flex-column.align-items-start
+                                strong.d-inline-block.mb-2.text-primary World
+                                h3.mb-0
+                                    a.text-dark(href='#') CRUD post
+                                .mb-1.text-muted Nov 12
+                                p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+                                a(href='#') Continue reading
+                                img.card-img-right.flex-auto.d-none.d-md-block(src='https://placeimg.com/200/250/tech')
+                    .col-md-6
+                        .card
+                            .row
+                                .col-md-6
+                                    .card-body
+                                        h4.card-title Curabitur gravida vestibulum imperdiet.
+                                        p.card-text
+                                        | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.
+                                        p.card-text
+                                        | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.
+                                        a.btn.btn-primary(href='#') Read More
+                                .col-md-6
+                                    img(src='https://placeimg.com/200/250/tech')
+
+        
         .container
             // Example row of columns
             .row
