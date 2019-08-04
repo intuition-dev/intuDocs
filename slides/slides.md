@@ -21,7 +21,6 @@
 
 ---
 
-
 ###  Low-code?
 ![60% center](truck.png)
 Robots will replace drivers!
@@ -97,16 +96,17 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap )
+==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap + native custom elements)
 
 ---
 
 # *Web App and Mobile App is same code base.*
-But w/o WebAdmin user maintananace of iterations.
+But w/o WebAdmin user maintenance of iterations.
 
 ---
 
- Main features of INTUITION.DEV:
+ Pro features of INTUITION.DEV:
+- Standards Based
 - SEO
 - native custom elements/ standard web-components
 - CRUD | ViewModel

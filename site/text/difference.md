@@ -1,3 +1,4 @@
+1. Standard Based
 1. SEO
 2. native custom elements/ standard web-components
 2. CRUD | ViewModel
