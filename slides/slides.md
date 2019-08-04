@@ -9,17 +9,6 @@
 
 ---
 <!-- page_number: true -->
-<!-- *template: invert -->
-#### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
-- Coda_io
-- Wix Corvid
-- Airtable
-- Bubble
-- iCodeBetter
-- MS PowerApps
-- Oracle Visual Builder
-
----
 
 ###  Low-code?
 ![60% center](truck.png)
@@ -46,7 +35,7 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 ---
 
 Demos(/agenda):
-### 1. Foundations Demo
+### 1. Foundation Demo
 ####  (A 3 step plan)
 ### 2. SEO (S&S) Demo
 ### 3. CRUD Demo
@@ -54,14 +43,14 @@ Demos(/agenda):
 
 ---
 
-Foundation:
+Features:
 
 ## - Sass / BootStrap default
 ## - Written in: ==Pug==
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-==DEMO== foundation (mbake CLI, css, pug, -f)
+==DEMO== Foundation (mbake CLI, css, pug, -f)
 Scrape: ( http://pug.mbake.org )
 
 ---
@@ -117,10 +106,23 @@ But w/o WebAdmin user maintenance of iterations.
 
 
 ---
+
 Almost THE END, FAQ:
 #### What about .js frameworks (React, Vue, Ionic)? 
-#### - Ans: We compare to low-code, not (.js) frameworks. The list we showed earlier. 
+#### - Ans: We compare to low-code, not (.js) frameworks. 
 
+---
+
+
+<!-- *template: invert -->
+#### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
+- Coda_io
+- Wix Corvid
+- Airtable
+- Bubble
+- iCodeBetter
+- MS PowerApps
+- Oracle Visual Builder
 ---
 How to get Started:
 
