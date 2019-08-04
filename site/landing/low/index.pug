@@ -3,7 +3,21 @@ head
 
     script(src='/layout/ui-loader.js')
 body
+    .container
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') BRAND
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
 
+            #navbarText.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='#') Low-Code
+                    li.nav-item
+                        a.nav-link(href='#') Features
+                    li.nav-item
+                        a.nav-link(href='#') Showcase
+                span.navbar-text  text
 
 
 
@@ -14,14 +28,19 @@ body
                 h1.display-3 INTUITION.DEV
                 include /text/motto.md
                 p
-                    a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
+
+                p low
+                p iterations
+
+                p major diff (more)
 
                 .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
                     .col-md-6.px-0
                         h1.display-4.font-italic Title of a SEO featured blog post
-                        p.lead.my-3 Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+                        p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
                         p.lead.mb-0
                             a.text-white.font-weight-bold(href='#') Continue reading...
+
 
                 .row.mb-2
                     .col-md-6
@@ -39,7 +58,7 @@ body
                             .row
                                 .col-md-6
                                     .card-body
-                                        h4.card-title Curabitur gravida vestibulum imperdiet.
+                                        h4.card-title Mobi
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.
                                         p.card-text
@@ -49,26 +68,4 @@ body
                                     img(src='https://placeimg.com/200/250/tech')
 
         
-        .container
-            // Example row of columns
-            .row
-                .col-md-4
-                    h2 Heading
-                    p
-                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    p
-                    a.btn.btn-secondary(href='#', role='button') View details »
-                .col-md-4
-                    h2 Heading
-                    p
-                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    p
-                    a.btn.btn-secondary(href='#', role='button') View details »
-                .col-md-4
-                    h2 Heading
-                    p
-                    | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                    p
-                    a.btn.btn-secondary(href='#', role='button') View details »
-                
-            hr
+        
