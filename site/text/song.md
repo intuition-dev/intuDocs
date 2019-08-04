@@ -1,2 +1,1 @@
-'It will lead YOU
-in the right direction'
+INTUITION.DEV, 'It will LEAD you in the right direction'
