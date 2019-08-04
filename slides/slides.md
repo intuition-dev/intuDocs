@@ -126,8 +126,6 @@ How to get Started:
 
 --- 
 
-Paid($) rapid prototyping class offered, via Skype:
-:arrow_right: We build your project to your spec together, that you could maintain by yourself!
 Train the trainer: 
 - SEO
 - native custom elements/ standard web-components
@@ -137,7 +135,9 @@ Train the trainer:
 - keyboard driven (arrow up WebComps))
 - cross platform / mobile from single code base
 - Lazy loading
+
 ---
+
 Did you miss anything shown? 
 #### - SEO and 3 Steps (Discovery)
 #### - native custom elements/ standard web-components
