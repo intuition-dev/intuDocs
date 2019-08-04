@@ -20,4 +20,76 @@
 </head>
 <body>
   <p>oh hi</p>
-<!-- mB v6.08.2 on 2019-08-04T14:03:28.186Z --></body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <p>Hi</p>
+        <div class="site-list"><ol>
+<li>Any css framework, or default to BootStrap</li>
+<li>Any .js framework, or our own default: ViewModel</li>
+<li>Iterative development: reduce app maintenance and iteration cost via our WebAdmin editor.</li>
+<li>High productivity Low-Code: similar to MS PowerApps, Oracle Visual Builder, <a href="http://Coda.io">Coda.io</a>, Wix Corvid; but for professional developers.</li>
+<li>Can leverage native custom elements/ standard web-components</li>
+<li>Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits <em>SEO</em> friendly static content(including optional AMP) to the CDN.</li>
+<li>Cross Platform from single code base: Web, IOS, Android (similar to Google’s Flutter, but instead leveraging Adobe’s free <a href="https://Build.PhoneGap.com">https://Build.PhoneGap.com</a>); but with working SEO.</li>
+<li>Built-in support for I18N</li>
+<li>A path of gradually adjusting/migrating other apps to use INTUITION.DEV tool.</li>
+</ol>
+
+        </div>
+      </div>
+      <div class="col-md-5">
+        <p>Hi</p>
+        <div class="site-list"><ol>
+<li>100% of our code is Open Source! What you build with the tools is your license.</li>
+<li>CRUD tutorial, and example apps.</li>
+<li>Built in auth, admin and adding users.</li>
+<li>Built in SQL support and FTS</li>
+<li>Built in file upload</li>
+<li>User-admin built in.</li>
+<li>Live-reload of course. And browser extension to edit from www.</li>
+<li>Lazy loading capable (via require() dependencies, including popular dependencies already defined)</li>
+<li>Keyboard driven (arrow up WebComps)</li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .site-list > ol {
+        counter-reset:li; /* Initiate a counter */
+    }
+    .site-list > ol > li {
+        position:relative; /* Create a positioning context */
+        margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+        padding:4px 8px; /* Add some spacing around the content */
+        list-style:none; /* Disable the normal item numbering */
+        border-top:1px solid #666;
+        background: #f6f6f6;
+    }
+    
+    .site-list > ol > li:before {
+        /* Position and style the number */
+        position:absolute;
+    
+        content:counter(li); /* Use the counter as content */
+        counter-increment:li; /* Increment the counter by 1 */
+    
+        top:-1px;
+        left:-2em;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        width:2em;
+        padding: 4px;
+        border-top: 2px solid #666;
+        color:#fff;
+        background:#666;
+        font-weight:bold;
+        font-family:"Helvetica Neue", Arial, sans-serif;
+        text-align:center;
+    
+    }
+  </style>
+<!-- mB v6.08.2 on 2019-08-04T14:34:09.819Z --></body>
