@@ -69,13 +69,13 @@ Step #2 - SEO:
 #### - We need content: We need SEO!
 ### No matter what app we build, you need SEO. Static is not optional
 
-==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, SQL & FTS, WebAdmin, clone a new static page,  SEO)
+==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, SQL & FTS, WebAdmin, clone a new static page,  SEO, browser extension)
 
 ---
 
 Promised step #1: App!
 
-==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape, Edit ext, keyboard, standard web component)
+==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape,  keyboard, standard web component)
 
 ---
 <!-- *template: invert -->
@@ -85,7 +85,7 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap + native custom elements)
+==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap )
 
 ---
 
@@ -108,7 +108,7 @@ But w/o WebAdmin user maintenance of iterations.
 ---
 
 Almost THE END, FAQ:
-#### What about .js frameworks (React, Vue, Ionic)? 
+#### What about .js frameworks (React, Vue, Fulter, Hugo, Jekly,  Shopiffy)? 
 #### - Ans: We compare to low-code, not (.js) frameworks. 
 
 ---
@@ -144,7 +144,7 @@ Train the trainer:
 ---
 
 Did you miss anything shown? 
-#### - Scrape to Pug
+#### - Start: Scrape to Pug
 #### - SEO and 3 Steps (Discovery)
 #### - native custom elements/ standard web-components
 #### - CRUD (w/ ViewModel and APIs)
