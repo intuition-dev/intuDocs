@@ -108,7 +108,7 @@ But w/o WebAdmin user maintenance of iterations.
 ---
 
 Almost THE END, FAQ:
-#### What about .js frameworks (React, Vue, Fulter, Hugo, Jekly,  Shopiffy)? 
+#### What about .js frameworks (React, Vue, Flutter, goHugo, Jekyll,  Shopiy)? 
 #### - Ans: We compare to low-code, not (.js) frameworks. 
 
 ---
