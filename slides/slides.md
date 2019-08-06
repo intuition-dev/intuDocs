@@ -113,7 +113,6 @@ Almost THE END, FAQ:
 
 ---
 
-
 <!-- *template: invert -->
 #### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
 - Coda_io
@@ -137,7 +136,7 @@ Train the trainer:
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
-- keyboard driven (arrow up WebComps))
+- keyboard driven (F12 WebComps))
 - cross platform / mobile from single code base
 - Lazy loading
 
