@@ -37,7 +37,7 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 Demos(/agenda):
 ### 1. Foundation Demo
 ####  (A 3 step plan)
-### 2. SEO (S&S) Demo
+### 2. SEO Demo
 ### 3. CRUD Demo
 ### 4. Advanced (Mobile) Demo
 
