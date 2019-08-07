@@ -39,7 +39,7 @@ body
                             img(src="iterative_4.png").rounded.m-2
                             img(src="iterative_5.png").rounded.m-2
         //- 2 skate iterations
-        .container
+        .container.pb-5
             .jumbotron.bg-light.p-0
                 .row.align-items-center
                     .col-md-12
@@ -68,37 +68,31 @@ body
 
             .row.mb-2
                     .col-md-6
-                        .card.flex-md-row.mb-4.box-shadow.h-md-250
-                            .row.no-gutters.overflow-hidden
-                                .col-md-8
-                                    .card-body.d-flex.flex-column.align-items-start
-                                        strong.d-inline-block.mb-2.text-primary World
-                                        h3.mb-0
-                                            a.text-dark(href='#') CRUD post
-                                        .mb-1.text-muted Nov 12
-                                        p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-                                        a(href='#') Continue reading
-                                .col-md-4
-                                    img.card-img-right(src='https://placeimg.com/200/250/tech')
-                    .col-md-6
                         .card
-                            .row.no-gutters.overflow-hidden
+                            .row.no-gutters
                                 .col-md-8
                                     .card-body
-                                        h4.card-title Mobi
+                                        h4.card-title
+                                            a.text-dark(href='#') Basic CRUD application
+                                        p.card-text.mb-auto Building  a simple CRUD application with Intu
+                                        a.btn.btn-primary(href='#').mt-3 Read More
+                                .col-md-4
+                                    img.card-img-right(src='https://placeimg.com/200/250/tech').img-fluid
+                    .col-md-6
+                        .card
+                            .row.no-gutters
+                                .col-md-8
+                                    .card-body
+                                        h4.card-title E-commerce app
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.
-                                        a.btn.btn-primary(href='#') Read More
+                                        a.btn.btn-primary(href='#').mt-3 Read More
                                 .col-md-4
-                                    img(src='https://placeimg.com/200/250/tech')
-    footer.bg-dark.mt-3.text-white
-        .container
-            .py-5.d-flex.justify-content-between.mt-5
-                .copyright.font-weight-light &#169; 2019 
-                    span.d-inline-block.pl-1 Intuition
-                a.font-weight-light.text-secondary(href='//github.com/intuition-dev') Github
+                                    img(src='https://placeimg.com/200/250/tech').img-fluid
+    include /includes/footer
+    
     style.
         .display-5 {
             font-size: 3rem;
