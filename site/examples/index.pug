@@ -7,39 +7,26 @@ body
    .container
       include /includes/navbar
 
-      section.l-section-inner-intro
-         div
-            div
-               h3 Examples
-               
-      section.l-section-full-height
-         .container.l-container
-            .columns
-               .column.col-11.col-mx-auto.col-xs-12
-                     .c-header
-                        h4.mb-0 Things that you can build with mbake 
-                        p.sub-header to check the options, mbake or mbakeX in your terminal
-                     .l-showcase
-                        each val in showcase
-                           .l-showcase--item
-                              a(href=val.link, target="_blank")
-                                 .l-showcase--item--img(style="background-image:url("+val.img+")")
-                              .l-showcase--item--header
-                                 .l-showcase--item--title=val.title
-                                 if val.command.length
-                                    .l-showcase--item--command.tooltip(data-tooltip="click to copy", data-copy=val.command)=val.command
-                              .l-showcase--item--desc=val.desc
-
-   //- section.l-comming-soon
-   //-    .container.l-container
-   //-       .columns
-   //-          .column.col-10.col-mx-auto.col-xs-12
-   //-                .c-header
-   //-                   h2 Comming Soon...
+      .container.jumbotron
+         .row
+            .col-md-12
+                  div.text-center
+                     h3.mb-0 Things that you can build with Intuition 
+                     p.sub-header mbake or mbake-x for more info in your terminal
+                  .l-showcase
+                     each val in showcase
+                        .l-showcase--item
+                           a(href=val.link, target="_blank")
+                              .l-showcase--item--img(style="background-image:url("+val.img+")")
+                           .l-showcase--item--header
+                              .l-showcase--item--title=val.title
+                              if val.command.length
+                                 .l-showcase--item--command.tooltip(data-tooltip="click to copy", data-copy=val.command)=val.command
+                           .l-showcase--item--desc=val.desc
 
    script.
       // copy text to clipboard
-      depp.require('pre', Run)
+      depp.require('jquery', Run)
 
       function Run(){
          $('[data-copy]').off('click').on('click', function (ev) {
