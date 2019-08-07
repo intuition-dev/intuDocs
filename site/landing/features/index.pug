@@ -6,7 +6,7 @@ body
     .container
         include /includes/navbar
 
-    .container
+    .container.jumbotron
         .row
             .col-md-5
                 .feat-list
@@ -15,6 +15,7 @@ body
             .col-md-5
                 .feat-list
                     include:metaMD /text/features2.md
+    include /includes/footer
 
 
     style.
@@ -29,7 +30,7 @@ body
             margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
             padding:4px 8px; /* Add some spacing around the content */
             padding-left: 4px;
-            border-top:2px solid #666;
+            border-top:1px solid #979797;
             background: #f6f6f6;
             min-height: 50px;
         }
@@ -41,12 +42,12 @@ body
             content:counter(lic); /* Use the counter as content */
 
             top:-6px;
-            left:-68px;
-            width:2em;
+            left:-44px;
+            width:2rem;
           
             text-align:center;
             color:#999;
             
-            font: italic 38px/1.5 "Helvetica Neue", Arial, sans-serif;
+            font: italic 28px/1.5 "Helvetica Neue", Arial, sans-serif;
         }
 

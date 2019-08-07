@@ -8,17 +8,15 @@ body
 
     main(role='main')
         // Main jumbotron for a primary marketing message or call to action
-        .jumbotron
+        .jumbotron.m-0
             .container
                 h1.display-3 INTUITION.DEV
                 p
                     include /text/motto.md
-        .jumbotron.bg-light
+        .jumbotron.bg-light.hero-image.py-7
             .container
                 .row.align-items-center
-                    .col-md-4
-                        img(src="truck.png").rounded.img-fluid
-                    .col-md-7.offset-md-1
+                    .col-md-12.text-center
                         div.text-secondary Low-code
                         p.display-5 Robots will replace drivers! 
                         p And programmers, unless we programmers use automation: low-code generator
@@ -31,39 +29,25 @@ body
                         p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
                         p.display-5 What if users could maintain and build next version?
                         p INTUITION.DEV is built in Pug language
-                    .col-md-4
-                        div.d-flex.flex-wrap.justify-content-center.rounded.iterations
-                            img(src="iterative_1.png").rounded.m-2
-                            img(src="iterative_2.png").rounded.m-2
-                            img(src="iterative_3.png").rounded.m-2
-                            img(src="iterative_4.png").rounded.m-2
-                            img(src="iterative_5.png").rounded.m-2
+                        img(src="iterative.png").rounded.mt-2
         //- 2 skate iterations
         .container.pb-5
             .jumbotron.bg-light.p-0
                 .row.align-items-center
-                    .col-md-12
+                    .col-md-6
                         div.display-6.text-secondary Differences
                         div.mb-3.mt-3
                             div.lead.d-flex.flex-column
-                                div.mr-3
-                                    i.fa.fa-check.text-secondary.mr-2
-                                    span Standard Based
-                                div.mr-3
-                                    i.fa.fa-check.text-secondary.mr-2
-                                    span SEO
-                                div.mr-3
-                                    i.fa.fa-check.text-secondary.mr-2 
-                                    span Native custom elements
-                            div.text-center
-                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/diff") More
+                                include:metaMD /text/difference.md
+                            div.text-right
+                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/landing/features") More
 
             .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
                 .col-md-10.px-0
                     h1.display-4.font-italic No matter what app we build, you need SEO. Static is not optional
                     p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
                     p.lead.mb-0
-                        a.text-white.font-weight-bold(href='#') Continue reading...
+                        a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank') Continue reading...
 
 
             .row.mb-2
@@ -73,9 +57,9 @@ body
                                 .col-md-8
                                     .card-body
                                         h4.card-title
-                                            a.text-dark(href='#') Basic CRUD application
+                                            a.text-dark(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank') Basic CRUD application
                                         p.card-text.mb-auto Building  a simple CRUD application with Intu
-                                        a.btn.btn-primary(href='#').mt-3 Read More
+                                        a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank').mt-3 Read More
                                 .col-md-4
                                     img.card-img-right(src='https://placeimg.com/200/250/tech').img-fluid
                     .col-md-6
@@ -83,12 +67,12 @@ body
                             .row.no-gutters
                                 .col-md-8
                                     .card-body
-                                        h4.card-title E-commerce app
+                                        h4.card-title Mobile
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.
-                                        a.btn.btn-primary(href='#').mt-3 Read More
+                                        a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/mobile', target='_blank').mt-3 Read More
                                 .col-md-4
                                     img(src='https://placeimg.com/200/250/tech').img-fluid
     include /includes/footer
@@ -103,4 +87,29 @@ body
             padding: 10px;
             box-shadow: 0 0 1px grey;
             background: white;
+        }
+        .hero-image {
+            background-image: url(truck.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 10rem 2rem;
+            color: white;
+            position: relative;
+        }
+        .hero-image > .container {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-image:after {
+            content: '';
+            position: absolute;
+            background: rgba(0,0,0,.6);
+            width: 100%;
+            height: 100%;
+            display: block;
+            top: 0;
+            left:0;
+            z-index: 0;
         }
