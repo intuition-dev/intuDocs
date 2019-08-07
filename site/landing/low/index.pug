@@ -32,7 +32,7 @@ body
                         p.display-5 What if users could maintain and build next version?
                         p INTUITION.DEV is built in Pug language
                     .col-md-4
-                        div.d-flex.flex-wrap.justify-content-center
+                        div.d-flex.flex-wrap.justify-content-center.rounded.iterations
                             img(src="iterative_1.png").rounded.m-2
                             img(src="iterative_2.png").rounded.m-2
                             img(src="iterative_3.png").rounded.m-2
@@ -59,8 +59,8 @@ body
                                 a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/diff") More
 
             .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
-                .col-md-6.px-0
-                    h1.display-4.font-italic Title of a SEO featured blog post
+                .col-md-10.px-0
+                    h1.display-4.font-italic No matter what app we build, you need SEO. Static is not optional
                     p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
                     p.lead.mb-0
                         a.text-white.font-weight-bold(href='#') Continue reading...
@@ -69,18 +69,21 @@ body
             .row.mb-2
                     .col-md-6
                         .card.flex-md-row.mb-4.box-shadow.h-md-250
-                            .card-body.d-flex.flex-column.align-items-start
-                                strong.d-inline-block.mb-2.text-primary World
-                                h3.mb-0
-                                    a.text-dark(href='#') CRUD post
-                                .mb-1.text-muted Nov 12
-                                p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
-                                a(href='#') Continue reading
-                                img.card-img-right.flex-auto.d-none.d-md-block(src='https://placeimg.com/200/250/tech')
+                            .row.no-gutters.overflow-hidden
+                                .col-md-8
+                                    .card-body.d-flex.flex-column.align-items-start
+                                        strong.d-inline-block.mb-2.text-primary World
+                                        h3.mb-0
+                                            a.text-dark(href='#') CRUD post
+                                        .mb-1.text-muted Nov 12
+                                        p.card-text.mb-auto This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        a(href='#') Continue reading
+                                .col-md-4
+                                    img.card-img-right(src='https://placeimg.com/200/250/tech')
                     .col-md-6
                         .card
-                            .row
-                                .col-md-6
+                            .row.no-gutters.overflow-hidden
+                                .col-md-8
                                     .card-body
                                         h4.card-title Mobi
                                         p.card-text
@@ -88,10 +91,22 @@ body
                                         p.card-text
                                         | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.
                                         a.btn.btn-primary(href='#') Read More
-                                .col-md-6
+                                .col-md-4
                                     img(src='https://placeimg.com/200/250/tech')
+    footer.bg-dark.mt-3.text-white
+        .container
+            .py-5.d-flex.justify-content-between.mt-5
+                .copyright.font-weight-light &#169; 2019 
+                    span.d-inline-block.pl-1 Intuition
+                a.font-weight-light.text-secondary(href='//github.com/intuition-dev') Github
     style.
         .display-5 {
             font-size: 3rem;
             line-height: 1.3;
+        }
+        .iterations {
+            border: 1px solid white;
+            padding: 10px;
+            box-shadow: 0 0 1px grey;
+            background: white;
         }
