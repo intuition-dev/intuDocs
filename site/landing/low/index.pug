@@ -4,49 +4,69 @@ head
     script(src='/layout/ui-loader.js')
 body
     .container
-        nav.navbar.navbar-expand-lg.navbar-light.bg-light
-            a.navbar-brand(href='#') BRAND
-            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarText', aria-controls='navbarText', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-
-            #navbarText.collapse.navbar-collapse
-                ul.navbar-nav.mr-auto
-                    li.nav-item.active
-                        a.nav-link(href='#') Low-Code
-                    li.nav-item
-                        a.nav-link(href='#') Features
-                    li.nav-item
-                        a.nav-link(href='#') Examples
-                    li.nav-item
-                        a.nav-link(href='#') Docs
-                    li.nav-item
-                        a.nav-link(href='#') Blog
-                span.navbar-text  text
-
-
+        include /includes/navbar
 
     main(role='main')
         // Main jumbotron for a primary marketing message or call to action
         .jumbotron
             .container
                 h1.display-3 INTUITION.DEV
-                include /text/motto.md
                 p
+                    include /text/motto.md
+        .jumbotron.bg-light
+            .container
+                .row.align-items-center
+                    .col-md-4
+                        img(src="truck.png").rounded.img-fluid
+                    .col-md-7.offset-md-1
+                        div.text-secondary Low-code
+                        p.display-5 Robots will replace drivers! 
+                        p And programmers, unless we programmers use automation: low-code generator
 
-                p 1 truck low
-                p 2 skate iterations
+        .jumbotron
+            .container
+                .row.px-0.align-items-center
+                    .col-md-8
+                        div.text-secondary Iterations
+                        p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
+                        p.display-5 What if users could maintain and build next version?
+                        p INTUITION.DEV is built in Pug language
+                    .col-md-4
+                        div.d-flex.flex-wrap.justify-content-center
+                            img(src="iterative_1.png").rounded.m-2
+                            img(src="iterative_2.png").rounded.m-2
+                            img(src="iterative_3.png").rounded.m-2
+                            img(src="iterative_4.png").rounded.m-2
+                            img(src="iterative_5.png").rounded.m-2
+        //- 2 skate iterations
+        .container
+            .jumbotron.bg-light.p-0
+                .row.align-items-center
+                    .col-md-12
+                        div.display-6.text-secondary Differences
+                        div.mb-3.mt-3
+                            div.lead.d-flex.flex-column
+                                div.mr-3
+                                    i.fa.fa-check.text-secondary.mr-2
+                                    span Standard Based
+                                div.mr-3
+                                    i.fa.fa-check.text-secondary.mr-2
+                                    span SEO
+                                div.mr-3
+                                    i.fa.fa-check.text-secondary.mr-2 
+                                    span Native custom elements
+                            div.text-center
+                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/diff") More
 
-                p 3 major diff shrot list - more long list (landing)
-
-                .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
-                    .col-md-6.px-0
-                        h1.display-4.font-italic Title of a SEO featured blog post
-                        p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
-                        p.lead.mb-0
-                            a.text-white.font-weight-bold(href='#') Continue reading...
+            .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
+                .col-md-6.px-0
+                    h1.display-4.font-italic Title of a SEO featured blog post
+                    p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+                    p.lead.mb-0
+                        a.text-white.font-weight-bold(href='#') Continue reading...
 
 
-                .row.mb-2
+            .row.mb-2
                     .col-md-6
                         .card.flex-md-row.mb-4.box-shadow.h-md-250
                             .card-body.d-flex.flex-column.align-items-start
@@ -70,6 +90,8 @@ body
                                         a.btn.btn-primary(href='#') Read More
                                 .col-md-6
                                     img(src='https://placeimg.com/200/250/tech')
-
-        
-        
+    style.
+        .display-5 {
+            font-size: 3rem;
+            line-height: 1.3;
+        }

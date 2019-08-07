@@ -3,18 +3,16 @@ head
 
     script(src='/layout/ui-loader.js')
 body
-
-    p oh hi
+    .container
+        include /includes/navbar
 
     .container
         .row
             .col-md-5
-                p Hi
                 .feat-list
                     include:metaMD /text/features1.md
 
             .col-md-5
-                p Hi2
                 .feat-list
                     include:metaMD /text/features2.md
 

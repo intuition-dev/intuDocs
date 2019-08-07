@@ -1,5 +1,5 @@
 
-depp.require(['FontsLoaded','bsDefaultStyle', 'DOM'], function() {
-   console.log('ready',  Date.now() - _start)
-}) 
+depp.require(['FontsLoaded', 'bsDefaultStyle', 'DOM', 'font-awesome'], function () {
+   console.log('ready', Date.now() - _start)
+})
 

@@ -1,0 +1,23 @@
+head
+    include /layout/headFrag
+
+    script(src='/layout/ui-loader.js')
+body
+    .container
+        include /includes/navbar
+
+    main(role='main')
+        // Main jumbotron for a primary marketing message or call to action
+        .jumbotron.bg-light
+            .container
+                .row.align-items-center
+                    .col-md-12
+                        div.text-secondary Differences
+                        p.display-5 What makes Intuition unique
+                        include:metaMD /text/difference.md
+
+    style.
+        .display-5 {
+            font-size: 3rem;
+            line-height: 1.3;
+        }
