@@ -65,8 +65,8 @@ Demo 2: 3-step-plan:
 ---
 <!-- *template: invert -->
 Step #2 - SEO:
-#### - Customers coming in, customers
-#### - We need content: We need SEO!
+#### - Customers coming in
+#### - We need SEO!
 ### No matter what app we build, you need SEO. Static is not optional
 
 ==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, SQL & FTS, WebAdmin, clone a new static page,  SEO, browser extension)
