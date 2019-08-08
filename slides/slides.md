@@ -43,7 +43,7 @@ Demos(/agenda):
 
 ---
 
-Features:
+Foundtion:
 
 ## - Sass / BootStrap default
 ## - Written in: ==Pug==
@@ -69,7 +69,7 @@ Step #2 - SEO:
 #### - We need SEO!
 ### No matter what app we build, you need SEO. Static is not optional
 
-==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, SQL & FTS, WebAdmin, clone a new static page,  SEO, browser extension)
+==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, WebAdmin, clone a new static page,  SEO, browser extension)
 
 ---
 
