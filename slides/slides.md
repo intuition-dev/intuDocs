@@ -166,6 +166,8 @@ Did you miss anything shown?
 ### We just need to make more, better and faster.
 INTUITION.DEV, 'It will LEAD you in the right direction'
 
+#### Please star our main project here:
+- https://github.com/intuition-dev/INTUITION
 ---
 
 <!-- *template: invert -->
