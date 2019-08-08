@@ -73,6 +73,11 @@ Step #2 - SEO:
 
 ---
 
+SEO
+![](webm.png)
+
+---
+
 Promised step #1: App!
 
 ==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape)
@@ -122,7 +127,13 @@ Almost THE END, FAQ:
 - iCodeBetter
 - MS PowerApps
 - Oracle Visual Builder
+
 ---
+Low Code
+![](low.png)
+
+---
+
 How to get Started:
 
 ### Full docs are online in github, and at www.INTU.DEV
