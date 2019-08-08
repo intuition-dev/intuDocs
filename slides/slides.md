@@ -50,8 +50,8 @@ Features:
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-==DEMO== Foundation (mbake CLI, css, pug, -f)
-Scrape: ( http://pug.mbake.org )
+==DEMO== Foundation (mbake CLI, css, pug)
+
 
 ---
 Demo 2: 3-step-plan:
@@ -75,7 +75,8 @@ Step #2 - SEO:
 
 Promised step #1: App!
 
-==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape,  keyboard, standard web component)
+==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape)
+Scrape: ( http://pug.mbake.org )
 
 ---
 <!-- *template: invert -->
@@ -85,17 +86,16 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap )
+==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap, Android, Components )
 
 ---
 
 # *Web App and Mobile App is same code base.*
-But w/o WebAdmin user maintenance of iterations.
 
 ---
 
  Pro features of INTUITION.DEV:
-- Standards Based
+- Standards Based / Pug
 - SEO
 - native custom elements/ standard web-components
 - CRUD | ViewModel
@@ -108,7 +108,7 @@ But w/o WebAdmin user maintenance of iterations.
 ---
 
 Almost THE END, FAQ:
-#### What about .js frameworks (React, Vue, Flutter, goHugo, Jekyll,  Shopiy)? 
+#### What about .js frameworks (React / Vue, Flutter/Ionic, goHugo/Jekyll, WP/ Shopify)? 
 #### - Ans: We compare to low-code, not (.js) frameworks. 
 
 ---
