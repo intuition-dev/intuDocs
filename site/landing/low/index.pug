@@ -6,47 +6,52 @@ body
     .container
         include /includes/navbar
 
-    main(role='main')
+    main(role='main').main-bg
         // Main jumbotron for a primary marketing message or call to action
-        .jumbotron.m-0
+        .jumbotron.m-0.section-padding.text-center.bg-transparent
             .container
-                h1.display-3 INTUITION.DEV
-                p
-                    include /text/motto.md
+                .row
+                    .col-md-8.offset-md-2
+                        h1.display-4.intu-title INTUITION.DEV
+                        p
+                            include:metaMD /text/motto.md
         .jumbotron.bg-light.hero-image.py-7
             .container
                 .row.align-items-center
-                    .col-md-12.text-center
-                        p.display-4 Robots will replace drivers! 
-                        hr
-                        p And programmers, unless we programmers use automation: low-code generator
+                    .col-md-12.text-center.robots-replace.text-uppercase
+                        p ROBOTS WILL REPLACE DRIVERS!
+                        p AND 
+                            span.display-3 PROGRAMMERS
+                        p unless we programmers use automation low-code generator
 
-        .jumbotron
+        .jumbotron.section-padding.bg-white
             .container
-                .row.px-0.align-items-center
+                .row.px-0.align-items-center.text-center
                     .col-md-12
-                        div.text-secondary Iterations
+                        p.display-6 What if users could maintain and build next version?
                         p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
-                        p.display-5 What if users could maintain and build next version?
                         p INTUITION.DEV is built in Pug language
-                        img(src="iterative.png").rounded.mt-2.img-fluid
+                        img(src="iterative.png").rounded.mt-3.img-fluid
         //- 2 skate iterations
         .container.pb-5
-            .jumbotron.bg-light.p-0
+            .jumbotron.bg-light.py-3
                 .row.align-items-center
-                    .col-md-6
-                        div.display-6.text-secondary Differences
+                    .col-md-12
+                        div.text-center
+                            p.display-6 What makes INTUITION stand
                         div.mb-3.mt-3
-                            div.lead.d-flex.flex-column
+                            div.d-flex.flex-column.custom-list
                                 include:metaMD /text/difference.md
                             div.text-right
-                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/landing/features") More
+                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/landing/features") More...
+                    .col-md-12.text-center
+                        include:metaMD  /text/approach.md
 
             .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
                 .col-md-10.px-0
-                    h1.display-4.font-italic No matter what app we build, you need SEO. Static is not optional
-                    p.lead.my-3 Low Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
-                    p.lead.mb-0
+                    h1.display-5.font-italic No matter what app we build, you need SEO. Static is not optional
+                    p.lead.my-3 SEO helps to boost your revenue by increasing the number of traffic to your website and by increasing sales.
+                    p.mb-0
                         a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank') Continue reading...
 
 
@@ -58,7 +63,7 @@ body
                                     .card-body
                                         h4.card-title
                                             a.text-dark(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank') Basic CRUD application
-                                        p.card-text.mb-auto Building  a simple CRUD application with Intu
+                                        p.card-text.mb-auto Building  a simple CRUD application with INTU
                                         a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank').mt-3 Read More
                                 .col-md-4.col-xs-12
                                     img.card-img-right(src='https://placeimg.com/200/250/tech').img-fluid.mx-auto.d-block
@@ -67,20 +72,29 @@ body
                             .row.no-gutters
                                 .col-md-8
                                     .card-body
-                                        h4.card-title Mobile
-                                        p.card-text
-                                            | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.
-                                        p.card-text.mb-auto
-                                            | Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.
+                                        h4.card-title Mobile App
+                                        p.card-text PhoneGap
                                         a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/mobile', target='_blank').mt-3 Read More
                                 .col-md-4.col-xs-12
                                     img(src='https://placeimg.com/200/250/tech').img-fluid.mx-auto.d-block
     include /includes/footer
     
     style.
+        .intu-title {
+            text-shadow: 1px 1px 0px #ffffff;
+            color: rgba(0, 0, 0, 0.74);
+        }
+        .section-padding {
+            padding: 6rem 2rem;
+        }
         .display-5 {
             font-size: 3rem;
             line-height: 1.3;
+        }
+        .display-6 {
+            font-size: 2.5rem;
+            line-height: 1.3;
+
         }
         .iterations {
             border: 1px solid white;
@@ -89,27 +103,65 @@ body
             background: white;
         }
         .hero-image {
-            background-image: url(truck.png);
+            background-image: url(truck_3.jpg);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: bottom;
             background-size: cover;
             margin: 0;
-            padding: 10rem 2rem;
+            padding: 16rem 2rem;
             color: white;
             position: relative;
+            border-radius: 0;
         }
         .hero-image > .container {
             position: relative;
             z-index: 1;
         }
-        .hero-image:after {
+        .robots-replace p{
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 6px #000101, 0 0 26px #1b3458;
+        }
+        
+        .robots-replace:after {
             content: '';
             position: absolute;
-            background: rgba(0,0,0,.6);
             width: 100%;
             height: 100%;
             display: block;
             top: 0;
             left:0;
             z-index: 0;
+        }
+
+        .main-bg > div {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .main-bg:after {
+            content: '';
+            position: absolute;
+            background: #f2f2f2;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            display: block;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .custom-list ul{
+            padding: 3rem 0;
+            list-style: none;
+            margin: 0;
+            column-count: 2;
+            column-gap: 4rem;
+            column-rule: 1px solid #cfcfcf;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .custom-list ul li {
+            line-height: 2;
         }

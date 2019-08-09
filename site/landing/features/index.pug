@@ -6,17 +6,21 @@ body
     .container
         include /includes/navbar
 
-    .container.jumbotron
+    .container.py-3
         .row
             .col-md-12.text-center
                 h3.mb-3.pb-3 Features
-            .col-md-5
-                .feat-list
-                    include:metaMD /text/features1.md
+            .col-md-10.offset-md-1.text-center
+                include:metaMD /text/easy.md
+            .col-md-12.pt-3
+                .row
+                    .col-md-5
+                        .feat-list
+                            include:metaMD /text/features1.md
 
-            .col-md-5
-                .feat-list
-                    include:metaMD /text/features2.md
+                    .col-md-5.offset-md-1
+                        .feat-list
+                            include:metaMD /text/features2.md
     include /includes/footer
 
 
@@ -32,8 +36,6 @@ body
             margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
             padding:4px 8px; /* Add some spacing around the content */
             padding-left: 4px;
-            border-top:1px solid #979797;
-            background: #f6f6f6;
             min-height: 50px;
         }
         ol > li:before {
@@ -43,13 +45,16 @@ body
             counter-increment:lic; /* Increment the counter by 1 */
             content:counter(lic); /* Use the counter as content */
 
-            top:-6px;
+            top:8px;
             left:-44px;
             width:2rem;
           
             text-align:center;
-            color:#999;
+            color:#fff;
             
-            font: italic 28px/1.5 "Helvetica Neue", Arial, sans-serif;
+            font: normal 18px/1.5 "Helvetica Neue", Arial, sans-serif;
+            background: #343a40;
+            border-radius: 4px;
+            font-weight: 300;
         }
 

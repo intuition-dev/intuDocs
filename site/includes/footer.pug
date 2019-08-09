@@ -1,8 +1,13 @@
 footer.bg-dark
    .container.mt-3
       div.py-5
-            a.h5(href="/").text-white INTUITION.DEV
-            div.font-italic.text-white It will LEAD you in the right direction
+         .row
+            .col-md-6
+               a.h5(href="/").text-white INTUITION.DEV
+               div.font-italic.text-white It will LEAD you in the right direction
+            .col-md-6
+               div.text-white.star-it
+                  include:metaMD /text/star.md
    .bg-very-dark
       .container
             .p-2.d-flex.justify-content-between.text-secondary
@@ -12,4 +17,9 @@ footer.bg-dark
    style.
         .bg-very-dark {
            background: #2a2f33;
+        }
+        .star-it a {
+           color: white;
+           display: block;
+           font-size: 14px;
         }

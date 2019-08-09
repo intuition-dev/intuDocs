@@ -20,7 +20,7 @@
 </head>
 <body>
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="/">INTUITION.DEV</a>
+    <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/">INTUITION.DEV</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
@@ -28,18 +28,24 @@
           <li class="nav-item"><a class="nav-link" href="/landing/features/">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="/examples">Examples</a></li>
           <li class="nav-item"><a class="nav-link" href="https://intuition-dev.github.io/IntuitionDocs/#/" target="_blank">Docs</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://blog.metabake.org/" target="_blank">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://blog.metabake.net/" target="_blank">Blog</a></li>
         </ul><a class="navbar-text" href="//github.com/intuition-dev" target="_blank"><i class="fa fa-github"></i></a>
       </div>
     </nav>
   </div>
-  <div class="container jumbotron">
+  <div class="container py-3">
     <div class="row">
       <div class="col-md-12 text-center">
         <h3 class="mb-3 pb-3">Features</h3>
       </div>
-      <div class="col-md-5">
-        <div class="feat-list"><ol>
+      <div class="col-md-10 offset-md-1 text-center"><p>In WebAdmin, you can edit screen app or content using markdown or pug - which won’t let you pages become broken. It also can leverage native custom elements/ standard web-components and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc.</p>
+<p>Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  If you need to catch up, we recommend this book: ‘Design and Build Websites’ by Jon Duckett.</p>
+
+      </div>
+      <div class="col-md-12 pt-3">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="feat-list"><ol>
 <li>Any css framework, or default to BootStrap</li>
 <li>Any .js framework, or our own default: ViewModel</li>
 <li>Iterative development: reduce app maintenance and iteration cost via our WebAdmin editor.</li>
@@ -50,10 +56,10 @@
 <li>Built-in support for I18N</li>
 </ol>
 
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="feat-list"><ol>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="feat-list"><ol>
 <li>100% of our code is Open Source! What you build with the tools is your license.</li>
 <li>CRUD tutorial, and example apps.</li>
 <li>Built in auth, admin and adding users.</li>
@@ -66,14 +72,26 @@
 <li>Keyboard driven (arrow up WebComps)</li>
 </ol>
 
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <footer class="bg-dark">
     <div class="container mt-3">
-      <div class="py-5"><a class="h5 text-white" href="/">INTUITION.DEV</a>
-        <div class="font-italic text-white">It will LEAD you in the right direction</div>
+      <div class="py-5">
+        <div class="row">
+          <div class="col-md-6"><a class="h5 text-white" href="/">INTUITION.DEV</a>
+            <div class="font-italic text-white">It will LEAD you in the right direction</div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-white star-it"><p>Please star our main project here:
+<a href="https://github.com/intuition-dev/INTUITION">https://github.com/intuition-dev/INTUITION</a></p>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="bg-very-dark">
@@ -86,6 +104,11 @@
     <style>
       .bg-very-dark {
          background: #2a2f33;
+      }
+      .star-it a {
+         color: white;
+         display: block;
+         font-size: 14px;
       }
     </style>
   </footer>
@@ -101,8 +124,6 @@
         margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
         padding:4px 8px; /* Add some spacing around the content */
         padding-left: 4px;
-        border-top:1px solid #979797;
-        background: #f6f6f6;
         min-height: 50px;
     }
     ol > li:before {
@@ -112,14 +133,17 @@
         counter-increment:lic; /* Increment the counter by 1 */
         content:counter(lic); /* Use the counter as content */
     
-        top:-6px;
+        top:8px;
         left:-44px;
         width:2rem;
       
         text-align:center;
-        color:#999;
+        color:#fff;
         
-        font: italic 28px/1.5 "Helvetica Neue", Arial, sans-serif;
+        font: normal 18px/1.5 "Helvetica Neue", Arial, sans-serif;
+        background: #343a40;
+        border-radius: 4px;
+        font-weight: 300;
     }
   </style>
-<!-- mB v6.08.2 on 2019-08-07T18:54:01.421Z --></body>
+<!-- mB v6.08.2 on 2019-08-09T11:55:36.478Z --></body>
