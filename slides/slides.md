@@ -12,8 +12,8 @@
 
 ###  Low-code?
 ![60% center](truck.png)
-Robots will replace drivers!
-#### And programmers; unless we programmers use automation: low-code generator.
+What will the future of professional development look like?
+#### AWe developers will likey use automation and low-code generator.
 
 ---
 

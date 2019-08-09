@@ -1,4 +1,4 @@
-* Standard Based
+* Standards Based / Pug
 * SEO
 * native custom elements/ standard web-components
 * CRUD | ViewModel

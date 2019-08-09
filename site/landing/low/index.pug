@@ -1,52 +1,54 @@
 head
     include /layout/headFrag
 
-    script(src='/layout/ui-loader.js')
 body
+    script(src='/layout/ui-loader.js')
     .container
         include /includes/navbar
 
-    main(role='main').main-bg
-        // Main jumbotron for a primary marketing message or call to action
-        .jumbotron.m-0.section-padding.text-center.bg-transparent
-            .container
-                .row
-                    .col-md-8.offset-md-2
-                        h1.display-4.intu-title INTUITION.DEV
-                        p
-                            include:metaMD /text/motto.md
-        .jumbotron.bg-light.hero-image.py-7
+    main(role='main')
+        .jumbotron.hero-image
             .container
                 .row.align-items-center
-                    .col-md-12.text-center.robots-replace.text-uppercase
-                        p ROBOTS WILL REPLACE DRIVERS!
-                        p AND 
-                            span.display-3 PROGRAMMERS
-                        p unless we programmers use automation low-code generator
-
+                    .col-md-12.text-center.robots-replace
+                        h1 What will the future of professional development look like?
+                        h2
+                            include:metaMD /text/motto.md
+                        h3 We developers will likely use automation and low-code generator.
+        p
+        br
+        .container
+            .col-md-12
+                p
+                include:metaMD  /text/approach.md
+                p
+                hr
+                p
+ 
         .jumbotron.section-padding.bg-white
             .container
                 .row.px-0.align-items-center.text-center
                     .col-md-12
-                        p.display-6 What if users could maintain and build next version?
+                        p.display-6 What if users could maintain and build next versions?
                         p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
-                        p INTUITION.DEV is built in Pug language
                         img(src="iterative.png").rounded.mt-3.img-fluid
+
+            .col-md-12.text-center
+                hr
+                include:metaMD  /text/easy.md
+
         //- 2 skate iterations
         .container.pb-5
             .jumbotron.bg-light.py-3
                 .row.align-items-center
                     .col-md-12
                         div.text-center
-                            p.display-6 What makes INTUITION stand
+                            p.display-6 What makes INTUITION.DEV different?
                         div.mb-3.mt-3
                             div.d-flex.flex-column.custom-list
                                 include:metaMD /text/difference.md
                             div.text-left
                                 a.text-lowercase.font-weight-light.btn.btn-primary(href="/landing/features").mt-3 More...
-                    .col-md-12.text-center
-                        hr
-                        include:metaMD  /text/approach.md
 
             .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
                 .col-md-10.px-0
