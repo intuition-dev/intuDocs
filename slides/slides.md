@@ -13,7 +13,7 @@
 ###  Low-code?
 ![60% center](truck.png)
 What will the future of professional development look like?
-#### AWe developers will likey use automation and low-code generator.
+#### AWe developers will likey use automation and a low-code generator.
 
 ---
 

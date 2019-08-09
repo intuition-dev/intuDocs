@@ -14,13 +14,14 @@ body
                         h1 What will the future of professional development look like?
                         h2
                             include:metaMD /text/motto.md
-                        h3 We developers will likely use automation and low-code generator.
+                        h3 We developers will likely use automation and a low-code generator.
         p
         br
         .container
             .col-md-12
                 p
-                include:metaMD  /text/approach.md
+                h4
+                    include:metaMD  /text/approach.md
                 p
                 hr
                 p
@@ -33,53 +34,53 @@ body
                         p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
                         img(src="iterative.png").rounded.mt-3.img-fluid
 
-            .col-md-12.text-center
-                hr
-                include:metaMD  /text/easy.md
+                .col-md-12
+                    include:metaMD  /text/easy.md
+                    hr
+            
+            .bg-light
+                .container
+                    .row.align-items-center
+                        .col-md-12
+                            div.text-center
+                                p.display-6 What makes INTUITION.DEV different?
+                            div.mb-3.mt-3
+                                div.d-flex.flex-column.custom-list
+                                    include:metaMD /text/difference.md
+                                div.text-left
+                                    a.text-lowercase.font-weight-light.btn.btn-primary(href="/landing/features").mt-3 More...
 
-        //- 2 skate iterations
-        .container.pb-5
-            .jumbotron.bg-light.py-3
-                .row.align-items-center
-                    .col-md-12
-                        div.text-center
-                            p.display-6 What makes INTUITION.DEV different?
-                        div.mb-3.mt-3
-                            div.d-flex.flex-column.custom-list
-                                include:metaMD /text/difference.md
-                            div.text-left
-                                a.text-lowercase.font-weight-light.btn.btn-primary(href="/landing/features").mt-3 More...
-
-            .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
-                .col-md-10.px-0
-                    h1.display-5.font-italic No matter what app we build, you need SEO. Static is not optional
-                    p.lead.my-3 SEO helps to boost your revenue by increasing the number of traffic to your website and by increasing sales.
-                    p.mb-0
-                        a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank').btn.btn-primary Continue reading...
+                    .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
+                        .col-md-10.px-0
+                            h1.display-5.font-italic No matter what app we build, you need SEO. Static is not optional
+                            p.lead.my-3 SEO helps to boost your revenue by increasing the number of leads and by increasing sales.
+                            p.mb-0
+                                a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank').btn.btn-primary Continue reading...
 
 
-            .row.mb-2
-                    .col-md-6
-                        .card.mb-3
-                            .row.no-gutters
-                                .col-md-8
-                                    .card-body
-                                        h4.card-title
-                                            a.text-dark(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank') Basic CRUD application
-                                        p.card-text.mb-auto Building  a simple CRUD application with INTU
-                                        a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank').mt-3 Read More
-                                .col-md-4.col-xs-12
-                                    img.card-img-right(src='crud.jpeg').img-fluid.mx-auto.d-block
-                    .col-md-6
-                        .card.mb-3
-                            .row.no-gutters
-                                .col-md-8
-                                    .card-body
-                                        h4.card-title Mobile App
-                                        p.card-text PhoneGap
-                                        a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/mobile', target='_blank').mt-3 Read More
-                                .col-md-4.col-xs-12
-                                    img(src='tech.jpeg').img-fluid.mx-auto.d-block
+                    .row.mb-2
+                            .col-md-6
+                                .card.mb-3
+                                    .row.no-gutters
+                                        .col-md-8
+                                            .card-body
+                                                h4.card-title
+                                                    a.text-dark(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank') Basic CRUD application
+                                                p.card-text.mb-auto Building  a simple CRUD application with INTU
+                                                a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/CRUD', target='_blank').mt-3 Read More
+                                        .col-md-4.col-xs-12
+                                            img.card-img-right(src='crud.jpeg').img-fluid.mx-auto.d-block
+                            .col-md-6
+                                .card.mb-3
+                                    .row.no-gutters
+                                        .col-md-8
+                                            .card-body
+                                                h4.card-title Mobile App
+                                                p.card-text PhoneGap
+                                                a.btn.btn-primary(href='https://intuition-dev.github.io/IntuitionDocs/#/mobile', target='_blank').mt-3 Read More
+                                        .col-md-4.col-xs-12
+                                            img(src='tech.jpeg').img-fluid.mx-auto.d-block
+  
     include /includes/footer
     
     style.
