@@ -4,8 +4,8 @@ footer.bg-dark
          .row
             .col-md-6
                a.h5(href="/").text-white INTUITION.DEV
-               div.font-italic.text-white It will LEAD you in the right direction
-            .col-md-6
+               div.text-white.star-it It will LEAD you in the right direction
+            .col-md-6.text-right
                div.text-white.star-it
                   include:metaMD /text/star.md
    .bg-very-dark
@@ -18,8 +18,10 @@ footer.bg-dark
         .bg-very-dark {
            background: #2a2f33;
         }
+        .star-it,
         .star-it a {
            color: white;
            display: block;
            font-size: 14px;
+           margin-top: 6px;
         }
