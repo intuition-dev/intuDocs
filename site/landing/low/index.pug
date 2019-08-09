@@ -42,9 +42,10 @@ body
                         div.mb-3.mt-3
                             div.d-flex.flex-column.custom-list
                                 include:metaMD /text/difference.md
-                            div.text-right
-                                a.text-lowercase.font-italic.text-secondary.font-weight-light(href="/landing/features") More...
+                            div.text-left
+                                a.text-lowercase.font-weight-light.btn.btn-primary(href="/landing/features").mt-3 More...
                     .col-md-12.text-center
+                        hr
                         include:metaMD  /text/approach.md
 
             .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
@@ -52,7 +53,7 @@ body
                     h1.display-5.font-italic No matter what app we build, you need SEO. Static is not optional
                     p.lead.my-3 SEO helps to boost your revenue by increasing the number of traffic to your website and by increasing sales.
                     p.mb-0
-                        a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank') Continue reading...
+                        a.text-white.font-weight-bold(href='https://intuition-dev.github.io/IntuitionDocs/#/SEO', target='_blank').btn.btn-primary Continue reading...
 
 
             .row.mb-2
@@ -153,15 +154,27 @@ body
         }
 
         .custom-list ul{
-            padding: 3rem 0;
+            padding: 3rem 0 0 0;
             list-style: none;
             margin: 0;
-            column-count: 2;
+            column-count: 1;
             column-gap: 4rem;
             column-rule: 1px solid #cfcfcf;
-            text-align: center;
+            text-align: left;
             text-transform: capitalize;
         }
         .custom-list ul li {
             line-height: 2;
+            position: relative;
+            padding-left: 16px;
+        }
+        .custom-list ul li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 4px;
+            background: #343a40;
         }
