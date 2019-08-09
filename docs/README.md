@@ -32,12 +32,9 @@ In WebAdmin, you can edit screen app or content using markdown or pug - which wo
 
 # Documentation
 
-[Docs](http://docs.mbake.org)
-
+[Docs/Training](http://docs.mbake.org)
 [Git Repo](http://git.mbake.org)
-
 [Pug example](https://pug.mbake.org)
-
 [INTUITION.DEV Home Page](https://www.INTU.DEV)
 
 
@@ -71,15 +68,22 @@ or
    `:9081/admin` - to add users
    `:9081/editors` - to edit site
 
+## Full train-the-trainer training incudes:
+- SEO
+- native custom elements/ standard web-components
+- CRUD | ViewModel
+- built in user auth
+- FTS and SQL
+- keyboard driven (arrow up WebComps))
+- cross platform / mobile from single code base
+- lazy loading
+
 
 # Links
 
-[Docs](http://docs.mbake.org)
-
+[Docs/Training](http://docs.mbake.org)
 [Git Repo](http://git.mbake.org)
-
 [Pug example](https://pug.mbake.org)
-
 [INTUITION.DEV Home Page](https://www.INTU.DEV)
 
 
