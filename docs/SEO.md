@@ -15,7 +15,7 @@ Web API
 
 Users
 
-![](/vids/ext_clone_api.mp4)
+![![](http://img.youtube.com/vi/979v1byfuSU/0.jpg](/vids/ext_clone_api.mp4)
 1
 
 
