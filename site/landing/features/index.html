@@ -75,6 +75,9 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div id="remarkbox-div"></div>
+  </div>
   <footer class="bg-dark">
     <div class="container mt-3">
       <div class="py-5">
@@ -94,10 +97,40 @@
     <div class="bg-very-dark">
       <div class="container">
         <div class="p-2 d-flex justify-content-between text-secondary">
-          <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div><a class="font-weight-light text-secondary" href="//github.com/intuition-dev">Github</a>
+          <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
         </div>
       </div>
-    </div>
+    </div><script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+    <script>
+      var rb_owner_key = "c7fc5cbf-bb88-11e9-a053-040140774501";
+      var thread_uri = window.location.href;
+      var thread_title = window.document.title;
+      var thread_fragment = window.location.hash;
+      function create_remarkbox_iframe() {
+         var src = "https://my.remarkbox.com/embed?rb_owner_key=" + rb_owner_key + "&thread_title=" + thread_title + "&thread_uri=" + thread_uri;
+         var ifrm = document.createElement("iframe");
+         ifrm.setAttribute("id", "remarkbox-iframe");
+         ifrm.setAttribute("scrolling", "no");
+         ifrm.setAttribute("src", src);
+         ifrm.setAttribute("frameborder", "0");
+         ifrm.setAttribute("tabindex", "0");
+         ifrm.setAttribute("title", "Remarkbox");
+         ifrm.style.width = "100%";
+         document.getElementById("remarkbox-div").appendChild(ifrm);
+      }
+      create_remarkbox_iframe();
+      iFrameResize(
+         {
+            checkOrigin: ["https://my.remarkbox.com"],
+            inPageLinks: true,
+            initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+         },
+         document.getElementById("remarkbox-iframe")
+      );
+      
+      
+      
+    </script>
     <style>
       .bg-very-dark {
          background: #2a2f33;
@@ -144,4 +177,4 @@
         font: italic 38px/1.5 "Helvetica Neue", Arial, sans-serif;
     }
   </style>
-<!-- mB v6.08.2 on 2019-08-09T22:43:41.270Z --></body>
+<!-- mB v6.08.9 on 2019-08-10T20:44:18.215Z --></body>
