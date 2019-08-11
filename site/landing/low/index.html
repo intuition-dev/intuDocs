@@ -141,9 +141,23 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
     </div>
   </main>
   <div class="container">
-    <div id="remarkbox-div"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="commento"></div>
+        <script>
+          depp.define({
+             'commento': ['https://cdn.commento.io/js/commento.js']
+          })
+          depp.require(['reqs'], function() {
+             depp.require('commento')
+          })
+          
+          
+        </script>
+      </div>
+    </div>
   </div>
-  <footer class="bg-dark">
+  <div class="bg-dark">
     <div class="container mt-3">
       <div class="py-5">
         <div class="row">
@@ -158,57 +172,27 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
           </div>
         </div>
       </div>
-    </div>
-    <div class="bg-very-dark">
-      <div class="container">
-        <div class="p-2 d-flex justify-content-between text-secondary">
-          <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
+      <div class="bg-very-dark">
+        <div class="container">
+          <div class="p-2 d-flex justify-content-between text-secondary">
+            <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
+          </div>
         </div>
       </div>
-    </div><script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
-    <script>
-      var rb_owner_key = "c7fc5cbf-bb88-11e9-a053-040140774501";
-      var thread_uri = window.location.href;
-      var thread_title = window.document.title;
-      var thread_fragment = window.location.hash;
-      function create_remarkbox_iframe() {
-         var src = "https://my.remarkbox.com/embed?rb_owner_key=" + rb_owner_key + "&thread_title=" + thread_title + "&thread_uri=" + thread_uri;
-         var ifrm = document.createElement("iframe");
-         ifrm.setAttribute("id", "remarkbox-iframe");
-         ifrm.setAttribute("scrolling", "no");
-         ifrm.setAttribute("src", src);
-         ifrm.setAttribute("frameborder", "0");
-         ifrm.setAttribute("tabindex", "0");
-         ifrm.setAttribute("title", "Remarkbox");
-         ifrm.style.width = "100%";
-         document.getElementById("remarkbox-div").appendChild(ifrm);
-      }
-      create_remarkbox_iframe();
-      iFrameResize(
-         {
-            checkOrigin: ["https://my.remarkbox.com"],
-            inPageLinks: true,
-            initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
-         },
-         document.getElementById("remarkbox-iframe")
-      );
-      
-      
-      
-    </script>
-    <style>
-      .bg-very-dark {
-         background: #2a2f33;
-      }
-      .star-it,
-      .star-it a {
-         color: white;
-         display: block;
-         font-size: 14px;
-         margin-top: 6px;
-      }
-    </style>
-  </footer>
+    </div>
+  </div>
+  <style>
+    .bg-very-dark {
+       background: #2a2f33;
+    }
+    .star-it,
+    .star-it a {
+       color: white;
+       display: block;
+       font-size: 14px;
+       margin-top: 6px;
+    }
+  </style>
   <style>
     .intu-title {
         text-shadow: 1px 1px 0px #ffffff;
@@ -308,4 +292,4 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
         background: #343a40;
     }
   </style>
-<!-- mB v6.08.9 on 2019-08-10T20:44:18.279Z --></body>
+<!-- mB v6.08.9 on 2019-08-11T01:03:32.213Z --></body>

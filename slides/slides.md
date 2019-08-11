@@ -1,8 +1,8 @@
 <!-- $theme: gaia -->
 <!-- prerender: false -->
-<!-- footer: www.INTU.DEV -->
+<!-- footer: www.INTUITION.DEV -->
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
 #### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
@@ -27,7 +27,7 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 ---
 
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
 #### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
@@ -136,7 +136,7 @@ Low Code
 
 How to get Started:
 
-### Full docs are online in github, and at www.INTU.DEV
+### Full docs are online in github, and at www.INTUITION.DEV
 ### For example: `npm i -g intu`
 
 --- 
@@ -171,7 +171,7 @@ INTUITION.DEV, 'It will LEAD you in the right direction'
 ---
 
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
 #### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
 ![80% center](good_cheap_fast.png)
