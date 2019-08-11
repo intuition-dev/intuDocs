@@ -1,5 +1,5 @@
 
-#WedAdmin2
+#WedAdmin 
 
 If you install our browser extension, you can edit any screen|page that has been developed in INTUITION.DEV. 
 
