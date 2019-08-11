@@ -34,7 +34,7 @@
       </div>
     </nav>
   </div>
-  <main role="main">
+  <div>
     <div class="jumbotron hero-image">
       <div class="container">
         <div class="row align-items-center">
@@ -63,7 +63,7 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
         <p></p>
       </div>
     </div>
-    <div class="jumbotron section-padding bg-white">
+    <div>
       <div class="container">
         <div class="row px-0 align-items-center text-center">
           <div class="col-md-12">
@@ -139,7 +139,7 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
         </div>
       </div>
     </div>
-  </main>
+  </div>
   <style>
     .intu-title {
         text-shadow: 1px 1px 0px #ffffff;
@@ -248,7 +248,10 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
              'commento': ['https://cdn.commento.io/js/commento.js']
           })
           depp.require(['reqs'], function() {
-             depp.require('commento')
+             setTimeout(function(){
+                depp.require('commento')
+                console.log('com')
+             },500)
           })
           
           
@@ -290,4 +293,4 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
        margin-top: 6px;
     }
   </style>
-<!-- mB v6.08.9 on 2019-08-11T13:10:27.884Z --></body>
+<!-- mB v6.08.9 on 2019-08-11T13:25:29.496Z --></body>

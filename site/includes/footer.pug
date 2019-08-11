@@ -11,7 +11,10 @@
                'commento': ['https://cdn.commento.io/js/commento.js']
             })
             depp.require(['reqs'], function() {
-               depp.require('commento')
+               setTimeout(function(){
+                  depp.require('commento')
+                  console.log('com')
+               },500)
             })
 
 

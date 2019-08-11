@@ -117,7 +117,10 @@
              'commento': ['https://cdn.commento.io/js/commento.js']
           })
           depp.require(['reqs'], function() {
-             depp.require('commento')
+             setTimeout(function(){
+                depp.require('commento')
+                console.log('com')
+             },500)
           })
           
           
@@ -159,4 +162,4 @@
        margin-top: 6px;
     }
   </style>
-<!-- mB v6.08.9 on 2019-08-11T13:10:27.832Z --></body>
+<!-- mB v6.08.9 on 2019-08-11T13:25:29.445Z --></body>
