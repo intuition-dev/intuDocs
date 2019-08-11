@@ -31,5 +31,4 @@ Users
 
 
 
-
-http://embedyoutube.org
+[Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
