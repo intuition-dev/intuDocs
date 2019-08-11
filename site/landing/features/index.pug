@@ -1,10 +1,6 @@
-head
-    include /layout/headFrag
+extends /layouts/layout
 
-    script(src='/layout/ui-loader.js')
-body
-    .container
-        include /includes/navbar
+block main
 
     .container.py-3
         .row
@@ -21,7 +17,6 @@ body
                         .feat-list
                             include:metaMD /text/features2.md
 
-    include /includes/footer
 
 
     style.

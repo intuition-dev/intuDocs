@@ -1,27 +1,23 @@
-head
-    include /layout/headFrag
+extends /layouts/layout
 
-    script(src='/layout/ui-loader.js')
-body
-   .container
-      include /includes/navbar
+block main
 
-      .container.jumbotron
-         .row
-            .col-md-12
-                  div.text-center
-                     h3.mb-0 Things that you can build with Intuition 
-                     p.sub-header mbake or mbake-x for more info in your terminal
-                  .l-showcase
-                     each val in showcase
-                        .l-showcase--item
-                           a(href=val.link, target="_blank")
-                              .l-showcase--item--img(style="background-image:url("+val.img+")")
-                           .l-showcase--item--header
-                              .l-showcase--item--title=val.title
-                              if val.command.length
-                                 .l-showcase--item--command.tooltip(data-tooltip="click to copy", data-copy=val.command)=val.command
-                           .l-showcase--item--desc=val.desc
+   .container.jumbotron
+      .row
+         .col-md-12
+               div.text-center
+                  h3.mb-0 Things that you can build with Intuition 
+                  p.sub-header mbake or mbake-x for more info in your terminal
+               .l-showcase
+                  each val in showcase
+                     .l-showcase--item
+                        a(href=val.link, target="_blank")
+                           .l-showcase--item--img(style="background-image:url("+val.img+")")
+                        .l-showcase--item--header
+                           .l-showcase--item--title=val.title
+                           if val.command.length
+                              .l-showcase--item--command.tooltip(data-tooltip="click to copy", data-copy=val.command)=val.command
+                        .l-showcase--item--desc=val.desc
 
    script.
       // copy text to clipboard

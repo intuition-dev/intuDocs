@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <script src="/layout/ui-loader.js"></script>
+  <script src="/layouts/ui-loader.js"></script>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/">INTUITION.DEV</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"><span class="navbar-toggler-icon"></span></button>
@@ -140,59 +140,6 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
       </div>
     </div>
   </main>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="commento"></div>
-        <script>
-          depp.define({
-             'commento': ['https://cdn.commento.io/js/commento.js']
-          })
-          depp.require(['reqs'], function() {
-             depp.require('commento')
-          })
-          
-          
-        </script>
-      </div>
-    </div>
-  </div>
-  <div class="bg-dark">
-    <div class="container mt-3">
-      <div class="py-5">
-        <div class="row">
-          <div class="col-md-6"><a class="h5 text-white" href="/">INTUITION.DEV</a>
-            <div class="text-white star-it">It will LEAD you in the right direction</div>
-          </div>
-          <div class="col-md-6 text-right">
-            <div class="text-white star-it"><p>Please star our main project here
-<a href="https://github.com/intuition-dev/INTUITION">https://github.com/intuition-dev/INTUITION</a></p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-very-dark">
-        <div class="container">
-          <div class="p-2 d-flex justify-content-between text-secondary">
-            <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <style>
-    .bg-very-dark {
-       background: #2a2f33;
-    }
-    .star-it,
-    .star-it a {
-       color: white;
-       display: block;
-       font-size: 14px;
-       margin-top: 6px;
-    }
-  </style>
   <style>
     .intu-title {
         text-shadow: 1px 1px 0px #ffffff;
@@ -292,4 +239,55 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
         background: #343a40;
     }
   </style>
-<!-- mB v6.08.9 on 2019-08-11T01:03:32.213Z --></body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="commento"></div>
+        <script>
+          depp.define({
+             'commento': ['https://cdn.commento.io/js/commento.js']
+          })
+          depp.require(['reqs'], function() {
+             depp.require('commento')
+          })
+          
+          
+        </script>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark">
+    <div class="container mt-3">
+      <div class="py-5">
+        <div class="row">
+          <div class="col-md-6"><a class="h5 text-white" href="/">INTUITION.DEV</a>
+            <div class="text-white star-it">It will LEAD you in the right direction</div>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="text-white star-it"><p>Please star our main project here
+<a href="https://github.com/intuition-dev/INTUITION">https://github.com/intuition-dev/INTUITION</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-very-dark">
+      <div class="p-2 d-flex justify-content-between text-secondary">
+        <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .bg-very-dark {
+       background: #2a2f33;
+    }
+    .star-it,
+    .star-it a {
+       color: white;
+       display: block;
+       font-size: 14px;
+       margin-top: 6px;
+    }
+  </style>
+<!-- mB v6.08.9 on 2019-08-11T13:10:27.884Z --></body>
