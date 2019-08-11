@@ -43,14 +43,14 @@ Demos(/agenda):
 
 ---
 
-Foundtion:
+Foundation:
 
 ## - Sass / BootStrap default
 ## - Written in: ==Pug==
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-==DEMO== Foundation (mbake CLI, css, pug)
+==DEMO== Foundation (mbake CLI, css, pug, scrape)
 
 
 ---
@@ -80,7 +80,7 @@ SEO
 
 Promised step #1: App!
 
-==DEMO== CRUD ( ViewModel, Validation, SQL, Pug scrape)
+==DEMO== CRUD ( ViewModel, Validation, SQL)
 Scrape: ( http://pug.mbake.org )
 
 ---
@@ -106,7 +106,7 @@ Promised step #1: App.
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
-- keyboard driven (arrow up WebComps))
+- keyboard driven (F12 WebComps in v1.1)
 - cross platform / mobile from single code base
 
 
@@ -147,7 +147,7 @@ Train the trainer:
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
-- keyboard driven (F12 WebComps))
+- keyboard driven (F12 WebComps in v1.1)
 - cross platform / mobile from single code base
 - Lazy loading
 
