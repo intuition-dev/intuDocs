@@ -4,7 +4,7 @@
 ## Lazy Loading
 
 Lazy loading .js and other assets enables very fast UX. More here:
-[](https://github.com/intuition-dev/toolBelt/tree/master/lazyLoading)
+[Lazy loading](https://github.com/intuition-dev/toolBelt/tree/master/lazyLoading)
 
 
 ## SPA and Mobile apps
@@ -32,10 +32,9 @@ You can of course add any needed native plugins from Cordova; but most apps don'
 
 # Web Components
 
-standard Web Components/native custom elements 
+Standard Web Components/native custom elements are built into the browser.
 
-[](https://github.com/intuition-dev/toolBelt/tree/master/comps/wComp1)
-
+[Web Components example](https://github.com/intuition-dev/toolBelt/tree/master/comps/wComp1)
 
 
 ## Other
