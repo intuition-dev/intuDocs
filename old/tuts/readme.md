@@ -59,7 +59,7 @@
 
 1. Also use component in your app, how to write a component, example: 
 
-    https://github.com/metabake/metaCake/tree/master/comps/old
+    https://github.com/metabake/metaCake/tree/master/custEl/old
 
     using [riot.js 3](https://v3.riotjs.now.sh/)
 
