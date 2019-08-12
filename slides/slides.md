@@ -162,10 +162,6 @@ Did you miss anything shown?
 #### - Maintenance iterations reduce cost
 ---
 
-> Software will eat the world: The digital revolution!
-### We just need to make more, better and faster.
-INTUITION.DEV, 'It will LEAD you in the right direction'
-
 #### Please star our main project here:
 - https://github.com/intuition-dev/INTUITION
 ---
