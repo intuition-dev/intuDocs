@@ -32,7 +32,7 @@ You can of course add any needed native plugins from Cordova; but most apps don'
 
 # Web Components
 
-Standard Web Components/native custom elements are built into the browser.
+native Custom Elements/standard Web Components are built into the browser.
 
 [Web Components example](https://github.com/intuition-dev/toolBelt/tree/master/comps/wComp1)
 

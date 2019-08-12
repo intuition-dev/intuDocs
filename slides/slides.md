@@ -102,7 +102,7 @@ Promised step #1: App.
  Pro features of INTUITION.DEV:
 - Standards Based / Pug
 - SEO
--  standard Web Components/native custom elements
+-  native Custom Elements/standard Web Components
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
@@ -143,7 +143,7 @@ How to get Started:
 
 Train the trainer: 
 - SEO
--  standard Web Components/native custom elements
+-  native Custom Elements/standard Web Components
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
@@ -156,7 +156,7 @@ Train the trainer:
 Did you miss anything shown? 
 #### - Start: Scrape to Pug
 #### - SEO and 3 Steps (Discovery)
-#### -  standard Web Components/native custom elements
+#### -  native Custom Elements/standard Web Components
 #### - CRUD (w/ ViewModel and APIs)
 #### - PhoneGap / Native is same code base
 #### - Maintenance iterations reduce cost

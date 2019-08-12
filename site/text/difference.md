@@ -1,6 +1,6 @@
 * Standards Based / Pug
 * SEO
-*  standard Web Components/native custom elements
+*  native Custom Elements/standard Web Components
 * CRUD | ViewModel
 * built in user auth
 * FTS and SQL
