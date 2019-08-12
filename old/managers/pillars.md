@@ -172,7 +172,7 @@ leverage a documented CSS framework.
 
 Developers love to build, and that includes building useless things. The
 tech leaders could use 'Intercept/Observe'
-techniques - e.g. screen recordings of users using the Web App to share
+techniques - e.g. screen recordings of end-users using the Web App to share
 with the tech team. If one fails to do this, the team will be talking
 about bits and bytes and not the things that truly matter in the market.
 Further, some teams spend a considerable amount of time playing, giving

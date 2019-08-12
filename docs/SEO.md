@@ -12,7 +12,7 @@ Static:
 Static is what what is used for SEO. In most applications it is something that you need to maximize.
 
 
-Editing meens that you need user-auth. This is built into INTUITION.DEV
+Editing means that you need user-auth. This is built into INTUITION.DEV
 
 [<img src="http://img.youtube.com/vi/BpNvMqwq9TI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=BpNvMqwq9TI)
 
@@ -28,7 +28,7 @@ Clone
 
 Web API
 
-Users
+End-users
 
 S&S 
 

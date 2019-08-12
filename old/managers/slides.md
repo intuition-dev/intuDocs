@@ -223,7 +223,7 @@
 - We leverage unified codebases in Web and Mobile apps for bringing together quicker development and reduced maintenance costs. While also ==**combining the best**== of both worlds.
 
 
-- This allows us to offer a ==**tailored unified experience**== and **platform-agnostic** experience for all users. 
+- This allows us to offer a ==**tailored unified experience**== and **platform-agnostic** experience for all end-users. 
 
 - Also, it makes ==**a breeze to deploy**== and update the app in all the target platforms instantly.
 
@@ -326,7 +326,7 @@
 #### Content Delivery Network (CDN)
 - CDN was once a rarity reserved for big tech corporations like Facebook or Google.
 
-- Nowadays CDN are very **cost-effective and ubicuous**. This makes possible to deliver to users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_.
+- Nowadays CDN are very **cost-effective and ubicuous**. This makes possible to deliver to end-users _on the edge_ lowering greatly the waiting time, which is one of the main reasons for a _high bouncing rate_.
 
 - CDN also allows for easy and **quick scalability**, better performance, decreased maintenance costs, **instant deployment** and updates.
 

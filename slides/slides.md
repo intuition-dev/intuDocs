@@ -4,7 +4,7 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -21,7 +21,7 @@ What will the future of professional development look like?
 ## Iterations?!
 ![180% center](iterative.png)
 Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
-#### - What if users could maintain and build next version?
+#### - What if end-users could maintain and build next version?
 #### - INTUITION.DEV is built in Pug language
 
 ---
@@ -29,7 +29,7 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
 ![80% center](good_cheap_fast.png)
 
 ---
@@ -170,7 +170,7 @@ Did you miss anything shown?
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end users."
+#### "INTUITION.DEV is an open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
 ![80% center](good_cheap_fast.png)
 
 
