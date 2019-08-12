@@ -1,5 +1,5 @@
 
-# Advanced: Mobile & Web Components
+# Advanced: Mobile & Custom Elements
 
 ## Lazy Loading
 
@@ -30,11 +30,11 @@ The last step is easy:
 You can of course add any needed native plugins from Cordova; but most apps don't need any.
 
 
-# Web Components
+# Custom Elements
 
-native Custom Elements/standard Web Components are built into the browser.
+Custom Elements are built into the browser.
 
-[Web Components example](https://github.com/intuition-dev/toolBelt/tree/master/custEl/custEl1)
+[Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custEl/custEl1)
 
 
 ## Other

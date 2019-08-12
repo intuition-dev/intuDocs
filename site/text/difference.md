@@ -1,8 +1,8 @@
 * Standards Based / Pug
 * SEO
-*  native Custom Elements/standard Web Components
+*  Custom Elements
 * CRUD | ViewModel
 * built in user auth
 * FTS and SQL
-* keyboard driven (arrow up WebComps))
+* keyboard driven (F12 Custom Elements in v1.1))
 * cross platform / mobile from single code base

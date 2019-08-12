@@ -179,7 +179,7 @@ Secure by default | Needs Security |
 ##### Simple starter requirements:
 - There is almost no learning curve. JS, HTML and CSS is all you need.
 - If you are already familiar with Sass/scss and engines. You will ace it.
-- mbake is not even a framework as we don't favour _highy opinionated_ solutions. It's both a CLI tool that aims for meta-programming with high productivity  and a library of reusable _framework-agnostic_  web components.
+- mbake is not even a framework as we don't favour _highy opinionated_ solutions. It's both a CLI tool that aims for meta-programming with high productivity  and a library of reusable _framework-agnostic_  Custom Elements.
 
 ---
 
@@ -241,7 +241,7 @@ $: mbake -u
 - Automatic Programming
 - Static Generation & Templating Markup
 - Dynamic Data Binding
-- Library of Web Components 
+- Library of Custom Elements 
 - Website Prototyping and Iterative Development
 - CLI/Keyboard, not GUI
 
@@ -282,18 +282,18 @@ key1: World
 ---
 
 ## MetaBake Pillars
-### Library of Web Components. 
+### Library of Custom Elements. 
 
 ##### Advantages:
-- Web Components are a framework-agnostic specification that aims for increased modularization, reusability and maintanability of code.
-- Web Components are part of an approach to fully dismantle monolithic web apps and develop a truly reusable library of solutions.
-- The DOM of the Web Component acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
+- Custom Elements are a framework-agnostic specification that aims for increased modularization, reusability and maintanability of code.
+- Custom Elements are part of an approach to fully dismantle monolithic web apps and develop a truly reusable library of solutions.
+- The DOM of the Custom Elementsonent acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
 
 ---
 ## MetaBake Pillars
-### Library of Web Components. 
+### Library of Custom Elements. 
 ##### Advantages:
-- You can compose a full web app just by bringing together well designed web components. You don't need a monolithic JS Framework or a whole lot of dependencies.
+- You can compose a full web app just by bringing together well designed Custom Elements. You don't need a monolithic JS Framework or a whole lot of dependencies.
 - Each Component will connect with a backend microservice if needed.
 - Locally scoped CSS is possible too. Forget about CSS colliding across all the app
 

@@ -104,11 +104,11 @@
 
 <!--*template:gaia -->
 # Pillars Of Our Approach:
-## Intelligent Web Components
+## Intelligent Custom Elements
 
 ---
 
-### Intelligent Web Components
+### Intelligent Custom Elements
 
 - We are continously building and improving a library of ==**highly-reusable intelligent components**==.These components are compliant with Accelerated Mobile Pages standards and are becoming increasingly pervassive.
 
@@ -272,22 +272,22 @@
 - High Quality Design with mobile-first approach.
 - Express your branding through **beautiful and solid UI**.
 - Remember, our tech stack is ==**highly SEO-friendly**==.
-- Furthermore, our **Web Component based** approach makes possible quicker loading speeds and an integrated mobile experience that lowers user bounce rate.
+- Furthermore, our **Custom Elementsonent based** approach makes possible quicker loading speeds and an integrated mobile experience that lowers user bounce rate.
 
 ---
 <!-- *template: gaia -->
-# Intelligent Web Components
+# Intelligent Custom Elements
 
 ---
 
-### Intelligent Web Components
-- Wether you want to create from scratch a new site/app or update an existing one, we got you covered with reusable, solid and well-tested web components.
+### Intelligent Custom Elements
+- Wether you want to create from scratch a new site/app or update an existing one, we got you covered with reusable, solid and well-tested Custom Elements.
 
 ![40% center](images/web-components.png)
 
-- Our Web Components adopt the best practices for *Accelerated Mobile Pages*, also known as **AMP**. 
+- Our Custom Elements adopt the best practices for *Accelerated Mobile Pages*, also known as **AMP**. 
 ---
-### Intelligent Web Components
+### Intelligent Custom Elements
 
 #### The future of the Web
 - The **AMP** standard is increasingly being  adopted by major companies and startups alike. Since one of its mains targets is to produce **seamless interfaces** where user experience and ad monetization don't collide, but **intertwine**.
@@ -296,7 +296,7 @@
 
 ---
 
-### Intelligent Web Components
+### Intelligent Custom Elements
 
 ==**Advantages:**==
 - **User First** Approach.

@@ -7,4 +7,4 @@
 2. User-admin built in.
 2. Live-reload of course. And browser extension to edit from www.
 2. Lazy loading capable (via require() dependencies, including popular dependencies already defined)  
-2. Keyboard driven (arrow up WebComps)
+2. keyboard driven (F12 Custom Elements in v1.1)
