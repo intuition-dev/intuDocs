@@ -101,8 +101,9 @@ Promised step #1: App.
 
  Pro features of INTUITION.DEV:
 - Standards Based / Pug
+- Open Source
 - SEO
--  Custom Elements
+- Custom Elements
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
