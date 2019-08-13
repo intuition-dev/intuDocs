@@ -16,8 +16,8 @@ Use Windows 10 w/ virtualbox and their extension
 
 ## Documentation TOC:
 
-Prerequisites: you should know HTML and CSS. If you need to catch up, we recommend 'Design and Build Websites' by Jon Duckett. You will also learn Pug, to get started on Pug, watch [Pug on Youtube](http://youtube.com/watch?v=wzAWI9h3q18)
-
+Our main language is Pug, if you have not seen Pug before, here is a quick intro:
+- [Pug intro](https://pug.mbake.org)
 
 ## Articles
 
