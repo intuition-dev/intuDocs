@@ -10,11 +10,11 @@
             depp.define({
                'commento': ['https://cdn.commento.io/js/commento.js']
             })
-            depp.require(['reqs'], function() {
+            depp.require(['commentoPre'], function() {
                setTimeout(function(){
                   depp.require('commento')
                   console.log('com')
-               },500)
+               },1000/60)
             })
 
 

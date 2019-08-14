@@ -9,8 +9,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.2.3/bootStrap/css/bootstrapTop.css"/>
-  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.2.3/toolBelt/toolBelt.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.8.14/bootStrap/css/bootstrapTop.css"/>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.8.14/toolBelt/toolBelt.js"></script>
   <style>
     html { touch-action: manipulation; }
     .delayShowing { opacity: 0; }
@@ -251,11 +251,11 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
           depp.define({
              'commento': ['https://cdn.commento.io/js/commento.js']
           })
-          depp.require(['reqs'], function() {
+          depp.require(['commentoPre'], function() {
              setTimeout(function(){
                 depp.require('commento')
                 console.log('com')
-             },500)
+             },1000/60)
           })
           
           
@@ -297,4 +297,4 @@ In contrast to tools for citizen-developers: INTUITION.DEV aims to make professi
        margin-top: 6px;
     }
   </style>
-<!-- mB v6.08.9 on 2019-08-13T14:47:49.954Z --></body>
+<!-- mB v6.08.12 on 2019-08-14T03:09:30.070Z --></body>

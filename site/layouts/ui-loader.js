@@ -2,8 +2,10 @@
 depp.define({
    'custom-style': ['/assets/css/custom.css']
 })
-depp.require(['FontsLoaded', 'bsDefaultStyle', 'DOM', 'font-awesome', 'custom-style', 'bsjs'], function () {
+depp.require(['FontsLoaded'], function () {
    console.log('ready:', Date.now() - _start)
-   depp.done('reqs')
+   depp.require(['bsDefaultStyle', 'font-awesome', 'custom-style', 'DOM' ], function () {
+      depp.done('commentoPre')
+   })
 })
 
