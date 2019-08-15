@@ -1,5 +1,5 @@
 
-hostname: 'http://www.INTUITION.DEV'
 
+hostname: 'https://www.INTUITION.DEV'
 
-# everything else is in dat.yaml
+# everything else is from dat.yaml
