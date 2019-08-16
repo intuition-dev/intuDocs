@@ -1,2 +1,1 @@
-INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity 
-via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.
+INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
