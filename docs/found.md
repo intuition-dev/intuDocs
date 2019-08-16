@@ -18,7 +18,7 @@ but you do not need to know the mbake CLI.
 
 ## Starting a project
 
-[Convert 'page' source to Pug](https://pug.mbake.org)
+[Convert 'page' source to Pug](http://pug.mbake.org)
 
 
 [Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)

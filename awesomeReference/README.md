@@ -17,7 +17,7 @@ Use Windows 10 w/ virtualbox and their extension
 ## Documentation TOC:
 
 Our main language is Pug, if you have not seen Pug before, here is a quick intro:
-- [Pug intro](https://pug.mbake.org)
+- [Pug intro](http://pug.mbake.org)
 
 ## Articles
 
