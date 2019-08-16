@@ -1,2 +1,2 @@
-In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost everybody can pull out a form or a web app using GUI tools.
-In contrast to tools for citizen-developers: INTUITION.DEV aims to make professional developers more productive, 10 fold productivity increase; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users.'
+In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost everybody can pull out a form or a web app using low-code tools.
+Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator and then added a WebAdmin that lets you edit - and then kept adding features and refactoring. We hope to make open source low code approach popular with professional developers.

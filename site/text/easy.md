@@ -1,4 +1,6 @@
-In WebAdmin, you can edit screen app or content using markdown or pug - which won't let you pages become broken. It also can leverage  Custom Elements and use any framework. It allows you clone existing pages to write another post/page, upload images, custom write own layout in pug, etc.
+So we have open source low-code with static generation.
+A major piece is adding a 'WebAdmin' editor to INTUITION.DEV and your application. One a professional developer writes and sets up version one of the app - then the developer can
+ enable end-user to maintain the app and possibly write the next version of the app. So as the business needs change, the web app is evergreen and always aligned to the business. 
 
-Any app that you can write or use in HTML, .js/.ts or css/SASS can leverage INTUITION.DEV. Since it is only CSS/.js/HTML there is almost no learning curve.  Our main language is Pug, if you have not seen Pug before, here is a quick intro:
-- [Pug intro](https://pug.mbake.org)
+You can write any and every kind of app, since we generate  HTML, javascript an css.  Our main language is Pug, if you have not seen Pug before, here is a quick intro to Pug:
+- [Click for generic Pug example](http://pug.mbake.org)
