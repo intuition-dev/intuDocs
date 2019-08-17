@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==MetaBake==](https://MetaBake.org)
+#  [==MetaBake==](https://INTUITION.DEV)
 
 #### A meta-programming open source CLI tool
 <!-- reword this? -->
@@ -333,14 +333,14 @@ $ mbake -w .
 $ cd website
 $ mbakeX -w .
 ```
-#### :arrow_right:  https://MetaBake.org/
+#### :arrow_right:  https://INTUITION.DEV/
 #### :arrow_right: https://github.com/MetaBake
 
 ---
 
 # Thank you!
 
-#### https://MetaBake.org
+#### https://INTUITION.DEV
 <!--- place logo --->
 <small> Slides written with Marp</small>
 

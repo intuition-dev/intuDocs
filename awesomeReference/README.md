@@ -61,7 +61,7 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 # Support
 
 &nbsp;
-- <a href='http://chat.MetaBake.org' target='_blank'>Forum/Chat</a>, to support this project, please join!
+- <a href='http://chat.INTUITION.DEV' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
 

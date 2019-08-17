@@ -5,7 +5,7 @@
 
 <!-- *template: invert -->
 
-#  [==MetaBake==](https://MetaBake.org)
+#  [==MetaBake==](https://INTUITION.DEV)
 <!-- logo -->
 ## We partner with you to build now the future of software.
 
