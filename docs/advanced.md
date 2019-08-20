@@ -34,7 +34,7 @@ You can of course add any needed native plugins from Cordova; but most apps don'
 
 Custom Elements are built into the browser.
 
-[Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custEl/custEl1)
+[Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custel/custEl1)
 
 
 ## Other
