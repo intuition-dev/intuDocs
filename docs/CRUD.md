@@ -14,6 +14,12 @@ The Chrome extension that lets you edit an INTUITION.DEV screen:
 
 If you install our browser extension, you can edit any screen|page that has been developed in INTUITION.DEV. 
 
+
+
+### Edit the CRUD app screen
+
+- DEMO XXX
+
 ---
 
 [Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)

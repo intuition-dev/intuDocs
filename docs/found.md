@@ -23,7 +23,16 @@ but you do not need to know the mbake CLI for INTUITION.DEV
 
 ### Cross platform peak
 
+Here is a phonegap app for build.phonegap.com:
+- https://github.com/intuition-dev/mbMobile/tree/master/phoneGapReaderApp
 
+Notice that the electron app:
+- https://github.com/intuition-dev/mbMobile/tree/master/electronReaderApp
+and webapp:
+- https://github.com/intuition-dev/mbMobile/tree/master/webReaderApp
+are symbolic link to the phonegapp app.
+
+They are the same exact app.
 
 
 We'll touch more on mobile in the advanced section.
