@@ -4,7 +4,7 @@
 CRUD and the ViewModel is client-side. Here is an example app and a readme:
 [examples/CRUD](https://github.com/intuition-dev/INTUITION/tree/master/examples/CRUD/www)
 
-The main point is that the ViewModel's data structures must match the View. And that binding is easy from View to the ViewModel
+You can use an client side architecture you want. But I use ViewModel. The main point is that the ViewModel's data structures must match the View. And that binding is easy from View to the ViewModel
 
 
 ## Extension
@@ -19,6 +19,7 @@ If you install our browser extension, you can edit any screen|page that has been
 ### Edit the CRUD app screen
 
 - DEMO XXX
+
 
 ---
 
