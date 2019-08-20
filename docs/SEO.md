@@ -1,6 +1,12 @@
 
 # WedAdmin 
 
+IntuAPI docs are live here:
+- https://intuition-dev.github.io/INTUITION
+
+This enables us to remotely call for a local file to be compiled.
+
+
 If you install our browser extension, you can edit any screen|page that has been developed in INTUITION.DEV. 
 
 [<img src="https://lh3.googleusercontent.com/Ty_P-Jbc9OzJMo1AeBl-5UBrEonckRkdwRU0IubmDx4phGj3o2-yyXmsPcDs5_3jQfFPYWKIqr8=w640-h400-e365" width="400"/>](https://chrome.google.com/webstore/detail/webadmin/oaecohdoihcbaogfkhlfkcdbggnmmbek)
