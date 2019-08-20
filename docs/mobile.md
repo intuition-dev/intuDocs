@@ -1,5 +1,5 @@
 
-# Advanced: Mobile & Custom Elements
+# Advanced, Mobile & Custom Elements
 
 ## Lazy Loading
 
@@ -42,4 +42,21 @@ Custom Elements are built into the browser.
 In next version of INTUITION.DEV we will support keyboard commands( Pop up F12)
 
 
+
+### RPC 
+
+Service calls, when done by server side developers must include the client side API call to that
+service. You can't have a server side developer write a service that a different developer then calls client side.
+The person that wrote the service must also write the client side API that calls that service.
+
+[HTTP-RPC example](https://github.com/intuition-dev/toolBelt/tree/master/http-rpc)
+
+### SQLite Full Text Search
+
+Here is example of using SQL for FTS:
+[SQLite FTS](https://github.com/intuition-dev/INTUITION/blob/master/examples/CRUD/node-srv/lib/CDB.ts)
+Optionally FTS DB could be stored in RAM
+
+
+---
 [Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
