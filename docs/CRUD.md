@@ -18,7 +18,9 @@ If you install our browser extension, you can edit any screen|page that has been
 
 ### Edit the CRUD app screen
 
-- DEMO XXX
+- DEMO
+[<img src="http://img.youtube.com/vi/R9F4R4YNFLY/0.jpg" width="400"/>](http://www.youtube.com/watch?v=R9F4R4YNFLY)
+
 
 
 ---
