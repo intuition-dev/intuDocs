@@ -4,7 +4,7 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
@@ -13,7 +13,7 @@
 ###  Low-code?
 ![60% center](truck.png)
 What will the future of professional development look like?
-#### We developers will likey use automation and a low-code generator.
+#### We developers will likely use automation and a low-code generator.
 
 ---
 
@@ -29,17 +29,16 @@ Version 1.0 spec is followed by next version - majority of effort is after 1.0 r
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
 
 Demos(/agenda):
-### 1. Foundation Demo
-####  (A 3 step plan)
-### 2. SEO Demo
+### 1. Foundation
+### 2. SEO Demo (A 3 step plan)
 ### 3. CRUD Demo
-### 4. Advanced (Mobile) Demo
+### 4. Advanced 
 
 ---
 
@@ -50,17 +49,17 @@ Foundation:
 ## - Static Generation
 ### - CDN (Cheaper, Faster)
 
-==DEMO== Foundation (mbake CLI, css, pug, scrape)
+==DEMO== Foundation (mbake CLI, css, pug, start)
 
 
 ---
-Demo 2: 3-step-plan:
+3-step-plan:
 ## #1. Build something
 ## #2. Market it
 ## #3. Profit!
 
-#### We'll skip step 1 for one moment.
-#### Step 2 first. Then we'll go back to step 1 - build an app.
+#### We'll skip step 1, the app for one moment.
+#### Step 2: SEO first. Then we'll go back to step 1 - build an app.
 
 ---
 <!-- *template: invert -->
@@ -69,9 +68,9 @@ Step #2 - SEO:
 #### - We need SEO!
 ### No matter what app we build, you need SEO. Static is not optional
 
-==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, WebAdmin, clone a new static page,  SEO, browser extension)
+==DEMO== SEO (custom server API in javascript - same as CLI, user auth built in, WebAdmin, clone a new static page, SEO)
 
----
+--- 
 
 SEO
 ![](webm.png)
@@ -99,11 +98,10 @@ Promised step #1: App.
 
 ---
 
- Pro features of INTUITION.DEV:
+Features of INTUITION.DEV:
 - Standards Based / Pug
 - Open Source
 - SEO
-- Custom Elements
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
@@ -144,7 +142,6 @@ How to get Started:
 
 Train the trainer: 
 - SEO
--  Custom Elements
 - CRUD | ViewModel
 - built in user auth
 - FTS and SQL
@@ -157,7 +154,6 @@ Train the trainer:
 Did you miss anything shown? 
 #### - Start: Scrape to Pug
 #### - SEO and 3 Steps (Discovery)
-#### -  Custom Elements
 #### - CRUD (w/ ViewModel and APIs)
 #### - PhoneGap / Native is same code base
 #### - Maintenance iterations reduce cost
@@ -170,7 +166,7 @@ Did you miss anything shown?
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### "INTUITION.DEV is the futuristic open source tool for pro developers w/ 10 fold productivity; via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor - facilitating app maintenance by end-users."
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 

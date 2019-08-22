@@ -22,6 +22,8 @@ Custom Elements are built into the browser.
 
 [Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custel/custel1)
 
+An example of keyboard driven F12 Custom Elements comming V1.1.
+
 
 ## Other
 

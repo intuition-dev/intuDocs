@@ -17,11 +17,11 @@ User's editing: means that you need user-auth. User auth and registration is bui
 
 ### SEO and static Demo
 
-From business POV SEO is very important. Static is what is used for SEO. In most applications SEO is something that you need to maximize.
+From business POV SEO is very important for most applications. Static is what is used for SEO, so static is not optional.
 
 [<img src="http://img.youtube.com/vi/979v1byfuSU/0.jpg" width="400"/>](http://www.youtube.com/watch?v=979v1byfuSU)
 
-Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n.
+Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. Etc. Since it generator, you can generate anything.
 
 
 ---
