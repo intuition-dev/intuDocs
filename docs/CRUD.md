@@ -1,7 +1,6 @@
 
 # Deeper dive: CRUD 
 
-
 ## App
 
 You can use any .js libraries / tools you like. But the default is our Typescript based 'ViewModel'. 
