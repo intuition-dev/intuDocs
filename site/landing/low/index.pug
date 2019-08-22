@@ -1,5 +1,13 @@
 extends /layouts/layout
 
+block head2
+    script.
+        console.log('img truck1c.jpg')
+        depp.require('load-image', function(){
+          loadImage('truck1c.jpg')  
+        })
+
+
 block main
 
     div
