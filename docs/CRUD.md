@@ -27,6 +27,10 @@ Demo:
 [<img src="http://img.youtube.com/vi/R9F4R4YNFLY/0.jpg" width="400"/>](http://www.youtube.com/watch?v=R9F4R4YNFLY)
 
 
+You can run it yourself. In addition to the CRUD app, it also starts the WebAdmin app that allows you/users to edit.
+```
+    intu -c
+```
 
 ---
 

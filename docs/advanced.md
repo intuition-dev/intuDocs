@@ -10,31 +10,17 @@ Lazy loading .js and other assets enables very fast UX. More here:
 ## SPA and Mobile apps
 
 A responsive web app can easily become machine compiled into IOS and Android. *As single code base*. 
-It needs to be SAP (Single Page App) and if you are in a rush or have limited resources you should convert to Electorn first.
-
-[SPA](https://github.com/intuition-dev/toolBelt/tree/master/spa-ts-router)
-
-- [SPA WebApp](https://github.com/intuition-dev/mbMobile/tree/master/webReaderApp)
-Notice that it is a symbolic link - same code base for all 3 apps
-
-To save time do Electron first.
-- [Electron](https://github.com/intuition-dev/mbMobile/tree/master/electronReaderApp)
-
-
-PhoneGap builder online: [build.PG](https://build.phonegap.com)
-Notice there is no need to install any SDK locally - it is all done for free for you in the cloud.
-The last step is easy:
-
-- [PhoneGap](https://github.com/intuition-dev/mbMobile)
-
-You can of course add any needed native plugins from Cordova; but most apps don't need any.
-
+If you are in a rush or have limited resources but need a mobile or a cross platform app:
+ you should convert to Electron first. It seems like Electron step is an extra step to slow you down: but doing Electron
+ app first saves you time - even if you never release the Electron app.
+ 
+You can of course add any needed native plugins from Cordova; but most apps don't need any Cordova plugins.
 
 # Custom Elements
 
 Custom Elements are built into the browser.
 
-[Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custel/custEl1)
+[Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custel/custel1)
 
 
 ## Other
@@ -42,21 +28,23 @@ Custom Elements are built into the browser.
 In next version of INTUITION.DEV we will support keyboard commands( Pop up F12)
 
 
+### HTTP-RPC 
 
-### RPC 
+You can use REST and JSON-RPC. Or our HTTP-RPC:
+[HTTP-RPC example](https://github.com/intuition-dev/toolBelt/tree/master/http-rpc)
 
 Service calls, when done by server side developers must include the client side API call to that
 service. You can't have a server side developer write a service that a different developer then calls client side.
 The person that wrote the service must also write the client side API that calls that service.
 
-[HTTP-RPC example](https://github.com/intuition-dev/toolBelt/tree/master/http-rpc)
 
 ### SQLite Full Text Search
 
-Here is example of using SQL for FTS:
+Here is example of using SQLite for FTS:
 [SQLite FTS](https://github.com/intuition-dev/INTUITION/blob/master/examples/CRUD/node-srv/lib/CDB.ts)
-Optionally FTS DB could be stored in RAM
+Optionally FTS could be stored in RAM
 
 
 ---
 [Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
+
