@@ -1,6 +1,6 @@
 
 * [INTUITION.DEV](README.md)
-* [Foundation of auto/gen](found.md)
-* [Static/SEO, API, and end-users](SEO.md)
-* [CRUD/Deeper Dive](CRUD.md)
-* [Advanced, Mobile & Custom Elements](advanced.md)
+* [FOUNDATION / gen/cross](found.md)
+* [STATIC / SEO, API, and end-users](static.md)
+* [CRUD / Deeper Dive](CRUD.md)
+* [ADVANCED / Mobile & Custom Elements, etc.](advanced.md)

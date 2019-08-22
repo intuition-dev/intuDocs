@@ -1,5 +1,5 @@
 
-# Advanced, Mobile & Custom Elements
+# ADVANCED / Mobile & Custom Elements, etc.
 
 ## Lazy Loading
 
@@ -7,7 +7,7 @@ Lazy loading .js and other assets enables very fast UX. More here:
 [Lazy loading](https://github.com/intuition-dev/toolBelt/tree/master/lazyLoading)
 
 
-## SPA and Mobile apps
+## Mobile apps
 
 A responsive web app can easily become machine compiled into IOS and Android. *As single code base*. 
 If you are in a rush or have limited resources but need a mobile or a cross platform app:

@@ -1,5 +1,5 @@
 
-# SEO and WeB Admin 
+# STATIC / SEO, API, and end-users
 
 ### API
 
@@ -8,14 +8,14 @@ IntuAPI docs are here:
 
 These are remote calls, eg. for a file to be compiled.
 
-## User Auth
+### User Auth
 
 User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV.
 
 [<img src="http://img.youtube.com/vi/BpNvMqwq9TI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=BpNvMqwq9TI)
 
 
-## SEO and static Demo
+### SEO and static Demo
 
 From business POV SEO is very important. Static is what is used for SEO. In most applications SEO is something that you need to maximize.
 

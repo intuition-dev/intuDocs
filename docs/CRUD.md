@@ -1,5 +1,6 @@
 
-# Deeper dive: CRUD 
+# CRUD / Deeper Dive
+
 
 ### Edit the CRUD app screen
 
@@ -16,7 +17,7 @@ npm i
 ```
 
 
-## App
+### App
 
 You can use any .js libraries / tools you like. But the default is our Typescript based 'ViewModel'. 
 'ViewModel' is client side, runs in the browser and it's main functionality is 

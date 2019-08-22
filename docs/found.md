@@ -1,8 +1,8 @@
 
-# Foundation of INTUITION.DEV
+# FOUNDATION / gen/cross
 
 
-## Pug
+### Pug
 
 INTUITION.DEV uses Pug as the main programing language:
 ```pug
@@ -28,7 +28,7 @@ So I used node js scripts to 'make'. Soon, I allowed remote services to call the
 'make' script - as you will see in the follow on tutorials. 
 We are just leveraging generators, like Hugo/Jekyll.
 
-## Starting a project
+### Starting a project
 
 One way to get started is to take code from an already running project, and paste it in.
 
