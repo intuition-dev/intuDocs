@@ -17,7 +17,7 @@ npm i
 ```
 
 
-### App
+### ViewModel
 
 You can use any .js libraries / tools you like. But the default is our Typescript based 'ViewModel'. 
 'ViewModel' is client side, runs in the browser and it's main functionality is 
@@ -28,7 +28,7 @@ Here is an example app and a readme:
 [examples/CRUD](https://github.com/intuition-dev/INTUITION/tree/master/examples/CRUD/www)
 
 
-### Extension
+### (Browser) Extension
 
 The Chrome extension that lets you edit an INTUITION.DEV screen, such as our example CRUD app:
 

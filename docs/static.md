@@ -10,12 +10,18 @@ These are remote calls, eg. for a file to be compiled.
 
 ## User Auth
 
+Start the app:
+
+    ```bash
+    intu
+    ```
+
 User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV.
 
 [<img src="http://img.youtube.com/vi/BpNvMqwq9TI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=BpNvMqwq9TI)
 
 
-### SEO and static Demo
+### SEO and static
 
 From business POV SEO is very important for most applications. Static is what is used for SEO, so static is not optional.
 

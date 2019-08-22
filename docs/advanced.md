@@ -1,11 +1,6 @@
 
 # ADVANCED / Mobile, Custom Elements, etc.
 
-## Lazy Loading
-
-Lazy loading .js and other assets enables very fast UX. More here:
-[Lazy loading](https://github.com/intuition-dev/toolBelt/tree/master/lazyLoading)
-
 
 ## Mobile apps
 
@@ -22,12 +17,16 @@ Custom Elements are built into the browser.
 
 [Custom Elements example](https://github.com/intuition-dev/toolBelt/tree/master/custel/custel1)
 
-An example of keyboard driven F12 Custom Elements comming V1.1.
+An example of keyboard driven F12 Custom Elements coming V1.1.
 
 
 ## Other
 
-In next version of INTUITION.DEV we will support keyboard commands( Pop up F12)
+
+### Lazy Loading
+
+Lazy loading .js and other assets enables very fast UX. More here:
+[Lazy loading](https://github.com/intuition-dev/toolBelt/tree/master/lazyLoading)
 
 
 ### HTTP-RPC 
