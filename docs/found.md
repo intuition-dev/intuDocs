@@ -1,6 +1,7 @@
 
 # Foundation of INTUITION.DEV
 
+
 ## Pug
 
 INTUITION.DEV uses Pug as the main programing language:
@@ -14,7 +15,11 @@ body
 ```
 
 INTUITION.DEV leverages MetaBake (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
-but you do not need to know the mbake CLI for INTUITION.DEV
+but you do not need to know the mbake CLI for INTUITION.DEV.
+    ```bash
+    npm i -g mbake
+    ```
+
 
 ### History
 I first stared using Gulp|Grunt to compile Pug. But soon I switched to using javascript 
@@ -31,7 +36,7 @@ One way to get started is to take code from an already running project, and past
 
 
 
-### Cross platform peak
+### Cross platform preview
 
 And once you are done w/ your Pug app, you can run it cross platform on mobile.
 Same code base. Just leverage the online cross platform tool based on Apache's Cordova: http://build.phonegap.com
