@@ -8,7 +8,7 @@ IntuAPI docs are here:
 
 These are remote calls, eg. for a file to be compiled.
 
-### User Auth
+## User Auth
 
 User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV.
 

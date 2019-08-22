@@ -1,5 +1,5 @@
 
-# ADVANCED / Mobile & Custom Elements, etc.
+# ADVANCED / Mobile, Custom Elements, etc.
 
 ## Lazy Loading
 
@@ -16,7 +16,7 @@ If you are in a rush or have limited resources but need a mobile or a cross plat
  
 You can of course add any needed native plugins from Cordova; but most apps don't need any Cordova plugins.
 
-# Custom Elements
+## Custom Elements
 
 Custom Elements are built into the browser.
 

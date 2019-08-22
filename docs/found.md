@@ -2,7 +2,7 @@
 # FOUNDATION / gen/cross
 
 
-### Pug
+## Pug
 
 INTUITION.DEV uses Pug as the main programing language:
 ```pug
