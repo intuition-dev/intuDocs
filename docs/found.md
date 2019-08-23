@@ -31,7 +31,7 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 
 INTUITION.DEV leverages MetaBake (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
-    ```bash
+    ```
     npm i -g mbake
     ```
 

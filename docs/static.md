@@ -13,9 +13,9 @@ From business POV SEO is very important for most applications. Static is what is
 
 Start the app:
 
-    ```bash
-    intu
-    ```
+```
+intu
+```
 
 User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV.
 
