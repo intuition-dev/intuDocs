@@ -20,7 +20,7 @@ Start the app:
 User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV.
 
 
-[<img src="http://img.youtube.com/vi/AU6eQulq5cE/0.jpg" width="400"/>](http://www.youtube.com/watch?v=BpNvMqwq9TI)
+[<img src="http://img.youtube.com/vi/AU6eQulq5cE/0.jpg" width="400"/>](http://www.youtube.com/watch?v=AU6eQulq5cE)
 
 
 #### API
