@@ -4,7 +4,7 @@ depp.define({
 })
 depp.require(['FontsLoaded'], function () {
    console.log('ready:', Date.now() - _start)
-   depp.require(['bsDefaultStyle', 'font-awesome', 'custom-style', 'DOM' ], function () {
+   depp.require([  'DOM', 'bsDefaultStyle', 'custom-style' ], function () {
       depp.done('commentoPre')
    })
 })
