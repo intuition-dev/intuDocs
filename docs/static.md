@@ -1,6 +1,14 @@
 
 # STATIC / SEO, API, and end-users
 
+
+### SEO and static
+
+From business POV SEO is very important for most applications. Static is what is used for SEO, so static is not optional.
+
+[<img src="http://img.youtube.com/vi/XmbKmahmpFo/0.jpg" width="400"/>](http://www.youtube.com/watch?v=XmbKmahmpFo)
+
+
 ## Start the app and use auth
 
 Start the app:
@@ -23,11 +31,6 @@ IntuAPI docs are here:
 - https://intuition-dev.github.io/INTUITION
 
 
-### SEO and static
-
-From business POV SEO is very important for most applications. Static is what is used for SEO, so static is not optional.
-
-[<img src="http://img.youtube.com/vi/XmbKmahmpFo/0.jpg" width="400"/>](http://www.youtube.com/watch?v=XmbKmahmpFo)
 
 
 ---
