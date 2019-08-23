@@ -22,7 +22,9 @@ body
 
 ```
 
-Demo:
+Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. Etc. Since it generator, you can generate anything.
+
+### Demo:
 
 [<img src="http://img.youtube.com/vi/-oSixA3oDL4/0.jpg" width="400"/>](http://www.youtube.com/watch?v=-oSixA3oDL4)
 
@@ -34,13 +36,16 @@ but you do not need to know the mbake CLI for INTUITION.DEV.
     ```
 
 
-
 ### Starting a project
 
 One way to get started is to take code from an already running project, and paste it in.
 
 [Convert 'page' source to Pug](http://pug.mbake.org)
 
+
+### Example commercial project using INTUITION.DEV
+
+[<img src="http://img.youtube.com/vi/5LAC1IfC9jI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=5LAC1IfC9jI)
 
 
 ### Cross platform preview
