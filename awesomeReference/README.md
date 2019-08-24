@@ -24,7 +24,7 @@ Our main language is Pug, if you have not seen Pug before, here is a quick intro
 - [Pug on Medium](http://medium.com/@WolfgangGehner/using-pug-for-static-and-dynamic-data-binding-56a1cc378b81
 )
 - [Riot on Medium](http://medium.com/@uptimevic/learn-riot-js-dynamic-binding-in-90-seconds-fcece5237c67)
-- [Amazon vs. Google for Cloud v2.0 on Medium](http://medium.com/@WolfgangGehner/amazon-vs-google-for-cloud-2-0-web-apps-extreme-server-less-for-data-and-authentication-cc7fa247e853)
+- [Amazon vs. Google for Cloud v2.0 on Medium](http://medium.com/@WolfgangGehner/amazon-vs-google-for-cloud-2-0-Web Apps-extreme-server-less-for-data-and-authentication-cc7fa247e853)
 - [Web IDE](http://medium.com/@WolfgangGehner/three-steps-to-using-a-web-ide-to-develop-and-build-in-the-cloud-d88586255c67)
 
 

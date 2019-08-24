@@ -164,7 +164,7 @@ Secure by default | Needs Security |
 ---
 
 ## Why MetaBake
-#### Goal: WebApp and Cross Platform *Productivity*
+#### Goal: Web App and Cross Platform *Productivity*
 
 - MetaBake as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
 - In a future with increasing automation. Citizen developers will become more widespread.

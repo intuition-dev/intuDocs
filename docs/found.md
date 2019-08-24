@@ -58,7 +58,7 @@ Here is an example phonegap app for build.phonegap.com:
 
 Notice that the electron app:
 - https://github.com/intuition-dev/mbMobile/tree/master/electronReaderApp
-and webapp:
+and Web App:
 - https://github.com/intuition-dev/mbMobile/tree/master/webReaderApp
 are a *symbolic link* to the phonegapp app.
 

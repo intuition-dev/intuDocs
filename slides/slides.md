@@ -90,7 +90,7 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( WebApp, Electron, PhoneGap, Android, Components )
+==DEMO== advanced/Mobile 2 steps ( Web App, Electron, PhoneGap, Android, Components )
 
 ---
 

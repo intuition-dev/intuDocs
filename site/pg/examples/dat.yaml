@@ -36,7 +36,7 @@ showcase: [{
   img: 'editor.jpg'
 },
 {
-  title: Starter dash web-app ,
+  title: Starter dash Web App ,
   command: mbakeX -d,
   desc: 'Basic dashboard starter with chartjs, c3 and nvd3 samples',
   link: 'https://github.com/INTUITION.DEV/metaCake/tree/master/dash',

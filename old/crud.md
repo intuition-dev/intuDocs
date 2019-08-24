@@ -1,6 +1,6 @@
 # Dynamic data/CRUD/'ViewModel'
 
-This relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD web-app in the current folder:
+This relates to dynamic data, not static content (static eg: CMS or eCommerce). To extract an example CRUD Web App in the current folder:
 ```sh
 mbake -u
 ```

@@ -1,7 +1,7 @@
 
 # SEO and social tags SEO
 
-Since the web-app with MetaBake is statically generated it is great a SEO. Of course coming up with keywords for your landing pages is hard work and outside the scope of this documentation. 
+Since the Web App with MetaBake is statically generated it is great a SEO. Of course coming up with keywords for your landing pages is hard work and outside the scope of this documentation. 
 And you should register any website or CMS with 'Google Webmasters search console': since it allows to
 instantly check that the page SEO is working. Otherwise you are waiting for weeks to just change some code.
 Make sure you submit the page you are working on to 'Google Webmasters search console' so you can see how the SEO sees it.

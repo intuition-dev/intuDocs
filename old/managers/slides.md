@@ -147,7 +147,7 @@
 #### ==**Advantages**==
 
 ##### Better performance
-- We develop the data structure and services needed as a ==**Serverless Back-End**== fully optimized and made to fit the final data required by the app/web-app or website. 
+- We develop the data structure and services needed as a ==**Serverless Back-End**== fully optimized and made to fit the final data required by the app/Web App or website. 
 - We don't build unnecesary payloads or overengineered and monolithic Back-End structures.
 ---
 
@@ -212,7 +212,7 @@
 ---
 <!-- *template: gaia -->
 
-# Custom Mobile Apps and WebApps
+# Custom Mobile Apps and Web Apps
 
 ---
 
@@ -227,7 +227,7 @@
 
 - Also, it makes ==**a breeze to deploy**== and update the app in all the target platforms instantly.
 
- <!-- show tendency of unified codebases for mobile and webapps -->
+ <!-- show tendency of unified codebases for mobile and Web Apps -->
 
 
 ---
