@@ -19,7 +19,7 @@ Demo:
 ### ViewModel
 
 You can use any .js libraries / tools you like. But the default is our Typescript based 'ViewModel'. 
-'ViewModel' is client side, runs in the browser and it's main functionality is 
+'ViewModel' is front-end, runs in the browser and it's main functionality is 
 that is must to map exactly to our Pug View/screen. ViewModel provides simple data structures so that the View can easily bind to it. 
 Validation is also included.
 

@@ -41,7 +41,7 @@ A VM's public methods map to a view. That is 99% of a VM. It is a class where it
 - If you have 2 forms in your view, then VM needs to have 2 objects, since objects have name-value pairs. 
 - If you have 2 charts in your view, then VM needs to have 2 objects in a way that makes it easy to bind to the chart.
 
-In the same way a server-side 'ORM Model' may 'map' to the a table|document fields, the VM maps to the view. The VM does not represent server-side ORM or stores in any way - it ignores it!
+In the same way a back-end 'ORM Model' may 'map' to the a table|document fields, the VM maps to the view. The VM does not represent back-end ORM or stores in any way - it ignores it!
 The VM maps to the view, and makes it easy to map/bind to the view.
 So a VM is a complex VM that fully maps to the View!
 If you change the View, you must change the VM and if you change the VM, you must change the View.
@@ -71,10 +71,10 @@ The View's binding method does the pop up screen.
 
 ## CRUD Step 3 - CRUD 
 
-Once the iterations show that UI is what customers want, you can start implementing the back end, and CRUD methods.
-Take a look at ./CRUD/screen/tabulator_form and it's VM. It uses FireStore back end, and when the user clicks on a row in the table we see the Form details.  For back end we had to use something, so we used Google FireStore, so you'll have to review the docs on their site for any back end code.
+Once the iterations show that UI is what customers want, you can start implementing the back-end, and CRUD methods.
+Take a look at ./CRUD/screen/tabulator_form and it's VM. It uses FireStore back-end, and when the user clicks on a row in the table we see the Form details.  For back-end we had to use something, so we used Google FireStore, so you'll have to review the docs on their site for any back-end code.
 
-The service calls are under ./CRUD/assets/models/service as a separate class that calls the remote back end APIs.
+The service calls are under ./CRUD/assets/models/service as a separate class that calls the remote back-end APIs.
 We add CRUD and similar methods to VM via OO compositions; buy adding classes/systems that perform those services for the VM class.
 
 What we do here in VM is remap how the services return the data into how the View needs the data. Maybe a service is 2 calls to 3 tables/documents - but it all goes into a single form. The VM does that re-mapping.
@@ -99,4 +99,4 @@ There is also an example of doing user auth in CRUD example app. We just followe
 
 ## Review
 
-A VM models the View by mapping to the view to make the biding easier - and VM calls back end services.
+A VM models the View by mapping to the view to make the biding easier - and VM calls back-end services.

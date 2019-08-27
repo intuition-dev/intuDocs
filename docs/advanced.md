@@ -34,9 +34,9 @@ Lazy loading .js and other assets enables very fast UX. More here:
 You can use REST and JSON-RPC. Or our HTTP-RPC:
 [HTTP-RPC example](https://github.com/intuition-dev/toolBelt/tree/master/http-rpc)
 
-Service calls, when done by server side developers must include the client side API call to that
-service. You can't have a server side developer write a service that a different developer then calls client side.
-The person that wrote the service must also write the client side API that calls that service.
+Service calls, when done by back-end developers must include the front-end API call to that
+service. You can't have a back-end developer write a service that a different developer then calls front-end.
+The person that wrote the service must also write the front-end API that calls that service.
 
 
 ### SQLite Full Text Search

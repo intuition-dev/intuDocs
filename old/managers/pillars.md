@@ -82,9 +82,9 @@ frank, it is a mess of an architecture diagram and fails to be
 maintainable.
 
 Cloud v2.0 is fully server-less. E.g. AWS Amplify or better Google
-FireStore. For example: user auth is client-side only. A good first
+FireStore. For example: user auth is front-end only. A good first
 project is to move user auth Google FireStore and use FireStore for CRUD.
-Again, it is purely client-side. Alternatively, one can host and mount a
+Again, it is purely front-end. Alternatively, one can host and mount a
 web app on S3, without the need for FTP, and additionally, use CDN for
 http certs.
 
@@ -267,9 +267,9 @@ Or you can see a low-code CRUD example here:
 
  We have found that - with INTUITION.DEV; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
 
-On the client-side (browser apps and mobile apps) MetaBake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With MetaBake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much quicker and cheaper web app and mobile app development.
+On the front-end (browser apps and mobile apps) MetaBake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With MetaBake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much quicker and cheaper web app and mobile app development.
 
-How does open source MetaBake deliver 10X quicker and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** server-side and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
+How does open source MetaBake deliver 10X quicker and cheaper web app development? Not enough organizations are fully leveraging the new Serverless. With Serverless services like Firestore and S3 you get rid of **ALL** back-end and middleware development and operations. This is where up to 2/3 of your time and cost used to go. Gone!
 
 We benchmark against _LAMP_, _RAILS_, _MEAN_ and such For example, LAMP is the technology WordPress was built on. Every 10 years or so technology gets 10 times better, which *forces* everyone to upgrade. Assembly was 10 times better than machine language. C/.js is 10 times better than Assembly. We believe that we found the answer on how to have a more productive team.
 

@@ -28,7 +28,7 @@ User's editing: means that you need user-auth. User auth and registration is bui
 
 #### API
 
-The browser just makes API call to the back end server to save, compile, etc. to the files.
+The browser just makes API call to the back-end server to save, compile, etc. to the files.
 
 IntuAPI docs are here:
 - https://intuition-dev.github.io/INTUITION

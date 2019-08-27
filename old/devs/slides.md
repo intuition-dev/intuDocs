@@ -49,7 +49,7 @@
 ## The Current State of Affairs
 #### What about SEO :question:
 
-- Web crawlers currently implement someways for discovering content in either virtual DOM / client-side rendered websites.
+- Web crawlers currently implement someways for discovering content in either virtual DOM / front-end rendered websites.
 - The case for SEO
 <!-- complete -->
 
@@ -72,7 +72,7 @@ Secure by default | Needs Security |
 ## The Current State of Affairs
 #### Back to Basics: from LAMP to JAM stack
 -  ==**JavaScript**== Any dynamic programming during the request/response cycle is handled by JavaScript, running entirely on the client. This could be any frontend framework, library, or even vanilla JavaScript.
--  ==**APIs**== All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTPS with JavaScript.
+-  ==**APIs**== All back-end processes or database actions are abstracted into reusable APIs, accessed over HTTPS with JavaScript.
 -  ==**Markup**== Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.
 <small> source: https://jamstack.org/</small>
 
