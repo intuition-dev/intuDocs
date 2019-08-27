@@ -9,7 +9,7 @@
 - sass
 - typescript
 - Bootstrap, 
-- Node js (express) for static server using [Srv.ts](https://github.com/metabake/mbCLI/blob/master/src/lib/Serv.ts) 
+- Node.js (express) for static server using [Srv.ts](https://github.com/metabake/mbCLI/blob/master/src/lib/Serv.ts) 
 - ToolBelt
 - [depp.js](https://github.com/muicss/johnnydepp)
 

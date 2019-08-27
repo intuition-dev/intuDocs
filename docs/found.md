@@ -5,7 +5,7 @@
 ### History
 I first stared using Gulp|Grunt to compile Pug. But soon I switched to using javascript 
 to write my compile commands as Gulp|Grunt ended up being limited.
-So I used node js scripts to 'make'. Soon, I allowed remote services to call the 
+So I used node.js scripts to 'make'. Soon, I allowed remote services to call the 
 'make' script - as you will see in the follow on tutorials. 
 We are just leveraging generators, like Hugo/Jekyll.
 
