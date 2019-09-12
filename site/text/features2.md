@@ -6,5 +6,9 @@
 2. Built in file upload
 2. User-admin built in.
 2. Live-reload of course. And browser extension to edit from www.
-2. Lazy loading capable (via require() dependencies, including popular dependencies already defined)  
+2. Lazy loading of dependencies, including popular dependencies already defined)  
 2. keyboard driven (F12 Custom Elements in v1.1)
+2. Works with popular Design Systems
+2. Single socket for app, editor and API
+2. Built in support for SQL back end.
+
