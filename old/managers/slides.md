@@ -272,7 +272,7 @@
 - High Quality Design with mobile-first approach.
 - Express your branding through **beautiful and solid UI**.
 - Remember, our tech stack is ==**highly SEO-friendly**==.
-- Furthermore, our **Custom Elementsonent based** approach makes possible quicker loading speeds and an integrated mobile experience that lowers user bounce rate.
+- Furthermore, our **Custom Element based** approach makes possible quicker loading speeds and an integrated mobile experience that lowers user bounce rate.
 
 ---
 <!-- *template: gaia -->

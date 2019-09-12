@@ -287,7 +287,7 @@ key1: World
 ##### Advantages:
 - Custom Elements are a framework-agnostic specification that aims for increased modularization, reusability and maintanability of code.
 - Custom Elements are part of an approach to fully dismantle monolithic web apps and develop a truly reusable library of solutions.
-- The DOM of the Custom Elementsonent acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
+- The DOM of the Custom Element acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
 
 ---
 ## MetaBake Pillars
