@@ -1,3 +1,4 @@
+.center{display:block;margin-top:10px;margin-left:auto;margin-right:auto;margin-bottom:20px;}
 .l-showcase{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;}
 .l-showcase--item{flex-basis:29%;margin:2%;box-shadow:0 0 0 1px #e0e0e0;position:relative;text-decoration:none;transition:all 0.2s linear;color:#535252;background:white;}
 .l-showcase--item > a{cursor:pointer;}
@@ -10,4 +11,4 @@
 .l-showcase--item:hover .l-showcase--item--img{cursor:pointer;}
 .l-showcase--item:hover .l-showcase--item--command{background:blue;color:white;}
 @media (max-width:900px){.l-showcase--item{flex-basis:46%;}}
-@media (max-width:650px){.l-showcase--item{flex-basis:100%;margin:0 0 4% 0;}} /* mB v6.08.2 on 2019-08-07T18:35:39.328Z */
+@media (max-width:650px){.l-showcase--item{flex-basis:100%;margin:0 0 4% 0;}} /* mB v6.09.15 on 2019-09-15T01:29:35.118Z */

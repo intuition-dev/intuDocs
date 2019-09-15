@@ -10,5 +10,4 @@
 2. keyboard driven (F12 Custom Elements in v1.1)
 2. Works with popular Design Systems
 2. Single socket for app, editor and API
-2. Built in support for SQL back end.
-
+2. Mono repo for front and back end 

@@ -7,4 +7,5 @@
 2. Static Generator(similar to Hugo or Jekyll): You write Sass, Pug, .ts: it emits *SEO* friendly static content(including optional AMP) to the CDN.
 2. Cross Platform from single code base: Web, IOS, Android (similar to Google's Flutter, but instead leveraging Adobe's free https://Build.PhoneGap.com); but with working SEO. 
 2. Built-in support for I18N 
-2. Built in deployment (GitDown)
+2. Built in deployment (GitDown) for multiple environments such as staging.
+2. Built in support for SQL back end.
