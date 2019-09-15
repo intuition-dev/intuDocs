@@ -4,6 +4,11 @@
   
   "main": "index.js",
   
+  "engines": {
+    "node": ">=12.10.0",
+    "yarn": ">=1.17.3"
+  },
+  
   "dependencies": {
     "intu": ">=1.9.19"
   }
