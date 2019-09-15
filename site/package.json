@@ -1,9 +1,10 @@
 {
   "name": "site",
   "version": "1.0.0",
+  
   "main": "index.js",
   
   "dependencies": {
-    "intu": "^1.9.18"
+    "intu": ">=1.9.19"
   }
 }
