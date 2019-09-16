@@ -1,11 +1,13 @@
 head
     include headFrag
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.16/bootStrap/css/bootstrapTop.css')
+
     block head2
 body
-    script(src='/layouts/ui-loader.js')
+    script(src='/assets/ui-loader.js')
     .container
-        include /includes/navbar
+        include navbar
 
     block main
 
-    include /includes/footer
+    include footer

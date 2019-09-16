@@ -12,4 +12,6 @@
 .l-showcase--item:hover .l-showcase--item--command{background:blue;color:white;}
 @media (max-width:900px){.l-showcase--item{flex-basis:46%;}}
 @media (max-width:650px){.l-showcase--item{flex-basis:100%;margin:0 0 4% 0;}}
-h1,h2,#brand{font-family:Montserrat;font-weight:500;} /* mB v6.09.16 on 2019-09-16T01:14:41.048Z */
+html,*{font-family:'Open Sans';font-weight:300;}
+h1,h2{font-family:'PT Serif';font-weight:400;font-style:italic;}
+#brand{font-family:'Open Sans';font-weight:300;} /* mB v6.09.16 on 2019-09-16T14:31:44.369Z */
