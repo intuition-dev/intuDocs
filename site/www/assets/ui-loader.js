@@ -15,4 +15,7 @@ depp.require(['FontsLoaded'], function () {
    })
 })
 
+// 7 fonts
 loadFonts(['Open+Sans:300,300i,400,400i', 'PT+Serif:400,400i,700i'])
+
+
