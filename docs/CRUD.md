@@ -8,7 +8,7 @@ You can run it yourself. In addition to the CRUD app, it also starts the WebAdmi
 ```
 intu -c
 cd CRUD
-npm i
+yarn
 ```
 
 Demo:

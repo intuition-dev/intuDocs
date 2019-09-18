@@ -136,7 +136,7 @@ Low Code
 How to get Started:
 
 ### Full docs are online in github, and at www.INTUITION.DEV
-### For example: `npm i -g intu`
+### For example: `yarn global add  intu`
 
 --- 
 
