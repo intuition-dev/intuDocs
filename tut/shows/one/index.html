@@ -17,22 +17,18 @@
   </style>
 </head>
 <body>
-  <div id="container">
-    <video id="background_video" loop="" muted=""></video>
-    <div id="video_cover"></div>
-    <div id="overlay"></div>
-    <section id="main_content">
-      <h1 class="f1 b">Animal Kingdom</h1>
-      <h6>Welcome To Bideo js Test Project</h6>
-    </section>
+  <p>what</p>
+  <div class="background_video_container">
+    <video id="background_video" loop="loop" autoplay="autoplay"></video>
   </div>
+  <p>now</p>
   <style>
     html, body {
         width: 100%;
         height: 100%;
     }
     
-    #container {
+    .background_video_container {
         overflow: hidden;
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
@@ -48,35 +44,10 @@
         height: 100%; width: 100%;
     }
     
-    #video_cover {
-        position: absolute;
-        width: 100%; height: 100%;
-        background: url('https://vjs.zencdn.net/v/oceans.png') no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
     #container {
         height: 100%;
     }
     
-    #overlay {
-        position: absolute;
-        top: 0; right: 0; left: 0; bottom: 0;
-    }
-    
-    #main_content {
-        z-index: 2;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        background-color:rgba(1,1,1,0.8);
-        padding:10px 10px 50px 10px;
-        /* Vertical center */
-        top: 50%;
-        transform: translateY(-50%);
-    } 
     
   </style>
   <script>
@@ -90,20 +61,19 @@
             videoEl: document.querySelector('#background_video'),
     
             // Container element
-            container: document.querySelector('body'),
+            container: document.querySelector('#container'),
     
             resize: true,
             autoplay: true,
     
             src: [{
-                src: 'https://vjs.zencdn.net/v/oceans.mp4',
+                src: 'arc.mp4',
                 type: 'video/mp4'
                 }],
     
             // What to do once video loads (initial frame)
             onLoad: function () {
                 console.log('onLoad')
-                document.querySelector('#video_cover').style.display = 'none';
             }
         })//()
     
@@ -114,4 +84,4 @@
     
     })//req
   </script>
-<!-- mB v6.09.18 on 2019-09-22T02:16:21.137Z --></body>
+<!-- mB v6.09.18 on 2019-09-22T02:29:55.084Z --></body>
