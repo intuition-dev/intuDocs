@@ -22,7 +22,7 @@
     <p>what</p>
     <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
     <div class="video_container">
-      <video id="vid1" autoplay="autoplay" preload-'auto'="preload-'auto'" loop="loop" muted="muted">
+      <video class="vid" id="vid1" autoplay="autoplay" preload-'auto'="preload-'auto'" loop="loop" muted="muted">
         <source src="arc.mp4" type="video/mp4"/>
       </video>
     </div>
@@ -36,50 +36,6 @@
         width: 100%; 
     }
     
-    .gutter {
-        background-color: #eee;
-        background-repeat: no-repeat;
-        background-position: 50%;
-    }
-    .gutter.gutter-horizontal {
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
-        cursor: col-resize;
-    }
-    .gutter.gutter-vertical {
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
-        cursor: row-resize;
-    }
-    .split {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    
-        overflow-y: auto;
-        overflow-x: hidden;
-        background-color: #fff;
-    }
-    .split, .gutter.gutter-horizontal {
-        float: left;
-        height: 360px;
-    }
-    .gutter.gutter-horizontal {
-        cursor: ew-resize;
-    }
-    
-    .video_container {
-        display: flex;
-        
-        height: calc(100% - 100px);
-        width:  calc(100% - 200px);
-        background: #edeae8;
-        border: 3px solid #73AD21;
-    
-    }
-    #vid1 {
-        overflow: hidden;
-        flex: 1;
-        object-fit: contain;
-    }
     
   </style>
   <script>
@@ -90,4 +46,4 @@
     
     })//req
   </script>
-<!-- mB v6.09.18 on 2019-09-22T15:18:18.582Z --></body>
+<!-- mB v6.09.18 on 2019-09-22T18:32:14.640Z --></body>
