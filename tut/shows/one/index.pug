@@ -3,19 +3,52 @@ head
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.0/src/css/min.min.css')
 
 body
-    p what
 
-    .video_container
-        video#vid1( autoplay loop muted)
-            source(src='arc.mp4' type="video/mp4" )
-        
-    p now
-        
+    #left.split
+        p what
+        // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
+        .video_container
+            video#vid1( autoplay preload-'auto' loop muted)
+                source(src='arc.mp4' type="video/mp4" )
+            
+        p now
+    #right.split
+
     style.
         * { margin: 0; padding: 0; }
         html, body { 
             height: 100%; 
             width: 100%; 
+        }
+
+        .gutter {
+            background-color: #eee;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+        .gutter.gutter-horizontal {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+            cursor: col-resize;
+        }
+        .gutter.gutter-vertical {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+            cursor: row-resize;
+        }
+        .split {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+        .split, .gutter.gutter-horizontal {
+            float: left;
+            height: 360px;
+        }
+        .gutter.gutter-horizontal {
+            cursor: ew-resize;
         }
 
         .video_container {
@@ -27,7 +60,6 @@ body
             border: 3px solid #73AD21;
 
         }
-
         #vid1 {
             overflow: hidden;
             flex: 1;
@@ -38,10 +70,7 @@ body
         
         depp.require(['split'], function() {
             console.log('ready')
+            Split(['#left', '#right'])
 
-
-            // baseliner = new Baseliner({gridHeight:19, gridColor: 'red'})
-            //toolBeltDefault()
-            //console.log( getStyle(document.getElementsByTagName("BODY")[0], 'line-height') )
 
         })//req
