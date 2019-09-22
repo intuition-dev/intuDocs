@@ -1,5 +1,6 @@
 head
     include /layout/headFrag
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.0/src/css/min.min.css')
 
 body
     p what
@@ -19,11 +20,12 @@ body
 
         .video_container {
             display: flex;
-
+            
             height: calc(100% - 100px);
-            width:  calc(100% - 100px);
+            width:  calc(100% - 200px);
             background: #edeae8;
             border: 3px solid #73AD21;
+
         }
 
         #vid1 {
@@ -33,9 +35,8 @@ body
         }
 
     script.
-
-        window.addEventListener('resize', setVD, false)
-        depp.require([''], function() {
+        
+        depp.require(['split'], function() {
             console.log('ready')
 
 
