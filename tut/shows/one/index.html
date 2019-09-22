@@ -33,22 +33,22 @@
     
     .video_container {
         display: flex;
-        overflow: hidden;
+    
         height: calc(100% - 100px);
         width:  calc(100% - 100px);
-        min-width: 0;
         background: #edeae8;
+        border: 3px solid #73AD21;
     }
     
     #vid1 {
+        overflow: hidden;
         flex: 1;
         object-fit: contain;
     }
     
   </style>
   <script>
-    console.log('here')
-    
+    window.addEventListener('resize', setVD, false)
     depp.require([''], function() {
         console.log('ready')
     
@@ -59,4 +59,4 @@
     
     })//req
   </script>
-<!-- mB v6.09.18 on 2019-09-22T02:38:32.254Z --></body>
+<!-- mB v6.09.18 on 2019-09-22T03:19:27.091Z --></body>
