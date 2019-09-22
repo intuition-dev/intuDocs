@@ -1,0 +1,60 @@
+head
+    include /layout/headFrag
+
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/dmbdesignpdx/flexr@2/flexr.min.css')
+
+body
+    p
+    .container
+        p oh hi1
+
+
+
+    .vidCont
+        //oh hi
+    .row.stretch
+        .col-12.vidCont
+            p oh
+            video#v1
+                source(src="arc.mp4" type="video/mp4" autoplay)
+
+
+    .container
+        p
+        p oh hi2
+
+    style.
+        .body {
+            height: 100%;
+        }
+        
+        .vidCont {
+            max-height: calc(100% - 100px);
+            background-color: yellow;
+        }
+
+        #v1 {
+            object-fit: contain;
+        }
+
+    script.
+        //toolBeltDefault()
+        
+        //console.log( getStyle(document.getElementsByTagName("BODY")[0], 'line-height') )
+
+        console.log('here')
+
+        depp.require(['m1ediaelement'], function() {
+            console.log('ready')
+
+            var player = new MediaElementPlayer('v1', {
+                stretching: 'responsive',
+                success: function(mediaElement, originalNode, instance) {
+                    console.log('video ready')
+
+                }
+            })//media
+
+            // baseliner = new Baseliner({gridHeight:19, gridColor: 'red'})
+
+        })//req

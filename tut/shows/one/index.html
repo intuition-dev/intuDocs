@@ -1,0 +1,77 @@
+
+<head>
+  <script>
+    var _start = Date.now()
+    window.ENV = '0' //- for comps, but it is also in scope for Pug for ENV logic
+    
+  </script>
+  <title></title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.20/src/toolBelt.min.js"></script>
+  <style>
+    html { touch-action: manipulation; }
+    .delayShowing { opacity: 0; }
+    .blur { -webkit-filter:blur(2px);filter:blur(2px); }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dmbdesignpdx/flexr@2/flexr.min.css"/>
+</head>
+<body>
+  <p></p>
+  <div class="container">
+    <p>oh hi1</p>
+  </div>
+  <div class="vidCont">
+    <!--oh hi-->
+  </div>
+  <div class="row stretch">
+    <div class="col-12 vidCont">
+      <p>oh</p>
+      <video id="v1">
+        <source src="arc.mp4" type="video/mp4" autoplay="autoplay"/>
+      </video>
+    </div>
+  </div>
+  <div class="container">
+    <p></p>
+    <p>oh hi2</p>
+  </div>
+  <style>
+    .body {
+        height: 100%;
+    }
+    
+    .vidCont {
+        max-height: calc(100% - 100px);
+        background-color: yellow;
+    }
+    
+    #v1 {
+        object-fit: contain;
+    }
+    
+  </style>
+  <script>
+    //toolBeltDefault()
+    
+    //console.log( getStyle(document.getElementsByTagName("BODY")[0], 'line-height') )
+    
+    console.log('here')
+    
+    depp.require(['m1ediaelement'], function() {
+        console.log('ready')
+    
+        var player = new MediaElementPlayer('v1', {
+            stretching: 'responsive',
+            success: function(mediaElement, originalNode, instance) {
+                console.log('video ready')
+    
+            }
+        })//media
+    
+        // baseliner = new Baseliner({gridHeight:19, gridColor: 'red'})
+    
+    })//req
+  </script>
+<!-- mB v6.09.18 on 2019-09-22T01:14:16.892Z --></body>

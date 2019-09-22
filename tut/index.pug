@@ -1,0 +1,19 @@
+head
+    include layout/headFrag
+body
+    p
+    .container
+        p oh hi
+
+
+    script.
+        //toolBeltDefault()
+        
+        console.log( getStyle(document.getElementsByTagName("BODY")[0], 'line-height') )
+
+        console.log('here')
+
+        depp.require(['jquery','baseliner'], function() {
+            console.log('ready')
+            baseliner = new Baseliner({gridHeight:19, gridColor: 'red'})
+        })
