@@ -4,64 +4,38 @@ head
 body
     p what
 
-    .background_video_container
-        video#background_video(loop autoplay)
+    .video_container
+        video#vid1( autoplay loop muted)
+            source(src='arc.mp4' type="video/mp4" )
         
     p now
         
     style.
-        html, body {
-            width: 100%;
-            height: 100%;
+        * { margin: 0; padding: 0; }
+        html, body { 
+            height: 100%; 
+            width: 100%; 
         }
 
-        .background_video_container {
+        .video_container {
+            display: flex;
             overflow: hidden;
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            height: calc(100% - 100px);
+            width:  calc(100% - 100px);
+            min-width: 0;
+            background: #edeae8;
         }
 
-        #background_video {
-            position: absolute;
-
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-
+        #vid1 {
+            flex: 1;
             object-fit: contain;
-            height: 100%; width: 100%;
         }
-
-        #container {
-            height: 100%;
-        }
-
 
     script.
         console.log('here')
 
-        depp.require(['bideo'], function() {
+        depp.require([''], function() {
             console.log('ready')
-            var bv = new Bideo()
-            bv.init({
-                // Video element
-                videoEl: document.querySelector('#background_video'),
-
-                // Container element
-                container: document.querySelector('#container'),
-
-                resize: true,
-                autoplay: true,
-
-                src: [{
-                    src: 'arc.mp4',
-                    type: 'video/mp4'
-                    }],
-
-                // What to do once video loads (initial frame)
-                onLoad: function () {
-                    console.log('onLoad')
-                }
-            })//()
 
 
             // baseliner = new Baseliner({gridHeight:19, gridColor: 'red'})
