@@ -15,20 +15,22 @@
     .delayShowing { opacity: 0; }
     .blur { -webkit-filter:blur(2px);filter:blur(2px); }
   </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.0/src/css/min.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.1/src/css/min.min.css"/>
 </head>
 <body>
-  <div class="split" id="left">
-    <p>what</p>
-    <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
-    <div class="video_container">
-      <video class="vid" id="vid1" autoplay="autoplay" preload-'auto'="preload-'auto'" loop="loop" muted="muted">
-        <source src="arc.mp4" type="video/mp4"/>
-      </video>
+  <div class="epis">
+    <div class="split" id="left">
+      <p>what</p>
+      <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
+      <div class="video_container">
+        <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted" controls="controls" controlsList="nodownload">
+          <source src="arc.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <p>now</p>
     </div>
-    <p>now</p>
+    <div class="split" id="right"></div>
   </div>
-  <div class="split" id="right"></div>
   <style>
     * { margin: 0; padding: 0; }
     html, body { 
@@ -36,14 +38,24 @@
         width: 100%; 
     }
     
+    .video_container {
+        height:  calc(100% - 100px);
+        
+        border:  3px solid yellow;
+    }
+    
     
   </style>
   <script>
-    depp.require(['split'], function() {
+    depp.require(['split','DOM'], function() {
         console.log('ready')
-        Split(['#left', '#right'])
+        
+        var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
+           sizes: [90, 10],
+           minSize: 200
+        })
+        console.log(sp.getSizes())
     
-    
-    })//req
+    })//depp
   </script>
-<!-- mB v6.09.18 on 2019-09-22T18:32:14.640Z --></body>
+<!-- mB v6.09.18 on 2019-09-22T20:14:12.257Z --></body>
