@@ -1,0 +1,24 @@
+pretty: true
+
+basedir: ../../../
+
+
+els:
+  -
+    name: marq
+    desc: Smooth Marquee
+    source:
+  - 
+    name: spin
+    desc: Spinner
+    source:
+  - 
+    name: starrating
+    desc: Star Rating
+    source:
+  - 
+    name: surveyitem
+    desc: One Survey item
+    source: 
+
+

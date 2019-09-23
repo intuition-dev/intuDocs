@@ -23,15 +23,32 @@
       <p>what</p>
       <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
       <div class="video_container">
-        <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted" controls="controls" controlsList="nodownload">
+        <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
           <source src="arc.mp4" type="video/mp4"/>
         </video>
       </div>
       <p>now</p>
     </div>
-    <div class="split" id="right"></div>
+    <div class="split" id="right">
+      <div>
+        <button>Up</button>
+        <p></p>
+        <button>Down</button>
+      </div>
+    </div>
   </div>
   <style>
+    /* video detach button */
+    //  video popout
+    // https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+    // May remove other useful browser popups, inserted after "body" element.
+    ::-webkit-media-controls {
+        display:none !important;
+    }
+    video::-webkit-media-controls-enclosure {
+       display:none !important;
+    }
+    
     * { margin: 0; padding: 0; }
     html, body { 
         height: 100%; 
@@ -45,8 +62,10 @@
     }
     
     
+    
   </style>
   <script>
+    toolBeltDefault()
     depp.require(['split','DOM'], function() {
         console.log('ready')
         
@@ -58,4 +77,4 @@
     
     })//depp
   </script>
-<!-- mB v6.09.18 on 2019-09-22T20:14:12.257Z --></body>
+<!-- mB v6.09.18 on 2019-09-23T01:20:59.575Z --></body>

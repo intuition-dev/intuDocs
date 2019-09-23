@@ -11,13 +11,30 @@ body
 
             // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
             .video_container
-                video#vid1.vid( autoplay preload='auto' loop muted controls controlsList="nodownload" )
+                video#vid1.vid( autoplay preload='auto' loop muted )
                     source(src='arc.mp4' type="video/mp4" )
                 
             p now
         #right.split
+            div
+                button Up
+                p
+
+                
+                button Down
 
     style.
+        /* video detach button */
+        //  video popout
+        // https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+        // May remove other useful browser popups, inserted after "body" element.
+        ::-webkit-media-controls {
+            display:none !important;
+        }
+        video::-webkit-media-controls-enclosure {
+           display:none !important;
+        }
+
         * { margin: 0; padding: 0; }
         html, body { 
             height: 100%; 
@@ -30,9 +47,10 @@ body
             border:  3px solid yellow;
         }
 
+    
 
     script.
-        
+        toolBeltDefault()
         depp.require(['split','DOM'], function() {
             console.log('ready')
             
