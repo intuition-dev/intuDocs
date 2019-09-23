@@ -25,16 +25,15 @@
     <div id="pagination-container"></div>
   </div>
   <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
-<!-- mB v6.09.18 on 2019-09-23T21:01:21.985Z --></body>
+<!-- mB v6.09.18 on 2019-09-23T21:13:53.837Z --></body>
 <style>
    .butOn {
        font-weight: normal;
-       plointer-events: auto;
-  
+       pointer-events: auto;
    }
    .butOff {
        font-weight: lighter;
-       plointer-events: none;
+       pointer-events: none;
   }
   
 </style>
@@ -91,7 +90,6 @@
       onData(dat)
   })
   
-  
   function onData(data) {
       console.log('data')
       $('#pagination-container').pagination({
@@ -101,12 +99,14 @@
           showPrevious: false,
           showNext: false,
   
-          dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 195],
+          dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   
           callback: function(data, pagination) { // on page
               console.log('pg')
               //pg, sz, tot
-              showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
+              setTimeout(function(){
+                  showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
+              },1)
   
               // template method 
               var html = template(data)
@@ -121,7 +121,9 @@
       if(pg==1)  { but('prev', false ) }
           else but('prev', true) 
   
-      if(pg * sz < (tot - sz)) { // more 
+      var cur = pg * sz
+      console.log(cur, tot)
+      if(cur < tot) { // more 
           but('next', true) 
       } else { // to much
           but('next', false) 
@@ -129,11 +131,9 @@
   }
   
   function but(id, on) {
-  
       console.log(id,on)
-  
       $b = $('#'+id)
-      $b.prop('disabled', on)
+      $b.prop('disabled', !on)
   
       if(on) {
           $b.removeClass( "classless" )
@@ -147,6 +147,5 @@
           $b.addClass(    "classless" )
           $b.addClass(    "butOff" )
       }
-  
   }//()
 </script>
