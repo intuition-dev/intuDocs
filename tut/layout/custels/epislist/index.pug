@@ -5,7 +5,6 @@ head
 body
     p oh hi
 
-
     button.btn.btn-a Previous 
 
     #custLst
@@ -24,42 +23,38 @@ body
     button.btn.btn-a Next 
     
 
-
 style.
-    .pagination li {
+    .paginationTop li, .paginationBot li {
         display:inline-block;
         padding:5px;
     }
 
 script.
-    toolBeltDefault()
-    depp.require(['listjs'], function() {
+    //toolBeltDefault()
+
+    depp.require(['listjs', 'jquery', 'DOM', 'poly'], function() {
         console.log('ready')
         var dat = [
-            {name: 'oh hi1', desc: 'there'},
-            {name: 'oh hi2', desc: 'there'},
-            {name: 'oh hi3', desc: 'there'},
-            {name: 'oh hi4', desc: 'there'},
-            {name: 'oh hi5', desc: 'there'},
-            {name: 'oh hi6', desc: 'there'},
-            {name: 'oh hi7', desc: 'there'},
-            {name: 'oh hi8', desc: 'there'},
-            {name: 'oh hi9', desc: 'there'},
-            {name: 'oh hi10', desc: 'there'},
-            {name: 'oh hi11', desc: 'there'},
-            {name: 'oh hi12', desc: 'there'},
-            {name: 'oh hi1', desc: 'there'},
-            {name: 'oh hi2', desc: 'there'},
-            {name: 'oh hi3', desc: 'there'},
-            {name: 'oh hi4', desc: 'there'},
-            {name: 'oh hi5', desc: 'there'},
-            {name: 'oh hi6', desc: 'there'},
-            {name: 'oh hi7', desc: 'there'},
-            {name: 'oh hi8', desc: 'there'},
-            {name: 'oh hi9', desc: 'there'},
-            {name: 'oh hi10', desc: 'there'},
-            {name: 'oh hi11', desc: 'there'},
-            {name: 'oh hi12', desc: 'there'},
+            {name: 'oh hi1', desc: '1there'},
+            {name: 'oh hi2', desc: '2there'},
+            {name: 'oh hi3', desc: '3there'},
+            {name: 'oh hi4', desc: '4there'},
+            {name: 'oh hi5', desc: '5there'},
+            {name: 'oh hi6', desc: '6there'},
+            {name: 'oh hi7', desc: '7there'},
+            {name: 'oh hi8', desc: '8there'},
+            {name: 'oh hi9', desc: '9there'},
+            {name: 'oh hi10', desc: '10there'},
+            {name: 'oh hi11', desc: '11there'},
+            {name: 'oh hi12', desc: '12there'},
+            {name: 'oh hi13', desc: '13there'},
+            {name: 'oh hi14', desc: '14there'},
+            {name: 'oh hi15', desc: '15there'},
+            {name: 'oh hi16', desc: '16there'},
+            {name: 'oh hi17', desc: '17there'},
+            {name: 'oh hi18', desc: '18there'},
+            {name: 'oh hi19', desc: '19there'},
+            
         ]
 
         onData(dat)
@@ -67,27 +62,27 @@ script.
 
     function onData(data) {
         var options = {
-            valueNames: [ 'desc', 'name', {data: ['name']} ],
-            item: `<tr data-name> 
+            valueNames: [ 'desc', 'name', {data: ['nameKK']} ],
+            item: `<tr data-nameKK> 
                      <td class="name"></td>
                      <td class="desc"></td>
                    </tr>`,
             page: 3,
-            pagination: true,
             pagination: [{
                 name: "paginationTop",
                 paginationClass: "paginationTop",
-                innerWindow: 1,
-                left: 2
-            }, {
+          
+             }, {
                 paginationClass: "paginationBot",
                 innerWindow: 1,
+                left: 0,
                 right: 2
             }]
        
-            }
+            } // options
 
         var custListEl = document.getElementById('custLst')
 
         var custelList = new List(custListEl, options, data)
+
     }//()
