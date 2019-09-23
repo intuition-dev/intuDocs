@@ -1,25 +1,69 @@
 pretty: true
-
 basedir: ../../../
 
+title: Rambo - Last Blood
+desc: Rambo must confront his past and unearth his ruthless combat skills to exact revenge in a final mission.
+img: img.jpg
+featuring: Rambo
 
-els:
+reverseOrder: false
+
+year: 2009
+editor: vic
+tags: trump, politics, 
+
+frags:
   -
-    timestamp: 
-    name: marq
-    desc: Smooth Marquee
-    source:
-  - 
-    name: spin
-    desc: Spinner
-    source:
-  - 
-    name: starrating
-    desc: Star Rating
-    source:
-  - 
-    name: surveyitem
-    desc: One Survey item
-    source: 
-
-
+    title:  And neither does this bloody franchise.
+    source: arc.mp4
+  -
+    title: Trump's presidential campaign announcement speech.
+    source: arc.mp4
+  -
+    title:  He decimated the Burmese military machine.
+    source: arc.mp4
+  -
+    title: Stallone endows Rambo with mortality.
+    source: arc.mp4
+  -
+    title:  Movie was rather thoughtful and complex.
+    source: arc.mp4
+  -
+    title: Stallone wanted to go beyond the very.
+    source: arc.mp4
+ -
+    title:  And neither does this bloody franchise.
+    source: arc.mp4
+  -
+    title: Trump's presidential campaign announcement speech.
+    source: arc.mp4
+  -
+    title:  He decimated the Burmese military machine.
+    source: arc.mp4
+  -
+    title: Stallone endows Rambo with mortality.
+    source: arc.mp4
+  -
+    title:  Movie was rather thoughtful and complex.
+    source: arc.mp4
+  -
+    title: Stallone wanted to go beyond the very.
+    source: arc.mp4
+ -
+    title:  And neither does this bloody franchise.
+    source: arc.mp4
+  -
+    title: Trump's presidential campaign announcement speech.
+    source: arc.mp4
+  -
+    title:  He decimated the Burmese military machine.
+    source: arc.mp4
+  -
+    title: Stallone endows Rambo with mortality.
+    source: arc.mp4
+  -
+    title:  Movie was rather thoughtful and complex.
+    source: arc.mp4
+  -
+    title: Stallone wanted to go beyond the very.
+    source: arc.mp4
