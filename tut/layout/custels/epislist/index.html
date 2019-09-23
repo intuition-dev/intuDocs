@@ -9,7 +9,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.20/src/toolBelt.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.20/src/toolBelt.min.js"></script>
   <style>
     html { touch-action: manipulation; }
     .delayShowing { opacity: 0; }
@@ -19,34 +19,40 @@
 </head>
 <body>
   <p>oh hi</p>
-  <button class="btn btn-a">Previous </button>
-  <div id="custLst">
-    <ul class="paginationTop"></ul>
-    <input class="search smooth" placeholder="Search"/>
-    <hr/>
-    <table class="table">
-      <thead></thead>
-      <tr>
-        <th>Elements</th>
-      </tr>
-      <tbody class="list"></tbody>
-    </table>
-    <ul class="paginationBot"></ul>
-  </div>
-  <button class="btn btn-a">Next </button>
-<!-- mB v6.09.18 on 2019-09-23T03:34:51.143Z --></body>
-<style>
-  .paginationTop li, .paginationBot li {
-      display:inline-block;
-      padding:5px;
-  }
-  
-</style>
+  <button class="btn btn-a" id="prev">Previous </button>
+  <div id="data-container"></div>
+  <div id="pagination-container"></div>
+  <button class="btn btn-a" id="next">Next </button>
+<!-- mB v6.09.18 on 2019-09-23T14:27:00.013Z --></body>
+<style></style>
 <script>
   //toolBeltDefault()
   
-  depp.require(['listjs', 'jquery', 'DOM', 'poly'], function() {
+  function template(data) {
+  
+      var html = '<ul>';
+      $.each(data, function(index, item){
+          html += '<li>'+ item +'</li>';
+      });
+      html += '</ul>';
+      return html;
+  
+  }
+  
+  depp.require(['jquery', 'pagination', 'mustache', 'poly'], function() {
       console.log('ready')
+  
+      document.getElementById("prev").addEventListener("click", function(){
+              console.log('P')
+              $('#pagination-container').pagination('previous')
+          })
+  
+      document.getElementById("next").addEventListener("click", function(){
+          console.log('N')
+          $('#pagination-container').pagination('next')
+      })
+      
+  
       var dat = [
           {name: 'oh hi1', desc: '1there'},
           {name: 'oh hi2', desc: '2there'},
@@ -66,37 +72,31 @@
           {name: 'oh hi16', desc: '16there'},
           {name: 'oh hi17', desc: '17there'},
           {name: 'oh hi18', desc: '18there'},
-          {name: 'oh hi19', desc: '19there'},
-          
+          {name: 'oh hi19', desc: '19there'}
       ]
   
       onData(dat)
   })
   
+  
   function onData(data) {
-      var options = {
-          valueNames: [ 'desc', 'name', {data: ['nameKK']} ],
-          item: `<tr data-nameKK> 
-                   <td class="name"></td>
-                   <td class="desc"></td>
-                 </tr>`,
-          page: 3,
-          pagination: [{
-              name: "paginationTop",
-              paginationClass: "paginationTop",
-        
-           }, {
-              paginationClass: "paginationBot",
-              innerWindow: 1,
-              left: 0,
-              right: 2
-          }]
-     
-          } // options
+      console.log('data')
+      $('#pagination-container').pagination({
   
-      var custListEl = document.getElementById('custLst')
+          pageSize: 3,
+          showPageNumbers: false,
+          showPrevious: false,
+          showNext: false,
   
-      var custelList = new List(custListEl, options, data)
+          dataSource: [1, 2, 3, 4, 5, 6, 7, 195],
+  
+          callback: function(data, pagination) { // on page
+              console.log('pg')
+              // template method of yourself
+              var html = template(data);
+              $('#data-container').html(html);
+          }
+      })
   
   }//()
 </script>

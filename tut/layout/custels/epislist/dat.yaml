@@ -5,6 +5,7 @@ basedir: ../../../
 
 els:
   -
+    timestamp: 
     name: marq
     desc: Smooth Marquee
     source:
