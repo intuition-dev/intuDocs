@@ -19,14 +19,34 @@
 </head>
 <body>
   <p>oh hi</p>
-  <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
-  <div>
-    <div id="data-container"></div>
-    <div id="pagination-container"></div>
+  <div class="fragCont">
+    <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
+    <div class="pagCont">
+      <div id="data-container"></div>
+      <div id="pagination-container"></div>
+    </div>
+    <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
   </div>
-  <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
-<!-- mB v6.09.18 on 2019-09-23T21:13:53.837Z --></body>
+<!-- mB v6.09.18 on 2019-09-23T21:51:38.631Z --></body>
 <style>
+   .fragCont {
+       display: flex;
+       flex-direction: column;
+       height: calc(100% - 3em);
+   }    
+   .pagCont {
+       flex-grow: 1;
+   }
+  
+   #next {
+  
+   }
+  
+  
+   .btn {
+       width: 8em;
+   }
+  
    .butOn {
        font-weight: normal;
        pointer-events: auto;
@@ -134,7 +154,6 @@
       console.log(id,on)
       $b = $('#'+id)
       $b.prop('disabled', !on)
-  
       if(on) {
           $b.removeClass( "classless" )
           $b.removeClass( "butOff" )

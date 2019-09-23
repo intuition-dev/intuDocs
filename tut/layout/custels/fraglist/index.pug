@@ -5,15 +5,35 @@ head
 body
     p oh hi
 
-    button#prev.btn.butOff.classless(disabled) Previous 
+    .fragCont
 
-    div
-        #data-container
-        #pagination-container
+        button#prev.btn.butOff.classless(disabled) Previous 
 
-    button#next.btn.butOff.classless(disabled) Next 
+        .pagCont
+            #data-container
+            #pagination-container
+
+        button#next.btn.butOff.classless(disabled) Next 
     
 style.
+
+    .fragCont {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 3em);
+    }    
+    .pagCont {
+        flex-grow: 1;
+    }
+
+    #next {
+
+    }
+
+
+    .btn {
+        width: 8em;
+    }
 
     .butOn {
         font-weight: normal;
@@ -121,7 +141,6 @@ script.
         console.log(id,on)
         $b = $('#'+id)
         $b.prop('disabled', !on)
-
         if(on) {
             $b.removeClass( "classless" )
             $b.removeClass( "butOff" )
