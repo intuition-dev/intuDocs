@@ -5,16 +5,25 @@ head
 body
     p oh hi
 
-    button#prev.btn.btn-a Previous 
+    button#prev.btn.butOff.classless(disabled) Previous 
 
-    #data-container
-    #pagination-container
+    div
+        #data-container
+        #pagination-container
 
-    button#next.btn.btn-a Next 
+    button#next.btn.butOff.classless(disabled) Next 
     
-
 style.
-  
+
+    .butOn {
+        font-weight: normal;
+        plointer-events: auto;
+
+    }
+    .butOff {
+        font-weight: lighter;
+        plointer-events: none;
+   }
 
 script.
     //toolBeltDefault()
@@ -82,23 +91,48 @@ script.
             dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 195],
 
             callback: function(data, pagination) { // on page
-
-                console.log(pagination.pageNumber, pagination.totalNumber)
+                console.log('pg')
+                //pg, sz, tot
+                showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
 
                 // template method 
-                var html = template(data);
-                $('#data-container').html(html);
-                console.log('pg')
-                setTimeout(showHide,50)
+                var html = template(data)
+                $('#data-container').html(html)
             }//cb
         })
 
     }//()
 
-    function showHide() {
+    function showHide(pg, sz, tot) {
         console.log('sh')
-        
-        var cur = $('#pagination-container').pagination('getSelectedPageNum')
-        var tot = $('#pagination-container').pagination('getTotalPage')
-        console.log(cur,tot)
+        if(pg==1)  { but('prev', false ) }
+            else but('prev', true) 
+
+        if(pg * sz < (tot - sz)) { // more 
+            but('next', true) 
+        } else { // to much
+            but('next', false) 
+        }
     }
+
+    function but(id, on) {
+
+        console.log(id,on)
+
+        $b = $('#'+id)
+        $b.prop('disabled', on)
+    
+        if(on) {
+            $b.removeClass( "classless" )
+            $b.removeClass( "butOff" )
+            $b.addClass(    "btn-a" )
+            $b.addClass(    "butOn" )
+
+        } else {
+            $b.removeClass( "btn-a" )
+            $b.removeClass( "butOn" )
+            $b.addClass(    "classless" )
+            $b.addClass(    "butOff" )
+        }
+
+    }//()

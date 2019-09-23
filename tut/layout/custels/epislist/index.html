@@ -19,12 +19,25 @@
 </head>
 <body>
   <p>oh hi</p>
-  <button class="btn btn-a" id="prev">Previous </button>
-  <div id="data-container"></div>
-  <div id="pagination-container"></div>
-  <button class="btn btn-a" id="next">Next </button>
-<!-- mB v6.09.18 on 2019-09-23T15:38:13.899Z --></body>
-<style></style>
+  <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
+  <div>
+    <div id="data-container"></div>
+    <div id="pagination-container"></div>
+  </div>
+  <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
+<!-- mB v6.09.18 on 2019-09-23T21:01:21.985Z --></body>
+<style>
+   .butOn {
+       font-weight: normal;
+       plointer-events: auto;
+  
+   }
+   .butOff {
+       font-weight: lighter;
+       plointer-events: none;
+  }
+  
+</style>
 <script>
   //toolBeltDefault()
   
@@ -91,24 +104,49 @@
           dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 195],
   
           callback: function(data, pagination) { // on page
-  
-              console.log(pagination.pageNumber, pagination.totalNumber)
+              console.log('pg')
+              //pg, sz, tot
+              showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
   
               // template method 
-              var html = template(data);
-              $('#data-container').html(html);
-              console.log('pg')
-              setTimeout(showHide,50)
+              var html = template(data)
+              $('#data-container').html(html)
           }//cb
       })
   
   }//()
   
-  function showHide() {
+  function showHide(pg, sz, tot) {
       console.log('sh')
-      
-      var cur = $('#pagination-container').pagination('getSelectedPageNum')
-      var tot = $('#pagination-container').pagination('getTotalPage')
-      console.log(cur,tot)
+      if(pg==1)  { but('prev', false ) }
+          else but('prev', true) 
+  
+      if(pg * sz < (tot - sz)) { // more 
+          but('next', true) 
+      } else { // to much
+          but('next', false) 
+      }
   }
+  
+  function but(id, on) {
+  
+      console.log(id,on)
+  
+      $b = $('#'+id)
+      $b.prop('disabled', on)
+  
+      if(on) {
+          $b.removeClass( "classless" )
+          $b.removeClass( "butOff" )
+          $b.addClass(    "btn-a" )
+          $b.addClass(    "butOn" )
+  
+      } else {
+          $b.removeClass( "btn-a" )
+          $b.removeClass( "butOn" )
+          $b.addClass(    "classless" )
+          $b.addClass(    "butOff" )
+      }
+  
+  }//()
 </script>
