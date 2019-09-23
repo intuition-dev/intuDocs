@@ -19,11 +19,87 @@
 </head>
 <body>
   <p>oh hi</p>
-<!-- mB v6.09.18 on 2019-09-23T01:20:59.584Z --></body>
-<style></style>
+  <button class="btn btn-a">Previous </button>
+  <div id="custLst">
+    <ul class="paginationTop"></ul>
+    <input class="search smooth" placeholder="Search"/>
+    <hr/>
+    <table class="table">
+      <thead></thead>
+      <tr>
+        <th>Elements</th>
+      </tr>
+      <tbody class="list"></tbody>
+    </table>
+    <ul class="paginationBot"></ul>
+  </div>
+  <button class="btn btn-a">Next </button>
+<!-- mB v6.09.18 on 2019-09-23T02:48:54.290Z --></body>
+<style>
+  .pagination li {
+      display:inline-block;
+      padding:5px;
+  }
+  
+</style>
 <script>
   toolBeltDefault()
   depp.require(['listjs'], function() {
       console.log('ready')
+      var dat = [
+          {name: 'oh hi1', desc: 'there'},
+          {name: 'oh hi2', desc: 'there'},
+          {name: 'oh hi3', desc: 'there'},
+          {name: 'oh hi4', desc: 'there'},
+          {name: 'oh hi5', desc: 'there'},
+          {name: 'oh hi6', desc: 'there'},
+          {name: 'oh hi7', desc: 'there'},
+          {name: 'oh hi8', desc: 'there'},
+          {name: 'oh hi9', desc: 'there'},
+          {name: 'oh hi10', desc: 'there'},
+          {name: 'oh hi11', desc: 'there'},
+          {name: 'oh hi12', desc: 'there'},
+          {name: 'oh hi1', desc: 'there'},
+          {name: 'oh hi2', desc: 'there'},
+          {name: 'oh hi3', desc: 'there'},
+          {name: 'oh hi4', desc: 'there'},
+          {name: 'oh hi5', desc: 'there'},
+          {name: 'oh hi6', desc: 'there'},
+          {name: 'oh hi7', desc: 'there'},
+          {name: 'oh hi8', desc: 'there'},
+          {name: 'oh hi9', desc: 'there'},
+          {name: 'oh hi10', desc: 'there'},
+          {name: 'oh hi11', desc: 'there'},
+          {name: 'oh hi12', desc: 'there'},
+      ]
+  
+      onData(dat)
   })
+  
+  function onData(data) {
+      var options = {
+          valueNames: [ 'desc', 'name', {data: ['name']} ],
+          item: `<tr data-name> 
+                   <td class="name"></td>
+                   <td class="desc"></td>
+                 </tr>`,
+          page: 3,
+          pagination: true,
+          pagination: [{
+              name: "paginationTop",
+              paginationClass: "paginationTop",
+              innerWindow: 1,
+              left: 2
+          }, {
+              paginationClass: "paginationBot",
+              innerWindow: 1,
+              right: 2
+          }]
+     
+          }
+  
+      var custListEl = document.getElementById('custLst')
+  
+      var custelList = new List(custListEl, options, data)
+  }//()
 </script>
