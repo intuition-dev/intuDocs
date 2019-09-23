@@ -18,30 +18,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.1/src/css/min.min.css"/>
 </head>
 <body>
-  <p>oh hi</p>
   <div class="fragCont">
+    <p></p>
     <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
+    <p></p>
     <div class="pagCont">
       <div id="data-container"></div>
       <div id="pagination-container"></div>
     </div>
+    <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
   </div>
-<!-- mB v6.09.18 on 2019-09-23T21:51:38.631Z --></body>
+<!-- mB v6.09.18 on 2019-09-23T22:09:29.224Z --></body>
 <style>
    .fragCont {
        display: flex;
        flex-direction: column;
-       height: calc(100% - 3em);
+       height: calc(100% - 1.5em);
    }    
    .pagCont {
        flex-grow: 1;
    }
-  
-   #next {
-  
-   }
-  
   
    .btn {
        width: 8em;
@@ -110,16 +107,19 @@
       onData(dat)
   })
   
-  function onData(data) {
+  function onData(data) {        
       console.log('data')
+      var computedItems = $('.pagCont').height() / 30   // pixels    
+      console.log( $('.pagCont').height(), computedItems ) 
+  
       $('#pagination-container').pagination({
   
-          pageSize: 3,
+          pageSize: computedItems,
           showPageNumbers: false,
           showPrevious: false,
           showNext: false,
   
-          dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,  2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   
           callback: function(data, pagination) { // on page
               console.log('pg')

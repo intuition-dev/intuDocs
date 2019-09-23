@@ -3,16 +3,15 @@ head
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.1/src/css/min.min.css')
 
 body
-    p oh hi
 
     .fragCont
-
+        p
         button#prev.btn.butOff.classless(disabled) Previous 
-
+        p
         .pagCont
             #data-container
             #pagination-container
-
+        p
         button#next.btn.butOff.classless(disabled) Next 
     
 style.
@@ -20,16 +19,11 @@ style.
     .fragCont {
         display: flex;
         flex-direction: column;
-        height: calc(100% - 3em);
+        height: calc(100% - 1.5em);
     }    
     .pagCont {
         flex-grow: 1;
     }
-
-    #next {
-
-    }
-
 
     .btn {
         width: 8em;
@@ -97,16 +91,19 @@ script.
         onData(dat)
     })
 
-    function onData(data) {
+    function onData(data) {        
         console.log('data')
+        var computedItems = $('.pagCont').height() / 30   // pixels    
+        console.log( $('.pagCont').height(), computedItems ) 
+
         $('#pagination-container').pagination({
 
-            pageSize: 3,
+            pageSize: computedItems,
             showPageNumbers: false,
             showPrevious: false,
             showNext: false,
 
-            dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+            dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,  2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
 
             callback: function(data, pagination) { // on page
                 console.log('pg')
