@@ -29,7 +29,7 @@
     <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
   </div>
-<!-- mB v6.09.18 on 2019-09-23T23:14:34.504Z --></body>
+<!-- mB v6.09.18 on 2019-09-23T23:55:14.227Z --></body>
 <style>
    .fragCont {
        display: flex;
@@ -68,8 +68,13 @@
   
   }
   
-  depp.require(['jquery', 'pagination', 'mustache', 'poly'], function() {
+  depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
+      // data
+      fetchFrags('').then(function(dat){
+          console.log(dat)
+          onFragData(dat.frags)
+      })
   
       document.getElementById("prev").addEventListener("click", function(){
               console.log('P')
@@ -81,33 +86,30 @@
           $('#pagination-container').pagination('next')
       })
       
-  
-      var dat = [
-          {name: 'oh hi1', desc: '1there'},
-          {name: 'oh hi2', desc: '2there'},
-          {name: 'oh hi3', desc: '3there'},
-          {name: 'oh hi4', desc: '4there'},
-          {name: 'oh hi5', desc: '5there'},
-          {name: 'oh hi6', desc: '6there'},
-          {name: 'oh hi7', desc: '7there'},
-          {name: 'oh hi8', desc: '8there'},
-          {name: 'oh hi9', desc: '9there'},
-          {name: 'oh hi10', desc: '10there'},
-          {name: 'oh hi11', desc: '11there'},
-          {name: 'oh hi12', desc: '12there'},
-          {name: 'oh hi13', desc: '13there'},
-          {name: 'oh hi14', desc: '14there'},
-          {name: 'oh hi15', desc: '15there'},
-          {name: 'oh hi16', desc: '16there'},
-          {name: 'oh hi17', desc: '17there'},
-          {name: 'oh hi18', desc: '18there'},
-          {name: 'oh hi19', desc: '19there'}
-      ]
-  
-      onData(dat)
   })
   
-  function onData(data) {        
+  function fetchFrags(path) {  //polyIO
+      return new Promise(function (resolve, reject) {
+          fetch('dat.yaml', {
+              cache: 'default',
+              keepalive: true
+          }).then(function (fullResp) {
+              if (!fullResp.ok)
+                  reject(fullResp.statusText)
+              return fullResp.text()
+              }).then(function (ys) {
+                  let y = jsyaml.safeLoad(ys)
+                  resolve(y)
+              })
+          .catch(function (err) {
+              console.log(err)
+              reject(err)
+          })
+      })//pro
+  }
+  
+  function onFragData(data) {        
+  
       console.log('data')
       var computedItems = $('.pagCont').height() / 30   // pixels    
       console.log( $('.pagCont').height(), computedItems ) 
@@ -119,7 +121,7 @@
           showPrevious: false,
           showNext: false,
   
-          dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,  2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          dataSource: data,
   
           callback: function(data, pagination) { // on page
               console.log('pg')
