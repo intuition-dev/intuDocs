@@ -29,7 +29,7 @@
     <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
   </div>
-<!-- mB v6.09.18 on 2019-09-23T23:55:14.227Z --></body>
+<!-- mB v6.09.18 on 2019-09-24T00:00:53.602Z --></body>
 <style>
    .fragCont {
        display: flex;
@@ -58,15 +58,16 @@
   //toolBeltDefault()
   
   function template(data) {
-  
+      
       var html = '<ul>';
       $.each(data, function(index, item){
-          html += '<li>'+ item +'</li>';
+          html += '<li>'+ item.title +'</li>';
       });
       html += '</ul>';
       return html;
   
   }
+  
   
   depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
@@ -115,7 +116,6 @@
       console.log( $('.pagCont').height(), computedItems ) 
   
       $('#pagination-container').pagination({
-  
           pageSize: computedItems,
           showPageNumbers: false,
           showPrevious: false,

@@ -42,15 +42,16 @@ script.
     //toolBeltDefault()
 
     function template(data) {
-
+        
         var html = '<ul>';
         $.each(data, function(index, item){
-            html += '<li>'+ item +'</li>';
+            html += '<li>'+ item.title +'</li>';
         });
         html += '</ul>';
         return html;
 
     }
+
 
     depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
         console.log('ready')
@@ -99,7 +100,6 @@ script.
         console.log( $('.pagCont').height(), computedItems ) 
 
         $('#pagination-container').pagination({
-
             pageSize: computedItems,
             showPageNumbers: false,
             showPrevious: false,
