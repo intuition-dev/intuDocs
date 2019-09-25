@@ -95,9 +95,11 @@ script.
         
     })// req
 
-    function fetchFrags(path) {  //polyIO
+    function fetchFrags() {  //polyIO
+        var path = ''
+
         return new Promise(function (resolve, reject) {
-            fetch('dat.yaml', {
+            fetch(path+'dat.yaml', {
                 cache: 'default',
                 keepalive: true
             }).then(function (fullResp) {

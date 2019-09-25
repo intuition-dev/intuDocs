@@ -31,7 +31,7 @@
         <div class="fragTitle">{{title}}</div>
         <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.19 on 2019-09-25T20:46:27.804Z --></body>
+<!-- mB v6.09.19 on 2019-09-25T22:11:11.358Z --></body>
 <style>
    .topSpace {
        height: 1.6em;
@@ -106,9 +106,11 @@
       
   })// req
   
-  function fetchFrags(path) {  //polyIO
+  function fetchFrags() {  //polyIO
+      var path = ''
+  
       return new Promise(function (resolve, reject) {
-          fetch('dat.yaml', {
+          fetch(path+'dat.yaml', {
               cache: 'default',
               keepalive: true
           }).then(function (fullResp) {
