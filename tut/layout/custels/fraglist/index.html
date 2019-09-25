@@ -15,7 +15,7 @@
     .delayShowing { opacity: 0; }
     .blur { -webkit-filter:blur(2px);filter:blur(2px); }
   </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.1/src/css/min.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.2/src/css/min.min.css"/>
 </head>
 <body>
   <div class="fragCont">
@@ -28,19 +28,14 @@
     </div>
     <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
-    <template id="temp1">
-      <div class="fragTitle">{{#.}} {{title}}</div>
-      <hr/><br/><span>{{/.}}</span>
-    </template>
+    <template id="temp1"><span>{{#.}}
+        <div class="fragTitle">{{title}}</div>
+        <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.18 on 2019-09-25T13:40:18.235Z --></body>
+<!-- mB v6.09.19 on 2019-09-25T15:49:36.124Z --></body>
 <style>
-   hr {
-       color: black;
-       border: 1px solid;
-   }
-  
    .fragCont {
+       margin-left: 1em;
        display: flex;
        flex-direction: column;
        height: calc(100% - 1.5em);
@@ -50,10 +45,7 @@
    }
   
    .fragTitle {
-       font-weight: bold;
-   }
-   .btn {
-       width: 8em;
+       font-weight: 400;
    }
   
    .butOn {
@@ -69,11 +61,8 @@
 </style>
 <script>
   toolBeltDefault()
+  loadFonts(['Open+Sans:300,400'])
   
-  function renderMustache(id, data) {
-      let template = document.getElementById(id).innerHTML
-      return Mustache.render(template, data)
-  }
   
   depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
