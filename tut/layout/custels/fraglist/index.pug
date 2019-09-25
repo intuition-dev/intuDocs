@@ -37,6 +37,9 @@ style.
         flex-grow: 1;
     }
 
+    .fragTitle {
+        font-weight: bold;
+    }
     .btn {
         width: 8em;
     }
@@ -54,8 +57,8 @@ style.
 script.
     toolBeltDefault()
 
-    function renderMustache( data) {
-        let template = document.getElementById('temp1').innerHTML
+    function renderMustache(id, data) {
+        let template = document.getElementById(id).innerHTML
         return Mustache.render(template, data)
     }
 
@@ -120,7 +123,7 @@ script.
                     showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
 
-                var html = renderMustache(data)
+                var html = renderMustache('temp1', data)
                 $('#data-container').html(html)
             }//cb
         })

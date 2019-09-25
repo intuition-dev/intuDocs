@@ -33,7 +33,7 @@
       <hr/><br/><span>{{/.}}</span>
     </template>
   </div>
-<!-- mB v6.09.18 on 2019-09-25T05:04:22.345Z --></body>
+<!-- mB v6.09.18 on 2019-09-25T05:10:55.163Z --></body>
 <style>
    hr {
        color: black;
@@ -49,6 +49,9 @@
        flex-grow: 1;
    }
   
+   .fragTitle {
+       font-weight: bold;
+   }
    .btn {
        width: 8em;
    }
@@ -67,8 +70,8 @@
 <script>
   toolBeltDefault()
   
-  function renderMustache( data) {
-      let template = document.getElementById('temp1').innerHTML
+  function renderMustache(id, data) {
+      let template = document.getElementById(id).innerHTML
       return Mustache.render(template, data)
   }
   
@@ -133,7 +136,7 @@
                   showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
               },1)
   
-              var html = renderMustache(data)
+              var html = renderMustache('temp1', data)
               $('#data-container').html(html)
           }//cb
       })
