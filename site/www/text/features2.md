@@ -11,3 +11,4 @@
 2. Works with popular Design Systems
 2. Single socket for app, editor and API
 2. Mono repo for front and back end 
+2. AMP support
