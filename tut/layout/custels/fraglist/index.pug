@@ -7,11 +7,11 @@ body
     .fragCont
         p
         button#prev.btn.butOff.classless(disabled) Previous 
-        p
+        .topSpace
         .pagCont
             #data-container
             #pagination-container
-        p
+        
         button#next.btn.butOff.classless(disabled) Next 
 
         template#temp1
@@ -23,6 +23,9 @@ body
     
 style.
 
+    .topSpace {
+        height: 1.6em;
+    }
 
     .fragCont {
         margin-left: 1em;
@@ -53,6 +56,19 @@ script.
     loadFonts(['Open+Sans:300,400'])
 
 
+    function onRowClick(el) {
+        const selector = 'tr'
+        var iel = el.target.closest(selector)
+        if (!iel) return
+
+        var id = iel.getAttribute('data-name')
+        console.log(id)
+
+        let proB = CustelsListVM.fetchCode(id)
+
+        CustelsListVM.setText(proB)
+    }//()
+
     depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
         console.log('ready')
         // data
@@ -60,6 +76,9 @@ script.
             console.log(dat)
             onFragData(dat.frags)
         })
+
+        var table = document.getElementById('data-container')
+        table.addEventListener('click', onRowClick)
  
         document.getElementById("prev").addEventListener("click", function(){
                 console.log('P')
@@ -71,7 +90,7 @@ script.
             $('#pagination-container').pagination('next')
         })
         
-    })
+    })// req
 
     function fetchFrags(path) {  //polyIO
         return new Promise(function (resolve, reject) {

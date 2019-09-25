@@ -21,19 +21,22 @@
   <div class="fragCont">
     <p></p>
     <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
-    <p></p>
+    <div class="topSpace"></div>
     <div class="pagCont">
       <div id="data-container"></div>
       <div id="pagination-container"></div>
     </div>
-    <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
     <template id="temp1"><span>{{#.}}
         <div class="fragTitle">{{title}}</div>
         <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.19 on 2019-09-25T15:49:36.124Z --></body>
+<!-- mB v6.09.19 on 2019-09-25T19:46:09.602Z --></body>
 <style>
+   .topSpace {
+       height: 1.6em;
+   }
+  
    .fragCont {
        margin-left: 1em;
        display: flex;
@@ -64,6 +67,19 @@
   loadFonts(['Open+Sans:300,400'])
   
   
+  function onRowClick(el) {
+      const selector = 'tr'
+      var iel = el.target.closest(selector)
+      if (!iel) return
+  
+      var id = iel.getAttribute('data-name')
+      console.log(id)
+  
+      let proB = CustelsListVM.fetchCode(id)
+  
+      CustelsListVM.setText(proB)
+  }//()
+  
   depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
       // data
@@ -71,6 +87,9 @@
           console.log(dat)
           onFragData(dat.frags)
       })
+  
+      var table = document.getElementById('data-container')
+      table.addEventListener('click', onRowClick)
   
       document.getElementById("prev").addEventListener("click", function(){
               console.log('P')
@@ -82,7 +101,7 @@
           $('#pagination-container').pagination('next')
       })
       
-  })
+  })// req
   
   function fetchFrags(path) {  //polyIO
       return new Promise(function (resolve, reject) {
