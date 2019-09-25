@@ -13,8 +13,20 @@ body
             #pagination-container
         p
         button#next.btn.butOff.classless(disabled) Next 
+
+        template#temp1
+            .fragTitle {{#.}} {{title}}
+            hr
+            br
+            span {{/.}}
+
     
 style.
+
+    hr {
+        color: black;
+        border: 1px solid;
+    }
 
     .fragCont {
         display: flex;
@@ -38,20 +50,14 @@ style.
         pointer-events: none;
    }
 
+
 script.
-    //toolBeltDefault()
+    toolBeltDefault()
 
-    function template(data) {
-        
-        var html = '<ul>';
-        $.each(data, function(index, item){
-            html += '<li>'+ item.title +'</li>';
-        });
-        html += '</ul>';
-        return html;
-
+    function renderMustache( data) {
+        let template = document.getElementById('temp1').innerHTML
+        return Mustache.render(template, data)
     }
-
 
     depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
         console.log('ready')
@@ -96,7 +102,7 @@ script.
     function onFragData(data) {        
 
         console.log('data')
-        var computedItems = $('.pagCont').height() / 30   // pixels    
+        var computedItems = $('.pagCont').height() / 40   // pixels    
         console.log( $('.pagCont').height(), computedItems ) 
 
         $('#pagination-container').pagination({
@@ -114,8 +120,7 @@ script.
                     showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
 
-                // template method 
-                var html = template(data)
+                var html = renderMustache(data)
                 $('#data-container').html(html)
             }//cb
         })

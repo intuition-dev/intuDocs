@@ -28,9 +28,18 @@
     </div>
     <p></p>
     <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
+    <template id="temp1">
+      <div class="fragTitle">{{#.}} {{title}}</div>
+      <hr/><br/><span>{{/.}}</span>
+    </template>
   </div>
-<!-- mB v6.09.18 on 2019-09-24T00:00:53.602Z --></body>
+<!-- mB v6.09.18 on 2019-09-25T05:04:22.345Z --></body>
 <style>
+   hr {
+       color: black;
+       border: 1px solid;
+   }
+  
    .fragCont {
        display: flex;
        flex-direction: column;
@@ -53,21 +62,15 @@
        pointer-events: none;
   }
   
+  
 </style>
 <script>
-  //toolBeltDefault()
+  toolBeltDefault()
   
-  function template(data) {
-      
-      var html = '<ul>';
-      $.each(data, function(index, item){
-          html += '<li>'+ item.title +'</li>';
-      });
-      html += '</ul>';
-      return html;
-  
+  function renderMustache( data) {
+      let template = document.getElementById('temp1').innerHTML
+      return Mustache.render(template, data)
   }
-  
   
   depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
@@ -112,7 +115,7 @@
   function onFragData(data) {        
   
       console.log('data')
-      var computedItems = $('.pagCont').height() / 30   // pixels    
+      var computedItems = $('.pagCont').height() / 40   // pixels    
       console.log( $('.pagCont').height(), computedItems ) 
   
       $('#pagination-container').pagination({
@@ -130,8 +133,7 @@
                   showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
               },1)
   
-              // template method 
-              var html = template(data)
+              var html = renderMustache(data)
               $('#data-container').html(html)
           }//cb
       })
