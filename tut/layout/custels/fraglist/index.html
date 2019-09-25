@@ -31,7 +31,7 @@
         <div class="fragTitle">{{title}}</div>
         <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.19 on 2019-09-25T19:46:09.602Z --></body>
+<!-- mB v6.09.19 on 2019-09-25T20:46:27.804Z --></body>
 <style>
    .topSpace {
        height: 1.6em;
@@ -68,16 +68,17 @@
   
   
   function onRowClick(el) {
-      const selector = 'tr'
-      var iel = el.target.closest(selector)
-      if (!iel) return
   
-      var id = iel.getAttribute('data-name')
-      console.log(id)
+      const selector = '.fragTitle'
+      var cel = el.target.closest(selector)
+      if (!cel) return
+      console.log(cel)
   
-      let proB = CustelsListVM.fetchCode(id)
+      var title = cel.innerText
+      console.log(title)
   
-      CustelsListVM.setText(proB)
+      disE('titleClick', title)
+  
   }//()
   
   depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
@@ -88,17 +89,19 @@
           onFragData(dat.frags)
       })
   
-      var table = document.getElementById('data-container')
-      table.addEventListener('click', onRowClick)
+      depp.require('DOMDelayed', function() {
+          var table = document.getElementById('data-container')
+          table.addEventListener('click', onRowClick)
   
-      document.getElementById("prev").addEventListener("click", function(){
-              console.log('P')
-              $('#pagination-container').pagination('previous')
-          })
+          document.getElementById("prev").addEventListener("click", function(){
+                  console.log('P')
+                  $('#pagination-container').pagination('previous')
+              })
   
-      document.getElementById("next").addEventListener("click", function(){
-          console.log('N')
-          $('#pagination-container').pagination('next')
+          document.getElementById("next").addEventListener("click", function(){
+              console.log('N')
+              $('#pagination-container').pagination('next')
+      })
       })
       
   })// req
@@ -127,7 +130,8 @@
   
       console.log('data')
       var computedItems = $('.pagCont').height() / 40   // pixels    
-      console.log( $('.pagCont').height(), computedItems ) 
+  
+      console.log('ci', $('.pagCont').height(), computedItems ) 
   
       $('#pagination-container').pagination({
           pageSize: computedItems,
@@ -139,8 +143,7 @@
   
           callback: function(data, pagination) { // on page
               console.log('pg')
-              //pg, sz, tot
-              setTimeout(function(){
+              setTimeout(function(){ //pg, sz, tot
                   showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
               },1)
   
@@ -152,12 +155,11 @@
   }//()
   
   function showHide(pg, sz, tot) {
-      console.log('sh')
       if(pg==1)  { but('prev', false ) }
           else but('prev', true) 
   
       var cur = pg * sz
-      console.log(cur, tot)
+      console.log('sh', cur, tot)
       if(cur < tot) { // more 
           but('next', true) 
       } else { // to much
