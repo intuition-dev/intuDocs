@@ -39,17 +39,27 @@ body
 
         * { margin: 0; padding: 0; }
         html, body { 
-            height: 100%; 
             width: 100%; 
+            height: 100%; 
         }
 
         .video_container {
-            
+            position: relative;
+            width: 100%; 
+            height: 0;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
         }
 
         .vid {
+        	position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: teal;	
 
-        }
+         }
 
 
         .video_container {
@@ -62,22 +72,28 @@ body
     script.
         window.addEventListener('resize', resizeVid) 
         function resizeVid() {
-            var w = $('#vid1').width()
-            var h = $('#vid1').height()
-            var nh = (w * 0.5625) 
+            var w = $('.video_container').width()
+            var h = $('.video_container').height()
+            var nh = w * 0.5625
+            var nw = h * 1.7777
+
+             // now math    
             console.log('>>>>')
-            console.log('w', w, h, nh)
+            console.log('w', w, h, nw, nh)
+
+            if(nh > h)
+                $('#vid1').height(nh)
             
-            nh = nh - h
-            console.log('w', w, h, nh)
+            if(nw>w)
+                $('#vid1').width(nw)
 
+
+            // margin
+            nh= nh - h
             nh = nh/2
-            console.log('w', w, h, nh)
-
             nh = nh + 'px'
-
-            console.log('w', w, h, nh)
-            $('#vid1').css('margin-top', nh )
+            console.log('w', w, h, nw, nh)
+            //$('#vid1').css('margin-top', nh )
             console.log('<<<')
         }//()
 
