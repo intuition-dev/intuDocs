@@ -1,6 +1,6 @@
 head
     include /layout/headFrag
-    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.2/src/css/min.min.css')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css')
 
 body
 
@@ -12,11 +12,11 @@ body
             // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
             .video_container
                 video#vid1.vid( autoplay preload='auto' loop muted )
-                    source(src='arc.mp4' type="video/mp4" )
+                    source(src='arc2.mp4' type="video/mp4" )
 
             .under   
                 p now
-                
+
         #right.split
             div
                 button Up
@@ -44,22 +44,53 @@ body
         }
 
         .video_container {
+            
+        }
+
+        .vid {
+
+        }
+
+
+        .video_container {
             height:  calc(100% - 100px);
             
             border:  3px solid yellow;
         }
-
-    
+     
 
     script.
+        window.addEventListener('resize', resizeVid) 
+        function resizeVid() {
+            var w = $('#vid1').width()
+            var h = $('#vid1').height()
+            var nh = (w * 0.5625) 
+            console.log('>>>>')
+            console.log('w', w, h, nh)
+            
+            nh = nh - h
+            console.log('w', w, h, nh)
+
+            nh = nh/2
+            console.log('w', w, h, nh)
+
+            nh = nh + 'px'
+
+            console.log('w', w, h, nh)
+            $('#vid1').css('margin-top', nh )
+            console.log('<<<')
+        }//()
+
+
         toolBeltDefault()
-        depp.require(['split','DOM'], function() {
-            console.log('ready')
+        depp.require(['split', 'DOM', 'jquery'], function() {
+            console.log('ready!')
+            resizeVid()
             
             var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
                sizes: [90, 10],
                minSize: 200
             })
-            console.log(sp.getSizes())
+            //console.log(sp.getSizes())
 
         })//depp
