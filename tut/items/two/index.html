@@ -48,10 +48,10 @@
     </div>
   </div>
   <style>
-    /* video detach button */
+    /* video detach button 
     //  video popout
-    // https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-    // May remove other useful browser popups, inserted after "body" element.
+     https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+    */
     ::-webkit-media-controls {
         display:none !important;
     }
@@ -108,6 +108,7 @@
   </style>
   <script>
     window.split = null
+    // https://codetheory.in/html5-fullscreen-background-video/
     window.addEventListener('resize', resizeVid) 
     function resizeVid() {
         var w = $('.main').width()
@@ -121,8 +122,9 @@
     
         if(nw>w) {
             console.log('too wide')
-            $('.mediaContainerTop').width( nw)
-            $('.mediaContainerTop').height(  nh)
+            // the problem
+            $('.mediaContainerTop').width( w)
+            $('.mediaContainerTop').height( nh)
         }
         if(nh>h) {
             console.log('too tall')
@@ -151,4 +153,4 @@
         
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-27T18:11:02.540Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T19:16:24.606Z --></body>
