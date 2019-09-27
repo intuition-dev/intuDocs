@@ -23,8 +23,8 @@
       <p>oh hi</p>
       <hr/>
     </div>
-    <div class="splitCont">
-      <div class="split" id="left">
+    <div class="cont">
+      <div id="left">
         <div class="main">
           <div class="mediaContainerTop">
             <p>oh hi</p>
@@ -38,12 +38,10 @@
           </div>
         </div>
       </div>
-      <div class="split" id="right">
-        <div>
-          <button>Up</button>
-          <p></p>
-          <button>Down</button>
-        </div>
+      <div id="right">
+        <button>Up</button>
+        <p></p>
+        <button>Down</button>
       </div>
     </div>
   </div>
@@ -71,21 +69,23 @@
         height: 100vh;
         max-height: 100vh;
     }
-    .splitCont {
-        flex-grow: 1;
-    }
-    .gutter {
-        background-color: gray;
-        width: 10px;
-    }
-    
     .top {
         height: 3.5em;
     }
+    
+    .cont {
+        display: flex; /* 2nd fle level */
+        flex-grow: 1; 
+    }
+    #left {
+        width: calc(100% - 100px);
+    }
+    
     .main {
-        display: flex; /* second flex level */
+        display: flex; /* 3rd flex level */
         flex-direction: column;
         height: calc(100% - 3.4em);
+        overflow: hidden;
     
         border:  3px solid yellow;
         background: green;            
@@ -107,9 +107,8 @@
     
   </style>
   <script>
-    window.split = null
     // https://codetheory.in/html5-fullscreen-background-video/
-    window.addEventListener('resize', resizeVid) 
+    //window.addEventListener('resize', resizeVid) 
     function resizeVid() {
         var w = $('.main').width()
         var h = $('.main').height() - $('.mainBot').height()
@@ -139,18 +138,10 @@
     
     
     toolBeltDefault()
-    depp.require(['split', 'DOMDelayed', 'jquery'], function() {
-        
-        window.split = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
-            direction: 'horizontal',
-            sizes: [90, 10],
-            minSize: [100, 0]
+    depp.require(['DOMDelayed', 'jquery'], function() {
     
-        })
-        console.log('ready!')
-    
-        resizeVid()
-        
+        //resizeVid()
+        console.log('ready')
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-27T19:16:24.606Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T19:46:25.256Z --></body>

@@ -7,9 +7,9 @@ body
         .top
             p oh hi
             hr
+        .cont
+            #left
 
-        .splitCont
-            #left.split
                 .main
                     .mediaContainerTop
                         p oh hi
@@ -20,12 +20,12 @@ body
             
                         p oh hi
 
-            #right.split
-                div
-                    button Up
-                    p
-                    button Down
-       
+    
+            #right
+                button Up
+                p
+                button Down
+    
 
     style.
         /* video detach button 
@@ -51,21 +51,23 @@ body
             height: 100vh;
             max-height: 100vh;
         }
-        .splitCont {
-            flex-grow: 1;
-        }
-        .gutter {
-            background-color: gray;
-            width: 10px;
-        }
-
         .top {
             height: 3.5em;
         }
+
+        .cont {
+            display: flex; /* 2nd fle level */
+            flex-grow: 1; 
+        }
+        #left {
+            width: calc(100% - 100px);
+        }
+
         .main {
-            display: flex; /* second flex level */
+            display: flex; /* 3rd flex level */
             flex-direction: column;
             height: calc(100% - 3.4em);
+            overflow: hidden;
 
             border:  3px solid yellow;
             background: green;            
@@ -86,9 +88,8 @@ body
 
 
     script.
-        window.split = null
         // https://codetheory.in/html5-fullscreen-background-video/
-        window.addEventListener('resize', resizeVid) 
+        //window.addEventListener('resize', resizeVid) 
         function resizeVid() {
             var w = $('.main').width()
             var h = $('.main').height() - $('.mainBot').height()
@@ -118,16 +119,8 @@ body
 
 
         toolBeltDefault()
-        depp.require(['split', 'DOMDelayed', 'jquery'], function() {
-            
-            window.split = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
-                direction: 'horizontal',
-                sizes: [90, 10],
-                minSize: [100, 0]
-
-            })
-            console.log('ready!')
-
-            resizeVid()
-            
+        depp.require(['DOMDelayed', 'jquery'], function() {
+    
+            //resizeVid()
+            console.log('ready')
         })//depp
