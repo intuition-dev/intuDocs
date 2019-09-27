@@ -22,14 +22,18 @@
     <div class="top">
       <p>oh hi</p>
       <hr/>
-    </div><span class="mid">
-      <div class="split" id="left">
-        <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
-        <div class="media_container">
-          <Xvideo class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
-            <source src="arc2.mp4" type="video/mp4"/>
-          </Xvideo>
-        </div>
+    </div><span class="main">
+      <div class="split media_container" id="left">
+        <!--video#vid1.vid( autoplay preload='auto' loop muted )
+        source(src='arc2.mp4' type="video/mp4" )
+        
+        -->
+        <!--.mainBot
+        hr
+        p oh hi
+        hr
+        
+        -->
       </div>
       <div class="split" id="right">
         <div>
@@ -38,11 +42,6 @@
           <button>Down</button>
         </div>
       </div></span>
-    <div class="bot">
-      <hr/>
-      <p>oh hi</p>
-      <hr/>
-    </div>
   </div>
   <style>
     /* video detach button */
@@ -67,15 +66,14 @@
         flex-direction: column;
     }
     
-    .mid {
-        display: flex;
+    .main {
         flex-grow: 1;
+        display: flex; /* second flex level */
+        flex-direction: row;
+    }
     
-        max-width: 10vw;
-        min-width: 50vw;
-        max-height: 100vh;
-        min-height: 50vh;
-    
+    .split {
+        overflow: hidden;
     }
     
     .media_container { /* fluid */
@@ -87,7 +85,7 @@
         padding-bottom: 56.25%;
         padding-top: 25px;
         
-        border:  3px solid yellow;
+        border:  1px solid yellow;
         background: black;	
     }
     
@@ -98,7 +96,7 @@
         width:  100%;
         height: 100%;
     
-        border:  1px solid red;
+        border:  3px solid red;
         background: teal;	
      }
     
@@ -121,7 +119,6 @@
         if(nw>w)
             $('#vid1').width(nw)
     
-    
         // margin
         nh= nh - h
         nh = nh/2
@@ -134,22 +131,16 @@
     
     toolBeltDefault()
     depp.require(['split', 'DOMDelayed', 'jquery'], function() {
-        console.log('ready!')
-        resizeVid()
         
-        /*var spLR = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
-            direction: 'horizontal',
-            sizes: [90, 10],
+        var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
+            dXirection: 'horizontal',
+            sizes: [80, 20],
             minSize: 0
-        })*/
-        //console.log(sp.getSizes())
-        /*var spUD = Split( [document.querySelector('.mid'), document.querySelector('.bot)] , {
-            direction: 'horizontal',
-           sizes: [90, 10],
-           minSize: 0
         })
-        */
+        console.log('ready!')
     
+        //resizeVid()
+        
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-27T14:26:48.399Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T15:00:54.406Z --></body>
