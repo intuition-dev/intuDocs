@@ -99,6 +99,7 @@
     
         border:  2px solid blue;
         background: #eee;	           
+        min-height: 25px;
     
         border-top: 1px solid black;
     }
@@ -117,7 +118,7 @@
         var nh = 0
         while (nw <= w) {
             nh = nw * 0.5625
-            if(nh > h) break
+            if( (nh+25+15) > h) break
             nw = nw + 1
         }
     
@@ -138,4 +139,4 @@
         console.log('ready')
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-27T20:53:26.339Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T20:57:44.572Z --></body>
