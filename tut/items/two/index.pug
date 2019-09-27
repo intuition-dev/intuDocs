@@ -84,16 +84,6 @@ body
             background: silver;	           
         }
 
-        .Xvid { /* ratio */
-        	position: absolute;
-            top: 0;
-            left: 0;
-            Xwidth:  100%;
-            Xheight: 100%;
-
-            border:  3px solid red;
-            background: teal;	
-         }
 
     script.
         window.split = null
@@ -103,16 +93,24 @@ body
             var h = $('.main').height() - $('.mainBot').height()
 
             // math:
+            console.log('>>>>')
             var nh = w * 0.5625
             var nw = h * 1.7777 //based on new hn
+            console.log('c:', w, h, nw, nh)       
+
+            if(nw>w) {
+                console.log('too wide')
+                $('.mediaContainerTop').width( nw)
+                $('.mediaContainerTop').height(  nh)
+            }
+            if(nh>h) {
+                console.log('too tall')
+                $('.mediaContainerTop').width( nw)
+                $('.mediaContainerTop').height(  nh)
+            }
 
             nw = nw-5
             
-            console.log('>>>>')
-            console.log('c:', w, h, nw, nh)
-            $('.mediaContainerTop').width( nw)
-            $('.mediaContainerTop').height(  nh)
-            console.log('c:', w, h, nw, nh)
             console.log('<<<')
         }//()
 
