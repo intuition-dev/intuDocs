@@ -9,12 +9,12 @@ body
         .main
             #left
                 .mediaContainerTop
-                    p oh hi
+                    p oh hi top
                     //vXideo#vid1.vid( autoplay preload='auto' loop muted )
                         source(src='arc2.mp4' type="video/mp4" )
                     
                 .mainBot
-                    p oh hi
+                    p oh hi bot
 
     
             #right
@@ -39,7 +39,6 @@ body
         html, body { 
             width: 100%; 
             height: 100%; 
-            overflow: hidden;
         }
         .pgCont {
             display: flex;
@@ -48,7 +47,7 @@ body
             max-height: 100vh;
         }
         .top {
-            height: 3.5em; /** *C* */
+            height: 50px; /** *C* */
             border-bottom: 1px solid black;
         }
         .main {
@@ -61,9 +60,9 @@ body
     
             display: flex; /* 3rd flex level */
             flex-direction: column;
-            overflow: hidden;
 
             border:  2px solid yellow;
+            background: gray;	
         }
         #right {
             border-left: 1px solid black;
@@ -74,13 +73,13 @@ body
             position: relative;
             
             border:  2px solid red;
-            background: gray;	
+            background: silver;	
         }
         .mainBot {
             flex-grow: 1;
 
             border:  2px solid blue;
-            background: silver;	           
+            background: #eee;	           
 
             border-top: 1px solid black;
         }
@@ -90,29 +89,24 @@ body
         // https://codetheory.in/html5-fullscreen-background-video/
         window.addEventListener('resize', resizeVid) 
         function resizeVid() {
-            var w = $('#left').width()
-            var h = $('#left').height()
+            var w = $(window).width() - 200 
+            var h = $(window).height() - 50
 
-            // math:
-            console.log('>>>>')
-            var nh = w * 0.5625
-            var nw = h * 1.7777 //based on new hn
+            // math?
+            var nw = 16
+            var nh = 0
+            while (nw <= w) {
+                nh = nw * 0.5625
+                if(nh > h) break
+                nw = nw + 1
+            }
+
             console.log('c:', w, h, nw, nh)       
+            nw = nw-50
 
-            if(nw>w) {
-                console.log('too wide')
-                // the problem
-                $('.mediaContainerTop').width( w)
-                $('.mediaContainerTop').height( nh)
-            }
-            if(nh>h) {
-                console.log('too tall')
-                $('.mediaContainerTop').width( hw)
-                $('.mediaContainerTop').height( h)
-            }
+            $('.mediaContainerTop').width( nw)
+            $('.mediaContainerTop').height( nh )
 
-            nw = nw-5
-            
             console.log('<<<')
         }//()
 
