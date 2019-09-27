@@ -22,7 +22,8 @@
     <div class="top">
       <p>oh hi</p>
       <hr/>
-    </div><span class="splitCont">
+    </div>
+    <div class="splitCont">
       <div class="split" id="left">
         <div class="main">
           <div class="mediaContainerTop">
@@ -43,7 +44,8 @@
           <p></p>
           <button>Down</button>
         </div>
-      </div></span>
+      </div>
+    </div>
   </div>
   <style>
     /* video detach button */
@@ -61,6 +63,7 @@
     html, body { 
         width: 100%; 
         height: 100%; 
+        overflow: hidden;
     }
     .pgCont {
         display: flex;
@@ -85,10 +88,10 @@
         height: calc(100% - 3.4em);
     
         border:  3px solid yellow;
-        background: gren;	
+        background: green;            
     }
     .mediaContainerTop { /* fluid */
-        flex-grow: 1;
+        flex-grow: 0;
         position: relative;
         
         border:  1px solid red;
@@ -114,29 +117,23 @@
     
   </style>
   <script>
+    window.split = null
     window.addEventListener('resize', resizeVid) 
     function resizeVid() {
-        var w = $('.mediaContainerTop').width()
-        var h = $('.mediaContainerTop').height()
+        var w = $('.main').width()
+        var h = $('.main').height() - $('.mainBot').height()
+    
+        // math:
         var nh = w * 0.5625
-        var nw = h * 1.7777
+        var nw = h * 1.7777 //based on new hn
     
-         // now math    
-        console.log('>>>>')
-        console.log('w', w, h, nw, nh)
-    
-        if(nh > h)
-            $('#vid1').height(nh)
+        nw = nw-5
         
-        if(nw>w)
-            $('#vid1').width(nw)
-    
-        // margin
-        nh= nh - h
-        nh = nh/2
-        nh = nh + 'px'
-        console.log('w', w, h, nw, nh)
-        //$('#vid1').css('margin-top', nh )
+        console.log('>>>>')
+        console.log('c:', w, h, nw, nh)
+        $('.mediaContainerTop').width( nw)
+        $('.mediaContainerTop').height(  nh)
+        console.log('c:', w, h, nw, nh)
         console.log('<<<')
     }//()
     
@@ -144,10 +141,11 @@
     toolBeltDefault()
     depp.require(['split', 'DOMDelayed', 'jquery'], function() {
         
-        var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
+        window.split = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
             direction: 'horizontal',
-            sizes: [80, 20],
-            minSize: 0
+            sizes: [90, 10],
+            minSize: [100, 0]
+    
         })
         console.log('ready!')
     
@@ -155,4 +153,4 @@
         
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-27T16:11:52.415Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T17:47:25.950Z --></body>
