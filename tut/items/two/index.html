@@ -18,25 +18,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
 </head>
 <body>
-  <div class="epis">
-    <div class="split" id="left">
-      <p>what</p>
-      <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
-      <div class="video_container">
-        <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
-          <source src="arc2.mp4" type="video/mp4"/>
-        </video>
+  <div class="cont">
+    <div class="top">
+      <p>oh hi</p>
+      <hr/>
+    </div><span class="mid">
+      <div class="split" id="left">
+        <!-- http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/-->
+        <div class="media_container">
+          <Xvideo class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
+            <source src="arc2.mp4" type="video/mp4"/>
+          </Xvideo>
+        </div>
       </div>
-      <div class="under">  
-        <p>now</p>
-      </div>
-    </div>
-    <div class="split" id="right">
-      <div>
-        <button>Up</button>
-        <p></p>
-        <button>Down</button>
-      </div>
+      <div class="split" id="right">
+        <div>
+          <button>Up</button>
+          <p></p>
+          <button>Down</button>
+        </div>
+      </div></span>
+    <div class="bot">
+      <hr/>
+      <p>oh hi</p>
+      <hr/>
     </div>
   </div>
   <style>
@@ -57,38 +62,52 @@
         height: 100%; 
     }
     
-    .video_container {
-        position: relative;
-        width: 100%; 
-        height: 0;
-        padding-bottom: 56.25%;
-        padding-top: 25px;
+    .cont {
+        display: flex;
+        flex-direction: column;
     }
     
-    .vid {
+    .mid {
+        display: flex;
+        flex-grow: 1;
+    
+        max-width: 10vw;
+        min-width: 50vw;
+        max-height: 100vh;
+        min-height: 50vh;
+    
+    }
+    
+    .media_container { /* fluid */
+        flex-grow: 1;
+        position: relative;
+        width:  100%; 
+        height: 100%;
+    
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        
+        border:  3px solid yellow;
+        background: black;	
+    }
+    
+    .vid { /* ratio */
     	position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width:  100%;
         height: 100%;
+    
+        border:  1px solid red;
         background: teal;	
-    
      }
-    
-    
-    .video_container {
-        height:  calc(100% - 100px);
-        
-        border:  3px solid yellow;
-    }
-    
     
   </style>
   <script>
-    window.addEventListener('resize', resizeVid) 
+    //window.addEventListener('resize', resizeVid) 
     function resizeVid() {
-        var w = $('.video_container').width()
-        var h = $('.video_container').height()
+        var w = $('.media_container').width()
+        var h = $('.media_container').height()
         var nh = w * 0.5625
         var nw = h * 1.7777
     
@@ -114,16 +133,23 @@
     
     
     toolBeltDefault()
-    depp.require(['split', 'DOM', 'jquery'], function() {
+    depp.require(['split', 'DOMDelayed', 'jquery'], function() {
         console.log('ready!')
         resizeVid()
         
-        var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
-           sizes: [90, 10],
-           minSize: 200
-        })
+        /*var spLR = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
+            direction: 'horizontal',
+            sizes: [90, 10],
+            minSize: 0
+        })*/
         //console.log(sp.getSizes())
+        /*var spUD = Split( [document.querySelector('.mid'), document.querySelector('.bot)] , {
+            direction: 'horizontal',
+           sizes: [90, 10],
+           minSize: 0
+        })
+        */
     
     })//depp
   </script>
-<!-- mB v6.09.19 on 2019-09-26T01:30:02.181Z --></body>
+<!-- mB v6.09.19 on 2019-09-27T14:26:48.399Z --></body>

@@ -3,27 +3,27 @@ head
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css')
 
 body
+    .cont
+        .top
+            p oh hi
+            hr
 
-    .epis
+        span.mid
+            #left.split
+                // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
+                .media_container
+                    Xvideo#vid1.vid( autoplay preload='auto' loop muted )
+                        source(src='arc2.mp4' type="video/mp4" )
 
-        #left.split
-            p what
-
-            // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
-            .video_container
-                video#vid1.vid( autoplay preload='auto' loop muted )
-                    source(src='arc2.mp4' type="video/mp4" )
-
-            .under   
-                p now
-
-        #right.split
-            div
-                button Up
-                p
-
-                
-                button Down
+            #right.split
+                div
+                    button Up
+                    p
+                    button Down
+        .bot
+            hr
+            p oh hi
+            hr
 
     style.
         /* video detach button */
@@ -43,37 +43,51 @@ body
             height: 100%; 
         }
 
-        .video_container {
-            position: relative;
-            width: 100%; 
-            height: 0;
-            padding-bottom: 56.25%;
-            padding-top: 25px;
+        .cont {
+            display: flex;
+            flex-direction: column;
         }
 
-        .vid {
+        .mid {
+            display: flex;
+            flex-grow: 1;
+
+            max-width: 10vw;
+            min-width: 50vw;
+            max-height: 100vh;
+            min-height: 50vh;
+
+        }
+
+        .media_container { /* fluid */
+            flex-grow: 1;
+            position: relative;
+            width:  100%; 
+            height: 100%;
+   
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            
+            border:  3px solid yellow;
+            background: black;	
+        }
+
+        .vid { /* ratio */
         	position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width:  100%;
             height: 100%;
-            background: teal;	
 
+            border:  1px solid red;
+            background: teal;	
          }
 
-
-        .video_container {
-            height:  calc(100% - 100px);
-            
-            border:  3px solid yellow;
-        }
-     
-
     script.
-        window.addEventListener('resize', resizeVid) 
+        //window.addEventListener('resize', resizeVid) 
         function resizeVid() {
-            var w = $('.video_container').width()
-            var h = $('.video_container').height()
+            var w = $('.media_container').width()
+            var h = $('.media_container').height()
             var nh = w * 0.5625
             var nw = h * 1.7777
 
@@ -99,14 +113,21 @@ body
 
 
         toolBeltDefault()
-        depp.require(['split', 'DOM', 'jquery'], function() {
+        depp.require(['split', 'DOMDelayed', 'jquery'], function() {
             console.log('ready!')
             resizeVid()
             
-            var sp = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
-               sizes: [90, 10],
-               minSize: 200
-            })
+            /*var spLR = Split( [document.querySelector('#left'), document.querySelector('#right')] , {
+                direction: 'horizontal',
+                sizes: [90, 10],
+                minSize: 0
+            })*/
             //console.log(sp.getSizes())
+            /*var spUD = Split( [document.querySelector('.mid'), document.querySelector('.bot)] , {
+                direction: 'horizontal',
+               sizes: [90, 10],
+               minSize: 0
+            })
+            */
 
         })//depp
