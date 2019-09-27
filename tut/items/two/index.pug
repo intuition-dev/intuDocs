@@ -6,19 +6,15 @@ body
     .pgCont
         .top
             p oh hi
-            hr
-        .cont
+        .main
             #left
-
-                .main
-                    .mediaContainerTop
-                        p oh hi
-                        //vXideo#vid1.vid( autoplay preload='auto' loop muted )
-                            source(src='arc2.mp4' type="video/mp4" )
-                        
-                    .mainBot
-            
-                        p oh hi
+                .mediaContainerTop
+                    p oh hi
+                    //vXideo#vid1.vid( autoplay preload='auto' loop muted )
+                        source(src='arc2.mp4' type="video/mp4" )
+                    
+                .mainBot
+                    p oh hi
 
     
             #right
@@ -52,47 +48,50 @@ body
             max-height: 100vh;
         }
         .top {
-            height: 3.5em;
+            height: 3.5em; /** *C* */
+            border-bottom: 1px solid black;
         }
-
-        .cont {
+        .main {
             display: flex; /* 2nd fle level */
             flex-grow: 1; 
         }
-        #left {
-            width: calc(100% - 100px);
-        }
 
-        .main {
+        #left {
+            width: calc(100% - 200px); /** *C* */
+    
             display: flex; /* 3rd flex level */
             flex-direction: column;
-            height: calc(100% - 3.4em);
             overflow: hidden;
 
-            border:  3px solid yellow;
-            background: green;            
+            border:  2px solid yellow;
         }
+        #right {
+            border-left: 1px solid black;
+        }
+
         .mediaContainerTop { /* fluid */
             flex-grow: 0;
             position: relative;
             
-            border:  1px solid red;
+            border:  2px solid red;
             background: gray;	
         }
         .mainBot {
             flex-grow: 1;
 
-            border:  1px solid blue;
+            border:  2px solid blue;
             background: silver;	           
+
+            border-top: 1px solid black;
         }
 
 
     script.
         // https://codetheory.in/html5-fullscreen-background-video/
-        //window.addEventListener('resize', resizeVid) 
+        window.addEventListener('resize', resizeVid) 
         function resizeVid() {
-            var w = $('.main').width()
-            var h = $('.main').height() - $('.mainBot').height()
+            var w = $('#left').width()
+            var h = $('#left').height()
 
             // math:
             console.log('>>>>')
@@ -108,8 +107,8 @@ body
             }
             if(nh>h) {
                 console.log('too tall')
-                $('.mediaContainerTop').width( nw)
-                $('.mediaContainerTop').height(  nh)
+                $('.mediaContainerTop').width( hw)
+                $('.mediaContainerTop').height( h)
             }
 
             nw = nw-5
@@ -121,6 +120,6 @@ body
         toolBeltDefault()
         depp.require(['DOMDelayed', 'jquery'], function() {
     
-            //resizeVid()
+            resizeVid()
             console.log('ready')
         })//depp
