@@ -26,7 +26,7 @@
         <div class="fragTitle">{{title}}</div>
         <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.19 on 2019-09-28T20:08:56.326Z --></body>
+<!-- mB v6.09.19 on 2019-09-28T20:37:54.819Z --></body>
 <style>
    .fragCont {
        width: 200px;
@@ -48,6 +48,12 @@
   
    .fragTitle {
        font-weight: 400;
+       
+       /*clamp */
+       display: -webkit-box;
+       -webkit-line-clamp: 2;
+       -webkit-box-orient: vertical;  
+       overflow: hidden;
    }
   
    .butOn {
@@ -80,14 +86,13 @@
   
   }//()
   
-  depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
+  depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
       console.log('ready')
    
-      render('').then(function(dat){
-          onFragData(dat.frags)
-      })
+      render()
   
       depp.require('DOMDelayed', function() {
+  
           var table = document.getElementById('data-container')
           table.addEventListener('click', onRowClick)
   
@@ -99,12 +104,21 @@
           document.getElementById("nextBut").addEventListener("click", function(){
               console.log('N')
               $('#pagination-container').pagination('next')
-      })
-      })
+          })//event
+  
+          window.addEventListener('resize', render)
+  
+      })//dep
       
   })// req
   
-  function render() {  //polyIO
+  function render() {
+      _fetchD('').then(function(dat){
+          _onFData(dat.frags)
+      })
+  }//()
+  
+  function _fetchD() {  //polyIO
       var path = ''
   
       // data
@@ -127,10 +141,11 @@
       })//pro
   }
   
-  function onFragData(data) {        
+  function _onFData(data) {        
   
       console.log('data')
-      var computedItems = $('.pagCont').height() / 40   // pixels    
+      // MATH:
+      var computedItems = $('.pagCont').height() / 65   // pixels  of each row
   
       console.log('rendering', $('.pagCont').height(), computedItems ) 
   
@@ -150,25 +165,27 @@
   
               var html = renderMustache('temp1', data)
               $('#data-container').html(html)
+  
           }//cb
       })
   
   }//()
   
   function showHide(pg, sz, tot) {
-      if(pg==1)  { but('prevBut', false ) }
-          else but('prevBut', true) 
+      if(pg==1)  { _but('prevBut', false ) }
+          else _but('prevBut', true) 
   
       var cur = pg * sz
-      console.log('showHide', cur, tot)
+      //console.log('showHide', cur, tot)
+  
       if(cur < tot) { // more 
-          but('nextBut', true) 
+          _but('nextBut', true) 
       } else { // to much
-          but('nextBut', false) 
+          _but('nextBut', false) 
       }
   }
   
-  function but(id, on) {
+  function _but(id, on) {
       //console.log(id, on)
       $b = $('#'+id)
       $b.prop('disabled', !on)
