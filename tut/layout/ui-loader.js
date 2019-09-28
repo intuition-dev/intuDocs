@@ -1,12 +1,10 @@
 
-
 toolBeltDefault()
 depp.require(['DOMDelayed', 'jquery'], function() {
 
    resizeVid()
    console.log('ready')
 })//depp
-
 
 // https://codetheory.in/html5-fullscreen-background-video/
 window.addEventListener('resize', resizeVid) 
@@ -29,7 +27,6 @@ function resizeVid() {
    $('.mediaContainerTop').width( nw)
    $('.mediaContainerTop').height( nh )
 }//()
-
 
 
 //TODO:

@@ -9,13 +9,9 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.21/src/toolBelt.min.js"></script>
-  <style>
-    html { touch-action: manipulation; }
-    .delayShowing { opacity: 0; }
-    .blur { -webkit-filter:blur(2px);filter:blur(2px); }
-  </style>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.23/src/toolBelt.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
+  <script src="/layout/ui-loader.js"></script>
 </head>
 <body>
   <link rel="stylesheet" href="/layout/css/style.css"/>
@@ -45,35 +41,5 @@
       </div>
     </div>
   </div>
-  <script>
-    // https://codetheory.in/html5-fullscreen-background-video/
-    window.addEventListener('resize', resizeVid) 
-    function resizeVid() {
-        var w = $(window).width() - 164 
-        var h = $(window).height() - 75
-    
-        // math?
-        var nw = 16
-        var nh = 0
-        while (nw <= w) {
-            nh = nw * 0.5625
-            if( (nh+75+5) > h) break
-            nw = nw + 1
-        }
-    
-        //console.log('c:', w, h, nw, nh)       
-        nw = nw-50
-    
-        $('.mediaContainerTop').width( nw)
-        $('.mediaContainerTop').height( nh )
-    }//()
-    
-    
-    toolBeltDefault()
-    depp.require(['DOMDelayed', 'jquery'], function() {
-    
-        resizeVid()
-        console.log('ready')
-    })//depp
-  </script>
-<!-- mB v6.09.19 on 2019-09-28T16:35:07.642Z --></body>
+  <script></script>
+<!-- mB v6.09.19 on 2019-09-28T22:39:38.577Z --></body>

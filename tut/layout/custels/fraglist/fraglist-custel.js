@@ -11,8 +11,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+console.log('load');
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
-    console.log('load');
+    console.log('loaded');
     var UIBinding = (function () {
         function UIBinding(sr) {
             UIBinding.sr = sr;

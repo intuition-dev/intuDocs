@@ -6,10 +6,12 @@ declare var disE: any
 declare var loadFonts: any
 declare var renderMustache: any
 
+console.log('load')
+
 
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
 
-console.log('load')
+console.log('loaded')
 
 class UIBinding {   
     static sr:any
