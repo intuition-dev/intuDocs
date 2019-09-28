@@ -1,0 +1,153 @@
+
+<head>
+  <script>
+    var _start = Date.now()
+    window.ENV = '0' //- for comps, but it is also in scope for Pug for ENV logic
+    
+  </script>
+  <title></title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.21/src/toolBelt.min.js"></script>
+  <style>
+    html { touch-action: manipulation; }
+    .delayShowing { opacity: 0; }
+    .blur { -webkit-filter:blur(2px);filter:blur(2px); }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
+</head>
+<body>
+  <div class="pgCont">
+    <div class="top">
+      <p>oh hi</p>
+    </div>
+    <div class="main">
+      <div id="left">
+        <div class="mediaContainerTop">
+          <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
+            <source src="arc2.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <div class="mainBot">
+          <p>oh hi bot</p>
+        </div>
+      </div>
+      <div id="right">
+        <button>Up</button>
+        <p></p>
+        <button>Down</button>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* video detach button 
+    //  video popout
+     https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+    */
+    ::-webkit-media-controls {
+        display:none !important;
+    }
+    video::-webkit-media-controls-enclosure {
+       display:none !important;
+    }
+    
+    .vid {
+        object-fit: fill;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    * { margin: 0; padding: 0; }
+    html, body { 
+        width: 100%; 
+        height: 100%; 
+    }
+    .pgCont {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .top {
+        height: 50px; /** *C* */
+    }
+    .main {
+        display: flex; /* 2nd fle level */
+        flex-grow: 1; 
+        min-height: 100px;
+    
+    }
+    
+    #left {
+        width: calc(100% - 200px); /** *C* */
+    
+        min-width: 150px;
+    
+        display: flex; /* 3rd flex level */
+        flex-direction: column;
+    
+        Xborder:  .1px solid yellow;
+        Xbackground: gray;	
+    }
+    #right {
+        border-top: 1.4px solid black;
+        width: 200px;
+        border-radius: 5px 0 0 0;
+        padding: 5px;
+        border-left: 1.4px solid black;
+    }
+    
+    .mediaContainerTop { /* fluid */
+        padding-left: 1px;
+    
+        flex-grow: 0;
+    
+        Xborder:  .1px solid red;
+        Xbackground: silver;	
+    }
+    .mainBot {
+        flex-grow: 1;
+    
+        background: #fff;	           
+        min-height: 75px;
+    
+        border-top: 1.4px solid black;
+        margin-top: 5px;
+    }
+    
+    
+  </style>
+  <script>
+    // https://codetheory.in/html5-fullscreen-background-video/
+    window.addEventListener('resize', resizeVid) 
+    function resizeVid() {
+        var w = $(window).width() - 164 
+        var h = $(window).height() - 75
+    
+        // math?
+        var nw = 16
+        var nh = 0
+        while (nw <= w) {
+            nh = nw * 0.5625
+            if( (nh+75+5) > h) break
+            nw = nw + 1
+        }
+    
+        //console.log('c:', w, h, nw, nh)       
+        nw = nw-50
+    
+        $('.mediaContainerTop').width( nw)
+        $('.mediaContainerTop').height( nh )
+    }//()
+    
+    
+    toolBeltDefault()
+    depp.require(['DOMDelayed', 'jquery'], function() {
+    
+        resizeVid()
+        console.log('ready')
+    })//depp
+  </script>
+<!-- mB v6.09.19 on 2019-09-27T21:46:59.801Z --></body>
