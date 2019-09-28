@@ -17,27 +17,25 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
 console.log('load')
 
 class UIBinding {   
-    sr:any
+    static sr:any
     constructor(sr:any) {
-        this.sr = sr
+        UIBinding.sr = sr
         this.render()
 
         loadFonts(['Open+Sans:300,400'])
 
         //events
-        const THIZ = this
-
-        var table = this.sr.getElementById('data-container')
+        var table = UIBinding.sr.getElementById('data-container')
         table.addEventListener('click', this.onRowClick)
 
-        this.sr.getElementById("prevBut",THIZ.sr).addEventListener("click", function(){
+        UIBinding.sr.getElementById("prevBut",UIBinding.sr).addEventListener("click", function(){
                 console.log('P')
-                $('#pagination-container',THIZ.sr).pagination('previous')
+                $('#pagination-container',UIBinding.sr).pagination('previous')
             })
 
-        this.sr.getElementById("nextBut",THIZ.sr).addEventListener("click", function(){
+        UIBinding.sr.getElementById("nextBut",UIBinding.sr).addEventListener("click", function(){
             console.log('N')
-            $('#pagination-container'),THIZ.sr.pagination('next')
+            $('#pagination-container',UIBinding.sr).pagination('next')
         })//event
 
         window.addEventListener('resize', this.render)
@@ -60,13 +58,12 @@ class UIBinding {
     }//()
 
     render() {
-        const THIZ = this
-        this._fetchD().then(function(dat:any){
-            THIZ._onFData(dat.frags)
+        UIBinding._fetchD().then(function(dat:any){
+            UIBinding._onFData(dat.frags)
         })
     }//()
 
-    _fetchD() {  //polyIO
+    static _fetchD() {  //polyIO
         var path = ''
 
         // data
@@ -89,16 +86,14 @@ class UIBinding {
         })//pro
     }
 
-    _onFData(data) {        
-        const THIZ = this
-
+    static _onFData(data) {        
         console.log('data')
         // MATH:
-        var computedItems = $('.pagCont',THIZ.sr).height() / 65   // pixels  of each row
+        var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
 
-        console.log('rendering', $('.pagCont',THIZ.sr).height(), computedItems ) 
+        console.log('rendering', $('.pagCont',UIBinding.sr).height(), computedItems ) 
 
-        $('#pagination-container',THIZ.sr).pagination({
+        $('#pagination-container',UIBinding.sr).pagination({
             pageSize: computedItems,
             showPageNumbers: false,
             showPrevious: false,
@@ -109,37 +104,36 @@ class UIBinding {
             callback: function(data, pagination) { // on page
                 console.log('pagination')
                 setTimeout(function(){ //pg, sz, tot
-                    THIZ.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
+                    UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
 
-                var html = renderMustache2(THIZ.sr, 'temp1', data)
-                $('#data-container',THIZ.sr).html(html)
+                var html = renderMustache2(UIBinding.sr, 'temp1', data)
+                $('#data-container',UIBinding.sr).html(html)
 
             }//cb
         })
 
     }//()
 
-    showHide(pg, sz, tot) {
-        const THIZ = this
+    static showHide(pg, sz, tot) {
 
-        if(pg==1)  { THIZ._but('prevBut', false ) }
-            else THIZ._but('prevBut', true) 
+        if(pg==1)  { UIBinding._but('prevBut', false ) }
+            else UIBinding._but('prevBut', true) 
 
         var cur = pg * sz
         //console.log('showHide', cur, tot)
 
         if(cur < tot) { // more 
-            THIZ._but('nextBut', true) 
+            UIBinding._but('nextBut', true) 
         } else { // to much
-            THIZ._but('nextBut', false) 
+            UIBinding._but('nextBut', false) 
         }
     }
 
-    _but(id, on) {
+    static _but(id, on) {
         var THIZ = this
         //console.log(id, on)
-        let $b = $('#'+id,THIZ.sr)
+        let $b = $('#'+id,UIBinding.sr)
         $b.prop('disabled', !on)
         if(on) {
             $b.removeClass( "classless" )

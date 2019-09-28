@@ -19,19 +19,18 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
     console.log('load');
     var UIBinding = (function () {
         function UIBinding(sr) {
-            this.sr = sr;
+            UIBinding.sr = sr;
             this.render();
             loadFonts(['Open+Sans:300,400']);
-            var THIZ = this;
-            var table = this.sr.getElementById('data-container');
+            var table = UIBinding.sr.getElementById('data-container');
             table.addEventListener('click', this.onRowClick);
-            this.sr.getElementById("prevBut", THIZ.sr).addEventListener("click", function () {
+            UIBinding.sr.getElementById("prevBut", UIBinding.sr).addEventListener("click", function () {
                 console.log('P');
-                $('#pagination-container', THIZ.sr).pagination('previous');
+                $('#pagination-container', UIBinding.sr).pagination('previous');
             });
-            this.sr.getElementById("nextBut", THIZ.sr).addEventListener("click", function () {
+            UIBinding.sr.getElementById("nextBut", UIBinding.sr).addEventListener("click", function () {
                 console.log('N');
-                $('#pagination-container'), THIZ.sr.pagination('next');
+                $('#pagination-container', UIBinding.sr).pagination('next');
             });
             window.addEventListener('resize', this.render);
         }
@@ -45,12 +44,11 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
             disE('titleClick', title);
         };
         UIBinding.prototype.render = function () {
-            var THIZ = this;
-            this._fetchD().then(function (dat) {
-                THIZ._onFData(dat.frags);
+            UIBinding._fetchD().then(function (dat) {
+                UIBinding._onFData(dat.frags);
             });
         };
-        UIBinding.prototype._fetchD = function () {
+        UIBinding._fetchD = function () {
             var path = '';
             return new Promise(function (resolve, reject) {
                 fetch(path + 'dat.yaml', {
@@ -70,12 +68,11 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                 });
             });
         };
-        UIBinding.prototype._onFData = function (data) {
-            var THIZ = this;
+        UIBinding._onFData = function (data) {
             console.log('data');
-            var computedItems = $('.pagCont', THIZ.sr).height() / 65;
-            console.log('rendering', $('.pagCont', THIZ.sr).height(), computedItems);
-            $('#pagination-container', THIZ.sr).pagination({
+            var computedItems = $('.pagCont', UIBinding.sr).height() / 65;
+            console.log('rendering', $('.pagCont', UIBinding.sr).height(), computedItems);
+            $('#pagination-container', UIBinding.sr).pagination({
                 pageSize: computedItems,
                 showPageNumbers: false,
                 showPrevious: false,
@@ -84,31 +81,30 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                 callback: function (data, pagination) {
                     console.log('pagination');
                     setTimeout(function () {
-                        THIZ.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
+                        UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
                     }, 1);
-                    var html = renderMustache2(THIZ.sr, 'temp1', data);
-                    $('#data-container', THIZ.sr).html(html);
+                    var html = renderMustache2(UIBinding.sr, 'temp1', data);
+                    $('#data-container', UIBinding.sr).html(html);
                 }
             });
         };
-        UIBinding.prototype.showHide = function (pg, sz, tot) {
-            var THIZ = this;
+        UIBinding.showHide = function (pg, sz, tot) {
             if (pg == 1) {
-                THIZ._but('prevBut', false);
+                UIBinding._but('prevBut', false);
             }
             else
-                THIZ._but('prevBut', true);
+                UIBinding._but('prevBut', true);
             var cur = pg * sz;
             if (cur < tot) {
-                THIZ._but('nextBut', true);
+                UIBinding._but('nextBut', true);
             }
             else {
-                THIZ._but('nextBut', false);
+                UIBinding._but('nextBut', false);
             }
         };
-        UIBinding.prototype._but = function (id, on) {
+        UIBinding._but = function (id, on) {
             var THIZ = this;
-            var $b = $('#' + id, THIZ.sr);
+            var $b = $('#' + id, UIBinding.sr);
             $b.prop('disabled', !on);
             if (on) {
                 $b.removeClass("classless");
