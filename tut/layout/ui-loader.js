@@ -14,7 +14,7 @@ depp.require(['DOMDelayed', 'jquery'], function() {
 // https://codetheory.in/html5-fullscreen-background-video/
 window.addEventListener('resize', resizeVid) 
 function resizeVid() {
-   var w = $(window).width() - 164 
+   var w = $(window).width() - 184 
    var h = $(window).height() - 75
 
    // math?

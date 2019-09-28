@@ -11,8 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-console.log('load');
-depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
+depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function () {
     console.log('loaded');
     var UIBinding = (function () {
         function UIBinding(sr) {
@@ -66,7 +65,6 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
             });
         };
         UIBinding._onFData = function (data) {
-            console.log('data');
             var computedItems = $('.pagCont', UIBinding.sr).height() / 65;
             console.log('rendering', $('.pagCont', UIBinding.sr).height(), computedItems);
             $('#pagination-container', UIBinding.sr).pagination({
@@ -76,7 +74,6 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                 showNext: false,
                 dataSource: data,
                 callback: function (data, pagination) {
-                    console.log('pagination');
                     setTimeout(function () {
                         UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
                     }, 1);
@@ -118,7 +115,6 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
         };
         return UIBinding;
     }());
-    console.log('loading');
     var cTemp = document.createElement('template');
     cTemp.innerHTML = "\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css\"/>\n\n<div class=\"fragCont\">\n    <p></p>\n    <button class=\"btn butOff classless\" id=\"prevBut\" disabled=\"disabled\">Previous </button>\n    <div class=\"topSpace\"></div>\n    <div class=\"pagCont\">\n    <div id=\"data-container\"></div>\n    <div id=\"pagination-container\"></div>\n    </div>\n    <button class=\"btn butOff classless\" id=\"nextBut\" disabled=\"disabled\">Next </button>\n    <template id=\"temp1\"><span>{{#.}}\n    <div class=\"fragTitle\">{{title}}</div>\n    <hr/><br/></span><span>{{/.}}</span></template>\n</div>\n\n<style>\n    .fragCont {\n        width: 200px;\n        margin-left: 1em;\n        display: flex;\n        flex-direction: column;\n        height: calc(100% - 1.5em);\n    }\n    .topSpace {\n        min-height: 1.6em;\n    }\n    \n    .pagCont {\n        flex-grow: 1;\n    }\n\n    .fragTitle {\n        font-weight: 400;\n        \n        /*clamp */\n        display: -webkit-box;\n        -webkit-line-clamp: 2;\n        -webkit-box-orient: vertical;  \n        overflow: hidden;\n    }\n\n    .butOn {\n        font-weight: normal;\n        pointer-events: auto;\n    }\n    .butOff {\n        font-weight: lighter;\n        pointer-events: none;\n}\n</style>";
     window.customElements.define('fraglist-custel', (function (_super) {

@@ -6,10 +6,8 @@ declare var disE: any
 declare var loadFonts: any
 declare var renderMustache: any
 
-console.log('load')
 
-
-depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
+depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
 
 console.log('loaded')
 
@@ -84,7 +82,7 @@ class UIBinding {
     }
 
     static _onFData(data) {        
-        console.log('data')
+        //console.log('data')
         // MATH:
         var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
 
@@ -99,7 +97,7 @@ class UIBinding {
             dataSource: data,
 
             callback: function(data, pagination) { // on page
-                console.log('pagination')
+                //console.log('pagination')
                 setTimeout(function(){ //pg, sz, tot
                     UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
@@ -149,7 +147,6 @@ class UIBinding {
 }// class
 
     // template
-    console.log('loading')
     var cTemp = document.createElement('template')
     cTemp.innerHTML = `
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
