@@ -1,15 +1,19 @@
 head
-    include /layout/headFrag
+    include headFrag
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css')
 
+ 
 body
+    link(rel='stylesheet', href='/layout/css/style.css')
+
     .pgCont
         .top
             p oh hi
         .main
             #left
                 .mediaContainerTop
-                    video#vid1.vid( autoplay preload='auto' loop muted )
+                    block media
+                    //video#vid1.vid( autoplay preload='auto' loop muted )
                         source(src='arc2.mp4' type="video/mp4" )
                     
                 .mainBot
@@ -20,84 +24,6 @@ body
                 p
                 button Down
     
-
-    style.
-        /* video detach button 
-        //  video popout
-         https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-        */
-        ::-webkit-media-controls {
-            display:none !important;
-        }
-        video::-webkit-media-controls-enclosure {
-           display:none !important;
-        }
-
-        .vid {
-            object-fit: fill;
-            border-radius: 5px;
-            width: 100%;
-            height: 100%;
-        }
-
-        * { margin: 0; padding: 0; }
-        html, body { 
-            width: 100%; 
-            height: 100%; 
-        }
-        .pgCont {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            max-height: 100vh;
-        }
-        .top {
-            height: 50px; /** *C* */
-        }
-        .main {
-            display: flex; /* 2nd fle level */
-            flex-grow: 1; 
-            min-height: 100px;
-
-        }
-
-        #left {
-            width: calc(100% - 200px); /** *C* */
-    
-            min-width: 150px;
-
-            display: flex; /* 3rd flex level */
-            flex-direction: column;
-
-            Xborder:  .1px solid yellow;
-            Xbackground: gray;	
-        }
-        #right {
-            border-top: 1.4px solid black;
-            width: 200px;
-            border-radius: 5px 0 0 0;
-            padding: 5px;
-            border-left: 1.4px solid black;
-        }
-
-        .mediaContainerTop { /* fluid */
-            padding-left: 1px;
-
-            flex-grow: 0;
-
-            Xborder:  .1px solid red;
-            Xbackground: silver;	
-        }
-        .mainBot {
-            flex-grow: 1;
-
-            background: #fff;	           
-            min-height: 75px;
-
-            border-top: 1.4px solid black;
-            margin-top: 5px;
-        }
-
 
     script.
         // https://codetheory.in/html5-fullscreen-background-video/
