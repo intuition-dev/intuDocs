@@ -13,55 +13,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
 </head>
 <body>
-  <div class="fragCont">
-    <p></p>
-    <button class="btn butOff classless" id="prevBut" disabled="disabled">Previous </button>
-    <div class="topSpace"></div>
-    <div class="pagCont">
-      <div id="data-container"></div>
-      <div id="pagination-container"></div>
-    </div>
-    <button class="btn butOff classless" id="nextBut" disabled="disabled">Next </button>
-    <template id="temp1"><span>{{#.}}
-        <div class="fragTitle">{{title}}</div>
-        <hr/><br/></span><span>{{/.}}</span></template>
-  </div>
-<!-- mB v6.09.19 on 2019-09-28T21:32:32.152Z --></body>
-<style>
-   .fragCont {
-       width: 200px;
-       margin-left: 1em;
-       display: flex;
-       flex-direction: column;
-       height: calc(100% - 1.5em);
-   }
-   .topSpace {
-       min-height: 1.6em;
-   }
+  <p>oh hi</p>
+  <fraglist-custel></fraglist-custel>
+<!-- mB v6.09.19 on 2019-09-28T22:04:47.017Z --></body>
+<script>
+  console.log('oh hi')
+  
+  depp.define({
+   'fraglist':'/layout/custels/fraglist/fraglist-custel.js'
+  })
+  
+  depp.require([ 'fraglist' ], function() {
+      console.log('loaded')
+  }) 
+  
+  addEventListener('titleClick', function (evt) {
+      const msg = evt.detail
+      console.log(msg)
+     
+  
+  })//()
+  
    
-   .pagCont {
-       flex-grow: 1;
-   }
-   #nextBut {
-  
-   }
-  
-   .fragTitle {
-       font-weight: 400;
-       
-       /*clamp */
-       display: -webkit-box;
-       -webkit-line-clamp: 2;
-       -webkit-box-orient: vertical;  
-       overflow: hidden;
-   }
-  
-   .butOn {
-       font-weight: normal;
-       pointer-events: auto;
-   }
-   .butOff {
-       font-weight: lighter;
-       pointer-events: none;
-  }
-</style>
+</script>

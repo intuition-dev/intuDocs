@@ -6,29 +6,9 @@ declare var disE: any
 declare var loadFonts: any
 declare var renderMustache: any
 
-
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
 
-    window.customElements.define('fraglist-custel', class extends HTMLElement {
-        sr // shadow root var
-    
-        dialog
-        constructor() {
-            super()
-            console.log('cons')
-
-            this.sr = this.attachShadow({ mode: 'closed' })
-            this.sr.appendChild(cTemp.content.cloneNode(true))
-            new UIBinding(this.sr)
-
-
-            let THIZ = this
-
-        }//cons    
-
-    })//custel
-
-
+console.log('load')
 
 class UIBinding {   
     sr:any
@@ -174,7 +154,75 @@ class UIBinding {
     // template
     console.log('loading')
     var cTemp = document.createElement('template')
-    cTemp.innerHTML = ``
+    cTemp.innerHTML = `
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
+
+<div class="fragCont">
+    <p></p>
+    <button class="btn butOff classless" id="prevBut" disabled="disabled">Previous </button>
+    <div class="topSpace"></div>
+    <div class="pagCont">
+    <div id="data-container"></div>
+    <div id="pagination-container"></div>
+    </div>
+    <button class="btn butOff classless" id="nextBut" disabled="disabled">Next </button>
+    <template id="temp1"><span>{{#.}}
+    <div class="fragTitle">{{title}}</div>
+    <hr/><br/></span><span>{{/.}}</span></template>
+</div>
+
+<style>
+    .fragCont {
+        width: 200px;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 1.5em);
+    }
+    .topSpace {
+        min-height: 1.6em;
+    }
+    
+    .pagCont {
+        flex-grow: 1;
+    }
+
+    .fragTitle {
+        font-weight: 400;
+        
+        /*clamp */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+
+    .butOn {
+        font-weight: normal;
+        pointer-events: auto;
+    }
+    .butOff {
+        font-weight: lighter;
+        pointer-events: none;
+}
+</style>`
+
+// /////////////////////////////
+window.customElements.define('fraglist-custel', class extends HTMLElement {
+    sr // shadow root var
+
+    
+    constructor() {
+        super()
+        console.log('cons')
+
+        this.sr = this.attachShadow({ mode: 'closed' })
+        this.sr.appendChild(cTemp.content.cloneNode(true))
+        new UIBinding(this.sr)
+
+    }//cons    
+
+})//custel
 
 
-})
+})//depp

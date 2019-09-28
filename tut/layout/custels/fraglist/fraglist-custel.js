@@ -12,19 +12,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
-    window.customElements.define('fraglist-custel', (function (_super) {
-        __extends(class_1, _super);
-        function class_1() {
-            var _this = _super.call(this) || this;
-            console.log('cons');
-            _this.sr = _this.attachShadow({ mode: 'closed' });
-            _this.sr.appendChild(cTemp.content.cloneNode(true));
-            new UIBinding(_this.sr);
-            var THIZ = _this;
-            return _this;
-        }
-        return class_1;
-    }(HTMLElement)));
+    console.log('load');
     var UIBinding = (function () {
         function UIBinding(sr) {
             this.sr = sr;
@@ -135,5 +123,17 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
     }());
     console.log('loading');
     var cTemp = document.createElement('template');
-    cTemp.innerHTML = "";
+    cTemp.innerHTML = "\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css\"/>\n\n<div class=\"fragCont\">\n    <p></p>\n    <button class=\"btn butOff classless\" id=\"prevBut\" disabled=\"disabled\">Previous </button>\n    <div class=\"topSpace\"></div>\n    <div class=\"pagCont\">\n    <div id=\"data-container\"></div>\n    <div id=\"pagination-container\"></div>\n    </div>\n    <button class=\"btn butOff classless\" id=\"nextBut\" disabled=\"disabled\">Next </button>\n    <template id=\"temp1\"><span>{{#.}}\n    <div class=\"fragTitle\">{{title}}</div>\n    <hr/><br/></span><span>{{/.}}</span></template>\n</div>\n\n<style>\n    .fragCont {\n        width: 200px;\n        margin-left: 1em;\n        display: flex;\n        flex-direction: column;\n        height: calc(100% - 1.5em);\n    }\n    .topSpace {\n        min-height: 1.6em;\n    }\n    \n    .pagCont {\n        flex-grow: 1;\n    }\n\n    .fragTitle {\n        font-weight: 400;\n        \n        /*clamp */\n        display: -webkit-box;\n        -webkit-line-clamp: 2;\n        -webkit-box-orient: vertical;  \n        overflow: hidden;\n    }\n\n    .butOn {\n        font-weight: normal;\n        pointer-events: auto;\n    }\n    .butOff {\n        font-weight: lighter;\n        pointer-events: none;\n}\n</style>";
+    window.customElements.define('fraglist-custel', (function (_super) {
+        __extends(class_1, _super);
+        function class_1() {
+            var _this = _super.call(this) || this;
+            console.log('cons');
+            _this.sr = _this.attachShadow({ mode: 'closed' });
+            _this.sr.appendChild(cTemp.content.cloneNode(true));
+            new UIBinding(_this.sr);
+            return _this;
+        }
+        return class_1;
+    }(HTMLElement)));
 });
