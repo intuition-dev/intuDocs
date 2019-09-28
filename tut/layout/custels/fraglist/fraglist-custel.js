@@ -12,7 +12,6 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
-    loadFonts(['Open+Sans:300,400']);
     window.customElements.define('fraglist-custel', (function (_super) {
         __extends(class_1, _super);
         function class_1() {
@@ -28,14 +27,16 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
     }(HTMLElement)));
     var UIBinding = (function () {
         function UIBinding(sr) {
+            this.sr = sr;
             this.render();
-            var table = document.getElementById('data-container');
+            loadFonts(['Open+Sans:300,400']);
+            var table = this.sr.getElementById('data-container');
             table.addEventListener('click', this.onRowClick);
-            document.getElementById("prevBut").addEventListener("click", function () {
+            this.sr.getElementById("prevBut").addEventListener("click", function () {
                 console.log('P');
                 $('#pagination-container').pagination('previous');
             });
-            document.getElementById("nextBut").addEventListener("click", function () {
+            this.sr.getElementById("nextBut").addEventListener("click", function () {
                 console.log('N');
                 $('#pagination-container').pagination('next');
             });

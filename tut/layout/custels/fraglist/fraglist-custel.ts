@@ -9,8 +9,6 @@ declare var renderMustache: any
 
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
 
-    loadFonts(['Open+Sans:300,400'])
-
     window.customElements.define('fraglist-custel', class extends HTMLElement {
         sr // shadow root var
     
@@ -33,27 +31,31 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
 
 
 class UIBinding {   
+    sr:any
     constructor(sr:any) {
-
+        this.sr = sr
         this.render()
 
+        loadFonts(['Open+Sans:300,400'])
 
-        var table = document.getElementById('data-container')
+        //events
+        var table = this.sr.getElementById('data-container')
         table.addEventListener('click', this.onRowClick)
 
-        document.getElementById("prevBut").addEventListener("click", function(){
+        this.sr.getElementById("prevBut").addEventListener("click", function(){
                 console.log('P')
                 $('#pagination-container').pagination('previous')
             })
 
-        document.getElementById("nextBut").addEventListener("click", function(){
+        this.sr.getElementById("nextBut").addEventListener("click", function(){
             console.log('N')
             $('#pagination-container').pagination('next')
         })//event
 
         window.addEventListener('resize', this.render)
 
-    }
+
+    }//cons
     
 
     onRowClick(el) {
@@ -166,6 +168,7 @@ class UIBinding {
     
 }// class
 
+    // template
     console.log('loading')
     var cTemp = document.createElement('template')
     cTemp.innerHTML = ``
