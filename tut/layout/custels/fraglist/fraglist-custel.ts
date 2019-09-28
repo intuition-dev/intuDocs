@@ -1,16 +1,11 @@
 
-
-
-function renderMustache2(root, id, data) {
-    let template = root.getElementById(id).innerHTML
-    return Mustache.render(template, data)
-}
-
 declare var jsyaml: any
 declare var $: any
 declare var depp: any
 declare var disE: any
 declare var loadFonts: any
+declare var renderMustache: any
+
 
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
 
@@ -107,7 +102,7 @@ class UIBinding {
                     UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
 
-                var html = renderMustache2(UIBinding.sr, 'temp1', data)
+                var html = renderMustache(UIBinding.sr, 'temp1', data)
                 $('#data-container',UIBinding.sr).html(html)
 
             }//cb

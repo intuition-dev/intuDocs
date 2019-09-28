@@ -11,10 +11,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-function renderMustache2(root, id, data) {
-    var template = root.getElementById(id).innerHTML;
-    return Mustache.render(template, data);
-}
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
     console.log('load');
     var UIBinding = (function () {
@@ -83,7 +79,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                     setTimeout(function () {
                         UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
                     }, 1);
-                    var html = renderMustache2(UIBinding.sr, 'temp1', data);
+                    var html = renderMustache(UIBinding.sr, 'temp1', data);
                     $('#data-container', UIBinding.sr).html(html);
                 }
             });
