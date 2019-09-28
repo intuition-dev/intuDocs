@@ -30,15 +30,16 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
             this.sr = sr;
             this.render();
             loadFonts(['Open+Sans:300,400']);
+            var THIZ = this;
             var table = this.sr.getElementById('data-container');
             table.addEventListener('click', this.onRowClick);
-            this.sr.getElementById("prevBut").addEventListener("click", function () {
+            this.sr.getElementById("prevBut", THIZ.sr).addEventListener("click", function () {
                 console.log('P');
-                $('#pagination-container').pagination('previous');
+                $('#pagination-container', THIZ.sr).pagination('previous');
             });
-            this.sr.getElementById("nextBut").addEventListener("click", function () {
+            this.sr.getElementById("nextBut", THIZ.sr).addEventListener("click", function () {
                 console.log('N');
-                $('#pagination-container').pagination('next');
+                $('#pagination-container'), THIZ.sr.pagination('next');
             });
             window.addEventListener('resize', this.render);
         }
@@ -80,9 +81,9 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
         UIBinding.prototype._onFData = function (data) {
             var THIZ = this;
             console.log('data');
-            var computedItems = $('.pagCont').height() / 65;
-            console.log('rendering', $('.pagCont').height(), computedItems);
-            $('#pagination-container').pagination({
+            var computedItems = $('.pagCont', THIZ.sr).height() / 65;
+            console.log('rendering', $('.pagCont', THIZ.sr).height(), computedItems);
+            $('#pagination-container', THIZ.sr).pagination({
                 pageSize: computedItems,
                 showPageNumbers: false,
                 showPrevious: false,
@@ -94,7 +95,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                         THIZ.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
                     }, 1);
                     var html = renderMustache('temp1', data);
-                    $('#data-container').html(html);
+                    $('#data-container', THIZ.sr).html(html);
                 }
             });
         };
@@ -114,7 +115,8 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
             }
         };
         UIBinding.prototype._but = function (id, on) {
-            var $b = $('#' + id);
+            var THIZ = this;
+            var $b = $('#' + id, THIZ.sr);
             $b.prop('disabled', !on);
             if (on) {
                 $b.removeClass("classless");

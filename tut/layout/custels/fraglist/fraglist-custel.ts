@@ -39,17 +39,19 @@ class UIBinding {
         loadFonts(['Open+Sans:300,400'])
 
         //events
+        const THIZ = this
+
         var table = this.sr.getElementById('data-container')
         table.addEventListener('click', this.onRowClick)
 
-        this.sr.getElementById("prevBut").addEventListener("click", function(){
+        this.sr.getElementById("prevBut",THIZ.sr).addEventListener("click", function(){
                 console.log('P')
-                $('#pagination-container').pagination('previous')
+                $('#pagination-container',THIZ.sr).pagination('previous')
             })
 
-        this.sr.getElementById("nextBut").addEventListener("click", function(){
+        this.sr.getElementById("nextBut",THIZ.sr).addEventListener("click", function(){
             console.log('N')
-            $('#pagination-container').pagination('next')
+            $('#pagination-container'),THIZ.sr.pagination('next')
         })//event
 
         window.addEventListener('resize', this.render)
@@ -106,11 +108,11 @@ class UIBinding {
 
         console.log('data')
         // MATH:
-        var computedItems = $('.pagCont').height() / 65   // pixels  of each row
+        var computedItems = $('.pagCont',THIZ.sr).height() / 65   // pixels  of each row
 
-        console.log('rendering', $('.pagCont').height(), computedItems ) 
+        console.log('rendering', $('.pagCont',THIZ.sr).height(), computedItems ) 
 
-        $('#pagination-container').pagination({
+        $('#pagination-container',THIZ.sr).pagination({
             pageSize: computedItems,
             showPageNumbers: false,
             showPrevious: false,
@@ -125,7 +127,7 @@ class UIBinding {
                 },1)
 
                 var html = renderMustache('temp1', data)
-                $('#data-container').html(html)
+                $('#data-container',THIZ.sr).html(html)
 
             }//cb
         })
@@ -149,8 +151,9 @@ class UIBinding {
     }
 
     _but(id, on) {
+        var THIZ = this
         //console.log(id, on)
-        let $b = $('#'+id)
+        let $b = $('#'+id,THIZ.sr)
         $b.prop('disabled', !on)
         if(on) {
             $b.removeClass( "classless" )
