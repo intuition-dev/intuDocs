@@ -157,7 +157,7 @@ script.
                     showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
 
-                var html = renderMustache('temp1', data)
+                var html = renderMustache(document, 'temp1', data)
                 $('#data-container').html(html)
 
             }//cb

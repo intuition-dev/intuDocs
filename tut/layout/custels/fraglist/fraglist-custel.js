@@ -11,6 +11,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+function renderMustache2(root, id, data) {
+    var template = root.getElementById(id).innerHTML;
+    return Mustache.render(template, data);
+}
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
     console.log('load');
     var UIBinding = (function () {
@@ -82,7 +86,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                     setTimeout(function () {
                         THIZ.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
                     }, 1);
-                    var html = renderMustache('temp1', data);
+                    var html = renderMustache2(THIZ.sr, 'temp1', data);
                     $('#data-container', THIZ.sr).html(html);
                 }
             });
