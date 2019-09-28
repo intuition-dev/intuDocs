@@ -10,41 +10,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.21/src/toolBelt.min.js"></script>
-  <style>
-    html { touch-action: manipulation; }
-    .delayShowing { opacity: 0; }
-    .blur { -webkit-filter:blur(2px);filter:blur(2px); }
-  </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
 </head>
 <body>
   <div class="fragCont">
     <p></p>
-    <button class="btn butOff classless" id="prev" disabled="disabled">Previous </button>
+    <button class="btn butOff classless" id="prevBut" disabled="disabled">Previous </button>
     <div class="topSpace"></div>
     <div class="pagCont">
       <div id="data-container"></div>
       <div id="pagination-container"></div>
     </div>
-    <button class="btn butOff classless" id="next" disabled="disabled">Next </button>
+    <button class="btn butOff classless" id="nextBut" disabled="disabled">Next </button>
     <template id="temp1"><span>{{#.}}
         <div class="fragTitle">{{title}}</div>
         <hr/><br/></span><span>{{/.}}</span></template>
   </div>
-<!-- mB v6.09.19 on 2019-09-28T16:30:47.250Z --></body>
+<!-- mB v6.09.19 on 2019-09-28T20:08:56.326Z --></body>
 <style>
-   .topSpace {
-       height: 1.6em;
-   }
-  
    .fragCont {
+       width: 200px;
        margin-left: 1em;
        display: flex;
        flex-direction: column;
        height: calc(100% - 1.5em);
-   }    
+   }
+   .topSpace {
+       min-height: 1.6em;
+   }
+   
    .pagCont {
        flex-grow: 1;
+   }
+   #nextBut {
+  
    }
   
    .fragTitle {
@@ -72,7 +71,7 @@
       const selector = '.fragTitle'
       var cel = el.target.closest(selector)
       if (!cel) return
-      console.log(cel)
+      //console.log(cel)
   
       var title = cel.innerText
       console.log(title)
@@ -81,11 +80,10 @@
   
   }//()
   
-  depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
+  depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
       console.log('ready')
-      // data
-      fetchFrags('').then(function(dat){
-          console.log(dat)
+   
+      render('').then(function(dat){
           onFragData(dat.frags)
       })
   
@@ -93,12 +91,12 @@
           var table = document.getElementById('data-container')
           table.addEventListener('click', onRowClick)
   
-          document.getElementById("prev").addEventListener("click", function(){
+          document.getElementById("prevBut").addEventListener("click", function(){
                   console.log('P')
                   $('#pagination-container').pagination('previous')
               })
   
-          document.getElementById("next").addEventListener("click", function(){
+          document.getElementById("nextBut").addEventListener("click", function(){
               console.log('N')
               $('#pagination-container').pagination('next')
       })
@@ -106,9 +104,10 @@
       
   })// req
   
-  function fetchFrags() {  //polyIO
+  function render() {  //polyIO
       var path = ''
   
+      // data
       return new Promise(function (resolve, reject) {
           fetch(path+'dat.yaml', {
               cache: 'default',
@@ -133,7 +132,7 @@
       console.log('data')
       var computedItems = $('.pagCont').height() / 40   // pixels    
   
-      console.log('ci', $('.pagCont').height(), computedItems ) 
+      console.log('rendering', $('.pagCont').height(), computedItems ) 
   
       $('#pagination-container').pagination({
           pageSize: computedItems,
@@ -144,7 +143,7 @@
           dataSource: data,
   
           callback: function(data, pagination) { // on page
-              console.log('pg')
+              console.log('pagination')
               setTimeout(function(){ //pg, sz, tot
                   showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
               },1)
@@ -157,20 +156,20 @@
   }//()
   
   function showHide(pg, sz, tot) {
-      if(pg==1)  { but('prev', false ) }
-          else but('prev', true) 
+      if(pg==1)  { but('prevBut', false ) }
+          else but('prevBut', true) 
   
       var cur = pg * sz
-      console.log('sh', cur, tot)
+      console.log('showHide', cur, tot)
       if(cur < tot) { // more 
-          but('next', true) 
+          but('nextBut', true) 
       } else { // to much
-          but('next', false) 
+          but('nextBut', false) 
       }
   }
   
   function but(id, on) {
-      console.log(id,on)
+      //console.log(id, on)
       $b = $('#'+id)
       $b.prop('disabled', !on)
       if(on) {

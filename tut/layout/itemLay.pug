@@ -2,7 +2,9 @@ head
     include headFrag
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css')
 
- 
+    script(src='/layout/ui-loader.js')
+
+
 body
     link(rel='stylesheet', href='/layout/css/style.css')
 
@@ -26,32 +28,3 @@ body
     
 
     script.
-        // https://codetheory.in/html5-fullscreen-background-video/
-        window.addEventListener('resize', resizeVid) 
-        function resizeVid() {
-            var w = $(window).width() - 164 
-            var h = $(window).height() - 75
-
-            // math?
-            var nw = 16
-            var nh = 0
-            while (nw <= w) {
-                nh = nw * 0.5625
-                if( (nh+75+5) > h) break
-                nw = nw + 1
-            }
-
-            //console.log('c:', w, h, nw, nh)       
-            nw = nw-50
-
-            $('.mediaContainerTop').width( nw)
-            $('.mediaContainerTop').height( nh )
-        }//()
-
-
-        toolBeltDefault()
-        depp.require(['DOMDelayed', 'jquery'], function() {
-    
-            resizeVid()
-            console.log('ready')
-        })//depp

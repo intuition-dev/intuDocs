@@ -6,13 +6,13 @@ body
 
     .fragCont
         p
-        button#prev.btn.butOff.classless(disabled) Previous 
+        button#prevBut.btn.butOff.classless(disabled) Previous 
         .topSpace
         .pagCont
             #data-container
             #pagination-container
         
-        button#next.btn.butOff.classless(disabled) Next 
+        button#nextBut.btn.butOff.classless(disabled) Next 
 
         template#temp1
             span {{#.}}
@@ -23,18 +23,22 @@ body
     
 style.
 
-    .topSpace {
-        height: 1.6em;
-    }
-
     .fragCont {
+        width: 200px;
         margin-left: 1em;
         display: flex;
         flex-direction: column;
         height: calc(100% - 1.5em);
-    }    
+    }
+    .topSpace {
+        min-height: 1.6em;
+    }
+    
     .pagCont {
         flex-grow: 1;
+    }
+    #nextBut {
+
     }
 
     .fragTitle {
@@ -61,7 +65,7 @@ script.
         const selector = '.fragTitle'
         var cel = el.target.closest(selector)
         if (!cel) return
-        console.log(cel)
+        //console.log(cel)
 
         var title = cel.innerText
         console.log(title)
@@ -70,11 +74,10 @@ script.
 
     }//()
 
-    depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
+    depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
         console.log('ready')
-        // data
-        fetchFrags('').then(function(dat){
-            console.log(dat)
+     
+        render('').then(function(dat){
             onFragData(dat.frags)
         })
 
@@ -82,12 +85,12 @@ script.
             var table = document.getElementById('data-container')
             table.addEventListener('click', onRowClick)
     
-            document.getElementById("prev").addEventListener("click", function(){
+            document.getElementById("prevBut").addEventListener("click", function(){
                     console.log('P')
                     $('#pagination-container').pagination('previous')
                 })
 
-            document.getElementById("next").addEventListener("click", function(){
+            document.getElementById("nextBut").addEventListener("click", function(){
                 console.log('N')
                 $('#pagination-container').pagination('next')
         })
@@ -95,9 +98,10 @@ script.
         
     })// req
 
-    function fetchFrags() {  //polyIO
+    function render() {  //polyIO
         var path = ''
 
+        // data
         return new Promise(function (resolve, reject) {
             fetch(path+'dat.yaml', {
                 cache: 'default',
@@ -122,7 +126,7 @@ script.
         console.log('data')
         var computedItems = $('.pagCont').height() / 40   // pixels    
 
-        console.log('ci', $('.pagCont').height(), computedItems ) 
+        console.log('rendering', $('.pagCont').height(), computedItems ) 
 
         $('#pagination-container').pagination({
             pageSize: computedItems,
@@ -133,7 +137,7 @@ script.
             dataSource: data,
 
             callback: function(data, pagination) { // on page
-                console.log('pg')
+                console.log('pagination')
                 setTimeout(function(){ //pg, sz, tot
                     showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber)
                 },1)
@@ -146,20 +150,20 @@ script.
     }//()
 
     function showHide(pg, sz, tot) {
-        if(pg==1)  { but('prev', false ) }
-            else but('prev', true) 
+        if(pg==1)  { but('prevBut', false ) }
+            else but('prevBut', true) 
 
         var cur = pg * sz
-        console.log('sh', cur, tot)
+        console.log('showHide', cur, tot)
         if(cur < tot) { // more 
-            but('next', true) 
+            but('nextBut', true) 
         } else { // to much
-            but('next', false) 
+            but('nextBut', false) 
         }
     }
 
     function but(id, on) {
-        console.log(id,on)
+        //console.log(id, on)
         $b = $('#'+id)
         $b.prop('disabled', !on)
         if(on) {
