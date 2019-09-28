@@ -22,9 +22,15 @@ body
                     p oh hi bot
 
             #right
-                button Up
-                p
-                button Down
-    
+                fraglist-custel
 
+    
     script.
+        depp.require([ 'fraglist' ], function() {
+            console.log('loaded')
+        }) 
+
+        addEventListener('titleClick', function (evt) {
+            const msg = evt.detail
+            console.log(msg)
+        })//()

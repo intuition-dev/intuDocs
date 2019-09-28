@@ -5,7 +5,7 @@
     window.ENV = '0' //- for comps, but it is also in scope for Pug for ENV logic
     
   </script>
-  <title></title>
+  <title>Rambo - Last Blood</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
@@ -35,11 +35,18 @@
         </div>
       </div>
       <div id="right">
-        <button>Up</button>
-        <p></p>
-        <button>Down</button>
+        <fraglist-custel></fraglist-custel>
       </div>
     </div>
   </div>
-  <script></script>
-<!-- mB v6.09.19 on 2019-09-28T22:39:38.577Z --></body>
+  <script>
+    depp.require([ 'fraglist' ], function() {
+        console.log('loaded')
+    }) 
+    
+    addEventListener('titleClick', function (evt) {
+        const msg = evt.detail
+        console.log(msg)
+    })//()
+  </script>
+<!-- mB v6.09.19 on 2019-09-28T22:48:18.269Z --></body>

@@ -1,5 +1,10 @@
 
 toolBeltDefault()
+
+depp.define({
+   'fraglist':'/layout/custels/fraglist/fraglist-custel.js'
+  })
+
 depp.require(['DOMDelayed', 'jquery'], function() {
 
    resizeVid()
