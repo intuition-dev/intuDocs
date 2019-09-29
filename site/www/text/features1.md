@@ -9,3 +9,4 @@
 2. Built-in support for I18N 
 2. Built in deployment (GitDown) for multiple environments such as staging.
 2. Built in support for SQL back end.
+2. Progressive PWA
