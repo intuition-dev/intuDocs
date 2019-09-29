@@ -2,15 +2,15 @@ head
     include headFrag
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css')
 
-    script(src='/layout/ui-loader.js')
 
 
 body
     link(rel='stylesheet', href='/layout/css/style.css')
+    script(src='/layout/ui-loader.js')
 
     .pgCont
         .top
-            p oh hi
+            p #{desc}
         .main
             #left
                 .mediaContainerTop
@@ -26,11 +26,24 @@ body
 
     
     script.
-        depp.require([ 'fraglist' ], function() {
-            //console.log('loaded')
-        }) 
+  
+        window.data ='' 
+
+        addEventListener('firstDataLoad', function (evt) {
+            console.log('first')
+            window.data = evt.detail
+            console.log(window.data)
+        })//()
 
         addEventListener('titleClick', function (evt) {
             const msg = evt.detail
             console.log(msg)
+
+            console.log(window.data.frag)
+ 
         })//()
+
+        depp.require([ 'fraglist' ], function() {            
+        }) 
+
+     

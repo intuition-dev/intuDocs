@@ -11,13 +11,13 @@
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.23/src/toolBelt.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
-  <script src="/layout/ui-loader.js"></script>
 </head>
 <body>
   <link rel="stylesheet" href="/layout/css/style.css"/>
+  <script src="/layout/ui-loader.js"></script>
   <div class="pgCont">
     <div class="top">
-      <p>oh hi</p>
+      <p>Rambo must confront his past and unearth his ruthless combat skills to exact revenge in a final mission.</p>
     </div>
     <div class="main">
       <div id="left">
@@ -40,13 +40,23 @@
     </div>
   </div>
   <script>
-    depp.require([ 'fraglist' ], function() {
-        //console.log('loaded')
-    }) 
+    window.data ='' 
+    
+    addEventListener('firstDataLoad', function (evt) {
+        console.log('first')
+        window.data = evt.detail
+        console.log(window.data)
+    })//()
     
     addEventListener('titleClick', function (evt) {
         const msg = evt.detail
         console.log(msg)
+    
+        console.log(window.data.frag)
+    
     })//()
+    
+    depp.require([ 'fraglist' ], function() {            
+    }) 
   </script>
-<!-- mB v6.09.19 on 2019-09-28T22:54:56.469Z --></body>
+<!-- mB v6.09.25 on 2019-09-29T20:13:07.682Z --></body>

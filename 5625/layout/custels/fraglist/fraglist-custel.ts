@@ -7,7 +7,7 @@ declare var loadFonts: any
 declare var renderMustache: any
 
 
-depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
+depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function() {
 console.log('loaded')
 
 class UIBinding {   
@@ -45,7 +45,7 @@ class UIBinding {
         //console.log(cel)
 
         var title = cel.innerText
-        console.log(title)
+        //console.log(title)
 
         disE('titleClick', title)
 
@@ -53,11 +53,11 @@ class UIBinding {
 
     render() {
         UIBinding._fetchD().then(function(dat:any){
-            UIBinding._onFData(dat.frags)
+            UIBinding._onFData(dat)
         })
     }//()
 
-    static _fetchD() {  //polyIO
+    static _fetchD() { 
         var path = ''
 
         // data
@@ -80,8 +80,18 @@ class UIBinding {
         })//pro
     }
 
-    static _onFData(data) {        
-        //console.log('data')
+    // did the data load once?
+    static firstDataLoad = false
+
+    static _onFData(data) {   
+        
+        if( !UIBinding.firstDataLoad) {
+            UIBinding.firstDataLoad=true
+            console.log('firstDataLoad')
+            disE('firstDataLoad', data)
+        }//
+
+        
         // MATH:
         //var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
         var heig = $('.fragCont',UIBinding.sr).height()  - 100 
@@ -95,7 +105,7 @@ class UIBinding {
             showPrevious: false,
             showNext: false,
 
-            dataSource: data,
+            dataSource: data.frags,
 
             callback: function(data, pagination) { // on page
                 //console.log('pagination')
@@ -213,7 +223,6 @@ class UIBinding {
 // /////////////////////////////
 window.customElements.define('fraglist-custel', class extends HTMLElement {
     sr // shadow root var
-
     
     constructor() {
         super()

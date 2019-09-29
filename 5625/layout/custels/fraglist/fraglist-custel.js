@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function () {
+depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], function () {
     console.log('loaded');
     var UIBinding = (function () {
         function UIBinding(sr) {
@@ -36,12 +36,11 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
             if (!cel)
                 return;
             var title = cel.innerText;
-            console.log(title);
             disE('titleClick', title);
         };
         UIBinding.prototype.render = function () {
             UIBinding._fetchD().then(function (dat) {
-                UIBinding._onFData(dat.frags);
+                UIBinding._onFData(dat);
             });
         };
         UIBinding._fetchD = function () {
@@ -65,6 +64,11 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
             });
         };
         UIBinding._onFData = function (data) {
+            if (!UIBinding.firstDataLoad) {
+                UIBinding.firstDataLoad = true;
+                console.log('firstDataLoad');
+                disE('firstDataLoad', data);
+            }
             var heig = $('.fragCont', UIBinding.sr).height() - 100;
             var computedItems = heig / 65;
             console.log('rendering', heig, computedItems);
@@ -73,7 +77,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
                 showPageNumbers: false,
                 showPrevious: false,
                 showNext: false,
-                dataSource: data,
+                dataSource: data.frags,
                 callback: function (data, pagination) {
                     setTimeout(function () {
                         UIBinding.showHide(pagination.pageNumber, pagination.pageSize, pagination.totalNumber);
@@ -114,6 +118,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
                 $b.addClass("butOff");
             }
         };
+        UIBinding.firstDataLoad = false;
         return UIBinding;
     }());
     var cTemp = document.createElement('template');
