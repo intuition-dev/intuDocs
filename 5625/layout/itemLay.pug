@@ -26,22 +26,32 @@ body
 
     
     script.
-  
-        window.data ='' 
 
         addEventListener('firstDataLoad', function (evt) {
             console.log('first')
-            window.data = evt.detail
-            console.log(window.data)
+            window.mdata = evt.detail
+            //console.log(window.mdata)
         })//()
 
         addEventListener('titleClick', function (evt) {
             const msg = evt.detail
             console.log(msg)
 
-            console.log(window.data.frag)
- 
+            findFrag(msg, window.mdata.frags)
         })//()
+
+        function findFrag(msg, frags) {
+            console.log('.')
+            var arrayLength = frags.length;
+            for (var i = 0; i < arrayLength; i++) {
+                var item = frags[i]
+                if(msg == item.title )  {
+                    console.log(item.src)
+                    break
+                }//fi
+            }//for
+
+        }//()
 
         depp.require([ 'fraglist' ], function() {            
         }) 
