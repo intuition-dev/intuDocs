@@ -65,8 +65,9 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
             });
         };
         UIBinding._onFData = function (data) {
-            var computedItems = $('.pagCont', UIBinding.sr).height() / 65;
-            console.log('rendering', $('.pagCont', UIBinding.sr).height(), computedItems);
+            var heig = $('.fragCont', UIBinding.sr).height() - 100;
+            var computedItems = heig / 65;
+            console.log('rendering', heig, computedItems);
             $('#pagination-container', UIBinding.sr).pagination({
                 pageSize: computedItems,
                 showPageNumbers: false,
@@ -116,7 +117,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function (
         return UIBinding;
     }());
     var cTemp = document.createElement('template');
-    cTemp.innerHTML = "\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css\"/>\n\n<div class=\"fragCont\">\n    <p></p>\n    <button class=\"btn butOff classless\" id=\"prevBut\" disabled=\"disabled\">Previous </button>\n    <div class=\"topSpace\"></div>\n    <div class=\"pagCont\">\n    <div id=\"data-container\"></div>\n    <div id=\"pagination-container\"></div>\n    </div>\n    <button class=\"btn butOff classless\" id=\"nextBut\" disabled=\"disabled\">Next </button>\n    <template id=\"temp1\"><span>{{#.}}\n    <div class=\"fragTitle\">{{title}}</div>\n    <hr/><br/></span><span>{{/.}}</span></template>\n</div>\n\n<style>\n    .fragCont {\n        width: 200px;\n        margin-left: 1em;\n        display: flex;\n        flex-direction: column;\n        height: calc(100% - 1.5em);\n    }\n    .topSpace {\n        min-height: 1.6em;\n    }\n    \n    .pagCont {\n        flex-grow: 1;\n    }\n\n    .fragTitle {\n        font-weight: 400;\n        \n        /*clamp */\n        display: -webkit-box;\n        -webkit-line-clamp: 2;\n        -webkit-box-orient: vertical;  \n        overflow: hidden;\n    }\n\n    .butOn {\n        font-weight: normal;\n        pointer-events: auto;\n    }\n    .butOff {\n        font-weight: lighter;\n        pointer-events: none;\n}\n</style>";
+    cTemp.innerHTML = "\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css\"/>\n\n<div class=\"fragCont\">\n    <p></p>\n    <button class=\"btn butOff classless\" id=\"prevBut\" disabled=\"disabled\">Previous </button>\n    <div class=\"topSpace\"></div>\n    <div class=\"pagCont\">\n        <div id=\"data-container\"></div>\n        <div id=\"pagination-container\"></div>\n    </div>\n    <button class=\"btn butOff classless\" id=\"nextBut\" disabled=\"disabled\">Next </button>\n\n    <template id=\"temp1\"><span>{{#.}}\n        <div class=\"fragTitle\">{{title}}</div>\n        <hr/><br/></span><span>{{/.}}</span></template>\n</div>\n\n<style>\n\n    .fragCont {\n        width: 200px;\n        margin-left: 1em;\n        display: flex;\n        flex-direction: column;\n        height: calc(100vh - 5em);\n    }\n    .topSpace {\n        min-height: 1.6em;\n    }\n    \n    .pagCont {\n        flex-grow: 1;\n    }\n\n    .fragTitle {\n        font-weight: 400;\n        \n        /*clamp */\n        display: -webkit-box;\n        -webkit-line-clamp: 2;\n        -webkit-box-orient: vertical;  \n        overflow: hidden;\n    }\n    .fragTitle:hover, .fragTitle:focus, .fragTitle:active {\n        color: blue;\n        cursor: pointer;\n        font-weight: 300;\n        letter-spacing: .02em;\n      }\n\n    .butOn {\n        font-weight: normal;\n        pointer-events: auto;\n    }\n    .butOff {\n        font-weight: lighter;\n        pointer-events: none;\n}\n</style>";
     window.customElements.define('fraglist-custel', (function (_super) {
         __extends(class_1, _super);
         function class_1() {

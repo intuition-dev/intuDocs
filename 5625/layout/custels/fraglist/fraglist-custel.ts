@@ -8,7 +8,6 @@ declare var renderMustache: any
 
 
 depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'poly'], function() {
-
 console.log('loaded')
 
 class UIBinding {   
@@ -84,9 +83,11 @@ class UIBinding {
     static _onFData(data) {        
         //console.log('data')
         // MATH:
-        var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
+        //var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
+        var heig = $('.fragCont',UIBinding.sr).height()  - 100 
+        var computedItems = heig / 65   // pixels  of each row
 
-        console.log('rendering', $('.pagCont',UIBinding.sr).height(), computedItems ) 
+        console.log('rendering', heig, computedItems ) 
 
         $('#pagination-container',UIBinding.sr).pagination({
             pageSize: computedItems,
@@ -156,22 +157,24 @@ class UIBinding {
     <button class="btn butOff classless" id="prevBut" disabled="disabled">Previous </button>
     <div class="topSpace"></div>
     <div class="pagCont">
-    <div id="data-container"></div>
-    <div id="pagination-container"></div>
+        <div id="data-container"></div>
+        <div id="pagination-container"></div>
     </div>
     <button class="btn butOff classless" id="nextBut" disabled="disabled">Next </button>
+
     <template id="temp1"><span>{{#.}}
-    <div class="fragTitle">{{title}}</div>
-    <hr/><br/></span><span>{{/.}}</span></template>
+        <div class="fragTitle">{{title}}</div>
+        <hr/><br/></span><span>{{/.}}</span></template>
 </div>
 
 <style>
+
     .fragCont {
         width: 200px;
         margin-left: 1em;
         display: flex;
         flex-direction: column;
-        height: calc(100% - 1.5em);
+        height: calc(100vh - 5em);
     }
     .topSpace {
         min-height: 1.6em;
@@ -190,6 +193,12 @@ class UIBinding {
         -webkit-box-orient: vertical;  
         overflow: hidden;
     }
+    .fragTitle:hover, .fragTitle:focus, .fragTitle:active {
+        color: blue;
+        cursor: pointer;
+        font-weight: 300;
+        letter-spacing: .02em;
+      }
 
     .butOn {
         font-weight: normal;
