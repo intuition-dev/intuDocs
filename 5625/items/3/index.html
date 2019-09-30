@@ -23,12 +23,8 @@
       <div id="left">
         <div class="mediaContainerTop">
           <video class="vid" id="vid1" autoplay="autoplay" preload="auto" loop="loop" muted="muted">
-            <source src="arc2.mp4" type="video/mp4"/>
+            <source type="video/mp4"/>
           </video>
-          <!--video#vid1.vid( autoplay preload='auto' loop muted )
-          source(src='arc2.mp4' type="video/mp4" )
-          
-          -->
         </div>
         <div class="mainBot">
           <p>oh hi bot</p>
@@ -44,6 +40,7 @@
         console.log('first')
         window.mdata = evt.detail
         //console.log(window.mdata)
+        window.vid1 = document.getElementById('vid1')     
     })//()
     
     addEventListener('titleClick', function (evt) {
@@ -60,13 +57,15 @@
             var item = frags[i]
             if(msg == item.title )  {
                 console.log(item.src)
+                
+                vid1.src = item.src
+    
                 break
             }//fi
         }//for
     
     }//()
     
-    depp.require([ 'fraglist' ], function() {            
-    }) 
+    depp.require([ 'fraglist' ], function() {  }) 
   </script>
-<!-- mB v6.09.25 on 2019-09-29T20:33:05.906Z --></body>
+<!-- mB v6.09.25 on 2019-09-30T13:44:08.360Z --></body>

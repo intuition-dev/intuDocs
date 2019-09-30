@@ -14,9 +14,8 @@ body
         .main
             #left
                 .mediaContainerTop
-                    block media
-                    //video#vid1.vid( autoplay preload='auto' loop muted )
-                        source(src='arc2.mp4' type="video/mp4" )
+                    video#vid1.vid( autoplay preload='auto' loop muted )
+                        source( type="video/mp4" )
                     
                 .mainBot
                     p oh hi bot
@@ -31,6 +30,7 @@ body
             console.log('first')
             window.mdata = evt.detail
             //console.log(window.mdata)
+            window.vid1 = document.getElementById('vid1')     
         })//()
 
         addEventListener('titleClick', function (evt) {
@@ -47,13 +47,15 @@ body
                 var item = frags[i]
                 if(msg == item.title )  {
                     console.log(item.src)
+                    
+                    vid1.src = item.src
+
                     break
                 }//fi
             }//for
 
         }//()
 
-        depp.require([ 'fraglist' ], function() {            
-        }) 
+        depp.require([ 'fraglist' ], function() {  }) 
 
      
