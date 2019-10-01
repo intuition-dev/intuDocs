@@ -69,7 +69,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
                 console.log('firstDataLoad');
                 disE('firstDataLoad', data);
             }
-            var heig = $('.fragCont', UIBinding.sr).height() - 100;
+            var heig = $('.fragCont', UIBinding.sr).height() - 140;
             var computedItems = heig / 65;
             console.log('rendering', heig, computedItems);
             $('#pagination-container', UIBinding.sr).pagination({

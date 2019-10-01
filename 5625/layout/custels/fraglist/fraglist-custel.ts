@@ -94,7 +94,7 @@ class UIBinding {
         
         // MATH:
         //var computedItems = $('.pagCont',UIBinding.sr).height() / 65   // pixels  of each row
-        var heig = $('.fragCont',UIBinding.sr).height()  - 100 
+        var heig = $('.fragCont',UIBinding.sr).height()  - 140 
         var computedItems = heig / 65   // pixels  of each row
 
         console.log('rendering', heig, computedItems ) 
