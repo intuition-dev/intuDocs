@@ -2,7 +2,7 @@
 toolBeltDefault()
 
 depp.define({
-   'fraglist':'/layout/custels/fraglist/fraglist-custel.js'
+   'fraglist':'/items/custels/fraglist/fraglist-custel.js'
   })
 
 depp.require(['DOMDelayed', 'jquery'], function() {
