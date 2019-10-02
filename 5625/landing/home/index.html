@@ -5,7 +5,7 @@
     window.ENV = '0' //- for comps, but it is also in scope for Pug for ENV logic
     
   </script>
-  <title></title>
+  <title>Landing page</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
@@ -14,18 +14,15 @@
 </head>
 <body>
   <link rel="stylesheet" href="/landing/css/pagination.css"/>
-  <p>Title</p>
+  <p></p>
   <div id="data-container">
     <div id="cards"></div>
-    <template id="card"><span>{{#.}}</span>
-      <div class="card">
-        <div class="imgCont"><img src="temp.jpg"/></div>
+    <template id="card"><span>{{#.}}</span><a class="card" href="{{url}}">
+        <div class="imgCont"><img src="{{img}}"/></div>
         <div class="txtCont">
-          <h4>This is the tile</h4>
-          <p>This is the description</p>
-        </div>
-      </div><span>{{/.}}</span>
-    </template>
+          <h4>{{title}}</h4>
+          <p>{{desc}}</p>
+        </div></a><span>{{/.}}</span></template>
     <style>
       #cards {
           display: flex;
@@ -57,6 +54,11 @@
           border-color: #DCDCDC;
       }
       
+      #cards a {
+          text-decoration: none;
+          color: black;
+      }
+      
       .imgCont {
           height:180px;
           overflow: hidden;
@@ -73,13 +75,19 @@
     </style>
     <script>
       function cardRender(data) {
-          console.log('ren', Object.keys(data[0]))
+          //console.log('ren', Object.keys(data[0]))
+          var len = data.length
+          for (var i = 0; i < len; i++) {
+              data[i].img = data[i].prefix + data[i].url+ '/'+data[i].img
+              
+              data[i].url = data[i].prefix + data[i].url
+      
+              console.log(data[i].img)
+          }//for
           
           let html = renderMustache(document, 'card', data) 
-      
           document.getElementById('cards').innerHTML = html
-      
-      }
+      }//()
     </script>
   </div>
   <div id="pagination-container"></div>
@@ -92,11 +100,9 @@
   </style>
   <script>
     depp.require(['jquery', 'pagination', 'mustache', 'poly'],function(){
-    
         fetchItems('/items/items.json').then(function (items) {
             //console.log(items)
             paginate(items)
-    
         })
     })//()
     
@@ -123,4 +129,4 @@
         return n
     }//()
   </script>
-<!-- mB v6.09.30 on 2019-10-02T20:17:03.746Z --></body>
+<!-- mB v6.09.30 on 2019-10-02T20:49:42.472Z --></body>

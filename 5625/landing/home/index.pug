@@ -5,8 +5,7 @@ head
 body
     link(rel='stylesheet', href='/landing/css/pagination.css')
 
-    p Title
-
+    p
     #data-container
         include cards
     
@@ -20,11 +19,9 @@ body
 
     script.
         depp.require(['jquery', 'pagination', 'mustache', 'poly'],function(){
-
             fetchItems('/items/items.json').then(function (items) {
                 //console.log(items)
                 paginate(items)
-
             })
         })//()
 
