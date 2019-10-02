@@ -1,0 +1,67 @@
+
+#cards
+
+
+template#card
+    span {{#.}}
+    .card
+        .imgCont
+            img(src='temp.jpg')
+        .txtCont
+            h4 This is the tile
+            p This is the description
+    span {{/.}}
+
+style. 
+    #cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        
+        background: hsl(0, 0%, 98%);
+
+    }
+    /*
+        width = item + margin to make orphan go left
+    */
+    #cards:after {
+        content: '';
+        width: 321px;
+    }
+
+    .card {
+        width: 320px;
+        height: 260px ;
+
+        margin: 0px;
+        overflow: hidden;
+
+        background: white;
+        border-style: outset;
+        border-width: .05px;
+        border-color: #DCDCDC;
+    }
+
+    .imgCont {
+        height:180px;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .txtCont {
+        padding-left: 1em;
+    }
+
+script. 
+    function cardRender(data) {
+        console.log('ren', Object.keys(data[0]))
+        
+        let html = renderMustache(document, 'card', data) 
+
+        document.getElementById('cards').innerHTML = html
+
+    }

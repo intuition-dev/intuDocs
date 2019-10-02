@@ -8,7 +8,7 @@ body
     p Title
 
     #data-container
-        include items
+        include cards
     
     #pagination-container
     
@@ -16,11 +16,9 @@ body
         #pagination-container {
             padding: 1em;
             padding-left: 3.5em;
-
         }
 
     script.
-
         depp.require(['jquery', 'pagination', 'mustache', 'poly'],function(){
 
             fetchItems('/items/items.json').then(function (items) {
@@ -33,14 +31,14 @@ body
         function paginate(feed_) {
             console.log('oh hi')
 
-            var dataSource_ = [1, 2, 3, 4, 5, 6, 7]
+            var dataSource_ = feed_.items
 
             var perPage = _guessShow()
             
             $('#pagination-container').pagination({
                 dataSource: dataSource_,
                 callback: function(data, pagination) {
-                    // tag.render(data)
+                    cardRender(data)
                 }//cb
             })
         }//()
