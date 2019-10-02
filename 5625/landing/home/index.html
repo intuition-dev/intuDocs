@@ -13,30 +13,95 @@
 </head>
 <body>
   <p>Title</p>
-  <div>
-    <div class="card">
-      <p>oh hi</p>
+  <div id="data-container"></div>
+  <div id="pagination-container">
+    <div class="cards">
+      <div class="card">
+        <p>oh hi1</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
+      <div class="card">
+        <p>oh hi</p>
+      </div>
     </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
-    <div class="card">
-      <p>oh hi</p>
-    </div>
+    <style>
+      .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: flex-start;
+          
+          background: hsl(0, 0%, 98%);
+      
+      }
+      /*
+          width = item + margin to make orphan go left
+      */
+      .cards:after {
+          content: '';
+          width: 321px;
+      }
+      
+      
+      .card {
+          width: 320px;
+          height: 180px ;
+      
+          margin: 0px;
+          overflow: hidden;
+      
+          background: white;
+          border-style: outset;
+          border-width: .05px;
+          border-color: #DCDCDC;
+      }
+    </style>
   </div>
-<!-- mB v6.09.30 on 2019-10-01T23:50:53.918Z --></body>
+  <script>
+    depp.require(['jquery', 'pagination', 'mustache'],function(){
+        paginate()
+    })//()
+    
+    function paginate(feed_) {
+        console.log('oh hi')
+    
+        var dataSource_ = [1, 2, 3, 4, 5, 6, 7]
+    
+        var perPage = _guessShow()
+    
+        
+        $('#pagination-container').pagination({
+            dataSource: dataSource_,
+            callback: function(data, pagination) {
+                // tag.render(data)
+            }//cb
+        })
+    
+    }
+    
+    
+    function _guessShow() {
+        let n = ( $(window).width() * $(window).height()  ) / ( 300 * 400) * .9
+        n = Math.round( n * .7)
+        console.log('g', n)
+        return n
+    }//()
+  </script>
+<!-- mB v6.09.30 on 2019-10-02T13:30:00.545Z --></body>
