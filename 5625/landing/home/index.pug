@@ -6,20 +6,28 @@ body
     link(rel='stylesheet', href='/landing/css/pagination.css')
 
     p Title
+
     #data-container
+        include items
     
     #pagination-container
-        include items
     
     style. 
         #pagination-container {
-            padding: 10px;
+            padding: 1em;
+            padding-left: 3.5em;
+
         }
 
     script.
 
-        depp.require(['jquery', 'pagination', 'mustache'],function(){
-            paginate()
+        depp.require(['jquery', 'pagination', 'mustache', 'poly'],function(){
+
+            fetchItems('/items/items.json').then(function (items) {
+                //console.log(items)
+                paginate(items)
+
+            })
         })//()
 
         function paginate(feed_) {
@@ -28,7 +36,6 @@ body
             var dataSource_ = [1, 2, 3, 4, 5, 6, 7]
 
             var perPage = _guessShow()
-
             
             $('#pagination-container').pagination({
                 dataSource: dataSource_,
@@ -36,8 +43,7 @@ body
                     // tag.render(data)
                 }//cb
             })
-
-        }
+        }//()
 
 
         function _guessShow() {
@@ -46,3 +52,4 @@ body
             console.log('g', n)
             return n
         }//()
+

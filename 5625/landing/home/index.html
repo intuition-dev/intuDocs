@@ -9,14 +9,13 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.23/src/toolBelt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.29/src/toolBelt.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
 </head>
 <body>
   <link rel="stylesheet" href="/landing/css/pagination.css"/>
   <p>Title</p>
-  <div id="data-container"></div>
-  <div id="pagination-container">
+  <div id="data-container">
     <div class="cards">
       <div class="card">
         <p>oh hi1</p>
@@ -76,15 +75,23 @@
       }
     </style>
   </div>
+  <div id="pagination-container"></div>
   <style>
     #pagination-container {
-        padding: 10px;
+        padding: 1em;
+        padding-left: 3.5em;
+    
     }
     
   </style>
   <script>
-    depp.require(['jquery', 'pagination', 'mustache'],function(){
-        paginate()
+    depp.require(['jquery', 'pagination', 'mustache', 'poly'],function(){
+    
+        fetchItems('/items/items.json').then(function (items) {
+            //console.log(items)
+            paginate(items)
+    
+        })
     })//()
     
     function paginate(feed_) {
@@ -93,7 +100,6 @@
         var dataSource_ = [1, 2, 3, 4, 5, 6, 7]
     
         var perPage = _guessShow()
-    
         
         $('#pagination-container').pagination({
             dataSource: dataSource_,
@@ -101,8 +107,7 @@
                 // tag.render(data)
             }//cb
         })
-    
-    }
+    }//()
     
     
     function _guessShow() {
@@ -112,4 +117,4 @@
         return n
     }//()
   </script>
-<!-- mB v6.09.30 on 2019-10-02T13:52:37.437Z --></body>
+<!-- mB v6.09.30 on 2019-10-02T15:07:12.241Z --></body>
