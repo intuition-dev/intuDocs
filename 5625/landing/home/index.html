@@ -10,8 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.23/src/toolBelt.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/intuition-dev/intuDS@v1.0.3/src/css/min.min.css"/>
 </head>
 <body>
+  <link rel="stylesheet" href="/landing/css/pagination.css"/>
   <p>Title</p>
   <div id="data-container"></div>
   <div id="pagination-container">
@@ -74,6 +76,12 @@
       }
     </style>
   </div>
+  <style>
+    #pagination-container {
+        padding: 10px;
+    }
+    
+  </style>
   <script>
     depp.require(['jquery', 'pagination', 'mustache'],function(){
         paginate()
@@ -104,4 +112,4 @@
         return n
     }//()
   </script>
-<!-- mB v6.09.30 on 2019-10-02T13:30:00.545Z --></body>
+<!-- mB v6.09.30 on 2019-10-02T13:52:37.437Z --></body>

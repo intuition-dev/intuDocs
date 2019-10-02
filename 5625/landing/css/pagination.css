@@ -1,4 +1,4 @@
-.paginationjs{line-height:1.6;font-family:"Marmelad","Lucida Grande","Arial","Hiragino Sans GB",Georgia,sans-serif;font-size:14px;box-sizing:initial;}
+.paginationjs{line-height:1.6;font-family:'Open Sans',sans-serif;font-size:14px;box-sizing:initial;}
 .paginationjs:after{display:table;content:" ";clear:both;}
 .paginationjs .paginationjs-pages{float:left;}
 .paginationjs .paginationjs-pages ul{float:left;margin:0;padding:0;}
@@ -66,4 +66,4 @@
 .paginationjs.paginationjs-theme-red .paginationjs-pages li.disabled > a:hover{background:none;}
 .paginationjs.paginationjs-theme-red .paginationjs-go-input > input[type="text"]{border-color:#C9302C;}
 .paginationjs.paginationjs-theme-red .paginationjs-go-button > input[type="button"]{background:#C9302C;border-color:#C9302C;color:#fff;}
-.paginationjs.paginationjs-theme-red .paginationjs-go-button > input[type="button"]:hover{background-color:#CE4541;} /* mB v6.09.30 on 2019-10-02T13:30:09.168Z */
+.paginationjs.paginationjs-theme-red .paginationjs-go-button > input[type="button"]:hover{background-color:#CE4541;} /* mB v6.09.30 on 2019-10-02T13:49:17.339Z */
