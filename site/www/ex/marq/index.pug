@@ -9,8 +9,10 @@ body
    a(href='http://real.mbake.org') Git source code
 
    script.
+      console.log('ani')
       
-      depp.require(['marq-custel','poly', 'poly-ani-done'], function(){ 
+      depp.require(['marq-custel','poly'], function(){ 
+         console.log('ani')
          let t = document.getElementById('marq')
 
          t.addOne('1. Lorem ipsum dolor sit amet1', 'http://google.com')
@@ -19,3 +21,5 @@ body
          t.addOne('4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique efficitur diam ac consectetur4', 'http://google.com')
 
       })
+
+
