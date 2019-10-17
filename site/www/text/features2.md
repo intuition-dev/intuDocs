@@ -12,3 +12,4 @@
 2. Single socket for app, editor and API
 2. Mono repo for front and back end 
 2. AMP support
+2. HTTP-RPC lib
