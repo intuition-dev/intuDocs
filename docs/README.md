@@ -53,6 +53,9 @@ You can write any and every kind of app, since we generate HTML, javascript an c
     ```
     or you can use npm instead of yarn anytime.
 
+Note: currently node needs to be install via nvm (https://github.com/nvm-sh/nvm)
+
+
 3. Setup configurations in the browser window `:9081/setup`
    Remember your admin email and password.
    Once you login as admin: add a user

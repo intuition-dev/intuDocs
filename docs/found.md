@@ -35,6 +35,7 @@ but you do not need to know the mbake CLI for INTUITION.DEV.
    yarn global add mbake
    ```
 
+Note: currently node needs to be install via nvm (https://github.com/nvm-sh/nvm)
 
 ### Starting a project
 
