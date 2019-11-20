@@ -1,6 +1,6 @@
 basedir: ../../
 
-pretty: false
+pretty: true
 title: INTUITION.DEV is open source and extensible low-code productivity tool for front-end developers
 image: >-
   slide-3.jpg
