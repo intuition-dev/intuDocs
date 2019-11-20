@@ -1,0 +1,28 @@
+extends /layout/layout
+//- App Shell
+
+block head2 
+   script.
+      depp.require(['pre'], function() {
+         loadImage('img.jpg')
+      })
+
+block top
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
+
+   .pageBack 
+      include /layout/nav
+      br
+      .pad
+         h2.container.grid-xl.flex.white.fLarge.fBod #{pageTitle}
+
+block main
+   .trans
+   br
+   .pad.container.grid-xl(data-page='home')
+      H1.cAccent.line.fBod About Us
+      h5.copy
+         include:metaMD text.md

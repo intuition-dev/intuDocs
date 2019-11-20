@@ -1,0 +1,51 @@
+extends /layout/layout
+//- App Shell
+
+block head2 
+   script.
+      depp.require(['pre'], function() {
+         loadImage('who.jpg');
+         loadImage('logo.jpg');
+      });
+
+block top
+   style.
+      .pageBack {
+         background-image: url(who.jpg);
+         max-height: 150px;
+      }
+
+   .pageBack 
+      include /layout/nav
+
+block main
+   .trans
+   br
+   .container.grid-xl(data-page="investment")
+      .columns
+
+         .column.col-1
+         .column.col-2.col-md-12
+            img.img-responsive.investment-logo(src='logo.jpg')
+      .columns
+         .column.col-1
+         .column.col-4.col-md-12
+            .investment-table
+               .row.investmentStat.first
+                  h3
+                     span.heading Entry date
+                     span.infoRowText
+                        p 2018
+               .row.investmentStat
+                  h3
+                     span.heading Region
+                     span.infoRowText
+                        p U.S. & Canada
+               .row.investmentStat
+                  h3
+                     span.heading Subsector
+                     span.infoRowText
+                        p Transportation: Barges
+         .column.col-5.col-md-12.investment-text-column
+            .copy
+               include:metaMD text.md

@@ -1,0 +1,12 @@
+basedir: ../../
+
+ROOT: '/'
+
+pageTitle: 'Upper Bay Infrastructure Partners'
+
+title: 'About Upper Bay'
+content_text: 'Upper Bay Infrastructure Partners is an independently-owned private investment firm focused primarily on diversified North American infrastructure private equity investments in the middle market with approximately $445 million of assets under management.'
+image: http://www.ubaycap.com/about/about/img.jpg
+keywords: 'Upper Bay, independently-owned, private investment, transportation, power & utilities, midstream, telecommunications'
+
+pretty: false

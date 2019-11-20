@@ -1,0 +1,38 @@
+extends /layout/layout
+//- App Shell
+
+block head2 
+   script.
+      depp.require(['pre'], function() {
+         axios.get('/team/items.json').then(function(resp) {
+            team = resp.data;
+            depp.define({'team': [ROOT+ 'comps/team-comp.min.js']})
+         })// fetch
+      })
+
+      //- loadImage('img.jpg');
+
+
+block top
+
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
+
+   .pageBack 
+      include /layout/nav
+      br
+      H1.flex.white.fLarge.fBod.container.grid-xl #{pageTitle}
+
+block main
+   .trans
+   br
+   .pad.container.grid-xl(data-page='team')
+      team-comp
+
+   script.
+      depp.require(['team', 'cssJs'], function() {
+         var tag = riot.mount('team-comp')[0]; // mount the first tag
+         tag.render(team.items);
+      });

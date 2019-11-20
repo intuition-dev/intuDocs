@@ -1,0 +1,14 @@
+basedir: ../
+
+ROOT: '/'
+
+publish: false
+
+pageTitle: Team
+
+title: 'Team'
+content_text: 'Our team'
+image: 'http://www.ubaycap.com/team/img.jpg'
+keywords: 'team'
+
+pretty: false

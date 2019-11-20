@@ -1,0 +1,26 @@
+
+
+.pad.pt-0
+    #mailFrm.grid-form
+        contactus-comp(
+            emailjs_id="user_Ml0VMHTbgatOE8QpYmnmb"
+            template_id="info" 
+            service_id="gmail"
+            legend_title="For inquiries, please use the below submission form:")
+
+br
+
+script.
+    // put here since, it's removed from toolbelt.js
+    function mountComp(compName) {
+        return new Promise(function (resolve, reject) {
+            depp.require(compName, function () { // load comp
+                console.log('ENV', window.ENV)
+                resolve(riot.mount(compName))
+            })
+        })//pro
+    }
+
+    depp.require(['cssJs'], function() { 
+        mountComp('contactus-comp') // also loads comp
+    })

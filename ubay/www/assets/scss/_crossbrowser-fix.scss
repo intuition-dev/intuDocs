@@ -1,0 +1,19 @@
+.contact .left-col {
+    -webkit-flex-direction: column;
+}
+@media (max-width: 840px) {
+    .foot {
+        -webkit-flex-direction: column;
+    }
+    .foot .menu-wrap, .foot .edge {
+        -webkit-flex-direction: column;
+    }
+
+    .d-flex {
+        display: -webkit-flex;
+    }
+
+    .footer-1 {
+        -webkit-flex-direction: column;
+    }
+}

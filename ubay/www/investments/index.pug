@@ -1,0 +1,35 @@
+extends /layout/layout
+
+block head2 
+   script.
+      depp.require(['pre'], function() {
+         axios.get('/investments/items.json').then(function(resp) {
+            team = resp.data
+            depp.define({'investments': [ROOT+ 'comps/investment-comp.min.js']})
+         })
+      })
+      
+
+block top
+
+   style.
+      .pageBack {
+         background-image: url(img.jpg);
+      }
+
+   .pageBack 
+      include /layout/nav
+      br
+      h1.container.grid-xl.flex.white.fLarge.fBod #{pageTitle}
+
+block main
+   .trans
+   br
+   .pad.container.grid-xl(data-page='investment')
+      investment-comp
+
+   script.
+      depp.require(['investments', 'cssJs'], function() {
+         var tag = riot.mount('investment-comp')[0]; // mount the first tag
+         tag.render(team.items);
+      });

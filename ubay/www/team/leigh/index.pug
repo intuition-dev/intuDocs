@@ -1,0 +1,36 @@
+extends /layout/layout
+//- App Shell
+block head2 
+   script.
+      depp.require(['pre'], function() {
+         loadImage('../img.jpg');
+         loadImage('who.jpg');
+      })
+
+
+block top
+   style.
+      .pageBack {
+         background-image: url(../img.jpg);
+         max-height: 150px;
+      }
+
+   .pageBack 
+      include /layout/nav
+
+block main
+   .trans
+   br
+   .container.grid-xl(data-page='team')
+      .columns
+
+         .column.col-1.hide-sm
+         .column.col-3.col-sm-12
+            img.team.img-responsive(src='who.jpg')
+
+         .column.col-7.col-sm-12.text-team
+            H3.cAccent.line.fBod #{title}
+            H5 #{position}
+            .copy
+               include:metaMD text.md
+         .column.col-1.hide-sm

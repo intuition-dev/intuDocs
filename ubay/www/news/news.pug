@@ -1,0 +1,44 @@
+
+div
+   template#rowsT
+      //span {{#.}}
+      tr
+         td {{date}}
+         td {{title}}
+         td
+            a(href='{{file}}', target='_blank')
+               svg.feather(viewBox='0 0 24 24')
+                  path(d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z')
+      //span {{/.}}
+   
+   table.table.table-striped.table-hover
+      thead
+         tr
+            th DATE
+            th TITLE
+            th DOCUMENT
+      tbody#tab1
+
+script.
+   depp.require(['poly', 'js-yaml', 'mustache', 'DOM'], function() {
+      console.log('news here')
+      
+      fetch('list.yaml')
+         .then(function(resp) {
+            return resp.text()
+         })
+         .then(function(data) {
+            var yaml = jsyaml.load(data)
+            onYaml(yaml.items)
+         })
+
+   })//req
+
+   function onYaml(data) {
+      console.log('y', data)
+      var html = renderMustache(document, 'rowsT', data) 
+      console.log(html)
+      var el = document.getElementById('tab1')
+      el.innerHTML = html
+
+   }
