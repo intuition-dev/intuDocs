@@ -16,17 +16,6 @@ Demo:
 [<img src="http://img.youtube.com/vi/R9F4R4YNFLY/0.jpg" width="400"/>](http://www.youtube.com/watch?v=R9F4R4YNFLY)
 
 
-### ViewModel
-
-You can use any .js libraries / tools you like. But the default is our Typescript based 'ViewModel'. 
-'ViewModel' is front-end, runs in the browser and it's main functionality is 
-that is must to map exactly to our Pug View/screen. ViewModel provides simple data structures so that the View can easily bind to it. 
-Validation is also included.
-
-Here is an example app and a readme:
-[examples/CRUD](https://github.com/intuition-dev/INTUITION/tree/master/examples/CRUD/www)
-
-
 ### (Browser) Extension
 
 The Chrome extension that lets you hot-link edit an INTUITION.DEV screen, such as our example CRUD app is here:
