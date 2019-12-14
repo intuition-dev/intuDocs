@@ -1,6 +1,6 @@
 basedir: '../../'
 
-pretty: false
+pretty: true
 
 title: Open source low-code tool for professional developers based on JAMstack, w/ Pug
 
