@@ -112,7 +112,7 @@ version of something called 'Markdown'; Pug is compatible with PHP,
 Python, etc. The most common way to use declarative low-code is with
 static generators, as mentioned above. With that being said, yes, one
 does write dynamic apps and dynamic data binding by utilizing static
-generators. (* There is an article linked from INTUITION.DEV to a Medium article regarding dynamic binding.) 
+generators. (* There is an article linked from INTU.DEV to a Medium article regarding dynamic binding.) 
 A static generator takes the developer-friendly declarative
 low-code and generates less friendly html and js, similar to how designers
 use SASS to generate CSS.
@@ -265,7 +265,7 @@ Or you can see a low-code CRUD example here:
 
 ### low-code = 10X quicker web app development.
 
- We have found that - with INTUITION.DEV; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
+ We have found that - with INTU.DEV; - the work of 6 developers over 6 months can be done by 3 developers in 3 weeks. We expect you to achieve the same productivity gains.
 
 On the front-end (browser apps and mobile apps) MetaBake does something similar: it eliminates much of the tech stack and reduces the amount of coding and complexity. How? In school textbooks you learned about 1st generation languages, 2nd generation languages and our current 3rd generation languages, such as JavaScript, PHP and Ruby. With each new generation we achieved huge productivity improvements. We consider 'Pug'--also used by Node/Express--a 4th generation language that helps gain an equally big jump in productivity. With MetaBake we show you how to build complete applications in Pug. With this low-code approach we demonstrate much quicker and cheaper web app and mobile app development.
 

@@ -1,5 +1,5 @@
 
-* [INTUITION.DEV](README.md)
+* [INTU.DEV](README.md)
 * [FOUNDATION / gen/cross](found.md)
 * [STATIC / SEO, API, and end-users](static.md)
 * [CRUD / Deeper Dive](CRUD.md)

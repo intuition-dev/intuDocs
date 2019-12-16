@@ -12,7 +12,7 @@ We are just leveraging generators, like Hugo/Jekyll.
 
 ## Pug
 
-INTUITION.DEV uses Pug as the main programing language:
+INTU.DEV uses Pug as the main programing language:
 ```pug
 body
    h1 Pug source code
@@ -29,8 +29,8 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 [<img src="http://img.youtube.com/vi/-oSixA3oDL4/0.jpg" width="400"/>](http://www.youtube.com/watch?v=-oSixA3oDL4)
 
 
-INTUITION.DEV leverages MetaBake (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
-but you do not need to know the mbake CLI for INTUITION.DEV.
+INTU.DEV leverages MetaBake (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
+but you do not need to know the mbake CLI for INTU.DEV.
    ```
    yarn global add mbake
    ```
@@ -44,7 +44,7 @@ One way to get started is to take code from an already running project, and past
 [Convert 'page' source to Pug](http://pug.mbake.org)
 
 
-### Example commercial project using INTUITION.DEV
+### Example commercial project using INTU.DEV
 
 [<img src="http://img.youtube.com/vi/5LAC1IfC9jI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=5LAC1IfC9jI)
 
@@ -68,4 +68,4 @@ They are the same exact code.
 We'll review mobile in the advanced section, but this section shows you how we leverage generators and cross platform ideas.
 
 ---
-[Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
+[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)

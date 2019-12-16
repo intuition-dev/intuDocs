@@ -4,7 +4,7 @@
 
 ## Start
 
-Start the INTUITION.DEV tool:
+Start the INTU.DEV tool:
 
 ```
 intu
@@ -20,7 +20,7 @@ From business POV SEO is very important for most applications. Static is what is
 
 ### User auth
 
-User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV, and you can leverage for your applications.
+User's editing: means that you need user-auth. User auth and registration is built into INTU.DEV, and you can leverage for your applications.
 
 
 [<img src="http://img.youtube.com/vi/AU6eQulq5cE/0.jpg" width="400"/>](http://www.youtube.com/watch?v=AU6eQulq5cE)
@@ -31,10 +31,10 @@ User's editing: means that you need user-auth. User auth and registration is bui
 The browser just makes API call to the back-end server to save, compile, etc. to the files.
 
 IntuAPI docs are here:
-- https://intuition-dev.github.io/INTUITION
+- https://intuition-dev.github.io/INTU
 
 
 
 
 ---
-[Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
+[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)

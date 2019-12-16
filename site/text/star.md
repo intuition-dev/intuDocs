@@ -1,2 +1,2 @@
 Please star our main project here
-https://github.com/intuition-dev/INTUITION
+https://github.com/intuition-dev/INTU

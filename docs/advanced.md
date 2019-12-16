@@ -42,10 +42,10 @@ The person that wrote the service must also write the front-end API that calls t
 ### SQLite Full Text Search
 
 Here is example of using SQLite for FTS:
-[SQLite FTS](https://github.com/intuition-dev/INTUITION/blob/master/examples/CRUD/node-srv/lib/CDB.ts)
+[SQLite FTS](https://github.com/intuition-dev/INTU/blob/master/examples/CRUD/node-srv/lib/CDB.ts)
 Optionally FTS could be stored in RAM
 
 
 ---
-[Edit this file](https://github.com/intuition-dev/IntuitionDocs/tree/master/docs)
+[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)
 
