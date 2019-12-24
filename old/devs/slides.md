@@ -1,11 +1,11 @@
 <!-- $theme: gaia -->
 <!-- prerender: true -->
 <!-- $size: 16:9 -->
-<!-- footer: www.INTU.DEV -->
+<!-- footer: www.INTUITION.DEV -->
 
 <!-- *template: invert -->
 
-#  [==MetaBake==](https://INTU.DEV)
+#  [==MetaBake==](https://INTUITION.DEV)
 
 #### A meta-programming open source CLI tool
 <!-- reword this? -->
@@ -333,14 +333,14 @@ $ mbake -w .
 $ cd website
 $ mbakeX -w .
 ```
-#### :arrow_right:  https://INTU.DEV/
+#### :arrow_right:  https://INTUITION.DEV/
 #### :arrow_right: https://github.com/MetaBake
 
 ---
 
 # Thank you!
 
-#### https://INTU.DEV
+#### https://INTUITION.DEV
 <!--- place logo --->
 <small> Slides written with Marp</small>
 

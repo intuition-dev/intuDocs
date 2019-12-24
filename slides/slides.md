@@ -1,10 +1,10 @@
 <!-- $theme: gaia -->
 <!-- prerender: false -->
-<!-- footer: www.INTU.DEV -->
+<!-- footer: www.INTUITION.DEV -->
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
-#### INTU.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
@@ -22,14 +22,14 @@ What will the future of professional development look like?
 ![180% center](iterative.png)
 Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
 #### - What if end-users could maintain and build next version?
-#### - INTU.DEV is built in Pug language
+#### - INTUITION.DEV is built in Pug language
 
 ---
 
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
-#### INTU.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
@@ -80,7 +80,7 @@ SEO
 Promised step #1: App!
 
 ==DEMO== CRUD ( ViewModel, Validation, SQL)
-Scrape: ( http://pug.mbake.org )
+Scrape: ( http://pug.metabake.net )
 
 ---
 <!-- *template: invert -->
@@ -98,7 +98,7 @@ Promised step #1: App.
 
 ---
 
-Features of INTU.DEV:
+Features of INTUITION.DEV:
 - Standards Based / Pug
 - Open Source
 - SEO
@@ -118,7 +118,7 @@ Almost THE END, FAQ:
 ---
 
 <!-- *template: invert -->
-#### INTU.DEV alternatives, low-code, but targeting citizen developers: 
+#### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
 - Coda_io
 - Wix Corvid
 - Airtable
@@ -135,7 +135,7 @@ Low Code
 
 How to get Started:
 
-### Full docs are online in github, and at www.INTU.DEV
+### Full docs are online in github, and at www.INTUITION.DEV
 ### For example: `yarn global add  intu`
 
 --- 
@@ -164,9 +164,9 @@ Did you miss anything shown?
 ---
 
 <!-- *template: invert -->
-#  ==INTU.DEV==
+#  ==INTUITION.DEV==
 
-#### INTU.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 

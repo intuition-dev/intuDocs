@@ -17,7 +17,7 @@ Use Windows 10 w/ virtualbox and their extension
 ## Documentation TOC:
 
 Our main language is Pug, if you have not seen Pug before, here is a quick intro:
-- [Pug intro](http://pug.mbake.org)
+- [Pug intro](http://pug.metabake.net)
 
 ## Articles
 
@@ -61,7 +61,7 @@ Not in pug, in HTML, but you get idea that it has to look nice.
 # Support
 
 &nbsp;
-- <a href='http://chat.INTU.DEV' target='_blank'>Forum/Chat</a>, to support this project, please join!
+- <a href='http://chat.INTUITION.DEV' target='_blank'>Forum/Chat</a>, to support this project, please join!
 
 
 
