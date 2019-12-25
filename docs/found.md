@@ -30,7 +30,7 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 
 
 INTUITION.DEV leverages INTUITION (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
-but you do not need to know the mbake CLI for INTUITION. DEV.
+but you do not need to know the mbake CLI for INTUITION.DEV.
    ```
    yarn global add mbake
    ```
@@ -44,7 +44,7 @@ One way to get started is to take code from an already running project, and past
 [Convert 'page' source to Pug](http://pug.metabake.net)
 
 
-### Example commercial project using INTUITION. DEV
+### Example commercial project using INTUITION.DEV
 
 [<img src="http://img.youtube.com/vi/5LAC1IfC9jI/0.jpg" width="400"/>](http://www.youtube.com/watch?v=5LAC1IfC9jI)
 
