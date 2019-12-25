@@ -29,7 +29,7 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 [<img src="http://img.youtube.com/vi/-oSixA3oDL4/0.jpg" width="400"/>](http://www.youtube.com/watch?v=-oSixA3oDL4)
 
 
-INTUITION.DEV leverages INTUITION (mbake) CLI: https://intuition-dev.github.io/mbCLI/#/
+INTUITION.DEV leverages INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
    ```
    yarn global add mbake
@@ -55,12 +55,12 @@ And once you are done w/ your Pug app, you can run it cross platform on mobile.
 Same code base. Just leverage the online cross platform tool based on Apache's Cordova: http://build.phonegap.com
 
 Here is an example phonegap app for build.phonegap.com:
-- https://github.com/intuition-dev/mbMobile/tree/master/phoneGapReaderApp
+- https://github.com/INTUITION-dev/mbMobile/tree/master/phoneGapReaderApp
 
 Notice that the electron app:
-- https://github.com/intuition-dev/mbMobile/tree/master/electronReaderApp
+- https://github.com/INTUITION-dev/mbMobile/tree/master/electronReaderApp
 and Web App:
-- https://github.com/intuition-dev/mbMobile/tree/master/webReaderApp
+- https://github.com/INTUITION-dev/mbMobile/tree/master/webReaderApp
 are a *symbolic link* to the phonegapp app.
 
 They are the same exact code.
@@ -68,4 +68,4 @@ They are the same exact code.
 We'll review mobile in the advanced section, but this section shows you how we leverage generators and cross platform ideas.
 
 ---
-[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)
+[Edit this file](https://github.com/INTUITION-dev/INTUDocs/tree/master/docs)

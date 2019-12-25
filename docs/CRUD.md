@@ -26,4 +26,4 @@ If you install our browser extension, you can edit any screen|page that has been
 
 ---
 
-[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)
+[Edit this file](https://github.com/INTUITION-dev/INTUDocs/tree/master/docs)

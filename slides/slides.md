@@ -160,7 +160,7 @@ Did you miss anything shown?
 ---
 
 #### Please star our main project here:
-- https://github.com/intuition-dev/INTU
+- https://github.com/INTUITION-dev/INTU
 ---
 
 <!-- *template: invert -->

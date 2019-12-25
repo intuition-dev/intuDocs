@@ -166,7 +166,7 @@ Secure by default | Needs Security |
 ## Why MetaBake
 #### Goal: Web App and Cross Platform *Productivity*
 
-- INTUITION as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
+- INTUITION  as a tool aims for high-productivity by bringing together what we have learnt from the past years of Front-End experimentation with atemporal pillars of good development approaches.
 - In a future with increasing automation. Citizen developers will become more widespread.
 - Our goal as developers is to be able to both outperforming competent citizen developers in speed and leaving room for focusing on excellent UI and UX.
 
@@ -174,7 +174,7 @@ Secure by default | Needs Security |
 
 ## Why MetaBake
 
-##### Unlike other low-code tools, INTUITION it's fully Free and Open Source.
+##### Unlike other low-code tools, INTUITION  it's fully Free and Open Source.
 
 ##### Simple starter requirements:
 - There is almost no learning curve. JS, HTML and CSS is all you need.
@@ -232,11 +232,11 @@ $: mbake -u
 
 ---
 <!---*template: invert --->
-# INTUITION Pillars
+# INTUITION  Pillars
 
 ---
 
-## INTUITION Pillars
+## INTUITION  Pillars
 ### ==Based on:==
 - Automatic Programming
 - Static Generation & Templating Markup
@@ -247,7 +247,7 @@ $: mbake -u
 
 ---
 
-## INTUITION Pillars
+## INTUITION  Pillars
 ### Static Generation & Templating Markup
 - Pug is an elegant template engine. Think of it like MarkDown but better
 ```
@@ -264,7 +264,7 @@ html
 ```
 
 ---
-## INTUITION Pillars
+## INTUITION  Pillars
 ### Dynamic Data Binding
 <!-- code example -->
 ==**index.pug**==
@@ -281,7 +281,7 @@ key1: World
 
 ---
 
-## INTUITION Pillars
+## INTUITION  Pillars
 ### Library of Custom Elements. 
 
 ##### Advantages:
@@ -290,7 +290,7 @@ key1: World
 - The DOM of the Custom Element acts as the API: a team of developers doesn't need to know how a component is implemented in order to use it.
 
 ---
-## INTUITION Pillars
+## INTUITION  Pillars
 ### Library of Custom Elements. 
 ##### Advantages:
 - You can compose a full web app just by bringing together well designed Custom Elements. You don't need a monolithic JS Framework or a whole lot of dependencies.
@@ -299,17 +299,17 @@ key1: World
 
 ---
 
-## INTUITION Pillars
+## INTUITION  Pillars
 ### Website Prototyping and Iterative Development
-- INTUITION supports all the development cycle of a product. From prototyping to completion.
+- INTUITION  supports all the development cycle of a product. From prototyping to completion.
 - You can star building and experimenting easily and then build on top of it, maximizing the reusability of every step.
 ---
 
-## INTUITION Pillars
+## INTUITION  Pillars
 ### CLI/Keyboard based
 
 - We all know that keyboard based tools are much quicker and customizable to your workflow than being constrained in a GUI.
-- INTUITION is CLI based with easy commands for building and compiling.
+- INTUITION  is CLI based with easy commands for building and compiling.
 - For instance:
 ````
 $: mbake -t . // compile all your typescript files

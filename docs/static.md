@@ -31,10 +31,10 @@ User's editing: means that you need user-auth. User auth and registration is bui
 The browser just makes API call to the back-end server to save, compile, etc. to the files.
 
 IntuAPI docs are here:
-- https://intuition-dev.github.io/INTU
+- https://INTUITION-dev.github.io/INTU
 
 
 
 
 ---
-[Edit this file](https://github.com/intuition-dev/INTUDocs/tree/master/docs)
+[Edit this file](https://github.com/INTUITION-dev/INTUDocs/tree/master/docs)
