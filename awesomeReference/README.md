@@ -1,5 +1,5 @@
 
-## Awesome low-code list of MetaBake resources
+## Awesome low-code list of INTUITION resources
 
 ###
 - Testing IE http://developer.microsoft.com/en-us/microsoft-edge/tools/vms

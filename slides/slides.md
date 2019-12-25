@@ -4,7 +4,7 @@
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION. DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
@@ -22,14 +22,14 @@ What will the future of professional development look like?
 ![180% center](iterative.png)
 Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
 #### - What if end-users could maintain and build next version?
-#### - INTUITION.DEV is built in Pug language
+#### - INTUITION. DEV is built in Pug language
 
 ---
 
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION. DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 ---
@@ -98,7 +98,7 @@ Promised step #1: App.
 
 ---
 
-Features of INTUITION.DEV:
+Features of INTUITION. DEV:
 - Standards Based / Pug
 - Open Source
 - SEO
@@ -118,7 +118,7 @@ Almost THE END, FAQ:
 ---
 
 <!-- *template: invert -->
-#### INTUITION.DEV alternatives, low-code, but targeting citizen developers: 
+#### INTUITION. DEV alternatives, low-code, but targeting citizen developers: 
 - Coda_io
 - Wix Corvid
 - Airtable
@@ -166,7 +166,7 @@ Did you miss anything shown?
 <!-- *template: invert -->
 #  ==INTUITION.DEV==
 
-#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
+#### INTUITION. DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, facilitating app maintenance by end-users.
 ![70% center](good_cheap_fast.png)
 
 

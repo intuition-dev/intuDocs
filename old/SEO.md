@@ -1,7 +1,7 @@
 
 # SEO and social tags SEO
 
-Since the Web App with MetaBake is statically generated it is great a SEO. Of course coming up with keywords for your landing pages is hard work and outside the scope of this documentation. 
+Since the Web App with INTUITION is statically generated it is great a SEO. Of course coming up with keywords for your landing pages is hard work and outside the scope of this documentation. 
 And you should register any website or CMS with 'Google Webmasters search console': since it allows to
 instantly check that the page SEO is working. Otherwise you are waiting for weeks to just change some code.
 Make sure you submit the page you are working on to 'Google Webmasters search console' so you can see how the SEO sees it.
@@ -11,9 +11,9 @@ Make sure you submit the page you are working on to 'Google Webmasters search co
 And we help with social SEO, eg: If your dat.yaml is like this:
 
 ```yaml
-title: MetaBake versus other Low-Code tools
+title: INTUITION versus other Low-Code tools
 image: slide-3.jpg
-content_text: MetaBake is the open source extensible low-code productivity tool for programmers.
+content_text: INTUITION is the open source extensible low-code productivity tool for programmers.
 keywords: low-code, gulp, grunt, CMS, static gen
 ```
 

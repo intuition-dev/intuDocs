@@ -1,17 +1,17 @@
 
-# INTUITION.DEV
+# INTUITION. DEV
 
-#### INTUITION.DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, leveraging JAMstack, w/ Pug and facilitating app maintenance by end-users.
+#### INTUITION. DEV is the futuristic open source tool for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, leveraging JAMstack, w/ Pug and facilitating app maintenance by end-users.
 
 #### Please star our main project here:
 - https://github.com/intuition-dev/INTU
 
-## INTUITION.DEV approach:
+## INTUITION. DEV approach:
 
 In a future with increasing automation, citizen-developers have become more widespread. Nowadays almost anyone can pull out a form or a web app using low-code tools. Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator that leverage JAMstack, w/ Pug. And then added a WebAdmin that lets you edit—and then keep adding features. 
 [Medium Article](https://medium.com/@uptimevic/how-software-developers-can-survive-the-coming-tech-crash-796dd8dc5a7e) 
 
-### INTUITION.DEV pro development features:
+### INTUITION. DEV pro development features:
 
 1. Standards Based / Pug
 1. Open Source
@@ -28,7 +28,7 @@ In a future with increasing automation, citizen-developers have become more wide
 <img src="https://github.com/intuition-dev/INTU/raw/master/src/intu.png" width="100%"/>
 
 
-We have open source low-code with static generation with the ability to add a ‘WebAdmin’ editor to INTUITION.DEV and your application. Once a professional developer writes and sets up Version 1 of the app, end-users can be enabled to maintain the app and possibly write the next version of the app. As the business needs change, the resulting evergreen web app is always aligned to the business.
+We have open source low-code with static generation with the ability to add a ‘WebAdmin’ editor to INTUITION. DEV and your application. Once a professional developer writes and sets up Version 1 of the app, end-users can be enabled to maintain the app and possibly write the next version of the app. As the business needs change, the resulting evergreen web app is always aligned to the business.
 
 You can write any and every kind of app, since we generate HTML, javascript an css. Our main language is Pug, if you have not seen Pug before, here is a quick intro to Pug:
 - [Click for generic Pug example](http://pug.metabake.net)
@@ -44,9 +44,9 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 
 ## Installation and Intro
 
-1. Before you run, create free [emailJs](https://www.emailjs.com) account: so that INTUITION.DEV your local accounts can be validated via email. Also create a email template, and note your emailJs `service_id`, `user_id`,  `template_id`, needed to send validation emails. Yes, user admin is built in.
+1. Before you run, create free [emailJs](https://www.emailjs.com) account: so that INTUITION. DEV your local accounts can be validated via email. Also create a email template, and note your emailJs `service_id`, `user_id`,  `template_id`, needed to send validation emails. Yes, user admin is built in.
 
-2. Then install the INTUITION.DEV tool:
+2. Then install the INTUITION. DEV tool:
     ```
     yarn global add intu
     intu

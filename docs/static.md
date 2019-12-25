@@ -4,7 +4,7 @@
 
 ## Start
 
-Start the INTUITION.DEV tool:
+Start the INTUITION. DEV tool:
 
 ```
 intu
@@ -20,7 +20,7 @@ From business POV SEO is very important for most applications. Static is what is
 
 ### User auth
 
-User's editing: means that you need user-auth. User auth and registration is built into INTUITION.DEV, and you can leverage for your applications.
+User's editing: means that you need user-auth. User auth and registration is built into INTUITION. DEV, and you can leverage for your applications.
 
 
 [<img src="http://img.youtube.com/vi/AU6eQulq5cE/0.jpg" width="400"/>](http://www.youtube.com/watch?v=AU6eQulq5cE)
