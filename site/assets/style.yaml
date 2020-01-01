@@ -1,4 +1,4 @@
 css:
-- bootStrap/scss/bootstrap.scss
 - bootStrap/scss/bootstrapTop.scss
+- bootStrap/scss/bootstrap.scss
 - sass/custom.sass
