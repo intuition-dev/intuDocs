@@ -32,7 +32,7 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 INTUITION.DEV leverages INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
    ```
-   yarn global add mbake
+   npm i -g mbake
    ```
 
 Note: currently node needs to be install via nvm (https://github.com/nvm-sh/nvm)

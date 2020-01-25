@@ -22,7 +22,8 @@
 
     install:
     ```sh
-    $ yarn global add mbake
+      npm i -g npm@next
+      npm i -g mbake
     ```
 
     You can download some starter examples, eg: 

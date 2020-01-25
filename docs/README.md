@@ -48,18 +48,16 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 
 2. Then install the INTUITION.DEV tool:
     ```
-    yarn global add intu
+    npm i -g npm@next
+    npm i -g intu
     intu
     ```
-    or you can use npm instead of yarn anytime.
 
-
-Note: We use a native sqlite driver. It needs `yarn global add node-gyp@latest`, or python v2.7 during install
+Note: We use a native sqlite driver. It needs `npm i -g node-gyp@latest`, or python v2.7 during install
 
 Notes: 
 - It is best to install node via via nvm (https://github.com/nvm-sh/nvm)
-- If node version changed, you may need to do this first:  `yarn global remove yarn`
-- I use yarn > v2.x, but npm should work
+- If node version changed, you may need to do this first:  `npm uninstall -g intu`
 
 
 
@@ -77,7 +75,7 @@ Notes:
     ```
     intu -c
     cd CRUD
-    yarn
+    npm
     ```
 
 ### Full train-the-trainer training incudes:
