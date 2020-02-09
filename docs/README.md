@@ -47,19 +47,15 @@ You can write any and every kind of app, since we generate HTML, javascript an c
 1. Before you run, create free [emailJs](https://www.emailjs.com) account: so that INTUITION.DEV your local accounts can be validated via email. Also create a email template, and note your emailJs `service_id`, `user_id`,  `template_id`, needed to send validation emails. Yes, user admin is built in.
 
 2. Then install the INTUITION.DEV tool:
-    ```
+
+Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. 
+
+```sh
+    apt-get install build-essential
     npm i -g npm@next
-    npm i -g intu
-    intu
-    ```
-
-Note: We use a native sqlite driver. It likely needs `npm i -g node-gyp@latest`.
-
-Notes: 
-- It is best to install node via via nvm (https://github.com/nvm-sh/nvm)
-- If node version changed, you may need to do this first:  `npm uninstall -g intu`
-
-
+    npm i -g node-gyp@latest 
+    npm i -g --unsafe-perm=true --allow-root intu
+```
 
 3. Setup configurations in the browser window `:9081/setup`
    Remember your admin email and password.

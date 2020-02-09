@@ -31,11 +31,16 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 
 INTUITION.DEV leverages INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
-   ```
-   npm i -g mbake
-   ```
 
-Note: currently node needs to be install via nvm (https://github.com/nvm-sh/nvm)
+Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. 
+
+```sh
+    apt-get install build-essential
+    npm i -g npm@next
+    npm i -g node-gyp@latest 
+    npm i -g --unsafe-perm=true --allow-root mbake
+```
+
 
 ### Starting a project
 
