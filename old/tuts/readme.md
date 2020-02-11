@@ -22,13 +22,14 @@
 
     install:
 
-Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. 
+Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. https://github.com/npm/cli/issues/287
 
 
 ```sh
     apt-get install build-essential
     npm i -g npm@next
     npm i -g node-gyp@latest 
+    node-gyp -v
     npm i -g --unsafe-perm=true --allow-root mbake
 ```
 
