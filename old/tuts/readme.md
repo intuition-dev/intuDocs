@@ -51,7 +51,7 @@ Note: Some of the upstream packages we user are native, so you need to : apt-get
 
 1. Create public repo in git, to commit your app's code to it, optionally: you can deploy locally.
 
-1. Do 2 pages, one with table and form, using **Tabulator.js** for table and **GridForms** for forms, also use [Spectre](https://picturepan2.github.io/spectre/getting-started.html). The example app:
+1. Do 2 pages, one with table and form, using **Tabulator.js** for table and **GridForms** for forms. The example app:
 
   https://github.com/metabake/mbCLI/tree/master/CRUD0
 
@@ -68,12 +68,10 @@ Note: Some of the upstream packages we user are native, so you need to : apt-get
 
     https://github.com/metabake/metaCake/tree/master/custel/old
 
-    using [riot.js 3](https://v3.riotjs.now.sh/)
 
 
 ## Useful links:
 
 * [mbake CLI docs](https://metabake.github.io/mbCLI/#/)
 * [install mbake](https://www.npmjs.com/package/mbake)
-* [Spectre](https://picturepan2.github.io/spectre/getting-started.html)
 * [CRUD app](https://github.com/metabake/mbCLI/tree/master/CRUD0)
