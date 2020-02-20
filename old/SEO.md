@@ -13,7 +13,7 @@ And we help with social SEO, eg: If your dat.yaml is like this:
 ```yaml
 title: INTUITION  versus other Low-Code tools
 image: slide-3.jpg
-content_text: INTUITION  is the open source extensible low-code productivity bundler for programmers.
+content_text: INTUITION  is the open source extensible low-code productivity bundler/builder for programmers.
 keywords: low-code, gulp, grunt, CMS, static gen
 ```
 
