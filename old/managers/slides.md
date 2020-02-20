@@ -71,7 +71,7 @@
 
 ---
 ### Our Approach
-- We leverage the ==**increasing automation**== and low-code/high-productivity tools to help us develop quicker and with less error-prone processes.
+- We leverage the ==**increasing automation**== and low-code/high-productivity bundler to help us develop quicker and with less error-prone processes.
 
 - This leads naturally to cheaper development costs as we are able to compress the time it takes from building a prototype and launching a final product. All ==**without impacting negatively the quality**==.
 

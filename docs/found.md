@@ -29,7 +29,7 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 [<img src="http://img.youtube.com/vi/-oSixA3oDL4/0.jpg" width="400"/>](http://www.youtube.com/watch?v=-oSixA3oDL4)
 
 
-INTUITION.DEV leverages INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
+INTUITION.DEV leverage INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
 
 Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. https://github.com/npm/cli/issues/287

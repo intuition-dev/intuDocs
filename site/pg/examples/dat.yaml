@@ -1,10 +1,10 @@
 basedir: ../../
 
 pretty: true
-title: INTUITION.DEV is open source and extensible low-code productivity tool for front-end developers
+title: INTUITION.DEV is open source and extensible low-code productivity bundler for front-end developers
 image: >-
   slide-3.jpg
-content_text: INTUITION.DEV is the open source extensible low-code productivity tool for programmers.
+content_text: INTUITION.DEV is the open source extensible low-code productivity bundler for programmers.
 keywords: low-code, building, software
 
 showcase: [{
