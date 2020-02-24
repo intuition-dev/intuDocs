@@ -221,7 +221,7 @@ class UIBinding {
 </style>`
 
 // /////////////////////////////
-window.customElements.define('fraglist-custel', class extends HTMLElement {
+customElements.define('fraglist-custel', class extends HTMLElement {
     sr // shadow root var
     
     constructor() {
