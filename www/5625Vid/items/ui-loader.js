@@ -1,5 +1,5 @@
 
-toolBeltDefault()
+
 
 depp.define({
    'fraglist':'/items/custels/fraglist/fraglist-custel.js'
