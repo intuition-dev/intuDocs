@@ -160,7 +160,7 @@ class UIBinding {
     // template
     var cTemp = document.createElement('template')
     cTemp.innerHTML = `
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/INTUITION-dev/intuDesignWork@v1.0.5/src/css/main.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/INTUITION-dev/intuDesignWork@v1.2.6/src/css/global.css"/>
 
 <div class="fragCont">
     <p></p>
