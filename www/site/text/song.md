@@ -1,1 +1,0 @@
-Don't fight low-code—lead low-code. Do it today. It will lead you in the right direction.
