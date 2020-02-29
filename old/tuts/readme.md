@@ -37,10 +37,7 @@ Note: Some of the upstream packages we user are native, so you need to : apt-get
     ```sh
     $ mbake -w .
     ```
-    And use toolbelt, eg: 
-    ```sh
-    mbake -f .
-    ```
+
     more about **tool-belt.js** you can read here: 
 
     https://github.com/metabake/metaCake
