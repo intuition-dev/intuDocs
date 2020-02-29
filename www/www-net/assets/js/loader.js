@@ -5,7 +5,6 @@ depp.define({
       ROOT + 'assets/css/style.css'
    ],
    'splitSPA': [
-      '#SPA',
       '#cssJs',
       '#GSAP',
       '#state-machine',
