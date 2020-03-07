@@ -90,7 +90,7 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( Web App, Electron, PhoneGap, Android, Components )
+==DEMO== advanced/Mobile 2 steps ( Web App, Electron, Cordova, Android, Components )
 
 ---
 
@@ -155,7 +155,7 @@ Did you miss anything shown?
 #### - Start: Scrape to Pug
 #### - SEO and 3 Steps (Discovery)
 #### - CRUD (w/ ViewModel and APIs)
-#### - PhoneGap / Native is same code base
+#### - Cordova / Native is same code base
 #### - Maintenance iterations reduce cost
 ---
 

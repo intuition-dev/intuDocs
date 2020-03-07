@@ -210,7 +210,7 @@ Eg: extract the html files and assets and convert to Pug.
 
 ## Pillar 9: No Negativity Towards DRY/Mobile
 # Reorg from 3 teams to 2
-PHONEGAP
+Cordova
 
 DRY is good. Using a single code base to target multiple
 platforms, a more hybrid approach. The best way to learn how to perform
@@ -219,7 +219,7 @@ confused with the current approach of React-native: that is two code
 bases, one for web and one for devices. As a tech leader, we want a
 single code base, otherwise known as a hybrid approach.
 
-Once Electron has been learned, one can then try build.phonegap.com,
+Once Electron has been learned, one can then try build.Cordova.com,
 version 8.0+; A quicker/cheaper development with full native
 functionality and performance with a single code base available for Web,
 IOS, Android, PWA, with one single code base! Of course, there are

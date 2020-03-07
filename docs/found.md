@@ -58,16 +58,16 @@ One way to get started is to take code from an already running project, and past
 ### Cross platform preview
 
 And once you are done w/ your Pug app, you can run it cross platform on mobile.
-Same code base. Just leverage the online cross platform tool based on Apache's Cordova: http://build.phonegap.com
+Same code base. Just leverage the online cross platform tool based on Apache's Cordova: https://cordova.apache.org/docs/en/latest/
 
-Here is an example phonegap app for build.phonegap.com:
-- https://github.com/INTUITION-dev/mbMobile/tree/master/phoneGapReaderApp
+Here is an example Cordova app for build.Cordova.com:
+- https://github.com/INTUITION-dev/mbMobile/tree/master/CordovaReaderApp
 
 Notice that the electron app:
 - https://github.com/INTUITION-dev/mbMobile/tree/master/electronReaderApp
 and Web App:
 - https://github.com/INTUITION-dev/mbMobile/tree/master/webReaderApp
-are a *symbolic link* to the phonegapp app.
+are a *symbolic link* to the Cordovap app.
 
 They are the same exact code.
 
