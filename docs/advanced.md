@@ -9,7 +9,9 @@ If you are in a rush or have limited resources but need a mobile or a cross plat
  you should convert to Electron first. It seems like Electron step is an extra step to slow you down: but doing Electron
  app first saves you time - even if you never release the Electron app.
  
-You can of course add any needed native plugins from Cordova; but most apps don't need any Cordova plugins.
+You can of course add any needed native plugins from Capacitor (by Ionic)
+; but most apps don't need any Capacitor (by Ionic)
+ plugins.
 
 ## Custom Elements
 

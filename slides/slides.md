@@ -90,7 +90,8 @@ Promised step #1: App.
 
 # OK! Same code base:
 
-==DEMO== advanced/Mobile 2 steps ( Web App, Electron, Cordova, Android, Components )
+==DEMO== advanced/Mobile 2 steps ( Web App, Electron, Capacitor (by Ionic)
+, Android, Components )
 
 ---
 
@@ -155,7 +156,8 @@ Did you miss anything shown?
 #### - Start: Scrape to Pug
 #### - SEO and 3 Steps (Discovery)
 #### - CRUD (w/ ViewModel and APIs)
-#### - Cordova / Native is same code base
+#### - Capacitor (by Ionic)
+ / Mobile is same code base
 #### - Maintenance iterations reduce cost
 ---
 

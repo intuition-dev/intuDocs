@@ -58,16 +58,17 @@ One way to get started is to take code from an already running project, and past
 ### Cross platform preview
 
 And once you are done w/ your Pug app, you can run it cross platform on mobile.
-Same code base. Just leverage the online cross platform tool based on Apache's Cordova: https://cordova.apache.org/docs/en/latest/
+Same code base. Just leverage the online cross platform tool based on https://capacitor.ionicframework.com/docs/getting-started
 
-Here is an example Cordova app for build.Cordova.com:
-- https://github.com/INTUITION-dev/mbMobile/tree/master/CordovaReaderApp
+Here is an example Capacitor (by Ionic)
+ app for https://capacitor.ionicframework.com/docs/getting-started:
+- https://github.com/INTUITION-dev/mbMobile/tree/master/mobileReaderApp
 
 Notice that the electron app:
 - https://github.com/INTUITION-dev/mbMobile/tree/master/electronReaderApp
 and Web App:
 - https://github.com/INTUITION-dev/mbMobile/tree/master/webReaderApp
-are a *symbolic link* to the Cordovap app.
+are a *symbolic link* to the Mobile app.
 
 They are the same exact code.
 
