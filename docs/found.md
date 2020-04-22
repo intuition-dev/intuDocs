@@ -32,14 +32,9 @@ Because it is Pug, it takes minimal effort to do AMP if needed. Or locale/i18n. 
 INTUITION.DEV leverage INTUITION  (mbake) CLI: https://INTUITION-dev.github.io/mbCLI/#/
 but you do not need to know the mbake CLI for INTUITION.DEV.
 
-Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. https://github.com/npm/cli/issues/287
 
 ```sh
-    apt-get install build-essential
-    npm i -g npm@next
-    
-    
-    npm i -g --unsafe-perm=true --allow-root mbake
+    npm i mbake
 ```
 
 

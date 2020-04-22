@@ -11,7 +11,7 @@
 - Bootstrap, 
 - Node.js (express) for static server using [Srv.ts](https://github.com/metabake/mbCLI/blob/master/src/lib/Serv.ts) 
 - ToolBelt
-- [depp.js](https://github.com/muicss/johnnydepp)
+
 
 
 # Tasks:
@@ -22,15 +22,9 @@
 
     install:
 
-Note: Some of the upstream packages we user are native, so you need to : apt-get install build-essential or similar to get the platfrom C compiler. https://github.com/npm/cli/issues/287
-
 
 ```sh
-    apt-get install build-essential
-    npm i -g npm@next
-     
-    
-    npm i -g --unsafe-perm=true --allow-root mbake
+    npm i -g mbake
 ```
 
     You can download some starter examples, eg: 
@@ -42,7 +36,6 @@ Note: Some of the upstream packages we user are native, so you need to : apt-get
 
     https://github.com/metabake/metaCake
 
-    Also use [depp.js](https://github.com/muicss/johnnydepp) to load scripts in order.
 
 ## Write a FB CRUD app using mbake CLI
 
